@@ -1,0 +1,44 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
+keywords:  
+summary:  
+---
+= Swagger API Web ページから REST API にアクセスします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+REST API は Swagger Web ページから利用できます。Swagger Web ページにアクセスして SnapCenter サーバまたは SnapCenter Plug-in for VMware vSphere REST API を表示したり、 API 呼び出しを手動で問題したりできます。SnapCenter Plug-in for VMware vSphere REST API を使用して、 VM とデータストアに対して保護処理を実行できます。
+
+プラグインでは、 Windows SnapCenter Swagger Web ページと Swagger Web ページが異なります。
+
+SnapCenter Plug-in for VMware vSphere REST API の場合は、 SnapCenter VMware プラグインの IP アドレスまたはホスト名を確認しておく必要があります。
+
+
+NOTE: このプラグインでは、サードパーティのアプリケーションと統合する目的で REST API のみがサポートされます。 PowerShell コマンドレットや CLI はサポートされません。
+
+.手順
+. ブラウザから、 URL を入力してプラグイン Swagger Web ページにアクセスします。
++
+https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html#`
+
++
+
+IMPORTANT: REST API URL には、 + 、を使用しないでください。、 % 、および & 。
+
++
+SnapCenter VMware プラグイン REST API にアクセスします。
+
++
+https://192.0.2.82:8144/api/swagger-ui.html#https://OVAhost:8144/api/swagger-ui.html#`
+
++
+ログインでは、 vCenter 認証メカニズムを使用してトークンが生成されます。
+
+. API リソースタイプをクリックすると、そのリソースタイプの API が表示されます。
+

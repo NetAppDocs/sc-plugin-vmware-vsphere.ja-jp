@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage.html 
+keywords:  
+summary:  
+---
+= ストレージを追加します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. VMware vSphere Web Client の左側のナビゲータペインで、 * ストレージシステム * をクリックし、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 追加 * 。
+. Add Storage System （ストレージシステムの追加）ダイアログボックスで、 SVM またはクラスタの基本情報を入力し、 * Add * （追加）をクリックします。
+

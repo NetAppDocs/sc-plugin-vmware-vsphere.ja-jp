@@ -1,0 +1,197 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_planning_and_requirements.html 
+keywords:  
+summary:  
+---
+= 導入の計画と要件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の 4 つの表に示します。
+
+
+
+== ホストの要件
+
+SnapCenter Plug-in for VMware vSphere の導入を開始する前に、ホスト要件を確認しておく必要があります。
+
+* SnapCenter VMware プラグインを Linux VM として導入する必要があります。
++
+SnapCenter VMware プラグインは、プラグインを使用して Windows システムと Linux システムのどちらのデータを保護しているかに関係なく、 Linux VM として導入されます。
+
+* SnapCenter VMware プラグインを vCenter Server に導入する必要があります。
++
+バックアップスケジュールは、 SnapCenter VMware プラグインが導入されているタイムゾーンで実行されます。vCenter では、 vCenter が配置されているタイムゾーンでデータが報告されます。そのため、 SnapCenter VMware プラグインと vCenter が異なるタイムゾーンにある場合は、 SnapCenter VMware プラグインダッシュボードのデータがレポートのデータと同じでないことがあります。
+
+* SnapCenter VMware プラグインは、名前に特殊文字が含まれるフォルダには導入しないでください。
++
+フォルダ名には、 $ ！ @ # % ^ & （） _ + ｛ ｝ ' ；、 * ？ " <> | という特殊文字は使用できません
+
+* vCenter Server ごとに、個別の SnapCenter VMware プラグインインスタンスを導入して登録する必要があります。
++
+** 各 vCenter Server は、リンクモードかどうかに関係なく、 SnapCenter VMware プラグインの個別のインスタンスとペアリングする必要があります。
+** SnapCenter VMware プラグインの各インスタンスを個別の Linux VM として導入する必要があります。
++
+たとえば、 6 つの異なる vCenter Server インスタンスからバックアップを実行する場合は、 6 つのホストに SnapCenter VMware プラグインを導入し、各 vCenter Server を SnapCenter VMware プラグインの一意のインスタンスとペアリングする必要があります。
+
+
+
+* SnapCenter VMware プラグインは、 Storage vMotion のサポートにおける仮想マシンの制限により、共有 PCI デバイスまたは PCIe デバイス（ NVIDIA Grid GPU など）を限定的にサポートします。詳細については、ベンダーが提供している『 Deployment Guide for VMware 』を参照してください。
++
+** サポートされる内容：
++
+リソースグループを作成しています
+
++
+VM 整合性なしでバックアップを作成する
+
++
+すべての VMDK が NFS データストアにあり、かつ Storage vMotion を使用する必要がない場合の VM 全体のリストア
+
++
+VMDK の接続と接続解除
+
++
+データストアのマウントとアンマウント
+
++
+ゲストファイルのリストア
+
+** サポートされない機能：
++
+VM と整合性のあるバックアップを作成しています
+
++
+VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全体のリストア
+
+
+
+* SnapCenter VMware プラグインの制限事項の詳細については、を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"^]。
+
+
+
+
+== ライセンス要件
+
+|===
+| 次のライセンスを提供する必要があります。 | ライセンス要件 
+
+
+| ONTAP | 次のいずれか： SnapMirror または SnapVault （関係のタイプに関係なくセカンダリデータ保護を行う場合） 
+
+
+| その他の製品 | Storage vMotion を使用するリストア処理を実行するには、 vSphere Standard 、 Enterprise 、または Enterprise Plus vSphere ライセンスが必要です。vSphere Essentials または Essentials Plus ライセンスには、 Storage vMotion は含まれません。 
+
+
+| 主な目的地 | VMware SnapCenter 標準を使用してアプリケーションベースの保護を実行し、 VMware の VM とデータストアのみの SnapRestore を保護する：リストア処理に使用 FlexClone ：マウント処理と接続処理に使用 
+
+
+| セカンダリデスティネーション | VMware SnapCenter Standard を介してアプリケーションベースの保護を実行する場合： VMware の VM とデータストアのみ FlexClone の保護を実行するフェイルオーバー処理に使用：マウント処理と接続処理に使用します 
+|===
+
+
+== ソフトウェアサポート
+
+|===
+| 項目 | サポートされるバージョン 
+
+
+| vCenter vSphere | HTML5 クライアント： 6.5U2/U3 、 6.7x 、 7.0 、 7.0U1 、 7.0U2 Flex クライアントはサポートされていません。 
+
+
+| ESXi | 6.0u1 以降 
+
+
+| IP アドレス | IPv4 、 IPv6 
+
+
+| Java | 8. 
+
+
+| .Net コア | 2.1 
+
+
+| SnapCenter Plug-in for VMware vSphere MySQL データベース | MySQL 8.0.23 の場合 
+
+
+| VMware TLS | 1/2 
+
+
+| SnapCenter サーバ上の TLS | TLSv1.1 以降 SnapCenter サーバは、 SnapCenter VMware プラグインとの通信を使用して、 VMDK 経由のデータ保護処理をアプリケーションに提供します。 
+
+
+| VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 
+|===
+サポートされているバージョンの最新情報については、を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=91324;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+
+
+
+== スペースとサイジングの要件
+
+|===
+| 項目 | 要件 
+
+
+| オペレーティングシステム | Linux の場合 
+
+
+| 最小 CPU 数 | 4 コア 
+
+
+| 最小 RAM | 最小： 12GB 。推奨： 16GB 
+
+
+| SnapCenter Plug-in for VMware vSphere 、ログ、および MySQL データベースの最小ハードドライブスペース | 100 GB 
+|===
+
+
+== 接続とポートの要件
+
+|===
+| ポートのタイプ | 事前設定されたポート 
+
+
+| SnapCenter Plug-in for VMware vSphere のポート | 8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。注：ポート設定は変更できません。 
+
+
+| VMware vSphere vCenter Server のポート | 443 （ HTTPS ）： SnapCenter Plug-in for VMware vSphere と vCenter 間の通信に使用されます。双方向のポートを使用します。 
+|===
+
+
+== サポートされる構成
+
+各プラグインインスタンスでサポートされる vCenter Server は 1 つだけです。リンクモードの vCenter がサポートされます。次の図に示すように、複数のプラグインインスタンスで同じ SnapCenter サーバをサポートできます。
+
+image:scpivs44_image4.png["エラー：グラフィックイメージがありません"]
+
+
+
+== RBAC 権限が必要です
+
+vCenter 管理者アカウントには、次の表に示す vCenter 権限が必要です。
+
+|===
+| この操作を実行するには ... | 次の vCenter 権限が必要です ... 
+
+
+| SnapCenter Plug-in for VMware vSphere を導入して vCenter に登録 | 拡張子：拡張子を登録します 
+
+
+| SnapCenter Plug-in for VMware vSphere をアップグレードまたは削除します | 内線番号の更新 * 内線番号の登録解除 
+
+
+| SnapCenter に登録された vCenter Credential ユーザアカウントに、 SnapCenter Plug-in for VMware vSphere へのユーザアクセスが検証されるようにします | sessions.validate.session 
+
+
+| ユーザに SnapCenter Plug-in for VMware vSphere へのアクセスを許可します | SCV Administrator Backup SCV Guest File Restore SCV Restore SCV View 権限が vCenter ルートで割り当てられている必要があります。 
+|===
+
+
+== AutoSupport
+
+SnapCenter Plug-in for VMware vSphere は、プラグインの URL など、その使用状況を追跡するための最小情報を提供します。AutoSupport には、 AutoSupport ビューアによって表示されるインストール済みプラグインの表が含まれています。

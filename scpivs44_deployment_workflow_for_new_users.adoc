@@ -1,0 +1,17 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_workflow_for_new_users.html 
+keywords:  
+summary:  
+---
+= 新規ユーザ向けの導入ワークフロー
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+SnapCenter バックアップを作成する前に SnapCenter を使用したことがなく、まだ使用していない場合は、次のワークフローを使用して開始してください。
+
+image:scpivs44_image2.png["エラー：グラフィックイメージがありません"]

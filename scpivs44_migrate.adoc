@@ -1,0 +1,51 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migrate.html 
+keywords:  
+summary:  
+---
+= 移行オプション
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter の Windows PowerShell コマンドレットを使用して、 SnapCenter Plug-in for VMware vSphere メタデータを Windows ベースの SnapCenter サーバから Linux ベースの SnapCenter Plug-in for VMware vSphere 仮想アプライアンスに移行します。
+
+移行には次の 2 つのオプションがあります。
+
+* SnapCenter から移行しています
++
+Windows ベースの SnapCenter から次の項目のメタデータを移行する必要があります。
+
++
+** SnapCenter Plug-in for VMware vSphere で SnapCenter の Windows ベースのコンポーネントとして実行されていた VM と整合性のあるバックアップ。
+** SnapCenter の Windows ベースのコンポーネントとして実行されていた SnapCenter Plug-in for VMware vSphere のサポートにより、 SnapCenter アプリケーションベースのプラグインによって実行される仮想データベースまたはファイルシステムの、アプリケーションと整合性のあるデータ保護メタデータ。
++
+移行するには、 Windows SnapCenter PowerShell コマンドレットの「 Invoke-NaSCVOVAMigration.' 」を使用します
+
++
+メタデータは SnapCenter 4.0 以降からのみ移行できます。
+
+
+
+* VSC からの移行
++
+VSC 6.2.x （ SMVI ）メタデータは、 SnapCenter に統合されていないバックアップジョブに移行できます。
+
++
+移行するには、 NetApp ToolChest ： NetApp Import Utility for SnapCenter and Virtual Storage Console を使用します。VSC から SnapCenter への移行オプションを選択してください。
+
++
+メタデータの移行は、既存のバックアップについてのみ実行できます。たとえば、既存のバックアップがない場合、ポリシーの移行はできません。
+
+
+
+
+
+= サポートされている移行パス
+
+を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"^] サポートされるアップグレードパスと移行パスについては、を参照してください。

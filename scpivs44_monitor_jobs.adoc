@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_monitor_jobs.html 
+keywords:  
+summary:  
+---
+= ジョブを監視する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware vSphere Web Client を使用してデータ保護処理を実行したら、ダッシュボードのジョブモニタタブでジョブのステータスを監視し、ジョブの詳細を確認できます。
+
+.手順
+. vSphere Web Client の左側のナビゲーションペインで、 * Dashboard * をクリックし、 vCenter Server を選択して * Job Monitor * タブをクリックします。
++
+image:scpivs44_image8.png["エラー：グラフィックイメージがありません"]
+
++
+[ ジョブモニタ ] タブには、各ジョブとそのステータス、開始時刻、および終了時刻が表示されます。ジョブ名が長い場合は、右にスクロールしないと開始時刻と終了時刻が表示されない場合があります。表示は 30 秒ごとに更新されます。
+
++
+** をクリックします image:scpivs44_image36.png["エラー：グラフィックイメージがありません"] ツールバーの更新アイコンをクリックすると、画面がオンデマンドで更新されます。
+** をクリックします image:scpivs44_image41.png["エラー：グラフィックイメージがありません"] フィルタアイコンを使用して、表示するジョブの期間、タイプ、およびステータスを選択します。
+** をクリックします image:scpivs44_image36.png["エラー：グラフィックイメージがありません"] ジョブの実行中に表示を更新するには、 [ ジョブの詳細 ] ウィンドウの [ 更新 ] アイコンをクリックします。
+
+
+
+
+Dashboard にジョブ情報が表示されない場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["技術情報アーティクル：「 SnapCenter vSphere Web Client Dashboard does not display jobs"^]。

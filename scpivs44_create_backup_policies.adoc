@@ -1,0 +1,20 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies.html 
+keywords:  
+summary:  
+---
+= バックアップポリシーを作成する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. VMware vSphere Web Client の左側の [Navigator] ペインで、 [* Policies*] をクリックし、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 新しいポリシー * 。
+. [ 新しいバックアップ・ポリシー * ] ページで、ポリシー設定情報を入力し、 [ * 追加 ] をクリックします。
++
+ポリシーをミラーバックアップ関係に使用する場合は、「レプリケーション」フィールドで、ミラーバックアップ先にバックアップをコピーする場合は「 SnapVault after backup * 」オプションのみを選択する必要があります。
+
+

@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_prerequisites_for_migration.html 
+keywords:  
+summary:  
+---
+= 移行の前提条件
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+* SnapCenter サーバ 4.2 以降が実行されている必要があります。
+* Admin クレデンシャルを使用する必要があります。
+* SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを導入して SnapCenter VMware プラグインを有効にし、 vCenter に登録する必要があります。
+* SnapCenter VMware プラグインダッシュボードで、 SnapCenter Plug-in for VMware vSphere のステータスが「接続済み」である必要があります。
+* SnapCenter VMware プラグインの導入時に指定したアカウントを使用して、 Linux タイプの Run As クレデンシャルを作成しておく必要があります。
+* すべてのゲストファイルのリストアセッションを削除する必要があります。
+* SnapCenter ホストには、完全修飾ドメイン名（ FQDN ）ではなく IP アドレスを設定する必要があります。
++
+リンクモード環境では、リンクされたすべてのノードを一緒に移行する必要があります。
+
+* Storage VM の名前は、管理 LIF に解決できる必要があります。 SnapCenter で Storage VM 名に「 etc 」ホストエントリを追加した場合は、それらのエントリが仮想アプライアンスからも解決可能であることを確認する必要があります。
+

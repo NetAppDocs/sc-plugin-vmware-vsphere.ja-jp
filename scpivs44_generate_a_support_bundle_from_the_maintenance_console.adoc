@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html 
+keywords:  
+summary:  
+---
+= メンテナンスコンソールからサポートバンドルを生成する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+.手順
+. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動または Web コンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
++
+SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
+
++
+ユーザ名 : 「パスワード : admin123 」
+
++
+image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]
+
+. メインメニューから、オプション * 4 ） Support and Diagnostics * と入力します。
+. Support and Diagnostics （サポートおよび診断）メニューから、オプション * 1 ） Generate support bundle （サポートバンドルの生成）と入力します。 *
+
+
+サポートバンドルにアクセスするには、 [ サポートと診断（ Support and Diagnostics ） ] メニューでオプション * 2 ）診断シェルへのアクセス * を入力します。コンソールで '/support/support/ <bundle_name>.tar.gz' に移動します

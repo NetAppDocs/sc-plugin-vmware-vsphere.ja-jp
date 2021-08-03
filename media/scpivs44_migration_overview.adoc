@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migration_overview.html 
+keywords:  
+summary:  
+---
+= データ移行の概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+移行コマンドは、 #SnapCenter 4.0 以降の # からメタデータを移行します。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。
+
+* 移行の内容には、が含まれ
++
+** 移行の内容
++
+SnapCenter メタデータ。ストレージシステム、カスタマイズされたスロットル、 SnapCenter 構成ファイルの E メール設定、ポリシー、リソースグループ、バックアップメタデータ、およびマウントが含まれます。（プリスクリプトまたはポストスクリプトが検出されると移行が失敗する）
+
+** 何が移行されないか
++
+リソースグループに対して設定された、事前および事後スクリプト
+
++
+アクティブなゲストファイルのリストアセッション、ゲストファイルのリストアクレデンシャル、およびプロキシ VM
+
++
+ゲストファイルの復元セッションがアクティブなときに移行を開始すると、セッションが削除され、接続されたディスクはアンマウントされません。接続されているディスクを手動で削除しなければならない場合があります。
+
++
+'cbr.override' 設定ファイル
+
+
+
+* SnapCenter ホストが一時停止されている
++
+移行が確実に成功するために、移行コマンドは SnapCenter に登録されているすべてのホストを一時停止します。移行プロセスが正常に完了すると、 SnapCenter ホストが再開されます。
+
+* 移行コマンドレットのプロセス
++
+SnapCenter に登録されている SnapCenter プラグインの各インスタンスには、 Windows PowerShell コマンドレット「 Invoke-NaSCVOVAMigration 」を使用する必要があります。
+
++
+このコマンドレットでは次の処理が実行されます
+
++
+** 移行中にジョブが失敗しないように、すべてのスケジュールを一時停止します。移行が成功すると、スケジュールは自動的に再度有効になります。
+** ストレージ接続とメタデータを移行します。
+** 移行後のバックアップのバックアップスケジュールを作成します。
+** Windows ホストから既存の SnapCenter Plug-in for VMware vSphere をアンインストールします。
++
+SnapCenter VMware プラグインが SnapCenter サーバホストにインストールされていて、 SnapCenter リポジトリ用に保護が設定されている場合は、移行プロセスによって、 SnapCenter Plug-in for VMware vSphere および SnapCenter Plug-in for Windows を含む Windows ベースのプラグインパッケージもアンインストールされます。 次に、リポジトリの保護をサポートするために、最新バージョンの SnapCenter Plug-in for Windows を再インストールします。SnapCenter GUI のホストタイプが「 vSphere 」から「 Windows 」に変わります。
+
+** Windows SnapCenter サーバから vSphere ホストとリソースグループを削除します。
+** Linux ベースの SnapCenter VMware プラグインのバックアップジョブをアクティブ化します。
+** 仮想化されたデータベースおよびファイル・システム（ VMDK バックアップを介したアプリケーション・ベースのバックアップ）をサポートするために、 SnapCenter VMware プラグイン用の vSphere ホストを SnapCenter に登録します。
+
+
+* メタデータの保存場所
++
+アプリケーションベースの VMDK バックアップのメタデータは、 SnapCenter サーバリポジトリに格納されます。VM およびデータストアのバックアップのメタデータは、 SnapCenter VMware プラグインの MySQL リポジトリに格納されます。
+
+

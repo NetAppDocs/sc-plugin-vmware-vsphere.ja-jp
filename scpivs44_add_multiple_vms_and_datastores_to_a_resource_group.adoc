@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html 
+keywords:  
+summary:  
+---
+= リソースグループに複数の VM とデータストアを追加する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter VMware vSphere Web Client のリソースグループの編集ウィザードを使用して、複数の VM とデータストアを既存のリソースグループに追加することができます。
+
+SAN データストアと NAS データストアは追加できますが、 VSAN データストアまたは VVOL データストアは追加できません。
+
+.手順
+. VMware vSphere Web Client の左側の [Navigator （ナビゲーター） ] ペインで、 [* リソースグループ ] をクリックし、リソースグループを選択して、をクリックします image:scpivs44_image39.png["エラー：グラフィックイメージがありません"] * リソースグループを編集 * してウィザードを開始します。
+. リソース * ページの使用可能なエンティティリストで、リソースグループに追加する VM またはデータストアを選択し、 * > * をクリックして選択したエンティティを選択リストに移動します。使用可能なすべてのエンティティを移動するには、 * >> * をクリックします。
++
+image:scpivs44_image19.png["エラー：グラフィックイメージがありません"]
+
++
+デフォルトでは、使用可能なエンティティリストには、 Datacenter オブジェクトが表示されます。データストアをクリックすると、データストア内の VM を表示してリソースグループに追加できます。
+
++
+[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。「一部のエンティティは SnapCenter と互換性がありません」というメッセージが表示される場合、選択した VM またはデータストアは SnapCenter と互換性がありません。を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理します"] を参照してください。
+
+. 追加する VM またはデータストアごとに手順 2 を繰り返します。
+. 「 * 次へ * 」をクリックして、「 * 概要 * 」ページに移動し、サマリーを確認して「 * 完了 * 」をクリックします。
+

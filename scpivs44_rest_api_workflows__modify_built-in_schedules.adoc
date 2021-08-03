@@ -1,0 +1,30 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
+keywords:  
+summary:  
+---
+= REST API ワークフロー：組み込みのスケジュールを変更できます
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブの組み込みのスケジュールを変更するには、規定された順序で REST API 呼び出しを実行する必要があります。
+
+組み込みのスケジュールは、 MySQL データベースのダンプスケジュールなど、製品の一部として提供されるスケジュールです。以下のスケジュールを変更することができます：「スケジュール - データベースダンプ」「スケジュール - パージバックアップ」「スケジュール - アーダコレクション」「スケジュール - コンピューティングストレージ保存」「スケジュール - パージジョブ」
+
+各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
+
+|===
+| ステップ | REST API | コメント 
+
+
+| 1. | 「 /4.1/schedules 」 | 「すべての組み込みスケジュールを取得」は、製品で最初に提供されたジョブスケジュールのリストを取得します。変更するスケジュールの名前と、関連する cron 式をメモします。 
+
+
+| 2. | 「 /4.1/schedules 」 | 「組み込みスケジュールを変更する」と、指定したスケジュールが変更されます。手順 1 で作成したスケジュール名を渡し、スケジュール用の新しい cron 式を作成します。 
+|===

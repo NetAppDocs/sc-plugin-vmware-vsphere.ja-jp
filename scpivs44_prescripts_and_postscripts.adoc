@@ -1,0 +1,135 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_prescripts_and_postscripts.html 
+keywords:  
+summary:  
+---
+= プリスクリプトとポストスクリプト
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトにより、データ保護ジョブの前後の処理を自動化できます。たとえば、データ保護ジョブのエラーや警告を自動的に通知するスクリプトを組み込むことができます。プリスクリプトとポストスクリプトを設定する前に、スクリプトを作成するための要件を理解しておく必要があります。
+
+
+
+== サポートされているスクリプトタイプ
+
+Perl スクリプトとシェルスクリプトがサポートされています。シェルスクリプトは '!/bin/bash' で開始する必要があります(`!/bin/sh` はサポートされていません )
+
+
+
+== スクリプトパスの場所
+
+プリスクリプトとポストスクリプトは、 SnapCenter Plug-in for VMware vSphere によって実行されます。そのため、スクリプトは SnapCenter Plug-in for VMware vSphere OVA にあり、実行権限が必要です。
+
+例えば :* Perl スクリプト・パスは '/support/ssupport/ script.pl * のようになりますシェル・スクリプト・パスは '/support/socl.sh' のようになります
+
+スクリプトパスは、スクリプト実行時に検証されます。
+
+
+
+== スクリプトを指定する場所
+
+スクリプトはバックアップポリシーに指定します。バックアップジョブが開始されると、ポリシーによってスクリプトがバックアップ対象のリソースに自動的に関連付けられます。
+
+複数のスクリプトを指定するには、スクリプトパスの入力後に * Enter キーを押し、スクリプトごとに改行します。セミコロン（ ; ）は使用できません。プリスクリプトとポストスクリプトをそれぞれ複数指定できます。1 つのスクリプトをプリスクリプトとポストスクリプトの両方として作成し、そのスクリプトから他のスクリプトを呼び出すことができます。
+
+
+
+== スクリプトが実行されるタイミング
+
+スクリプトは、 Backup_phase に設定された値に従って実行されます。
+
+* Backup_phase = pre_backup
++
+処理の PRE_BACKUP フェーズでプリスクリプトが実行されます。
+
+
+
+
+NOTE: プリスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
+
+* BACKUP_PHASE=POST_BACKUP または BACKUP_PHASE=FAILED_BACKUP
++
+ポストスクリプトは、バックアップが正常に完了したあとに処理の POST_BACKUP フェーズで実行されます。バックアップが正常に完了しない場合は、 FAILED_BACKUP フェーズで実行されます。
+
+
+
+
+NOTE: ポストスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
+
+次の項目をチェックして、スクリプト値が設定されていることを確認してください。 * Perl スクリプトの場合 : `/support/support/log_env.log シェルスクリプトの場合 : `/support/log_file.log
+
+
+
+== スクリプトに渡される環境変数
+
+次の表に示す環境変数をスクリプトで使用できます。
+
+|===
+| 環境変数 | 説明 
+
+
+| 「 backup_name 」と入力します | バックアップの名前。ポストスクリプトでのみ渡される変数です。 
+
+
+| 「 backup_ddate 」 | スクリプトでのみ渡される「 yyyymmdd 」形式のバックアップの日付。 
+
+
+| 「 backup_time 」と入力します | バックアップの時刻。形式は「 hhmmss 」。ポストスクリプトでのみ渡されます。 
+
+
+| 「 backup_fPHASE 」 | スクリプトを実行するバックアップのフェーズ。有効な値は 'pre_backup'POST_backup' および failed_backup' ですプリスクリプトとポストスクリプトで渡される変数です。 
+
+
+| 「 storage snapshots 」を選択します | バックアップ内のストレージ Snapshot の数。ポストスクリプトでのみ渡される変数です。 
+
+
+| 'storage-snapshot.#' | 定義済みのストレージ Snapshot の 1 つ。「 <filer> ： /vol/<volume > ： <ONTAP-snapshot-name> 」の形式で、ポストスクリプトでのみ渡されます。 
+
+
+| 「 VIRTUE_MACES' | バックアップ内の VM の数。プリスクリプトとポストスクリプトで渡される変数です。 
+
+
+| 「 VIRTUE_MACHINE 」と入力します | 定義された仮想マシンのうちの 1 つで、次の形式を使用します。 'VM name> [vertical bar]<power-state> [vertical bar]<VM snapshot> [vertical bar]<ip-address><power-state> には powered_on 、 powered_off 、または suspended 「 VM snapshot> 」には、「変数プリスクリプト」と「変数」が渡されます。 
+|===
+
+
+== スクリプトのタイムアウト
+
+バックアップスクリプトのタイムアウトは 15 分です。この値は変更できません。
+
+
+
+== Perl スクリプトの例 1.
+
+次に、 Perl スクリプトの例を示します。バックアップの実行時に環境変数が出力されます。
+
+`#!/usr/bin/perl `use warnings ； `use strict ； `m y $argnum;```````````````````````````s y$logfile='/support/logv' ； `open (fh, '>'>'>', $logfile) or die $!;`foreach (sortkeys%ENV=print=\fd`n=\fd`n=print=\`n$Fr = "=\fd`n$`n=print=\`n$Fr
+
+
+
+== Perl スクリプトの例 2.
+
+次の例は、バックアップに関する情報を出力します。
+
+`#!/usr/bin/perl `Use warnings ； `Use strict ； `
+
+`m $argnum;`m `y$logfile='/support/support/log_env.log';`open (FH 、 '>',$logfile) or die $!;`
+
+'print FHD " backup_sphase is $ENV {' backup_sphase '}\n; 'print FHD " バックアップ名 $ENV {' バックアップ名 $ENV {' バックアップ名 '}\n"'ENV {' スナップショット {'backup_name'}\n; 'print FHD ' バーチャルマシン 'Virtual Machine $ENV' {'F' バーチャル・スナップショット 'FH_PRINT 'F' {'F' バーチャル・イメージ \'F' 日付 }\n'F' バーチャル・ストレージ 'F' {'FH_F' {'F' バーチャル・イメージ \'F' バーチャル・バックアップ 'F' バーチャル・イメージ \'F' 日付 }\n\'F' {'F' {'F' バーチャル・バックアップ 'F' バーチャル・バックアップ 'SUF' バーチャル・ストレージ 'SUF' {'SUF' 日付 }\n\'SUF' 日付 \n\'SUF' {'SUF' バーチャル・バックアップ '\'\'\'\'\'\
+
+'print FH_" PWD は $ENV {'PWD'}\n; 'print FH_" DELING_ID は $ENV {'REJPLAY_ID'}\n";` です
+
+'print fh" ====\n" ； `close (FH) ； `
+
+
+
+== シェルスクリプトの例
+
+`==== == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == bash`echo Stage $backup_name>/>/>/support/log_file =es=es=es=es=es=es=es=es=es=es==es=es=======es=rof========log =======es==es=es===es=es=es====es===es======es==es=ro====

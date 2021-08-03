@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis_overview.html 
+keywords:  
+summary:  
+---
+= 概要
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+SnapCenter Plug-in for VMware vSphere REST API を使用して、一般的なデータ保護処理を実行できます。プラグインでは、 Windows SnapCenter Swagger Web ページと Swagger Web ページが異なります。
+
+* REST API ワークフローは、 VMware vSphere 用の REST API を使用している VM およびデータストアでの次の処理についてドキュメント化されています。
++
+** Storage VM とクラスタを追加、変更、削除する
+** リソースグループを作成、変更、および削除する
+** スケジュールされたオンデマンドの VM をバックアップする
+** 既存の VM および削除した VM をリストアする
+** VMDK をリストアする
+** VMDK を接続および接続解除する
+** データストアのマウントとアンマウント
+** ジョブのダウンロードとレポートの生成
+** 組み込みのスケジュールを変更
+
+
+* VMware vSphere 用の REST API でサポートされていない処理
++
+** ゲストファイルのリストア
+** SnapCenter VMware プラグインのインストールと設定
+** RBAC ロールまたはアクセスをユーザに割り当てます
+
+
+* `uri` パラメータ
++
+URI' パラメータは常にヌル値を返します
+
+* ログインタイムアウト
++
+デフォルトのタイムアウトは 120 分（ 2 時間）です。vCenter の設定で別のタイムアウト値を設定できます。
+
+* トークン管理
++
+セキュリティ上の理由から、 REST API は各要求で渡される必須トークンを使用します。このトークンは、クライアント検証のすべての API 呼び出しで使用されます。VMware vSphere 用の REST API では、 VMware 認証 API を使用してトークンを取得します。トークン管理は VMware が提供します。
+
++
+トークンを取得するには '/4.1/auth/login'REST API を使用して vCenter のクレデンシャルを指定します
+
+* API バージョンの指定
++
+各 REST API 名には、 REST API を最初にリリースした SnapCenter のバージョン番号が含まれています。たとえば 'REST API'/4.1/datastores /{more}/backups' は SnapCenter 4.1 で最初にリリースされました
+
++
+今後のリリースの REST API は、通常は下位互換性があり、必要に応じて新しい機能に合わせて変更される予定です。
+
+

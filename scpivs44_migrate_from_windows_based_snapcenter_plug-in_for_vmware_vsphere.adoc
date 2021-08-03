@@ -1,0 +1,58 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary:  
+---
+= Windows ベースの SnapCenter Plug-in for VMware vSphere から移行する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Windows ベースの SnapCenter VMware プラグインを使用していて、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの機能を使用する場合は、仮想アプライアンスを導入してバックアップメタデータを移行する必要があります。
+
+.作業を開始する前に
+* 仮想化されたデータベースとファイルシステムのバックアップを SnapCenter と統合する必要があります。
+* SnapCenter サーバが VM の場合は、アップグレード前に VMware ベースのスナップショットを作成することを推奨します。
+* SnapCenter サーバがアップグレードされていることを確認します。を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"^] サポートされているアップグレードパスの詳細については、を参照
+
+
+基本的な手順は 4 つあります。
+
+. SnapCenter Plug-in for VMware vSphere の .ova ファイルをダウンロードします。
+. Windows ベースの SnapCenter VMware プラグインのバックアップジョブを一時停止する
+. SnapCenter Plug-in for VMware vSphere OVA を導入します。
+. Windows ベースの VMware バックアップメタデータを移行する。
+
+
+.手順
+. SnapCenter Plug-in for VMware vSphere の .ova ファイルをダウンロードします。
++
+.. ネットアップサポートサイトにログインします。 (https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+.. 製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。
+.. 任意の VM に「 .ova 」ファイルをダウンロードします。
+
+
+. バックアップジョブを一時停止
++
+Windows ベースの SnapCenter Plug-in for VMware vSphere でバックアップジョブが実行されていないことを確認します。
+
+. SnapCenter Plug-in for VMware vSphere OVA を導入します。
++
+Linux ベースの SnapCenter VMware プラグインを新規にインストールするため、 OVA の導入手順に従います。
+
++
+link:scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html["SnapCenter Plug-in for VMware vSphere を導入"]
+
++
+link:scpivs44_post_deployment_required_operations_and_issues.html["導入後に必要な処理と問題"]
+
+. Windows ベースの VMware バックアップメタデータを移行する。
++
+link:scpivs44_migrate_from_snapcenter_backup_metadata_to_the_virtual_appliance.html["Windows ベースの SnapCenter VMware バックアップメタデータを移行する"]
+
+

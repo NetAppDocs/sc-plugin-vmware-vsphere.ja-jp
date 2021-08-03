@@ -1,0 +1,23 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unregister_plugin_from_vcenter.html 
+keywords:  
+summary:  
+---
+= vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+リンクモードの vCenter で SnapCenter VMware プラグインサービスを停止すると、リンクされている他の vCenter で SnapCenter VMware プラグインサービスが実行されていても、リンクされているすべての vCenter でリソースグループを使用できなくなります。
+
+SnapCenter VMware プラグイン拡張機能の手動登録を解除する必要があります。
+
+.手順
+. SnapCenter VMware プラグインサービスが停止しているリンクされた vCenter で、 Managed Object Reference （ MOB ）マネージャに移動します。
+. [ プロパティ ] オプションで、 [ 値 ] 列の [*content*] を選択し、次の画面で [ 値 ] 列の [*ExtensionManager*] を選択して、登録された内線番号のリストを表示します。
+. 拡張子 com.netapp.scvm.webclient` および com.netapp.aegis` の登録を解除します
+

@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade_from_netapp_data_broker.html 
+keywords:  
+summary:  
+---
+= NetApp のデータブローカーからのアップグレード
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 NetApp Data Broker 1.0 からアップグレードする必要があります。x から SnapCenter Plug-in for VMware vSphere へ。
+
+.作業を開始する前に
+* アップグレードする VM には 12GB の RAM が必要です。
+* アップグレードする VM の電源をオンにする必要があります。
+* アップグレード前に、 NetApp Data Broker を含む VM をバックアップすることを推奨します。
+
+
+アップグレードの基本的な手順は 3 つあります。
+
+. アップグレードを準備
+. アップグレード .ISO ファイルをダウンロードします。
+. アップグレードをインストールする。
++
+.. .ISO ファイルをデータストアにアップロードします。
+.. VM をデータストア内の .ISO ファイルに接続します。
+.. アップグレードを実行する。
+
+
+
+
+.手順
+. SnapCenter Plug-in for VMware vSphere を無効にしてアップグレードを準備します。
++
+.. NetApp Data Broker の管理 GUI にログインします。
++
+NetApp Data Broker を導入すると IP が表示されます。
+
+.. 左側のナビゲーションペインで [ 構成 ] をクリックし、 [ * プラグインの詳細 * ] セクションの [ サービス ] オプションをクリックしてプラグインを無効にします。
+
+
+. アップグレード .ISO ファイルをダウンロードします。
++
+.. ネットアップサポートサイト（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+.. 製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。
+.. SnapCenter Plug-in for VMware vSphere upgrade.ISO ファイルを任意の場所にダウンロードします。
+
+
+. アップグレードをインストールする。
++
+.. ブラウザから VMware vSphere vCenter にアクセスします。
+.. vCenter GUI で、 * vSphere Web Client （ HTML5 ） * をクリックします。
+.. VMware vCenter Single Sign-On * ページにログインします。
+.. Navigator ペインで、アップグレードする NetApp Data Broker VM をクリックし、 * Summary * タブをクリックします。
+.. [*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。
+.. 選択したデータストアの「 * ファイル * 」タブで、リスト内の任意のフォルダをクリックし、ストレージアイコン（ * データストアへのファイルのアップロード * ）をクリックします。
+.. アップグレードのポップアップ画面で '.iso ファイルをダウンロードした場所に移動し '.iso ファイルイメージをクリックしてから '*Open* をクリックします
++
+ファイルがデータストアにアップロードされます。
+
+.. アップグレードする NetApp Data Broker VM に移動し、 * Summary * タブをクリックします。
++
+[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
+
+.. [CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。
++
+image:scpivs44_image32.png["エラー：グラフィックイメージがありません"]
+
+.. ウィザードで、次の手順を実行します。
++
+Datastores カラムで '.iso ファイルをアップロードしたデータストアを選択します
+
++
+[Contents] 列で、アップロードした「 .iso 」ファイルに移動し、 [File Type] フィールドで [ISO IMAGE] が選択されていることを確認して、 [OK] をクリックします。
+
++
+フィールドに「接続済み」ステータスが表示されるまで待ちます。
+
+.. 仮想アプライアンスの [Summary] * タブにアクセスしてメンテナンスコンソールにログオンし、スタートアイコンをクリックしてメンテナンスコンソールを起動します。
+.. 「システム構成」に「 * 2 」と入力し、「アップグレード」に「 * 8 」と入力します。
+.. 「 * y * 」と入力してアップグレードを続行し、開始します。
+
+
+
+
+「 upgrade successful 」というメッセージが表示されると、システムはサービスの開始を試みます。
+
+. 「 Press Enter to continue 」というメッセージが表示されるまで待ち、 SnapCenter Plug-in for VMware vSphere 管理 GUI にログインします。
++
+IP アドレスは、以前の NetApp Data Broker のアドレスと同じです。
+
+. 「 * Plug-in Details * 」セクションで、 SnapCenter Plug-in for VMware vSphere サービスを有効にし、ステータスが「 Connected 」と表示されることを確認します。
+
+
+SnapCenter Plug-in for VMware vSphere を使用してアプリケーションベースのデータ保護をサポートしていて、プラグインが SnapCenter サーバと通信できない場合は、 SnapCenter SnapCenter GUI で、 [*Hosts] をクリックし、 [VMware ホスト ] をクリックして、 [*Push Server Credentials] をクリックします。

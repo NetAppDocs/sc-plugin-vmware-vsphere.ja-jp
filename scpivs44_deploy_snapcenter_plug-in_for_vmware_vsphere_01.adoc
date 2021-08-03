@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere を導入
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. ブラウザから VMware vSphere vCenter にアクセスします。
++
+
+NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。
+
+. VMware の画面で、 * vSphere Web Client （ HTML5 ） * をクリックし、 * VMware vCenter Single Sign-On ページ * にログインします。
+. データセンター、フォルダ、クラスタ、ホストなど、仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、 [OVF テンプレートの展開 *] を選択してウィザードを開始します。
+. [Select an OVF template*](OVF テンプレートの選択 ) ページで '.ova ファイルの場所 ( 次の表のとおり ) を指定し '[*Next*]( 次へ ) をクリックします
++
+|===
+| このウィザードのページ | 操作 
+
+
+| 名前とフォルダを選択します | VM または vApp の一意の名前を入力し、導入先を選択します。 
+
+
+| リソースを選択します | 導入した VM テンプレートを実行するリソースを選択します。 
+
+
+| 詳細を確認します | 「 .ova 」テンプレートの詳細を確認します。 
+
+
+| 使用許諾契約 | [I accept all license agreements * ] のチェックボックスをオンにします。 
+
+
+| ストレージを選択します | 導入した OVF テンプレートのファイルを保存する場所と方法を定義します。 
+
+
+| ネットワークを選択します | 送信元ネットワークを選択し、宛先ネットワークにマッピングします。 
+
+
+| テンプレートをカスタマイズします | 「既存の vCenter に登録」に vCenter クレデンシャルを入力します。Create SnapCenter Plug-in for VMware vSphere credentials * で、 SnapCenter Plug-in for VMware vSphere のクレデンシャルを入力します。* 注意： * 指定するユーザ名とパスワードを書き留めてください。SnapCenter Plug-in for VMware vSphere の設定をあとから変更する場合は、これらのクレデンシャルを使用する必要があります。[ ネットワークプロパティの設定 *] に、ネットワーク情報を入力します。* Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。 
+
+
+| 完了の準備が完了しました | ページを確認して、 [ 完了 ] をクリックします。 
+|===
++
+
+NOTE: すべてのホストに IP アドレスが設定されている必要があります（ FQDN ホスト名はサポートされません）。展開操作では、展開前に入力が検証されません。
+
+. SnapCenter Plug-in for VMware vSphere が導入されている VM に移動し、 * 概要 * タブをクリックして * 電源オン * ボックスをクリックして、 SnapCenter VMware プラグインを起動します。
+. SnapCenter VMware プラグインの電源をオンにした状態で、展開された SnapCenter VMware プラグインを右クリックし、 * ゲスト OS * を選択して、 * VMware Tools のインストール * をクリックします。
++
+導入が完了するまでに数分かかることがあります。導入が成功すると、 SnapCenter VMware プラグインの電源がオンになり、 VMware ツールがインストールされ、 SnapCenter VMware プラグインにログインするように求める画面が表示されます。
+
++
+画面に、 SnapCenter VMware プラグインが導入されている IP アドレスが表示されます。IP アドレスをメモします。SnapCenter の VMware プラグイン設定を変更する場合は、 SnapCenter の VMware プラグイン管理 GUI にログインする必要があります。
+
+. 導入ウィザードで指定したクレデンシャルを使用して、導入画面に表示された IP アドレスで SnapCenter VMware プラグイン管理 GUI にログインし、ダッシュボードで SnapCenter VMware プラグインが vCenter に正常に接続されて有効になっていることを確認します。
++
+管理 GUI にアクセスするには 'https://<appliance-IP-address>:8080` の形式を使用します
+
++
+デフォルトでは、メンテナンスコンソールのユーザ名は「 maint 」に設定され、パスワードは「 admin123 」に設定されます。
+
+. vCenter HTML5 クライアントにログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します
+

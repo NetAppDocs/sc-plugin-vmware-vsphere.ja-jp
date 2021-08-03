@@ -1,0 +1,26 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_view_vm_and_datastore_backups.html 
+keywords:  
+summary:  
+---
+= VM およびデータストアのバックアップを表示する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+VM またはデータストアのバックアップまたはリストアを準備しているときに、そのリソースのバックアップをすべて表示してその詳細を確認することができます。
+
+たとえば、サイズの大きなファイルフォルダを 10k ファイルフォルダなどで参照すると、最初の処理に 1 分以上かかることがあります。その後のブラウズセッションの所要時間が短縮されます。
+
+.手順
+. [*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 SnapCenter Plug-in for VMware vSphere のセクション * で [*Backups] をクリックします。
++
+image:scpivs44_image14.png["エラー：グラフィックイメージがありません"]
+
+. 表示するバックアップをクリックします。
+

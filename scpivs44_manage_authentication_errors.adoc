@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_authentication_errors.html 
+keywords:  
+summary:  
+---
+= 認証エラーを管理します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+管理者クレデンシャルを使用しないと、 SnapCenter Plug-in for VMware vSphere の導入後または移行後に認証エラーが発生する場合があります。認証エラーが発生した場合は、サービスを再起動する必要があります。
+
+.手順
+. 「 https://<OVA-IP-address>:8080.` 」の形式で、 SnapCenter VMware プラグイン管理 GUI にログオンします
+. サービスを再起動します。
+

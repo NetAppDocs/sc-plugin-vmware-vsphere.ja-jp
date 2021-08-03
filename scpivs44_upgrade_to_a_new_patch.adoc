@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade_to_a_new_patch.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere の同じリリースの新しいパッチにアップグレードします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。
+
+プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
+
+* vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
+* SnapCenter VMware 仮想アプライアンスを vCenter 1 に導入しました。その後、この SnapCenter VMware プラグインを新しい vCenter2 に登録しました。SnapCenter VMware プラグインの新しいインスタンスが、パッチを適用して vCenter1 に登録されます。ただし、パッチを適用しないで最初の SnapCenter VMware プラグインからのプラグインを vCenter1 にキャッシュしたままにしているため、キャッシュをクリアする必要があります。
+
+
+キャッシュは、サーバオペレーティングシステムのタイプに基づいて次の場所に格納されます。
+
+* Windows 用 vCenter Server
++
+C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity \`
+
+* vCenter Server Linux Appliance の略
++
+/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity / です
+
+* Windows OS の場合
++
+'%PROGRAMFILES%/vmware/vsphere Web Client/vc-packages/vsphere-client-serenity /`
+
+* Mac OS の場合
++
+/var/lib/vmware/vsphere-client/vsphere-client/vc-packages/vsphere-client-serenity /`
+
+
+
+
+
+=== キャッシュをクリアする手順
+
+. 「 vsphere-client-serenity 」フォルダを探し、「 com.netapp.scvm.webclient-4.2.0` 」フォルダを見つけて削除します。
++
+フォルダ名はリリースごとに変更されます。
+
+. vCenter Server を再起動します。
++
+その後、 SnapCenter VMware プラグインをアップグレードできます。
+
+

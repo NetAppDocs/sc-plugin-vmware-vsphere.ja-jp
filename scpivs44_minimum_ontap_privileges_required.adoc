@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_ontap_privileges_required.html 
+keywords:  
+summary:  
+---
+= 必要な最小 ONTAP 権限
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。
+
+すべての SnapCenter プラグインには、次の最小権限が必要です。
+
+|===
+| フルアクセスコマンド： ONTAP 8.3 以降で必要な最小権限 
+
+
+| event generate-autosupport-log を指定します 
+
+
+| job history show job stop コマンドを実行しました 
+
+
+| lun lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping remove-reporting-nodes lun mapping show lun modify lun move-in-volume LUN offline LUN online lun persistent-reservation clear lun resize lun serial lun show をクリックします 
+
+
+| snapmirror list-destinations snapmirror policy add-rule snapmirror policy modify -rule snapmirror policy show snapmirror restore snapmirror show -history snapmirror update snapmirror update-ls-set 
+
+
+| バージョン 
+
+
+| volume clone create volume clone show volume clone split start volume clone split stop volume create volume file clone create -volume file show-disk-usage volume online volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume snapshot create を実行します volume snapshot delete volume snapshot modify volume snapshot rename volume snapshot restore volume snapshot restore-file volume snapshot show volume unmount 
+
+
+| vserver cifs share create vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs show vserver export-policy vserver export-policy vserver export-policy vserver export-policy create vserver export-policy rule create vserver export-policy rule create vserver export-policy rule show vserver export-policy rule show vserver iscsi vserver iscsi vserver iscsi connection show vserver show network interface network interface failover-groups network interface show を実行します 
+|===
+|===
+| 読み取り専用コマンド： ONTAP 8.3 以降で必要な最小権限 
+
+
+| Vserver 
+|===
+
+
+=== ONTAP に関するその他の情報
+
+* ONTAP 8.2.x を実行している場合：
++
+SnapCenter Plug-in for VMware vSphere の処理を実行するための適切な権限を取得するには、 Storage VM の「 vsadmin 」としてログインする必要があります。
+
+* ONTAP 8.3 以降を実行している場合：
++
+「 vsadmin 」としてログインするか、上記の表に記載された最小権限を持つロールでログインする必要があります。
+
+

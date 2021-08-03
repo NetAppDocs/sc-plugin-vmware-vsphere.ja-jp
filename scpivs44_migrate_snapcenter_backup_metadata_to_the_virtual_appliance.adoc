@@ -1,0 +1,53 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html 
+keywords:  
+summary:  
+---
+= Windows ベースの SnapCenter VMware バックアップメタデータを移行する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Windows PowerShell コマンドレットを使用して、 SnapCenter VM と整合性のあるバックアップメタデータと SnapCenter アプリケーションと整合性のある仮想データバックアップメタデータを SnapCenter Plug-in for VMware vSphere 仮想アプライアンスに移行します。
+
+.手順
+. MySQL データベースをバックアップし、保持ポリシーによってそのバックアップを別の場所にコピーして移動し、削除されないようにします。
++
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします"]
+
+. VMware vSphere Web Client にログオンし、実行中のジョブがないことを確認します。
+. SnapCenter 管理者のユーザ名を使用して、 SnapCenter GUI にログオンします。
++
+原因で移行エラーが発生する可能性があるため、他のユーザ名を使用してログインしないでください。ユーザ名にすべての権限が割り当てられている場合も同様です。
+
+. Windows SnapCenter GUI の左ナビゲーションペインで、 * 設定 * をクリックし、 * 認証情報 * タブをクリックしてから、 * 追加 * をクリックして仮想アプライアンスの認証情報を追加します。
+. 「 Invoke-NaSCVOVAMigration 」コマンドレットで使用する Run As クレデンシャルの名前を作成します。
++
+
+NOTE: [Authentication] フィールドに [Linux] を選択する必要があります。
+
++
+この手順では、移行中に SnapCenter サーバが仮想アプライアンスにアクセスするために使用するクレデンシャルを追加します。
+
+. Windows PowerShell ウィンドウを開き、次のコマンドレットを実行します。
++
+「 Open-SmConnection 」
+
++
+「 Invoke-NaSCVOVMigration - SourceSCVHost <old-cve-host-ip>-DestinationSCVOVAHost <new-apply-ip>-OVACredential <apply-credentials> -byPassValidationCheck-Overwrite-ContinueMigrationOnStorageError - ScheduleOffsetTime<Time-offsetTime> 」のようになります
+
++
+マイグレーションワークフローの概要については、を参照してください link:scpivs44_migration_overview.html#migration_workflow["データ移行ワークフロー"]
+
+
+
+
+IMPORTANT: オプションの -Overwrite' パラメータを使用すると ' 大規模な環境での迅速な移行が可能になりますこのパラメータは、 SnapCenter Plug-in for VMware vSphere ホスト上の MySQL データベース内のデータを上書きします。-Overwrite パラメータを複数回使用しないでください移行が部分的な移行であった場合、もう一度 -Overwrite パラメータを使用すると、既存の移行済みデータが上書きされる可能性があります。「 -Overwrite 」パラメータを指定せずに「 Invoke-NaSCVOVAMigration 」を複数回実行した場合は、以前に移行したデータが複製されます。
+
+
+NOTE: ソース SnapCenter ホストとデスティネーション SnapCenter VMware 仮想アプライアンスホストが異なるタイムゾーンにある場合は、 ScheduleOffsetTime パラメータを使用します。スケジュールされたバックアップの実行時間を調整するには、正または負のオフセット時間を指定します。時間差を hh ： mm ： ss の形式で指定します。たとえば、 06 ： 00 ： 00 や、マイナスの値の場合は -06 ： 00 ： 00 ： 00 のように指定します。

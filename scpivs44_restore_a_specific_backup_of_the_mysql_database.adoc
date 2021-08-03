@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_a_specific_backup_of_the_mysql_database.html 
+keywords:  
+summary:  
+---
+= MySQL データベースの特定のバックアップをリストアします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+メンテナンスコンソールを使用して、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの MySQL データベース（ NSM データベース）の特定のバックアップをリストアできます。
+
+.手順
+. メンテナンスコンソールのウィンドウを開きます。
++
+link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console["メンテナンスコンソールにアクセスします"]。
+
+. メインメニューから、オプション * 1 ）「アプリケーションの設定 * 」を入力します。
+. [ アプリケーションの設定 ] メニューから、オプション *6 ）「 mysql backup and restore * 」と入力します。
+. MySQL Backup and Restore Configuration メニューで、オプション * 2 ） List MySQL backups * と入力し、リストアするバックアップをメモします。
+. MySQL Backup and Restore Configuration メニューから、オプション * 3 ） Restore MySQL backup * と入力します。
+. 「 Restore using the most recent backup 」というプロンプトが表示されたら、「 * n * 」と入力します。
+. 「 Backup to restore from 」というプロンプトで、バックアップ名を入力し、 *Enter* キーを押します。
++
+選択したバックアップの MySQL データベースが元の場所にリストアされます。
+
+

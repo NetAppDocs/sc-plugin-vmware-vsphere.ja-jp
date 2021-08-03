@@ -1,0 +1,65 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。
+
+SnapCenter を使用していて、 SnapCenter 4.2 にアップグレードし、アプリケーション over VMDK のバックアップを SnapCenter Plug-in for VMware に移行した場合は、移行コマンドによってプラグインが自動的に登録されます。
+
+.作業を開始する前に
+* SnapCenter サーバ 4.2 以降が実行されている必要があります。
+* SnapCenter Plug-in for VMware vSphere を導入して有効にしておく必要があります。
+
+
+.このタスクについて
+* SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録するには、 SnapCenter GUI を使用して「 vSphere 」タイプのホストを追加します。
++
+ポート 8144 は、 SnapCenter VMware プラグイン内の通信用に事前定義されています。
+
++
+SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ SnapCenter Server 4.2 に登録することで、 VM に対するアプリケーションベースのデータ保護処理をサポートできます。複数の SnapCenter Server に同じ SnapCenter Plug-in for VMware vSphere を登録することはできません。
+
+* リンクモードの vCenter の場合は、 vCenter ごとに SnapCenter Plug-in for VMware vSphere を登録する必要があります。
+
+
+.手順
+. SnapCenter GUI の左ナビゲーションペインで、 *Hosts* をクリックします。
+. 上部で [Managed Hosts] タブが選択されていることを確認し、仮想アプライアンスのホスト名を見つけて、 SnapCenter サーバから解決されることを確認します。
+. 「 * 追加」をクリックしてウィザードを開始します。
+. [Add Hosts] ダイアログ・ボックスで ' 次の表に示すように SnapCenter サーバに追加するホストを指定します
++
+|===
+| フィールド名 | 操作 
+
+
+| ホストタイプ | ホストのタイプとして「 * vsphere * 」を選択します。 
+
+
+| ホスト名 | 仮想アプライアンスの IP アドレスを確認します。 
+
+
+| クレデンシャル | 導入時に指定した SnapCenter VMware プラグインのユーザ名とパスワードを入力します。 
+|===
+. [Submit （送信） ] をクリックします。
++
+VM ホストが正常に追加されると、 [Managed Hosts] タブに表示されます。
+
+. 左側のナビゲーションペインで、 * 設定 * をクリックし、 * 資格情報 * タブをクリックして、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 仮想アプライアンスのクレデンシャルを追加するには、 * を追加します。
+. SnapCenter Plug-in for VMware vSphere の導入時に指定したクレデンシャル情報を入力します。
++
+
+NOTE: [Authentication] フィールドに [Linux] を選択する必要があります。
+
+
+
+SnapCenter Plug-in for VMware vSphere のクレデンシャルが変更された場合は、 SnapCenter の管理対象ホストページを使用して SnapCenter サーバで登録を更新する必要があります。

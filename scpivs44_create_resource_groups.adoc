@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_resource_groups.html 
+keywords:  
+summary:  
+---
+= リソースグループを作成する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. VMware vSphere Web Client の左側のナビゲーションペインで、 * リソースグループ * をクリックし、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 作成 * 。
+. リソースグループの作成ウィザードの各ページで必要な情報を入力し、リソースグループに含める VM とデータストアを選択してから、リソースグループに適用するバックアップポリシーを選択し、バックアップスケジュールを指定します。
+
+
+バックアップは、リソースグループに対して設定されたバックアップポリシーに従って実行されます。
+
+をクリックすると、 [* リソースグループ * ] ページからバックアップをオンデマンドで実行できます image:scpivs44_image38.png["エラー：グラフィックイメージがありません"] * 今すぐ実行 * 。

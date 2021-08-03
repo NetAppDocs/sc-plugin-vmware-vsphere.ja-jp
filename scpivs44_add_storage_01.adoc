@@ -1,0 +1,91 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage_01.html 
+keywords:  
+summary:  
+---
+= ストレージを追加します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+VM をバックアップまたはリストアする前に、ストレージクラスタまたは Storage VM を追加する必要があります。ストレージを追加すると、 SnapCenter Plug-in for VMware vSphere が vCenter でバックアップとリストアの処理を認識して管理できるようになります。
+
+* 使用する GUI
++
+VMware vSphere Web Client を使用してストレージを追加します。
+
+* サイズの大きい LUN
++
+SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模な LUN の場合、 SnapCenter ではレイテンシを回避するためにシックプロビジョニング LUN のみがサポートされます。
+
+
+
+ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter は、同時に同期する必要があります。ストレージを追加しようとしても、 vCenter の時刻設定が同期されていないと、 Java 証明書エラーが表示されて処理が失敗することがあります。
+
+SnapCenter VMware プラグインは、直接接続された Storage VM と Storage クラスタ内の Storage VM でバックアップおよびリストア処理を実行します。
+
+
+NOTE: SnapCenter VMware プラグインを使用して VMDK 上のアプリケーションベースのバックアップをサポートしている場合は、 SnapCenter の GUI を使用してストレージクレデンシャルを入力し、ストレージシステムを登録する必要があります。
+
+* リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。
+* Storage VM の名前は管理 LIF に解決できる必要があります。
++
+SnapCenter で Storage VM 名に etc ホストエントリを追加した場合は、それらのエントリが仮想アプライアンスからも解決できることを確認する必要があります。
+
++
+管理 LIF に解決できない名前の Storage VM を追加すると、プラグインがその Storage VM 上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、 Storage VM を SnapCenter に追加して管理 LIF を指定するか、 Storage VM を含むクラスタを追加してクラスタ管理 LIF を指定してください。
+
+* ストレージクレデンシャルは、 SnapCenter VMware プラグインの複数のインスタンス間、または Windows SnapCenter Server と vCenter 上の SnapCenter プラグイン間で共有されません。
+
+
+.手順
+. vSphere Web Client の左側のナビゲーションペインで、 * ストレージシステム * をクリックします。
+. ストレージシステムページで、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 追加 * 。
++
+image:scpivs44_image12.png["エラー：グラフィックイメージがありません"]
+
+. Add Storage System * ウィザードで、次の表に示す基本的な Storage VM またはクラスタ情報を入力します。
++
+|===
+| フィールド名 | 操作 
+
+
+| ストレージシステム | ストレージクラスタまたは Storage VM の FQDN または IP アドレスを入力してください。SnapCenter VMware プラグインは、異なるクラスタ上で同じ名前のストレージシステムを複数サポートしていません。SnapCenter でサポートされる各ストレージシステムには、一意のデータ LIF IP アドレスが必要です。 
+
+
+| プラットフォーム | プラットフォームを選択します。 
+
+
+| ユーザ名 | Storage VM へのログオンに使用する ONTAP ユーザ名を入力します。 
+
+
+| パスワード | Storage VM のログオンパスワードを入力します。 
+
+
+| プロトコル | ストレージプロトコルを選択します。 
+
+
+| ポート | ポート 443 （デフォルト）またはポート 80 を選択して vCenter と通信します。 
+
+
+| タイムアウト | vCenter が処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です 
+
+
+| 優先 IP | Storage VM に複数の管理 IP アドレスがある場合は、このチェックボックスをオンにして、 SnapCenter で使用する IP アドレスを入力します。* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
+
+
+| SnapCenter サーバイベントを syslog に記録します | SnapCenter VMware プラグインのイベントをログに記録するチェックボックスをオンにします。 
+
+
+| 処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します | 失敗したデータ保護ジョブに関する AutoSupport 通知を有効にする場合は、このチェックボックスをオンにします。また、 Storage VM で AutoSupport を有効にし、 AutoSupport E メールを設定する必要があります。 
+|===
+. [ 追加（ Add ） ] をクリックします。
++
+ストレージクラスタを追加すると、そのクラスタ内のすべての Storage VM が自動的に追加されます。自動的に追加された Storage VM （「暗黙的な」 Storage VM とも呼ばれます）は、クラスタのサマリーページに、ユーザ名ではなくハイフン（ - ）で表示されます。ユーザ名は、明示的なストレージエンティティに対してのみ表示されます。
+
+

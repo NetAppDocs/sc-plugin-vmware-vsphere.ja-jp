@@ -1,0 +1,39 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_job_logs.html 
+keywords:  
+summary:  
+---
+= ジョブログをダウンロードします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ジョブログは、 SnapCenter VMware vSphere Web Client のダッシュボードのジョブモニタタブからダウンロードできます。
+
+VMware vSphere Web Client の使用中に予期しない動作が発生した場合は、ログファイルを使用して原因を特定し、問題を解決できます。
+
+
+NOTE: ジョブおよびジョブメッセージは 90 日間保持されます。設定した保持期間よりも古いジョブログは、 6 時間ごとにパージされます。このスケジュールは変更できません。
+
+.手順
+. vSphere Web Client の左側のナビゲーションペインで、 * Dashboard * をクリックし、 vCenter Server を選択して * Job Monitor * タブをクリックします。
++
+image:scpivs44_image9.png["エラー：グラフィックイメージがありません"]
+
+. をクリックします image:scpivs44_image37.png["エラー：グラフィックイメージがありません"] ジョブモニタのタイトルバーにあるダウンロードアイコン。
++
+場合によっては、右にスクロールしないとアイコンが表示されないことがあります。
+
++
+ジョブをダブルクリックして [ ジョブの詳細 ] ウィンドウにアクセスし、 [ ジョブログのダウンロード ] をクリックすることもできます。
+
+
+
+ジョブログは、 SnapCenter VMware プラグインが導入されている Linux VM ホスト上にあります。デフォルトのジョブ・ログの場所は /var/log/mNetApp です
+
+ジョブログをダウンロードしようとしたが、エラーメッセージに示された名前のログファイルが削除されている場合は、「 HTTP error 500 problem access/export-sv -logs 」というエラーが表示される可能性があります。このエラーを修正するには、という名前のファイルのファイルアクセスステータスと権限をエラーメッセージで確認し、アクセスの問題を修正します。

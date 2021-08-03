@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_how_to_configure_ontap_rbac_for_snapcenter_plug-in_for_vmware_vsphere.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere 用に ONTAP RBAC を設定する方法
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。
+
+ONTAP RBAC を SnapCenter VMware プラグインで使用する場合は、ストレージシステムで RBAC を設定する必要があります。ONTAP で次のタスクを実行する必要があります。
+
+* ロールを 1 つ作成します。
++
+http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2Fhome.html["ONTAP 9 管理者認証と RBAC パワーガイド"^]
+
+* ONTAP で、ロールのユーザ名とパスワード（ストレージシステムクレデンシャル）を作成します。
++
+このストレージシステムのクレデンシャルは、 SnapCenter VMware プラグイン用にストレージシステムを設定するために必要です。プラグインにクレデンシャルを入力します。これらのクレデンシャルを使用してストレージシステムにログインすると、クレデンシャルの作成時に ONTAP で設定した SnapCenter 機能が表示されます。
+
+
+
+管理者ログインまたは root ログインを使用すればすべての SnapCenter タスクにアクセスすることができますが、 ONTAP の RBAC 機能を使用して、権限を制限したカスタムアカウントをいくつか作成することを推奨します。
+
+詳細については、を参照してください link:scpivs44_minimum_ontap_privileges_required.html["必要な最小 ONTAP 権限"^]。

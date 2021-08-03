@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_ontap_rbac_features_in_snapcenter.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere の ONTAP RBAC 機能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+NOTE: ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。
+
+ONTAP の RBAC を使用すると、特定のストレージシステムへのアクセスとそれらのストレージシステムで実行できる操作を制御できます。SnapCenter VMware プラグインは、 vCenter Server RBAC 、 SnapCenter RBAC （アプリケーションベースの処理をサポートする必要がある場合）、および ONTAP RBAC と連携して、特定のストレージシステムのオブジェクトに対して特定のユーザが実行できる SnapCenter タスクを決定します。
+
+SnapCenter は、ユーザが設定したクレデンシャル（ユーザ名とパスワード）を使用して各ストレージシステムを認証し、そのストレージシステムで実行できる操作を決定します。SnapCenter VMware プラグインは、ストレージシステムごとに 1 組のクレデンシャルを使用します。このクレデンシャルに基づいて、そのストレージシステムで実行できるすべてのタスクが決まります。つまり、このクレデンシャルは SnapCenter のクレデンシャルであり、個々の SnapCenter ユーザに対するものではありません。
+
+ONTAP RBAC は、ストレージシステムへのアクセス、および VM のバックアップなどのストレージに関連する SnapCenter タスクの実行にのみ適用されます。それぞれのストレージシステムに対する適切な ONTAP RBAC 権限がないと、そのストレージシステムでホストされる vSphere オブジェクトに対してタスクを実行することはできません。
+
+各ストレージシステムには、一連の ONTAP 権限が関連付けられます。
+
+ONTAP RBAC と vCenter Server RBAC の両方を使用すると、次のような利点があります。
+
+* セキュリティ
++
+どのユーザがどのタスクを実行できるかを、 vCenter Server オブジェクトレベルおよびストレージシステムレベルで制御できます。
+
+* 監査情報
++
+多くの場合、 SnapCenter はストレージシステムについての監査証跡を提供します。これにより、ストレージに対して変更を行った vCenter ユーザまでさかのぼってイベントを追跡できます。
+
+* 使いやすさ
++
+コントローラのクレデンシャルを集約して一元管理できます。
+
+

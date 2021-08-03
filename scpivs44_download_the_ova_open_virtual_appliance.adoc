@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_the_ova_open_virtual_appliance.html 
+keywords:  
+summary:  
+---
+= OVA （ Open Virtual Appliance ）をダウンロードする
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「 .ova 」ファイルには、 VM およびデータストアデータ保護用の一連のマイクロサービスが含まれています。これらは、 SnapCenter Plug-in for VMware vSphere によって実行されます
+
+
+IMPORTANT: ダウンロード・プロセスでは ' 既存の CV.ova ファイルはチェックされませんしたがって、ダウンロードする前に、 vCenter 上に他の「 CV.ova 」ファイルが存在していないことを確認する必要があります。
+
+. ネットアップサポートサイト（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+. 製品のリストから、「 SnapCenter Plug-in for VMware vSphere * 」を選択し、「最新リリースをダウンロード」ボタンをクリックします。
+. SnapCenter Plug-in for VMware vSphere の .ova ファイルを任意の場所にダウンロードします。
+

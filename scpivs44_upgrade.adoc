@@ -1,0 +1,70 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade.html 
+keywords:  
+summary:  
+---
+= アップグレード
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。
+
+
+
+== サポートされているアップグレードパス
+
+を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"] サポートされるアップグレードパスと移行パスについては、を参照してください。
+
+
+
+== 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
+
+
+TIP: アップグレードを開始する前に、 SnapCenter Plug-in for VMware vSphere OVA をバックアップします。
+
+.手順
+. SnapCenter Plug-in for VMware vSphere を無効にしてアップグレードを準備します。
++
+.. SnapCenter Plug-in for VMware vSphere の管理 GUI にログインします。IP は、 SnapCenter VMware プラグインを導入するときに表示されます。
+.. 左側のナビゲーションペインで * Configuration * をクリックし、次に Plug-in Details セクションの * Service * オプションをクリックしてプラグインを無効にします。
+
+
+. アップグレードの「 .iso 」ファイルをダウンロードします。
++
+.. ネットアップサポートサイトにログインします。 (https://mysupport.netapp.com/products/index.html)[]。
+.. 製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。
+.. SnapCenter Plug-in for VMware vSphere アップグレードの「 .iso 」ファイルを任意の場所にダウンロードしてください。
+
+
+. アップグレードをインストールする。
++
+.. ブラウザから VMware vSphere vCenter にアクセスします。
+.. vCenter GUI で、 * vSphere Web Client （ HTML ） * をクリックします。
+.. VMware vCenter Single Sign-On * ページにログインします。
+.. [Navigator] ペインで、アップグレードする VM をクリックし、 [*Summary*] タブをクリックします。
+.. [*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。
+.. 選択したデータストアの「 * ファイル * 」タブで、リスト内の任意のフォルダをクリックし、「 * ファイルのアップロード * 」をクリックします。
+.. アップロードポップアップ画面で '.iso ファイルをダウンロードした場所に移動し '.iso ファイルイメージをクリックしてから '*Open* をクリックしますファイルがデータストアにアップロードされます。
+.. アップグレードする VM に移動し、 * Summary * タブをクリックします。[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
+.. [CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。
++
+image:scpivs44_image42.png["エラー：グラフィックイメージがありません"]
+
+.. ウィザードで、次の手順を実行します。
++
+... Datastores カラムで '.iso ファイルをアップロードしたデータストアを選択します
+... [Contents] 列で、アップロードした「 .iso 」ファイルに移動し、 [File Type] フィールドで [ISO IMAGE] が選択されていることを確認して、 [OK] をクリックします。フィールドに「接続済み」ステータスが表示されるまで待ちます。
+
+
+.. 仮想アプライアンスの [Summary] * タブにアクセスしてメンテナンスコンソールにログオンし、緑のラン矢印をクリックしてメンテナンスコンソールを起動します。
+.. 「システム構成」に「 * 2 」と入力し、「アップグレード」に「 * 8 」と入力します。
+.. 「 * y * 」と入力してアップグレードを続行し、開始します。
+
+
+

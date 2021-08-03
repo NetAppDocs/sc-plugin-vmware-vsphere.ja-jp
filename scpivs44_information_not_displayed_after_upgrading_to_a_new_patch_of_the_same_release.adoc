@@ -1,0 +1,64 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html 
+keywords:  
+summary:  
+---
+= 同じリリースの新しいパッチにアップグレードしたあとに情報が表示されない
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチにアップグレードすると、ダッシュボードとジョブモニタに最近のジョブやその他の情報が表示されないことがあります。
+
+同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。
+
+プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
+
+* vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
+* SnapCenter VMware 仮想アプライアンスを vCenter 1 に導入しました。その後、この SnapCenter VMware プラグインを新しい vCenter2 に登録しました。SnapCenter VMware プラグインの新しいインスタンスが、パッチを適用して vCenter1 に登録されます。ただし、パッチを適用しないで最初の SnapCenter VMware プラグインからのプラグインを vCenter1 にキャッシュしたままにしているため、キャッシュをクリアする必要があります。
+
+
+キャッシュは、サーバオペレーティングシステムのタイプに基づいて次の場所に格納されます。
+
+* Windows 用 vCenter Server
++
+C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity \`
+
+* vCenter Server Linux Appliance の略
++
+/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity / です
+
+* Windows OS の場合
++
+'%PROGRAMFILES%/vmware/vsphere Web Client/vc-packages/vsphere-client-serenity /`
+
+
+
+
+
+=== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
+
+. SnapCenter VMware プラグインの管理 GUI にログインします。
++
+IP は、 SnapCenter VMware プラグインを導入するときに表示されます。
+
+. 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを無効にします。
++
+SnapCenter VMware プラグインサービスが無効になり、 vCenter で登録解除されます。
+
+. 「 vsphere-client-serenity 」フォルダを探し、「 com.netapp.scvm.webclient-4.2.0` 」フォルダを見つけて削除します。
++
+フォルダ名はリリースごとに変更されます。
+
+. vCenter Server を再起動します。
+. VMware vSphere Web Client にログインします。
+. 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを有効にします。
++
+SnapCenter の VMware プラグインサービスが有効になり、拡張機能が vCenter に登録されます。
+
+

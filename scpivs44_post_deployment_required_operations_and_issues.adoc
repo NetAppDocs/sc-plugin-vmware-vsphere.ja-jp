@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_post_deployment_required_operations_and_issues.html 
+keywords:  
+summary:  
+---
+= 導入後に必要な処理と問題
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+== 導入後に必要な処理
+
+* 新しい SnapCenter ユーザ
++
+新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください link:scpivs44_add_storage_01.html["ストレージを追加します"^]。
+
+* 既存の SnapCenter ユーザ
++
+既存の SnapCenter を使用している場合は、既存の SnapCenter VM とデータストアのバックアップとメタデータを移行する必要があります。移行の詳細については、を参照してください link:scpivs44_migrate.html#migration-options.html["移行オプション"^]。
+
+
+
+
+
+== 発生する可能性がある導入の問題
+
+* 仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。
++
+** IPv4 を実行していて、 SnapCenter VMware vSphere ホスト用の IP アドレスが 2 つある。その結果、ジョブ要求は SnapCenter サーバで認識されない IP アドレスに送信されます。この問題を無効にするには、次のように、使用する IP アドレスを追加します。
++
+... SnapCenter VMware プラグインが導入されている場所（ /opt/NetApp/scvservice/standalone_aegis /etc ）に移動します
+... ファイル network - interface.properties を開きます。
+... 「 network.interface=10.10.10.10` 」フィールドに、使用する IP アドレスを追加します。
+
+
+** NIC が 2 つあります。
+
+
+* SnapCenter VMware プラグインを導入したあとに、 vCenter for SnapCenter Plug-in for VMware vSphere で MOB エントリに古いバージョン番号が表示されることがあります。これは、 vCenter で他のジョブが実行されているときに発生することがあります。vCenter は最終的にこのエントリを更新します。
+* Virtual Storage Console for VMware vSphere （ VSC ）が以前にインストールされていた VM の導入後またはアップグレード後に、次の状況が発生することがあります。
++
+** マウント、アンマウント、接続、接続解除の各処理に関する説明がある右クリックメニューが表示されません。
+** VMware vSphere Web Client の GUI がマニュアルと一致しない。
+** ダッシュボードが正しく表示されない。
+** 通常の使用中に、ページ表示（リソースグループページなど）が停止したり、ロードが停止したりすることがあります。
+
+
+
+
+これらの問題を解決するには、次の手順を実行します。
+
+. ブラウザキャッシュをクリアし、 GUI が正しく動作しているかどうかを確認します。
++
+問題が解決しない場合は、 VMware vSphere Web Client Service を再起動します
+
++
+image:scpivs44_image5.png["エラー：グラフィックイメージがありません"]
+
+. vCenter にログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します。
+
+
+
+
+== 認証エラーを管理します
+
+管理者クレデンシャルを使用しないと、 SnapCenter Plug-in for VMware vSphere の導入後または移行後に認証エラーが発生する場合があります。認証エラーが発生した場合は、サービスを再起動する必要があります。
+
+.手順
+. 「 https://<appliance-IP-address>:8080` 」の形式で、 SnapCenter VMware プラグイン管理 GUI にログオンします。
+. サービスを再起動します。
+
+
+
+
+== バックアップを移行するためのクレデンシャルの作成
+
+SnapCenter を使用していて、 VM と整合性のあるバックアップ、 VM とクラッシュ整合性のあるバックアップ、またはアプリケーションと整合性のある仮想データのバックアップを使用している場合は、それらのバックアップを SnapCenter Plug-in for VMware vSphere に移行する必要があります。移行の前に、 SnapCenter VMware プラグインのクレデンシャルを SnapCenter サーバに追加する必要があります。
+
+.作業を開始する前に
+* SnapCenter サーバ 4.2 以降が実行されている必要があります。
+* SnapCenter Plug-in for VMware vSphere を導入して有効にしておく必要があります。
+
+
+.手順
+. SnapCenter GUI の左ナビゲーションペインで、 * 設定 * をクリックします。
+. [ 設定 ] ページで、 [*Credentials] をクリックし、 [*New*] をクリックしてウィザードを開始します。
+. 次の表に示すクレデンシャル情報を入力します。
+
+
+|===
+| フィールド名 | 操作 
+
+
+| クレデンシャル名 | クレデンシャルの名前を入力します。 
+
+
+| ユーザ名 | SnapCenter Plug-in for VMware vSphere の導入時に指定したユーザ名を入力します。 
+
+
+| パスワード | SnapCenter Plug-in for VMware vSphere の導入時に指定したパスワードを入力します。 
+
+
+| 認証 | 「 * Linux * 」を選択します。 
+|===
+
+
+== SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録
+
+SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。
+
+SnapCenter を使用していて、 SnapCenter 4.2 にアップグレードし、アプリケーション over VMDK のバックアップを SnapCenter Plug-in for VMware に移行した場合は、移行コマンドによってプラグインが自動的に登録されます。
+
+.作業を開始する前に
+* SnapCenter サーバ 4.2 以降が実行されている必要があります。
+* SnapCenter Plug-in for VMware vSphere を導入して有効にしておく必要があります。
+
+
+.このタスクについて
+* SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録するには、 SnapCenter GUI を使用して「 vSphere 」タイプのホストを追加します。
++
+ポート 8144 は、 SnapCenter VMware プラグイン内の通信用に事前定義されています。
+
++
+SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ SnapCenter Server 4.2 に登録することで、 VM に対するアプリケーションベースのデータ保護処理をサポートできます。複数の SnapCenter Server に同じ SnapCenter Plug-in for VMware vSphere を登録することはできません。
+
+* リンクモードの vCenter の場合は、 vCenter ごとに SnapCenter Plug-in for VMware vSphere を登録する必要があります。
+
+
+.手順
+. SnapCenter GUI の左ナビゲーションペインで、 *Hosts* をクリックします。
+. 上部で [Managed Hosts] タブが選択されていることを確認し、仮想アプライアンスのホスト名を見つけて、 SnapCenter サーバから解決されることを確認します。
+. 「 * 追加」をクリックしてウィザードを開始します。
+. [Add Hosts] ダイアログ・ボックスで ' 次の表に示すように SnapCenter サーバに追加するホストを指定します
++
+|===
+| フィールド名 | 操作 
+
+
+| ホストタイプ | ホストのタイプとして「 * vsphere * 」を選択します。 
+
+
+| ホスト名 | 仮想アプライアンスの IP アドレスを確認します。 
+
+
+| クレデンシャル | 導入時に指定した SnapCenter VMware プラグインのユーザ名とパスワードを入力します。 
+|===
+. [Submit （送信） ] をクリックします。
++
+VM ホストが正常に追加されると、 [Managed Hosts] タブに表示されます。
+
+. 左側のナビゲーションペインで、 * 設定 * をクリックし、 * 資格情報 * タブをクリックして、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 仮想アプライアンスのクレデンシャルを追加するには、 * を追加します。
+. SnapCenter Plug-in for VMware vSphere の導入時に指定したクレデンシャル情報を入力します。
++
+
+NOTE: [Authentication] フィールドに [Linux] を選択する必要があります。
+
+
+
+SnapCenter Plug-in for VMware vSphere のクレデンシャルが変更された場合は、 SnapCenter の管理対象ホストページを使用して SnapCenter サーバで登録を更新する必要があります。

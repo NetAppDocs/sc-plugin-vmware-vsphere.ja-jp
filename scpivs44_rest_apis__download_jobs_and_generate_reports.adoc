@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
+keywords:  
+summary:  
+---
+= REST API を使用してジョブをダウンロードし、レポートを生成できます
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブのレポートを生成し、ログをダウンロードするには、 VMware vSphere の REST API 呼び出しを使用する必要があります。これらの REST API は、 SnapCenter Plug-in for VMware vSphere 4.4 で追加されています。
+
+各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
+
+SnapCenter Plug-in for VMware vSphere 4.4 以降では、ジョブに関する詳細情報を取得するために、ジョブセクションの次の REST API を使用します。
+
+|===
+| REST API | コメント 
+
+
+| 「 /4.1/jobs 」 | 「すべてのジョブを取得」は、複数のジョブのジョブ詳細を取得します。「 backup 」、「 mountBackup 」、「 re store 」などのジョブタイプを指定することで、リクエストの範囲を絞り込むことができます。 
+
+
+| `/4.1/jobs/{id}` | 「ジョブの詳細を取得」では、指定したジョブの詳細情報を取得します。 
+|===
+ジョブセクションの次の REST API を使用して、ジョブログをダウンロードします。
+
+|===
+| REST API | コメント 
+
+
+| `/4.1/jobs/{id}/logs' | getJobLogsById は ' 指定したジョブのログをダウンロードします 
+|===
+レポートセクションの次の REST API を使用して、レポートを生成します。
+
+|===
+| REST API | コメント 
+
+
+| 「 4.1/reports/protectedVM' 」を参照してください | 「 Get Protected VM List 」は、過去 7 日間に保護された VM のリストを取得します。 
+
+
+| 「 /4.1/reports/unProtectedVM 」 | 「 Get Unprotected VM List 」は、過去 7 日間に保護されていない VM のリストを取得します。 
+|===

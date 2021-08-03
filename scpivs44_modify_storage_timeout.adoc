@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_storage_timeout.html 
+keywords:  
+summary:  
+---
+= 設定されているストレージタイムアウトを変更します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+以前にバックアップが正常に実行されていたとしても、 SnapCenter Plug-in for VMware vSphere がストレージシステムの待機時間が設定されたタイムアウト時間を超えると、バックアップが失敗することがあります。この状況が発生した場合は、設定されているタイムアウト値を大きくすることができます。
+
+「 Unable to discover resources on SCV ： Unable to get storage details for datastore <xxx> …」というエラーが表示されることがあります
+
+.手順
+. VMware vSphere Web Client で、 * Storage Systems * をクリックします。
+. Storage Systems （ストレージ・システム）ページで、変更するストレージ・システムを選択し、 * Edit （編集） * をクリックします。
+. [ タイムアウト ] フィールドで、秒数を増やします。
++
+
+TIP: 大規模な環境では 180 秒を推奨します。
+
+

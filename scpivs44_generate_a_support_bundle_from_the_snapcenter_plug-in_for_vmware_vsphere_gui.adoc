@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere GUI からサポートバンドルを生成
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere の管理 GUI にログオンするには、 IP アドレスとログインクレデンシャルが必要です。
+
+* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
+* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
+
+
+.手順
+. SnapCenter Plug-in for VMware vSphere GUI にログインします。
++
+「 https://<OVA-IP-address>:8080` 」の形式を使用します。
+
+. 上部のツールバーの [ 設定 ] アイコンをクリックします。
++
+image:scpivs44_image10.png["エラー：グラフィックイメージがありません"]
+
+. [ * 設定 * ] ページの [ * サポート * ] セクションで、 [ * サポート * バンドルの生成 ] をクリックします。
+. サポートバンドルが生成されたら、表示されたリンクをクリックしてネットアップにバンドルをダウンロードします。
+

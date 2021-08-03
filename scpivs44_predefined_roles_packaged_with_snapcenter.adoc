@@ -1,0 +1,42 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html 
+keywords:  
+summary:  
+---
+= SnapCenter Plug-in for VMware vSphere に組み込みの事前定義のロール
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+vCenter Server RBAC の使用を簡単にするため、 SnapCenter VMware プラグインには、ユーザに SnapCenter タスクの実行を許可する一連の事前定義されたロールが用意されています。また、タスクの実行を制限し、 SnapCenter 情報の表示のみを許可する読み取り専用ロールもあります。
+
+事前定義されたロールには、タスクを正しく完了するために必要な SnapCenter 固有の権限と vCenter Server 標準の権限の両方が含まれています。また、サポートされるどのバージョンの vCenter Server でも必要な権限が付与されています。
+
+管理者は、これらのロールを適切なユーザに割り当てることができます。
+
+これらのロールは、 vCenter Web Client Service の再起動やインストールの変更を行うたびに、 SnapCenter VMware プラグインによってデフォルト値（初期の権限セット）に戻ります。SnapCenter VMware プラグインをアップグレードすると、事前定義されたロールは、そのバージョンのプラグインと連携するように自動的にアップグレードされます。
+
+次の表に示すように、 vCenter GUI で事前定義されたロールを表示するには、 * メニュー > 管理 > ロール * をクリックします。
+
+|===
+| ロール | 説明 
+
+
+| SCV 管理者 | すべての SnapCenter Plug-in for VMware vSphere タスクを実行するために必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。 
+
+
+| SCV バックアップ | vSphere オブジェクト（仮想マシンおよびデータストア）のバックアップに必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。ユーザには、 configure 権限へのアクセス権もあります。ユーザはバックアップからリストアできません。 
+
+
+| SCV ゲストファイルのリストア | ゲストファイルおよびフォルダのリストアに必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。ユーザは VM または VMDK をリストアできません。 
+
+
+| SCV Restore （ SCV リストア） | SnapCenter VMware プラグインを使用してバックアップした vSphere オブジェクトのリストア、およびゲストファイルとフォルダのリストアに必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。ユーザには、 configure 権限へのアクセス権もあります。vSphere オブジェクトはバックアップできません。 
+
+
+| SCV ビュー | すべての SnapCenter VMware プラグインのバックアップ、リソースグループ、およびポリシーへの読み取り専用アクセスが許可されます。 
+|===

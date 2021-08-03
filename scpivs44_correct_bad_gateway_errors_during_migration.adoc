@@ -1,0 +1,32 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_correct_bad_gateway_errors_during_migration.html 
+keywords:  
+summary:  
+---
+= 移行中の「 Bad Gateway 」エラーを修正します
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+「 Bad Gateway 」エラーが発生する理由はいくつかあります。
+
+
+
+=== シナリオ 1
+
+SnapCenter Plug-in for VMware vSphere にファイルやその他のコンテンツを手動で追加し、移行を試みた。このシナリオでは、アプライアンスに移行プロセス用の十分なスペースがありません。
+
+このエラーを修正するには、手動で追加したファイルをすべて削除します。
+
+
+
+=== シナリオ 2
+
+SnapCenter Plug-in for VMware vSphere の接続が停止されたか、または移行中にサービスが停止されました。
+
+移行プロセス中は、 SnapCenter Plug-in for VMware vSphere の接続ステータスが「 Connected 」になっている必要があります。仮想アプライアンスのタイムアウト設定を手動で更新することもできます。

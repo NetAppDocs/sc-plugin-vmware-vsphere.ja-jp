@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html 
+keywords:  
+summary:  
+---
+= リソースグループに 1 つの VM またはデータストアを追加する
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere で管理されている既存のリソースグループに、単一の VM またはデータストアを簡単に追加することができます。
+
+SAN データストアと NAS データストアは追加できますが、 VSAN データストアまたは VVOL データストアは追加できません。
+
+.手順
+. VMware vSphere Web Client GUI で、ツールバーの * Menu * をクリックし、追加する VM またはデータストアに移動します。
+. 左側のナビゲーションペインで、 VM またはデータストアを右クリックし、ドロップダウンリストから * NetApp SnapCenter * を選択して、セカンダリドロップダウンリストから * リソースグループに追加 * を選択します。
++
+最初に、選択した VM が配置されているストレージシステムが SnapCenter で管理されているかどうかが確認され、次にリソースグループに追加 * ページが表示されます。「 SnapCenter Compatibility Error 」というメッセージが表示された場合は、選択した VM に SnapCenter との互換性がないため、最初に適切な Storage VM を SnapCenter に追加する必要があります。
+
+. [ リソースグループに追加 ] ページで、リソースグループを選択し、 [OK] をクリックします。
++
+OK をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。
+
++
+「選択された仮想マシンは SnapCenter と互換性がない」または「選択されたデータストアは SnapCenter と互換性がありません」というメッセージが表示される場合、選択された VM またはデータストアは SnapCenter と互換性がありません。を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理します"] を参照してください。
+
+

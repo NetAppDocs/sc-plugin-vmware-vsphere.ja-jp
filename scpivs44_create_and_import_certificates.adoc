@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_and_import_certificates.html 
+keywords:  
+summary:  
+---
+= 証明書を作成してインポートします
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter VMware プラグインは、 SSL 暗号化を使用してクライアントブラウザとのセキュアな通信を確立します。これにより、ネットワーク全体で暗号化されたデータを使用できるようになりますが、新しい自己署名証明書を作成するか、独自の認証局（ CA ）インフラストラクチャまたはサードパーティの CA を使用して、証明書が環境に固有のものであることが保証されます。
+
+を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_and_or_import_an_SSL_certificate_to_SnapCenter_Plug-in_for_VMware_vSphere_(SCV)["技術情報アーティクル：「 How to create or import an SSL certificate to SnapCenter Plug-in for VMware vSphere"]。

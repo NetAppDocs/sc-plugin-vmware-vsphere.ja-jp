@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_storage_systems.html 
+keywords:  
+summary:  
+---
+= ストレージシステムを管理
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware vSphere Web Client を使用して VM やデータストアをバックアップまたはリストアするには、ストレージを追加する必要があります。
+
+
+
+== Storage VM を変更します
+
+VMware vSphere Web Client を使用して、 SnapCenter Plug-in for VMware vSphere に登録されているクラスタおよび Storage VM の構成を変更し、 VM のデータ保護処理に使用できます。
+
+クラスタの一部として自動的に追加された Storage VM （暗黙的な Storage VM とも呼ばれます）を変更すると、その Storage VM は明示的な Storage VM に変更され、そのクラスタ内の残りの Storage VM を変更することなく個別に削除できます。Storage Systems ページでは、暗黙的な Storage VM の場合、ユーザ名が "-" と表示されます。ユーザ名はクラスタリスト内の明示的な Storage VM に対してのみ表示され、 ExpicitSVM フラグは true に設定されています。すべての Storage VM は、関連付けられたクラスタの下に常に表示されます。
+
+
+IMPORTANT: SnapCenter の GUI を使用してアプリケーションベースのデータ保護処理用に Storage VM を追加した場合は、追加した Storage VM を変更するために同じ GUI を使用する必要があります。
+
+.手順
+. VMware vSphere Web Client の左側のナビゲータペインで、 * ストレージシステム * をクリックします。
+. [* ストレージシステム * ] ページで、変更する Storage VM を選択し、をクリックします image:scpivs44_image25.png["エラー：グラフィックイメージがありません"] * 編集 * 。
+. [Edit Storage System*]( ストレージ・システムの編集 ) ウィンドウで新しい値を入力し '[*Update*]( アップデート ) をクリックして変更を適用します
++
+image:scpivs44_image26.png["エラー：グラフィックイメージがありません"]
+
+
+
+
+
+== Storage VM の名前を変更します
+
+VM をリソースグループに追加したあとに名前を変更すると、 SnapCenter Plug-in for VMware vSphere が名前ではなく VM UUID に対応しているため、リソースページに新しい名前が表示されないことがあります。
+
+リソースページに新しい VM の名前が表示されるようにするには、次の手順を実行します。
+
+. リソースグループを編集して VM を削除する。
+. VM の名前を変更します。
+. リソースグループに VM を再度追加します。
+
+
+
+
+== Storage VM を削除します
+
+VMware vSphere Web Client を使用して、 vCenter のインベントリから Storage VM を削除できます。
+
+
+NOTE: SnapCenter の GUI を使用してアプリケーションベースのデータ保護処理用に Storage VM を追加した場合は、追加した Storage VM を変更するために同じ GUI を使用する必要があります。
+
+Storage VM を削除する前に、 Storage VM 内のすべてのデータストアをアンマウントする必要があります。
+
+削除する Storage VM に存在するバックアップがリソースグループに含まれていると、そのリソースグループのそれ以降のバックアップは失敗します。
+
+.手順
+. VMware vSphere Web Client の左側のナビゲータペインで、 * ストレージシステム * をクリックします。
+. [* ストレージシステム * ] ページで、削除する Storage VM を選択し、 [ * 削除 ] をクリックします。
+. [ ストレージ・システムの削除 ] 確認ボックスで '[ ストレージ・システムの削除 *] のチェックボックスをオンにし '[ はい *] をクリックして確定します
+. 削除した Storage VM が ESXi 6.7 Server で管理されていた場合は、 Web Client Service を再起動する必要があります。
++
+link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["VMware vSphere Web Client Service を再起動します"]。
+
+
