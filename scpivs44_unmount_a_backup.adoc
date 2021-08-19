@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_unmount_a_backup.html 
 keywords:  
-summary:  
+summary: データストア内のファイルにアクセスする必要がなくなった場合は、バックアップをアンマウントできます。 
 ---
 = バックアップをアンマウント
 :hardbreaks:

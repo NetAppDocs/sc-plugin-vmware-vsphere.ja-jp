@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_job_logs.html 
 keywords:  
-summary:  
+summary: ジョブログは、 SnapCenter VMware vSphere Web Client のダッシュボードのジョブモニタタブからダウンロードできます。 
 ---
 = ジョブログをダウンロードします
 :hardbreaks:

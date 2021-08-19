@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_policies.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere のバックアップポリシーを作成、変更、表示、適用解除、および削除できます。データ保護処理を実行するにはポリシーが必要です。 
 ---
 = ポリシーを管理する
 :hardbreaks:

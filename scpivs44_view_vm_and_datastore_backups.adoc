@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_view_vm_and_datastore_backups.html 
 keywords:  
-summary:  
+summary: VM またはデータストアのバックアップまたはリストアを準備しているときに、そのリソースのバックアップをすべて表示してその詳細を確認することができます。 
 ---
 = VM およびデータストアのバックアップを表示する
 :hardbreaks:

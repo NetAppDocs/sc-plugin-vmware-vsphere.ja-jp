@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere で管理されている既存のリソースグループに、単一の VM またはデータストアを簡単に追加することができます。 
 ---
 = リソースグループに 1 つの VM またはデータストアを追加する
 :hardbreaks:

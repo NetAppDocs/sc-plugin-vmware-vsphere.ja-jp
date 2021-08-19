@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用してリソースグループの作成や変更の処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。 
 ---
 = REST API のワークフローを使用して、リソースグループを作成および変更できます
 :hardbreaks:

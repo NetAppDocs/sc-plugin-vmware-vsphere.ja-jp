@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflow__back_up_on_demand.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用してオンデマンドでバックアップ処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。 
 ---
 = REST API ワークフローを使用してオンデマンドでバックアップ
 :hardbreaks:
@@ -13,7 +13,7 @@ summary:
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用してオンデマンドでバックアップ処理を実行するには、次の表に示す REST API 呼び出しの所定の順序に従う必要があります。
+SnapCenter Plug-in for VMware vSphere REST API を使用してオンデマンドでバックアップ処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 

@@ -43,7 +43,14 @@ NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox �
 | ネットワークを選択します | 送信元ネットワークを選択し、宛先ネットワークにマッピングします。 
 
 
-| テンプレートをカスタマイズします | 「既存の vCenter に登録」に vCenter クレデンシャルを入力します。Create SnapCenter Plug-in for VMware vSphere credentials * で、 SnapCenter Plug-in for VMware vSphere のクレデンシャルを入力します。* 注意： * 指定するユーザ名とパスワードを書き留めてください。SnapCenter Plug-in for VMware vSphere の設定をあとから変更する場合は、これらのクレデンシャルを使用する必要があります。[ ネットワークプロパティの設定 *] に、ネットワーク情報を入力します。* Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。 
+| テンプレートをカスタマイズします  a| 
+「既存の vCenter に登録」に vCenter クレデンシャルを入力します。Create SnapCenter Plug-in for VMware vSphere credentials * で、 SnapCenter Plug-in for VMware vSphere のクレデンシャルを入力します。
+
+
+NOTE: 指定するユーザ名とパスワードを書き留めます。SnapCenter Plug-in for VMware vSphere の設定をあとから変更する場合は、これらのクレデンシャルを使用する必要があります。
+
+[ ネットワークプロパティの設定 *] に、ネットワーク情報を入力します。* Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。
+
 
 
 | 完了の準備が完了しました | ページを確認して、 [ 完了 ] をクリックします。 

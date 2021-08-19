@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_add_storage_01.html 
 keywords:  
-summary:  
+summary: ストレージを追加すると、 SnapCenter Plug-in for VMware vSphere が vCenter でバックアップとリストアの処理を認識して管理できるようになります。 
 ---
 = ストレージを追加します
 :hardbreaks:

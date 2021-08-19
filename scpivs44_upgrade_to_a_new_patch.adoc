@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade_to_a_new_patch.html 
 keywords:  
-summary:  
+summary: 同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere の同じリリースの新しいパッチにアップグレードします
 :hardbreaks:

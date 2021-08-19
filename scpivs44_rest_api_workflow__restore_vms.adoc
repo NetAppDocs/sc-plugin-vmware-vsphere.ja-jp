@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflow__restore_vms.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップのリストア処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。 
 ---
 = VM をリストアするための REST API のワークフロー
 :hardbreaks:
@@ -13,7 +13,7 @@ summary:
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用して VM のバックアップのリストア処理を実行するには、次の表に示す規定の REST API 呼び出し順序に従う必要があります。
+SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップのリストア処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 
@@ -33,5 +33,13 @@ SnapCenter Plug-in for VMware vSphere REST API を使用して VM のバック�
 | 4. | `/4.1/vm/{moref}/backups/availableesxhosts` | Get Available ESX Hosts （利用可能な ESX ホストの取得）は ' バックアップが保存されているホストの情報を取得します入手可能な EsxHostsList* 情報に注意してください。 
 
 
-| 5. | `/4.1/vm/{moref}/backups/{backupid}/restore` | 「バックアップから VM をリストア」を実行すると、指定したバックアップがリストアされます。ステップ 3 と 4 の情報を *restoreLocations* 属性に渡します* 注： * 仮想マシンのバックアップが部分的なバックアップの場合は、「 restartVM 」パラメータを「 false 」に設定してください。* 注： * テンプレートの VM はリストアできません。 
+| 5. | `/4.1/vm/{moref}/backups/{backupid}/restore`  a| 
+「バックアップから VM をリストア」を実行すると、指定したバックアップがリストアされます。ステップ 3 と 4 の情報を *restoreLocations* 属性に渡します
+
+
+NOTE: VM のバックアップが部分的なバックアップの場合は、「 restartVM 」パラメータを「 false 」に設定します。
+
+
+NOTE: テンプレートである VM はリストアできません。
+
 |===

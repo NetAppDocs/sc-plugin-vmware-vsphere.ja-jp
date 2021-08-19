@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_from_backups_overview.html 
 keywords:  
-summary:  
+summary: プライマリバックアップまたはセカンダリバックアップから VM 、 VMDK 、ファイル、およびフォルダをリストアできます。 
 ---
 = 概要
 :hardbreaks:

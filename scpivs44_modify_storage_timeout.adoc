@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_storage_timeout.html 
 keywords:  
-summary:  
+summary: 以前にバックアップが正常に実行されていたとしても、 SnapCenter Plug-in for VMware vSphere がストレージシステムの待機時間が設定されたタイムアウト時間を超えると、バックアップが失敗することがあります。この状況が発生した場合は、設定されているタイムアウト値を大きくすることができます。 
 ---
 = 設定されているストレージタイムアウトを変更します
 :hardbreaks:

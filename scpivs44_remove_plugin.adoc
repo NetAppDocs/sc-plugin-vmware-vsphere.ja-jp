@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_remove_plugin.html 
 keywords:  
-summary:  
+summary: SnapCenter のデータ保護機能を使用する必要がなくなった場合は、 SnapCenter VMware プラグインを無効にして vCenter から登録を解除し、 vCenter から SnapCenter VMware プラグインを削除して、残りのファイルを手動で削除する必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere を削除します
 :hardbreaks:

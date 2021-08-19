@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_mount_a_backup.html 
 keywords:  
-summary:  
+summary: バックアップ内のファイルにアクセスする必要がある場合は、バックアップからデータストアをマウントできます。バックアップは、バックアップが作成された ESXi ホストにも、同じタイプの VM およびホスト構成を使用する代替 ESXi ホストにもマウントできます。データストアはホストに複数回マウントできます。 
 ---
 = バックアップをマウント
 :hardbreaks:

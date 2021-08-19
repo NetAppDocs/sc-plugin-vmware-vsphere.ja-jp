@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_vms_from_backups.html 
 keywords:  
-summary:  
+summary: VM をリストアする際に、選択したバックアップコピーで既存の内容を上書きしたり、 VM のコピーを作成したりできます。 
 ---
 = バックアップから VM をリストアする
 :hardbreaks:

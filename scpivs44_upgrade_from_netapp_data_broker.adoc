@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade_from_netapp_data_broker.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 NetApp Data Broker 1.0.x から SnapCenter Plug-in for VMware vSphere にアップグレードする必要があります。 
 ---
 = NetApp のデータブローカーからのアップグレード
 :hardbreaks:
@@ -13,7 +13,7 @@ summary:
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 NetApp Data Broker 1.0 からアップグレードする必要があります。x から SnapCenter Plug-in for VMware vSphere へ。
+SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 NetApp Data Broker 1.0.x から SnapCenter Plug-in for VMware vSphere にアップグレードする必要があります。
 
 .作業を開始する前に
 * アップグレードする VM には 12GB の RAM が必要です。

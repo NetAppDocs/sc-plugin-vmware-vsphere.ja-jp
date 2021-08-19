@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html 
 keywords:  
-summary:  
+summary: Windows ベースの SnapCenter VMware プラグインを使用していて、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの機能を使用する場合は、仮想アプライアンスを導入してバックアップメタデータを移行する必要があります。 
 ---
 = Windows ベースの SnapCenter Plug-in for VMware vSphere から移行する
 :hardbreaks:

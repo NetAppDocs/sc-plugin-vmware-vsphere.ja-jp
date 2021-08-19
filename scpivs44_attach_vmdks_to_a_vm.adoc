@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_attach_vmdks_to_a_vm.html 
 keywords:  
-summary:  
+summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり、同じ ESXi ホストの別の VM に接続したり、同じ vCenter またはリンクモードの別の vCenter で管理されている代替 ESXi ホストの別の VM に接続したりできます。 
 ---
 = VM に VMDK を接続する
 :hardbreaks:

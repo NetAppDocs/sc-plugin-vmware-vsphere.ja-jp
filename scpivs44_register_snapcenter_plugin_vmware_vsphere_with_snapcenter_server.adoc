@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html 
 keywords:  
-summary:  
+summary: SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。
 
 SnapCenter を使用していて、 SnapCenter 4.2 にアップグレードし、アプリケーション over VMDK のバックアップを SnapCenter Plug-in for VMware に移行した場合は、移行コマンドによってプラグインが自動的に登録されます。

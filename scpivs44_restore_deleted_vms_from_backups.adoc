@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_deleted_vms_from_backups.html 
 keywords:  
-summary:  
+summary: データストアのプライマリバックアップまたはセカンダリバックアップから削除した VM を、選択した ESXi ホストにリストアすることができます。 
 ---
 = バックアップから削除した VM をリストアする
 :hardbreaks:

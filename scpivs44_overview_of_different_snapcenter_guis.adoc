@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM 、 VMDK 、およびデータストアのバックアップ処理とリストア処理のすべてについて、 vCenter で VMware vSphere Web Client GUI を使用する必要があります。 
 ---
 = 各種 SnapCenter GUI の概要
 :hardbreaks:
@@ -12,7 +12,8 @@ summary:
 :imagesdir: ./media/
 
 
-SnapCenter 環境では、次の表に示すように、適切な GUI を使用してデータ保護処理と管理処理を実行する必要があります。
+[role="lead"]
+SnapCenter 環境では、適切な GUI を使用して、データ保護と管理の処理を実行する必要があります。
 
 SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM 、 VMDK 、およびデータストアのバックアップ処理とリストア処理のすべてについて、 vCenter で VMware vSphere Web Client GUI を使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。その他すべての SnapCenter プラグイン（アプリケーションベースのプラグイン）については、 SnapCenter GUI を使用してバックアップとリストアの処理とジョブ監視を行います。
 

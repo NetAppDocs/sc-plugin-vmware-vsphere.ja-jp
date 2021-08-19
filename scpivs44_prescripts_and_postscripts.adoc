@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_prescripts_and_postscripts.html 
 keywords:  
-summary:  
+summary: カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトにより、データ保護ジョブの前後の処理を自動化できます。 
 ---
 = プリスクリプトとポストスクリプト
 :hardbreaks:

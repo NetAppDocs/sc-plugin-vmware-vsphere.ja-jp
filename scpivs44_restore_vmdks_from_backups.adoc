@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_vmdks_from_backups.html 
 keywords:  
-summary:  
+summary: プライマリまたはセカンダリバックアップから、既存の VMDK をリストアしたり、削除または分離された VMDK をリストアしたりできます。 
 ---
 = バックアップから VMDK をリストアする
 :hardbreaks:

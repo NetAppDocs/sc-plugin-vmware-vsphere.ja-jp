@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html 
 keywords:  
-summary:  
+summary: SnapCenter VMware プラグインには、 MySQL データベース（ NSM データベース）が含まれています。このデータベースには、プラグインによって実行されるすべてのジョブのメタデータが含まれています。このリポジトリは定期的にバックアップする必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします
 :hardbreaks:

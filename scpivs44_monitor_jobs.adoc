@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_monitor_jobs.html 
 keywords:  
-summary:  
+summary: VMware vSphere Web Client を使用してデータ保護処理を実行したら、ダッシュボードのジョブモニタタブでジョブのステータスを監視し、ジョブの詳細を確認できます。 
 ---
 = ジョブを監視する
 :hardbreaks:

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migration_overview.html 
 keywords:  
-summary:  
+summary: 移行コマンドでメタデータを移行できるのは、 SnapCenter 4.0 以降のみです。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。 
 ---
 = データ移行の概要
 :hardbreaks:

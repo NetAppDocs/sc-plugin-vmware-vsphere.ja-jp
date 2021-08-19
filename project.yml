@@ -196,7 +196,6 @@ sidebar:
     - title: REST API を使用して、停止したジョブを失敗としてマークします
       url: "/scpivs44_rest_apis_fail_stuck_jobs.html"
   - title: アップグレード
-    url: "/scpivs44_upgrade.html"
     entries:
     - title: 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
       url: "/scpivs44_upgrade.html"
@@ -205,10 +204,9 @@ sidebar:
     - title: 同じリリースの新しいパッチにアップグレードしたあとに情報が表示されない
       url: "/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html"
   - title: 移動
-    url: "/scpivs44_migrate.html"
     entries:
-    - title: 移行オプション
-      url: "/scpivs44_migrate.html#migration-options"
+    - title: 移行オプションとサポートされるパス
+      url: "/scpivs44_migrate.html"
     - title: データ移行の概要
       url: "/scpivs44_migration_overview.html"
     - title: 移行の前提条件

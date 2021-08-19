@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html 
 keywords:  
-summary:  
+summary: SnapCenter Windows PowerShell コマンドレットを使用して、 SnapCenter VM と整合性のあるバックアップメタデータと SnapCenter アプリケーションと整合性のある仮想データバックアップメタデータを SnapCenter Plug-in for VMware vSphere 仮想アプライアンスに移行します。 
 ---
 = Windows ベースの SnapCenter VMware バックアップメタデータを移行する
 :hardbreaks:

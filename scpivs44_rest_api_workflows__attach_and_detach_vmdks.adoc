@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMDK の接続処理と接続解除処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。 
 ---
 = VMDK を接続および接続解除する REST API のワークフロー
 :hardbreaks:
@@ -32,7 +32,12 @@ VMDK を接続するワークフローは次のとおりです。
 | 3. | `/4.1/vm/{moref}/backups/{backupid}/vmdklocations` | 「 Get VMDK Locations 」は、指定された VM の VMDK のリストを取得します。手順 2 の * backupid * と手順 1 の * moref * を渡します。*vmdkLocationsList* 情報に注意してください。 
 
 
-| 4. | `/4.1/vm/{moref}/attachvmdks` | 「 VMDK の接続」では、指定した VMDK を元の VM に接続します。手順 2 の * backupid * と手順 1 の * moref * を渡します。* vmdkLocationList * を手順 3 から * vmdkLocations * 属性に渡します。* 注： VMDK を別の VM に接続するには、ターゲット VM の MORef を alternateVmMoref 属性に渡します。 
+| 4. | `/4.1/vm/{moref}/attachvmdks`  a| 
+「 VMDK の接続」では、指定した VMDK を元の VM に接続します。手順 2 の * backupid * と手順 1 の * moref * を渡します。* vmdkLocationList * を手順 3 から * vmdkLocations * 属性に渡します。
+
+
+NOTE: VMDK を別の VM に接続するには、 alternateVmMoref 属性で、ターゲット VM の MORef を渡します。
+
 |===
 VMDK を接続解除するには、次のワークフローを実行します。
 

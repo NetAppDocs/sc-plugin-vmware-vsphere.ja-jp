@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_release_notes.html 
 keywords:  
-summary:  
+summary: リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。 
 ---
 = リリースノート
 :hardbreaks:
@@ -12,7 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
-リリースノートでは、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報を記載しています。 ドキュメントの更新や修正が必要です。詳細については、を参照してください
+リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。詳細については、を参照してください
 
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2873358["『 SnapCenter Plug-in for VMware vSphere 4.4 Release Notes 』を参照してください"^]
 * https://library.netapp.com/ecm/ecm_download_file/ECMLP2877232["SnapCenter Plug-in for VMware vSphere 4.5 リリースノート"^]

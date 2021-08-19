@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_post-migration.html 
 keywords:  
-summary:  
+summary: バックアップメタデータを SnapCenter Plug-in for VMware vSphere に移行したあとに問題が発生することがあります。 
 ---
 = 移行後
 :hardbreaks:
@@ -11,6 +11,9 @@ summary:
 :linkattrs: 
 :imagesdir: ./media/
 
+
+[role="lead"]
+バックアップメタデータを SnapCenter Plug-in for VMware vSphere に移行したあとに問題が発生することがあります。
 
 * 移行ログバンドル
 +

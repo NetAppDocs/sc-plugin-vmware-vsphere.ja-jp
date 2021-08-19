@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_create_and_import_certificates.html 
 keywords:  
-summary:  
+summary: SnapCenter VMware プラグインは、 SSL 暗号化を使用してクライアントブラウザとのセキュアな通信を確立します。これにより、ネットワーク全体で暗号化されたデータを使用できるようになりますが、新しい自己署名証明書を作成するか、独自の認証局（ CA ）インフラストラクチャまたはサードパーティの CA を使用して、証明書が環境に固有のものであることが保証されます。 
 ---
 = 証明書を作成してインポートします
 :hardbreaks:

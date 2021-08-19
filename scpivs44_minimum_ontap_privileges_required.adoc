@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_minimum_ontap_privileges_required.html 
 keywords:  
-summary:  
+summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。 
 ---
 = 必要な最小 ONTAP 権限
 :hardbreaks:

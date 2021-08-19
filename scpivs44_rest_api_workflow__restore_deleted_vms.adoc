@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflow__restore_deleted_vms.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップのリストア処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。 
 ---
 = 削除した VM をリストアするための REST API のワークフロー
 :hardbreaks:
@@ -13,7 +13,7 @@ summary:
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用して VM のバックアップのリストア処理を実行するには、次の表に示す規定の REST API 呼び出し順序に従う必要があります。
+SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップのリストア処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 

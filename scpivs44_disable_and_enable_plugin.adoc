@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_disable_and_enable_plugin.html 
 keywords:  
-summary:  
+summary: SnapCenter のデータ保護機能が不要になった場合は、 SnapCenter VMware プラグインの設定を変更する必要があります。たとえば、テスト環境にプラグインを導入した場合は、その環境で SnapCenter 機能を無効にして、本番環境で有効にする必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere を無効にして有効にします
 :hardbreaks:

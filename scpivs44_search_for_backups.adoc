@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_search_for_backups.html 
 keywords:  
-summary:  
+summary: リストアウィザードを使用して、 VM またはデータストアの特定のバックアップを検索して見つけることができます。バックアップが見つかったら、リストアできます。 
 ---
 = バックアップを検索します
 :hardbreaks:

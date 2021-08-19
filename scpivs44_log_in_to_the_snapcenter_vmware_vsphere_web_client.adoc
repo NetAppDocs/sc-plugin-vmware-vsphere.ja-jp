@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere を導入すると、 vCenter に VMware vSphere Web クライアントがインストールされます。このクライアントは、他の vSphere Web クライアントとともに vCenter の画面に表示されます。 
 ---
 = SnapCenter VMware vSphere Web Client にログインします
 :hardbreaks:

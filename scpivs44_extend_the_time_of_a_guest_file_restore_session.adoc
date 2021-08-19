@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html 
 keywords:  
-summary:  
+summary: 'デフォルトでは、接続されているゲストファイルリストア VMDK は 24 時間利用可能で、自動的に接続解除されます。[Guest Configuration] ページで時間を延長できます。' 
 ---
 = ゲストファイルリストアセッションの時間を延長します
 :hardbreaks:

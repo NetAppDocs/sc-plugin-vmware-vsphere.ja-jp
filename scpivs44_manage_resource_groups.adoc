@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_resource_groups.html 
 keywords:  
-summary:  
+summary: バックアップリソースグループを作成、変更、削除し、リソースグループに対してバックアップ処理を実行することができます。 
 ---
 = リソースグループの管理
 :hardbreaks:

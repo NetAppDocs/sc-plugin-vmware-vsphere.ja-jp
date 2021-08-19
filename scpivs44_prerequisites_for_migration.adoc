@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_prerequisites_for_migration.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere に移行する前に、すべての前提条件が完了していることを確認してください。 
 ---
 = 移行の前提条件
 :hardbreaks:
@@ -11,6 +11,9 @@ summary:
 :linkattrs: 
 :imagesdir: ./media/
 
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere に移行する前に、すべての前提条件が完了していることを確認してください。
 
 * SnapCenter サーバ 4.2 以降が実行されている必要があります。
 * Admin クレデンシャルを使用する必要があります。

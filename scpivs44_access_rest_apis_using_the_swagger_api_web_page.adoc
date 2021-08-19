@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
 keywords:  
-summary:  
+summary: REST API は Swagger Web ページから利用できます。Swagger Web ページにアクセスして SnapCenter サーバまたは SnapCenter Plug-in for VMware vSphere REST API を表示したり、 API 呼び出しを手動で問題したりできます。SnapCenter Plug-in for VMware vSphere REST API を使用して、 VM とデータストアに対して保護処理を実行できます。 
 ---
 = Swagger API Web ページから REST API にアクセスします
 :hardbreaks:

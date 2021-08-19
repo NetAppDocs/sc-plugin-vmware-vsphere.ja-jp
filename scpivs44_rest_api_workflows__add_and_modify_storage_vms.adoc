@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__add_and_modify_storage_vms.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere REST API を使用して Storage VM の追加や変更の処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。 
 ---
 = Storage VM を追加および変更する REST API ワークフロー
 :hardbreaks:

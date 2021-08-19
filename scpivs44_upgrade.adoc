@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。 
 ---
-= アップグレード
+= 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -15,15 +15,7 @@ summary:
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。
 
-
-
-== サポートされているアップグレードパス
-
-を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"] サポートされるアップグレードパスと移行パスについては、を参照してください。
-
-
-
-== 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
+を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"] サポートされているアップグレードパスの詳細については、を参照
 
 
 TIP: アップグレードを開始する前に、 SnapCenter Plug-in for VMware vSphere OVA をバックアップします。

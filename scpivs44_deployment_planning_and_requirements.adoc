@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_deployment_planning_and_requirements.html 
 keywords:  
-summary:  
+summary: 仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。 
 ---
 = 導入の計画と要件
 :hardbreaks:
@@ -12,6 +12,7 @@ summary:
 :imagesdir: ./media/
 
 
+[role="lead"]
 仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の 4 つの表に示します。
 
 
@@ -182,7 +183,13 @@ vCenter 管理者アカウントには、次の表に示す vCenter 権限が必
 | SnapCenter Plug-in for VMware vSphere を導入して vCenter に登録 | 拡張子：拡張子を登録します 
 
 
-| SnapCenter Plug-in for VMware vSphere をアップグレードまたは削除します | 内線番号の更新 * 内線番号の登録解除 
+| SnapCenter Plug-in for VMware vSphere をアップグレードまたは削除します  a| 
+内線番号
+
+* 拡張機能を更新します
+* 拡張機能を登録解除します
+
+
 
 
 | SnapCenter に登録された vCenter Credential ユーザアカウントに、 SnapCenter Plug-in for VMware vSphere へのユーザアクセスが検証されるようにします | sessions.validate.session 

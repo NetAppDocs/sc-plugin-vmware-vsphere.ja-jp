@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_post_deployment_required_operations_and_issues.html 
 keywords:  
-summary:  
+summary: SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。 
 ---
 = 導入後に必要な処理と問題
 :hardbreaks:

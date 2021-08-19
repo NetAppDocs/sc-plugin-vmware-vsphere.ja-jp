@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_your_configuration.html 
 keywords:  
-summary:  
+summary: vCenter のクレデンシャル、仮想アプライアンスのクレデンシャル、バックアップのタイムゾーンなどの仮想アプライアンス設定は、 SnapCenter Plug-in for VMware vSphere の管理 GUI を使用して更新する必要があります。 
 ---
 = 構成を管理します
 :hardbreaks:
@@ -45,7 +45,7 @@ image:scpivs44_image28.jpg["エラー：グラフィックイメージがあり�
 
 
 
-== SnapCenter Plug-in for VMware vSphere のログオンクレデンシャルを変更します
+== ログオン資格情報を変更します
 
 SnapCenter Plug-in for VMware vSphere の管理 GUI でログオンクレデンシャルを変更できます。
 
@@ -73,7 +73,7 @@ image:scpivs44_image28.jpg["エラー：グラフィックイメージがあり�
 
 
 
-== SnapCenter Plug-in for VMware vSphere で vCenter ログオンクレデンシャルを変更します
+== vCenter のログオンクレデンシャルを変更します
 
 SnapCenter Plug-in for VMware vSphere で設定されている vCenter ログオンクレデンシャルを変更できます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
 
