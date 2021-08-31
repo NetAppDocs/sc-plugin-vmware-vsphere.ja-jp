@@ -31,9 +31,10 @@ sidebar:
       url: scpivs44_deployment_workflow_for_new_users.html
     - title: 既存ユーザ向けの導入ワークフロー
       url: "/scpivs44_deployment_workflow_for_existing_users.html"
-    - title: 導入の計画と要件
-      url: "/scpivs44_deployment_planning_and_requirements.html"
+    - title: SCV の導入要件
       entries:
+      - title: 導入の計画と要件
+        url: "/scpivs44_deployment_planning_and_requirements.html"
       - title: 必要な最小 ONTAP 権限
         url: "/scpivs44_minimum_ontap_privileges_required.html"
     - title: SnapCenter Plug-in for VMware vSphere OVA （オープン仮想アプライアンス）のダウンロード
