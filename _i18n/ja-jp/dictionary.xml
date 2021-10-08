@@ -816,7 +816,6 @@
   <block id="096ea6f3f334f93dc0a0d1a707e8a4cf" category="doc">ジョブログをダウンロードします</block>
   <block id="1cf921151e2b781f9ff5584eb19ef88f" category="paragraph">ジョブログは、 SnapCenter VMware vSphere Web Client のダッシュボードのジョブモニタタブからダウンロードできます。</block>
   <block id="b8229c937e584671584740a3427c438b" category="paragraph">VMware vSphere Web Client の使用中に予期しない動作が発生した場合は、ログファイルを使用して原因を特定し、問題を解決できます。</block>
-  <block id="6142b1cb089843396d93263ac0866500" category="admonition">ジョブおよびジョブメッセージは 90 日間保持されます。設定した保持期間よりも古いジョブログは、 6 時間ごとにパージされます。このスケジュールは変更できません。</block>
   <block id="b5eccb33a6e9fc43167e135ae64e8e47" category="paragraph"><block ref="b5eccb33a6e9fc43167e135ae64e8e47" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c3d0386263532e580416a5dbd1d0745e" category="list-text">をクリックします <block ref="a67ddb5fca578f4d04d131713a74724b" category="inline-image-macro-rx" type="image"></block> ジョブモニタのタイトルバーにあるダウンロードアイコン。</block>
   <block id="1101d50ae81430281bce448efa2ea34a" category="paragraph">場合によっては、右にスクロールしないとアイコンが表示されないことがあります。</block>
@@ -1985,4 +1984,5 @@
   <block id="67a580fa6b9be72db53618ccd5526438" category="summary">SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブのジョブ ID を検索するには、 VMware vSphere の REST API 呼び出しを使用する必要があります。</block>
   <block id="5498cf6a89c35bb5ae9ee180679222d5" category="cell">6.5U2,</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">SCV の導入要件</block>
+  <block id="828dbe7f137dada7be8096dcd488c334" category="admonition">保持ジョブのログのデフォルト値は 30 日で、保持ジョブのデフォルト値は 90 日です。設定した保持期間よりも古いジョブログとジョブは、 6 時間ごとにパージされます。パージスケジュールは変更できません。</block>
 </blocks>
