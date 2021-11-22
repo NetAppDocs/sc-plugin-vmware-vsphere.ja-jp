@@ -157,10 +157,18 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | ポートのタイプ | 事前設定されたポート 
 
 
-| SnapCenter Plug-in for VMware vSphere のポート | 8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。注：ポート設定は変更できません。 
+| SnapCenter Plug-in for VMware vSphere のポート  a| 
+8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。
 
 
-| VMware vSphere vCenter Server のポート | 443 （ HTTPS ）： SnapCenter Plug-in for VMware vSphere と vCenter 間の通信に使用されます。双方向のポートを使用します。 
+NOTE: ポート設定は変更できません。
+
+
+
+| VMware vSphere vCenter Server のポート | VVOL VM を保護する場合はポート 443 を使用する必要があります。 
+
+
+| ストレージクラスタまたは Storage VM ポート | 443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。 
 |===
 
 

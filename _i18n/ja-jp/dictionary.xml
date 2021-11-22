@@ -1298,9 +1298,7 @@
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">ポートのタイプ</block>
   <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">事前設定されたポート</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">SnapCenter Plug-in for VMware vSphere のポート</block>
-  <block id="36e5cc5b4b4a18a57e38d80baa6dc2e0" category="cell">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。注：ポート設定は変更できません。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server のポート</block>
-  <block id="f5da94ad50f99b8a0c0be1cfb1d3790d" category="cell">443 （ HTTPS ）： SnapCenter Plug-in for VMware vSphere と vCenter 間の通信に使用されます。双方向のポートを使用します。</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">サポートされる構成</block>
   <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">各プラグインインスタンスでサポートされる vCenter Server は 1 つだけです。リンクモードの vCenter がサポートされます。次の図に示すように、複数のプラグインインスタンスで同じ SnapCenter サーバをサポートできます。</block>
   <block id="5dbdd6963b505190acf4e98b57729d40" category="paragraph"><block ref="5dbdd6963b505190acf4e98b57729d40" category="inline-image-macro-rx" type="image"></block></block>
@@ -1985,4 +1983,9 @@
   <block id="5498cf6a89c35bb5ae9ee180679222d5" category="cell">6.5U2,</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">SCV の導入要件</block>
   <block id="828dbe7f137dada7be8096dcd488c334" category="admonition">保持ジョブのログのデフォルト値は 30 日で、保持ジョブのデフォルト値は 90 日です。設定した保持期間よりも古いジョブログとジョブは、 6 時間ごとにパージされます。パージスケジュールは変更できません。</block>
+  <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。</block>
+  <block id="edf66412620aee2fc1760a6bbf31b9a3" category="admonition">ポート設定は変更できません。</block>
+  <block id="f069cda10b1931aae12abc5d5844fcfd" category="cell">VVOL VM を保護する場合はポート 443 を使用する必要があります。</block>
+  <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">ストレージクラスタまたは Storage VM ポート</block>
+  <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。</block>
 </blocks>
