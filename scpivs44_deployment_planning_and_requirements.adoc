@@ -13,7 +13,7 @@ summary: 仮想アプライアンスを導入する前に、導入要件を確�
 
 
 [role="lead"]
-仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の 4 つの表に示します。
+仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入の要件を次の 5 つの表に示します。
 
 
 
@@ -41,6 +41,13 @@ SnapCenter VMware プラグインは、プラグインを使用して Windows �
 たとえば、 6 つの異なる vCenter Server インスタンスからバックアップを実行する場合は、 6 つのホストに SnapCenter VMware プラグインを導入し、各 vCenter Server を SnapCenter VMware プラグインの一意のインスタンスとペアリングする必要があります。
 
 
+
+* VVol VM （ VMware VVOL データストア上の VM ）を保護するには、最初に ONTAP Tools for VMware vSphere を導入する必要があります。ONTAP ツールは、 ONTAP および VMware Web Client 上で VVol 用のストレージをプロビジョニングして設定します。
++
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 向け ONTAP ツール"^]
+
++
+サポートされている ONTAP ツールのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 * SnapCenter VMware プラグインは、 Storage vMotion のサポートにおける仮想マシンの制限により、共有 PCI デバイスまたは PCIe デバイス（ NVIDIA Grid GPU など）を限定的にサポートします。詳細については、ベンダーが提供している『 Deployment Guide for VMware 』を参照してください。
 +
@@ -89,10 +96,10 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | その他の製品 | Storage vMotion を使用するリストア処理を実行するには、 vSphere Standard 、 Enterprise 、または Enterprise Plus vSphere ライセンスが必要です。vSphere Essentials または Essentials Plus ライセンスには、 Storage vMotion は含まれません。 
 
 
-| 主な目的地 | VMware SnapCenter 標準を使用してアプリケーションベースの保護を実行し、 VMware の VM とデータストアのみの SnapRestore を保護する：リストア処理に使用 FlexClone ：マウント処理と接続処理に使用 
+| 主な目的地 | SnapCenter Standard ： VMware SnapRestore を介したアプリケーションベースの保護を実行する場合に必要： VMware の VM およびデータストアのみ FlexClone のリストア処理を実行する場合に必要： VMware の VM およびデータストアのみのマウント処理と接続処理に使用 
 
 
-| セカンダリデスティネーション | VMware SnapCenter Standard を介してアプリケーションベースの保護を実行する場合： VMware の VM とデータストアのみ FlexClone の保護を実行するフェイルオーバー処理に使用：マウント処理と接続処理に使用します 
+| セカンダリデスティネーション | SnapCenter Standard ： VMware FlexClone を介したアプリケーションベースの保護のフェイルオーバー処理に使用： VMware の VM およびデータストアのみでのマウント処理と接続処理に使用されます 
 |===
 
 
@@ -102,22 +109,13 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | 項目 | サポートされるバージョン 
 
 
-| vCenter vSphere | HTML5 クライアント： 6.5U2/U3 、 6.7x 、 7.0 、 7.0U1 、 7.0U2 Flex クライアントはサポートされていません。 
+| vCenter vSphere | HTML5 クライアント： 6.5U2/U3 、 6.7x 、 7.0 、 7.0U1 、 7.0U2 、 7.0U3 Flex クライアントはサポートされていません。 
 
 
-| ESXi | 6.5U2, 
+| ESXi | 6.5U2 以降 
 
 
 | IP アドレス | IPv4 、 IPv6 
-
-
-| Java | 8. 
-
-
-| .Net コア | 2.1 
-
-
-| SnapCenter Plug-in for VMware vSphere MySQL データベース | MySQL 8.0.23 の場合 
 
 
 | VMware TLS | 1/2 
@@ -127,8 +125,11 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 
 
 | VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 
+
+
+| VMware 向け ONTAP ツール | SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。 
 |===
-サポートされているバージョンの最新情報については、を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 
 
@@ -158,11 +159,11 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 
 
 | SnapCenter Plug-in for VMware vSphere のポート  a| 
-8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。
+8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。注：ポート設定は変更できません。
 
 
-NOTE: ポート設定は変更できません。
 
+| VMware vSphere vCenter Server のポート | VVol VM を保護する場合はポート 443 を使用する必要があります。 
 
 
 | ストレージクラスタまたは Storage VM ポート | 443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。 

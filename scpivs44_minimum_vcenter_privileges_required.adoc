@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限必要な vCenter 権限があることを確認する必要があります。 
+---
+= 最小限の vCenter 権限が必要です
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限必要な vCenter 権限があることを確認する必要があります。
+
+
+
+== vCenter Admin ロールに必要な権限
+
+System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.FileManagement Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config ホスト .Config.Settings Host.Settings Host.Local.Reconfig.VM Host.Reconfig.Reconfig.VirtualMachine Resist.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine のインベントリのインベントリの再構成ホスト .VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.CreateQuery.VirtualMachine のインベントリのインベントリの再構成にての再構成にての再構成にてのインベントリを実行
+
+
+
+== SnapCenter Plug-in for VMware vCenter に固有の必要な権限
+
+netappSCV .Guest .RestoreFile netappSCV .Recovery.MountUnmount netappSCV .Backup.ConfigureStorageSystems.Delete netappSCV .View netappSCV netappSCV .ConfigureStorageSystems.AddUpdate netappSCV .Backup.BackupNow.BackupNow.ConfigureStorageSystems.BackupNow.ConfigureSCV .Configure.configSCV BackupSCV .Configure.configSCV Server

@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: プライマリバックアップまたはセカンダリバックアップから VM 、 VMDK 、ファイル、およびフォルダをリストアできます。 
 ---
-= 概要
+= リストアの概要
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -17,14 +17,17 @@ summary: プライマリバックアップまたはセカンダリバックア�
 
 * VM リストア先
 +
-SnapCenter Plug-in for VMware vSphere 4.4 以前では、 VM をリストアする際に元のホストとデータストアのみを使用できます。
+従来の VM は、元のホスト、同じ vCenter Server の別のホスト、または同じ vCenter またはリンクモードの任意の vCenter で管理されている別の ESXi ホストにリストアできます。
 
 +
-SnapCenter Plug-in for VMware vSphere 4.5 以降では、元のホスト、または同じ vCenter Server の別のホスト、またはリンクモードの同じ vCenter またはすべての vCenter で管理される代替 ESXi ホストに VM をリストアできます。
+VVOL VM は元のホストにリストアできます。
 
 * VMDK リストア先
 +
-VMDK は、元のデータストアまたは別のデータストアにリストアできます。
+従来の VM の VMDK を、元のデータストアまたは別のデータストアにリストアできます。
+
++
+VVOL VM の VMDK を元のデータストアにリストアできます。
 
 
 

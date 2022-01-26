@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
 keywords:  
-summary: リソースグループは、保護する 1 つ以上の VM またはデータストアのコンテナです。 
+summary: リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。 
 ---
-= VM とデータストアのリソースグループを作成する
+= リソースグループを作成する
 :hardbreaks:
 :nofooter: 
 :icons: font
@@ -13,16 +13,51 @@ summary: リソースグループは、保護する 1 つ以上の VM または�
 
 
 [role="lead"]
-リソースグループは、保護する 1 つ以上の VM またはデータストアのコンテナです。
+リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。
 
-リソースグループには、 VM とデータストアを任意に組み合わせて含めることができます。SnapCenter Plug-in for VMware vSphere 4.4 以降 FlexVol では、リソースグループに 1 つ以上の FlexGroup ボリュームを含めることもできますが、両方を含めることはできません。
+リソースグループには、次のいずれかを含めることができます。
+
+* 従来の VM とデータストア
++
+従来の VM 、従来の SAN データストア、従来の NAS データストアを任意に組み合わせて使用できます。従来の VM を VVol VM と組み合わせることはできません。
+
+* FlexGroup データストア
++
+FlexGroup データストア × 1FlexGroup データストアのスパニングはサポートされていません。FlexGroup データストアを従来の VM またはデータストアと組み合わせることはできません。
+
+* FlexVol データストア
++
+1 つ以上の FlexVol データストア。スパニングデータストアがサポートされている。
+
+* VVol VM
++
+1 つ以上の VVol VM が必要です。VVol VM を従来の VM またはデータストアと組み合わせることはできません。
+
+* タグが設定された VVol VM
++
+指定した vCenter タグを使用するすべての VVol VM 。データストアや従来の VM など、タグが同じ vCenter または別の vCenter にある他のエンティティはサポートされません。指定したタグに一致する VM のリストに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM をスキップします。
+
+* フォルダ内の VVol VM
++
+1 つの指定した vVol フォルダにすべての vVol が含まれています。フォルダに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM はスキップします。
 
 
-NOTE: 複数の VM にまたがって配置する場合、 FlexGroup と FlexVol を一緒に使用することはできません。
+
+すべてのリソースグループ：
+
+
+IMPORTANT: VMware vSphere Cluster Service （ vCLS ）を使用している場合は、 vCLS によって管理される VM を SnapCenter VMware プラグインのリソースグループに含めないでください。
 
 SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模な LUN の場合、 SnapCenter はレイテンシを回避するためにシックプロビジョニング LUN のみを使用します。
 
-リソースグループには、 VM とデータストアをいつでも追加または削除できます。
+
+IMPORTANT: アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することは可能ですが、そのリソースグループのバックアップは失敗します。
+
+VVOL VM を含むリソースグループを作成する前に、 ONTAP Tools for VMware を導入しておく必要があります。
+
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 向け ONTAP ツール"^]。
+
+リソースグループに対しては、いつでもリソースを追加または削除できます。
 
 * 単一リソースのバックアップ
 +
@@ -46,14 +81,6 @@ Snapshot コピーを最適化するには、同じボリュームに関連付�
 * バックアップポリシー
 +
 リソースグループはバックアップポリシーがなくても作成できますが、スケジュールされたデータ保護処理を実行するには、少なくとも 1 つのポリシーがリソースグループに適用されている必要があります。既存のポリシーを使用することも、リソースグループの作成時に新しいポリシーを作成することもできます。
-
-+
-
-NOTE: リソースグループには、 VM および SAN データストアと NAS データストアを含めることができますが、 VSAN データストアまたは VVOL データストアは含めることができません。
-
-+
-
-IMPORTANT: アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することはできますが、そのリソースグループのバックアップは失敗します。
 
 * 互換性チェック
 +
@@ -105,7 +132,7 @@ image:scpivs44_image16.png["エラー：グラフィックイメージがあり�
 
 
 | 最新の Snapshot 名  a| 
-SnapCenter Plug-in for VMware vSphere 4.4 以降では、最新の Snapshot コピーに「 _recent 」というサフィックスを追加する必要がある場合、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。
+最新の Snapshot コピーに「 _recent 」というサフィックスを追加する場合は、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。
 
 
 NOTE: リソース・グループに適用される各ポリシーに対して ' 最新のバックアップが作成されますしたがって ' 複数のポリシーを持つリソース・グループには ' 複数の最新のバックアップが含まれます
@@ -121,25 +148,35 @@ Snapshot コピー名にカスタム形式を使用する場合は、このチ�
 
 
 |===
-. [ リソース * ] ページの [ 使用可能なエンティティ ] リストで、リソースグループに含めるリソースを選択し、 [*>] をクリックして選択したエンティティを [ 選択したエンティティ ] リストに移動します。
+. [* リソース *] ページで、次の操作を実行します。
 +
-image:scpivs44_image17.png["エラー：グラフィックイメージがありません"]
+|===
+| フィールド名 | 操作 
+
+
+| 適用範囲 | 保護するリソースのタイプを選択します。 * データストア（指定した 1 つ以上のデータストア内のすべての従来の VM ） * 仮想マシン（従来の VM または VVol VM を個別に； フィールドで、 VM または VVol VM を含むデータストアに移動します。 * タグ（単一の VMware タグが指定されたすべての VVOL VM ） * VM フォルダ（指定されたフォルダ内のすべての VVOL VM ） * ポップアップフィールドで、フォルダが配置されているデータセンターに移動する必要があります）。 
+
+
+| データセンター | 追加する VM またはデータストアまたはフォルダに移動します。 
+
+
+| 使用可能なエンティティ | 保護するリソースを選択し、 * > * をクリックして選択した項目を選択したエンティティリストに移動します。 
+|===
++
+[ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。
 
 +
-[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。
-
-+
-「選択した仮想マシンが SnapCenter と互換性がないか、選択したデータストアが SnapCenter と互換性がありません」というメッセージが表示される場合、選択した VM またはデータストアは SnapCenter と互換性がありません。を参照してください <<Manage compatibility check failures>> を参照してください。
+「 Selected <resource-key > is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください <<Manage compatibility check failures>> を参照してください。
 
 . [ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。
 +
-すべてのスパニングデータストアを常に除外する [ データストアのデフォルトです。 ]
-
+** すべてのスパニングデータストアを常に除外する [ データストアのデフォルトです。 ]
+** 常にすべてのスパニングデータストアを含める [ これが VM のデフォルトです。 ]
+** 対象に含めるスパニングデータストアを手動で選択します
 +
-常にすべてのスパニングデータストアを含める [ これが VM のデフォルトです。 ]
+FlexGroup データストアと VVOL データストアにスパニング VM を使用することはできません。
 
-+
-対象に含めるスパニングデータストアを手動で選択します
+
 
 . [* Policies] ページで、次の表に示すように 1 つ以上のバックアップポリシーを選択または作成します。
 +
@@ -170,7 +207,7 @@ image:scpivs44_image18.png["エラー：グラフィックイメージがあり�
 各フィールドに入力する必要があります。SnapCenter VMware プラグインは、 SnapCenter VMware プラグインが導入されているタイムゾーンでスケジュールを作成します。タイムゾーンは、 SnapCenter Plug-in for VMware vSphere GUI を使用して変更できます。
 
 +
-link:scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups["バックアップのタイムゾーンを変更します"]。
+link:scpivs44_modify_the_time_zones.html["バックアップのタイムゾーンを変更します"]。
 
 . 概要を確認し、 [ 完了 ] をクリックします。
 +
@@ -199,7 +236,7 @@ NOTE: バックアップ内のいずれかの VM で休止処理が失敗する�
 SnapCenter バージョン 4.x では、 ONTAP 8.3.1 以降がサポートされます。
 
 +
-SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] SnapCenter サポートの最新情報については、を参照してください。
+SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] SnapCenter サポートの最新情報については、を参照してください。
 
 * 共有 PCI デバイスが VM に接続されている。
 * 優先 IP は SnapCenter で設定されていません。

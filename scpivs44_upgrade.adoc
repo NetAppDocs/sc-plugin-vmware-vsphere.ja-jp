@@ -20,6 +20,9 @@ SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用して
 
 TIP: アップグレードを開始する前に、 SnapCenter Plug-in for VMware vSphere OVA をバックアップします。
 
+
+NOTE: ネットワーク設定を静的アドレスから DHCP アドレスに切り替えることはできません。
+
 .手順
 . SnapCenter Plug-in for VMware vSphere を無効にしてアップグレードを準備します。
 +

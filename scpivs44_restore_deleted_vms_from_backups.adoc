@@ -15,9 +15,7 @@ summary: データストアのプライマリバックアップまたはセカ�
 [role="lead"]
 データストアのプライマリバックアップまたはセカンダリバックアップから削除した VM を、選択した ESXi ホストにリストアすることができます。
 
-SnapCenter Plug-in for VMware vSphere 4.4 以前では、 VM をリストアする際に元のホストとデータストアのみを使用できます。
-
-SnapCenter Plug-in for VMware vSphere 4.5 以降では、 VM を次の場所にリストアできます。
+VM は次の場所にリストアできます。
 
 * 元の場所にリストアします
 +
@@ -37,8 +35,12 @@ SnapCenter Plug-in for VMware vSphere 4.5 以降では、 VM を次の場所に�
 
 NOTE: 別の場所にリストアする場合は、リストア処理のデスティネーションであるリンクされた vCenter で SnapCenter Plug-in for VMware vSphere が実行されている必要があります。デスティネーションデータストアに十分なスペースが必要です。
 
+
+NOTE: 削除された VM をリストアする場合、元々 VM に割り当てられていたタグはリストアされません。
+
 .作業を開始する前に
 * ストレージシステムのユーザアカウントは、 VMware vSphere Web Client の Storage Systems ページで、に設定されている必要があります link:scpivs44_minimum_ontap_privileges_required.html["ONTAP に必要な最小限の ONTAP 権限"]。
+* vCenter のユーザアカウントにが必要です link:scpivs44_minimum_vcenter_privileges_required.html["SnapCenter Plug-in for VMware vSphere に必要な最小限の vCenter 権限"]。
 * バックアップが存在している必要があります。
 +
 その VM の VMDK をリストアする前に、 SnapCenter Plug-in for VMware vSphere を使用してその VM のバックアップを作成しておく必要があります。

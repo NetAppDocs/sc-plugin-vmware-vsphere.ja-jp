@@ -27,6 +27,6 @@ MetroCluster 構成の場合：
 * バックアップが失敗し、「 Unable to discover resources on SCV ： <xxx> …」というエラーが表示された場合 スイッチオーバー / スイッチバック後に NFS VM と VMFS VM の場合は、メンテナンスコンソールから SnapCenter VMware サービスを再起動します。
 
 
-次の図のワークフローは、バックアップ処理の実行順序を示しています。
+次のワークフロー図に、バックアップ処理の実行順序を示します。
 
 image:scpivs44_image13.png["エラー：グラフィックイメージがありません"]

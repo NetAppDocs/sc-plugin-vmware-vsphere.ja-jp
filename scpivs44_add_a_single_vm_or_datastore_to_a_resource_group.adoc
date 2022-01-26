@@ -28,6 +28,6 @@ SAN データストアと NAS データストアは追加できますが、 VSAN
 OK をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。
 
 +
-「選択された仮想マシンは SnapCenter と互換性がない」または「選択されたデータストアは SnapCenter と互換性がありません」というメッセージが表示される場合、選択された VM またはデータストアは SnapCenter と互換性がありません。を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理します"] を参照してください。
+「 Selected <resource-key > is not SnapCenter compatible 」というメッセージが表示される場合、選択した VM またはデータストアは SnapCenter と互換性がありません。を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理します"] を参照してください。
 
 

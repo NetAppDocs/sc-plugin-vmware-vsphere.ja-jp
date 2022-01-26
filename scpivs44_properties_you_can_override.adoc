@@ -1,159 +1,16 @@
 ---
 sidebar: sidebar 
-permalink: scpivs44_manage_your_configuration.html 
+permalink: scpivs44_properties_you_can_override.html 
 keywords:  
-summary: vCenter のクレデンシャル、仮想アプライアンスのクレデンシャル、バックアップのタイムゾーンなどの仮想アプライアンス設定は、 SnapCenter Plug-in for VMware vSphere の管理 GUI を使用して更新する必要があります。 
+summary: デフォルト値を変更するには 'scbr.override 構成ファイルにリストされているプロパティを使用できます 
 ---
-= 構成を管理します
+= オーバーライドできるプロパティ
 :hardbreaks:
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 
-
-[role="lead"]
-vCenter のクレデンシャル、仮想アプライアンスのクレデンシャル、バックアップのタイムゾーンなどの仮想アプライアンス設定は、 SnapCenter Plug-in for VMware vSphere の管理 GUI を使用して更新する必要があります。
-
-
-
-== バックアップのタイムゾーンを変更します
-
-SnapCenter Plug-in for VMware vSphere リソースグループのバックアップスケジュールを設定すると、 SnapCenter VMware プラグインが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、 SnapCenter Plug-in for VMware vSphere の管理 GUI を使用して変更できます。
-
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。
-
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
-
-
-.手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
-+
-「 https://<appliance-IP-address>:8080` 」の形式を使用します
-
-. 上部のツールバーの [ 設定 ] アイコンをクリックします。
-+
-image:scpivs44_image28.jpg["エラー：グラフィックイメージがありません"]
-
-. [ * 設定 * ] ページの [ * 日付と時刻 * ] セクションで、 [ * 編集 * ] をクリックします。
-. 新しいタイムゾーンを選択し、 * 保存 * をクリックします。
-+
-新しいタイムゾーンは、 SnapCenter VMware プラグインで実行されるすべてのバックアップに使用されます。
-
-
-
-
-
-== ログオン資格情報を変更します
-
-SnapCenter Plug-in for VMware vSphere の管理 GUI でログオンクレデンシャルを変更できます。
-
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
-
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
-
-
-.手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
-+
-「 https://<appliance-IP-address>:8080` 」の形式を使用します
-
-. 上部のツールバーの [ 設定 ] アイコンをクリックします。
-+
-image:scpivs44_image28.jpg["エラー：グラフィックイメージがありません"]
-
-. [ * 設定 * ] ページの [ * ユーザー * ] セクションで、 [ * 編集 ] をクリックします。
-. 新しいパスワードを入力し、 * 保存 * をクリックします。
-+
-すべてのサービスが復旧するまでに数分かかることがあります。
-
-
-
-
-
-== vCenter のログオンクレデンシャルを変更します
-
-SnapCenter Plug-in for VMware vSphere で設定されている vCenter ログオンクレデンシャルを変更できます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
-
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
-
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
-
-
-.手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
-+
-「 https://<appliance-IP-address>:8080` 」の形式を使用します
-
-. 左側のナビゲーションペインで、 * 構成 * をクリックします。
-+
-image:scpivs44_image30.png["エラー：グラフィックイメージがありません"]
-
-. [* 設定 * （ * Configuration * ） ] ページの [* VCENT* （ * vCenter * ） ] セクションで、 [ 編集 * （ Edit * ） ] をクリックします。
-. 新しいパスワードを入力し、 * 保存 * をクリックします。
-+
-ポート番号は変更しないでください。
-
-
-
-
-
-== ネットワーク設定を変更します
-
-SnapCenter Plug-in for VMware vSphere で設定されているネットワーク設定を変更することができます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
-
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。
-
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
-
-
-.手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
-+
-「 https://<appliance-IP-address>:8080` 」の形式を使用します
-
-. 上部のツールバーの [ 設定 ] アイコンをクリックします。
-+
-image:scpivs44_image31.png["エラー：グラフィックイメージがありません"]
-
-. [ * 設定 * ] ページの [ * ネットワーク設定 * ] セクションで、 [* IPv4 * または * IPv6 * ] をクリックし、 [ * 編集 ] をクリックします。
-+
-新しい情報を入力し、 * 保存 * をクリックします。
-
-. ネットワーク設定を削除する場合は、次の手順を実行します。
-+
-** IPv4 ： [IP アドレス *] フィールドに「 0.0.0.0 」と入力し、 [ 保存 *] をクリックします。
-** IPv6: [IP アドレス *] フィールドに「 ::0' 」と入力し、 *Save* をクリックします。
-
-
-
-
-
-NOTE: IPv4 と IPv6 の両方を使用している場合は、両方のネットワーク設定を削除できません。残りのネットワークでは、 [DNS サーバ ] フィールドと [ 検索ドメイン ] フィールドを指定する必要があります。
-
-
-
-== 設定のデフォルト値を変更します
-
-運用効率を高めるために、「 CBR 上書き」コンフィギュレーションファイルを変更してデフォルト値を変更できます。これらの値は、バックアップの実行時に作成または削除する VMware スナップショットの数や、バックアップスクリプトの実行を中止するまでの時間などの設定を制御します。
-
-「 cbr.override 」構成ファイルは、 SnapCenter アプリケーションベースのデータ保護処理をサポートする SnapCenter Plug-in for VMware vSphere 環境で使用されます。このファイルが存在しない場合は、テンプレートファイルから作成する必要があります。
-
-
-
-== scbr.override 構成ファイルを作成します
-
-. /opt/NetApp/scvservice/standalone_aegis /etc/scbr/scbr.override -template に移動します。
-. 「 \opt\NetApp\scvservice\standalone_aegis\etc\scbr` ディレクトリにある「 CBR 上書きテンプレート」ファイルを新しいファイル「 CBR 上書き」にコピーします。
-
-
-
-
-== オーバーライドできるプロパティ
 
 * デフォルトでは、テンプレートはハッシュ記号を使用して設定プロパティをコメント化します。プロパティを使用して構成値を変更するには '#' 文字を削除する必要があります
 * 変更を有効にするには、 SnapCenter Plug-in for VMware vSphere ホストでサービスを再起動する必要があります。
@@ -378,27 +235,4 @@ SnapCenter VMware プラグインが、ホストバスアダプタの再スキ�
 +
 デフォルト値は「 30000 」です。
 
-
-
-
-
-== SSH for SnapCenter Plug-in for VMware vSphere を有効にします
-
-SnapCenter VMware プラグインの導入時、 SSH はデフォルトで無効になっています。
-
-.手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
-. 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
-+
-SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
-
-+
-ユーザ名 : 「パスワード : admin123 」
-
-+
-image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]
-
-. メインメニューからメニューオプション * 2 ）システム構成 * を選択します。
-. システム設定メニューから、メニューオプション *6 ） SSH アクセスを有効にする * を選択し、確認プロンプトで「 * y * 」と入力します。
-. 「 SSH アクセスを有効にしています ... 」というメッセージが表示されるまで待ちます 次に、 Enter キーを押して続行し、プロンプトで「 * X * 」と入力してメンテナンスモードを終了します。
 

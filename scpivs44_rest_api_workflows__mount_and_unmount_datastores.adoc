@@ -17,7 +17,9 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してデータストア
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 
-データストアをマウントするには、次のワークフローを実行します。
+
+
+== データストアをマウントするには、次のワークフローを実行します。
 
 |===
 | ステップ | REST API | コメント 
@@ -37,7 +39,9 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してデータストア
 
 | 5. | 「 /4.1/datastores /backups/{backupid}/mount` 」 | 「バックアップ用のデータストアのマウント」では、指定したデータストアバックアップがマウントされます。手順 2 から * backupid * を渡します。データストア * 属性と * 場所 * 属性で、手順 3 の「 snapmirror shotLocationsList 」からの情報を渡します。「 * esxHostName * 」属性で、手順 4 の「 available EsxHostsList 」からの情報を渡します。 
 |===
-データストアをアンマウントするワークフローは次のとおりです。
+
+
+== データストアをアンマウントするワークフローは次のとおりです。
 
 |===
 | ステップ | REST API | コメント 

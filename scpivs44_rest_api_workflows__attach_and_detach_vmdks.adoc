@@ -17,7 +17,9 @@ SnapCenter Plug-in for VMware vSphere REST API を使用して VMDK の接続処
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 
-VMDK を接続するワークフローは次のとおりです。
+
+
+== VMDK を接続するワークフローは次のとおりです。
 
 |===
 | ステップ | REST API | コメント 
@@ -39,7 +41,9 @@ VMDK を接続するワークフローは次のとおりです。
 NOTE: VMDK を別の VM に接続するには、 alternateVmMoref 属性で、ターゲット VM の MORef を渡します。
 
 |===
-VMDK を接続解除するには、次のワークフローを実行します。
+
+
+== VMDK を接続解除するには、次のワークフローを実行します。
 
 |===
 | ステップ | REST API | コメント 

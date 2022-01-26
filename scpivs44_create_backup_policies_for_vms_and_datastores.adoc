@@ -30,7 +30,7 @@ SnapCenter Plug-in for VMware vSphere を使用して VM とデータストア�
 
 
 
-* VM 整合性バックアップを作成する場合は、 VMware Tools をインストールして実行しておく必要があります。VM を休止するには VMware Tools が必要です。
+* VM と整合性のあるバックアップを作成する場合は、 VMware Tools をインストールして実行しておく必要があります。VM を休止するには VMware Tools が必要です。VM と整合性のあるバックアップは VVol VM ではサポートされません。
 
 
 ウィザードの各ページのフィールドのほとんどはわかりやすいもので、説明を必要としません。以下の手順では、説明が必要な一部のフィールドを取り上げます。
@@ -79,7 +79,7 @@ NOTE: 最大保持数は、 ONTAP 9.4 以降のリソースでは 1018 のバッ
 プライマリバックアップボリュームとの SnapMirror 関係がある別のボリュームにバックアップセットのミラーコピーを作成する場合は、このオプションを選択します。ミラーバックアップ関係が設定されたボリュームでバックアップをミラーバックアップデスティネーションにコピーする場合は、「バックアップ後に SnapVault を更新」オプションのみを選択する必要があります。
 
 
-NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以降で FlexGroup ボリュームのデータストアでサポートされます。このオプションは、 SnapCenter Plug-in for VMware vSphere 4.4 以前の FlexGroup ボリューム内のデータストアではサポートされていません。
+NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以降の FlexGroup ボリュームのデータストアでサポートされます。
 
 
 
@@ -90,7 +90,7 @@ NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以�
 IMPORTANT: ボリュームに mirror-vault 関係が設定されている場合は、このオプションのみを選択する必要があります。
 
 
-NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以降で FlexGroup ボリュームのデータストアでサポートされます。このオプションは、 SnapCenter Plug-in for VMware vSphere 4.4 以前の FlexGroup ボリューム内のデータストアではサポートされていません。
+NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以降の FlexGroup ボリュームのデータストアでサポートされます。
 
 
 
@@ -109,6 +109,8 @@ NOTE: Snapshot コピーのラベルは 31 文字以内で指定します。
 
 | VM 整合性  a| 
 バックアップジョブが実行されるたびに VM を休止して VMware スナップショットを作成する場合は、このチェックボックスをオンにします。
+
+このオプションは VVOL に対してはサポートされていません。VVOL VM の場合は、 crash-consistent バックアップのみが実行されます。
 
 
 IMPORTANT: VM 整合性バックアップを実行するには、 VM 上で VMware Tools を実行している必要があります。VMware Tools が実行されていない場合は、代わりに crash-consistent バックアップが実行されます。

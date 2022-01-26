@@ -23,6 +23,13 @@ VMware vSphere Web Client を使用してストレージを追加します。
 +
 SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模な LUN の場合、 SnapCenter ではレイテンシを回避するためにシックプロビジョニング LUN のみがサポートされます。
 
+* VMware の仮想ボリューム（ VVOL ）
++
+最初に VVOL ストレージシステムを ONTAP Tools for VMware vSphere に追加してから、 VVOL ストレージシステムを SnapCenter Plug-in for VMware vSphere に追加する必要があります。
+
++
+詳細については、を参照してください https://docs.netapp.com/vapp-98/index.jsp["VMware vSphere 向け ONTAP ツール"^]
+
 
 
 ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter は、同時に同期する必要があります。ストレージを追加しようとしても、 vCenter の時刻設定が同期されていないと、 Java 証明書エラーが表示されて処理が失敗することがあります。
@@ -70,7 +77,7 @@ image:scpivs44_image12.png["エラー：グラフィックイメージがあり�
 | プロトコル | ストレージプロトコルを選択します。 
 
 
-| ポート | ポート 443 （デフォルト）またはポート 80 を選択して vCenter と通信します。 
+| ポート | ポート 443 （デフォルト）またはポート 80 を選択して vCenter と通信します。ポート 443 は、 VM およびデータストアのバックアップとリストアの処理を実行する際に、 SnapCenter Plug-in for VMware vSphere 用 Storage VM ホストと vCenter 間の通信に使用されます。VVol VM を保護する場合は、デフォルトのポート 443 を選択する必要があります。 
 
 
 | タイムアウト | vCenter が処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です 

@@ -29,6 +29,7 @@ SnapCenter の機能を使用して仮想マシン、データストア、およ
 * vCenter で Transport Layer Security （ TLS ）を有効にしておく必要があります。VMware のドキュメントを参照してください。
 * SnapCenter VMware プラグインは、 VSC 7.x 以降の仮想アプライアンスと同じ vCenter に導入できます。
 * SnapCenter VMware プラグインを導入した vCenter 以外の vCenter でバックアップを実行する場合は、 ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter が同時に同期されている必要があります。
+* VVol データストア上の VM を保護するには、まず ONTAP Tools for VMware vSphere を導入する必要があります。ONTAP ツールは、 ONTAP および VMware Web Client 上にストレージをプロビジョニングし、設定します。
 
 
 SnapCenter VMware プラグインを vCenter と同じタイムゾーンに導入します。バックアップスケジュールは、 SnapCenter VMware プラグインが導入されているタイムゾーンで実行されます。vCenter では、 vCenter が配置されているタイムゾーンでデータが報告されます。そのため、 SnapCenter VMware プラグインと vCenter が異なるタイムゾーンにある場合は、 SnapCenter VMware プラグインダッシュボードのデータがレポートのデータと同じでないことがあります。
@@ -79,16 +80,21 @@ VM のデフォルトの導入場所は、ウィザードを開始したイン�
 
 
 
-. [ ネットワークの選択 *] ページで、ソースネットワークを選択して宛先ネットワークにマップし、 [ 次へ *] をクリックします。
+. [ ネットワークの選択 *] ページで、次の操作を行います。
++
+.. 送信元ネットワークを選択し、宛先ネットワークにマッピングします。
 +
 ソースネットワーク列には、 OVA テンプレートで定義されたすべてのネットワークが表示されます。
 
+.. [IP Allocation Settings] セクションで、必要な IP プロトコルを選択し、 [*Next] をクリックします。
 +
 SnapCenter Plug-in for VMware vSphere は、 1 つのネットワークインターフェイスをサポートします。複数のネットワークアダプタが必要な場合は、手動でセットアップする必要があります。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["技術情報アーティクル：「 How to create additional network adapters"^]。
 
+
+
 . [ テンプレートのカスタマイズ ] ページで、次の操作を行います。
 +
-.. [* Register to Existing vCenter* （既存の vCenter に登録） ] セクションで、 vCenter 仮想アプライアンスのクレデンシャルを入力します。
+.. [* Register to Existing vCenter* （既存の vCenter に登録） ] セクションで、仮想アプライアンスの vCenter 名と vCenter クレデンシャルを入力します。
 +
 [*vCenter ユーザ名 *] フィールドに、ユーザ名を「ドメイン \ ユーザ名」の形式で入力します。
 
@@ -100,9 +106,18 @@ SnapCenter Plug-in for VMware vSphere は、 1 つのネットワークインタ
 
 IMPORTANT: 指定するユーザ名とパスワードを書き留めます。SnapCenter VMware プラグインの設定をあとで変更する場合は、これらのクレデンシャルを使用する必要があります。
 
-.. [ ネットワークプロパティの設定 *] に、ネットワーク情報を入力します。
+.. [ ネットワークプロパティの設定 *] に、ホスト名を入力します。
++
+... [*IPv4 ネットワークプロパティの設定 *] セクションで、 IPv4 アドレス、 IPv4 ネットマスク、 IPv4 ゲートウェイ、 IPv4 プライマリ DNS 、 IPv4 セカンダリ DNS などのネットワーク情報を入力します。 および IPv4 検索ドメインを使用できます。
+... [*IPv6 ネットワークプロパティの設定 *] セクションで、 IPv6 アドレス、 IPv6 ネットマスク、 IPv6 ゲートウェイ、 IPv6 プライマリ DNS 、 IPv6 セカンダリ DNS などのネットワーク情報を入力します。 および IPv6 検索ドメインを使用できます。
 +
 必要に応じて、 IPv4 、 IPv6 、またはその両方のフィールドを選択します。IPv4 と IPv6 の両方を使用する場合は、一方のプライマリ DNS だけを指定する必要があります。
+
++
+
+IMPORTANT: ネットワーク設定として DHCP を使用する場合は、これらの手順を省略し、 [*Setup Network Properties*] セクションのエントリを空白のままにしておくことができます。
+
+
 
 .. * Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。
 
@@ -123,7 +138,7 @@ SnapCenter VMware プラグインの導入が完了すると、 vCenter に登�
 VMware Tools は、 SnapCenter VMware プラグインが導入されている VM にインストールします。VMware Tools のインストールの詳細については、 VMware のマニュアルを参照してください。
 
 +
-導入が完了するまでに数分かかることがあります。導入が成功すると、 SnapCenter VMware プラグインの電源がオンになり、 VMware ツールがインストールされ、 SnapCenter VMware プラグインにログインするように求める画面が表示されます。
+導入が完了するまでに数分かかることがあります。導入が成功すると、 SnapCenter VMware プラグインの電源がオンになり、 VMware ツールがインストールされ、 SnapCenter VMware プラグインにログインするように求める画面が表示されます。初回リブート時に、ネットワーク設定を DHCP から静的に切り替えることができます。ただし、スタティックから DHCP への切り替えはサポートされていません。
 
 +
 画面に、 SnapCenter VMware プラグインが導入されている IP アドレスが表示されます。IP アドレスをメモします。SnapCenter の VMware プラグイン設定を変更する場合は、 SnapCenter の VMware プラグイン管理 GUI にログインする必要があります。

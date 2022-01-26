@@ -15,9 +15,7 @@ summary: VM をリストアする際に、選択したバックアップコピ�
 [role="lead"]
 VM をリストアする際に、選択したバックアップコピーで既存の内容を上書きしたり、 VM のコピーを作成したりできます。
 
-SnapCenter Plug-in for VMware vSphere 4.4 以前では、 VM をリストアする際に元のホストとデータストアのみを使用できます。
-
-SnapCenter Plug-in for VMware vSphere 4.5 以降では、 VM を次の場所にリストアできます。
+VM は次の場所にリストアできます。
 
 * 元の場所にリストアします
 +

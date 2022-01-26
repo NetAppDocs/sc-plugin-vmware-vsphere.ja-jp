@@ -57,7 +57,7 @@ SnapCenter は、 VMware Tools の情報を使用して、 VMware ゲスト OS �
 
 * Windows ゲスト OS で Windows Server 2008 R2 以降が実行されている必要があります。
 +
-サポートされているバージョンの最新情報については、を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
 
 * ターゲット VM のクレデンシャルで、組み込みのドメイン管理者アカウントまたは組み込みのローカル管理者アカウントを指定する必要があります。ユーザ名は「 Administrator 」である必要があります。 リストア処理を開始する前に、仮想ディスクを接続する VM のクレデンシャルを設定する必要があります。このクレデンシャルは、接続処理と後続のリストア処理の両方で必要になります。ワークグループユーザは、組み込みのローカル管理者アカウントを使用できます。
 +
@@ -82,7 +82,7 @@ SnapCenter Plug-in for VMware vSphere では、リストアするファイルや
 
 * Linux ゲスト OS からのリストアはサポートされていません
 +
-Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
 
 
 
@@ -97,7 +97,7 @@ Linux ゲスト OS を実行している VM からはファイルやフォルダ
 * [ ゲストファイルの参照 ] ページには、フィルタできない隠しファイルと隠しフォルダが表示されます。
 * Linux ゲスト OS からはリストアできません。
 +
-Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
 
 * NTFS ファイルシステムから FAT ファイルシステムにリストアすることはできません。
 +
@@ -109,4 +109,6 @@ NTFS 形式から FAT 形式にリストアしようとしても、 NTFS セキ�
 +
 ネストされたディレクトリ内のファイルをリストア対象として選択した場合、そのファイルは同じディレクトリ構造でリストアされません。ディレクトリツリーはリストアされず、ファイルだけがリストアされます。ディレクトリツリーをリストアする場合は、ディレクトリ自体を構造の最上部にコピーできます。
 
+* VVol VM からゲストファイルをリストアすることはできません。
+* 暗号化されたゲストファイルはリストアできません。
 
