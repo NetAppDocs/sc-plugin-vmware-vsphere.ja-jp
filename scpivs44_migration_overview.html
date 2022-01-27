@@ -9,7 +9,7 @@
   <meta property="og:title" content="データ移行の概要" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html" />
-	<meta property="og:description" content="移行コマンドでメタデータを移行できるのは、 SnapCenter 4.0 以降のみです。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。" />
+	<meta property="og:description" content="" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="移行コマンドでメタデータを移行できるのは、 SnapCenter 4.0 以降のみです。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。">
+  <meta name="description" content="">
   <meta name="keywords" content=" ">
   
   
@@ -421,6 +421,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -727,6 +729,42 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/構成を管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            構成を管理します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -789,53 +827,6 @@
             アップグレード
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/移動.pdf" 
-            
-          >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            移動
-          </a>
-          
-
-
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/pages/scpivs44_migration_overview.pdf" >
-    <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +920,8 @@
         導入の計画と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         必要な最小 ONTAP 権限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        最小限の vCenter 権限が必要です
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         SnapCenter Plug-in for VMware vSphere OVA （オープン仮想アプライアンス）のダウンロード
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +975,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         データ保護のワークフロー
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        VM およびデータストアのバックアップを表示する
+        バックアップを表示します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        VM とデータストアのバックアップポリシーの作成
+        バックアップポリシーを作成する
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        VM とデータストアのリソースグループを作成する
+        リソースグループを作成する
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         プリスクリプトとポストスクリプト
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +989,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         リソースグループをオンデマンドでバックアップする
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします
+        MySQL データベースをバックアップします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         リソースグループの管理 - 一時停止、再開、変更、削除
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1058,26 @@
         SnapCenter Plug-in for VMware vSphere を無効にして有効にします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         SnapCenter Plug-in for VMware vSphere を削除します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        構成を管理します
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 構成を管理します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        タイムゾーンを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        ログオン資格情報を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        vCenter ログオンクレデンシャルを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        ネットワーク設定を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        設定のデフォルト値を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        scbr.override ファイルを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        上書き可能な設定プロパティ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        SSH を有効にします。
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1115,7 @@
         同じリリースの新しいパッチにアップグレードします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         同じリリースの新しいパッチにアップグレードしたあとに情報が表示されない
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 移動</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        移行オプションとサポートされるパス
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        データ移行の概要
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        移行の前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        Windows ベースの SnapCenter Plug-in for VMware vSphere から移行する
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        Windows ベースの SnapCenter VMware バックアップメタデータを移行する
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        移行後
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        移行中の不正なゲートウェイエラーを修正します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        認証エラーを管理します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/legal-notices.html">
         法的通知
       </a></li></ul>
 </div>
@@ -1183,7 +1174,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:09 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:50:52 +0000">01/27/2022</time>
     
   
 
@@ -1196,83 +1187,61 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/netapp-madhulik">
-    <img  class="avatar avatar-small"
-          alt="netapp-madhulik"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/64965028?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>移行コマンドでメタデータを移行できるのは、 SnapCenter 4.0 以降のみです。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。</p>
+<p>移行コマンドは、 #SnapCenter 4.0 以降の # からメタデータを移行します。以前のバージョンの SnapCenter を使用している場合は、移行前にアップグレードする必要があります。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="移行の内容">移行の内容</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>SnapCenter メタデータ。ストレージシステム、カスタマイズされたスロットル、 SnapCenter 構成ファイルの E メール設定、ポリシー、リソースグループ、バックアップメタデータ、およびマウントが含まれます。（プリスクリプトまたはポストスクリプトが検出されると移行が失敗する）</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="何が移行されないか">何が移行されないか</h2>
-<div class="sectionbody">
 <div class="ulist">
 <ul>
 <li>
+<p>移行の内容には、が含まれ</p>
+<div class="ulist">
+<ul>
+<li>
+<p>移行の内容</p>
+<div class="paragraph">
+<p>SnapCenter メタデータ。ストレージシステム、カスタマイズされたスロットル、 SnapCenter 構成ファイルの E メール設定、ポリシー、リソースグループ、バックアップメタデータ、およびマウントが含まれます。（プリスクリプトまたはポストスクリプトが検出されると移行が失敗する）</p>
+</div>
+</li>
+<li>
+<p>何が移行されないか</p>
+<div class="paragraph">
 <p>リソースグループに対して設定された、事前および事後スクリプト</p>
-</li>
-<li>
+</div>
+<div class="paragraph">
 <p>アクティブなゲストファイルのリストアセッション、ゲストファイルのリストアクレデンシャル、およびプロキシ VM</p>
-</li>
-<li>
-<p>設定ファイル「 CBR オーバーライド」でカスタマイズされた設定</p>
-</li>
-<li>
+</div>
+<div class="paragraph">
 <p>ゲストファイルの復元セッションがアクティブなときに移行を開始すると、セッションが削除され、接続されたディスクはアンマウントされません。接続されているディスクを手動で削除しなければならない場合があります。</p>
+</div>
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>'cbr.override' 設定ファイル</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="snapcenter-ホストが一時停止されている">SnapCenter ホストが一時停止されている</h2>
-<div class="sectionbody">
+</li>
+<li>
+<p>SnapCenter ホストが一時停止されている</p>
 <div class="paragraph">
 <p>移行が確実に成功するために、移行コマンドは SnapCenter に登録されているすべてのホストを一時停止します。移行プロセスが正常に完了すると、 SnapCenter ホストが再開されます。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="メタデータの保存場所">メタデータの保存場所</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>アプリケーションベースの VMDK バックアップのメタデータは、 SnapCenter サーバリポジトリに格納されます。VM およびデータストアのバックアップのメタデータは、 SnapCenter VMware プラグインの MySQL リポジトリに格納されます。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="データ移行ワークフロー">データ移行ワークフロー</h2>
-<div class="sectionbody">
+</li>
+<li>
+<p>移行コマンドレットのプロセス</p>
 <div class="paragraph">
 <p>SnapCenter に登録されている SnapCenter プラグインの各インスタンスには、 Windows PowerShell コマンドレット「 Invoke-NaSCVOVAMigration 」を使用する必要があります。</p>
 </div>
 <div class="paragraph">
 <p>このコマンドレットでは次の処理が実行されます</p>
 </div>
-<div class="olist arabic">
-<ol class="arabic">
+<div class="ulist">
+<ul>
 <li>
 <p>移行中にジョブが失敗しないように、すべてのスケジュールを一時停止します。移行が成功すると、スケジュールは自動的に再度有効になります。</p>
 </li>
@@ -1295,11 +1264,18 @@
 <p>Linux ベースの SnapCenter VMware プラグインのバックアップジョブをアクティブ化します。</p>
 </li>
 <li>
-<p>仮想化されたデータベースやファイルシステム（ VMDK バックアップ経由のアプリケーションベースのバックアップ）のアプリケーションベースのバックアップをサポートするために、 SnapCenter VMware プラグイン用の vSphere ホストを SnapCenter に登録します。</p>
+<p>仮想化されたデータベースおよびファイル・システム（ VMDK バックアップを介したアプリケーション・ベースのバックアップ）をサポートするために、 SnapCenter VMware プラグイン用の vSphere ホストを SnapCenter に登録します。</p>
 </li>
-</ol>
+</ul>
 </div>
+</li>
+<li>
+<p>メタデータの保存場所</p>
+<div class="paragraph">
+<p>アプリケーションベースの VMDK バックアップのメタデータは、 SnapCenter サーバリポジトリに格納されます。VM およびデータストアのバックアップのメタデータは、 SnapCenter VMware プラグインの MySQL リポジトリに格納されます。</p>
 </div>
+</li>
+</ul>
 </div>
 
     </article>
@@ -1312,7 +1288,7 @@
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
       <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[データ移行の概要](https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_migration_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/media/scpivs44_migration_overview.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
     <div class="page-nav-container">

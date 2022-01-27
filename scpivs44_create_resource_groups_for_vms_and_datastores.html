@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head class="at-element-marker">
-  <title>VM とデータストアのリソースグループを作成する</title>
+  <title>リソースグループを作成する</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="VM とデータストアのリソースグループを作成する" />
+  <meta property="og:title" content="リソースグループを作成する" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html" />
-	<meta property="og:description" content="リソースグループは、保護する 1 つ以上の VM またはデータストアのコンテナです。" />
+	<meta property="og:description" content="リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。" />
   <meta property="og:image" content="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="リソースグループは、保護する 1 つ以上の VM またはデータストアのコンテナです。">
+  <meta name="description" content="リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。">
   <meta name="keywords" content=" ">
   
   
@@ -421,6 +421,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -736,6 +738,42 @@
 
 
 
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/構成を管理します.pdf" 
+            
+          >
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            構成を管理します
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
 
 
     
@@ -798,44 +836,6 @@
             アップグレード
           </a>
           
-
-
-
-
-
-
-
-          
-        </li>
-      </ul>
-    
-
-  
-
-
-
-    
-      <ul class="subfolders" style="display:none;">
-        <li class="pdf-ux-container">
-          <a target="_blank" 
-            
-              href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/移動.pdf" 
-            
-          >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-            移動
-          </a>
-          
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -929,6 +929,8 @@
         導入の計画と要件
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_minimum_ontap_privileges_required.html">
         必要な最小 ONTAP 権限
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_minimum_vcenter_privileges_required.html">
+        最小限の vCenter 権限が必要です
       </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html">
         SnapCenter Plug-in for VMware vSphere OVA （オープン仮想アプライアンス）のダウンロード
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html">
@@ -982,11 +984,11 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_protect_data_overview.html">
         データ保護のワークフロー
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_view_vm_and_datastore_backups.html">
-        VM およびデータストアのバックアップを表示する
+        バックアップを表示します
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html">
-        VM とデータストアのバックアップポリシーの作成
+        バックアップポリシーを作成する
       </a></li><li class="  active "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html">
-        VM とデータストアのリソースグループを作成する
+        リソースグループを作成する
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_prescripts_and_postscripts.html">
         プリスクリプトとポストスクリプト
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html">
@@ -996,7 +998,7 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_back_up_resource_groups_on_demand.html">
         リソースグループをオンデマンドでバックアップする
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html">
-        SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします
+        MySQL データベースをバックアップします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_resource_groups.html">
         リソースグループの管理 - 一時停止、再開、変更、削除
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_policies.html">
@@ -1065,9 +1067,26 @@
         SnapCenter Plug-in for VMware vSphere を無効にして有効にします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_remove_plugin.html">
         SnapCenter Plug-in for VMware vSphere を削除します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_your_configuration.html">
-        構成を管理します
-      </a></li><li class="subfolders "><a href="#">
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 構成を管理します</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_time_zones.html">
+        タイムゾーンを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_logon_credentials.html">
+        ログオン資格情報を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_vcenter_logon_credentials.html">
+        vCenter ログオンクレデンシャルを変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_the_network_settings.html">
+        ネットワーク設定を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_modify_configuration_default_values.html">
+        設定のデフォルト値を変更します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_the_scbr_override_file.html">
+        scbr.override ファイルを作成します
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_properties_you_can_override.html">
+        上書き可能な設定プロパティ
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_enable_ssh.html">
+        SSH を有効にします。
+      </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> REST API</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_rest_apis_overview.html">
@@ -1105,26 +1124,7 @@
         同じリリースの新しいパッチにアップグレードします
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html">
         同じリリースの新しいパッチにアップグレードしたあとに情報が表示されない
-      </a></li></ul></li><li class="subfolders "><a href="#">
-        <div class="na-navbar-padding"> 移動</div>
-      </a>
-      <ul><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate.html">
-        移行オプションとサポートされるパス
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migration_overview.html">
-        データ移行の概要
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_prerequisites_for_migration.html">
-        移行の前提条件
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate_from_windows_based_snapcenter_plug-in_for_vmware_vsphere.html">
-        Windows ベースの SnapCenter Plug-in for VMware vSphere から移行する
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_migrate_snapcenter_backup_metadata_to_the_virtual_appliance.html">
-        Windows ベースの SnapCenter VMware バックアップメタデータを移行する
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_post-migration.html">
-        移行後
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_correct_bad_gateway_errors_during_migration.html">
-        移行中の不正なゲートウェイエラーを修正します
-      </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_manage_authentication_errors.html">
-        認証エラーを管理します
-      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/netapp_legal_notices.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/legal-notices.html">
         法的通知
       </a></li></ul>
 </div>
@@ -1153,7 +1153,7 @@
           <a href="/ja-jp/sc-plugin-vmware-vsphere/">SnapCenter&nbsp;Plug-in&nbsp;for&nbsp;VMware&nbsp;vSphere</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          VM とデータストアのリソースグループを作成する
+          リソースグループを作成する
         </li>
       </ul>
     </div>
@@ -1176,31 +1176,31 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">VM とデータストアのリソースグループを作成する</h1>
+  <h1 class="n-doc__component-detail-heading">リソースグループを作成する</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 14:47:09 +0000">01/17/2022</time>
+    <time datetime="2022-01-27 16:50:52 +0000">01/27/2022</time>
     
   
 
 <span>寄稿者
-  <a target="_blank" href="https://github.com/netapp-madhulik">
-    <img  class="avatar avatar-small"
-          alt="netapp-madhulik"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/64965028?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
   <a target="_blank" href="https://github.com/Ronya-Robinson">
     <img  class="avatar avatar-small"
           alt="Ronya-Robinson"
           width="20" height="20"
           src="https://avatars.githubusercontent.com/u/65731034?v=4"
+          style="border-radius: 50%;"/>
+  </a>
+  
+  <a target="_blank" href="https://github.com/netapp-madhulik">
+    <img  class="avatar avatar-small"
+          alt="netapp-madhulik"
+          width="20" height="20"
+          src="https://avatars.githubusercontent.com/u/64965028?v=4"
           style="border-radius: 50%;"/>
   </a>
   
@@ -1213,19 +1213,62 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>リソースグループは、保護する 1 つ以上の VM またはデータストアのコンテナです。</p>
+<p>リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。</p>
 </div>
 <div class="paragraph">
-<p>リソースグループには、 VM とデータストアを任意に組み合わせて含めることができます。SnapCenter Plug-in for VMware vSphere 4.4 以降 FlexVol では、リソースグループに 1 つ以上の FlexGroup ボリュームを含めることもできますが、両方を含めることはできません。</p>
+<p>リソースグループには、次のいずれかを含めることができます。</p>
 </div>
-<div class="admonitionblock note">
+<div class="ulist">
+<ul>
+<li>
+<p>従来の VM とデータストア</p>
+<div class="paragraph">
+<p>従来の VM 、従来の SAN データストア、従来の NAS データストアを任意に組み合わせて使用できます。従来の VM を VVol VM と組み合わせることはできません。</p>
+</div>
+</li>
+<li>
+<p>FlexGroup データストア</p>
+<div class="paragraph">
+<p>FlexGroup データストア × 1FlexGroup データストアのスパニングはサポートされていません。FlexGroup データストアを従来の VM またはデータストアと組み合わせることはできません。</p>
+</div>
+</li>
+<li>
+<p>FlexVol データストア</p>
+<div class="paragraph">
+<p>1 つ以上の FlexVol データストア。スパニングデータストアがサポートされている。</p>
+</div>
+</li>
+<li>
+<p>VVol VM</p>
+<div class="paragraph">
+<p>1 つ以上の VVol VM が必要です。VVol VM を従来の VM またはデータストアと組み合わせることはできません。</p>
+</div>
+</li>
+<li>
+<p>タグが設定された VVol VM</p>
+<div class="paragraph">
+<p>指定した vCenter タグを使用するすべての VVol VM 。データストアや従来の VM など、タグが同じ vCenter または別の vCenter にある他のエンティティはサポートされません。指定したタグに一致する VM のリストに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM をスキップします。</p>
+</div>
+</li>
+<li>
+<p>フォルダ内の VVol VM</p>
+<div class="paragraph">
+<p>1 つの指定した vVol フォルダにすべての vVol が含まれています。フォルダに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM はスキップします。</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>すべてのリソースグループ：</p>
+</div>
+<div class="admonitionblock important">
 <table>
 <tr>
 <td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注記">
+<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
 </td>
 <td class="content">
-複数の VM にまたがって配置する場合、 FlexGroup と FlexVol を一緒に使用することはできません。
+VMware vSphere Cluster Service （ vCLS ）を使用している場合は、 vCLS によって管理される VM を SnapCenter VMware プラグインのリソースグループに含めないでください。
 </td>
 </tr>
 </table>
@@ -1233,8 +1276,26 @@
 <div class="paragraph">
 <p>SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模な LUN の場合、 SnapCenter はレイテンシを回避するためにシックプロビジョニング LUN のみを使用します。</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
+</td>
+<td class="content">
+アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することは可能ですが、そのリソースグループのバックアップは失敗します。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
-<p>リソースグループには、 VM とデータストアをいつでも追加または削除できます。</p>
+<p>VVOL VM を含むリソースグループを作成する前に、 ONTAP Tools for VMware を導入しておく必要があります。</p>
+</div>
+<div class="paragraph">
+<p>詳細については、を参照してください <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html" target="_blank" rel="noopener">"VMware vSphere 向け ONTAP ツール"</a>。</p>
+</div>
+<div class="paragraph">
+<p>リソースグループに対しては、いつでもリソースを追加または削除できます。</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1269,30 +1330,6 @@
 <p>バックアップポリシー</p>
 <div class="paragraph">
 <p>リソースグループはバックアップポリシーがなくても作成できますが、スケジュールされたデータ保護処理を実行するには、少なくとも 1 つのポリシーがリソースグループに適用されている必要があります。既存のポリシーを使用することも、リソースグループの作成時に新しいポリシーを作成することもできます。</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/note.svg" alt="注記">
-</td>
-<td class="content">
-リソースグループには、 VM および SAN データストアと NAS データストアを含めることができますが、 VSAN データストアまたは VVOL データストアは含めることができません。
-</td>
-</tr>
-</table>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/sc-plugin-vmware-vsphere/images/important.svg" alt="重要">
-</td>
-<td class="content">
-アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することはできますが、そのリソースグループのバックアップは失敗します。
-</td>
-</tr>
-</table>
 </div>
 </li>
 <li>
@@ -1373,7 +1410,7 @@
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">最新の Snapshot 名</p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>SnapCenter Plug-in for VMware vSphere 4.4 以降では、最新の Snapshot コピーに「 _recent 」というサフィックスを追加する必要がある場合、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。</p>
+<p>最新の Snapshot コピーに「 _recent 」というサフィックスを追加する場合は、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1411,27 +1448,57 @@
 </table>
 </li>
 <li>
-<p>[ リソース * ] ページの [ 使用可能なエンティティ ] リストで、リソースグループに含めるリソースを選択し、 [*&gt;] をクリックして選択したエンティティを [ 選択したエンティティ ] リストに移動します。</p>
+<p>[* リソース *] ページで、次の操作を実行します。</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">フィールド名</th>
+<th class="tableblock halign-left valign-top">操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">適用範囲</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">保護するリソースのタイプを選択します。 * データストア（指定した 1 つ以上のデータストア内のすべての従来の VM ） * 仮想マシン（従来の VM または VVol VM を個別に； フィールドで、 VM または VVol VM を含むデータストアに移動します。 * タグ（単一の VMware タグが指定されたすべての VVOL VM ） * VM フォルダ（指定されたフォルダ内のすべての VVOL VM ） * ポップアップフィールドで、フォルダが配置されているデータセンターに移動する必要があります）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">データセンター</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">追加する VM またはデータストアまたはフォルダに移動します。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用可能なエンティティ</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">保護するリソースを選択し、 * &gt; * をクリックして選択した項目を選択したエンティティリストに移動します。</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><span class="image"><img src="./media/scpivs44_image17.png" alt="エラー：グラフィックイメージがありません"></span></p>
+<p>[ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。</p>
 </div>
 <div class="paragraph">
-<p>[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。</p>
-</div>
-<div class="paragraph">
-<p>「選択した仮想マシンが SnapCenter と互換性がないか、選択したデータストアが SnapCenter と互換性がありません」というメッセージが表示される場合、選択した VM またはデータストアは SnapCenter と互換性がありません。を参照してください <a href="#Manage compatibility check failures">[Manage compatibility check failures]</a> を参照してください。</p>
+<p>「 Selected &lt;resource-key &gt; is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください <a href="#Manage compatibility check failures">[Manage compatibility check failures]</a> を参照してください。</p>
 </div>
 </li>
 <li>
 <p>[ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。</p>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>すべてのスパニングデータストアを常に除外する [ データストアのデフォルトです。 ]</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>常にすべてのスパニングデータストアを含める [ これが VM のデフォルトです。 ]</p>
-</div>
-<div class="paragraph">
+</li>
+<li>
 <p>対象に含めるスパニングデータストアを手動で選択します</p>
+<div class="paragraph">
+<p>FlexGroup データストアと VVOL データストアにスパニング VM を使用することはできません。</p>
+</div>
+</li>
+</ul>
 </div>
 </li>
 <li>
@@ -1483,7 +1550,7 @@
 <p>各フィールドに入力する必要があります。SnapCenter VMware プラグインは、 SnapCenter VMware プラグインが導入されているタイムゾーンでスケジュールを作成します。タイムゾーンは、 SnapCenter Plug-in for VMware vSphere GUI を使用して変更できます。</p>
 </div>
 <div class="paragraph">
-<p><a href="scpivs44_manage_your_configuration.html#modify-the-time-zones-for-backups">"バックアップのタイムゾーンを変更します"</a>。</p>
+<p><a href="scpivs44_modify_the_time_zones.html">"バックアップのタイムゾーンを変更します"</a>。</p>
 </div>
 </li>
 <li>
@@ -1530,7 +1597,7 @@
 <p>SnapCenter バージョン 4.x では、 ONTAP 8.3.1 以降がサポートされます。</p>
 </div>
 <div class="paragraph">
-<p>SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください <a href="https://mysupport.netapp.com/matrix/imt.jsp?components=100571;&amp;solution=1517&amp;isHWU&amp;src=IMT" target="_blank" rel="noopener">"ネットアップの Interoperability Matrix Tool （ IMT ）"</a> SnapCenter サポートの最新情報については、を参照してください。</p>
+<p>SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください <a href="https://imt.netapp.com/matrix/imt.jsp?components=103284;&amp;solution=1517&amp;isHWU&amp;src=IMT" target="_blank" rel="noopener">"ネットアップの Interoperability Matrix Tool （ IMT ）"</a> SnapCenter サポートの最新情報については、を参照してください。</p>
 </div>
 </li>
 <li>
@@ -1577,7 +1644,7 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[VM とデータストアのリソースグループを作成する](https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[リソースグループを作成する](https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_create_resource_groups_for_vms_and_datastores.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
       <a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_create_resource_groups_for_vms_and_datastores.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
     </div>
