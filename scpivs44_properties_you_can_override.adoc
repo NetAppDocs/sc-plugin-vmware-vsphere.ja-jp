@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_properties_you_can_override.html 
 keywords:  
-summary: デフォルト値を変更するには 'scbr.override 構成ファイルにリストされているプロパティを使用できます 
+summary: デフォルト値を変更するには \'scbr.override 構成ファイルにリストされているプロパティを使用できます 
 ---
 = オーバーライドできるプロパティ
 :hardbreaks:
