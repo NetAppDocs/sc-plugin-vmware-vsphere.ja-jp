@@ -201,7 +201,7 @@ FlexGroup データストアと VVOL データストアにスパニング VM を
 image:scpivs44_image18.png["エラー：グラフィックイメージがありません"]
 
 +
-開始時間フィールドに、 0 以外の時間を入力します。
+開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。
 
 +
 各フィールドに入力する必要があります。SnapCenter VMware プラグインは、 SnapCenter VMware プラグインが導入されているタイムゾーンでスケジュールを作成します。タイムゾーンは、 SnapCenter Plug-in for VMware vSphere GUI を使用して変更できます。

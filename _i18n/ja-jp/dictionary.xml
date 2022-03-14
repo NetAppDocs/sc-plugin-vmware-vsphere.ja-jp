@@ -383,7 +383,6 @@
   <block id="9e51876f1626b29bef8363e8e49f4399" category="paragraph"><block ref="9e51876f1626b29bef8363e8e49f4399" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e36997657270b76894de3e4df7a0bfea" category="paragraph">[ ジョブモニタ ] タブには、各ジョブとそのステータス、開始時刻、および終了時刻が表示されます。ジョブ名が長い場合は、右にスクロールしないと開始時刻と終了時刻が表示されない場合があります。表示は 30 秒ごとに更新されます。</block>
   <block id="6877b4359705f09d5cae8f90b7263c8a" category="list-text">をクリックします <block ref="7af497620571fc05b49f8954481b7140" category="inline-image-macro-rx" type="image"></block> ツールバーの更新アイコンをクリックすると、画面がオンデマンドで更新されます。</block>
-  <block id="de43f564191b23e6a59c556cc7f93041" category="list-text">をクリックします <block ref="7381c96683fb50d316b765b33a279a1f" category="inline-image-macro-rx" type="image"></block> フィルタアイコンを使用して、表示するジョブの期間、タイプ、およびステータスを選択します。</block>
   <block id="1e5d7883bd10140e35399af7097dca80" category="list-text">をクリックします <block ref="7af497620571fc05b49f8954481b7140" category="inline-image-macro-rx" type="image"></block> ジョブの実行中に表示を更新するには、 [ ジョブの詳細 ] ウィンドウの [ 更新 ] アイコンをクリックします。</block>
   <block id="998d28e7400255771ac581f9219e9a7f" category="inline-link">技術情報アーティクル：「 SnapCenter vSphere Web Client Dashboard does not display jobs</block>
   <block id="9f9e4f1f94fce90c2461c88b48d97eff" category="paragraph">Dashboard にジョブ情報が表示されない場合は、を参照してください<block ref="41548c972cbca01447f4997545abfec9" category="inline-link-rx"></block>。</block>
@@ -1586,7 +1585,6 @@
   <block id="f756ba31a99a4185d9ca1e432a20a83f" category="paragraph">リンクモードでは、リンクされたすべての vCenter のポリシーがリストに表示されます。リソースグループと同じ vCenter 上にあるポリシーを選択する必要があります。</block>
   <block id="5049311e411f306df5ef01765b9dc8ec" category="list-text">[* Schedules* ] ページで、選択した各ポリシーのバックアップスケジュールを設定します。</block>
   <block id="c4c45b2b283ca2fa9057abb408ea2d4d" category="paragraph"><block ref="c4c45b2b283ca2fa9057abb408ea2d4d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7fb7ad8e3535da92bb1912857e528122" category="paragraph">開始時間フィールドに、 0 以外の時間を入力します。</block>
   <block id="c80a367628429b7e21115a777438508a" category="paragraph">各フィールドに入力する必要があります。SnapCenter VMware プラグインは、 SnapCenter VMware プラグインが導入されているタイムゾーンでスケジュールを作成します。タイムゾーンは、 SnapCenter Plug-in for VMware vSphere GUI を使用して変更できます。</block>
   <block id="c32889f5fe21a50841ec14f3184ac30b" category="paragraph">[ 完了 ] をクリックすると ' 新しいリソースグループがリソースグループリストに追加されます</block>
   <block id="2ff2dc58f2ec2635705f09ff662f69ce" category="admonition">バックアップ内のいずれかの VM で休止処理が失敗すると、選択したポリシーで VM の整合性が選択されていても、バックアップは Not VM-Consistent とマークされます。この場合、一部の VM が正常に休止された可能性があります。</block>
@@ -1832,7 +1830,6 @@
   <block id="91d4b2fc300bcf471a4e610b941c1e32" category="cell">VMware 向け ONTAP ツール</block>
   <block id="47ff422f78a776fed1a1b024f1205717" category="cell">SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。</block>
   <block id="272ac1abd82997e2442d32a79e6f5271" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block>。</block>
-  <block id="36e5cc5b4b4a18a57e38d80baa6dc2e0" category="paragraph">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。注：ポート設定は変更できません。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server のポート</block>
   <block id="1f5ccbd5c3e6d6be1c440296630a5678" category="cell">VVol VM を保護する場合はポート 443 を使用する必要があります。</block>
   <block id="a4ba122796d9be1187615f3e4e5f759f" category="list-text">VM と整合性のあるバックアップを作成する場合は、 VMware Tools をインストールして実行しておく必要があります。VM を休止するには VMware Tools が必要です。VM と整合性のあるバックアップは VVol VM ではサポートされません。</block>
@@ -1908,7 +1905,6 @@
   <block id="bd3b3958722363127e54a9e8e7a3d8e0" category="paragraph">VVOL VM の VMDK を元のデータストアにリストアできます。</block>
   <block id="a5497137d298c957e9578d038ccb451d" category="paragraph">VVOL バックアップから VMDK を接続することはできません。</block>
   <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
-  <block id="5aaff5e3519cb05a480cee3030d87ebc" category="admonition">削除された VM をリストアする場合、元々 VM に割り当てられていたタグはリストアされません。</block>
   <block id="e2496f7f30be021f22d563d55a9d9a77" category="inline-link-macro">SnapCenter Plug-in for VMware vSphere に必要な最小限の vCenter 権限</block>
   <block id="a57f357cda6b120bf6909f719837db9d" category="list-text">vCenter のユーザアカウントにが必要です <block ref="db7461a22bb1a1369320da1099e48c51" category="inline-link-macro-rx"></block>。</block>
   <block id="ef4a97108133e7715327ed1b569844e9" category="inline-link">SnapCenter Plug-in for VMware vSphere 4.6 リリースノート</block>
@@ -1922,4 +1918,9 @@
   <block id="e8c19d50a62ef0c84239952feb395afa" category="sidebar">scbr.override ファイルを作成します</block>
   <block id="e83ed49b67b001041250970bfbe7efab" category="sidebar">上書き可能な設定プロパティ</block>
   <block id="e7d694813a2146a3ab31b4b907988620" category="sidebar">SSH を有効にします。</block>
+  <block id="122cb6830661325b4e6605ab0ebf6879" category="admonition">削除された VM のリストア時には、 VM に割り当てられていたタグやフォルダはリストアされません。</block>
+  <block id="62feac6f129e2303fab52cf1bd2e90c4" category="list-text">をクリックします <block ref="7381c96683fb50d316b765b33a279a1f" category="inline-image-macro-rx" type="image"></block> フィルタアイコンを使用して、表示するジョブの時間範囲、タイプ、タグ、およびステータスを選択します。フィルタでは大文字と小文字が区別されます。</block>
+  <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。</block>
+  <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注：ポート設定は変更できません。</block>
+  <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。</block>
 </blocks>

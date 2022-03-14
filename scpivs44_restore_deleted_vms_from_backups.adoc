@@ -36,7 +36,7 @@ VM は次の場所にリストアできます。
 NOTE: 別の場所にリストアする場合は、リストア処理のデスティネーションであるリンクされた vCenter で SnapCenter Plug-in for VMware vSphere が実行されている必要があります。デスティネーションデータストアに十分なスペースが必要です。
 
 
-NOTE: 削除された VM をリストアする場合、元々 VM に割り当てられていたタグはリストアされません。
+NOTE: 削除された VM のリストア時には、 VM に割り当てられていたタグやフォルダはリストアされません。
 
 .作業を開始する前に
 * ストレージシステムのユーザアカウントは、 VMware vSphere Web Client の Storage Systems ページで、に設定されている必要があります link:scpivs44_minimum_ontap_privileges_required.html["ONTAP に必要な最小限の ONTAP 権限"]。
