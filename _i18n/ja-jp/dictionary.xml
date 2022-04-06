@@ -37,50 +37,19 @@
   <block id="9680d30329a2703f92f1f40d6c654592" category="list-text">[MySQL バックアップと復元の設定 ] メニューから、オプション * 1 ） [MySQL バックアップの設定 * ] を入力します。</block>
   <block id="916491856dc6463b52669f1a72d9f59b" category="list-text">プロンプトに、リポジトリのバックアップ先、保持するバックアップの数、およびバックアップの開始時刻を入力します。</block>
   <block id="c3441cef2cabb9f29c458f1cc6459f0f" category="paragraph">入力を入力すると、すべての入力が保存されます。バックアップの保持数に達すると、新しいバックアップが実行されるときに古いバックアップが削除されます。</block>
-  <block id="0c003d82499f0d438805114b812d8bcc" category="doc">NetApp のデータブローカーからのアップグレード</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">作業を開始する前に</block>
-  <block id="aea46fc42440d1dbca56b7c0cb8f4168" category="list-text">アップグレードする VM には 12GB の RAM が必要です。</block>
-  <block id="2b8d5dd3a5c1ca1af7a5c7fe4f2dbbeb" category="list-text">アップグレードする VM の電源をオンにする必要があります。</block>
-  <block id="436e62866185df0411370b63e2ba2df2" category="list-text">アップグレード前に、 NetApp Data Broker を含む VM をバックアップすることを推奨します。</block>
-  <block id="4e5bb808269336045054fde60aaed517" category="paragraph">アップグレードの基本的な手順は 3 つあります。</block>
-  <block id="b1d47c4a14f5322478dec76f2c8db9b5" category="list-text">アップグレードを準備</block>
-  <block id="20713c70d68b79148e8f656e0aed11c6" category="list-text">アップグレード .ISO ファイルをダウンロードします。</block>
   <block id="f5b0696bfd02863abb2d114ef575a203" category="list-text">アップグレードをインストールする。</block>
-  <block id="9c56b7173c04da16b16d23e721c8ef6b" category="list-text">.ISO ファイルをデータストアにアップロードします。</block>
-  <block id="05ebcb88aebe04d4b7554752e4d737a6" category="list-text">VM をデータストア内の .ISO ファイルに接続します。</block>
-  <block id="2afdb167552320e31d47753be88be213" category="list-text">アップグレードを実行する。</block>
   <block id="a115e2512005f81c492d368a9613ee58" category="list-text">SnapCenter Plug-in for VMware vSphere を無効にしてアップグレードを準備します。</block>
-  <block id="f4c357fe473ebd5b4c7be135748546ac" category="list-text">NetApp Data Broker の管理 GUI にログインします。</block>
-  <block id="38d44809ade2f141c8f7b87b3634fecc" category="paragraph">NetApp Data Broker を導入すると IP が表示されます。</block>
-  <block id="7d62575d3bc7b58e343cd30785c90d70" category="list-text">左側のナビゲーションペインで [ 構成 ] をクリックし、 [ * プラグインの詳細 * ] セクションの [ サービス ] オプションをクリックしてプラグインを無効にします。</block>
   <block id="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link"><block ref="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link-rx"></block></block>
   <block id="49b20de0665dbf0adffcce8449969e05" category="list-text">ネットアップサポートサイト（<block ref="d9a31f976cefd9412c7b34e5af784f14" category="inline-link-rx"></block>）。</block>
   <block id="186741bf5d776ef0cdc89239ec5d6b01" category="list-text">製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。</block>
-  <block id="4718b614042c278ab3f31609ccad935a" category="list-text">SnapCenter Plug-in for VMware vSphere upgrade.ISO ファイルを任意の場所にダウンロードします。</block>
   <block id="1ced0a64a9eacafaada35a9482d31c57" category="list-text">ブラウザから VMware vSphere vCenter にアクセスします。</block>
-  <block id="1d49eddb57c81eca8d44353e2baa9d71" category="list-text">vCenter GUI で、 * vSphere Web Client （ HTML5 ） * をクリックします。</block>
   <block id="8d668d142d0f3d31fe81d5725d775268" category="list-text">VMware vCenter Single Sign-On * ページにログインします。</block>
-  <block id="eb6b2dd3e5dae796ca58dcdc57b93939" category="list-text">Navigator ペインで、アップグレードする NetApp Data Broker VM をクリックし、 * Summary * タブをクリックします。</block>
   <block id="3630c5d0152e5c45485f4ec788813d5f" category="list-text">[*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。</block>
-  <block id="4848248fa016f7d9a3f4b825140bfe39" category="list-text">選択したデータストアの「 * ファイル * 」タブで、リスト内の任意のフォルダをクリックし、ストレージアイコン（ * データストアへのファイルのアップロード * ）をクリックします。</block>
-  <block id="a3e2c931b223f74b176cac001786dce0" category="list-text">アップグレードのポップアップ画面で '.iso ファイルをダウンロードした場所に移動し '.iso ファイルイメージをクリックしてから '*Open* をクリックします</block>
-  <block id="e852a9f29449b4d56c8d1dd100313e99" category="paragraph">ファイルがデータストアにアップロードされます。</block>
-  <block id="990f34fb256d02bbeddd9a234eab6c8c" category="list-text">アップグレードする NetApp Data Broker VM に移動し、 * Summary * タブをクリックします。</block>
-  <block id="be6b8c415d1ea5fdd3030094d35ec8fd" category="paragraph">[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。</block>
   <block id="9bdc956870fb4f8eda0fc93c8639dda1" category="list-text">[CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。</block>
-  <block id="492474fade2f410b24197c85ee42b361" category="paragraph"><block ref="492474fade2f410b24197c85ee42b361" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4e36d9630c525be29c9f2b987c378c3a" category="list-text">ウィザードで、次の手順を実行します。</block>
-  <block id="3e4a9be60d5e083433692b7b1708dd9d" category="paragraph">Datastores カラムで '.iso ファイルをアップロードしたデータストアを選択します</block>
-  <block id="39128cd7dc9ff926f481dd21b5a561e3" category="paragraph">[Contents] 列で、アップロードした「 .iso 」ファイルに移動し、 [File Type] フィールドで [ISO IMAGE] が選択されていることを確認して、 [OK] をクリックします。</block>
-  <block id="fcf7170f3e231a560dd115ff4bb9954a" category="paragraph">フィールドに「接続済み」ステータスが表示されるまで待ちます。</block>
-  <block id="1d4f38dc0cf132a9ff747c89e48c6ef8" category="list-text">仮想アプライアンスの [Summary] * タブにアクセスしてメンテナンスコンソールにログオンし、スタートアイコンをクリックしてメンテナンスコンソールを起動します。</block>
   <block id="1b9c2951979b9427336de3c6b89e109a" category="list-text">「システム構成」に「 * 2 」と入力し、「アップグレード」に「 * 8 」と入力します。</block>
   <block id="3fa27d5cda1efe2ca10c0731abce440c" category="list-text">「 * y * 」と入力してアップグレードを続行し、開始します。</block>
-  <block id="420d8efc5aac14e2c2c1dc0542e42a7c" category="paragraph">「 upgrade successful 」というメッセージが表示されると、システムはサービスの開始を試みます。</block>
-  <block id="c90b9b19a408b027f2f8721ca87c1711" category="list-text">「 Press Enter to continue 」というメッセージが表示されるまで待ち、 SnapCenter Plug-in for VMware vSphere 管理 GUI にログインします。</block>
-  <block id="e3cf3231f3996b49b271f37ffe99bf4e" category="paragraph">IP アドレスは、以前の NetApp Data Broker のアドレスと同じです。</block>
-  <block id="c6fcc40c750cc3136cb59f9ce953d7d8" category="list-text">「 * Plug-in Details * 」セクションで、 SnapCenter Plug-in for VMware vSphere サービスを有効にし、ステータスが「 Connected 」と表示されることを確認します。</block>
-  <block id="5a44c0e5e0af7cae22096ca96276f0d1" category="paragraph">SnapCenter Plug-in for VMware vSphere を使用してアプリケーションベースのデータ保護をサポートしていて、プラグインが SnapCenter サーバと通信できない場合は、 SnapCenter SnapCenter GUI で、 [*Hosts] をクリックし、 [VMware ホスト ] をクリックして、 [*Push Server Credentials] をクリックします。</block>
   <block id="0f575d4c6e589b4ccb8be23f00713b60" category="doc">VMware vSphere Web Client Service を再起動します</block>
   <block id="c4ba4f340f36e94783d25ae6298d357a" category="paragraph">SnapCenter VMware vSphere Web Client が正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。</block>
   <block id="fe7a5d7c21fd6618d11878bbe4c58d46" category="section-title">Linux vCenter で VMware vSphere Web Client Service を再起動します</block>
@@ -1672,7 +1641,6 @@
   <block id="7608e75619cff3eeb4e8bce40481b456" category="sidebar">SnapCenter ソフトウェアのドキュメント</block>
   <block id="11d88a82190664755120fc16494310df" category="sidebar">以前のバージョンの SCV のドキュメント</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">ネットアップのナレッジベース - SCV</block>
-  <block id="058c063e71e7a372dedf168e2a604eb9" category="summary">SnapCenter Plug-in for VMware vSphere の新機能を使用する場合は、 NetApp Data Broker 1.0.x から SnapCenter Plug-in for VMware vSphere にアップグレードする必要があります。</block>
   <block id="012ec6632937d7152731cacee30c59bf" category="list-text">をクリックします <block ref="915ca28449bbaaf9ebf3b6ab40e1c545" category="inline-image-macro-rx" type="image"></block>* 追加 * 。</block>
   <block id="8c1fdca1d8c0cd47a5190895b6695a25" category="list-text">Run As Credentials * ダイアログボックスで、クレデンシャルを入力します。[ ユーザー名 ] には、「 Administrator 」と入力する必要があります。</block>
   <block id="c2b926872850e499819e1c163bfb05f6" category="list-text">[Select VM] をクリックし、 [* Proxy VM] ダイアログボックスで VM を選択します。[ 保存（ Save ） ] をクリックして、 [ クリデンシャル * として実行（ Run As Credentials * ） ] ダイアログボックスに戻ります。クレデンシャルの認証に使用する VM を選択します。</block>
@@ -1923,4 +1891,5 @@
   <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。</block>
   <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注：ポート設定は変更できません。</block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。</block>
+  <block id="3bff0f18ac6484a23a602a095461c45e" category="paragraph">「各 * 」フィールドで日数を選択すると、その月の 1 日目にバックアップが実行され、そのあとは指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始データが偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
 </blocks>
