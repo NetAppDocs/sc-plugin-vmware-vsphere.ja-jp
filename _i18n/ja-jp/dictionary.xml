@@ -1891,5 +1891,5 @@
   <block id="9f0e863b35d7c0c7148fb01a2711d395" category="paragraph">8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。</block>
   <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注：ポート設定は変更できません。</block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。</block>
-  <block id="3bff0f18ac6484a23a602a095461c45e" category="paragraph">「各 * 」フィールドで日数を選択すると、その月の 1 日目にバックアップが実行され、そのあとは指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始データが偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
+  <block id="ac5e163a794b06c9f175b63840f2db02" category="paragraph">「各 * 」フィールドで日数を選択すると、その月の 1 日目にバックアップが実行され、そのあとは指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
 </blocks>
