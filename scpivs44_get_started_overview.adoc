@@ -6,6 +6,7 @@ summary: SnapCenter の機能を使用して仮想マシン、データストア
 ---
 = 導入の概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

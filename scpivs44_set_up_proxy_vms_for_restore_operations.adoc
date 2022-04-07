@@ -6,6 +6,7 @@ summary: ゲストファイルのリストア処理に仮想ディスクを接�
 ---
 = リストア処理用のプロキシ VM をセットアップします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 'デフォルト値を変更するには "scbr.override 構成ファイ
 ---
 = オーバーライドできるプロパティ
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

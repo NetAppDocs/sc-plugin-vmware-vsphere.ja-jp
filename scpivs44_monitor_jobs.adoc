@@ -6,6 +6,7 @@ summary: VMware vSphere Web Client を使用してデータ保護処理を実行
 ---
 = ジョブを監視する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

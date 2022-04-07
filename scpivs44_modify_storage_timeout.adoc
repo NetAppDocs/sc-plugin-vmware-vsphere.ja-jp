@@ -6,6 +6,7 @@ summary: 以前にバックアップが正常に実行されていたとして�
 ---
 = 設定されているストレージタイムアウトを変更します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

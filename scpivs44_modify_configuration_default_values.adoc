@@ -6,6 +6,7 @@ summary: 運用効率を高めるために、「 CBR 上書き」コンフィギ
 ---
 = 設定のデフォルト値を変更します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: VMware vSphere Web Client を使用して VM やデータストアを�
 ---
 = ストレージシステムを管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

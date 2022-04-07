@@ -6,6 +6,7 @@ summary: ここでは、 SnapCenter Plug-in for VMware vSphere のライセン�
 ---
 = ライセンス
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

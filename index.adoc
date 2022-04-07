@@ -7,6 +7,7 @@ summary: SnapCenter Plug-in for VMware vSphere （ SCV ）は Linux ベースの
 ---
 = SnapCenter Plug-in for VMware vSphere のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

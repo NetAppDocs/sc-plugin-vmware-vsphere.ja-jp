@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグ
 ---
 = 各種 SnapCenter GUI の概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

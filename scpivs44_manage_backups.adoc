@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere で実行されたバックアッ
 ---
 = バックアップを管理します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

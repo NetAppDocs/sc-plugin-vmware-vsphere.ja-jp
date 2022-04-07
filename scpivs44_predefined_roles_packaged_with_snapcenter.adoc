@@ -6,6 +6,7 @@ summary: vCenter Server RBAC の使用を簡単にするため、 SnapCenter VMw
 ---
 = SnapCenter Plug-in for VMware vSphere に組み込みの事前定義のロール
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

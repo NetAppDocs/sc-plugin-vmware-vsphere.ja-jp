@@ -6,6 +6,7 @@ summary: リストアウィザードを使用して、 VM またはデータス�
 ---
 = バックアップを検索します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

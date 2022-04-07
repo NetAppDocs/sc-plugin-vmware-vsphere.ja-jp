@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere GUI からサポートバンド�
 ---
 = SnapCenter Plug-in for VMware vSphere GUI からサポートバンドルを生成
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

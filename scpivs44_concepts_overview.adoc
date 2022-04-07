@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere は、 VM とデータストア�
 ---
 = 製品の概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

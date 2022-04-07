@@ -6,6 +6,7 @@ summary: バックアップ処理は、リソースグループに定義され�
 ---
 = リソースグループをオンデマンドでバックアップする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: このワークフローは、 SnapCenter を使用していて、 Snap
 ---
 = 既存ユーザ向けの導入ワークフロー
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

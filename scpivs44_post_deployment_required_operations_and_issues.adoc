@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere の導入が完了したら、イ
 ---
 = 導入後に必要な処理と問題
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用してリソー
 ---
 = REST API のワークフローを使用して、リソースグループを作成および変更できます
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

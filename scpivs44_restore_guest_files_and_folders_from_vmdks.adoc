@@ -6,6 +6,7 @@ summary: Windows ゲスト OS の VMDK から、 1 つ以上のファイルや�
 ---
 = VMDK からゲストのファイルとフォルダをリストアする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

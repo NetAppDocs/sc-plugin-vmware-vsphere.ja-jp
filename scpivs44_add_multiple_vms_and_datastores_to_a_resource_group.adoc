@@ -6,6 +6,7 @@ summary: SnapCenter VMware vSphere Web Client のリソースグループの編�
 ---
 = リソースグループに複数の VM とデータストアを追加する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

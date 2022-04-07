@@ -6,6 +6,7 @@ summary: カスタムのプリスクリプトとポストスクリプトをデ�
 ---
 = プリスクリプトとポストスクリプト
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

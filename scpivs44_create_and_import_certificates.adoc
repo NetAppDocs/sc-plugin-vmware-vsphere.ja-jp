@@ -6,6 +6,7 @@ summary: SnapCenter VMware プラグインは、 SSL 暗号化を使用してク
 ---
 = 証明書を作成してインポートします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

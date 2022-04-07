@@ -6,6 +6,7 @@ summary: SnapCenter VMware プラグインの導入時、 SSH はデフォルト
 ---
 = SSH for SnapCenter Plug-in for VMware vSphere を有効にします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

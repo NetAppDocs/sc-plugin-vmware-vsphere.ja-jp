@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere の導入を開始する前に、
 ---
 = 最小限の vCenter 権限が必要です
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

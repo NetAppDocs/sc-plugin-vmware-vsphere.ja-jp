@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware v
 ---
 = REST API を使用して、停止したジョブを失敗としてマークします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 ---
 = SnapCenter Plug-in for VMware vSphere の同じリリースの新しいパッチにアップグレードします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: .ova ファイルには、 VM およびデータストアデータ保�
 ---
 = OVA （ Open Virtual Appliance ）をダウンロードする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: SnapCenter でアプリケーションオーバー VMDK ワークフロ
 ---
 = SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

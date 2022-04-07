@@ -6,6 +6,7 @@ summary: SnapCenter VMware vSphere Web Client が正しく動作しない場合�
 ---
 = VMware vSphere Web Client Service を再起動します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

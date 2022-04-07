@@ -6,6 +6,7 @@ summary: REST API は Swagger Web ページから利用できます。Swagger We
 ---
 = Swagger API Web ページから REST API にアクセスします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

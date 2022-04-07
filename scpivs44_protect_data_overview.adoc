@@ -6,6 +6,7 @@ summary: すべてのバックアップ処理はリソースグループに対�
 ---
 = データ保護のワークフロー
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

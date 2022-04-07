@@ -6,6 +6,7 @@ summary: リリースノートには、このリリースの SnapCenter Plug-in 
 ---
 = リリースノート
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

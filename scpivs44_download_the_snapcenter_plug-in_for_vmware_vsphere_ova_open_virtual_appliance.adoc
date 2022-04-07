@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere の .ova ファイルは、ネッ
 ---
 = SnapCenter Plug-in for VMware vSphere OVA （オープン仮想アプライアンス）のダウンロード
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

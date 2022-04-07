@@ -6,6 +6,7 @@ summary: バックアップリソースグループを作成、変更、削除�
 ---
 = リソースグループの管理
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

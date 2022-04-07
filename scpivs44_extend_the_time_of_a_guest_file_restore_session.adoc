@@ -6,6 +6,7 @@ summary: 'デフォルトでは、接続されているゲストファイルリ�
 ---
 = ゲストファイルリストアセッションの時間を延長します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

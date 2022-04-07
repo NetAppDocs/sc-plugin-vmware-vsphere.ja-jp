@@ -6,6 +6,7 @@ summary: SnapCenter の機能を使用して仮想マシン、データストア
 ---
 = SnapCenter Plug-in for VMware vSphere を導入
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: メンテナンスコンソールからサポートバンドルを生�
 ---
 = メンテナンスコンソールからサポートバンドルを生成する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

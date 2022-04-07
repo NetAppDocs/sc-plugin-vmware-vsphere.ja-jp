@@ -6,6 +6,7 @@ summary: SnapCenter VMware プラグインは、 vCenter Server RBAC 、 SnapCen
 ---
 = SnapCenter Plug-in for VMware vSphere の ONTAP RBAC 機能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

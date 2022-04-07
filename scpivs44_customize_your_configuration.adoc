@@ -6,6 +6,7 @@ summary: 運用効率を高めるために、 scbr.override 構成ファイル�
 ---
 = 設定をカスタマイズします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

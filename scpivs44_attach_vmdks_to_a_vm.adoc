@@ -6,6 +6,7 @@ summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり�
 ---
 = VM に VMDK を接続する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

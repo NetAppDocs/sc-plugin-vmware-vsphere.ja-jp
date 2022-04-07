@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMDK の
 ---
 = VMDK を接続および接続解除する REST API のワークフロー
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: このワークフローは、 SnapCenter の導入前に SnapCenter �
 ---
 = 新規ユーザ向けの導入ワークフロー
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: 1 つ以上のジョブのレポートをダッシュボードから要
 ---
 = レポートにアクセスする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

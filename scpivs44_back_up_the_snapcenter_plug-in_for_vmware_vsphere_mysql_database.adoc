@@ -6,6 +6,7 @@ summary: SnapCenter VMware プラグインには、 MySQL データベース（ 
 ---
 = SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

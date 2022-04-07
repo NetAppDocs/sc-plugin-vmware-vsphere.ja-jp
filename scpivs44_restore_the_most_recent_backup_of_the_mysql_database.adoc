@@ -6,6 +6,7 @@ summary: メンテナンスコンソールを使用して、 SnapCenter Plug-in 
 ---
 = MySQL データベースの最新のバックアップをリストアします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

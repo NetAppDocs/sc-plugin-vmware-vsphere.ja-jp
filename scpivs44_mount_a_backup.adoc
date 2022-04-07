@@ -6,6 +6,7 @@ summary: バックアップ内のファイルにアクセスする必要があ�
 ---
 = バックアップをマウント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

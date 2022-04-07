@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere は、仮想化されたリソー
 ---
 = ロールベースアクセス制御（ RBAC ）
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

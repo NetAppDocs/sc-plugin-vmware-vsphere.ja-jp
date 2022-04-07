@@ -6,6 +6,7 @@ summary: SnapCenter のデータ保護機能が不要になった場合は、 Sn
 ---
 = SnapCenter Plug-in for VMware vSphere を無効にして有効にします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: プライマリバックアップまたはセカンダリバックア�
 ---
 = リストアの概要
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

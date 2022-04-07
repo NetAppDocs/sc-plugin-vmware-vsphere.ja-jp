@@ -6,6 +6,7 @@ summary: プライマリまたはセカンダリバックアップから、既�
 ---
 = バックアップから VMDK をリストアする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

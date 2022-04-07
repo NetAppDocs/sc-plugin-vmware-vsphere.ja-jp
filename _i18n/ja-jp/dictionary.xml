@@ -1872,7 +1872,6 @@
   <block id="68109f809a0ab91cdd8972e06d907043" category="paragraph">従来の VM の VMDK を、元のデータストアまたは別のデータストアにリストアできます。</block>
   <block id="bd3b3958722363127e54a9e8e7a3d8e0" category="paragraph">VVOL VM の VMDK を元のデータストアにリストアできます。</block>
   <block id="a5497137d298c957e9578d038ccb451d" category="paragraph">VVOL バックアップから VMDK を接続することはできません。</block>
-  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
   <block id="e2496f7f30be021f22d563d55a9d9a77" category="inline-link-macro">SnapCenter Plug-in for VMware vSphere に必要な最小限の vCenter 権限</block>
   <block id="a57f357cda6b120bf6909f719837db9d" category="list-text">vCenter のユーザアカウントにが必要です <block ref="db7461a22bb1a1369320da1099e48c51" category="inline-link-macro-rx"></block>。</block>
   <block id="ef4a97108133e7715327ed1b569844e9" category="inline-link">SnapCenter Plug-in for VMware vSphere 4.6 リリースノート</block>
@@ -1892,4 +1891,15 @@
   <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注：ポート設定は変更できません。</block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。</block>
   <block id="ac5e163a794b06c9f175b63840f2db02" category="paragraph">「各 * 」フィールドで日数を選択すると、その月の 1 日目にバックアップが実行され、そのあとは指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">著作権に関する声明、商標、特許などにアクセスできます。</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">著作権</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp のロゴ、および NetApp の商標ページに記載されているマークは、 NetApp, Inc. の商標です。その他の会社名および製品名は、それぞれの所有者の商標である場合があります。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">特許</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">ネットアップが所有する特許の最新リストは、次のサイトで入手できます。</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">プライバシーポリシー</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
 </blocks>

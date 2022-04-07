@@ -6,6 +6,7 @@ summary: VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リ
 ---
 = リストア処理の実行方法
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

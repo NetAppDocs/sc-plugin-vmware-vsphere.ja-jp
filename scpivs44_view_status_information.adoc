@@ -6,6 +6,7 @@ summary: ステータス情報は、 vSphere Web Client Dashboard で確認で�
 ---
 = ステータス情報を表示します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

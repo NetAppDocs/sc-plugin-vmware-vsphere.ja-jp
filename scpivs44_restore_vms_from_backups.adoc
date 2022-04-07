@@ -6,6 +6,7 @@ summary: VM をリストアする際に、選択したバックアップコピ�
 ---
 = バックアップから VM をリストアする
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

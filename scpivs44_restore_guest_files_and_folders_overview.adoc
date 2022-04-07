@@ -6,6 +6,7 @@ summary: Windows ゲスト OS の仮想マシンディスク（ VMDK ）から�
 ---
 = ワークフロー、前提条件、および制限事項
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

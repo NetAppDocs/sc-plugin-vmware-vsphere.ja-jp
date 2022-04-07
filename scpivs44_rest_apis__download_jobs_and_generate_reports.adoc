@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware v
 ---
 = REST API を使用してジョブをダウンロードし、レポートを生成できます
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

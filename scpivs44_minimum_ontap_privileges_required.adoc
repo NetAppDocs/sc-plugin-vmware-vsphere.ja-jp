@@ -6,6 +6,7 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 ---
 = 必要な最小 ONTAP 権限
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: ジョブログは、 SnapCenter VMware vSphere Web Client のダッシ
 ---
 = ジョブログをダウンロードします
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

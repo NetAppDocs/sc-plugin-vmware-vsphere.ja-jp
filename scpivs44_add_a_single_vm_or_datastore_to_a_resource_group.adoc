@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere で管理されている既存の
 ---
 = リソースグループに 1 つの VM またはデータストアを追加する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

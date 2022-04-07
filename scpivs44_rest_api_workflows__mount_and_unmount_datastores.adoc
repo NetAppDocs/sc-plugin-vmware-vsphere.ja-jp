@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用してデータ
 ---
 = REST API のワークフローを使用してデータストアをマウントおよびアンマウントできます
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

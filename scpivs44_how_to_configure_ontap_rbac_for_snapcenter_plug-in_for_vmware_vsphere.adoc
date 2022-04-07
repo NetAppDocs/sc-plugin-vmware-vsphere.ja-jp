@@ -6,6 +6,7 @@ summary: ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合
 ---
 = SnapCenter Plug-in for VMware vSphere 用に ONTAP RBAC を設定する方法
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

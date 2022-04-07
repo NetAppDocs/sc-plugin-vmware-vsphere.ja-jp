@@ -6,6 +6,7 @@ summary:
 ---
 = バックアップポリシーを作成する
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

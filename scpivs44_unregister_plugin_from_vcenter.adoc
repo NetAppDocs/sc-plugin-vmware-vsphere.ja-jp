@@ -6,6 +6,7 @@ summary: リンクモードの vCenter で SnapCenter VMware プラグインサ�
 ---
 = vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

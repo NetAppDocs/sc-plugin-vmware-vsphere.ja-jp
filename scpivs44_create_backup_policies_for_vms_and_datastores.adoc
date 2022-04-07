@@ -6,6 +6,7 @@ summary: SnapCenter Plug-in for VMware vSphere を使用して VM とデータ�
 ---
 = VM とデータストアのバックアップポリシーの作成
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

@@ -6,6 +6,7 @@ summary: ストレージを追加すると、 SnapCenter Plug-in for VMware vSph
 ---
 = ストレージを追加します
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
