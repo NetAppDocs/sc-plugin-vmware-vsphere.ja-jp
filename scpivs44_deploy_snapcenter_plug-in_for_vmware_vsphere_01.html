@@ -169,7 +169,7 @@
   
   <!-- Start Page Toolbar -->
   
-  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[SnapCenter Plug-in for VMware vSphere を導入](https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/edit-sm.svg" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/sc-plugin-vmware-vsphere/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a></div>
+  <div class="page-nav-toolbar"><div class="page-nav-contribute"><a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/issues/new?body=Page%3A%20[SnapCenter Plug-in for VMware vSphere を導入](https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/discuss-sm.svg" alt="" class="github-icon" />ドキュメントの変更をリクエスト</a><a target="_blank" href="https://github.com/NetAppDocs/sc-plugin-vmware-vsphere/blob/main/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/sc-plugin-vmware-vsphere/images/edit-sm.svg" alt="" class="github-icon" />GitHub で編集</a><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/sc-plugin-vmware-vsphere/images/article-sm.svg" alt="" class="github-icon" />寄稿者向けガイド</a></div>
     <div class="page-nav-container">
       <nav class="page-nav-fixed">
         <div class="page-nav-title">このページ</div>
@@ -258,11 +258,13 @@
           <div id="react-search" 
           data-search-html="/ja-jp/sc-plugin-vmware-vsphere/search.html"
           data-type="widget" 
-          data-placeholder="ドキュメントを検索" 
-          data-no-results-found="{query}に該当する結果はありません" 
-          data-did-you-mean="{suggestion} を検索" 
-          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
-          data-results-found="{hitCount} 件見つかりました"  
+          data-placeholder="ドキュメントを検索"
+          data-no-results-found="{query}に該当する結果はありません"
+          data-did-you-mean="{suggestion} を検索"
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?"
+          data-results-found="{hitCount} 件見つかりました"
+          data-error-message="We're sorry, an issue occurred when fetching your results. Please try again."
+          data-error-reset="Reset Search"
           data-sk-es-pf-indexes=""
           data-flavor=""></div>
           <button class="n-property-bar__search-toggle-button" type="button">
@@ -277,35 +279,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">日本語</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">日本語</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/sc-plugin-vmware-vsphere/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/ja-jp/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-cn/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/sc-plugin-vmware-vsphere/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -349,7 +343,7 @@
   <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
-    <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>利用可能なPDF<span>
+    <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>利用可能なPDF<span>
     </span>
   </a>
 </div>
@@ -359,7 +353,7 @@
         
         
         <a target="_blank" href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/fullsite-sidebar/SnapCenter_Plug_in_for_VMware_vSphere_のドキュメント.pdf" >
-          <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>このドキュメントサイトのPDF</a>
+          <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>このドキュメントサイトのPDF</a>
 
 
 
@@ -376,7 +370,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/概念.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             概念
           </a>
           
@@ -396,8 +390,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -417,7 +409,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/はじめに.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             はじめに
           </a>
           
@@ -439,7 +431,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/SCV_の導入要件.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             SCV の導入要件
           </a>
           
@@ -449,8 +441,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -466,8 +456,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -487,7 +475,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/クイックスタート.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             クイックスタート
           </a>
           
@@ -495,14 +483,7 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/pages/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.pdf" >
-    <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
   
 
 
@@ -512,8 +493,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -533,7 +512,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/監視とレポート.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             監視とレポート
           </a>
           
@@ -549,8 +528,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -570,7 +547,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/ストレージを管理します.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             ストレージを管理します
           </a>
           
@@ -580,8 +557,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -601,7 +576,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/データを保護.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             データを保護
           </a>
           
@@ -629,8 +604,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -650,7 +623,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/データストアのマウントとアンマウント.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             データストアのマウントとアンマウント
           </a>
           
@@ -658,8 +631,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -679,7 +650,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/バックアップからリストアします.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             バックアップからリストアします
           </a>
           
@@ -703,8 +674,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -724,7 +693,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/ゲストファイルとフォルダをリストアします.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             ゲストファイルとフォルダをリストアします
           </a>
           
@@ -740,8 +709,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -761,7 +728,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/Manage_SnapCenter_Plug_in_for_VMware_vSphere_appliance___VMware_vSphere_アプライアンス用の_VMware_プラグインの管理_.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             Manage SnapCenter Plug-in for VMware vSphere appliance （ VMware vSphere アプライアンス用の VMware プラグインの管理）
           </a>
           
@@ -779,8 +746,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -800,7 +765,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/構成を管理します.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             構成を管理します
           </a>
           
@@ -820,8 +785,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -841,7 +804,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/REST_API.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             REST API
           </a>
           
@@ -871,8 +834,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -892,7 +853,7 @@
               href="/ja-jp/sc-plugin-vmware-vsphere/pdfs/sidebar/アップグレード.pdf" 
             
           >
-            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" width="16" height="16"/>
+            <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf.png" alt="" width="16" height="16"/>
             アップグレード
           </a>
           
@@ -902,8 +863,6 @@
 
 
 
-
-          
         </li>
       </ul>
     
@@ -912,11 +871,10 @@
 
 
 
-
 </li></ul>
   <div class="zip-pdf-link-container" style="display: none;">   
     <a href="#" id="zipPdf">
-      <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf-zip.png" width="16" height="16"/>
+      <img src="/ja-jp/sc-plugin-vmware-vsphere/images/pdf-zip.png" alt="" width="16" height="16"/>
       <pre>個別のPDFドキュメントのコレクション<span class="zip-size"></span></pre>
     </a><div id="zip-link-popup" class="hide">
     <div class="inner-modal">
@@ -949,7 +907,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/index.html">
         SnapCenter Plug-in for VMware vSphere
       </a></li><li class=" "><a class="na-navbar-padding" href="/ja-jp/sc-plugin-vmware-vsphere/scpivs44_release_notes.html">
@@ -1251,6 +1209,9 @@
     
   
 
+<span>寄稿者
+</span>
+
 
 </p>
 
@@ -1527,4 +1488,5 @@ IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のい�
     </script>
     <script src='/ja-jp/sc-plugin-vmware-vsphere/js/www-ntap.js'></script>
     <script src='/ja-jp/sc-plugin-vmware-vsphere/js/tabbed-blocks.js'></script>
+    <script src='/ja-jp/sc-plugin-vmware-vsphere/js/sidebar.js'></script>
   </body></html>
