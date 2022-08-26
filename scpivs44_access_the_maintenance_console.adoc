@@ -19,10 +19,9 @@ SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールを使
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
 .このタスクについて
-* デフォルトでは、ユーザ名「 maint 」と、 SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールにログインするためのパスワード「 admin123 」が使用されます。
+* VMware vSphere 4.6以前のSnapCenter プラグインの場合、デフォルトはユーザ名「maint」で、パスワードは「admin123」です。これは、SnapCenter Plug-in for VMware vSphereのメンテナンスコンソールにログインするためのパスワードです。
 +
-
-TIP: 導入後に、デフォルトのログインクレデンシャルを変更
+SnapCenter Plug-in for VMware vSphere 4.6P1以降では、SnapCenter Plug-in for VMware vSphereの初回インストール時にパスワードを指定する必要があります。リリース4.6以前からリリース4.6P1以降にアップグレードした場合は、以前のデフォルトパスワードが使用できます。
 
 * リモート診断をイネーブルにするには、「 diag 」ユーザのパスワードを設定する必要があります。
 +
@@ -46,7 +45,7 @@ image:scpivs44_image11.png["エラー：グラフィックイメージがあり�
 +
 ** オプション 1 ：アプリケーション構成
 +
-SnapCenter VMware プラグインの起動または停止 SnapCenter VMware プラグインサービスの概要を表示する SnapCenter プラグインのログインユーザ名またはパスワードを変更する MySQL パスワードを変更するバックアップおよびリストアする
+SnapCenter VMwareプラグインの起動または停止SnapCenter VMwareプラグインサービスの概要を表示するSnapCenter プラグインのログインユーザ名またはパスワードの変更MySQLパスワードの変更MySQLパスワードのバックアップとリストア、MySQLの設定と一覧表示を行います
 
 ** オプション 2 ：システム構成
 +

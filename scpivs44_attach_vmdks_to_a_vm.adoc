@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_attach_vmdks_to_a_vm.html 
 keywords:  
-summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり、同じ ESXi ホストの別の VM に接続したり、同じ vCenter またはリンクモードの別の vCenter で管理されている代替 ESXi ホストの別の VM に接続したりできます。 
+summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり、同じ ESXi ホストの別の VM に接続したり、同じ vCenter またはリンクモードの別の vCenter で管理されている代替 ESXi ホストの別の VM に接続したりできます。従来のデータストアとVVolデータストアのVMがサポートされます。 
 ---
-= VM に VMDK を接続する
+= VMまたはVVol VMにVMDKを接続する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,9 @@ summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり�
 
 
 [role="lead"]
-バックアップの 1 つ以上の VMDK を親 VM に接続したり、同じ ESXi ホストの別の VM に接続したり、同じ vCenter またはリンクモードの別の vCenter で管理されている代替 ESXi ホストの別の VM に接続したりできます。
+バックアップの 1 つ以上の VMDK を親 VM に接続したり、同じ ESXi ホストの別の VM に接続したり、同じ vCenter またはリンクモードの別の vCenter で管理されている代替 ESXi ホストの別の VM に接続したりできます。従来のデータストアとVVolデータストアのVMがサポートされます。
 
 これにより、ドライブ全体をリストアするのではなく、ドライブから 1 つ以上のファイルを簡単にリストアできます。必要なファイルをリストアまたはアクセスしたら、 VMDK の接続を解除できます。
-
-VVOL バックアップから VMDK を接続することはできません。
 
 次の接続オプションがあります。
 

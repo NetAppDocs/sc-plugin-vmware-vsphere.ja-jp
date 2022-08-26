@@ -20,7 +20,7 @@ summary: 運用効率を高めるために、 scbr.override 構成ファイル�
 
 
 
-=== scbr.override 構成ファイルを作成します
+== scbr.override 構成ファイルを作成します
 
 . /opt/NetApp/scvservice/standalone_aegis /etc/scbr/scbr.override -template に移動します。
 . 「 \opt\NetApp\scvservice\standalone_aegis\etc\scbr` ディレクトリにある「 CBR 上書きテンプレート」ファイルを新しいファイル「 CBR 上書き」にコピーします。
@@ -28,7 +28,7 @@ summary: 運用効率を高めるために、 scbr.override 構成ファイル�
 
 
 
-=== オーバーライドできるプロパティ
+== オーバーライドできるプロパティ
 
 * デフォルトでは、テンプレートはハッシュ記号を使用して設定プロパティをコメント化します。プロパティを使用して構成値を変更するには '#' 文字を削除する必要があります
 * 変更を有効にするには、 SnapCenter Plug-in for VMware vSphere ホストでサービスを再起動する必要があります。

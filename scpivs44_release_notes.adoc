@@ -13,4 +13,4 @@ summary: リリースノートには、このリリースの SnapCenter Plug-in 
 :imagesdir: ./media/
 
 
-リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2881136["SnapCenter Plug-in for VMware vSphere 4.6 リリースノート"^]
+リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356["『SnapCenter Plug-in for VMware vSphere 4.7 Release Notes』"^]

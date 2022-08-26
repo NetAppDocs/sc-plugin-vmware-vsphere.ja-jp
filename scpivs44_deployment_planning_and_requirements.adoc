@@ -119,10 +119,10 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | IP アドレス | IPv4 、 IPv6 
 
 
-| VMware TLS | 1/2 
+| VMware TLS | 1.2、1.3 
 
 
-| SnapCenter サーバ上の TLS | TLSv1.1 以降 SnapCenter サーバは、 SnapCenter VMware プラグインとの通信を使用して、 VMDK 経由のデータ保護処理をアプリケーションに提供します。 
+| SnapCenter サーバ上の TLS | 1.2、1.3 SnapCenter サーバでは、VMDKを介したアプリケーションのデータ保護処理のために、これを使用してSnapCenter VMwareプラグインと通信します。 
 
 
 | VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 

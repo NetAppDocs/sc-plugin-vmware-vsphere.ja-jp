@@ -24,12 +24,6 @@ SnapCenter VMware プラグインには、 MySQL データベース（ NSM デ�
 . VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * または Web コンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
-SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
-
-+
-ユーザ名 : 「パスワード : admin123 」
-
-+
 image:scpivs44_image21.png["エラー：グラフィックイメージがありません"]
 
 . メインメニューから、オプション * 1 ）「 Application Configuration. * 」と入力します

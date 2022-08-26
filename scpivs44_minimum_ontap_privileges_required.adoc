@@ -4,7 +4,7 @@ permalink: scpivs44_minimum_ontap_privileges_required.html
 keywords:  
 summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。 
 ---
-= 必要な最小 ONTAP 権限
+= ONTAP 権限が必要です
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,10 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 
 [role="lead"]
 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。
+
+
+
+== 必要な最小 ONTAP 権限
 
 すべての SnapCenter プラグインには、次の最小権限が必要です。
 
@@ -50,7 +54,7 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 |===
 
 
-=== ONTAP に関するその他の情報
+== ONTAP に関するその他の情報
 
 * ONTAP 8.2.x を実行している場合：
 +

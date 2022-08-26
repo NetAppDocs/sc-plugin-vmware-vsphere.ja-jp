@@ -24,9 +24,9 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 
 
 
-=== キャッシュをクリアする手順
+== キャッシュをクリアする手順
 
-. 「 vsphere-client-serenity 」フォルダを探し、「 com.netapp.scvm.webclient-4.6.0` 」フォルダを見つけて削除します。
+. 「vsphere-client-serenity」フォルダを探し、「com.netapp.scvm.webclient-<release-number>`」フォルダを見つけて削除します。
 +
 フォルダ名はリリースごとに変更されます。
 

@@ -26,6 +26,20 @@ summary: 'デフォルト値を変更するには "scbr.override 構成ファイ
 +
 デフォルト値は「 7 」です。
 
+* * disable.weakCiphers=true*
++
+SnapCenter Plug-in for VMware vSphereとSnapCenter の間の通信チャネルの次の弱い暗号、および「include.weakers`：TLS_RSA_WITH_AES_256_CBC_SHA256 TLS_DHRSA_WITH_AES_CBC_128_AES_DRSA_128_SHA128_DRSA_128_CBC_256 AES」にリストされている追加の弱い暗号を無効にします
+
+* * global.ds].exclusion).pattern *を入力します
++
+バックアップ処理から除外する1つ以上の従来のデータストアまたはVVolデータストアを指定します。データストアは、有効なJavaの正規表現を使用して指定できます。
+
++
+例1：式「global.ds].exclusion.patter=.*21`は、共通パターンを持つデータストアを除外します。たとえば、「datastore21」と「dstest21」は除外されます。
+
++
+例2：式「global.ds.exclusion.pattern = ds-.*|^vol123」は、「ds-`」を含むすべてのデータストア（「scvds-test」など）を除外するか、「vol123」で始まるものです。
+
 * * guestFileRestore.guest.operation.interval=5*
 +
 SnapCenter Plug-in for VMware vSphere がゲスト上でのゲスト処理の完了を監視する時間間隔（秒）を指定します（オンラインディスクおよびリストアファイル）。合計待機時間は 'guestFileRestore.online.disk.timeout' および guestFileRestore.restore.files.timeout' によって設定されます
@@ -100,6 +114,10 @@ VMDK ワークフローを介したアプリケーションで、クラスタ内
 
 +
 デフォルト値は「 false 」です。
+
+* *暗号を含みなさい。weakCiphers *
++
+「disable.weakCiphers」が「true」に設定されている場合は、「disable.weakers」ではデフォルトで無効になる弱い暗号に加えて、無効にする弱い暗号を指定します。
 
 * * 最大同時 DS.storage.query.count=15 *
 +

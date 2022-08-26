@@ -42,7 +42,7 @@ C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-c
 
 
 
-=== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
+== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
 
 . SnapCenter VMware プラグインの管理 GUI にログインします。
 +
@@ -52,7 +52,7 @@ IP は、 SnapCenter VMware プラグインを導入するときに表示され�
 +
 SnapCenter VMware プラグインサービスが無効になり、 vCenter で登録解除されます。
 
-. 「 vsphere-client-serenity 」フォルダを探し、「 com.netapp.scvm.webclient-4.2.0` 」フォルダを見つけて削除します。
+. 「vsphere-client-serenity」フォルダを探し、「com.netapp.scvm.webclient-<release-number>`」フォルダを見つけて削除します。
 +
 フォルダ名はリリースごとに変更されます。
 
