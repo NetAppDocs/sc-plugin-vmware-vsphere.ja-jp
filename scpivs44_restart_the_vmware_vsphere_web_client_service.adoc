@@ -28,7 +28,7 @@ vCenter 6.5 以降が実行されている必要があります。
 . SSH を使用して、 root として vCenter Server Appliance にログインします。
 . 次のコマンドを使用して、 Appliance Shell または bash Shell にアクセスします。
 +
-「地獄」
+「Shell」
 
 . 次の HTML5 コマンドを使用して Web Client Service を停止します。
 +
