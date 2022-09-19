@@ -179,7 +179,6 @@
   <block id="fcd86cc596f822c816f0c6770a216f38" category="list-text">データストアは、 clustered Data ONTAP 8.2.1 以前を実行しているネットアップストレージにあります。</block>
   <block id="62fc2c3502f537ee988c89c46b547a37" category="paragraph">SnapCenter バージョン 4.x では、 ONTAP 8.3.1 以降がサポートされます。</block>
   <block id="697ea025ecb303d4f40d1bf3a8b4bde0" category="inline-link">ネットアップの Interoperability Matrix Tool （ IMT ）</block>
-  <block id="f5568de9c9e0caa3283e8f2bcf00b4f9" category="paragraph">SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block> SnapCenter サポートの最新情報については、を参照してください。</block>
   <block id="4f11690e32499ec1417798db9cb86f8c" category="list-text">共有 PCI デバイスが VM に接続されている。</block>
   <block id="0706a3a0aad11229773c1704d2e28c53" category="list-text">優先 IP は SnapCenter で設定されていません。</block>
   <block id="6b2f6276dbeab613805dd6faa40c0b96" category="list-text">Storage VM （ SVM ）の管理 IP を SnapCenter に追加していません。</block>
@@ -645,7 +644,6 @@
   <block id="fa48228aaf71277e6bc2d05f062b62bb" category="list-text">VMware Tools がインストールされ、実行されている必要があります。</block>
   <block id="0584a4eafed573c2dc210c534594afdd" category="paragraph">SnapCenter は、 VMware Tools の情報を使用して、 VMware ゲスト OS への接続を確立します。</block>
   <block id="1572f8be6f1646b62b5c0d4d4c380fe8" category="list-text">Windows ゲスト OS で Windows Server 2008 R2 以降が実行されている必要があります。</block>
-  <block id="9308bc3137849178f2a1d4b2f840f1f3" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block>。</block>
   <block id="8eafca0087eab5ecb2870b27ade88f3c" category="list-text">ターゲット VM のクレデンシャルで、組み込みのドメイン管理者アカウントまたは組み込みのローカル管理者アカウントを指定する必要があります。ユーザ名は「 Administrator 」である必要があります。 リストア処理を開始する前に、仮想ディスクを接続する VM のクレデンシャルを設定する必要があります。このクレデンシャルは、接続処理と後続のリストア処理の両方で必要になります。ワークグループユーザは、組み込みのローカル管理者アカウントを使用できます。</block>
   <block id="ae010d54b0afb3a6e93783bbe5550d22" category="admonition">ビルトインの管理者アカウントではなく、 VM 内で管理者権限を持つアカウントを使用する必要がある場合は、ゲスト VM で UAC を無効にする必要があります。</block>
   <block id="37f8dfd8c74bc4597ec29e99bf89bf26" category="list-text">リストア元のバックアップ Snapshot コピーと VMDK を確認しておく必要があります。</block>
@@ -657,7 +655,6 @@
   <block id="7f395b83396bafcd5e1d1206370ba67d" category="list-text">アルファベット以外の名前のファイルの場合、単一のファイルではなくディレクトリにリストアする必要があります。</block>
   <block id="ee1c70a48815e066082eefeebc34049f" category="paragraph">日本語の漢字などのアルファベット以外の名前でファイルを復元するには、ファイルがあるディレクトリを復元します。</block>
   <block id="1ff1b21f136ea0663a63cc457f347949" category="list-text">Linux ゲスト OS からのリストアはサポートされていません</block>
-  <block id="ba7d5ae17e05f117613f6c9d8ce94a33" category="paragraph">Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください<block ref="58191ff79dfed9aa80c7f0f097ed65be" category="inline-link-rx"></block>。</block>
   <block id="9229096468701d10aab6b30f546310c1" category="section-title">ゲストファイルのリストアに関する制限事項</block>
   <block id="f59c7bff803fde0d7ac5c2117ba8b07a" category="paragraph">ゲスト OS からファイルまたはフォルダをリストアする前に、この機能がサポートしていない機能について確認しておく必要があります。</block>
   <block id="0938c50db6a8d08637c074ab0c183305" category="list-text">ゲスト OS 内で動的ディスクタイプをリストアすることはできません。</block>
@@ -1633,7 +1630,6 @@
   <block id="8478c8dba0b222eda55df9c06b26a928" category="list-text">SnapCenter VMware プラグインは、 Linux VM に仮想アプライアンスとして導入されます</block>
   <block id="8ebed4cc71ebae0e8a4f0dcea24cd08f" category="paragraph">仮想アプライアンスは Linux VM としてインストールする必要がありますが、 SnapCenter VMware プラグインは Windows ベースと Linux ベースの両方の vCenter をサポートします。SnapCenter では、このプラグインを標準で使用しているため、ユーザが vCenter と通信しなくても、 Windows および Linux の仮想アプリケーションでデータ保護処理を実行する SnapCenter アプリケーションベースのプラグインがサポートされます。</block>
   <block id="b9c9e7f1948911f3919c87ac446095a1" category="paragraph">SnapCenter Plug-in for VMware vSphere は、上記の主要な機能に加えて、 iSCSI 、ファイバチャネル、 FCoE 、 NFS 3.0 および 4.1 上の VMDK 、および VMFS 5.0 および 6.0 上の VMDK もサポートしています。</block>
-  <block id="9856ec9f087c5eba592abce3501cda06" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block> IMT</block>
   <block id="b13a4247d22cd0a43d54ca7d80210144" category="paragraph">NFS プロトコルおよび ESXi については、 VMware から提供される vSphere Storage のドキュメントを参照してください。</block>
   <block id="799fee4408785caa314299fa0125daec" category="inline-link">SnapCenter のドキュメント</block>
   <block id="9e91a63458c500b0f59284f504d93fff" category="paragraph">SnapCenter データ保護の詳細については、の SnapCenter プラグインのデータ保護情報を参照してください<block ref="4be00348c5f700eec4bebc72bc1bc49c" category="inline-link-rx"></block>。</block>
@@ -1929,4 +1925,8 @@
   <block id="11d88a82190664755120fc16494310df" category="sidebar">以前のバージョンの SCV のドキュメント</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">ネットアップのナレッジベース - SCV</block>
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="sidebar">SnapCenter Plug-in for VMware vSphere</block>
+  <block id="2475c9dd54056833d6396fbed1f941d8" category="paragraph">SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block> SnapCenter サポートの最新情報については、を参照してください。</block>
+  <block id="ca3bf2cb39f62342194d0f6777ffe162" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
+  <block id="fb80b6fccf5f1cdcfd342989b34962c7" category="paragraph">Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
+  <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
 </blocks>
