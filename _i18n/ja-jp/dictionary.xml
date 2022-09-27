@@ -147,7 +147,6 @@
   <block id="0ae7bb79645eeb5721a499d2799dbf70" category="cell">保護するリソースを選択し、 * &gt; * をクリックして選択した項目を選択したエンティティリストに移動します。</block>
   <block id="749435efb6e9940bcadad406e3a36d76" category="paragraph">[ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。</block>
   <block id="985e4f2c2c2709eb57d50d5cec83e1dc" category="paragraph">「 Selected &lt;resource-key &gt; is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください <block ref="6c9b49ac3dbdf01a593410d52afe429e" category="inline-xref-macro-rx"></block> を参照してください。</block>
-  <block id="fff37cf15e02523a490f1c99dbc41b9f" category="paragraph">バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <block ref="a1a47e875db2e3d5549981ff4d3f5fd4" category="inline-xref-macro-rx"></block>。</block>
   <block id="eaedab9c594e1aeb86de4b70aee0ef7b" category="list-text">[ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。</block>
   <block id="fe83ca3448603607d6f63f28881e4f36" category="list-text">すべてのスパニングデータストアを常に除外する [ データストアのデフォルトです。 ]</block>
   <block id="72e68a17ed1f6a20f08ce75c1fd9dfcb" category="list-text">常にすべてのスパニングデータストアを含める [ これが VM のデフォルトです。 ]</block>
@@ -1929,4 +1928,5 @@
   <block id="ca3bf2cb39f62342194d0f6777ffe162" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
   <block id="fb80b6fccf5f1cdcfd342989b34962c7" category="paragraph">Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
   <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
+  <block id="0f928371dde9bb28b5372e8e7729ebb0" category="paragraph">バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <block ref="37a0363725b373caf92b58503affefad" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

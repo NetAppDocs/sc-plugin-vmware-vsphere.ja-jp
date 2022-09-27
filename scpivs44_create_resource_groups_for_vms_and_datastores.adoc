@@ -171,7 +171,7 @@ Snapshot コピー名にカスタム形式を使用する場合は、このチ�
 「 Selected <resource-key > is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください  compatibility check failures を参照してください。
 
 +
-バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください  you can override。
+バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください #Properties you can override,オーバーライドできるプロパティ。
 
 . [ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。
 +
