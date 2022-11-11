@@ -159,6 +159,9 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | ポートのタイプ | 事前設定されたポート 
 
 
+| VMware ESXi Serverのポート | 443（HTTPS）、双方向のゲストファイルリストア機能では、このポートが使用されます。 
+
+
 | SnapCenter Plug-in for VMware vSphere のポート  a| 
 8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。
 

@@ -1930,4 +1930,6 @@
   <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
   <block id="0f928371dde9bb28b5372e8e7729ebb0" category="paragraph">バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <block ref="37a0363725b373caf92b58503affefad" category="inline-xref-macro-rx"></block>。</block>
   <block id="ec6b0c2e1fb8998a9149b0e870ce2442" category="list-text">ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザは、クラスタStorage VMまたはStorage VMに関連付けることができます。</block>
+  <block id="2cb2843b629d315325aac076907ec4b9" category="cell">VMware ESXi Serverのポート</block>
+  <block id="ad676153bac7535311261fab671b77b9" category="cell">443（HTTPS）、双方向のゲストファイルリストア機能では、このポートが使用されます。</block>
 </blocks>
