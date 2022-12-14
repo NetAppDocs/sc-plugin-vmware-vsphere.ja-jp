@@ -36,6 +36,7 @@ VSC-httpclient3-security.jar 'CV-api-model.jar 'CVM_WebUI_service.jar 'CVM_WebUI
 . SnapCenter VMware プラグインを使用して、アプリケーションと整合性のあるバックアップを作成する他の SnapCenter プラグインをサポートしていた場合は、 SnapCenter にログインして vSphere ホストを削除してください。
 
 
+.完了後
 仮想アプライアンスは導入されますが、 SnapCenter VMware プラグインは削除されます。
 
 SnapCenter VMware プラグインのホスト VM を削除したあと、ローカルの vCenter キャッシュが更新されるまでプラグインが vCenter に表示されたままになる場合があります。ただし、プラグインが削除されたため、そのホストでは SnapCenter の VMware vSphere 処理を実行できません。ローカルの vCenter キャッシュを更新する場合は、先に SnapCenter の VMware プラグインの設定ページでアプライアンスが無効状態になっていることを確認してから、 vCenter の Web Client Service を再起動してください。

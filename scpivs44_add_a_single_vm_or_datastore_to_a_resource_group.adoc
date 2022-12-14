@@ -16,6 +16,7 @@ summary: SnapCenter Plug-in for VMware vSphere で管理されている既存の
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere で管理されている既存のリソースグループに、単一の VM またはデータストアを簡単に追加することができます。
 
+.このタスクについて
 SAN データストアと NAS データストアは追加できますが、 VSAN データストアまたは VVOL データストアは追加できません。
 
 .手順

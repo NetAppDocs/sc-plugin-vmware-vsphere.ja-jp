@@ -13,6 +13,7 @@ summary: SnapCenter Plug-in for VMware vSphere GUI からサポートバンド�
 :imagesdir: ./media/
 
 
+.作業を開始する前に
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere の管理 GUI にログオンするには、 IP アドレスとログインクレデンシャルが必要です。
 

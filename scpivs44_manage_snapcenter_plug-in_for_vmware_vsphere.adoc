@@ -22,6 +22,7 @@ SnapCenter Plug-in for VMware vSphere アプライアンスを停止、無効化
 
 SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールを使用して、アプリケーション、システム、およびネットワークの構成を管理できます。管理者パスワードの変更、メンテナンスパスワードの変更、サポートバンドルの生成、およびリモート診断の開始を行うことができます。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
 .このタスクについて
@@ -76,8 +77,10 @@ IP アドレス設定の表示または変更ドメイン名検索設定の表�
 
 SnapCenter Plug-in for VMware vSphere の管理 GUI の管理パスワードがわからない場合は、メンテナンスコンソールで新しいパスワードを設定できます。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
+.このタスクについて
 ユーザ名としてデフォルトの「 maint 」を使用し、パスワードとして「 admin123 」を使用して、 SnapCenter VMware プラグインのメンテナンスコンソールにログインする必要があります。
 
 .手順
@@ -131,6 +134,7 @@ SnapCenter のデータ保護機能が不要になった場合は、 SnapCenter 
 * 実行中の SnapCenter ジョブがないことを確認します。
 
 
+.このタスクについて
 SnapCenter VMware プラグインを無効にすると、すべてのリソースグループが中断され、プラグインが vCenter で拡張機能として登録解除されます。
 
 SnapCenter VMware プラグインを有効にすると、プラグインが vCenter で拡張機能として登録され、すべてのリソースグループが本番モードになり、すべてのスケジュールが有効になります。
@@ -192,6 +196,7 @@ VSC-httpclient3-security.jar 'CV-api-model.jar 'CVM_WebUI_service.jar 'CVM_WebUI
 . SnapCenter VMware プラグインを使用して、アプリケーションと整合性のあるバックアップを作成する他の SnapCenter プラグインをサポートしていた場合は、 SnapCenter にログインして vSphere ホストを削除してください。
 
 
+.完了後
 仮想アプライアンスは導入されますが、 SnapCenter VMware プラグインは削除されます。
 
 SnapCenter VMware プラグインのホスト VM を削除したあと、ローカルの vCenter キャッシュが更新されるまでプラグインが vCenter に表示されたままになる場合があります。ただし、プラグインが削除されたため、そのホストでは SnapCenter の VMware vSphere 処理を実行できません。ローカルの vCenter キャッシュを更新する場合は、先に SnapCenter の VMware プラグインの設定ページでアプライアンスが無効状態になっていることを確認してから、 vCenter の Web Client Service を再起動してください。

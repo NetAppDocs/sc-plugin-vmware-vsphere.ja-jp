@@ -33,8 +33,10 @@ SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲート
 
 
 
+.作業を開始する前に
 ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter は、同時に同期する必要があります。ストレージを追加しようとしても、 vCenter の時刻設定が同期されていないと、 Java 証明書エラーが表示されて処理が失敗することがあります。
 
+.このタスクについて
 SnapCenter VMware プラグインは、直接接続された Storage VM と Storage クラスタ内の Storage VM でバックアップおよびリストア処理を実行します。
 
 

@@ -18,6 +18,7 @@ REST API は Swagger Web ページから利用できます。Swagger Webペー�
 
 プラグインには、SnapCenter Server Swagger Webページとは異なるSwagger Webページがあります。
 
+.作業を開始する前に
 SnapCenter Plug-in for VMware vSphere REST API の場合は、 SnapCenter VMware プラグインの IP アドレスまたはホスト名を確認しておく必要があります。
 
 
@@ -33,6 +34,7 @@ https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
 IMPORTANT: REST API URL には、 + 、を使用しないでください。、 % 、および & 。
 
 +
+.例
 SnapCenter VMware プラグイン REST API にアクセスします。
 
 +

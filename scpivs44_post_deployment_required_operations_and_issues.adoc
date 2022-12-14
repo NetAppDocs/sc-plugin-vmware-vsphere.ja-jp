@@ -113,4 +113,5 @@ NOTE: [Authentication] フィールドに [Linux] を選択する必要があり
 
 
 
+.完了後
 SnapCenter Plug-in for VMware vSphere のクレデンシャルが変更された場合は、 SnapCenter の管理対象ホストページを使用して SnapCenter サーバで登録を更新する必要があります。

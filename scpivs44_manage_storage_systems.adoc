@@ -58,8 +58,10 @@ VMware vSphere Web Client を使用して、 vCenter のインベントリから
 
 NOTE: SnapCenter の GUI を使用してアプリケーションベースのデータ保護処理用に Storage VM を追加した場合は、追加した Storage VM を変更するために同じ GUI を使用する必要があります。
 
+.作業を開始する前に
 Storage VM を削除する前に、 Storage VM 内のすべてのデータストアをアンマウントする必要があります。
 
+.このタスクについて
 削除する Storage VM に存在するバックアップがリソースグループに含まれていると、そのリソースグループのそれ以降のバックアップは失敗します。
 
 .手順

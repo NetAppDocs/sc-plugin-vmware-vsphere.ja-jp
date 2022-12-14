@@ -22,6 +22,7 @@ SnapCenter VMware vSphere Web Client が正しく動作しない場合は、ブ�
 
 Linux アプライアンス上の vCenter で SnapCenter VMware vSphere Web Client Service を再起動するには、 Linux コマンドを使用する必要があります。
 
+.作業を開始する前に
 vCenter 6.5 以降が実行されている必要があります。
 
 .手順
@@ -54,6 +55,7 @@ IMPORTANT: VASA または VSC7.x 以降のパッケージは削除しないで�
 
 Windows ホスト上の vCenter では、 Windows コマンドを使用して SnapCenter Web Client Service を再起動する必要があります。
 
+.作業を開始する前に
 vCenter 6.5 以降が実行されている必要があります。
 
 .手順

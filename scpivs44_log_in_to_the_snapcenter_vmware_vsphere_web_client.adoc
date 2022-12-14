@@ -16,6 +16,7 @@ summary: SnapCenter Plug-in for VMware vSphere を導入すると、 vCenter に
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere を導入すると、 vCenter に VMware vSphere Web クライアントがインストールされます。このクライアントは、他の vSphere Web クライアントとともに vCenter の画面に表示されます。
 
+.作業を開始する前に
 vCenter で Transport Layer Security （ TLS ）を有効にする必要があります。VMware のドキュメントを参照してください。
 
 .手順
