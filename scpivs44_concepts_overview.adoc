@@ -21,7 +21,7 @@ SnapCenter VMware プラグインを使用すると、環境に次の機能が�
 
 * VM と整合性のある crash-consistent データ保護処理がサポートされます。
 +
-vCenter の VMware vSphere Web Client GUI を使用して、 VMware 仮想マシン（従来の VM および VVOL VM ）、 VMDK 、およびデータストアのバックアップとリストアのすべての処理を実行できます。VVOL VM （ VVOL データストア内の VM ）の場合は、 crash-consistent バックアップのみがサポートされます。また、 VM や VMDK をリストアしたり、ゲスト OS 上にあるファイルやフォルダをリストアしたりすることもできます。
+vCenterのVMware vSphere Client GUIを使用して、VMware仮想マシン（従来のVMおよびVVOL VM）、VMDK、およびデータストアのバックアップとリストアのすべての処理を実行できます。VVOL VM （ VVOL データストア内の VM ）の場合は、 crash-consistent バックアップのみがサポートされます。また、 VM や VMDK をリストアしたり、ゲスト OS 上にあるファイルやフォルダをリストアしたりすることもできます。
 
 +
 VM 、 VMDK 、およびデータストアのバックアップ時には、プラグインで RDM がサポートされません。VM のバックアップジョブでは RDM は無視されます。RDM をバックアップする必要がある場合は、 SnapCenter アプリケーションベースのプラグインを使用する必要があります。
@@ -37,11 +37,11 @@ SnapCenter GUI と適切な SnapCenter アプリケーションプラグイン�
 SnapCenter では、 VMDK 、 raw デバイスマッピング（ RDM ）、および NFS データストアに対するすべてのデータ保護処理に、 SnapCenter VMware プラグインを標準で利用します。仮想アプライアンスの導入後、プラグインは vCenter とのすべてのやり取りを処理します。SnapCenter VMware プラグインは、すべての SnapCenter アプリケーションベースプラグインをサポートしています。
 
 +
-SnapCenter では、データベースと VM の Snapshot コピーを一緒に作成することはできません。VM とデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースと VM が同じボリュームでホストされている場合でも、 Snapshot コピーが別途作成されます。データベースアプリケーションのバックアップは、 SnapCenter GUI を使用してスケジュールする必要があります。 VM およびデータストアのバックアップは、 VMware vSphere Web Client GUI を使用してスケジュールする必要があります。
+SnapCenter では、データベースと VM の Snapshot コピーを一緒に作成することはできません。VM とデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースと VM が同じボリュームでホストされている場合でも、 Snapshot コピーが別途作成されます。データベースアプリケーションのバックアップは、SnapCenter GUIを使用してスケジュールする必要があります。VMおよびデータストアのバックアップは、VMware vSphere Client GUIを使用してスケジュールする必要があります。
 
-* VM と整合性のある Snapshot コピーには VMware Tools が必要です
+* VMと整合性のあるSnapshotコピーにはVMwareツールが必要です
 +
-VMware Tools がインストールされておらず、実行されていない場合、ファイルシステムは休止されず、 crash-consistent スナップショットが作成されます。
+VMwareツールがインストールされておらず、実行されていない場合、ファイルシステムは休止されず、crash-consistent Snapshotが作成されます。
 
 * SAN （ VMFS ）環境でのリストア処理には、 VMware Storage vMotion が必要です
 +
@@ -50,12 +50,12 @@ VMware ファイルシステム（ VMFS ）のリストアワークフローで�
 +
 NFS 環境でのリストア処理のほとんどは、ネイティブの ONTAP 機能（ Single File SnapRestore など）を使用するため、 VMware Storage vMotion は必要ありません。
 
-* VMware VVOL VM を保護するには、 ONTAP Tools for VMware vSphere が必要です。
+* VMware VVOL VMの設定にはONTAP ツールが必要です。
 +
-ONTAP ツールを使用して、 ONTAP および VMware Web Client で VVOL のストレージをプロビジョニングおよび設定します。
+ONTAP ツールを使用して、ONTAP およびVMware Web ClientでVVOLのストレージをプロビジョニングおよび設定します。
 
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 向け ONTAP ツール"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
 
 * SnapCenter VMware プラグインは、 Linux VM に仮想アプライアンスとして導入されます
 +

@@ -43,7 +43,7 @@ NOTE: 別の場所にVVOL VMをリストアすることはできません。
 NOTE: 削除された VM のリストア時には、 VM に割り当てられていたタグやフォルダはリストアされません。
 
 .作業を開始する前に
-* ストレージシステムのユーザアカウントは、 VMware vSphere Web Client の Storage Systems ページで、に設定されている必要があります link:scpivs44_minimum_ontap_privileges_required.html["ONTAP に必要な最小限の ONTAP 権限"]。
+* ストレージシステムのユーザアカウントは、VMware vSphere ClientのStorage Systemsページにある必要があります link:scpivs44_minimum_ontap_privileges_required.html["ONTAP に必要な最小限の ONTAP 権限"]。
 * vCenter のユーザアカウントにが必要です link:scpivs44_minimum_vcenter_privileges_required.html["SnapCenter Plug-in for VMware vSphere に必要な最小限の vCenter 権限"]。
 * バックアップが存在している必要があります。
 +

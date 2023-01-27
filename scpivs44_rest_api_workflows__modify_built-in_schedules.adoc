@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブの組み込みのスケジュールを変更するには、規定された順序で REST API 呼び出しを実行する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの組み込みのスケジュールを変更するには、規定された順序のREST API呼び出しに従う必要があります。 
 ---
 = REST API ワークフロー：組み込みのスケジュールを変更できます
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware v
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブの組み込みのスケジュールを変更するには、規定された順序で REST API 呼び出しを実行する必要があります。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの組み込みのスケジュールを変更するには、規定された順序のREST API呼び出しに従う必要があります。
 
 組み込みのスケジュールは、 MySQL データベースのダンプスケジュールなど、製品の一部として提供されるスケジュールです。以下のスケジュールを変更することができます：「スケジュール - データベースダンプ」「スケジュール - パージバックアップ」「スケジュール - アーダコレクション」「スケジュール - コンピューティングストレージ保存」「スケジュール - パージジョブ」
 

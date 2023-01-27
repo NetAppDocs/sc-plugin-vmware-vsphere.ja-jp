@@ -56,9 +56,9 @@ TIP: SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲ�
 IMPORTANT: アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することは可能ですが、そのリソースグループのバックアップは失敗します。
 
 .作業を開始する前に
-VVOL VM を含むリソースグループを作成する前に、 ONTAP Tools for VMware を導入しておく必要があります。
+VVOL VMを含むリソースグループを作成する前に、VMware用のONTAP ツールを導入しておく必要があります。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 向け ONTAP ツール"^]。
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]。
 
 .このタスクについて
 リソースグループに対しては、いつでもリソースを追加または削除できます。
@@ -96,17 +96,12 @@ Snapshot コピーを最適化するには、同じボリュームに関連付�
 
 
 .手順
-. VMware vSphere Web Client の左側の [Navigator （ナビゲーター） ] ペインで、 [* リソースグループ ] をクリックし、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 「 * 」を作成してウィザードを開始します。
-+
-image:scpivs44_image16.png["エラー：グラフィックイメージがありません"]
+. SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[*リソースグループ（* Resource Groups）]をクリックし、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 「 * 」を作成してウィザードを開始します。
 
-+
+
 リソースグループを作成するには、この方法が最も簡単です。ただし、次のいずれかを実行して、 1 つのリソースで構成されるリソースグループを作成することもできます。
 
-+
-** 1 つの VM のリソースグループを作成するには、 * Menu * > * Hosts and Clusters * をクリックし、 VM を右クリックして NetApp SnapCenter を選択し、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * リソースグループを作成 * 。
-** 1 つのデータストアのリソースグループを作成するには、 * Menu * > * Hosts and Clusters * をクリックし、データストアを右クリックして * NetApp SnapCenter * を選択して、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * リソースグループを作成 * 。
-
++** 1つのVMのリソースグループを作成するには、* Menu *>* Hosts and Clusters *をクリックし、VMを右クリックしてNetApp SnapCenter を選択し、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * リソースグループを作成 * 。**データストアごとにリソースグループを作成するには、[* Menu]*>[* Hosts and Clusters]*をクリックし、データストアを右クリックして[* SnapCenter *]を選択し、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * リソースグループを作成 * 。
 
 . ウィザードの [ 一般情報と通知 *] ページで、次の操作を行います。
 +
@@ -258,6 +253,6 @@ SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョ�
 
 . Storage VM が実行されていることを確認してください。
 . VM が配置されているストレージシステムが SnapCenter Plug-in for VMware vSphere インベントリに追加されていることを確認します。
-. Storage VM が SnapCenter に追加されていることを確認してください。VMware vSphere Web Client の GUI で、 Add storage system オプションを使用します。
+. Storage VM が SnapCenter に追加されていることを確認してください。VMware vSphere ClientのGUIで、Add storage systemオプションを使用します。
 . ネットアップデータストアとネットアップ以外のデータストアの両方に VMDK がある複数の VM がまたがっている場合は、 VMDK をネットアップデータストアに移動します。
 

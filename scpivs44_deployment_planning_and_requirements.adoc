@@ -22,10 +22,7 @@ summary: 仮想アプライアンスを導入する前に、導入要件を確�
 
 SnapCenter Plug-in for VMware vSphere の導入を開始する前に、ホスト要件を確認しておく必要があります。
 
-* SnapCenter VMware プラグインを Linux VM として導入する必要があります。
-+
-SnapCenter VMware プラグインは、プラグインを使用して Windows システムと Linux システムのどちらのデータを保護しているかに関係なく、 Linux VM として導入されます。
-
+* SnapCenter VMware プラグインは、プラグインを使用して Windows システムと Linux システムのどちらのデータを保護しているかに関係なく、 Linux VM として導入されます。
 * SnapCenter VMware プラグインを vCenter Server に導入する必要があります。
 +
 バックアップスケジュールは、 SnapCenter VMware プラグインが導入されているタイムゾーンで実行されます。vCenter では、 vCenter が配置されているタイムゾーンでデータが報告されます。そのため、 SnapCenter VMware プラグインと vCenter が異なるタイムゾーンにある場合は、 SnapCenter VMware プラグインダッシュボードのデータがレポートのデータと同じでないことがあります。
@@ -43,12 +40,12 @@ SnapCenter VMware プラグインは、プラグインを使用して Windows �
 
 
 
-* VVol VM （ VMware VVOL データストア上の VM ）を保護するには、最初に ONTAP Tools for VMware vSphere を導入する必要があります。ONTAP ツールは、 ONTAP および VMware Web Client 上で VVol 用のストレージをプロビジョニングして設定します。
+* VVol VM（VMware VVOLデータストア上のVM）を保護するには、まずVMware vSphere用のONTAP ツールを導入する必要があります。ONTAP ツールは、ONTAP およびVMware Web Client上でVVol用のストレージをプロビジョニングして設定します。
 +
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 向け ONTAP ツール"^]
+詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
 
 +
-サポートされている ONTAP ツールのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされるONTAP ツールのバージョンに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 * SnapCenter VMware プラグインは、 Storage vMotion のサポートにおける仮想マシンの制限により、共有 PCI デバイスまたは PCIe デバイス（ NVIDIA Grid GPU など）を限定的にサポートします。詳細については、ベンダーが提供している『 Deployment Guide for VMware 』を参照してください。
 +
@@ -110,10 +107,10 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | 項目 | サポートされるバージョン 
 
 
-| vCenter vSphere | HTML5 クライアント： 6.5U2/U3 、 6.7x 、 7.0 、 7.0U1 、 7.0U2 、 7.0U3 Flex クライアントはサポートされていません。 
+| vCenter vSphere | 7.0U1以上 
 
 
-| ESXi | 6.5U2 以降 
+| ESXi | 7.0U1以上 
 
 
 | IP アドレス | IPv4 、 IPv6 
@@ -128,7 +125,7 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 
 
 
-| VMware 向け ONTAP ツール | SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。 
+| VMware向けONTAP ツール | SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。 
 |===
 サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
@@ -163,7 +160,7 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 
 
 | SnapCenter Plug-in for VMware vSphere のポート  a| 
-8144 （ HTTPS ）。双方向のポートは、 VMware vSphere Web Client と SnapCenter Server からの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。
+8144（HTTPS）。双方向のポートは、VMware vSphereクライアントとSnapCenter サーバからの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。
 
 注：ポート設定は変更できません。
 

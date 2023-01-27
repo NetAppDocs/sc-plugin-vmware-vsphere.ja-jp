@@ -20,7 +20,7 @@ SnapCenter Plug-in for VMware vSphere で管理されている既存のリソー
 SAN データストアと NAS データストアは追加できますが、 VSAN データストアまたは VVOL データストアは追加できません。
 
 .手順
-. VMware vSphere Web Client GUI で、ツールバーの * Menu * をクリックし、追加する VM またはデータストアに移動します。
+. VMware vSphere ClientのGUIで、ツールバーの* Menu *をクリックし、追加するVMまたはデータストアに移動します。
 . 左側のナビゲーションペインで、 VM またはデータストアを右クリックし、ドロップダウンリストから * NetApp SnapCenter * を選択して、セカンダリドロップダウンリストから * リソースグループに追加 * を選択します。
 +
 最初に、選択した VM が配置されているストレージシステムが SnapCenter で管理されているかどうかが確認され、次にリソースグループに追加 * ページが表示されます。「 SnapCenter Compatibility Error 」というメッセージが表示された場合は、選択した VM に SnapCenter との互換性がないため、最初に適切な Storage VM を SnapCenter に追加する必要があります。

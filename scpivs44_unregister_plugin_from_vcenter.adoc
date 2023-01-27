@@ -20,5 +20,5 @@ SnapCenter VMware プラグイン拡張機能の手動登録を解除する必�
 .手順
 . SnapCenter VMware プラグインサービスが停止しているリンクされた vCenter で、 Managed Object Reference （ MOB ）マネージャに移動します。
 . [ プロパティ ] オプションで、 [ 値 ] 列の [*content*] を選択し、次の画面で [ 値 ] 列の [*ExtensionManager*] を選択して、登録された内線番号のリストを表示します。
-. 拡張子 com.netapp.scvm.webclient` および com.netapp.aegis` の登録を解除します
+. 拡張機能の登録を解除します `com.netapp.scv.client` および `com.netapp.aegis`。
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブのジョブ ID を検索するには、 VMware vSphere の REST API 呼び出しを使用する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。 
 ---
 = REST API を使用して、停止したジョブを失敗としてマークします
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VMware v
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用して VMware vSphere Web Client ジョブのジョブ ID を検索するには、 VMware vSphere の REST API 呼び出しを使用する必要があります。これらの REST API は、 SnapCenter Plug-in for VMware vSphere 4.4 で追加されています。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。これらの REST API は、 SnapCenter Plug-in for VMware vSphere 4.4 で追加されています。
 
 各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
 

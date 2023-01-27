@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM 、 VMDK 、およびデータストアのバックアップ処理とリストア処理のすべてについて、 vCenter で VMware vSphere Web Client GUI を使用する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。 
 ---
 = 各種 SnapCenter GUI の概要
 :hardbreaks:
@@ -16,11 +16,9 @@ summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグ
 [role="lead"]
 SnapCenter 環境では、適切な GUI を使用して、データ保護と管理の処理を実行する必要があります。
 
-SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM 、 VMDK 、およびデータストアのバックアップ処理とリストア処理のすべてについて、 vCenter で VMware vSphere Web Client GUI を使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。その他すべての SnapCenter プラグイン（アプリケーションベースのプラグイン）については、 SnapCenter GUI を使用してバックアップとリストアの処理とジョブ監視を行います。
+SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。その他すべての SnapCenter プラグイン（アプリケーションベースのプラグイン）については、 SnapCenter GUI を使用してバックアップとリストアの処理とジョブ監視を行います。
 
-SnapCenter VMware プラグインは、 HTML5 vSphere Web Client をサポートしています。vCenter Flex クライアントまたはシッククライアントはサポートされません。
-
-VM とデータストアを保護するには、 VMware vSphere Web Client インターフェイスを使用します。Web クライアント GUI は、ストレージシステム上でネットアップの Snapshot コピーテクノロジと統合されます。これにより、 VM およびデータストアを数秒でバックアップし、 ESXi ホストをオフラインにすることなく VM をリストアできます。
+VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。Web クライアント GUI は、ストレージシステム上でネットアップの Snapshot コピーテクノロジと統合されます。これにより、 VM およびデータストアを数秒でバックアップし、 ESXi ホストをオフラインにすることなく VM をリストアできます。
 
 また、 SnapCenter VMware プラグインに対して管理操作を実行するための管理 GUI もあります。
 
@@ -30,7 +28,7 @@ VM とデータストアを保護するには、 VMware vSphere Web Client イ�
 | 使用する GUI | 実行する処理 | バックアップへのアクセス 
 
 
-| SnapCenter vSphere Web Client の GUI を使用します | VM およびデータストアバックアップ VMDK を接続し、データストアマウントを接続解除して、 VM および VMDK リストアゲストファイルおよびフォルダのリストアをアンマウントします | VMware vSphere Web Client GUI を使用して実行された VM とデータストアのバックアップ。 
+| SnapCenter vSphere ClientのGUIを使用します | VM およびデータストアバックアップ VMDK を接続し、データストアマウントを接続解除して、 VM および VMDK リストアゲストファイルおよびフォルダのリストアをアンマウントします | VMware vSphere Client GUIを使用して実行されたVMとデータストアのバックアップ。 
 
 
 | SnapCenter GUI | Microsoft SQL Server 、 Microsoft Exchange 、 Oracle のデータベースの保護など、 VM 上のデータベースとアプリケーションのバックアップとリストアデータベースクローン | SnapCenter GUI を使用して実行されるバックアップ。 
@@ -41,6 +39,6 @@ VM とデータストアを保護するには、 VMware vSphere Web Client イ�
 
 | vCenter の GUI | vCenter Active Directory ユーザに SCV ロールを追加するユーザまたはグループにリソースアクセスを追加する | 該当なし 
 |===
-VM と整合性のあるバックアップおよびリストア処理を実行するには、 VMware vSphere Web Client GUI を使用する必要があります。データストアのマウントや名前変更などの一部の処理は VMware ツールを使用して実行できますが、それらの処理は SnapCenter リポジトリに登録されず、認識されません。
+VMと整合性のあるバックアップおよびリストア処理を実行するには、VMware vSphere Client GUIを使用する必要があります。データストアのマウントや名前変更などの一部の処理は VMware ツールを使用して実行できますが、それらの処理は SnapCenter リポジトリに登録されず、認識されません。
 
-SnapCenter では、データベースと VM の Snapshot コピーを一緒に作成することはできません。VM とデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースと VM が同じボリュームでホストされている場合でも、 Snapshot コピーが別途作成されます。アプリケーションベースのバックアップは、 SnapCenter GUI を使用してスケジュールする必要があります。 VMware vSphere Web Client GUI を使用して、 VM と整合性のあるバックアップをスケジュールする必要があります。
+SnapCenter では、データベースと VM の Snapshot コピーを一緒に作成することはできません。VM とデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースと VM が同じボリュームでホストされている場合でも、 Snapshot コピーが別途作成されます。アプリケーションベースのバックアップは、SnapCenter GUIを使用してスケジュールする必要があります。VMware vSphere Client GUIを使用して、VMと整合性のあるバックアップをスケジュールする必要があります。

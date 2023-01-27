@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_download_job_logs.html 
 keywords:  
-summary: ジョブログは、 SnapCenter VMware vSphere Web Client のダッシュボードのジョブモニタタブからダウンロードできます。 
+summary: ジョブログは、SnapCenter VMware vSphereクライアントのダッシュボードのジョブモニタタブからダウンロードできます。 
 ---
 = ジョブログをダウンロードします
 :hardbreaks:
@@ -14,18 +14,15 @@ summary: ジョブログは、 SnapCenter VMware vSphere Web Client のダッシ
 
 
 [role="lead"]
-ジョブログは、 SnapCenter VMware vSphere Web Client のダッシュボードのジョブモニタタブからダウンロードできます。
+ジョブログは、SnapCenter VMware vSphereクライアントのダッシュボードのジョブモニタタブからダウンロードできます。
 
-VMware vSphere Web Client の使用中に予期しない動作が発生した場合は、ログファイルを使用して原因を特定し、問題を解決できます。
+VMware vSphere Clientの使用中に予期しない動作が発生した場合は、ログファイルを使用して原因 を特定し、問題を解決できます。
 
 
 NOTE: 保持ジョブのログのデフォルト値は 30 日で、保持ジョブのデフォルト値は 90 日です。設定した保持期間よりも古いジョブログとジョブは、 6 時間ごとにパージされます。Configurationのjobs/cleanup'REST APIを使用して'ジョブとジョブ・ログの保存期間を変更できますパージスケジュールは変更できません。
 
 .手順
-. vSphere Web Client の左側のナビゲーションペインで、 * Dashboard * をクリックし、 vCenter Server を選択して * Job Monitor * タブをクリックします。
-+
-image:scpivs44_image9.png["エラー：グラフィックイメージがありません"]
-
+. vSphereクライアントの左側のナビゲーションペインで、*ダッシュボード*をクリックし、vCenter Serverを選択して、ダッシュボードペインの*ジョブモニタ*タブをクリックします。
 . をクリックします image:scpivs44_image37.png["エラー：グラフィックイメージがありません"] ジョブモニタのタイトルバーにあるダウンロードアイコン。
 +
 場合によっては、右にスクロールしないとアイコンが表示されないことがあります。

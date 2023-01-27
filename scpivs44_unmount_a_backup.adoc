@@ -16,12 +16,12 @@ summary: データストア内のファイルにアクセスする必要がな�
 [role="lead"]
 データストア内のファイルにアクセスする必要がなくなった場合は、バックアップをアンマウントできます。
 
-バックアップが VMware vSphere Web Client GUI にマウント済みとして表示されているが、アンマウントバックアップ画面に表示されていない場合は、 REST API の「 /backup/{backup-ID}/cleanup 」を使用してバインド解除されたデータストアをクリーンアップし、アンマウント手順を再試行する必要があります。
+VMware vSphere ClientのGUIにマウント済みとして表示されているバックアップがアンマウントのバックアップ画面に表示されない場合は、REST APIを使用する必要があります `/backup/{backup-Id}/cleanup` バインドされていないデータストアをクリーンアップしてから、手順 のアンマウントをもう一度実行してください。
 
 負荷共有ミラー関係が確立されたルートボリュームを含む Storage VM （ SVM ）に NFS データストアのバックアップコピーをマウントしようとすると、「 You may have reached the maximum number of NFS volumes configured in the vCenter 」というエラーが表示されることがあります。vSphere Client でエラーメッセージを確認してください この問題を回避するには、 [*ESX*>*Manage*>*Settings*>*Advance System Settings*] に移動して NFS.MaxVolumes の値を変更し、最大ボリューム数の設定を変更します。最大値は 256 です。
 
 .手順
-. VMware vSphere Web Client で、ツールバーの * メニュー * をクリックし、ドロップダウンリストから * ストレージ * を選択します。
+. VMware vSphere Clientで、ツールバーの*メニュー*をクリックし、ドロップダウンリストから*ストレージ*を選択します。
 . 左側のナビゲーションペインで、データストアを右クリックし、ドロップダウンリストから「 * NetApp SnapCenter * 」を選択してから、セカンダリドロップダウンリストから「 Unmount 」を選択します。
 +
 

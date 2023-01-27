@@ -52,9 +52,9 @@ Windows ゲスト OS の仮想マシンディスク（ VMDK ）からファイ�
 
 Windows ゲスト OS 上の VMDK から 1 つ以上のファイルやフォルダをリストアする前に、それらの要件をすべて把握しておく必要があります。
 
-* VMware Tools がインストールされ、実行されている必要があります。
+* VMwareツールがインストールされ、実行されている必要があります。
 +
-SnapCenter は、 VMware Tools の情報を使用して、 VMware ゲスト OS への接続を確立します。
+SnapCenter は、VMwareツールからの情報を使用して、VMwareゲストOSへの接続を確立します。
 
 * Windows ゲスト OS で Windows Server 2008 R2 以降が実行されている必要があります。
 +

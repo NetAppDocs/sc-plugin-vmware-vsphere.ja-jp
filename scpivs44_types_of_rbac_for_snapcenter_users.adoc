@@ -31,7 +31,7 @@ vSphere 管理者は、次の手順で vCenter Server RBAC を設定します。
 * vCenter Server アクセス許可をルートオブジェクト（ルートフォルダ）に対して設定します。その後、アクセス許可が不要な子エンティティのアクセスを禁止することでセキュリティを強化できます。
 * Active Directory ユーザに SCV ロールを割り当てます。
 +
-最低限、すべてのユーザが vCenter オブジェクトを表示できる必要があります。この権限がないユーザは VMware vSphere Web Client GUI にアクセスできません。
+最低限、すべてのユーザが vCenter オブジェクトを表示できる必要があります。この権限がないユーザはVMware vSphere Client GUIにアクセスできません。
 
 
 

@@ -39,7 +39,7 @@ SnapCenter Plug-in for VMware vSphere を使用して VM のバックアップ�
 
 
 .手順
-. VMware vSphere Web Client の GUI で、ツールバーの * メニュー * をクリックし、ドロップダウンリストから * VMs and Templates * を選択します。
+. VMware vSphere ClientのGUIで、ツールバーの*メニュー*をクリックし、ドロップダウンリストから* VMs and Templates *を選択します。
 . 左側のナビゲーションペインで、 VM を右クリックし、ドロップダウンリストから「 * NetApp SnapCenter * 」を選択してから、セカンダリドロップダウンリストから「 * Restore * 」を選択します。
 . リストア * ウィザードのバックアップの選択ページで、リストア元のバックアップ・コピーを選択します。
 +

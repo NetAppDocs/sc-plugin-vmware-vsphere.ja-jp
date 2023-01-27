@@ -19,7 +19,7 @@ summary: 以前にバックアップが正常に実行されていたとして�
 「 Unable to discover resources on SCV ： Unable to get storage details for datastore <xxx> …」というエラーが表示されることがあります
 
 .手順
-. VMware vSphere Web Client で、 * Storage Systems * をクリックします。
+. VMware vSphereクライアントで、*ストレージシステム*をクリックします。
 . Storage Systems （ストレージ・システム）ページで、変更するストレージ・システムを選択し、 * Edit （編集） * をクリックします。
 . [ タイムアウト ] フィールドで、秒数を増やします。
 +

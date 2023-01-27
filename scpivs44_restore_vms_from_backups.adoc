@@ -97,7 +97,7 @@ VM の VMware 整合性スナップショットの作成に失敗した場合で
 
 
 .手順
-. VMware vSphere Web Client の GUI で、ツールバーの * メニュー * をクリックし、ドロップダウンリストから * VMs and Templates * を選択します。
+. VMware vSphere ClientのGUIで、ツールバーの*メニュー*をクリックし、ドロップダウンリストから* VMs and Templates *を選択します。
 +
 
 NOTE: 削除された VM をリストアする場合、 SnapCenter VMware プラグインに追加された Storage VM のクレデンシャルは「 vsadmin 」または「 vsadmin 」と同じ権限を持つユーザアカウントである必要があります。ONTAP 8.2.2 以降を実行しているストレージシステムにホストが配置されている必要があります。

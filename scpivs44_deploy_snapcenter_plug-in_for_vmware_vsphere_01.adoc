@@ -18,7 +18,7 @@ summary:
 
 NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。
 
-. VMware の画面で、 * vSphere Web Client （ HTML5 ） * をクリックし、 * VMware vCenter Single Sign-On ページ * にログインします。
+. VMware vCenter Single Sign-Onページにログインします。
 . データセンター、フォルダ、クラスタ、ホストなど、仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、 [OVF テンプレートの展開 *] を選択してウィザードを開始します。
 . [Select an OVF template*](OVF テンプレートの選択 ) ページで '.ova ファイルの場所 ( 次の表のとおり ) を指定し '[*Next*]( 次へ ) をクリックします
 +
@@ -73,7 +73,7 @@ NOTE: すべてのホストに IP アドレスが設定されている必要が�
 管理 GUI にアクセスするには 'https://<appliance-IP-address>:8080` の形式を使用します
 
 +
-デフォルトでは、メンテナンスコンソールのユーザ名は「 maint 」に設定され、パスワードは「 admin123 」に設定されます。
+メンテナンスコンソールのユーザ名はに設定されます `maint` デフォルトでは、インストール時にパスワードを設定できます。
 
 . vCenter HTML5 クライアントにログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します
 

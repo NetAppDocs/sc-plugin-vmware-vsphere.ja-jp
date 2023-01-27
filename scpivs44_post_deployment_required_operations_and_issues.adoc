@@ -42,10 +42,7 @@ summary: SnapCenter Plug-in for VMware vSphere の導入が完了したら、イ
 
 . ブラウザキャッシュをクリアし、 GUI が正しく動作しているかどうかを確認します。
 +
-問題が解決しない場合は、 VMware vSphere Web Client Service を再起動します
-
-+
-image:scpivs44_image5.png["エラー：グラフィックイメージがありません"]
+問題が解決しない場合は、VMware vSphere Client Serviceを再起動します
 
 . vCenter にログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します。
 

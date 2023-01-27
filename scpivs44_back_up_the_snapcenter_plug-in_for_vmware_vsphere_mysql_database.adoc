@@ -22,7 +22,7 @@ SnapCenter VMware プラグインには、 MySQL データベース（ NSM デ�
 オンデマンドバックアップジョブがすでに実行されているときは、 MySQL データベースのバックアップジョブを開始しないでください。
 
 .手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * または Web コンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
 image:scpivs44_image21.png["エラー：グラフィックイメージがありません"]

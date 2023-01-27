@@ -24,7 +24,7 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してリソースグル
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/policies 」と入力します | 「 Get Policies 」は、 VMware vSphere Web クライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、「 Create Policy 」 REST API を使用して新しいポリシーを作成します。 
+| 1. | 「 /4.1/policies 」と入力します | `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、を使用します `Create Policy` REST APIを使用して新しいポリシーを作成する。 
 
 
 | 2. | 「 /4.1/resource-key グループ」を使用します | 「リソースグループの作成」では、指定したポリシーを持つリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。 
@@ -35,10 +35,10 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してリソースグル
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/resource-key グループ」を使用します | 「リソースグループのリストを取得」では、 VMware vSphere Web クライアントリソースグループのリストを取得します。変更する * resourceGroupId * をメモします。 
+| 1. | 「 /4.1/resource-key グループ」を使用します | `Get List of Resource Groups` VMware vSphereクライアントのリソースグループのリストを取得します。変更する * resourceGroupId * をメモします。 
 
 
-| 2. | 「 /4.1/policies 」と入力します | 割り当てられたポリシーを変更する場合は、「 GET Policies 」を選択すると、 VMware vSphere Web クライアントポリシーのリストが表示されます。リソースグループおよびポリシー * frequency * を変更する際に使用する * policyId * をメモします。 
+| 2. | 「 /4.1/policies 」と入力します | 割り当てられたポリシーを変更する場合は、 `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * を変更する際に使用する * policyId * をメモします。 
 
 
 | 3. | `/4.1/resource-groups/{resouceGroupId}` | 「リソースグループを更新」は、指定したリソースグループを変更します。手順 1 から * resourceGroupId * を渡します。必要に応じて、手順 2 の * policyId * を渡し、その他すべての必須属性に加えて * frequency * の詳細を入力します。 

@@ -26,7 +26,7 @@ SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールを使
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
 .このタスクについて
-* デフォルトでは、ユーザ名「 maint 」と、 SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールにログインするためのパスワード「 admin123 」が使用されます。
+* デフォルトのユーザ名とパスワードが提供されます。
 +
 
 TIP: 導入後に、デフォルトのログインクレデンシャルを変更
@@ -38,13 +38,10 @@ TIP: 導入後に、デフォルトのログインクレデンシャルを変更
 
 
 .手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
-SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
-
-+
-ユーザ名 : 「パスワード : admin123 」
+提供されたデフォルトのメンテナンスコンソールのユーザ名とパスワードを使用してログインします。
 
 +
 image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]
@@ -81,16 +78,13 @@ SnapCenter Plug-in for VMware vSphere の管理 GUI の管理パスワードが�
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
 .このタスクについて
-ユーザ名としてデフォルトの「 maint 」を使用し、パスワードとして「 admin123 」を使用して、 SnapCenter VMware プラグインのメンテナンスコンソールにログインする必要があります。
+デフォルトのユーザ名パスワードを使用して、SnapCenter VMwareプラグインのメンテナンスコンソールにログインします。
 
 .手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
-SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
-
-+
-ユーザ名 : 「パスワード : admin123 」
+提供されたデフォルトのメンテナンスコンソールのユーザ名とパスワードを使用してログインします。
 
 +
 image:scpivs44_image29.jpg["エラー：グラフィックイメージがありません"]
@@ -120,7 +114,7 @@ SnapCenter VMware プラグイン拡張機能の手動登録を解除する必�
 .手順
 . SnapCenter VMware プラグインサービスが停止しているリンクされた vCenter で、 Managed Object Reference （ MOB ）マネージャに移動します。
 . [ プロパティ ] オプションで、 [ エクステンションマネージャ ] を選択して、登録されている内線番号のリストを表示します。
-. 拡張子 com.netapp.scvm.webclient` および com.netapp.aegis` の登録を解除します
+. 拡張機能の登録を解除します `com.netapp.scv.client` および `com.netapp.aegis`。
 
 
 
@@ -188,7 +182,7 @@ SnapCenter のデータ保護機能を使用する必要がなくなった場合
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
 . VMware vSphere にログインします。
-. 左側のナビゲータ画面で、 SnapCenter VMware プラグインのインスタンス（仮想アプライアンスの導入時に使用された「 .ova 」ファイルの名前）を右クリックし、「ディスクから削除」を選択します。
+. 左側のナビゲータ画面で、SnapCenter VMwareプラグインのインスタンス（の名前）を右クリックします `.tar` 仮想アプライアンスの導入時に使用されたファイル）を選択し、*ディスクから削除*を選択します。
 . vCenter Server の /etc/vmware/vsphere-client-serenity com.netapp.scvm.webclient-4.5.0.5942045/plugins` フォルダにある次のファイルを手動で削除します。
 +
 VSC-httpclient3-security.jar 'CV-api-model.jar 'CVM_WebUI_service.jar 'CVM_WebUI_ui.war 'gson -2.5.jar

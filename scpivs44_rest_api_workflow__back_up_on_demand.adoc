@@ -22,7 +22,7 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してオンデマンド
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/resource-key グループ」を使用します | 「リソースグループのリストを取得」では、 VMware vSphere Web クライアントリソースグループのリストを取得します。バックアップするリソースグループの * resourceGroupId * と * policyId * をメモします 
+| 1. | 「 /4.1/resource-key グループ」を使用します | `Get List of Resource Groups` VMware vSphereクライアントのリソースグループのリストを取得します。バックアップするリソースグループの * resourceGroupId * と * policyId * をメモします 
 
 
 | 2. | 「 /4.1/resource-key groups/backupnow 」を使用します | リソース・グループでバックアップを実行すると ' リソース・グループがオンデマンドでバックアップされます手順 1 の * resourceGroupId* と * policyId* を渡します 

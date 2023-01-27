@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: scpivs48_rest_apis_audit_logs.html 
+keywords:  
+summary: REST APIを使用して監査ログを生成 
+---
+= REST APIを使用して監査ログを生成
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+監査ログの詳細は、swagger Rest APIとSCVプラグインのユーザインターフェイスから収集できます。
+
+swagger Rest APIを次に示します。
+
+. GET 4.1/audit/logs：すべてのログの監査データを取得します
+. GET 4.1/audit/logs/｛fileName｝：特定のログファイルの監査データを取得します
+. 4.1/audit/Verify後：監査ログの検証をトリガーします。
+
+
+SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの監査ログを生成するには、VMware vSphereのREST API呼び出しを使用する必要があります。
+
+各REST APIに、を追加します `https://<server>:<port>/api` を使用して完全なエンドポイントを形成します。
+
+ジョブの詳細情報を取得するには、 Jobs セクションの次の REST API を使用します。
+
+|===
+| REST API | コメント 
+
+
+| `4.1/audit/logs` | 整合性データを含む監査ログファイルを返します 
+
+
+| `4.1/audit/logs/{filename}` | 整合性データを含む特定の監査ログファイルを取得します 
+
+
+| `4.1/audit/verify` | 監査検証をトリガーします 
+|===

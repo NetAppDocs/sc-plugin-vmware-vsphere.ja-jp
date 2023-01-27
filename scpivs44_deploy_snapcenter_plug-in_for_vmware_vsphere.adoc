@@ -16,21 +16,21 @@ summary: SnapCenter の機能を使用して仮想マシン、データストア
 [role="lead"]
 SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
 
-.作業を開始する前に
+....
+[Note]
+The OVA deployment is supported in VMware vCenter 7u1 and above.
+....
 * 導入の要件を確認しておく必要があります。
-+
-導入ウィザードでは、必要なスペースが検証されません。データストアに十分なスペースがないと、導入は成功したように見えても、仮想アプライアンスはブートしません。
-
 * サポートされているバージョンの vCenter Server を実行している必要があります。
 * vCenter Server 環境を設定およびセットアップしておく必要があります。
 * SnapCenter VMware プラグイン VM の ESXi ホストのセットアップが完了している必要があります。
-* SnapCenter Plug-in for VMware vSphere.ova ファイルをダウンロードしておく必要があります。
-* vCenter Server インスタンスのログインクレデンシャルが必要です。
-* 問題 VMware プラグインの導入時にブラウザキャッシュ SnapCenter が発生しないように、 vSphere Web Client のすべてのブラウザセッションからログアウトして、ブラウザを閉じておく必要があります。
+* SnapCenter Plug-in for VMware vSphere .tarファイルをダウンロードしておく必要があります。
+* vCenter Serverインスタンスのログイン認証の詳細を確認しておく必要があります。
+* 有効な公開鍵ファイルと秘密鍵ファイルがある証明書が必要です。詳細については、の記事を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["ストレージ証明書の管理"] セクション。
+* SnapCenter VMwareプラグインの導入時にブラウザキャッシュ問題 が発生しないように、vSphere Clientのすべてのブラウザセッションからログアウトして、ブラウザを閉じておく必要があります。
 * vCenter で Transport Layer Security （ TLS ）を有効にしておく必要があります。VMware のドキュメントを参照してください。
-* SnapCenter VMware プラグインは、 VSC 7.x 以降の仮想アプライアンスと同じ vCenter に導入できます。
 * SnapCenter VMware プラグインを導入した vCenter 以外の vCenter でバックアップを実行する場合は、 ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter が同時に同期されている必要があります。
-* VVol データストア上の VM を保護するには、まず ONTAP Tools for VMware vSphere を導入する必要があります。ONTAP ツールは、 ONTAP および VMware Web Client 上にストレージをプロビジョニングし、設定します。
+* VVolデータストア上のVMを保護するには、まずVMware vSphere用のONTAP ツールを導入する必要があります。VMware vSphereバージョン9.10以降用のONTAP ツールがサポートされます。ONTAP ツールは、ONTAP およびVMware Web Client上でストレージをプロビジョニングし、設定します。
 
 
 SnapCenter VMware プラグインを vCenter と同じタイムゾーンに導入します。バックアップスケジュールは、 SnapCenter VMware プラグインが導入されているタイムゾーンで実行されます。vCenter では、 vCenter が配置されているタイムゾーンでデータが報告されます。そのため、 SnapCenter VMware プラグインと vCenter が異なるタイムゾーンにある場合は、 SnapCenter VMware プラグインダッシュボードのデータがレポートのデータと同じでないことがあります。
@@ -41,29 +41,19 @@ SnapCenter VMware プラグインを vCenter と同じタイムゾーンに導�
 
 NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。
 
-. VMware の画面で、 * vSphere Web Client （ HTML5 ） * をクリックします。
 . VMware vCenter Single Sign-On * ページにログインします。
 . Navigator ペインで、データセンター、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、 * Deploy OVF Template * を選択して VMware Deploy ウィザードを起動します。
-. [Select an OVF template*](OVF テンプレートの選択 ) ページで '.ova ファイルの場所 ( 次の表を参照 ) を指定し '[*Next*]( 次へ ) をクリックします
-+
-|===
-| 「 .ova 」ファイルを次の場所にダウンロードした場合 | 操作 
-
-
-| インターネットのロケーション | URL を入力します。サポートされている URL ソースは、 HTTP と HTTPS です。 
-
-
-| ローカルファイル | ファイルの選択 * をクリックし、 .ova ファイルに移動します。 
-|===
+. .ovaファイルを含む.tarファイルをローカルシステムに展開します。[Select an OVF template]ページで、の場所を指定します `.ova` .tar展開フォルダ内のファイル。
+. 「 * 次へ * 」をクリックします。
 . [ 名前とフォルダの選択 * ] ページで、 VM または vApp の一意の名前を入力し、導入場所を選択して、 [ 次へ * ] をクリックします。
 +
-この手順では、「 .ova 」ファイルを vCenter にインポートする場所を指定します。VM のデフォルト名は、選択した「 .ova 」ファイルの名前と同じです。デフォルト名を変更する場合は、 vCenter Server の VM フォルダごとに一意の名前を選択します。
+このステップでは、をインポートする場所を指定します `.tar` vCenterにファイルを移動します。VMのデフォルト名は、選択したの名前と同じです `.ova` ファイル。デフォルト名を変更する場合は、 vCenter Server の VM フォルダごとに一意の名前を選択します。
 
 +
 VM のデフォルトの導入場所は、ウィザードを開始したインベントリオブジェクトです。
 
 . [ リソースの選択 *] ページで、導入した VM テンプレートを実行するリソースを選択し、 [ 次へ *] をクリックします。
-. [* Review details （レビューの詳細） *] ページで、 [.ova （ .ova ） ] テンプレートの詳細を確認し、 [* Next] をクリックします。
+. [* Review details（レビューの詳細）]ページで、を確認します `.tar` テンプレートの詳細を入力し、[次へ]をクリックします。
 . [ ライセンス契約 * ] ページで、 [ すべてのライセンス契約に同意します ] のチェックボックスをオンにします。 *
 . ［ * ストレージの選択 * ］ ページで、導入した OVF テンプレートのファイルの保存場所と保存方法を定義します。
 +
@@ -107,6 +97,7 @@ SnapCenter Plug-in for VMware vSphere は、 1 つのネットワークインタ
 
 IMPORTANT: 指定するユーザ名とパスワードを書き留めます。SnapCenter VMware プラグインの設定をあとで変更する場合は、これらのクレデンシャルを使用する必要があります。
 
+.. maintユーザのクレデンシャルを入力します。
 .. [ ネットワークプロパティの設定 *] に、ホスト名を入力します。
 +
 ... [*IPv4 ネットワークプロパティの設定 *] セクションで、 IPv4 アドレス、 IPv4 ネットマスク、 IPv4 ゲートウェイ、 IPv4 プライマリ DNS 、 IPv4 セカンダリ DNS などのネットワーク情報を入力します。 および IPv4 検索ドメインを使用できます。
@@ -131,12 +122,12 @@ IMPORTANT: ネットワーク設定として DHCP を使用する場合は、こ
 OVF のインポートおよび導入タスクが完了するまでの間、 Recent Tasks ウィンドウで導入の進捗状況を確認できます。
 
 +
-SnapCenter VMware プラグインの導入が完了すると、 vCenter に登録された Linux VM として導入され、 VMware vSphere Web Client がインストールされます。
+SnapCenter VMwareプラグインの導入が完了すると、vCenterに登録されたLinux VMとして導入され、VMware vSphere Clientがインストールされます。
 
 . SnapCenter VMware プラグインが導入された VM に移動し、 * 概要 * タブをクリックしてから * 電源オン * ボックスをクリックして仮想アプライアンスを起動します。
 . SnapCenter VMware プラグインの電源をオンにした状態で、展開された SnapCenter VMware プラグインを右クリックし、 * ゲスト OS * を選択して、 * VMware Tools のインストール * をクリックします。
 +
-VMware Tools は、 SnapCenter VMware プラグインが導入されている VM にインストールします。VMware Tools のインストールの詳細については、 VMware のマニュアルを参照してください。
+VMwareツールは、SnapCenter VMwareプラグインを導入するVMにインストールします。VMwareツールのインストールの詳細については、VMwareのドキュメントを参照してください。
 
 +
 導入が完了するまでに数分かかることがあります。導入が成功すると、 SnapCenter VMware プラグインの電源がオンになり、 VMware ツールがインストールされ、 SnapCenter VMware プラグインにログインするように求める画面が表示されます。初回リブート時に、ネットワーク設定を DHCP から静的に切り替えることができます。ただし、スタティックから DHCP への切り替えはサポートされていません。
@@ -149,10 +140,10 @@ VMware Tools は、 SnapCenter VMware プラグインが導入されている VM
 管理 GUI にアクセスするには 'https://<appliance-IP-address>:8080` の形式を使用します
 
 +
-デフォルトでは、メンテナンスコンソールのユーザ名は「 maint 」に設定され、パスワードは「 admin123 」に設定されます。
+デフォルトのメンテナンスコンソールのユーザ名を使用してログインします `maint` およびインストール時に設定したパスワード。
 
 +
-SnapCenter VMware プラグインが有効になっていない場合は、を参照してください link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Web Client Service を再起動します"]。
+SnapCenter VMware プラグインが有効になっていない場合は、を参照してください link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します"]。
 
 +
 ホスト名が「 UnifiedVSC/SCV 」の場合は、アプライアンスを再起動します。アプライアンスを再起動してもホスト名が指定したホスト名に変更されない場合は、アプライアンスを再インストールする必要があります。

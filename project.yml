@@ -1,6 +1,6 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.7
+  name: SnapCenter Plug-in for VMware vSphere 4.8
   internal:
     pdf_enabled: true
   prod:
@@ -9,6 +9,9 @@ settings:
   versions:
   - name: SnapCenter Plug-in for VMware vSphere
     url: "/sc-plugin-vmware-vsphere"
+    version-number: '4.8'
+  - name: SnapCenter Plug-in for VMware vSphere
+    url: "/sc-plugin-vmware-vsphere-47"
     version-number: '4.7'
   - name: SnapCenter Plug-in for VMware vSphere
     url: "/sc-plugin-vmware-vsphere-46"
@@ -19,7 +22,7 @@ settings:
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr,fr-fr,de-de
 sidebar:
   entries:
-  - title: SnapCenter Plug-in for VMware vSphere 4.7のドキュメント
+  - title: SnapCenter Plug-in for VMware vSphere 4.8のドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/scpivs44_release_notes.html"
@@ -53,23 +56,23 @@ sidebar:
       entries:
       - title: 導入の計画と要件
         url: "/scpivs44_deployment_planning_and_requirements.html"
-      - title: 必要な最小 ONTAP 権限
+      - title: ONTAP 権限が必要です
         url: "/scpivs44_minimum_ontap_privileges_required.html"
       - title: 最小限の vCenter 権限が必要です
         url: "/scpivs44_minimum_vcenter_privileges_required.html"
-    - title: SnapCenter Plug-in for VMware vSphere OVA （オープン仮想アプライアンス）のダウンロード
-      url: "/scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html"
+    - title: Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード
+      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: SnapCenter Plug-in for VMware vSphere を導入
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html"
     - title: 導入後に必要な処理と問題
       url: "/scpivs44_post_deployment_required_operations_and_issues.html"
-    - title: SnapCenter VMware vSphere Web Client にログインします
+    - title: SnapCenter VMware vSphere Clientにログインします
       url: "/scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html"
   - title: クイックスタート
     entries:
     - title: 概要
       url: "/scpivs44_quick_start_overview.html"
-    - title: OVA （ Open Virtual Appliance ）をダウンロードする
+    - title: Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード
       url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: SnapCenter Plug-in for VMware vSphere を導入
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
@@ -93,6 +96,8 @@ sidebar:
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: メンテナンスコンソールからサポートバンドルを生成する
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"
+    - title: 監査ログ
+      url: "/scv48_audit_logs.html"
   - title: ストレージを管理します
     entries:
     - title: ストレージを追加します
@@ -151,6 +156,8 @@ sidebar:
       url: "/scpivs44_restore_the_most_recent_backup_of_the_mysql_database.html"
     - title: MySQL データベースの特定のバックアップをリストアします
       url: "/scpivs44_restore_a_specific_backup_of_the_mysql_database.html"
+  - title: VMDK を接続および接続解除する
+    entries:
     - title: VMまたはVVol VMにVMDKを接続する
       url: "/scpivs44_attach_vmdks_to_a_vm.html"
     - title: 仮想ディスクを接続解除
@@ -172,7 +179,7 @@ sidebar:
   - title: Manage SnapCenter Plug-in for VMware vSphere appliance （ VMware vSphere
       アプライアンス用の VMware プラグインの管理）
     entries:
-    - title: VMware vSphere Web Client Service を再起動します
+    - title: VMware vSphere Client Serviceを再起動します
       url: "/scpivs44_restart_the_vmware_vsphere_web_client_service.html"
     - title: メンテナンスコンソールにアクセスします
       url: "/scpivs44_access_the_maintenance_console.html"
@@ -232,6 +239,8 @@ sidebar:
       url: "/scpivs44_rest_api_workflows__modify_built-in_schedules.html"
     - title: REST API を使用して、停止したジョブを失敗としてマークします
       url: "/scpivs44_rest_apis_fail_stuck_jobs.html"
+    - title: REST APIを使用して監査ログを生成
+      url: "/scpivs48_rest_apis_audit_logs.html"
   - title: アップグレード
     entries:
     - title: 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
@@ -247,7 +256,7 @@ homepage:
   - title: はじめに
     links:
     - title: リリースノート
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2883356
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2885659
     - title: SCV の詳細をご確認ください
       url: "/scpivs44_concepts_overview.html"
     - title: 導入の要件

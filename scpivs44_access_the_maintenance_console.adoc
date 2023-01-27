@@ -20,10 +20,7 @@ SnapCenter Plug-in for VMware vSphere のメンテナンスコンソールを使
 SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
 
 .このタスクについて
-* VMware vSphere 4.6以前のSnapCenter プラグインの場合、デフォルトはユーザ名「maint」で、パスワードは「admin123」です。これは、SnapCenter Plug-in for VMware vSphereのメンテナンスコンソールにログインするためのパスワードです。
-+
-SnapCenter Plug-in for VMware vSphere 4.6P1以降では、SnapCenter Plug-in for VMware vSphereの初回インストール時にパスワードを指定する必要があります。リリース4.6以前からリリース4.6P1以降にアップグレードした場合は、以前のデフォルトパスワードが使用できます。
-
+* SnapCenter Plug-in for VMware vSphere 4.6P1では、SnapCenter Plug-in for VMware vSphereの初回インストール時にパスワードを指定する必要があります。リリース4.6以前からリリース4.6P1以降にアップグレードした場合は、以前のデフォルトパスワードが使用できます。
 * リモート診断をイネーブルにするには、「 diag 」ユーザのパスワードを設定する必要があります。
 +
 このコマンドを実行するための root ユーザ権限を取得するには、 sudo コマンド > を使用します。
@@ -31,13 +28,10 @@ SnapCenter Plug-in for VMware vSphere 4.6P1以降では、SnapCenter Plug-in for
 
 
 .手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
-SnapCenter VMware プラグインメンテナンスコンソールのログオンのデフォルトは次のとおりです。
-
-+
-ユーザ名 : 「パスワード : admin123 」
+デフォルトのメンテナンスコンソールのユーザ名を使用してログインします `maint` およびインストール時に設定したパスワード。
 
 +
 image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]

@@ -28,11 +28,7 @@ SnapCenter のデータ保護機能を使用する必要がなくなった場合
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
 . VMware vSphere にログインします。
-. 左側のナビゲータ画面で、 SnapCenter VMware プラグインのインスタンス（仮想アプライアンスの導入時に使用された「 .ova 」ファイルの名前）を右クリックし、「ディスクから削除」を選択します。
-. /etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity com.netapp.scvm.webclient-4.5.0.5942045/plugins` に移動し、 vCenter サーバの pickup フォルダにある次のファイルを手動で削除します。
-+
-VSC-httpclient3-security.jar 'CV-api-model.jar 'CVM_WebUI_service.jar 'CVM_WebUI_ui.war 'gson -2.5.jar
-
+. 左側のナビゲータ画面で、SnapCenter VMwareプラグインのインスタンス（の名前）を右クリックします `.tar` 仮想アプライアンスの導入時に使用されたファイル）を選択し、*ディスクから削除*を選択します。
 . SnapCenter VMware プラグインを使用して、アプリケーションと整合性のあるバックアップを作成する他の SnapCenter プラグインをサポートしていた場合は、 SnapCenter にログインして vSphere ホストを削除してください。
 
 

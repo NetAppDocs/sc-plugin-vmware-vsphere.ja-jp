@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_view_status_information.html 
 keywords:  
-summary: ステータス情報は、 vSphere Web Client Dashboard で確認できます。ステータス情報は 1 時間に 1 回更新されます。 
+summary: vSphere Client Dashboardにはステータス情報が表示されます。ステータス情報は 1 時間に 1 回更新されます。 
 ---
 = ステータス情報を表示します
 :hardbreaks:
@@ -13,13 +13,10 @@ summary: ステータス情報は、 vSphere Web Client Dashboard で確認で�
 :imagesdir: ./media/
 
 
-ステータス情報は、 vSphere Web Client Dashboard で確認できます。ステータス情報は 1 時間に 1 回更新されます。
+vSphere Client Dashboardにはステータス情報が表示されます。ステータス情報は 1 時間に 1 回更新されます。
 
 .手順
-. vSphere Web Client の左側のナビゲーションペインで、 * Dashboard * をクリックし、 vCenter Server を選択して * Status * タブをクリックします。
-+
-image:scpivs44_image7.png["エラー：グラフィックイメージがありません"]
-
+. vSphereクライアントの左側のナビゲーションペインで、*ダッシュボード*をクリックし、vCenter Serverを選択して、ダッシュボードペインの*ステータス*タブをクリックします。
 . 次の表に示すように、概要のステータス情報を表示するか、リンクをクリックして詳細を確認します。
 +
 |===

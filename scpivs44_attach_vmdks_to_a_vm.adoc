@@ -37,7 +37,7 @@ summary: バックアップの 1 つ以上の VMDK を親 VM に接続したり�
 
 
 .手順
-. VMware vSphere Web Client GUI で、ツールバーの * Menu * をクリックし、ドロップダウンリストから * Hosts and clusters * を選択します。
+. VMware vSphere ClientのGUIで、ツールバーの* Menu *をクリックし、ドロップダウンリストから* Hosts and clusters *を選択します。
 . 左側のナビゲーションペインで、 VM を右クリックし、ドロップダウンリストから「 * NetApp SnapCenter * 」を選択してから、セカンダリドロップダウンリストから「 * 仮想ディスクを接続」を選択します。
 +
 image:scpivs44_image22.png["エラー：グラフィックイメージがありません"]

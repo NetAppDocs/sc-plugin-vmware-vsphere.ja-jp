@@ -13,8 +13,10 @@ summary: SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使
 :imagesdir: ./media/
 
 
-[role="lead"]
-SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。
+
+NOTE: SCV 4.8へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、SCV 4.7を引き続き使用する必要があります。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードの際にシステムが停止します。
+
+SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスによって、既存のプラグインの登録が解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
 
 を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"] サポートされているアップグレードパスの詳細については、を参照
 
@@ -41,7 +43,7 @@ NOTE: ネットワーク設定を静的アドレスから DHCP アドレスに�
 . アップグレードをインストールする。
 +
 .. ブラウザから VMware vSphere vCenter にアクセスします。
-.. vCenter GUI で、 * vSphere Web Client （ HTML ） * をクリックします。
+.. vCenter GUIで、* vSphere Client（HTML）*をクリックします。
 .. VMware vCenter Single Sign-On * ページにログインします。
 .. [Navigator] ペインで、アップグレードする VM をクリックし、 [*Summary*] タブをクリックします。
 .. [*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。

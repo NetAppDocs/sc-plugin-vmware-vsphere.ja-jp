@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_restart_the_vmware_vsphere_web_client_service.html 
 keywords:  
-summary: SnapCenter VMware vSphere Web Client が正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。 
+summary: SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。 
 ---
-= VMware vSphere Web Client Service を再起動します
+= VMware vSphere Client Serviceを再起動します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,14 @@ summary: SnapCenter VMware vSphere Web Client が正しく動作しない場合�
 
 
 [role="lead"]
-SnapCenter VMware vSphere Web Client が正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。
+SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。
 
 
 
-== Linux vCenter で VMware vSphere Web Client Service を再起動します
-
-Linux アプライアンス上の vCenter で VMware vSphere Web Client Service を再起動するには、 Linux コマンドを使用する必要があります。
+== Linux vCenterでVMware vSphere Client Serviceを再起動します
 
 .作業を開始する前に
-vCenter 6.5 以降が実行されている必要があります。
+vCenter 7.0U1以降が実行されている必要があります。
 
 .手順
 . SSH を使用して、 root として vCenter Server Appliance にログインします。
@@ -40,55 +38,14 @@ vCenter 6.5 以降が実行されている必要があります。
 /etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity / です
 
 +
-rm -rf com.netapp.scvm.webclient-<version_number>`
+`rm -rf com.netapp.scv.client-<version_number>`
 
 +
 
-IMPORTANT: VASA または VSC7.x 以降のパッケージは削除しないでください。
+IMPORTANT: VASAまたはvCenter 7.x以降のパッケージは削除しないでください。
 
 . 次の HTML5 コマンドを使用して Web Client Service を開始します。
 +
 「 service-control -- start vsphere-ui 」を参照してください
-
-
-
-
-
-== Windows vCenter で VMware vSphere Web Client Service を再起動します
-
-Windows ホスト上の vCenter では、 Windows コマンドを使用して SnapCenter Web Client Service を再起動する必要があります。
-
-.作業を開始する前に
-vCenter 6.5 以降が実行されている必要があります。
-
-.手順
-. C:\Program Files\VMware\vCenter Server\bin' に移動し、次のコマンドを実行して Web Client Service を停止します。
-+
-「 service-control 」 -- 「 vsphere-ui 」を停止します
-
-+
-「 Completed Stop service request 」というメッセージが表示されるのを待ちます。
-
-. 次の手順を実行して、 vCenter 上の古い HTML5 scvm パッケージをすべて削除します。
-+
-.. vCenter vsphere-client-serenity / フォルダに移動します。
-+
-C ： \ProgramData\VMware\vCenterServer\cfg\vsphere-ui\`
-
-+
-vc-packages\vsphere-client-serenity \`
-
-.. 次の名前のプラグインフォルダをすべて削除します。
-+
-com.netapp.scvm.webclient-<version_number>`
-
-
-
-. 次の HTML5 コマンドを使用して Web Client Service を再起動します。
-+
-「 service-control -- start vsphere-ui 」を参照してください
-
-+
-「 Completed Start service request.」 というメッセージが表示されるのを待ちます
 
 

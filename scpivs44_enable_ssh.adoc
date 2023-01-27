@@ -16,7 +16,7 @@ summary: SnapCenter VMware プラグインの導入時、 SSH はデフォルト
 SnapCenter VMware プラグインの導入時、 SSH はデフォルトで無効になっています。
 
 .手順
-. VMware vSphere Web Client で、 SnapCenter VMware プラグインが配置されている VM を選択します。
+. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの*サマリ*タブで*リモートコンソールの起動*をクリックしてメンテナンスコンソールウィンドウを開き、ログオンします。
 +
 にアクセスしてメンテナンスコンソールにログオンする方法については、を参照してください link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]。
