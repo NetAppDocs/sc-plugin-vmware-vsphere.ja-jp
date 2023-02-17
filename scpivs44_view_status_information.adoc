@@ -13,6 +13,7 @@ summary: vSphere Client Dashboardにはステータス情報が表示されま�
 :imagesdir: ./media/
 
 
+[role="lead"]
 vSphere Client Dashboardにはステータス情報が表示されます。ステータス情報は 1 時間に 1 回更新されます。
 
 .手順

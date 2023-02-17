@@ -26,4 +26,41 @@ System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datasto
 
 == SnapCenter Plug-in for VMware vCenter に固有の必要な権限
 
-netappSCV .Guest .RestoreFile netappSCV .Recovery.MountUnmount netappSCV .Backup.ConfigureStorageSystems.Delete netappSCV .View netappSCV netappSCV .ConfigureStorageSystems.AddUpdate netappSCV .Backup.BackupNow.BackupNow.ConfigureStorageSystems.BackupNow.ConfigureSCV .Configure.configSCV BackupSCV .Configure.configSCV Server
+|===
+
+
+| * 特権 * | *ラベル* 
+
+
+| netappSCV。Guest。RestoreFile | ゲストファイルのリストア 
+
+
+| netappSCV。Recovery).MountUnmount | mount / Unmount 
+
+
+| SCV。Backup.DeleteBackupJobを指定します | リソースグループ/バックアップを削除します 
+
+
+| netappSCV。Configure.ConfigureStorageSystems.Deleteの順にクリックします | ストレージシステムを削除 
+
+
+| netappSCV。ビュー | 表示 
+
+
+| SCV。リカバリ。RecoverVMを指定します | VMをリカバリします 
+
+
+| netappSCV。Configure.ConfigureStorageSystems.AddUpdateを実行します | ストレージシステムを追加/変更 
+
+
+| netappSCV。Backup.BackupNow | 今すぐバックアップする 
+
+
+| netappSCV。Guest。設定 | ゲストの設定 
+
+
+| netappSCV。Configure.ConfigureSnapCenterServerを実行します | SnapCenter サーバを設定します 
+
+
+| 必要なバックアップスケジュールを設定します | リソースグループを作成します 
+|===

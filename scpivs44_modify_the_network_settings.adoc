@@ -13,6 +13,7 @@ summary: SnapCenter Plug-in for VMware vSphere で設定されているネット
 :imagesdir: ./media/
 
 
+[role="lead"]
 SnapCenter Plug-in for VMware vSphere で設定されているネットワーク設定を変更することができます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
 
 .作業を開始する前に

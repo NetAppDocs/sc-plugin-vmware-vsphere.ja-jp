@@ -13,6 +13,7 @@ summary: SnapCenter VMware プラグインの導入時、 SSH はデフォルト
 :imagesdir: ./media/
 
 
+[role="lead"]
 SnapCenter VMware プラグインの導入時、 SSH はデフォルトで無効になっています。
 
 .手順

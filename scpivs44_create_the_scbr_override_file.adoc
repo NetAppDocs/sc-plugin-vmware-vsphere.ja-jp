@@ -13,6 +13,9 @@ summary: 「 scbr.override 」構成ファイルは、 SnapCenter アプリケ�
 :imagesdir: ./media/
 
 
+[role="lead"]
+「 scbr.override 」構成ファイルは、 SnapCenter アプリケーションベースのデータ保護処理をサポートする環境で、 SnapCenter Plug-in for VMware vSphere によって使用されます。
+
 . /opt/NetApp/scvservice/standalone_aegis /etc/scbr/scbr.override -template に移動します。
 . 「 \opt\NetApp\scvservice\standalone_aegis\etc\scbr` ディレクトリにある「 CBR 上書きテンプレート」ファイルを新しいファイル「 CBR 上書き」にコピーします。
 

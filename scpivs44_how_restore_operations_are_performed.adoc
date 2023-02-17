@@ -13,6 +13,7 @@ summary: VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リ
 :imagesdir: ./media/
 
 
+[role="lead"]
 VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リストア処理を実行するために、 Storage VMotion でクローンおよびマウント処理を使用します。NFS 環境の場合、このプラグインはネイティブの ONTAP Single File SnapRestore （ SFSR ）を使用して、ほとんどのリストア処理を効率よく実行できます。VVOL VM の場合、プラグインは ONTAP Single File Snapshot Restore （ ONTAP SFSR ）と SnapMirror Restore をリストア処理に使用します。次の表に、リストア処理の実行方法を示します。
 
 |===

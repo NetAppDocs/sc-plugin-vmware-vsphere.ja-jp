@@ -45,7 +45,7 @@ SnapCenter Plug-in for VMware vSphere の導入を開始する前に、ホスト
 詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
 
 +
-サポートされるONTAP ツールのバージョンに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされるONTAP ツールのバージョンに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 * SnapCenter VMware プラグインは、 Storage vMotion のサポートにおける仮想マシンの制限により、共有 PCI デバイスまたは PCIe デバイス（ NVIDIA Grid GPU など）を限定的にサポートします。詳細については、ベンダーが提供している『 Deployment Guide for VMware 』を参照してください。
 +
@@ -125,9 +125,9 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 
 
 
-| VMware向けONTAP ツール | SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。 
+| VMware向けONTAP ツール | SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。 
 |===
-サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=103284;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
 
 
 

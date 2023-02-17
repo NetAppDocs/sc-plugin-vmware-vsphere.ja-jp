@@ -13,6 +13,7 @@ summary: SnapCenter のデータ保護機能が不要になった場合は、 Sn
 :imagesdir: ./media/
 
 
+[role="lead"]
 SnapCenter のデータ保護機能が不要になった場合は、 SnapCenter VMware プラグインの設定を変更する必要があります。たとえば、テスト環境にプラグインを導入した場合は、その環境で SnapCenter 機能を無効にして、本番環境で有効にする必要があります。
 
 .作業を開始する前に

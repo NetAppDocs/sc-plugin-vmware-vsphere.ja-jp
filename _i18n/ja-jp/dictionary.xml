@@ -181,7 +181,6 @@
   <block id="370cf061cf511b1663901c8a1fa77c6f" category="section-title">vCenter Admin ロールに必要な権限</block>
   <block id="98b6d2abbb9e53348f4ee8d871b00548" category="paragraph">System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.FileManagement Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config ホスト .Config.Settings Host.Settings Host.Local.Reconfig.VM Host.Reconfig.Reconfig.VirtualMachine Resist.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine のインベントリのインベントリの再構成ホスト .VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.CreateQuery.VirtualMachine のインベントリのインベントリの再構成にての再構成にての再構成にてのインベントリを実行</block>
   <block id="84ecd316e231a4baee8cc1858eaf3625" category="section-title">SnapCenter Plug-in for VMware vCenter に固有の必要な権限</block>
-  <block id="2777d3dbd2d8409457938c03042db88b" category="paragraph">netappSCV .Guest .RestoreFile netappSCV .Recovery.MountUnmount netappSCV .Backup.ConfigureStorageSystems.Delete netappSCV .View netappSCV netappSCV .ConfigureStorageSystems.AddUpdate netappSCV .Backup.BackupNow.BackupNow.ConfigureStorageSystems.BackupNow.ConfigureSCV .Configure.configSCV BackupSCV .Configure.configSCV Server</block>
   <block id="5031c4b53c895db7c962081a39a6236f" category="paragraph">vCenter で Transport Layer Security （ TLS ）を有効にする必要があります。VMware のドキュメントを参照してください。</block>
   <block id="9e6343514537d0d6a99bafe616c5aa86" category="list-text">ブラウザから VMware vSphere vCenter にアクセスします。</block>
   <block id="6b5aea41c3dc654b49175867b860fb59" category="admonition">[* ログイン * ] ボタンをクリックします。VMware 問題が認識されているため、 Enter キーを使用してログインしないでください。詳細については、 ESXi Embedded Host Client の問題に関する VMware のドキュメントを参照してください。</block>
@@ -412,8 +411,6 @@
   <block id="d133a3dbdb8489d51606602b87aa1fe0" category="cell">1.2、1.3 SnapCenter サーバでは、VMDKを介したアプリケーションのデータ保護処理のために、これを使用してSnapCenter VMwareプラグインと通信します。</block>
   <block id="91a33043fc7eebee30634cb063fa6e2c" category="cell">VMware Application vStorage API for Array Integration （ VAAI ）</block>
   <block id="16e729ceefd4cd71e291d0800dd9e9c0" category="cell">SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。</block>
-  <block id="47ff422f78a776fed1a1b024f1205717" category="cell">SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、 NetApp Interoperability Matrix Tool を参照してください。</block>
-  <block id="272ac1abd82997e2442d32a79e6f5271" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block>。</block>
   <block id="18cd7192921dd5ac27a1a7c5ef795c20" category="section-title">スペースとサイジングの要件</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">要件</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティングシステム</block>
@@ -606,7 +603,6 @@
   <block id="629ec47b81132f329d4136880bd3bbde" category="list-text">暗号化されたゲストファイルはリストアできません。</block>
   <block id="04e7bb0411c1c8f56ca4fc8000c62ad8" category="doc">SnapCenter Plug-in for VMware vSphere を導入</block>
   <block id="13ca46cd634ae1f7c847dd56daefc40c" category="admonition">IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。</block>
-  <block id="ad33bb392843901d73fa5033f45bc6fe" category="list-text">データセンター、フォルダ、クラスタ、ホストなど、仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、 [OVF テンプレートの展開 *] を選択してウィザードを開始します。</block>
   <block id="b1e9e42ee09ce6ea661a7c8aa97f209c" category="list-text">[Select an OVF template*](OVF テンプレートの選択 ) ページで '.ova ファイルの場所 ( 次の表のとおり ) を指定し '[*Next*]( 次へ ) をクリックします</block>
   <block id="6033b46c80eba511ea24319b744fe51a" category="cell">このウィザードのページ</block>
   <block id="2de89f426cb40a40a73e0dc57ba1d0b0" category="cell">名前とフォルダを選択します</block>
@@ -820,7 +816,6 @@
   <block id="ab97e6404bf7dc689c505284f8ed9494" category="list-text">仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。</block>
   <block id="b425cca2998cc4a7041a0baf7681e912" category="list-text">次の操作を実行できます。</block>
   <block id="81c4bc22149c6022288661540ed446d9" category="list-text">オプション 1 ：アプリケーション構成</block>
-  <block id="3ce2085da7aea56d35b0dea2cb14d259" category="paragraph">SnapCenter VMware プラグインサービスの開始または停止ログインユーザ名またはパスワードの変更 MySQL パスワードの変更 MySQL バックアップリスト MySQL バックアップの設定 MySQL バックアップのリストア</block>
   <block id="29b39b2b805d36f8dc5499179622da3f" category="list-text">オプション 2 ：システム構成</block>
   <block id="6d8740a8088260176630ddbfab8cb21e" category="paragraph">仮想マシンのリブートまたはシャットダウン「 maint 」ユーザパスワードの変更タイムゾーンの変更 NTP サーバの有効化 / 無効化 SSH アクセス拡張 jail ディスクサイズ（ /jail ）のアップグレード VMware Tools のアップグレード</block>
   <block id="99227cc56eb10094b5911955997594bd" category="list-text">オプション 3 ：ネットワーク構成</block>
@@ -980,7 +975,6 @@
   <block id="72c8e8b2c4182d2f87bf7a099f6cd054" category="paragraph"><block ref="3c0e59c30be73477fabcc51e4d3e87f6" category="inline-link-macro-rx"></block>。</block>
   <block id="7aba14c1c36be3f0d38307007b2d6dab" category="list-text">メインメニューから、オプション * 1 ）「アプリケーションの設定 * 」を入力します。</block>
   <block id="95e2baf17cf4a1bf632b4bd66673704a" category="list-text">[ アプリケーションの設定 ] メニューから、オプション *6 ）「 mysql backup and restore * 」と入力します。</block>
-  <block id="f364887b448d21019e9b625ba8ef09ab" category="list-text">MySQL Backup and Restore Configuration メニューから、オプション * 3 ） Restore MySQL backup * と入力します。</block>
   <block id="f213b5fa3c03b3dd0aa23afc2b6d6061" category="list-text">「 Restore using the most recent backup 」というプロンプトが表示されたら、「 * y * 」と入力し、 * Enter キーを押します。</block>
   <block id="7ea045d5f9f1f71a21d66023c045129c" category="paragraph">バックアップの MySQL データベースが元の場所にリストアされます。</block>
   <block id="5c6e1d830c6aa20cbea2393e562369b7" category="summary">バックアップリソースグループを作成、変更、削除し、リソースグループに対してバックアップ処理を実行することができます。</block>
@@ -1202,7 +1196,6 @@
   <block id="7f8c1c53fd7e08fda5762c3337c0bce6" category="cell">'Restore VM from a backup using uuid or restore a deleted VM' 指定したバックアップをリストアします手順 1 から * uuid * を渡します。手順 2 から * backupid * を渡します。ステップ 3 と 4 の情報を *restoreLocations* 属性に渡しますVM のバックアップが部分的なバックアップの場合は、「 restartVM 」パラメータを「 false 」に設定します。* 注： * テンプレートの VM はリストアできません。</block>
   <block id="f71bd0a1884e2547796a0669e5a44f10" category="summary">SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。</block>
   <block id="b3b58566d772ea091ad559ad7c722828" category="doc">導入後に必要な処理と問題</block>
-  <block id="624b86ee772b09351048910fc4a730dc" category="section-title">導入後に必要な処理</block>
   <block id="25d5b23dfd2418ca2f7bd81c33cc1638" category="paragraph">新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください <block ref="a83c5384e42700c13fcc0778429c0b28" category="inline-link-macro-rx"></block>。</block>
   <block id="40e6eca2154c52c78e678989d72d7903" category="section-title">発生する可能性がある導入の問題</block>
   <block id="b4f66c551198bcae0c148df6464649d2" category="list-text">仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。</block>
@@ -1731,10 +1724,6 @@
   <block id="11d88a82190664755120fc16494310df" category="sidebar">以前のバージョンの SCV のドキュメント</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">ネットアップのナレッジベース - SCV</block>
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="sidebar">SnapCenter Plug-in for VMware vSphere</block>
-  <block id="2475c9dd54056833d6396fbed1f941d8" category="paragraph">SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block> SnapCenter サポートの最新情報については、を参照してください。</block>
-  <block id="ca3bf2cb39f62342194d0f6777ffe162" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
-  <block id="fb80b6fccf5f1cdcfd342989b34962c7" category="paragraph">Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください<block ref="a1b283c4671de73f5e64651c8e98491f" category="inline-link-rx"></block>。</block>
-  <block id="a888ab84707631c86f5006309e186d1d" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="56392423f5d438aef305a97c794e0835" category="inline-link-rx"></block> IMT</block>
   <block id="0f928371dde9bb28b5372e8e7729ebb0" category="paragraph">バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <block ref="37a0363725b373caf92b58503affefad" category="inline-xref-macro-rx"></block>。</block>
   <block id="ec6b0c2e1fb8998a9149b0e870ce2442" category="list-text">ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザは、クラスタStorage VMまたはStorage VMに関連付けることができます。</block>
   <block id="2cb2843b629d315325aac076907ec4b9" category="cell">VMware ESXi Serverのポート</block>
@@ -1834,7 +1823,6 @@
   <block id="6d47c5cf94534c631cda65b432ae3e1c" category="cell">保護適用、リストア処理の完了、または処理の失敗のために AutoSupport メッセージをストレージシステムに送信する場合は、該当するチェックボックスを選択します。AutoSupport 通知を有効にするには、[失敗した操作に関するAutoSupport 通知をストレージ・システムに送信する*]チェックボックスと[ SnapCenter サーバ・イベントをsyslogに記録する*]チェックボックスをオンにします。</block>
   <block id="f69439260ecee7ac85f815e8701071d9" category="list-text">VVol VM（VMware VVOLデータストア上のVM）を保護するには、まずVMware vSphere用のONTAP ツールを導入する必要があります。ONTAP ツールは、ONTAP およびVMware Web Client上でVVol用のストレージをプロビジョニングして設定します。</block>
   <block id="4c95edce583c0b5a02939269f1db3951" category="paragraph">詳細については、を参照してください<block ref="803b0580f102da00b07f33d2f17fdadb" category="inline-link-rx"></block></block>
-  <block id="6f50dc0b580db44cdc625526215696f4" category="paragraph">サポートされるONTAP ツールのバージョンに関する最新情報については、を参照してください<block ref="25eb2128e948e2544fabd66492bfb7a4" category="inline-link-rx"></block>。</block>
   <block id="7f48db72c7f9bf7951ba6e6012bf6991" category="cell">7.0U1以上</block>
   <block id="652b6799454f23103801798b5880725b" category="cell">VMware向けONTAP ツール</block>
   <block id="1c7a775c6faba262273ef5058ab0a74c" category="paragraph">8144（HTTPS）。双方向のポートは、VMware vSphereクライアントとSnapCenter サーバからの通信に使用されます。8080 Bidirectional このポートは仮想アプライアンスの管理に使用されます。</block>
@@ -1989,4 +1977,46 @@
   <block id="7f52ae2d13fc881eab436a11ad6556a4" category="paragraph"><block ref="ca3710e05c94c666b5609593ee562322" prefix="" category="inline-code"></block></block>
   <block id="3c1f7e3cd1e718101b83fa846ebee738" category="sidebar">SnapCenter Plug-in for VMware vSphere 4.8のドキュメント</block>
   <block id="5b1407cb7656fff3e143180f583fb24f" category="sidebar">Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード</block>
+  <block id="cbbfd63b6b7acbdfdb4330c539532abc" category="paragraph">1）SnapCenter Plug-in for VMware vSphereの概要の表示2）SnapCenter Plug-in for VMware vSphereサービスの開始3）SnapCenter Plug-in for VMware vSphereサービスの停止4）SnapCenter Plug-in for VMware vSphere UIにログインするためのユーザ名とパスワードの変更5）MySQLパスワードの変更6）MySQLバックアップおよびリストア</block>
+  <block id="52e12dd3f28531c8e18fc3a23a8e52fb" category="paragraph">1）仮想マシンの再起動2）仮想マシンのシャットダウン3）「maint」ユーザパスワードの変更4）タイムゾーンの変更5）NTPサーバの変更6）SSHアクセスの無効化7）jailディスクサイズの増加（jail）8）アップグレード9）VMwareツールのインストール</block>
+  <block id="d41e7519495eb46654bcf9a2d9efe95f" category="paragraph">1）IPアドレス設定の表示2）IPアドレス設定の変更3）ドメイン名検索設定の表示4）ドメイン名検索設定の変更5）静的ルートの表示6）静的ルートの変更7）コミット変更8）ホストにpingを実行します</block>
+  <block id="e37e18d5a4d5d72f5ad511446917425b" category="paragraph">1）サポートバンドルの生成2）診断シェルへのアクセス3）リモート診断アクセスの有効化4）コアダンプバンドルの生成</block>
+  <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">リソースグループを作成するには、次の手順に従います。</block>
+  <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">VMware vCenter 7.0.3以降のバージョンでは、の手順に従います <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> をクリックしてvCenterに証明書をインポートします。</block>
+  <block id="28acc952a6abc3088dfdb90892152390" category="paragraph">サポートされるONTAP ツールのバージョンに関する最新情報については、を参照してください<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>。</block>
+  <block id="f6587f6fadc744b8cb45803b6c80ebdf" category="cell">SnapCenter Plug-in for VMware vSphere は、この設定を使用して VVol データストア（ VMware 仮想ボリューム）を管理します。サポートされるバージョンについては、を参照してください<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>。</block>
+  <block id="9fb61c301e687d6e94404c0e36e5e7dd" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block>。</block>
+  <block id="8775bf884912200ed43fd5a867b909a3" category="cell">* 特権 *</block>
+  <block id="5dcb8d6dcd6a728fca3f52275f7de381" category="cell">*ラベル*</block>
+  <block id="63631c8f87166b2dd980c7dea2a958bf" category="cell">netappSCV。Guest。RestoreFile</block>
+  <block id="18614d43e01f589b5cbab150b251a4e3" category="cell">ゲストファイルのリストア</block>
+  <block id="bcf772d5237a9b8a50c96506deaaea37" category="cell">netappSCV。Recovery).MountUnmount</block>
+  <block id="143d9f21169e7e0e9bec461dd7e5d896" category="cell">mount / Unmount</block>
+  <block id="c513fabed2e2a966f6577f0c621c4740" category="cell">SCV。Backup.DeleteBackupJobを指定します</block>
+  <block id="d49ac5b82e9eab9de9400622f3cda50c" category="cell">リソースグループ/バックアップを削除します</block>
+  <block id="1aaea446328aa82cfe305f90f00c901d" category="cell">netappSCV。Configure.ConfigureStorageSystems.Deleteの順にクリックします</block>
+  <block id="2f6f3ba466a8aacf6e06bf757bfe35f7" category="cell">ストレージシステムを削除</block>
+  <block id="c388397b819aae63151a79d9f5ac2e9e" category="cell">netappSCV。ビュー</block>
+  <block id="4351cfebe4b61d8aa5efa1d020710005" category="cell">表示</block>
+  <block id="ca3f2ead17284710c1faf6e9db6ceb0b" category="cell">SCV。リカバリ。RecoverVMを指定します</block>
+  <block id="3c17630715891eac246fa72d60b6c223" category="cell">VMをリカバリします</block>
+  <block id="c8583cbbd5054f6c0b4ebada8d954132" category="cell">netappSCV。Configure.ConfigureStorageSystems.AddUpdateを実行します</block>
+  <block id="d18f05aa46baf7c8dd6ba80729699b10" category="cell">ストレージシステムを追加/変更</block>
+  <block id="718a9acdd3797e80412934dd5c5ffbbf" category="cell">netappSCV。Backup.BackupNow</block>
+  <block id="9a9852432e1a7055c64fef6ff8f6dd65" category="cell">今すぐバックアップする</block>
+  <block id="720357e5c7abed8dd85206feb43672c6" category="cell">netappSCV。Guest。設定</block>
+  <block id="49700bdfc1e3b3ad595f56cbffee281c" category="cell">ゲストの設定</block>
+  <block id="f31010ab4c21afc391a4e14b85ae93ce" category="cell">netappSCV。Configure.ConfigureSnapCenterServerを実行します</block>
+  <block id="2cee59426cd90e54e996291d6569105e" category="cell">SnapCenter サーバを設定します</block>
+  <block id="8ae2a90b3537ffffdf47288b1d345ad8" category="cell">必要なバックアップスケジュールを設定します</block>
+  <block id="8c6c52daf8bb0314493294539cb1fb1c" category="cell">リソースグループを作成します</block>
+  <block id="7ce0ae0a4183f1b315340993a38afa59" category="list-text">MySQL Backup and Restore Configurationメニューから、オプション* 4）Restore MySQL backup *と入力します。</block>
+  <block id="a55d41893866118c93320ec3e7c63152" category="paragraph">SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください<block ref="642354ba07295cdff6111b1f7ed27dbd" category="inline-link-rx"></block> SnapCenter サポートの最新情報については、を参照してください。</block>
+  <block id="a70216f52adf1eb56f9c607820ec2859" category="paragraph">以下の手順に従って、バックアップポリシーを作成します</block>
+  <block id="288cb2d6166f322fa3f277facda664f9" category="paragraph">SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。=導入後に必要な処理</block>
+  <block id="0a631d60b99e22182e8049161c23edfe" category="paragraph">ストレージを追加するには、このセクションの手順に従います。</block>
+  <block id="6c8295efcbb45c1c61f419f14cc9f532" category="list-text">ナビゲーションペインで、データセンター、フォルダ、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、[OVFテンプレートの展開*]を選択してVMware導入ウィザードを開始します。</block>
+  <block id="516e6120468db109789fef9f29971da1" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="78bb88f9abe535c4182359f981c4d0d5" category="inline-link-rx"></block> IMT</block>
+  <block id="d67e652c45da4feeb66ffd284d7138ac" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="642354ba07295cdff6111b1f7ed27dbd" category="inline-link-rx"></block>。</block>
+  <block id="8b79e6914192b4dd6ecea019ae3a7b61" category="paragraph">Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください<block ref="642354ba07295cdff6111b1f7ed27dbd" category="inline-link-rx"></block>。</block>
 </blocks>

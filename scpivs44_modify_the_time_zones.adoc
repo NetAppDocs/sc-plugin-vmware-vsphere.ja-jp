@@ -11,9 +11,13 @@ summary: SnapCenter Plug-in for VMware vSphere リソースグループのバッ
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:firstname: [.lead]
+:author: [.lead]
+:authorinitials: [
+:authors: [.lead]
+:revnumber: 
+:revdate: the schedule is automatically set for the time zone in which SnapCenter VMware plug-in is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
 
-
-SnapCenter Plug-in for VMware vSphere リソースグループのバックアップスケジュールを設定すると、 SnapCenter VMware プラグインが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。
 
 .作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。

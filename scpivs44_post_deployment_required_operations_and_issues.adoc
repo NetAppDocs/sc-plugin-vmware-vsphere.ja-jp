@@ -13,9 +13,8 @@ summary: SnapCenter Plug-in for VMware vSphere の導入が完了したら、イ
 :imagesdir: ./media/
 
 
-
-
-== 導入後に必要な処理
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。=導入後に必要な処理
 
 新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください link:scpivs44_add_storage_01.html["ストレージを追加します"^]。
 
