@@ -16,13 +16,13 @@ summary:
 [role="lead"]
 SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
 
+. VMware vCenter 7.0.3以降のバージョンでは、の手順に従います link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード"^] をクリックしてvCenterに証明書をインポートします。
 . ブラウザから VMware vSphere vCenter にアクセスします。
 +
 
 NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。
 
 . VMware vCenter Single Sign-Onページにログインします。
-. VMware vCenter 7.0.3以降のバージョンでは、の手順に従います link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード"^] をクリックしてvCenterに証明書をインポートします。
 . ナビゲーションペインで、データセンター、フォルダ、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、[OVFテンプレートの展開*]を選択してVMware導入ウィザードを開始します。
 . [Select an OVF template*](OVF テンプレートの選択 ) ページで '.ova ファイルの場所 ( 次の表のとおり ) を指定し '[*Next*]( 次へ ) をクリックします
 +

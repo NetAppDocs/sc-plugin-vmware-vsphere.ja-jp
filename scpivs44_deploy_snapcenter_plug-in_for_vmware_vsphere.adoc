@@ -36,13 +36,13 @@ The OVA deployment is supported in VMware vCenter 7u1 and above.
 SnapCenter VMware プラグインを vCenter と同じタイムゾーンに導入します。バックアップスケジュールは、 SnapCenter VMware プラグインが導入されているタイムゾーンで実行されます。vCenter では、 vCenter が配置されているタイムゾーンでデータが報告されます。そのため、 SnapCenter VMware プラグインと vCenter が異なるタイムゾーンにある場合は、 SnapCenter VMware プラグインダッシュボードのデータがレポートのデータと同じでないことがあります。
 
 .手順
+. VMware vCenter 7.0.3以降のバージョンでは、の手順に従います link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード"^] をクリックしてvCenterに証明書をインポートします。
 . ブラウザから VMware vSphere vCenter にアクセスします。
 +
 
 NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox のいずれかを使用する必要があります。
 
 . VMware vCenter Single Sign-On * ページにログインします。
-. VMware vCenter 7.0.3以降のバージョンでは、の手順に従います link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード"^] をクリックしてvCenterに証明書をインポートします。
 . Navigator ペインで、データセンター、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、 * Deploy OVF Template * を選択して VMware Deploy ウィザードを起動します。
 . .ovaファイルを含む.tarファイルをローカルシステムに展開します。[Select an OVF template]ページで、の場所を指定します `.ova` .tar展開フォルダ内のファイル。
 . 「 * 次へ * 」をクリックします。
