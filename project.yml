@@ -271,8 +271,6 @@ homepage:
       url: "/scpivs44_restore_from_backups_overview.html"
     - title: REST APIs を使用します
       url: "/scpivs44_rest_apis_overview.html"
-    - title: Windows ベースの SCV から移行する
-      url: "/scpivs44_migrate.html"
   - title: ブログコミュニティ
     links:
     - title: ネットアップブログ– SCV

@@ -20,7 +20,7 @@ SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限
 
 == vCenter Admin ロールに必要な権限
 
-System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.FileManagement Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config ホスト .Config.Settings Host.Settings Host.Local.Reconfig.VM Host.Reconfig.Reconfig.VirtualMachine Resist.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine のインベントリのインベントリの再構成ホスト .VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.CreateQuery.VirtualMachine のインベントリのインベントリの再構成にての再構成にての再構成にてのインベントリを実行
+Datastore.PowerLocateSpace Datastore.Browse Datastore.Delete Datastore.FileManagement Datastore.Move Extension.Register Extensionの更新Host.Config.AdvancedConfig Host.Config.Resources Host.Config.Config.Settings Host.Config.Config.Storage VirtualVirtualVirtualVirtualVirtualVMHost.Local.CreateVM Host.Local.DeleteVM Network.ReconfigVM Network.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Config.Assign Resource.Config.VM Resource.Config.VM Resource.Config.Config.Config.VM Resource.Config.VM Resource.Config.Datast.VM Resource.Config.Datast.Config.Datast.Datast.Datastoronymous仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンのリソースのリソースの仮想マシンリソース
 
 
 

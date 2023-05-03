@@ -69,4 +69,4 @@ NOTE: VVolコンテナのリバランシング後にVVol VMをリストアする
 
 IMPORTANT: リストア処理中に、「 Host unresolved volumes is null' or ’ Exception while calling pre-restore on SCV … . Error mounting cloned LUN as datastore.` 」というエラーが発生することがあります これは、 SnapCenter VMware プラグインがクローンの再署名を試みたときに発生します。VMware の制限により、 SnapCenter VMware プラグインは高度な ESXi 構成で自動再署名値を制御できません。
 
-このエラーの詳細については、 ｛ linkwith -forアンダー スコア ｝ [ 技術情報： SCV clone or restores fail with error 'Host Unresolved volumes is null^] を参照してください。
+を参照してください https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["技術情報アーティクル：SCV clone or restores fail with error 'Host Unresolved volumes is Null"^] エラーの詳細については、を参照してください。

@@ -179,7 +179,6 @@
   <block id="b148e71859cffdb60779d0fd79307d95" category="summary">SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限必要な vCenter 権限があることを確認する必要があります。</block>
   <block id="e49b2704cb3fef8c492858dfc3f6dbce" category="doc">最小限の vCenter 権限が必要です</block>
   <block id="370cf061cf511b1663901c8a1fa77c6f" category="section-title">vCenter Admin ロールに必要な権限</block>
-  <block id="98b6d2abbb9e53348f4ee8d871b00548" category="paragraph">System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.FileManagement Datastore.FileManagement Datastore.AllocateSpace Network.Assign Host.Config.Storage Host.Config.AdvancedConfig Host.Config ホスト .Config.Settings Host.Settings Host.Local.Reconfig.VM Host.Reconfig.Reconfig.VirtualMachine Resist.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.CreateObject.VirtualMachine のインベントリのインベントリの再構成ホスト .VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.VirtualMachine.VirtualMachine.VirtualObject.VirtualMachine.CreateQuery.VirtualMachine のインベントリのインベントリの再構成にての再構成にての再構成にてのインベントリを実行</block>
   <block id="84ecd316e231a4baee8cc1858eaf3625" category="section-title">SnapCenter Plug-in for VMware vCenter に固有の必要な権限</block>
   <block id="5031c4b53c895db7c962081a39a6236f" category="paragraph">vCenter で Transport Layer Security （ TLS ）を有効にする必要があります。VMware のドキュメントを参照してください。</block>
   <block id="9e6343514537d0d6a99bafe616c5aa86" category="list-text">ブラウザから VMware vSphere vCenter にアクセスします。</block>
@@ -1498,7 +1497,6 @@
   <block id="5f7a22e6bc1efc88f124202fb98db729" category="admonition">VVolコンテナのリバランシング後にVVol VMをリストアすることはできません。</block>
   <block id="764c22e450dbc5e74f71923d5157420e" category="paragraph">ゲストファイルのリストア操作は、 NFS 環境と VMFS 環境の両方で、（ Storage VMotion ではなく）クローン操作とマウント操作を使用して実行されます。</block>
   <block id="d926b139950371ea24c296bdd377c68f" category="admonition">リストア処理中に、「 Host unresolved volumes is null' or ’ Exception while calling pre-restore on SCV … . Error mounting cloned LUN as datastore.` 」というエラーが発生することがあります これは、 SnapCenter VMware プラグインがクローンの再署名を試みたときに発生します。VMware の制限により、 SnapCenter VMware プラグインは高度な ESXi 構成で自動再署名値を制御できません。</block>
-  <block id="749560c83bd9672bf5dd0ec151afa4bf" category="paragraph">このエラーの詳細については、 ｛ linkwith -forアンダー スコア ｝ [ 技術情報： SCV clone or restores fail with error 'Host Unresolved volumes is null^] を参照してください。</block>
   <block id="35b654fd14f12a33551c1993b5321fcb" category="summary">SnapCenter Plug-in for VMware vSphere （ SCV ）は Linux ベースの仮想アプライアンスです。スタンドアロン構成として、 VM 、データストア、および VMDK の高速でスペース効率に優れた、クラッシュ整合性のある、 VM と整合性のあるバックアップおよびリストア処理を実現します。また、 SnapCenter Server と連携して、 SnapCenter アプリケーション固有のプラグインを対象とした VMware 環境でのアプリケーションベースのバックアップおよびリストア処理もサポートします。</block>
   <block id="8c3d0c00ea667e3e0723e5cdc6473a09" category="doc">SnapCenter Plug-in for VMware vSphere のドキュメント</block>
   <block id="6ad02512d263469806f5d87f4a6cde79" category="summary">SnapCenter Plug-in for VMware vSphere リソースグループのバックアップスケジュールを設定すると、 SnapCenter VMware プラグインが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。</block>
@@ -1713,7 +1711,6 @@
   <block id="f87889e78c8188fffcbd96ceaef56759" category="sidebar">VM 、 VMDK 、データストアを保護する</block>
   <block id="222e11fb018a824c05f5fc6a922f5240" category="sidebar">データを保護</block>
   <block id="13f1397303dbc6596a7d0adff2836250" category="sidebar">REST APIs を使用します</block>
-  <block id="26ad26eacebffe3e8571ecf8c6cc3eaf" category="sidebar">Windows ベースの SCV から移行する</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
   <block id="8a49edffe2e22d8746e8c1676b54b1e5" category="sidebar">ネットアップブログ– SCV</block>
   <block id="f62203a113eda99708c4011593033d16" category="sidebar">ネットアップコミュニティ– SCV</block>
@@ -2027,4 +2024,7 @@
   <block id="28f971e28dfc95cd1f45e3f3e43cb5ae" category="list-text">各証明書を一度に1つずつインストールします。</block>
   <block id="cf76c520da4a702698c81207090e0cc9" category="list-text">証明書は*信頼されたルート証明書*の下のパネルに追加されます。証明書をインストールすると、OVAを検証して導入できます。</block>
   <block id="6c0ad8767c3f6938eed064d72ff1e8e3" category="cell">SnapCenter VMware プラグインで管理されている VM とデータストアについて、設定された日数内の保護ステータスに関する概要情報が表示されます。デフォルトは 7 日です。プロパティファイルの値を変更するには、を参照してください <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。プライマリ保護グラフでセクション / ステータスをクリックすると、そのステータスの VM またはデータストアのリストが * Reports * タブに表示されます。保護対象の VM / データストアの保護ステータスレポートには、設定した日数内にバックアップされた VM またはデータストアの名前、最新の Snapshot コピーの名前、および最新のバックアップの実行の開始時刻と終了時刻が表示されます。保護されていない VM またはデータストアの保護ステータスレポートには、設定された日数内に正常にバックアップされなかった VM またはデータストアの名前が表示されます。レポートテーブルは、 HTML 形式または CSV 形式でダウンロードできます。また、（レポートのジョブだけでなく）すべてのジョブのジョブ監視ジョブログもダウンロードできます。このレポートは、プラグインキャッシュが更新されるたびに 1 時間ごとに更新されます。そのため、レポートに最近バックアップされた VM やデータストアが表示されないことがあります。</block>
+  <block id="db5fdb9b050a01b11abea23e40b9585d" category="inline-link">技術情報アーティクル：SCV clone or restores fail with error 'Host Unresolved volumes is Null</block>
+  <block id="ecb770a7a8cc6bd835e08ae2f656b56b" category="paragraph">を参照してください<block ref="1077fe6ba26e5db8ea58ede2a1d4f949" category="inline-link-rx"></block> エラーの詳細については、を参照してください。</block>
+  <block id="02794ea4bb0d5fb663080c701c897f97" category="paragraph">Datastore.PowerLocateSpace Datastore.Browse Datastore.Delete Datastore.FileManagement Datastore.Move Extension.Register Extensionの更新Host.Config.AdvancedConfig Host.Config.Resources Host.Config.Config.Settings Host.Config.Config.Storage VirtualVirtualVirtualVirtualVirtualVMHost.Local.CreateVM Host.Local.DeleteVM Network.ReconfigVM Network.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Config.Assign Resource.Config.VM Resource.Config.VM Resource.Config.Config.Config.VM Resource.Config.VM Resource.Config.Datast.VM Resource.Config.Datast.Config.Datast.Datast.Datastoronymous仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンのリソースのリソースの仮想マシンリソース</block>
 </blocks>
