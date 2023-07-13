@@ -21,7 +21,7 @@ summary: メンテナンスコンソールからサポートバンドルを生�
 にアクセスしてメンテナンスコンソールにログオンする方法については、を参照してください link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]。
 
 +
-image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image11.png["メンテナンスコンソールのウィンドウ"]
 
 . メインメニューから、オプション * 4 ） Support and Diagnostics * と入力します。
 . Support and Diagnostics （サポートおよび診断）メニューから、オプション * 1 ） Generate support bundle （サポートバンドルの生成）と入力します。 *

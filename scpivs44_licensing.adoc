@@ -20,6 +20,7 @@ SnapCenter Plug-in for VMware vSphere は、次のストレージシステムを
 * AFF
 * Cloud Volumes ONTAP
 * ONTAP Select の場合
+* ASA
 
 
 セカンダリデスティネーションに SnapCenter Standard ライセンスを追加することを推奨しますが、必須ではありません。セカンダリシステムで SnapCenter 標準ライセンスが有効になっていないと、フェイルオーバー処理の実行後に SnapCenter を使用できません。ただし、マウントおよび接続処理を実行するには、セカンダリストレージに FlexClone ライセンスが必要です。リストア処理を実行するには、 SnapRestore ライセンスが必要です。

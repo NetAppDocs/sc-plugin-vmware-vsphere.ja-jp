@@ -22,7 +22,7 @@ VM またはデータストアのバックアップまたはリストアを準�
 .手順
 . [*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 SnapCenter Plug-in for VMware vSphere のセクション * で [*Backups] をクリックします。
 +
-image:scpivs44_image14.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image14.png["vSphere Client UIの略"]
 
 . 表示するバックアップをクリックします。
 

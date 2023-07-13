@@ -16,4 +16,4 @@ summary: このワークフローは、 SnapCenter を使用していて、 Snap
 [role="lead"]
 SnapCenter を使用しており、 SnapCenter バックアップを作成している場合は、次のワークフローに従ってください。
 
-image:scpivs44_image3.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image3.png["導入のワークフロー"]

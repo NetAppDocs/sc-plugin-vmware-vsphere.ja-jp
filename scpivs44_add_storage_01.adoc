@@ -43,7 +43,7 @@ SnapCenter VMware プラグインは、直接接続された Storage VM と Stor
 NOTE: SnapCenter VMwareプラグインを使用してVMDK上のアプリケーションベースのバックアップをサポートしている場合は、SnapCenter のGUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。
 
 * リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。
-* Storage VM の名前は管理 LIF に解決できる必要があります。
+* SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。
 +
 SnapCenter で Storage VM 名に etc ホストエントリを追加した場合は、それらのエントリが仮想アプライアンスからも解決できることを確認する必要があります。
 
@@ -55,7 +55,7 @@ SnapCenter で Storage VM 名に etc ホストエントリを追加した場合�
 
 .手順
 . vSphereクライアントの左側のナビゲーションペインで、*ストレージシステム*をクリックします。
-. ストレージシステムページで、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 追加 * 。
+. [ストレージシステム]ページで、*[追加]*オプションを選択します。
 . Add Storage System * ウィザードで、次の表に示す基本的な Storage VM またはクラスタ情報を入力します。
 +
 |===
@@ -71,10 +71,10 @@ SnapCenter で Storage VM 名に etc ホストエントリを追加した場合�
 | 認証方式 | 資格情報または証明書のいずれかを選択します。次の2種類の証明書がサポートされています。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA署名証明書"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自己署名証明書"^] 
 
 
-| ユーザ名 | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VM へのログオンに使用する ONTAP ユーザ名を入力します。 
+| ユーザ名 | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタへのログオンに使用するONTAPユーザ名を入力してください。 
 
 
-| パスワード | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VM のログオンパスワードを入力します。 
+| パスワード | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタのログインパスワードを入力してください。 
 
 
 | 証明書 | このフィールドは、認証方法として証明書を選択すると表示されます。証明書ファイルを参照して選択します。 

@@ -19,7 +19,7 @@ summary: メンテナンスコンソールを使用して、 SnapCenter Plug-in 
 .手順
 . メンテナンスコンソールのウィンドウを開きます。
 +
-link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console["メンテナンスコンソールにアクセスします"]。
+link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]。
 
 . メインメニューから、オプション * 1 ）「アプリケーションの設定 * 」を入力します。
 . [ アプリケーションの設定 ] メニューから、オプション *6 ）「 mysql backup and restore * 」と入力します。

@@ -20,10 +20,11 @@ summary: SnapCenter Plug-in for VMware vSphere リソースグループのバッ
 
 
 .作業を開始する前に
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。
+SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
 * SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
 * SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
+* メンテナンスコンソールの[System Configuration]オプションを使用して、6桁のMFAトークンを生成します。
 
 
 .手順
@@ -33,7 +34,7 @@ SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログ
 
 . 上部のツールバーの [ 設定 ] アイコンをクリックします。
 +
-image:scpivs44_image28.jpg["エラー：グラフィックイメージがありません"]
+image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 
 . [ * 設定 * ] ページの [ * 日付と時刻 * ] セクションで、 [ * 編集 * ] をクリックします。
 . 新しいタイムゾーンを選択し、 * 保存 * をクリックします。

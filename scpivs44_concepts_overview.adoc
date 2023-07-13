@@ -69,7 +69,7 @@ ONTAP ツールを使用して、ONTAP およびVMware Web ClientでVVOLのス�
 
 SnapCenter Plug-in for VMware vSphere は、上記の主要な機能に加えて、 iSCSI 、ファイバチャネル、 FCoE 、 NFS 3.0 および 4.1 上の VMDK 、および VMFS 5.0 および 6.0 上の VMDK もサポートしています。
 
-サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^] IMT
+サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^] IMT
 
 NFS プロトコルおよび ESXi については、 VMware から提供される vSphere Storage のドキュメントを参照してください。
 

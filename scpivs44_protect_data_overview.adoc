@@ -30,4 +30,4 @@ MetroCluster 構成の場合：
 
 次のワークフロー図に、バックアップ処理の実行順序を示します。
 
-image:scpivs44_image13.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image13.png["バックアップ処理ワークフロー"]

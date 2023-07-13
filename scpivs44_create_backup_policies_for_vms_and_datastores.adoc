@@ -39,7 +39,7 @@ SnapCenter Plug-in for VMware vSphere を使用して VM とデータストア�
 
 .手順
 . SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[* Policies（ポリシー）]をクリックします。
-. [* ポリシー *] ページで、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 「 * 」を作成してウィザードを開始します。
+. [ポリシー]*ページで、*[作成]*を選択してウィザードを開始します。
 . [New Backup Policy] ページで、ポリシーを使用する vCenter Server を選択し、ポリシー名と概要を入力します。
 +
 ** リンクモード

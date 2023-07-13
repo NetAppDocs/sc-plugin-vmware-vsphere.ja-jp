@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使
 
 
 
-NOTE: SCV 4.8へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、SCV 4.7を引き続き使用する必要があります。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードの際にシステムが停止します。
+NOTE: SCV 4.9へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードの際にシステムが停止します。
 
 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスによって、既存のプラグインの登録が解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
 
@@ -52,7 +52,7 @@ NOTE: ネットワーク設定を静的アドレスから DHCP アドレスに�
 .. アップグレードする VM に移動し、 * Summary * タブをクリックします。[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
 .. [CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。
 +
-image:scpivs44_image42.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image42.png["vCenter UI"]
 
 .. ウィザードで、次の手順を実行します。
 +

@@ -21,6 +21,8 @@ swagger Rest APIを次に示します。
 . GET 4.1/audit/logs：すべてのログの監査データを取得します
 . GET 4.1/audit/logs/｛fileName｝：特定のログファイルの監査データを取得します
 . 4.1/audit/Verify後：監査ログの検証をトリガーします。
+. GET 4.1/audit/config：監査およびsyslogサーバの設定を取得します
+. PUT 4.1/audit/config：監査サーバとsyslogサーバの設定を更新します
 
 
 SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの監査ログを生成するには、VMware vSphereのREST API呼び出しを使用する必要があります。
@@ -40,4 +42,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereク�
 
 
 | `4.1/audit/verify` | 監査検証をトリガーします 
+
+
+| `4.1/audit/syslogcert` | syslogサーバ証明書を更新します 
 |===

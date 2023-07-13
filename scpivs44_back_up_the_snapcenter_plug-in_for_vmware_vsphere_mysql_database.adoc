@@ -25,7 +25,7 @@ SnapCenter VMware プラグインには、 MySQL データベース（ NSM デ�
 . VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
 . 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * または Web コンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
-image:scpivs44_image21.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image21.png["メンテナンスコンソールのウィンドウ"]
 
 . メインメニューから、オプション * 1 ）「 Application Configuration. * 」と入力します
 . [ アプリケーションの設定 ] メニューから、オプション *6 ）「 mysql backup and restore. * 」を入力します

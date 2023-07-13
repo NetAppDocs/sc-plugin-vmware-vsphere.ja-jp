@@ -14,7 +14,11 @@ summary: SnapCenter Plug-in for VMware vSphere の導入が完了したら、イ
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。=導入後に必要な処理
+SnapCenter Plug-in for VMware vSphere の導入が完了したら、インストールを完了する必要があります。
+
+
+
+== 導入後に必要な処理
 
 新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください link:scpivs44_add_storage_01.html["ストレージを追加します"^]。
 
@@ -53,7 +57,7 @@ SnapCenter Plug-in for VMware vSphere の導入が完了したら、インスト
 管理者クレデンシャルを使用しないと、 SnapCenter Plug-in for VMware vSphere の導入後または移行後に認証エラーが発生する場合があります。認証エラーが発生した場合は、サービスを再起動する必要があります。
 
 .手順
-. 「 https://<appliance-IP-address>:8080` 」の形式で、 SnapCenter VMware プラグイン管理 GUI にログオンします。
+. という形式を使用して、SnapCenter VMwareプラグインの管理GUIにログオンします `https://<appliance-IP-address>:8080`。adminユーザ名、パスワード、およびMFAトークンの詳細を使用してログインします。MFAトークンはメンテナンスコンソールから生成できます。
 . サービスを再起動します。
 
 
@@ -101,7 +105,7 @@ SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ Sn
 +
 VM ホストが正常に追加されると、 [Managed Hosts] タブに表示されます。
 
-. 左側のナビゲーションペインで、 * 設定 * をクリックし、 * 資格情報 * タブをクリックして、をクリックします image:scpivs44_image6.png["エラー：グラフィックイメージがありません"] * 仮想アプライアンスのクレデンシャルを追加するには、 * を追加します。
+. 左側のナビゲーションペインで、*[設定]*をクリックし、*[クレデンシャル]*タブをクリックし、*[追加]*を選択して仮想アプライアンスのクレデンシャルを追加します。
 . SnapCenter Plug-in for VMware vSphere の導入時に指定したクレデンシャル情報を入力します。
 +
 

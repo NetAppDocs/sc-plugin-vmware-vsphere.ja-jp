@@ -55,4 +55,4 @@ ONTAP と SnapCenter RBAC を設定するには、次のワークフローを使
 
 次の図は、 RBAC 権限（ vCenter と ONTAP の両方）の検証ワークフローの概要を示しています。
 
-image:scpivs44_image1.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image1.png["RBAC 権限の検証ワークフロー"]

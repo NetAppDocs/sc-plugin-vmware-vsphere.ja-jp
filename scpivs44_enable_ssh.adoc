@@ -23,7 +23,7 @@ SnapCenter VMware プラグインの導入時、 SSH はデフォルトで無効
 にアクセスしてメンテナンスコンソールにログオンする方法については、を参照してください link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]。
 
 +
-image:scpivs44_image11.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image11.png["[Maintenance Console]ウィンドウ"]
 
 . メインメニューからメニューオプション * 2 ）システム構成 * を選択します。
 . システム設定メニューから、メニューオプション *6 ） SSH アクセスを有効にする * を選択し、確認プロンプトで「 * y * 」と入力します。

@@ -16,10 +16,12 @@ summary: SnapCenter の機能を使用して仮想マシン、データストア
 [role="lead"]
 SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
 
-....
-[Note]
-The OVA deployment is supported in VMware vCenter 7u1 and above.
-....
+.作業を開始する前に
+このセクションでは、導入を開始する前に実行する必要があるすべてのアクションを示します。
+
+
+NOTE:  OVA環境はVMware vCenter 7u1以降でサポートされます。
+
 * 導入の要件を確認しておく必要があります。
 * サポートされているバージョンの vCenter Server を実行している必要があります。
 * vCenter Server 環境を設定およびセットアップしておく必要があります。
@@ -141,7 +143,7 @@ VMwareツールは、SnapCenter VMwareプラグインを導入するVMにイン�
 管理 GUI にアクセスするには 'https://<appliance-IP-address>:8080` の形式を使用します
 
 +
-デフォルトのメンテナンスコンソールのユーザ名を使用してログインします `maint` およびインストール時に設定したパスワード。
+導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。
 
 +
 SnapCenter VMware プラグインが有効になっていない場合は、を参照してください link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します"]。

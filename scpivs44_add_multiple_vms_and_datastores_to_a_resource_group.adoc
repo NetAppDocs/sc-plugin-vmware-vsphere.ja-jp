@@ -30,7 +30,7 @@ SnapCenter VMware vSphere Clientの[Edit Resource Group]ウィザードを使用
 NOTE: 複数のVVolデータストアにまたがるVVol VM SnapCenter は、プライマリまたは選択したVVolデータストアにのみバックアップされるため、サポートされません。
 
 .手順
-. SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[*リソースグループ（* Resource Groups）]をクリックし、リソースグループを選択して、をクリックします image:scpivs44_image39.png["エラー：グラフィックイメージがありません"] * リソースグループを編集 * してウィザードを開始します。
+. SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[*リソースグループ（* Resource Groups）]をクリックし、リソースグループを選択して、をクリックします image:scpivs44_image39.png["編集アイコン"] * リソースグループを編集 * してウィザードを開始します。
 . [* リソース *] ページで、次の操作を実行します。
 +
 .. Datastores フィールドで、追加する VM またはデータストアに移動します。

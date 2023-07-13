@@ -16,4 +16,4 @@ summary: このワークフローは、 SnapCenter の導入前に SnapCenter �
 [role="lead"]
 SnapCenter バックアップを作成する前に SnapCenter を使用したことがなく、まだ使用していない場合は、次のワークフローを使用して開始してください。
 
-image:scpivs44_image2.png["エラー：グラフィックイメージがありません"]
+image:scpivs44_image2.png["新規ユーザ向けの導入ワークフロー"]
