@@ -26,7 +26,7 @@ SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲート
 
 * VMware の仮想ボリューム（ VVOL ）
 +
-最初にVVOLストレージシステムをVMware vSphere用のONTAP ツールに追加してから、そのストレージシステムをSnapCenter Plug-in for VMware vSphereに追加する必要があります。
+最初にVVOLストレージシステムをONTAP tools for VMware vSphereに追加してから、SnapCenter Plug-in for VMware vSphereに追加する必要があります。
 
 +
 詳細については、を参照してください https://docs.netapp.com/vapp-98/index.jsp["VMware vSphere 用の ONTAP ツール"^]
@@ -45,7 +45,7 @@ NOTE: SnapCenter VMwareプラグインを使用してVMDK上のアプリケー�
 * リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。
 * SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。
 +
-SnapCenter で Storage VM 名に etc ホストエントリを追加した場合は、それらのエントリが仮想アプライアンスからも解決できることを確認する必要があります。
+SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合は、それらのエントリも仮想アプライアンスから解決できることを確認する必要があります。そうでない場合は、アプライアンス内の_etc/hosts_fileに同様のエントリを追加する必要があります。
 
 +
 管理 LIF に解決できない名前の Storage VM を追加すると、プラグインがその Storage VM 上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、 Storage VM を SnapCenter に追加して管理 LIF を指定するか、 Storage VM を含むクラスタを追加してクラスタ管理 LIF を指定してください。
@@ -62,10 +62,8 @@ SnapCenter で Storage VM 名に etc ホストエントリを追加した場合�
 | フィールド名 | 操作 
 
 
-| ストレージシステム | ストレージクラスタまたは Storage VM の FQDN または IP アドレスを入力してください。SnapCenter VMware プラグインは、異なるクラスタ上で同じ名前のストレージシステムを複数サポートしていません。SnapCenter でサポートされる各ストレージシステムには、一意のデータ LIF IP アドレスが必要です。 
-
-
-| プラットフォーム | プラットフォームを選択します。 
+| ストレージシステム | ストレージクラスタまたはStorage VMのFQDNまたは管理LIFのIPアドレスを入力します。
+SnapCenter VMwareプラグインでは、異なるクラスタにある同じ名前のStorage VMは複数サポートされません。 
 
 
 | 認証方式 | 資格情報または証明書のいずれかを選択します。次の2種類の証明書がサポートされています。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA署名証明書"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自己署名証明書"^] 
@@ -86,13 +84,16 @@ SnapCenter で Storage VM 名に etc ホストエントリを追加した場合�
 | プロトコル | ストレージプロトコルを選択します。 
 
 
-| ポート | ポート 443 （デフォルト）またはポート 80 を選択して vCenter と通信します。ポート 443 は、 VM およびデータストアのバックアップとリストアの処理を実行する際に、 SnapCenter Plug-in for VMware vSphere 用 Storage VM ホストと vCenter 間の通信に使用されます。VVol VM を保護する場合は、デフォルトのポート 443 を選択する必要があります。 
+| ポート | ストレージシステムが受け入れるポート。
+-443（HTTPS接続用）
+-80（HTTP接続用） 
 
 
-| タイムアウト | vCenter が処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です 
+| タイムアウト | SnapCenter VMwareプラグインが処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です 
 
 
-| 優先 IP | Storage VM に複数の管理 IP アドレスがある場合は、このチェックボックスをオンにして、 SnapCenter で使用する IP アドレスを入力します。* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
+| 優先 IP | Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter VMwareプラグインで使用するIPアドレスを入力します。
+* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
 
 
 | Event Management System（EMS；イベント管理システム）およびAutoSupport の設定 | 保護適用、リストア処理の完了、または処理の失敗のために AutoSupport メッセージをストレージシステムに送信する場合は、該当するチェックボックスを選択します。AutoSupport 通知を有効にするには、[失敗した操作に関するAutoSupport 通知をストレージ・システムに送信する*]チェックボックスと[ SnapCenter サーバ・イベントをsyslogに記録する*]チェックボックスをオンにします。 

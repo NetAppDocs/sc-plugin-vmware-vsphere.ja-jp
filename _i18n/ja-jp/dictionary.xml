@@ -241,23 +241,16 @@
   <block id="6086125ba3b16c9db6f89397f48fc616" category="paragraph">ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter は、同時に同期する必要があります。ストレージを追加しようとしても、 vCenter の時刻設定が同期されていないと、 Java 証明書エラーが表示されて処理が失敗することがあります。</block>
   <block id="9aac8d0b8942f0e2048e58de3b7be108" category="paragraph">SnapCenter VMware プラグインは、直接接続された Storage VM と Storage クラスタ内の Storage VM でバックアップおよびリストア処理を実行します。</block>
   <block id="b99edf353b52c5792e35401298cc1119" category="list-text">リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。</block>
-  <block id="9b0a1c41413ba0bd6082cc3e1b84f315" category="paragraph">SnapCenter で Storage VM 名に etc ホストエントリを追加した場合は、それらのエントリが仮想アプライアンスからも解決できることを確認する必要があります。</block>
   <block id="f6bf07ac5479cd87c5bc2e1e1e185478" category="paragraph">管理 LIF に解決できない名前の Storage VM を追加すると、プラグインがその Storage VM 上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、 Storage VM を SnapCenter に追加して管理 LIF を指定するか、 Storage VM を含むクラスタを追加してクラスタ管理 LIF を指定してください。</block>
   <block id="913caa3ee179d1d56a0a5a1d647e72c2" category="list-text">Add Storage System * ウィザードで、次の表に示す基本的な Storage VM またはクラスタ情報を入力します。</block>
   <block id="f31303ddb8ada38aed08c2bb8f9d8e6c" category="cell">ストレージシステム</block>
-  <block id="fad18723d417fce1e95c966edce6b387" category="cell">ストレージクラスタまたは Storage VM の FQDN または IP アドレスを入力してください。SnapCenter VMware プラグインは、異なるクラスタ上で同じ名前のストレージシステムを複数サポートしていません。SnapCenter でサポートされる各ストレージシステムには、一意のデータ LIF IP アドレスが必要です。</block>
-  <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">プラットフォーム</block>
-  <block id="cd5a35c139a8f0beea540baf32ecc554" category="cell">プラットフォームを選択します。</block>
   <block id="f6039d44b29456b20f8f373155ae4973" category="cell">ユーザ名</block>
   <block id="dc647eb65e6711e155375218212b3964" category="cell">パスワード</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">プロトコル</block>
   <block id="cbb61ef47b30c9a254f01c17c56944ea" category="cell">ストレージプロトコルを選択します。</block>
   <block id="60aaf44d4b562252c04db7f98497e9aa" category="cell">ポート</block>
-  <block id="62977e65c9be4b337db0dff68f2781a8" category="cell">ポート 443 （デフォルト）またはポート 80 を選択して vCenter と通信します。ポート 443 は、 VM およびデータストアのバックアップとリストアの処理を実行する際に、 SnapCenter Plug-in for VMware vSphere 用 Storage VM ホストと vCenter 間の通信に使用されます。VVol VM を保護する場合は、デフォルトのポート 443 を選択する必要があります。</block>
   <block id="c85a251cc457840f1e032f1b733e9398" category="cell">タイムアウト</block>
-  <block id="c123e7ec944a655ce6b0eb1994987cd7" category="cell">vCenter が処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です</block>
   <block id="13772e079123f6cc3b0a65f5912e0ac4" category="cell">優先 IP</block>
-  <block id="2870b54f4433265458cda5b06ab869ae" category="cell">Storage VM に複数の管理 IP アドレスがある場合は、このチェックボックスをオンにして、 SnapCenter で使用する IP アドレスを入力します。* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。</block>
   <block id="15cb2b9c090bdc4868f38d74b1626bca" category="cell">SnapCenter サーバイベントを syslog に記録します</block>
   <block id="c5f67140b8ebc3ad63f626b837c93a28" category="cell">SnapCenter VMware プラグインのイベントをログに記録するチェックボックスをオンにします。</block>
   <block id="0adf9b7ec7bd1bc34fa619474f6709e0" category="cell">処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します</block>
@@ -1731,7 +1724,6 @@
   <block id="aa4d783fee816f8d21f67950ef7dcc20" category="paragraph">SnapCenter VMware プラグインが有効になっていない場合は、を参照してください <block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>。</block>
   <block id="1421137324c618036c21fb84413b93fd" category="list-text">VMware vSphere ClientのGUIで、ツールバーの* Menu *をクリックし、追加するVMまたはデータストアに移動します。</block>
   <block id="26dc1678973cf898baa325abda96cb6d" category="paragraph">VMware vSphere Clientを使用してストレージを追加します。</block>
-  <block id="1931a868e4e40f746c1be3fe292582d4" category="paragraph">最初にVVOLストレージシステムをVMware vSphere用のONTAP ツールに追加してから、そのストレージシステムをSnapCenter Plug-in for VMware vSphereに追加する必要があります。</block>
   <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="inline-link">VMware vSphere 用の ONTAP ツール</block>
   <block id="7598c46258085b3d4013c760f473771e" category="paragraph">詳細については、を参照してください<block ref="fdd966f4de047f12034d4cf35b0cc9b2" category="inline-link-rx"></block></block>
   <block id="de9e931cdaba9ca16191e1a4327cc0e8" category="admonition">SnapCenter VMwareプラグインを使用してVMDK上のアプリケーションベースのバックアップをサポートしている場合は、SnapCenter のGUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。</block>
@@ -2073,4 +2065,15 @@ MFAトークンを生成します</block>
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="d0ea0acf98adef65d75abe323fe90376" category="admonition">ESXiからプロキシVMを削除する前に、SnapCenter Plug-in for VMware vSphere UIからプロキシVMを削除する必要があります。</block>
+  <block id="a06bb07ae4f38addfa216f1bf6d50271" category="paragraph">最初にVVOLストレージシステムをONTAP tools for VMware vSphereに追加してから、SnapCenter Plug-in for VMware vSphereに追加する必要があります。</block>
+  <block id="0d4068754a5316289f4fe4cb2c9f06ab" category="paragraph">SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合は、それらのエントリも仮想アプライアンスから解決できることを確認する必要があります。そうでない場合は、アプライアンス内の_etc/hosts_fileに同様のエントリを追加する必要があります。</block>
+  <block id="ec152cd63150806755f263280e145f0b" category="cell">ストレージクラスタまたはStorage VMのFQDNまたは管理LIFのIPアドレスを入力します。
+SnapCenter VMwareプラグインでは、異なるクラスタにある同じ名前のStorage VMは複数サポートされません。</block>
+  <block id="5c75867322c5948bda582697a669534b" category="cell">ストレージシステムが受け入れるポート。
+-443（HTTPS接続用）
+-80（HTTP接続用）</block>
+  <block id="1c5f9a41c5507d4adb0d486ee3d2b620" category="cell">SnapCenter VMwareプラグインが処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です</block>
+  <block id="2dc5e487794f729ff43e4206e76d5676" category="cell">Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter VMwareプラグインで使用するIPアドレスを入力します。
+* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。</block>
 </blocks>
