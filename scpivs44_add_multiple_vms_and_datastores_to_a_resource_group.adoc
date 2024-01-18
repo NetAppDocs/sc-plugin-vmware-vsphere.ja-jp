@@ -22,7 +22,7 @@ SnapCenter VMware vSphere Clientの[Edit Resource Group]ウィザードを使用
 * 1 つの FlexGroup データストア（複数の VM のスパニングはサポートされていません）。
 * 1 つ以上の FlexVol データストア（複数の VM のスパニングがサポートされます）。
 * 1 つ以上の VVol VM が必要です。
-* 指定した vCenter タグを使用するすべての VVol VM 。
+* 指定したvSphereタグが設定されているすべてのVVol VM。
 * 指定したフォルダ内のすべての VVol VM 。
 
 

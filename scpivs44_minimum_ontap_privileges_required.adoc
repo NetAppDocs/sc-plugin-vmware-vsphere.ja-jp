@@ -53,7 +53,7 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 | SVM SVMピア 
 |===
 
-NOTE: サポートされないvserverコマンドに関する警告メッセージは無視してかまいません。
+NOTE: サポートされていないvServerコマンドに関する警告メッセージは無視してかまいません。
 
 
 
@@ -68,4 +68,14 @@ SnapCenter Plug-in for VMware vSphere の処理を実行するための適切な
 「 vsadmin 」としてログインするか、上記の表に記載された最小権限を持つロールでログインする必要があります。
 
 * ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザは、クラスタStorage VMまたはStorage VMに関連付けることができます。
+* SnapMirrorビジネス継続性（SM-BC）機能を使用するには、ONTAP 9.12.1以降のバージョンが必要です。
+* 改ざん防止スナップショット（TPS）機能を使用するには、次の手順を実行します。
++
+** SANにはONTAP 9.13.1以降のバージョンが必要です。
+** NFSにはONTAP 9.12.1以降のバージョンが必要です。
 
+
+
+
+
+NOTE: ONTAPバージョン9.11.1以降の場合、ONTAPクラスタとの通信にはREST APIを使用します。ONTAPユーザは、httpアプリケーションを有効にしておく必要があります。ただし、ONTAP REST APIで問題が見つかった場合は、設定キー「force_zapi」を使用して従来のZAPIワークフローに切り替えることができます。設定APIを使用してこのキーを追加または更新し、trueに設定する必要がある場合があります。技術情報アーティクル、 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["RestAPIを使用してSCVの設定パラメータを編集する方法"]。

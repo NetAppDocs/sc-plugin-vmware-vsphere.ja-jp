@@ -63,9 +63,7 @@
   <block id="bb7ace492245c1393f1fa7650b5650f0" category="list-text">[OK] をクリックして、バックアップを開始します。</block>
   <block id="8bf5cf5dea41cc14b69ffe6c6732b880" category="list-text">オプション：ウィンドウ下部の「最近のタスク」をクリックするか、ダッシュボードの「ジョブモニタ」をクリックして、処理の進捗状況を監視します。結果</block>
   <block id="c9f88dac59bd7db8545fafc230d3c135" category="paragraph">バックアップ内のいずれかの VM で休止処理が失敗すると、選択したポリシーで VM の整合性が選択されていても、バックアップは警告付きで完了し、 Not VM consistent とマークされます。この場合、一部の VM が正常に休止された可能性があります。ジョブモニタで、障害が発生した VM の詳細に障害として休止が表示されます。</block>
-  <block id="f9b89f50c3191d26a18cb9179d9c627c" category="summary">リソースグループは、保護する VM 、データストア、または vVol VM のコンテナです。</block>
   <block id="020a36deb114af1bb518c70d5975e940" category="doc">リソースグループを作成する</block>
-  <block id="56d692c399ce7a0cb595940da747b343" category="paragraph">リソースグループは、保護するVM、データストア、およびVVol VMのコンテナです。</block>
   <block id="0834d3a187a3bdb67af7d3afee5ae7b7" category="paragraph">リソースグループには次のものを含めることができます。</block>
   <block id="b9131269a99d9c88ad3147cbcd58bf40" category="list-text">従来の VM とデータストア</block>
   <block id="c590e7dcafecc166a57f574779c3cefd" category="paragraph">従来の VM 、従来の SAN データストア、従来の NAS データストアを任意に組み合わせて使用できます。従来の VM を VVol VM と組み合わせることはできません。</block>
@@ -75,8 +73,6 @@
   <block id="63ae32cca42b4e9f60d4e565abb500f0" category="paragraph">1 つ以上の FlexVol データストア。スパニングデータストアがサポートされている。</block>
   <block id="be4dabd9b423d95d1a6d3ae245c4674d" category="list-text">VVol VM</block>
   <block id="609bc18d83c2eda9daa8745e802c0c91" category="paragraph">1 つ以上の VVol VM が必要です。VVol VM を従来の VM またはデータストアと組み合わせることはできません。</block>
-  <block id="b7061f14aa08078a733908eff9954071" category="list-text">タグが設定された VVol VM</block>
-  <block id="35b94b72165429aeed0e237dffac6aca" category="paragraph">指定した vCenter タグを使用するすべての VVol VM 。データストアや従来の VM など、タグが同じ vCenter または別の vCenter にある他のエンティティはサポートされません。指定したタグに一致する VM のリストに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM をスキップします。</block>
   <block id="c4768b4c64b8fdd7c81cc095dffaa2b4" category="list-text">フォルダ内の VVol VM</block>
   <block id="dc9d5117fa27f9852d62a28174a9c1bf" category="paragraph">1 つの指定した vVol フォルダにすべての vVol が含まれています。フォルダに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM はスキップします。</block>
   <block id="c7fda16b0d034ce0f2afcab4d2064e02" category="paragraph">すべてのリソースグループ：</block>
@@ -94,7 +90,6 @@
   <block id="a5fc7fce0f281a94273520624de03c38" category="list-text">Snapshot コピーの最適化</block>
   <block id="688d5b2babde9746f885c50b8809883a" category="paragraph">Snapshot コピーを最適化するには、同じボリュームに関連付けられている VM とデータストアを 1 つのリソースグループにグループ化します。</block>
   <block id="9f02509e5496e861df4c341dba05386e" category="list-text">バックアップポリシー</block>
-  <block id="ab4c9d1e2eb92442c5b3ece6aa2c0278" category="paragraph">リソースグループはバックアップポリシーがなくても作成できますが、スケジュールされたデータ保護処理を実行するには、少なくとも 1 つのポリシーがリソースグループに適用されている必要があります。既存のポリシーを使用することも、リソースグループの作成時に新しいポリシーを作成することもできます。</block>
   <block id="4360fc5d869bf831be60cbb2a380170e" category="list-text">互換性チェック</block>
   <block id="830d37b05f2ce774b9a3bf6afe319d15" category="paragraph">リソースグループを作成すると、 SnapCenter によって互換性チェックが実行されます。</block>
   <block id="f2674e0010597a541e3758cbd4368e87" category="paragraph"><block ref="6c9b49ac3dbdf01a593410d52afe429e" category="inline-xref-macro-rx"></block></block>
@@ -126,7 +121,6 @@
   <block id="f6023484d4c2c1da1f8822ae43bc066a" category="list-text">名前に特殊文字が含まれている場合は、 Name フィールドと同じガイドラインに従ってください。</block>
   <block id="2b2620f1962d78eb23f6f754d96e6546" category="list-text">[* リソース *] ページで、次の操作を実行します。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">適用範囲</block>
-  <block id="d5d5b2c27cc217b5e686939e44c087e6" category="cell">保護するリソースのタイプを選択します。*データストア（指定した1つ以上のデータストア内の従来のすべてのVM）。VVOLデータストアは選択できません。*仮想マシン（従来のVMまたはVVol VMを個別に移動。フィールドでは、VMまたはVVol VMを含むデータストアに移動する必要があります）。FlexGroup データストア内のVMを個別に選択することはできません。*タグ（単一のVMwareタグが指定されたすべてのVVOL VM。リストボックスにタグを入力する必要があります）* VMフォルダ（指定されたフォルダ内のすべてのVVOL VM。ポップアップフィールドで、フォルダが配置されているデータセンターに移動する必要があります）</block>
   <block id="615707baa418ce315e44ac2a5d6164af" category="cell">データセンター</block>
   <block id="d1fce2857d6a7747bc3a9e485e2cf30f" category="cell">追加する VM またはデータストアまたはフォルダに移動します。</block>
   <block id="4c928d1c171b7d62d8f758ffa689710f" category="cell">使用可能なエンティティ</block>
@@ -134,8 +128,6 @@
   <block id="749435efb6e9940bcadad406e3a36d76" category="paragraph">[ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。</block>
   <block id="985e4f2c2c2709eb57d50d5cec83e1dc" category="paragraph">「 Selected &lt;resource-key &gt; is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください <block ref="6c9b49ac3dbdf01a593410d52afe429e" category="inline-xref-macro-rx"></block> を参照してください。</block>
   <block id="eaedab9c594e1aeb86de4b70aee0ef7b" category="list-text">[ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。</block>
-  <block id="fe83ca3448603607d6f63f28881e4f36" category="list-text">すべてのスパニングデータストアを常に除外する [ データストアのデフォルトです。 ]</block>
-  <block id="72e68a17ed1f6a20f08ce75c1fd9dfcb" category="list-text">常にすべてのスパニングデータストアを含める [ これが VM のデフォルトです。 ]</block>
   <block id="132ea0655a055ab5c66e879c0cecfd43" category="list-text">対象に含めるスパニングデータストアを手動で選択します</block>
   <block id="731942548689f6a5287491346edb98a1" category="paragraph">FlexGroup データストアと VVOL データストアにスパニング VM を使用することはできません。</block>
   <block id="3210952a5fb8d5ccfeba07ae678f1775" category="list-text">[* Policies] ページで、次の表に示すように 1 つ以上のバックアップポリシーを選択または作成します。</block>
@@ -323,15 +315,12 @@
   <block id="a16b2ff997d48e2546b18ea761946427" category="paragraph">ロールの作成と変更、およびユーザへのリソースアクセスの追加はいつでも実行できます。ただし、 SnapCenter VMware プラグインを初めてセットアップするときは、少なくとも Active Directory ユーザまたはグループをロールに追加してから、それらのユーザまたはグループにリソースアクセスを追加する必要があります。</block>
   <block id="883fd3a999b576424bc7a7ce53cc2e8a" category="doc">各種 SnapCenter GUI の概要</block>
   <block id="568a0ca21263fa919f552d5a59509f7b" category="paragraph">SnapCenter 環境では、適切な GUI を使用して、データ保護と管理の処理を実行する必要があります。</block>
-  <block id="18499fdc69ec56cb82f996ca74ff9268" category="paragraph">また、 SnapCenter VMware プラグインに対して管理操作を実行するための管理 GUI もあります。</block>
-  <block id="923c190fb7e44419e6b6b699fddd3b7b" category="paragraph">次の表に、各 SnapCenter GUI で実行される処理を示します。</block>
   <block id="62882ef8fe7d5fd42d42bffbc2997106" category="cell">使用する GUI</block>
   <block id="04638ac63aa96ffa4b255a2a417c75ee" category="cell">実行する処理</block>
   <block id="9d084986783a6b781676e2cbf701b705" category="cell">バックアップへのアクセス</block>
   <block id="dc54a2b97309df247da23aab805aa9c4" category="cell">VM およびデータストアバックアップ VMDK を接続し、データストアマウントを接続解除して、 VM および VMDK リストアゲストファイルおよびフォルダのリストアをアンマウントします</block>
   <block id="5e1e683454f68437c1ce8e307c704972" category="cell">SnapCenter GUI</block>
   <block id="00e553df82c18a0afa37efd55ff7a964" category="cell">Microsoft SQL Server 、 Microsoft Exchange 、 Oracle のデータベースの保護など、 VM 上のデータベースとアプリケーションのバックアップとリストアデータベースクローン</block>
-  <block id="cca3a0f436c797645a4b0054999e0894" category="cell">SnapCenter GUI を使用して実行されるバックアップ。</block>
   <block id="0e7f37a8cfb79d079f359e951ceeb17f" category="cell">SnapCenter Plug-in for VMware vSphere の管理 GUI を使用します</block>
   <block id="3ff093b512ab44265f3095a0b6acf714" category="cell">ネットワーク設定の変更サポートバンドルの生成 NTP サーバ設定の変更プラグインを無効 / 有効にします</block>
   <block id="f8fd615467296836f3668919ea8e3b23" category="cell">該当なし</block>
@@ -339,7 +328,6 @@
   <block id="fff430a88ba050aeda536123c99c39c8" category="cell">vCenter Active Directory ユーザに SCV ロールを追加するユーザまたはグループにリソースアクセスを追加する</block>
   <block id="3a3bfcea804c014276e7672b06f18879" category="summary">仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。</block>
   <block id="d3520107017d5a966a91cb89b0a1057f" category="doc">導入の計画と要件</block>
-  <block id="c97f99f5f071a69947fdc7628d9a1083" category="paragraph">仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入の要件を次の 5 つの表に示します。</block>
   <block id="fc076765cbc4aef219c970ffdd93f443" category="section-title">ホストの要件</block>
   <block id="b2164e68f3b3365f8a7f629f2ded172a" category="paragraph">SnapCenter Plug-in for VMware vSphere の導入を開始する前に、ホスト要件を確認しておく必要があります。</block>
   <block id="9f1f4f9f8512dfd3b467fdb2b0a3fcb9" category="paragraph">SnapCenter VMware プラグインは、プラグインを使用して Windows システムと Linux システムのどちらのデータを保護しているかに関係なく、 Linux VM として導入されます。</block>
@@ -402,7 +390,6 @@
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">ポートのタイプ</block>
   <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">事前設定されたポート</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">SnapCenter Plug-in for VMware vSphere のポート</block>
-  <block id="34fe6318217e13219322f9f481788cfa" category="paragraph">注：ポート設定は変更できません。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Server のポート</block>
   <block id="1f5ccbd5c3e6d6be1c440296630a5678" category="cell">VVol VM を保護する場合はポート 443 を使用する必要があります。</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">ストレージクラスタまたは Storage VM ポート</block>
@@ -783,10 +770,6 @@
   <block id="b425cca2998cc4a7041a0baf7681e912" category="list-text">次の操作を実行できます。</block>
   <block id="81c4bc22149c6022288661540ed446d9" category="list-text">オプション 1 ：アプリケーション構成</block>
   <block id="29b39b2b805d36f8dc5499179622da3f" category="list-text">オプション 2 ：システム構成</block>
-  <block id="99227cc56eb10094b5911955997594bd" category="list-text">オプション 3 ：ネットワーク構成</block>
-  <block id="eb6403fe72c82873180af4e1fbe24094" category="paragraph">IP アドレス設定の表示または変更ドメイン名検索設定の表示または変更静的ルートの表示または変更ホストへの Ping 変更のコミット</block>
-  <block id="85fe6d094a622a1eeb362f8dda82c97e" category="list-text">オプション 4 ：サポートと診断</block>
-  <block id="d34a5ffb5a21003f9819a1371ce31cc8" category="paragraph">サポートバンドルの生成診断シェルの有効化リモート診断アクセスコアダンプバンドルの生成</block>
   <block id="d5016d0bd467fba5c77e9ad2fb083138" category="section-title">メンテナンスコンソールから SnapCenter VMware プラグインのパスワードを変更します</block>
   <block id="7a1b4c723db242b8b956bf9b625f088d" category="paragraph">SnapCenter Plug-in for VMware vSphere の管理 GUI の管理パスワードがわからない場合は、メンテナンスコンソールで新しいパスワードを設定できます。</block>
   <block id="ef68a5edeaf02243985af66b982ffeeb" category="list-text">アプリケーション設定に「 * 1 * 」と入力します。</block>
@@ -811,7 +794,6 @@
   <block id="97e8ab47b38e9948063b3c2295f24205" category="list-text">サポートバンドルが生成されたら、表示されたリンクをクリックしてネットアップにバンドルをダウンロードします。</block>
   <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="doc">バックアップポリシーを作成する</block>
   <block id="2043baf4baf43c498171aa6ce5844280" category="list-text">[ 新しいバックアップ・ポリシー * ] ページで、ポリシー設定情報を入力し、 [ * 追加 ] をクリックします。</block>
-  <block id="424c88c59d861cdd8137216193ffeb91" category="paragraph">ポリシーをミラーバックアップ関係に使用する場合は、「レプリケーション」フィールドで、ミラーバックアップ先にバックアップをコピーする場合は「 SnapVault after backup * 」オプションのみを選択する必要があります。</block>
   <block id="725c52693e7eb7aaf26078a7ce52aa53" category="paragraph">SnapCenter VMwareプラグインの起動または停止SnapCenter VMwareプラグインサービスの概要を表示するSnapCenter プラグインのログインユーザ名またはパスワードの変更MySQLパスワードの変更MySQLパスワードのバックアップとリストア、MySQLの設定と一覧表示を行います</block>
   <block id="73a58d0fa37326c35696eb0d6e13265a" category="summary">デフォルト値を変更するには 'scbr.override 構成ファイルにリストされているプロパティを使用できます</block>
   <block id="24780439a11f70806e96ae85ff282a91" category="doc">オーバーライドできるプロパティ</block>
@@ -914,7 +896,6 @@
   <block id="c47e142f2a6eb4b26405a39504c6d611" category="list-text">1 つの FlexGroup データストア（複数の VM のスパニングはサポートされていません）。</block>
   <block id="9000b760c9b436478de8d2f4d03d38b6" category="list-text">1 つ以上の FlexVol データストア（複数の VM のスパニングがサポートされます）。</block>
   <block id="0ffd2996227063c29608f9b9d955979f" category="list-text">1 つ以上の VVol VM が必要です。</block>
-  <block id="833c06ea28f7615b91589a3019b9d916" category="list-text">指定した vCenter タグを使用するすべての VVol VM 。</block>
   <block id="6d42a41dd23c8c525acb6572dc671ba2" category="list-text">指定したフォルダ内のすべての VVol VM 。</block>
   <block id="c502ab05cc38994114e12765e7b54a25" category="admonition">複数のVVolデータストアにまたがるVVol VM SnapCenter は、プライマリまたは選択したVVolデータストアにのみバックアップされるため、サポートされません。</block>
   <block id="a055e53f0d72ccb2f68db894ad65a4cf" category="list-text">[* リソース *] ページで、次の操作を実行します。</block>
@@ -1638,19 +1619,6 @@
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">REST API のワークフローを使用して組み込みのスケジュールを変更できます</block>
   <block id="f683581d3e75f05f9d9215f9b4696cef" category="sidebar">アップグレード</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">同じリリースの新しいパッチにアップグレードします</block>
-  <block id="5dd03e8d039863e563e049be198c3fd3" category="sidebar">リリースノート</block>
-  <block id="e726fb41e1d7a22426e4a9637075810c" category="sidebar">SCV の詳細をご確認ください</block>
-  <block id="ff31982aef870d546d52f49bb30ef34b" category="sidebar">導入の要件</block>
-  <block id="f87889e78c8188fffcbd96ceaef56759" category="sidebar">VM 、 VMDK 、データストアを保護する</block>
-  <block id="222e11fb018a824c05f5fc6a922f5240" category="sidebar">データを保護</block>
-  <block id="13f1397303dbc6596a7d0adff2836250" category="sidebar">REST APIs を使用します</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログコミュニティ</block>
-  <block id="8a49edffe2e22d8746e8c1676b54b1e5" category="sidebar">ネットアップブログ– SCV</block>
-  <block id="f62203a113eda99708c4011593033d16" category="sidebar">ネットアップコミュニティ– SCV</block>
-  <block id="dfcc398099d6a64026e51ab282e16253" category="sidebar">リソースの追加</block>
-  <block id="7608e75619cff3eeb4e8bce40481b456" category="sidebar">SnapCenter ソフトウェアのドキュメント</block>
-  <block id="11d88a82190664755120fc16494310df" category="sidebar">以前のバージョンの SCV のドキュメント</block>
-  <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">ネットアップのナレッジベース - SCV</block>
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="sidebar">SnapCenter Plug-in for VMware vSphere</block>
   <block id="0f928371dde9bb28b5372e8e7729ebb0" category="paragraph">バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <block ref="37a0363725b373caf92b58503affefad" category="inline-xref-macro-rx"></block>。</block>
   <block id="ec6b0c2e1fb8998a9149b0e870ce2442" category="list-text">ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザは、クラスタStorage VMまたはStorage VMに関連付けることができます。</block>
@@ -1776,10 +1744,6 @@
   <block id="b16dace40c6d62a802d404e0931dba5b" category="paragraph">監査ファイルのデフォルトの設定は次のとおりです。</block>
   <block id="e85610b7230d1171a418cabfebe62026" category="list-text">使用中の監査ログファイルは最大で10MBまで拡張できます</block>
   <block id="12351971cf18f728e97d1d955a9fc3e0" category="list-text">最大10個の監査ログファイルが保持されます</block>
-  <block id="6c329fdfc0824014c9cea3e6b9930edc" category="paragraph">デフォルト設定を変更するには、/opt/netapp/scvservice/standalone _aegis /etc/scbr/ scbr.propertiesにキー値のペアを追加し、scvserviceを再起動します。</block>
-  <block id="e7544f73b7793ed225e3168e78f3d567" category="paragraph">監査ログファイルの設定は次のとおりです。</block>
-  <block id="6ae00b124df26cdd26d631476459a849" category="list-text">&lt;xx&gt; 。xxは監査ログファイルのロールオーバーの最大数です。例：auditMaxROFiles=15。</block>
-  <block id="5b50659763cfe92e9c9d36b391a7d71d" category="list-text">auditLogSize =&lt;XX&gt; MB。xxはMB単位のファイルのサイズです。例：auditLogSize = 15MB。</block>
   <block id="d49dc59b4bc8d6a7864b09f7bf8f0b14" category="paragraph">ロールオーバーされた監査ログは、定期的に整合性が検証されます。SCVは、ログを確認して整合性を検証するためのREST APIを提供します。組み込みのスケジュールがトリガーされ、次のいずれかの整合性ステータスが割り当てられます。</block>
   <block id="ec53a8c4f07baed5d8825072c89799be" category="cell">ステータス</block>
   <block id="66aa2152dc025e437ba51ca832c788cc" category="cell">改ざんされた</block>
@@ -1800,8 +1764,6 @@
   <block id="51359e8b51c63b87d50cb1bab73380e2" category="list-text">ポリシー</block>
   <block id="3500ba09d0538297440ca620c9dd46bf" category="list-text">バックアップ</block>
   <block id="a7de25fe8fdb01b494d7980fb7c1b706" category="paragraph">次の表に、各リソースに対して実行できる操作を示します。</block>
-  <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="cell">リソース</block>
-  <block id="456d0deba6a86c9585590550c797502d" category="cell">処理</block>
   <block id="a116989467521834f98dcea26166c227" category="cell">作成済み、変更済み、削除済み</block>
   <block id="b9d56b2a8331bc1f33fa57bea9030e2c" category="cell">作成、変更、削除、一時停止、再開</block>
   <block id="c1a0aa59345d12529d245828307944fd" category="cell">作成、名前変更、削除、マウント、アンマウント、VMDK、リストアされたVM、VMDKの接続、VMDKの切断、ゲストファイルのリストアをリストア</block>
@@ -1837,14 +1799,11 @@
   <block id="bdbfb471a9264cde1fc7a4e0281096ab" category="list-text">SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[* Policies（ポリシー）]をクリックします。</block>
   <block id="5fe139943a50a82fa435d79d3988038a" category="admonition">VM整合性バックアップを実行するには、VMでVMwareツールを実行する必要があります。VMware Tools が実行されていない場合は、代わりに crash-consistent バックアップが実行されます。</block>
   <block id="ed6d74d4e8ee3f5585b77757cd04466e" category="cell">SVM SVMピア</block>
-  <block id="0e3d7abcb0c352bf59979416f80cd131" category="admonition">サポートされないvserverコマンドに関する警告メッセージは無視してかまいません。</block>
   <block id="637f9e5cc0956a7a76dc0a24cefff651" category="paragraph">SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスによって、既存のプラグインの登録が解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。</block>
   <block id="23281bdadc9c1bd0708c32ac888b35a9" category="list-text">vCenter GUIで、* vSphere Client（HTML）*をクリックします。</block>
   <block id="2c88679616bb5d1045cb38dc2729806a" category="summary">SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。</block>
-  <block id="170b7970d2445acef575f2e6cdfa47d4" category="paragraph">SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。その他すべての SnapCenter プラグイン（アプリケーションベースのプラグイン）については、 SnapCenter GUI を使用してバックアップとリストアの処理とジョブ監視を行います。</block>
   <block id="3c92486afff110ae393bc4f792674c00" category="paragraph">VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。Web クライアント GUI は、ストレージシステム上でネットアップの Snapshot コピーテクノロジと統合されます。これにより、 VM およびデータストアを数秒でバックアップし、 ESXi ホストをオフラインにすることなく VM をリストアできます。</block>
   <block id="b4739ccaeec10b1a2794ad9d017952c1" category="cell">SnapCenter vSphere ClientのGUIを使用します</block>
-  <block id="2f45b0f49c558030f71746b5e9f5d663" category="cell">VMware vSphere Client GUIを使用して実行されたVMとデータストアのバックアップ。</block>
   <block id="b6618107278d92d54e80b1f930a98a14" category="paragraph">VMと整合性のあるバックアップおよびリストア処理を実行するには、VMware vSphere Client GUIを使用する必要があります。データストアのマウントや名前変更などの一部の処理は VMware ツールを使用して実行できますが、それらの処理は SnapCenter リポジトリに登録されず、認識されません。</block>
   <block id="c69e757881b667c28a2b414939fcaa07" category="paragraph">SnapCenter では、データベースと VM の Snapshot コピーを一緒に作成することはできません。VM とデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースと VM が同じボリュームでホストされている場合でも、 Snapshot コピーが別途作成されます。アプリケーションベースのバックアップは、SnapCenter GUIを使用してスケジュールする必要があります。VMware vSphere Client GUIを使用して、VMと整合性のあるバックアップをスケジュールする必要があります。</block>
   <block id="0732e8e379c23dc5fb5e0055374a7f1d" category="summary">SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。</block>
@@ -1865,7 +1824,6 @@
   <block id="3ec87b09fd664417b12e12d452b57325" category="paragraph">vCenterのVMware vSphere Client GUIを使用して、VMware仮想マシン（従来のVMおよびVVOL VM）、VMDK、およびデータストアのバックアップとリストアのすべての処理を実行できます。VVOL VM （ VVOL データストア内の VM ）の場合は、 crash-consistent バックアップのみがサポートされます。また、 VM や VMDK をリストアしたり、ゲスト OS 上にあるファイルやフォルダをリストアしたりすることもできます。</block>
   <block id="07f168e3f6afdf6ced41507cdd505ae8" category="list-text">VMと整合性のあるSnapshotコピーにはVMwareツールが必要です</block>
   <block id="c8fc1db15ada67618adabf802e158c27" category="paragraph">VMwareツールがインストールされておらず、実行されていない場合、ファイルシステムは休止されず、crash-consistent Snapshotが作成されます。</block>
-  <block id="bc62c1a60fc6228e9d7c607c117b1caa" category="list-text">VMware VVOL VMの設定にはONTAP ツールが必要です。</block>
   <block id="ab9f567063d45a42b5368e31b1fa1ee5" category="paragraph">ONTAP ツールを使用して、ONTAP およびVMware Web ClientでVVOLのストレージをプロビジョニングおよび設定します。</block>
   <block id="5f825df741acce88f72970b7ed758803" category="list-text">VMware vSphereクライアントで、*ストレージシステム*をクリックします。</block>
   <block id="c9424bce718e9e3deaedf0943d2692ad" category="summary">SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの組み込みのスケジュールを変更するには、規定された順序のREST API呼び出しに従う必要があります。</block>
@@ -1938,7 +1896,6 @@
   <block id="44040e214e919d86d6a1f3f26db3d22c" category="inline-image-macro">編集アイコン</block>
   <block id="6df4c068972f223d7540167400204e37" category="list-text">SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[*リソースグループ（* Resource Groups）]をクリックし、リソースグループを選択して、をクリックします <block ref="f4ee71cd89b2b235a395ca347e92f957" category="inline-image-macro-rx" type="image"></block> * リソースグループを編集 * してウィザードを開始します。</block>
   <block id="67b5e7cdb9f6fc8b9cf2e5acd6f703b8" category="inline-image-macro">vSphere Client UIの略</block>
-  <block id="0a816a6941032c4e5cad82dd2979717b" category="paragraph"><block ref="0a816a6941032c4e5cad82dd2979717b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f6ae733d2ed961dcd2c41c04be8a70d" category="paragraph"><block ref="5f6ae733d2ed961dcd2c41c04be8a70d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6d90000405f5209bdfcbf03157cf4e4" category="paragraph">SnapCenter Plug-in for VMware vSphere の管理 GUI にログオンするには、 IP アドレスとログインクレデンシャルが必要です。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。</block>
   <block id="0a94cca6404e40338ea941d1db3fab5e" category="list-text">メンテナンスコンソールの[System Configuration]オプションを使用して、6桁のMFAトークンを生成します。</block>
@@ -2002,7 +1959,6 @@ MFAトークンを生成します</block>
   <block id="a2129fc13872e21499db7ac1478e260c" category="section-title">監査ログの設定を変更します</block>
   <block id="3b7005e3de4bc668f924c18bad55b3b2" category="paragraph">ログ設定のデフォルト構成を変更できます。</block>
   <block id="5a2083853297d8e177a0fe4d54c85aad" category="paragraph">このタスクは、デフォルトの監査ログ設定を変更する場合に役立ちます。</block>
-  <block id="e057b7b8bc0461146d95eee6633a5262" category="list-text">[監査ログの設定]ペインで、必要に応じて*[監査エントリの数]*と*[監査ログのサイズ制限]*を入力します。</block>
   <block id="e7a77a9fce1ce4132f3da4c57d5095ca" category="list-text">ツールバーの更新アイコンを選択して、表示をオンデマンドで更新します。</block>
   <block id="a83891cb74b7616b5c42d96a6d160157" category="list-text">フィルタアイコンを選択して、表示するジョブの期間、タイプ、タグ、およびステータスを選択します。フィルタでは大文字と小文字が区別されます。</block>
   <block id="394800e7b0c5ad79486fc6712be3f69a" category="list-text">ジョブの実行中に表示を更新するには、[ジョブの詳細]ウィンドウで更新アイコンを選択します。</block>
@@ -2016,10 +1972,7 @@ MFAトークンを生成します</block>
   <block id="5258377f2e9e8d3d391eece64e6c5025" category="paragraph"><block ref="8214327d71770f15589ad8ef083206a6" category="inline-link-macro-rx"></block>。</block>
   <block id="6b9b94c3711b201fe3a71623fa72ea24" category="paragraph"><block ref="e29e0f9a9d290a9acb44d7554c4c570a" prefix="" category="inline-code"></block></block>
   <block id="754c65b00cdb7c7d30219dba86a36692" category="paragraph"><block ref="e29e0f9a9d290a9acb44d7554c4c570a" prefix="" category="inline-code"></block><block ref="de3b0e6d5c5836f36dfb38e288be5e75" prefix=" " category="inline-code"></block></block>
-  <block id="ed6c7d8c98b4f237e43cf947b0c1c18e" category="inline-link">SnapCenter Plug-in for VMware vSphere 4.9に関する注意事項</block>
-  <block id="945cf0d9dc190747462a7c0ff9da44c3" category="paragraph"><block ref="945cf0d9dc190747462a7c0ff9da44c3" category="inline-link-rx"></block></block>
   <block id="6f30de27462e7513b2536a2c20f5b4f0" category="list-text">[ポリシー]*ページで、*[作成]*を選択してウィザードを開始します。</block>
-  <block id="8e4d5f4d1ec38742346082b46ee1b133" category="admonition">SCV 4.9へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードの際にシステムが停止します。</block>
   <block id="88ae28e59dc3874fd82752642fcf546a" category="inline-image-macro">vCenter UI</block>
   <block id="f0a600cfbc8a81c89ee7f81d19d9ce25" category="paragraph"><block ref="f0a600cfbc8a81c89ee7f81d19d9ce25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1514cb6512294e2b8f3ad18aa1515a0d" category="inline-image-macro">SnapCenter Plug-in for VMware vSphereのウィンドウ</block>
@@ -2040,23 +1993,15 @@ MFAトークンを生成します</block>
   <block id="19dab1cfb0814635bf36a99edfdf3ee4" category="list-text">ジョブモニタのタイトルバーでダウンロードアイコンを選択します。</block>
   <block id="a1aef3bddb723272d9c0c9f26244dc22" category="paragraph">このセクションでは、導入を開始する前に実行する必要があるすべてのアクションを示します。</block>
   <block id="04f004a2cc237196858b57b47529d3e0" category="admonition"> OVA環境はVMware vCenter 7u1以降でサポートされます。</block>
-  <block id="c13f40226bb90b283576004b676cefbf" category="inline-image-macro">[仮想ディスクの接続]ウィンドウ</block>
-  <block id="bcc0e279a8b5799dc849deb8d892ccce" category="paragraph"><block ref="bcc0e279a8b5799dc849deb8d892ccce" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5487a2986e81211f1a1fa9093d29f9ed" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMware Snapshotコピーを含むバックアップの有無、マウントの有無、および場所を選択します。[OK] をクリックします。</block>
   <block id="ff0454269d96dc924f9ed99a4b200ecc" category="inline-image-macro">[設定の編集]ウィンドウ</block>
   <block id="7a5a976df2571c947716b40adffda221" category="paragraph"><block ref="7a5a976df2571c947716b40adffda221" category="inline-image-macro-rx" type="image"></block></block>
   <block id="92e8ef430f5d51426882bb12bbf5e047" category="inline-image-macro">vSphere Client画面</block>
-  <block id="0b440f7132b6fe79c573c20ac70e3650" category="paragraph"><block ref="0b440f7132b6fe79c573c20ac70e3650" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4b8d6321a2be1101bc17bbd298bd7a3" category="inline-image-macro">vSphere Clientウィンドウ</block>
-  <block id="68899227b911c9eadf8827538ec7e0f0" category="paragraph"><block ref="68899227b911c9eadf8827538ec7e0f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="57fa17d3a54ac76c2a1db3016be37151" category="list-text">SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。</block>
   <block id="d3ad548036fae3576533dbeebaee0ad7" category="list-text">[ストレージシステム]ページで、*[追加]*オプションを選択します。</block>
   <block id="e8194860f1d30bbf1da68bba07dd575c" category="cell">このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタへのログオンに使用するONTAPユーザ名を入力してください。</block>
   <block id="f51ca07a9eb2ecf68d2fab0260ed78c8" category="cell">このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタのログインパスワードを入力してください。</block>
-  <block id="a195241d60eb121e7e01805d55269d39" category="inline-link">SnapCenter Plug-in for VMware vSphere 4.9リリースノート</block>
-  <block id="7ee1587964b92bc56089d30239652e95" category="paragraph">リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。
-詳細については、を参照してください<block ref="16263f44e6fc6cfd9b368310c2c86222" category="inline-link-rx"></block></block>
-  <block id="e68a4ca78cd8aabf7fb4164d16730342" category="sidebar">SnapCenter Plug-in for VMware vSphere 4.9のドキュメント</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -2076,4 +2021,104 @@ SnapCenter VMwareプラグインでは、異なるクラスタにある同じ名
   <block id="1c5f9a41c5507d4adb0d486ee3d2b620" category="cell">SnapCenter VMwareプラグインが処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です</block>
   <block id="2dc5e487794f729ff43e4206e76d5676" category="cell">Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter VMwareプラグインで使用するIPアドレスを入力します。
 * 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。</block>
+  <block id="693aa7d3d6625c5c1386fa6c4c43bf30" category="summary">リソースグループは、保護するVM、データストア、vSphereタグ、およびvSphere VMフォルダのコンテナです。</block>
+  <block id="fe6c30a4fa66ded7dfa8e85bf0500684" category="list-text">vSphereタグ</block>
+  <block id="76114b07bad3bfc30596ae551a44e2a6" category="paragraph">指定したvSphereタグが設定されたすべてのVMとデータストア（VVolデータストアを除く）。</block>
+  <block id="69e6b23ed013e0011d69b00b06dfb367" category="paragraph">リソースグループはバックアップポリシーなしで作成できますが、データ保護処理はリソースグループに少なくとも1つのポリシーが適用されている場合にのみ実行できます。リソースグループの作成プロセスで、既存のポリシーを使用するか、新しいポリシーを作成できます。</block>
+  <block id="492eb88027a90161462dae716848e606" category="admonition">Snapshotロック期間が設定されたバックアップポリシーを選択する場合は、ONTAP 9.12.1以降のバージョンを選択する必要があります。</block>
+  <block id="4ddaa4a24ea8e29ccbdc33077a2ff02e" category="cell">保護するリソースのタイプを選択します。
+*データストア（1つ以上の指定されたデータストア内のすべての従来のVM）。VVOLデータストアは選択できません。
+*仮想マシン（従来のVMまたはVVol VMを個別に移動。フィールドでは、VMまたはVVol VMを含むデータストアに移動する必要があります）。
+FlexGroup データストア内のVMを個別に選択することはできません。
+*タグ
+タグベースのデータストア保護は、NFSデータストアとVMFSデータストア、および仮想マシンとVVOL仮想マシンでのみサポートされます。
+* VMフォルダ（指定したフォルダ内のすべてのVVol VM。ポップアップフィールドでフォルダが配置されているデータセンターに移動する必要があります）</block>
+  <block id="1c7dd5a44eda92f1f4694f501f5c1dab" category="list-text">Always exclude all spanning datastores（データストアのデフォルト）</block>
+  <block id="97427a6a16ff8a922dafa9f5a4ad1f6c" category="list-text">すべてのスパニングデータストアを常に含める（VMのデフォルト）</block>
+  <block id="476b6d266916cd5dec75081b1ecfa32e" category="inline-link">SnapCenter Plug-in for VMware vSphere 5.0に関する注意事項</block>
+  <block id="0edba2cc868f00264b1f9ec9cfe17d30" category="paragraph"><block ref="0edba2cc868f00264b1f9ec9cfe17d30" category="inline-link-rx"></block></block>
+  <block id="3658e079605148c7ffe020b7c8da9b1a" category="admonition">サポートされていないvServerコマンドに関する警告メッセージは無視してかまいません。</block>
+  <block id="e930a2e2dd790489ee113f4805f3869a" category="list-text">SnapMirrorビジネス継続性（SM-BC）機能を使用するには、ONTAP 9.12.1以降のバージョンが必要です。</block>
+  <block id="25ab5901983aa5a82a72f4d01731feda" category="list-text">改ざん防止スナップショット（TPS）機能を使用するには、次の手順を実行します。</block>
+  <block id="a4866b08c203cfce4bb493afcc8b8295" category="list-text">SANにはONTAP 9.13.1以降のバージョンが必要です。</block>
+  <block id="d66052df70896b2def96ac137cf820f5" category="list-text">NFSにはONTAP 9.12.1以降のバージョンが必要です。</block>
+  <block id="b49cf949bc4e3959497059a7bfdd0369" category="inline-link">RestAPIを使用してSCVの設定パラメータを編集する方法</block>
+  <block id="0eacb039f2d0b3e7eca7b1ff70e53369" category="admonition">ONTAPバージョン9.11.1以降の場合、ONTAPクラスタとの通信にはREST APIを使用します。ONTAPユーザは、httpアプリケーションを有効にしておく必要があります。ただし、ONTAP REST APIで問題が見つかった場合は、設定キー「force_zapi」を使用して従来のZAPIワークフローに切り替えることができます。設定APIを使用してこのキーを追加または更新し、trueに設定する必要がある場合があります。技術情報アーティクル、<block ref="1c569ff15e6174002858600fc974b74f" category="inline-link-rx"></block>。</block>
+  <block id="ec6b0202082dc6ee78a9636f86e0717d" category="list-text">指定したvSphereタグが設定されているすべてのVVol VM。</block>
+  <block id="2260cf040531c2852db89dceca3fdeb9" category="list-text">VMware VVOL VMを設定するには、ONTAP Tools for VMware vSphereが必要です。</block>
+  <block id="9fa3adb07ccab8c66f18c216f4901022" category="paragraph"><block ref="9fa3adb07ccab8c66f18c216f4901022" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5327e52d102943836a18ed5981ef72f" category="inline-link">SnapCenter Plug-in for VMware vSphere 5.0リリースノート</block>
+  <block id="260988739c83128dcbc355bb1e029c8d" category="paragraph">リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。
+詳細については、を参照してください<block ref="e821752a90092b24f0e98b12f016739f" category="inline-link-rx"></block></block>
+  <block id="d3f72758cf0a8156e66fa0d7b643122f" category="summary">REST APIを使用してストレージの名前を変更できます。</block>
+  <block id="16ceb93d669340dd2ab2325671f71daf" category="doc">名前が変更されたストレージのバックアップのリストア</block>
+  <block id="a52fd082737b9604d73b0ea5362cc5bd" category="paragraph">ストレージの名前を変更すると、名前変更前に作成されたバックアップを使用するワークフローが失敗します。REST APIからのみアクセスできるバックアップ名変更機能が導入され、ストレージ名変更前に作成されたバックアップを使用できるようになりました。REST APIのワークフローと使用方法を以下に示します。</block>
+  <block id="c886be9c6f9349123af1949e3b8746ff" category="list-text">新しいストレージ接続を追加または更新し、新しいクラスタ名またはSVM名がSCVに反映されるようにします。</block>
+  <block id="96fa213e8fbb74cfd99aee91cdbe7198" category="inline-link">SVM名を変更したあとにSCVバックアップが失敗する</block>
+  <block id="1f8746a6bf52f90c8e067fda20f61855" category="list-text">次の技術情報アーティクルの説明に従って、サービスを再起動してキャッシュを更新します。<block ref="fcb9971c5fed55a080c1dbf655f53a38" category="inline-link-rx"></block></block>
+  <block id="ed8f510b8bb5e4130a769bc10f48fe38" category="list-text">新しいバックアップを作成します。</block>
+  <block id="2f6c87843187b726c495736065696a62" category="list-text">バックアップの詳細を使用して、古いストレージ名と新しいストレージ名を検索します。</block>
+  <block id="2c860d8496b2dea32f71235aa9f1f217" category="list-text">vSphere Clientの* Backups *画面で、バックアップを選択して詳細を表示します。</block>
+  <block id="8ef3523827cb841facc966d2b7843327" category="list-text">次のURLからSwaggerにアクセスします。<block ref="a118319f5c4f95d1bcdb533c2eedb180" category="inline-link-rx"></block></block>
+  <block id="7ea67a73f2bddd2183a1256c0cf5aa73" category="paragraph">次のAPIを使用してストレージの名前を変更します。</block>
+  <block id="b03ee8cc9e95b190582237f408aa3a19" category="paragraph">パッチ
+/4.1/ストレージシステム</block>
+  <block id="3f525a23c8fa036ebd1f287cfd27efeb" category="paragraph">例
+｛
+  "existingSVM"：｛
+    "name"："string"
+  }、
+  「newSVM」：｛
+    "name"："string"
+  ｝
+｝</block>
+  <block id="54472d1da4b0c6eadf8684e846b25dcc" category="paragraph">対応：</block>
+  <block id="ee3dfb46b6f485317b7f8939f226175e" category="paragraph">｛
+  "statusMessage"："OK"、
+  "statusCode"：200、
+  "responseMessage"：[
+    "ストレージシステムの名前が変更されました。"
+  ]
+｝</block>
+  <block id="a9b3b424f2944c939b8560a60e9662c7" category="paragraph">このAPIを実行すると、古いバックアップからのリストア処理を含むすべてのワークフローを実行できるようになります。</block>
+  <block id="787ad0b7a17de4ad6b1711bbf8d79fcb" category="list-text">サブスクリプション。</block>
+  <block id="08bd40c7543007ad06e4fce31618f6ec" category="list-text">アカウント：</block>
+  <block id="f7c526081094fe672e5be23f02e38b76" category="cell">* リソース *</block>
+  <block id="f85e08b125832fc8dae732e6790fa120" category="cell">* 操作 *</block>
+  <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">[監査ログ設定]*ペインで、監査ログファイルの最大数と監査ログファイルの最大サイズを入力します。</block>
+  <block id="9efb008ae9d41241818075f39c83a8cc" category="list-text">SnapMirrorビジネス継続性（SM-BC）を使用すると、サイト全体で障害が発生してもビジネスサービスの運用を継続でき、アプリケーションがセカンダリコピーを使用して透過的にフェイルオーバーできるようになります。</block>
+  <block id="631c980b38583ab907b81e4073346753" category="admonition">SM-BCはVMFSデータストアでのみサポートされます。</block>
+  <block id="79c8e8c5290c082e46060d05e7fea16b" category="paragraph">SM-BC環境のVMFSデータストアを保護するには、SnapCenter管理者が次の作業を行う必要があります。</block>
+  <block id="28a4a26ef783f63f8404cdb6851880fe" category="inline-link">TR-4878：『SnapMirror Business Continuity』</block>
+  <block id="4d7923afd42773a33837e67e99c859fd" category="list-text">テクニカルレポートの説明に従って、クラスタとメディエーターを設定します。<block ref="23a5765233b997bf62fd493eba199514" category="inline-link-rx"></block>。</block>
+  <block id="e1e49cf1c53b0ef675f7bc0ccd34b87a" category="list-text">VMFSデータストアに関連付けられているボリュームを整合性グループに追加し、2つのONTAPストレージシステム間に_AutomatedFailOver_protectionポリシーを使用してデータ保護関係を作成します。</block>
+  <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">Snapshotロックを有効にするには、*[ロック期間]*チェックボックスを選択します。Snapshotのロック期間は、日/月/年として選択できます。</block>
+  <block id="0b41f633e71f75942b9c28fff2ca8ab4" category="admonition">SM-BC環境のVMFSデータストアを保護するには、「開始する前に」セクションに記載されている前提条件を満たし、*[バックアップ後にSnapMirrorを更新する]*を有効にする必要があります。</block>
+  <block id="db2aeb24ed12922fe15bc09cfd1f528b" category="paragraph">仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の表に示します。</block>
+  <block id="716306984040e1bf7dc3b8c1b0a05422" category="paragraph">注：SnapCenterにSCVホストを追加するためのカスタムポートがサポートされています。</block>
+  <block id="a220255dec4043ffc9e62cccf510da25" category="admonition">SCV 5.0へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードの際にシステムが停止します。</block>
+  <block id="9e1c4d16fdab5e3b3ad6ca498246093b" category="paragraph">SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。バックアップ、リストア、ジョブ監視など、他のすべてのSnapCenterプラグイン（アプリケーションベースのプラグイン）処理には、SnapCenter GUIを使用します。</block>
+  <block id="9ee6658ef61232ca6ea9402960a332a6" category="paragraph">また、SnapCenter VMwareプラグインで管理操作を実行するための管理GUIも用意されています。</block>
+  <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">次の表に、SnapCenter GUIで実行される処理を示します。</block>
+  <block id="ac3ea74e69b4d64c5b8bf99577a62f58" category="cell">VMware vSphere Client GUIを使用したVMとデータストアのバックアップ</block>
+  <block id="3fa2e8f88aacbc5e01f08deeabb35c7b" category="cell">バックアップはSnapCenter GUIを使用して実行されます。</block>
+  <block id="05515bf0519f34381e6466f01c282678" category="paragraph">[+]
+*オプション3：ネットワーク構成</block>
+  <block id="ff261448949c973f9f063cf77445b8d1" category="paragraph">[+]
+IPアドレス設定を表示または変更します
+ドメイン名検索設定を表示または変更します
+スタティックルートを表示または変更します
+変更をコミットします
+ホストに ping を実行します</block>
+  <block id="cee76f4df6b5dbfa117c54383d070d0f" category="paragraph">[+]
+*オプション4：サポートと診断</block>
+  <block id="0724cc6860049b7b304c5747fdff089a" category="paragraph">[+]
+サポートバンドルの生成
+診断シェルにアクセスします
+リモート診断アクセスを有効にします
+コアダンプバンドルを生成します</block>
+  <block id="e3c333b91de412cbe4acc72a0b293a5f" category="paragraph"><block ref="e3c333b91de412cbe4acc72a0b293a5f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8c6c8a7a8f9e330585c15378277631e" category="sidebar">SnapCenter Plug-in for VMware vSphere 5.0のドキュメント</block>
+  <block id="9f4e4670e68c9e84125d82202a3b5d12" category="sidebar">ストレージの名前変更</block>
 </blocks>

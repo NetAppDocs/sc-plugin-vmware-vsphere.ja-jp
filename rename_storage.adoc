@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: rename_storage.html 
+keywords:  
+summary: REST APIを使用してストレージの名前を変更できます。 
+---
+= 名前が変更されたストレージのバックアップのリストア
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+ストレージの名前を変更すると、名前変更前に作成されたバックアップを使用するワークフローが失敗します。REST APIからのみアクセスできるバックアップ名変更機能が導入され、ストレージ名変更前に作成されたバックアップを使用できるようになりました。REST APIのワークフローと使用方法を以下に示します。
+
+.手順
+. 新しいストレージ接続を追加または更新し、新しいクラスタ名またはSVM名がSCVに反映されるようにします。
+. 次の技術情報アーティクルの説明に従って、サービスを再起動してキャッシュを更新します。 https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename["SVM名を変更したあとにSCVバックアップが失敗する"]
+. 新しいバックアップを作成します。
+. バックアップの詳細を使用して、古いストレージ名と新しいストレージ名を検索します。
+. vSphere Clientの* Backups *画面で、バックアップを選択して詳細を表示します。
+. 次のURLからSwaggerにアクセスします。 https://<SCV-IP>:8144/api/swagger-ui/index.html[]
++
+次のAPIを使用してストレージの名前を変更します。
+
++
+パッチ
+/4.1/ストレージシステム
+
++
+例
+｛
+  "existingSVM"：｛
+    "name"："string"
+  }、
+  「newSVM」：｛
+    "name"："string"
+  ｝
+｝
+
++
+対応：
+
++
+｛
+  "statusMessage"："OK"、
+  "statusCode"：200、
+  "responseMessage"：[
+    "ストレージシステムの名前が変更されました。"
+  ]
+｝
+
++
+このAPIを実行すると、古いバックアップからのリストア処理を含むすべてのワークフローを実行できるようになります。
+
+

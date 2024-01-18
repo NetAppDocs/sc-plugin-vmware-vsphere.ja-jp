@@ -54,7 +54,7 @@ VMware ファイルシステム（ VMFS ）のリストアワークフローで�
 +
 NFS 環境でのリストア処理のほとんどは、ネイティブの ONTAP 機能（ Single File SnapRestore など）を使用するため、 VMware Storage vMotion は必要ありません。
 
-* VMware VVOL VMの設定にはONTAP ツールが必要です。
+* VMware VVOL VMを設定するには、ONTAP Tools for VMware vSphereが必要です。
 +
 ONTAP ツールを使用して、ONTAP およびVMware Web ClientでVVOLのストレージをプロビジョニングおよび設定します。
 
