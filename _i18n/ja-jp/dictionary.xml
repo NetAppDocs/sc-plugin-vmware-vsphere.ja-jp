@@ -77,7 +77,6 @@
   <block id="dc9d5117fa27f9852d62a28174a9c1bf" category="paragraph">1 つの指定した vVol フォルダにすべての vVol が含まれています。フォルダに VVol VM と従来の VM が混在している場合、 SnapCenter Plug-in for VMware vSphere は VVol VM をバックアップし、従来の VM はスキップします。</block>
   <block id="c7fda16b0d034ce0f2afcab4d2064e02" category="paragraph">すべてのリソースグループ：</block>
   <block id="32e5f7f976ca899df5a227d732f28456" category="admonition">VMware vSphere Cluster Service （ vCLS ）を使用している場合は、 vCLS によって管理される VM を SnapCenter VMware プラグインのリソースグループに含めないでください。</block>
-  <block id="c8e385cc7a112ebc9131fa51b5a3767b" category="admonition">SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模なLUNを保護する場合は、レイテンシを回避するためにシックプロビジョニングされたLUNのみを使用します。</block>
   <block id="14a4c06df8c2378b5b2b307902f01931" category="admonition">アクセスできない状態の VM は追加しないでください。アクセスできない VM を含むリソースグループを作成することは可能ですが、そのリソースグループのバックアップは失敗します。</block>
   <block id="9cce6f26b63d9eb5d76faeab404389aa" category="paragraph">リソースグループに対しては、いつでもリソースを追加または削除できます。</block>
   <block id="52fb0b971147f2d50f41f8affa7cbf5e" category="list-text">単一リソースのバックアップ</block>
@@ -117,12 +116,10 @@
   <block id="db483b4b52b624fc9163590680bfec11" category="cell">カスタム Snapshot 形式</block>
   <block id="cdd24b9d1a277d3a5383ba07346b9f5a" category="paragraph">Snapshot コピー名にカスタム形式を使用する場合は、このチェックボックスをオンにして名前の形式を入力します。</block>
   <block id="424f6337d74c16c2d02e5cb2e6d97f82" category="list-text">デフォルトでは、この機能は無効になっています。</block>
-  <block id="b5fa0613e2fb44b25ee1739ace5e3746" category="list-text">デフォルトの Snapshot コピー名には、「 &lt;resourcegroup&gt;_ &lt;Date-timestamp&gt; 」という形式が使用されますが、変数 $resourcegroup 、 $Policy 、 $hostname 、 $scheduleType 、および $CustomText を使用してカスタム形式を指定できます。カスタム名フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。$CustomText を選択した場合、名前の形式は「 &lt;CustomName&gt;_ &lt;Date-timestamp&gt; 」です。表示される追加のボックスにカスタムテキストを入力します。注意：「 _recent 」サフィックスも選択する場合、カスタム Snapshot 名がデータストア内で一意になるようにする必要があります。したがって、名前に $resourcegroup 変数と $Policy 変数を追加する必要があります。</block>
   <block id="f6023484d4c2c1da1f8822ae43bc066a" category="list-text">名前に特殊文字が含まれている場合は、 Name フィールドと同じガイドラインに従ってください。</block>
   <block id="2b2620f1962d78eb23f6f754d96e6546" category="list-text">[* リソース *] ページで、次の操作を実行します。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">適用範囲</block>
   <block id="615707baa418ce315e44ac2a5d6164af" category="cell">データセンター</block>
-  <block id="d1fce2857d6a7747bc3a9e485e2cf30f" category="cell">追加する VM またはデータストアまたはフォルダに移動します。</block>
   <block id="4c928d1c171b7d62d8f758ffa689710f" category="cell">使用可能なエンティティ</block>
   <block id="0ae7bb79645eeb5721a499d2799dbf70" category="cell">保護するリソースを選択し、 * &gt; * をクリックして選択した項目を選択したエンティティリストに移動します。</block>
   <block id="749435efb6e9940bcadad406e3a36d76" category="paragraph">[ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。</block>
@@ -2121,4 +2118,12 @@ IPアドレス設定を表示または変更します
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8c6c8a7a8f9e330585c15378277631e" category="sidebar">SnapCenter Plug-in for VMware vSphere 5.0のドキュメント</block>
   <block id="9f4e4670e68c9e84125d82202a3b5d12" category="sidebar">ストレージの名前変更</block>
+  <block id="8cf2f0f05d235c9fc28a55c8caf77bb9" category="admonition">SnapCenter Plug-in for VMware vSphere 4.5以降では、最大300TBのボリュームで、最大128TBの大規模なLUNおよびファイル上のデータストアがサポートされます。大規模なLUNを保護する場合は、レイテンシを回避するためにシックプロビジョニングされたLUNのみを使用します。</block>
+  <block id="ca70c61465600177453c8557e7c34dfb" category="list-text">デフォルトのSnapshotコピー名は、の形式を使用します<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>
+ただし、変数$resourcegroup、$Policy、$hostname、$scheduleType、および$CustomTextを使用してカスタム形式を指定できます。カスタム名フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。
+$CustomTextを選択した場合、名前の形式はになります<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。表示される追加のボックスにカスタムテキストを入力します。
+[メモ]：
+「_recent」サフィックスも選択する場合は、カスタムSnapshot名がデータストア内で一意であることを確認する必要があります。そのため、$resourcegroup変数と$Policy変数を名前に追加する必要があります。</block>
+  <block id="d07079db3fe1ac66c315b010e4b99b35" category="cell">追加する VM またはデータストアまたはフォルダに移動します。
+リソースグループ内のVMとデータストアの名前は一意である必要があります。</block>
 </blocks>
