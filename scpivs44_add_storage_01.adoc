@@ -26,7 +26,7 @@ SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲート
 
 * VMware の仮想ボリューム（ VVOL ）
 +
-最初にVVOLストレージシステムをONTAP tools for VMware vSphereに追加してから、SnapCenter Plug-in for VMware vSphereに追加する必要があります。
+VVOLデータ保護を使用するには、SnapCenter Plug-in for VMware vSphereおよびONTAP tools for VMware vSphereにストレージクラスタを追加する必要があります。
 
 +
 詳細については、を参照してください https://docs.netapp.com/vapp-98/index.jsp["VMware vSphere 用の ONTAP ツール"^]
