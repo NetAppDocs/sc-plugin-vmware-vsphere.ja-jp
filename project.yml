@@ -72,8 +72,6 @@ sidebar:
     entries:
     - title: 概要
       url: "/scpivs44_quick_start_overview.html"
-    - title: Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: SnapCenter Plug-in for VMware vSphere を導入
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
     - title: ストレージを追加します

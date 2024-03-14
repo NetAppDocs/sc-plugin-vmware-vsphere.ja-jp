@@ -22,7 +22,7 @@ SnapCenter のデータ保護機能を使用する必要がなくなった場合
 
 
 .手順
-. 「 https://<OVA-IP-address>:8080` 」の形式で、 SnapCenter VMware プラグイン管理 GUI にログインします。
+. 次の形式を使用して、SnapCenter VMwareプラグインの管理GUIにログインします `\https://<OVA-IP-address>:8080`。
 +
 プラグインの導入時に、 SnapCenter VMware プラグインの IP が表示されます。
 

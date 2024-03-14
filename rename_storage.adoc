@@ -22,7 +22,7 @@ summary: REST APIを使用してストレージの名前を変更できます。
 . 新しいバックアップを作成します。
 . バックアップの詳細を使用して、古いストレージ名と新しいストレージ名を検索します。
 . vSphere Clientの* Backups *画面で、バックアップを選択して詳細を表示します。
-. 次のURLからSwaggerにアクセスします。 https://<SCV-IP>:8144/api/swagger-ui/index.html[]
+. 次のURLからSwaggerにアクセスします。 `\https://<SCV-IP>:8144/api/swagger-ui/index.html`
 +
 次のAPIを使用してストレージの名前を変更します。
 

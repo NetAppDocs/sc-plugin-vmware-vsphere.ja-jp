@@ -16,7 +16,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSp
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。これらの REST API は、 SnapCenter Plug-in for VMware vSphere 4.4 で追加されています。
 
-各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
+各APIについて、REST APIの先頭に\https：//<server>：<port>を追加して、完全なエンドポイントを形成します。
 
 ジョブセクションで次の REST API を使用して、実行中の状態で停止したジョブを失敗状態に変更します。
 

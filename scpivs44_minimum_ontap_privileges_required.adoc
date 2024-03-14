@@ -17,19 +17,29 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。
 
 
+NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。
+
+
 
 == 必要な最小 ONTAP 権限
 
 すべての SnapCenter プラグインには、次の最小権限が必要です。
 
 |===
+
+
 | フルアクセスコマンド： ONTAP 8.3 以降で必要な最小権限 
+
+
+| cluster identity show の実行 
 
 
 | event generate-autosupport-log を指定します 
 
 
-| job history show job stop コマンドを実行しました 
+| ジョブ履歴の表示
+ジョブの表示
+ジョブが停止しました 
 
 
 | lun lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping remove-reporting-nodes lun mapping show lun modify lun move-in-volume LUN offline LUN online lun persistent-reservation clear lun resize lun serial lun show をクリックします 
@@ -41,7 +51,32 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 | バージョン 
 
 
-| volume clone create volume clone show volume clone split start volume clone split stop volume create volume file clone create -volume file show-disk-usage volume online volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume snapshot create を実行します volume snapshot delete volume snapshot modify volume snapshot rename volume snapshot restore volume snapshot restore-file volume snapshot show volume unmount 
+| volume clone create を実行します
+volume clone show を実行します
+ボリュームクローンスプリット開始
+ボリュームクローンスプリットは停止します
+volume create を実行します
+volume delete
+ボリュームを削除します
+volume file clone create を実行します
+volume file show-disk-usage
+ボリュームはオフラインです
+ボリュームはオンラインです
+volume modify を使用します
+volume qtree create を実行します
+volume qtree delete
+volume qtree modify の略
+volume qtree show の略
+ボリュームの制限
+volume show のコマンドです
+volume snapshot create を実行します
+ボリューム Snapshot の削除
+volume snapshot modify の実行
+ボリューム Snapshot の名前が変更されます
+ボリューム Snapshot リストア
+ボリューム Snapshot の restore-file
+volume snapshot show の実行
+ボリュームのアンマウント 
 
 
 | vserver cifs share create vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs show vserver export-policy vserver export-policy vserver export-policy vserver export-policy create vserver export-policy rule create vserver export-policy rule create vserver export-policy rule show vserver export-policy rule show vserver iscsi vserver iscsi vserver iscsi connection show vserver show network interface network interface failover-groups network interface show を実行します 

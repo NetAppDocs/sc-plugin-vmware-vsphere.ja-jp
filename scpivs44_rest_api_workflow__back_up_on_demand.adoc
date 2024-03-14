@@ -16,7 +16,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用してオンデ
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere REST API を使用してオンデマンドでバックアップ処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。
 
-各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
+各REST APIに、を追加します `\https://<server>:<port>` を使用して完全なエンドポイントを形成します。
 
 |===
 | ステップ | REST API | コメント 

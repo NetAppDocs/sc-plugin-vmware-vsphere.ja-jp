@@ -27,7 +27,7 @@ NOTE: このプラグインでは、サードパーティのアプリケーシ�
 .手順
 . ブラウザから、 URL を入力してプラグイン Swagger Web ページにアクセスします。
 +
-`https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`\https://<SCV_IP>:8144/api/swagger-ui/index.html`
 
 +
 
@@ -38,8 +38,8 @@ IMPORTANT: REST API URL には、 + 、を使用しないでください。、 %
 SnapCenter VMware プラグイン REST API にアクセスします。
 
 +
-`https://<SCV_IP>:8144/api/swagger-ui/index.html`
-`https://OVAhost:8144/api/swagger-ui/index.html`
+`\https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`\https://OVAhost:8144/api/swagger-ui/index.html`
 
 +
 ログインvCenter認証メカニズムを使用してトークンを生成します。

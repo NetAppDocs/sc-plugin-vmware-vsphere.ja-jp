@@ -140,7 +140,7 @@ VMwareツールは、SnapCenter VMwareプラグインを導入するVMにイン�
 
 . 導入画面に表示された IP アドレスと導入ウィザードで指定したクレデンシャルを使用して、 SnapCenter VMware プラグイン管理 GUI にログインし、ダッシュボードで SnapCenter VMware プラグインが vCenter に正常に接続されて有効になっていることを確認します。
 +
-管理 GUI にアクセスするには 'https://<appliance-IP-address>:8080` の形式を使用します
+の形式を使用します `\https://<appliance-IP-address>:8080` をクリックして管理GUIにアクセスします。
 
 +
 導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。

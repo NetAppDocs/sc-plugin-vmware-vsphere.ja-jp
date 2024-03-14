@@ -20,7 +20,7 @@ summary: 仮想アプライアンスを導入する前に、導入要件を確�
 
 == ホストの要件
 
-SnapCenter Plug-in for VMware vSphere の導入を開始する前に、ホスト要件を確認しておく必要があります。
+SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、ホストの要件を確認しておく必要があります。
 
 * SnapCenter VMware プラグインは、プラグインを使用して Windows システムと Linux システムのどちらのデータを保護しているかに関係なく、 Linux VM として導入されます。
 * SnapCenter VMware プラグインを vCenter Server に導入する必要があります。

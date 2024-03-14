@@ -16,11 +16,14 @@ summary: ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合
 [role="lead"]
 ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。
 
+
+NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。ログインアカウントの作成または変更については、を参照してください。 https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html["管理者認証と RBAC 設定用のワークシートです"]。
+
 ONTAP RBAC を SnapCenter VMware プラグインで使用する場合は、ストレージシステムで RBAC を設定する必要があります。ONTAP で次のタスクを実行する必要があります。
 
 * ロールを 1 つ作成します。
 +
-http://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2Fhome.html["ONTAP 9 管理者認証と RBAC パワーガイド"^]
+https://docs.netapp.com/us-en/ontap/concepts/administrator-authentication-rbac-concept.html["管理者認証と RBAC"]
 
 * ONTAP で、ロールのユーザ名とパスワード（ストレージシステムクレデンシャル）を作成します。
 +

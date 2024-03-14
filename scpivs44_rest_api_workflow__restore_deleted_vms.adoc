@@ -16,13 +16,14 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用して VM バ�
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップのリストア処理を実行するには、規定された順序の REST API 呼び出しに従う必要があります。
 
-各 REST API について 'REST API の前面に https://<server>:<port>` を追加して ' 完全なエンドポイントを形成します
+各REST APIに、を追加します `\https://<server>:<port>` を使用して完全なエンドポイントを形成します。
 
 |===
 | ステップ | REST API | コメント 
 
 
-| 1. | http://<vCenter-IP>/mob` にアクセスします | VMware Managed Objects の URL から VM UUID を検索します。リストアする VM の * uuid * をメモします。 
+| 1. | に進みます
+`\http://<vCenter-IP>/mob` | VMware Managed Objects の URL から VM UUID を検索します。リストアする VM の * uuid * をメモします。 
 
 
 | 2. | 「 /4.1/vm/{uuid}/backups | 「 VM バックアップの取得」は、指定された VM のバックアップのリストを取得します。手順 1 から * uuid * を渡します。リストアするバックアップの * backupid * をメモします。 

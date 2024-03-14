@@ -31,7 +31,7 @@ SnapCenter VMware プラグインを有効にすると、プラグインが vCen
 +
 link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします"]。
 
-. 次の形式を使用して、SnapCenter VMwareプラグインの管理GUIにログインします `https://<OVA-IP-address>:8080`。導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。
+. 次の形式を使用して、SnapCenter VMwareプラグインの管理GUIにログインします `\https://<OVA-IP-address>:8080`。導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。
 +
 プラグインの導入時に、 SnapCenter VMware プラグインの IP が表示されます。
 

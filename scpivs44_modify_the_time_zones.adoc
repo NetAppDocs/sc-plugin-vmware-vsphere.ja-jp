@@ -30,7 +30,7 @@ SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログ
 .手順
 . SnapCenter VMware プラグインの管理 GUI にログインします。
 +
-「 https://<appliance-IP-address>:8080` 」の形式を使用します
+の形式を使用します `\https://<appliance-IP-address>:8080`
 
 . 上部のツールバーの [ 設定 ] アイコンをクリックします。
 +
