@@ -2128,8 +2128,6 @@ vCenterのパスワードを変更した場合、VVOLバックアップがシー
   <block id="e4876fb0bd486e69e6d18f00ad595613" category="paragraph"><block ref="40ab977cb91f6614f74434651bca5a18" prefix="" category="inline-code"></block></block>
   <block id="5d4f06f4da45c0078547e4432bbcf0fa" category="paragraph"><block ref="40ab977cb91f6614f74434651bca5a18" prefix="" category="inline-code"></block><block ref="95e74a55a904a66f18be251d45fb5889" prefix=" " category="inline-code"></block></block>
   <block id="80f3158028945baa03dee7b07e5ba849" category="paragraph">各APIについて、REST APIの先頭に\https：//&lt;server&gt;：&lt;port&gt;を追加して、完全なエンドポイントを形成します。</block>
-  <block id="bee8a2c870d9f36561d79948bcc7f115" category="paragraph">SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
-の手順に従います。 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> OVAファイルをダウンロードするためのページ。</block>
   <block id="89c7e4a6f50b68ec3ede15d1584a492e" category="paragraph">の形式を使用します<block ref="cf854de4a942e42c016ef31d206a66c3" prefix=" " category="inline-code"></block> をクリックして管理GUIにアクセスします。</block>
   <block id="4dacb1d80a643a937acb6c45a683ec1b" category="admonition">SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。</block>
   <block id="73bad5beeda4a2a6bd01d97def1d4e67" category="cell">cluster identity show の実行</block>
@@ -2172,4 +2170,6 @@ volume snapshot show の実行
   <block id="47d51cdb9bee4f5be50bff68bef7f005" category="paragraph">各REST APIに、を追加します<block ref="3a8f2c381c875eef37ad96b7d70fc1a1" prefix=" " category="inline-code"></block> を使用して完全なエンドポイントを形成します。</block>
   <block id="cf924216c679ed55d0b692e5bd6f4b14" category="list-text">次の形式を使用して、SnapCenter VMwareプラグインの管理GUIにログインします<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block>。導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。</block>
   <block id="5b845076b112586b7fff13b10d9f0612" category="cell">に進みます<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
+  <block id="e4a70196caccbfc6c6d2c0d9df5e3013" category="paragraph">SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
+。 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> ページに、OVAファイルをダウンロードする手順が記載されています。</block>
 </blocks>
