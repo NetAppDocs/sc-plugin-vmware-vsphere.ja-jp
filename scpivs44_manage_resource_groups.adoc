@@ -64,10 +64,10 @@ vCenter では、リソースグループ内のリソースを削除または追
 リソースグループ内のリソースを保護する必要がなくなった場合は、 vCenter でリソースグループを削除することができます。SnapCenter Plug-in for VMware vSphere を vCenter から削除する前に、すべてのリソースグループが削除されていることを確認する必要があります。
 
 .このタスクについて
-リソースグループの削除処理は、すべて強制削除として実行されます。vCenter リソースグループに割り当てられているすべてのポリシーが解除され、 SnapCenter Plug-in for VMware vSphere からリソースグループが削除され、リソースグループのすべてのバックアップと Snapshot コピーが削除されます。
+リソースグループの削除処理は、すべて強制削除として実行されます。削除処理を実行すると、vCenterリソースグループからすべてのポリシーが解除され、リソースグループがSnapCenter Plug-in for VMware vSphereから削除され、リソースグループのすべてのバックアップとSnapshotが削除されます。
 
 
-NOTE: SnapVault 関係では、最後の Snapshot コピーを削除できないため、リソースグループを削除できません。SnapVault 関係の一部であるリソースグループを削除する場合は、事前に OnCommand System Manager または ONTAP CLI を使用して SnapVault 関係を削除し、最後の Snapshot コピーを削除する必要があります。
+NOTE: SnapVault関係では、最新のSnapshotは削除できないため、リソースグループは削除できません。SnapVault関係の一部であるリソースグループを削除する場合は、事前にOnCommandシステムマネージャまたはONTAP CLIを使用してSnapVault関係を削除してから、最後のSnapshotを削除する必要があります。
 
 .手順
 . SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[*リソースグループ（* Resource Groups）]をクリックし、リソースグループを選択して、[*削除（* Delete）]をクリックする。

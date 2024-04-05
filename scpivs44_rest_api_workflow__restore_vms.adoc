@@ -28,7 +28,9 @@ SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックア�
 | 2. | 「 /4.1/vm/{moref}/backups' 」と入力します | 「 VM バックアップの取得」は、指定された VM のバックアップのリストを取得します。手順 1 から * MORef * を渡します。リストアするバックアップの * backupid * をメモします。 
 
 
-| 3. | `/4.1/vm/backups/{backupid}/snapshotlocations` | 'get snapshot locations' は ' 指定したバックアップの Snapshot コピーの場所を取得します手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。 
+| 3. | `/4.1/vm/backups/{backupid}/snapshotlocations` | `Get snapshot locations` 指定したバックアップのSnapshotの場所を取得します。
+手順 2 から * backupid * を渡します。
+この *snapshotsList* 情報に注意してください。 
 
 
 | 4. | `/4.1/vm/{moref}/backups/availableesxhosts` | Get Available ESX Hosts （利用可能な ESX ホストの取得）は ' バックアップが保存されているホストの情報を取得します入手可能な EsxHostsList* 情報に注意してください。 

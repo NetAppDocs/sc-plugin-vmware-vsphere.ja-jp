@@ -20,11 +20,11 @@ SnapCenter Plug-in for VMware vSphere を使用して VM とデータストア�
 * 前提条件を確認しておく必要があります。
 * セカンダリストレージの関係を設定しておく必要があります。
 +
-** Snapshot コピーをミラーセカンダリストレージまたはバックアップセカンダリストレージにレプリケートする場合は、関係が設定されていることと、 SnapCenter 管理者がユーザにソースとデスティネーションの両方のボリューム用に Storage VM を割り当てておく必要があります。
-** NFS または VMFS データストア上のバージョン依存関係ミラー関係で Snapshot コピーがセカンダリストレージに正常に転送されるようにするには、 SnapMirror ポリシーのタイプが非同期ミラーであり、「 all_source_snapshots 」オプションがチェックされていることを確認します。
-** セカンダリストレージ（ mirror-vault ）の Snapshot コピーの数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用するアクティビティが次のエラーで失敗します。「 This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationship.Snapshot コピーを削除すると、原因の以降の SnapMirror 処理が失敗することがあります
+** Snapshotをミラーセカンダリストレージまたはバックアップセカンダリストレージにレプリケートする場合は、関係が設定されている必要があり、SnapCenter管理者がソースとデスティネーションの両方のボリューム用にStorage VMを割り当てておく必要があります。
+** NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でSnapshotをセカンダリストレージに正常に転送するには、SnapMirrorポリシーのタイプがAsynchronous Mirrorであり、「all_source_snapshots」オプションがオンになっていることを確認します。
+** セカンダリストレージ（mirror-vault）のSnapshot数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。 `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-この問題を修正するには、 Snapshot コピーの上限に達しないように、セカンダリストレージの SnapMirror 保持ポリシーを設定します。
+この問題を修正するには、Snapshotの上限に達しないようにセカンダリストレージにSnapMirror保持ポリシーを設定します。
 
 +
 管理者によるユーザへのリソースの割り当て方法については、を参照してください https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["ロールベースアクセス制御の使用に関する SnapCenter 情報"^]。
@@ -76,7 +76,7 @@ VM 、データストア、クラスタ、ポリシー、バックアップ、 �
 . 保持設定を指定します。
 +
 
-IMPORTANT: SnapVault レプリケーションを有効にする場合は、保持数を 2 以上に設定する必要があります。保持数を 1 バックアップに設定すると、保持処理が失敗することがあります。これは、新しい Snapshot コピーがターゲットにレプリケートされるまで、最初の Snapshot コピーが SnapVault 関係の参照 Snapshot コピーになるためです。
+IMPORTANT: SnapVault レプリケーションを有効にする場合は、保持数を 2 以上に設定する必要があります。保持数を 1 バックアップに設定すると、保持処理が失敗することがあります。これは、新しいSnapshotがターゲットにレプリケートされるまで、最初のSnapshotがSnapVault関係の参照Snapshotになるためです。
 
 +
 
@@ -111,10 +111,11 @@ NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以�
 
 
 | Snapshot ラベル  a| 
-このポリシーで作成された SnapVault および SnapMirror Snapshot コピーに追加するオプションのカスタムラベルを入力します。Snapshot ラベルは、このポリシーで作成された Snapshot をセカンダリストレージシステム上の他の Snapshot と区別する際に役立ちます。
+このポリシーで作成されたSnapVaultおよびSnapMirror Snapshotに追加するカスタムラベル（オプション）を入力します。
+Snapshot ラベルは、このポリシーで作成された Snapshot をセカンダリストレージシステム上の他の Snapshot と区別する際に役立ちます。
 
 
-NOTE: Snapshot コピーのラベルは 31 文字以内で指定します。
+NOTE: Snapshotラベルに使用できる文字数は最大31文字です。
 
 |===
 . オプション： ［ * 詳細設定 * ］ フィールドで、必要なフィールドを選択します。次の表に、 Advanced フィールドの詳細を示します。
