@@ -44,7 +44,7 @@ VM 、データストア、ポリシー、バックアップ、リソースグ�
 マウントされているバックアップは削除できません。バックアップを削除する前に、アンマウントする必要があります。
 
 .このタスクについて
-セカンダリストレージ上のSnapshotは、SnapCenter VMwareプラグインではなく、ONTAPの保持設定で管理されます。そのため、SnapCenter VMwareプラグインを使用してバックアップを削除すると、プライマリストレージのSnapshotは削除されますが、セカンダリストレージのSnapshotは削除されません。セカンダリストレージにSnapshotが残っている場合、SnapCenter VMwareプラグインはリストア要求に対応するためにバックアップに関連付けられたメタデータを保持します。ONTAPの保持プロセスでセカンダリSnapshotが削除されると、SnapCenter VMwareプラグインはパージジョブを使用してメタデータを削除します。パージジョブは一定の間隔で実行されます。
+セカンダリストレージ上のSnapshotは、SnapCenter Plug-in for VMware vSphereではなく、ONTAPの保持設定で管理されます。そのため、SnapCenter Plug-in for VMware vSphereを使用してバックアップを削除すると、プライマリストレージのSnapshotは削除されますが、セカンダリストレージのSnapshotは削除されません。セカンダリストレージにSnapshotが残っている場合は、リストア要求をサポートするために、SnapCenter Plug-in for VMware vSphereでバックアップに関連付けられたメタデータが保持されます。ONTAPの保持プロセスでセカンダリSnapshotが削除されると、SnapCenter Plug-in for VMware vSphereはパージジョブを使用してメタデータを削除します。パージジョブは定期的に実行されます。
 
 . [*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 [*VMware vSphere* 用 SnapCenter プラグイン ] セクションの [*Backups] をクリックします。
 +

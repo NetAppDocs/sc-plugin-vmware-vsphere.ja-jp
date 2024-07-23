@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html 
 keywords:  
-summary: SnapCenter VMware プラグインには、 MySQL データベース（ NSM データベース）が含まれています。このデータベースには、プラグインによって実行されるすべてのジョブのメタデータが含まれています。このリポジトリは定期的にバックアップする必要があります。 
+summary: SnapCenter Plug-in for VMware vSphereには、プラグインで実行されるすべてのジョブのメタデータを格納するMySQLデータベース（NSMデータベースとも呼ばれます）が含まれています。 このリポジトリは定期的にバックアップする必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter VMware プラグインには、 MySQL データベース（ 
 
 
 [role="lead"]
-SnapCenter VMware プラグインには、 MySQL データベース（ NSM データベース）が含まれています。このデータベースには、プラグインによって実行されるすべてのジョブのメタデータが含まれています。このリポジトリは定期的にバックアップする必要があります。
+SnapCenter Plug-in for VMware vSphereには、プラグインで実行されるすべてのジョブのメタデータを格納するMySQLデータベース（NSMデータベースとも呼ばれます）が含まれています。 このリポジトリは定期的にバックアップする必要があります。
 
 また、移行またはアップグレードを実行する前にリポジトリをバックアップする必要があります。
 
@@ -22,8 +22,8 @@ SnapCenter VMware プラグインには、 MySQL データベース（ NSM デ�
 オンデマンドバックアップジョブがすでに実行されているときは、 MySQL データベースのバックアップジョブを開始しないでください。
 
 .手順
-. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
-. 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * または Web コンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
+. VMware vSphere Clientで、SnapCenter Plug-in for VMware vSphereが配置されているVMを選択します。
+. 仮想アプライアンスの*サマリ*タブで*リモートコンソールの起動*またはWebコンソールの起動*をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
 image:scpivs44_image21.png["メンテナンスコンソールのウィンドウ"]
 

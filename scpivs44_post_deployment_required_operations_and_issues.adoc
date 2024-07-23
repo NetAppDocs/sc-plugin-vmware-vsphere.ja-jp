@@ -20,7 +20,7 @@ SnapCenter Plug-in for VMware vSphere の導入が完了したら、インスト
 
 == 導入後に必要な処理
 
-新規の SnapCenter ユーザの場合は、データ保護処理を実行する前に、 SnapCenter に Storage VM を追加する必要があります。Storage VM を追加するときは、管理 LIF を指定します。クラスタを追加し、クラスタ管理 LIF を指定することもできます。ストレージの追加については、を参照してください link:scpivs44_add_storage_01.html["ストレージを追加します"^]。
+SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加してからデータ保護処理を実行する必要があります。Storage VMを追加するときは、管理LIFを指定してください。クラスタを追加してクラスタ管理LIFを指定することもできます。ストレージの追加については、を参照して link:scpivs44_add_storage_01.html["ストレージを追加します"^]ください。
 
 
 
@@ -30,7 +30,7 @@ SnapCenter Plug-in for VMware vSphere の導入が完了したら、インスト
 +
 ** IPv4 を実行していて、 SnapCenter VMware vSphere ホスト用の IP アドレスが 2 つある。その結果、ジョブ要求は SnapCenter サーバで認識されない IP アドレスに送信されます。この問題を無効にするには、次のように、使用する IP アドレスを追加します。
 +
-... SnapCenter VMware プラグインが導入されている場所（ /opt/NetApp/scvservice/standalone_aegis /etc ）に移動します
+... SnapCenter Plug-in for VMware vSphereの導入先に移動します。 `/opt/netapp/scvservice/standalone_aegis/etc`
 ... ファイル network - interface.properties を開きます。
 ... 「 network.interface=10.10.10.10` 」フィールドに、使用する IP アドレスを追加します。
 
@@ -38,7 +38,7 @@ SnapCenter Plug-in for VMware vSphere の導入が完了したら、インスト
 ** NIC が 2 つあります。
 
 
-* SnapCenter VMware プラグインを導入したあとに、 vCenter for SnapCenter Plug-in for VMware vSphere で MOB エントリに古いバージョン番号が表示されることがあります。これは、 vCenter で他のジョブが実行されているときに発生することがあります。vCenter は最終的にこのエントリを更新します。
+* SnapCenter Plug-in for VMware vSphereの導入後も、vCenter for SnapCenter Plug-in for VMware vSphereのMOBエントリに古いバージョン番号が表示されることがあります。これは、vCenterで他のジョブが実行されている場合に発生することがあります。時間の経過とともに、vCenterによってエントリが更新されます。
 
 
 これらの問題を解決するには、次の手順を実行します。
@@ -54,10 +54,10 @@ SnapCenter Plug-in for VMware vSphere の導入が完了したら、インスト
 
 == 認証エラーを管理します
 
-管理者クレデンシャルを使用しないと、 SnapCenter Plug-in for VMware vSphere の導入後または移行後に認証エラーが発生する場合があります。認証エラーが発生した場合は、サービスを再起動する必要があります。
+adminクレデンシャルを使用しないと、SnapCenter Plug-in for VMware vSphereの導入後または移行後に認証エラーが表示されることがあります。認証エラーが発生した場合は、サービスを再起動する必要があります。
 
 .手順
-. という形式を使用して、SnapCenter VMwareプラグインの管理GUIにログオンします `\https://<appliance-IP-address>:8080`。adminユーザ名、パスワード、およびMFAトークンの詳細を使用してログインします。MFAトークンはメンテナンスコンソールから生成できます。
+. の形式を使用して、SnapCenter Plug-in for VMware vSphere管理GUIにログオンし `\https://<appliance-IP-address>:8080`ます。adminユーザ名、パスワード、およびMFAトークンの詳細を使用してログインします。MFAトークンはメンテナンスコンソールから生成できます。
 . サービスを再起動します。
 
 
@@ -75,7 +75,7 @@ SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮
 .このタスクについて
 * SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録するには、 SnapCenter GUI を使用して「 vSphere 」タイプのホストを追加します。
 +
-ポート 8144 は、 SnapCenter VMware プラグイン内の通信用に事前定義されています。
+ポート8144は、SnapCenter Plug-in for VMware vSphere内の通信用に事前定義されています。
 
 +
 SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ SnapCenter サーバに登録して、 VM に対するアプリケーションベースのデータ保護処理をサポートできます。複数の SnapCenter Server に同じ SnapCenter Plug-in for VMware vSphere を登録することはできません。
@@ -99,7 +99,7 @@ SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ Sn
 | ホスト名 | 仮想アプライアンスの IP アドレスを確認します。 
 
 
-| クレデンシャル | 導入時に指定した SnapCenter VMware プラグインのユーザ名とパスワードを入力します。 
+| クレデンシャル | 導入時に指定したSnapCenter Plug-in for VMware vSphereのユーザ名とパスワードを入力します。 
 |===
 . [Submit （送信） ] をクリックします。
 +

@@ -17,7 +17,8 @@ summary: ゲストファイルのリストア処理に仮想ディスクを接�
 ゲストファイルのリストア処理に仮想ディスクを接続するためにプロキシ VM を使用する場合は、リストア処理を開始する前にプロキシ VM をセットアップする必要があります。プロキシ VM はいつでもセットアップできますが、プラグインの導入完了後すぐにセットアップした方が便利です。
 
 .手順
-. VMware vSphere Clientで、* Guest File Restore *をクリックします。
+. vSphere Clientのショートカットウィンドウで、[プラグイン]の*[ SnapCenter Plug-in for VMware vSphere ]*を選択します。
+. 左側のナビゲーションで、*[ゲストファイルのリストア]*を選択します。
 . Run As Credentials * セクションで、次のいずれかを実行します。
 +
 |===
@@ -36,7 +37,7 @@ summary: ゲストファイルのリストア処理に仮想ディスクを接�
 
 |===
 +
-SnapCenter VMware プラグインは、選択したクレデンシャルを使用して、選択したプロキシ VM にログインします。
+SnapCenter Plug-in for VMware vSphereは、選択したクレデンシャルを使用して、選択したプロキシVMにログインします。
 
 +
 Run As クレデンシャルは、 Windows または組み込みのローカル管理者から提供されるデフォルトのドメイン管理者である必要があります。ワークグループユーザは、組み込みのローカル管理者アカウントを使用できます。
@@ -46,4 +47,4 @@ Run As クレデンシャルは、 Windows または組み込みのローカル�
 
 
 
-NOTE: ESXiからプロキシVMを削除する前に、SnapCenter Plug-in for VMware vSphere UIからプロキシVMを削除する必要があります。
+NOTE: ESXiホストからプロキシVMを削除する前に、SnapCenter Plug-in for VMware vSphere UIからプロキシVMを削除する必要があります。

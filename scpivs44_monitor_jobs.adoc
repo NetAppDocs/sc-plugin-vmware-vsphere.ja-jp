@@ -17,7 +17,9 @@ summary: VMware vSphere Clientを使用してデータ保護処理を実行し�
 VMware vSphere Clientを使用してデータ保護処理を実行したら、ダッシュボードのジョブモニタタブでジョブのステータスを監視し、ジョブの詳細を確認できます。
 
 .手順
-. vSphereクライアントの左側のナビゲーションペインで、*ダッシュボード*をクリックします。複数のvCenterがリンクモードで設定されている場合は、vCenter Serverを選択し、ダッシュボードペインの*ジョブモニタ*タブをクリックします。[ ジョブモニタ ] タブには、各ジョブとそのステータス、開始時刻、および終了時刻が表示されます。ジョブ名が長い場合は、右にスクロールしないと開始時刻と終了時刻が表示されない場合があります。表示は 30 秒ごとに更新されます。
+. vCenterクライアントのショートカットページで、SnapCenter Plug-in for VMware vSphere（SCV）を選択します。
+. SCVの左側のナビゲーションペインで、*[ダッシュボード]*を選択します。
+. 複数のvCenterがリンクモードで設定されている場合は、SCVプラグインインスタンスを選択し、*[Job Monitor]*タブを選択します。[Job Monitor]タブには、各ジョブとそのステータス、開始時刻、および終了時刻が表示されます。ジョブ名が長い場合は、右にスクロールしないと開始時刻と終了時刻が表示されない場合があります。表示は30秒ごとに更新されます。
 +
 ** ツールバーの更新アイコンを選択して、表示をオンデマンドで更新します。
 ** フィルタアイコンを選択して、表示するジョブの期間、タイプ、タグ、およびステータスを選択します。フィルタでは大文字と小文字が区別されます。
@@ -26,4 +28,4 @@ VMware vSphere Clientを使用してデータ保護処理を実行したら、�
 
 
 
-Dashboard にジョブ情報が表示されない場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["技術情報アーティクル：「SnapCenter vSphere Client Dashboard does not display jobs"^]。
+ダッシュボードにジョブ情報が表示されない場合は、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["技術情報アーティクル：「SnapCenter vSphere Client Dashboard does not display jobs"^]。

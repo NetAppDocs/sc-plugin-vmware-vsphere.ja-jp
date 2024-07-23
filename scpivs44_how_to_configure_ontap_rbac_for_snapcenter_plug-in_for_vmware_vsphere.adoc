@@ -17,9 +17,9 @@ summary: ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合
 ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。
 
 
-NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。ログインアカウントの作成または変更については、を参照してください。 https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html["管理者認証と RBAC 設定用のワークシートです"]。
+NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。ログイン・アカウントの作成または変更については'を参照して https://docs.netapp.com/us-en/ontap/authentication/config-worksheets-reference.html["管理者認証と RBAC 設定用のワークシートです"]ください
 
-ONTAP RBAC を SnapCenter VMware プラグインで使用する場合は、ストレージシステムで RBAC を設定する必要があります。ONTAP で次のタスクを実行する必要があります。
+Plug-in for VMware vSphereでONTAP RBACを使用する場合は、ストレージシステムにSnapCenter RBACを設定する必要があります。ONTAP で次のタスクを実行する必要があります。
 
 * ロールを 1 つ作成します。
 +
@@ -27,7 +27,7 @@ https://docs.netapp.com/us-en/ontap/concepts/administrator-authentication-rbac-c
 
 * ONTAP で、ロールのユーザ名とパスワード（ストレージシステムクレデンシャル）を作成します。
 +
-このストレージシステムのクレデンシャルは、 SnapCenter VMware プラグイン用にストレージシステムを設定するために必要です。プラグインにクレデンシャルを入力します。これらのクレデンシャルを使用してストレージシステムにログインすると、クレデンシャルの作成時に ONTAP で設定した SnapCenter 機能が表示されます。
+このストレージシステムのクレデンシャルは、SnapCenter Plug-in for VMware vSphere用のストレージシステムを設定するために必要です。これを行うには、プラグインでクレデンシャルを入力します。 これらのクレデンシャルを使用してストレージシステムにログインすると、クレデンシャルの作成時にONTAPで設定したSnapCenter機能が表示されます。
 
 
 

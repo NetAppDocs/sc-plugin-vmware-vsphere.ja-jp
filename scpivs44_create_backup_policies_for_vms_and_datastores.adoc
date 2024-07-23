@@ -24,25 +24,25 @@ SnapCenter Plug-in for VMware vSphere を使用して VM とデータストア�
 ** NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でSnapshotをセカンダリストレージに正常に転送するには、SnapMirrorポリシーのタイプがAsynchronous Mirrorであり、「all_source_snapshots」オプションがオンになっていることを確認します。
 ** セカンダリストレージ（mirror-vault）のSnapshot数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。 `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-この問題を修正するには、Snapshotの上限に達しないようにセカンダリストレージにSnapMirror保持ポリシーを設定します。
+この問題を解決するには、Snapshotの最大数に達しないようにセカンダリストレージのSnapMirror保持ポリシーを設定します。
 
 +
-管理者によるユーザへのリソースの割り当て方法については、を参照してください https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["ロールベースアクセス制御の使用に関する SnapCenter 情報"^]。
+管理者がユーザーにリソースを割り当てる方法については'を参照して https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["ロールベースアクセス制御の使用に関する SnapCenter 情報"^]ください
 
 
 
 * VMと整合性のあるバックアップを作成する場合は、VMwareツールをインストールして実行する必要があります。VMを休止するにはVMwareツールが必要です。VM と整合性のあるバックアップは VVol VM ではサポートされません。
-* SnapMirrorビジネス継続性（SM-BC）を使用すると、サイト全体で障害が発生してもビジネスサービスの運用を継続でき、アプリケーションがセカンダリコピーを使用して透過的にフェイルオーバーできるようになります。
+* SnapMirror Active Syncを使用すると、サイト全体に障害が発生してもビジネスサービスの運用を継続できるため、アプリケーションをセカンダリコピーを使用して透過的にフェイルオーバーできます。
 +
 
-NOTE: SM-BCはVMFSデータストアでのみサポートされます。
+NOTE: SnapMirrorアクティブ同期はVMFSデータストアでのみサポートされます。
 
 +
-SM-BC環境のVMFSデータストアを保護するには、SnapCenter管理者が次の作業を行う必要があります。
+SnapMirror Active Sync環境でVMFSデータストアを保護するには、SnapCenter管理者が次の作業を行う必要があります。
 
 +
-** テクニカルレポートの説明に従って、クラスタとメディエーターを設定します。 https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：『SnapMirror Business Continuity』"]。
-** VMFSデータストアに関連付けられているボリュームを整合性グループに追加し、2つのONTAPストレージシステム間に_AutomatedFailOver_protectionポリシーを使用してデータ保護関係を作成します。
+** テクニカルレポートの説明に従って、クラスタとメディエーターを設定します https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：『SnapMirror active sync（formerly SMBC）』"]。
+** VMFSデータストアに関連付けられているボリュームを整合性グループに追加し、2つのONTAPストレージシステム間に_AutomatedFailOver_or_AutomatedFailOverDuplex_protectionポリシーを使用してデータ保護関係を作成します。_AutomatedFailOverDuplex_policyは、ONTAP 9.15.1リリース以降でサポートされています。
 
 
 
@@ -51,7 +51,7 @@ SM-BC環境のVMFSデータストアを保護するには、SnapCenter管理者�
 ウィザードの各ページのフィールドのほとんどはわかりやすいもので、説明を必要としません。以下の手順では、説明が必要な一部のフィールドを取り上げます。
 
 .手順
-. SCVプラグインの左側の[Navigator（ナビゲーター）]ペインで、[* Policies（ポリシー）]をクリックします。
+. SCVプラグインの左側のナビゲータペインで、*[Policies]*をクリックします。
 . [ポリシー]*ページで、*[作成]*を選択してウィザードを開始します。
 . [New Backup Policy] ページで、ポリシーを使用する vCenter Server を選択し、ポリシー名と概要を入力します。
 +
@@ -95,7 +95,7 @@ NOTE: 最大保持数は、 ONTAP 9.4 以降のリソースでは 1018 のバッ
 NOTE: このオプションは、 SnapCenter Plug-in for VMware vSphere 4.5 以降の FlexGroup ボリュームのデータストアでサポートされます。
 
 
-NOTE: SM-BC環境のVMFSデータストアを保護するには、「開始する前に」セクションに記載されている前提条件を満たし、*[バックアップ後にSnapMirrorを更新する]*を有効にする必要があります。
+NOTE: SnapMirrorアクティブ同期構成でVMFSデータストアを保護するには、開始する前に_セクションに記載されている前提条件を満たし、*[バックアップ後にSnapMirrorを更新する]*を有効にする必要があります。
 
 
 
@@ -130,7 +130,7 @@ NOTE: Snapshotラベルに使用できる文字数は最大31文字です。
 このオプションは VVOL に対してはサポートされていません。VVOL VM の場合は、 crash-consistent バックアップのみが実行されます。
 
 
-IMPORTANT: VM整合性バックアップを実行するには、VMでVMwareツールを実行する必要があります。VMware Tools が実行されていない場合は、代わりに crash-consistent バックアップが実行されます。
+IMPORTANT: VM整合性バックアップを実行するには、VMでVMware Toolsが実行されている必要があります。VMware toolsが実行されていない場合は、代わりにcrash-consistentバックアップが実行されます。
 
 
 NOTE: VM 整合性ボックスをオンにすると、バックアップ処理に時間がかかり、より多くのストレージスペースが必要になる場合があります。このシナリオでは、 VM を最初に休止したあと、 VMware によって VM 整合性のある Snapshot が実行され、 SnapCenter によってバックアップ処理が実行されたあと、 VM の処理が再開されます。VM ゲストメモリは VM 整合性スナップショットに含まれません。
@@ -141,7 +141,7 @@ NOTE: VM 整合性ボックスをオンにすると、バックアップ処理�
 
 
 | スクリプト  a| 
-バックアップ処理の前後に SnapCenter VMware プラグインを実行するプリスクリプトまたはポストスクリプトの完全修飾パスを入力します。たとえば、 SNMP トラップの更新、アラートの自動化、ログの送信などをスクリプトで実行できます。スクリプトパスは、スクリプト実行時に検証されます。
+SnapCenter Plug-in for VMware vSphereでバックアップ処理の前後に実行するプリスクリプトまたはポストスクリプトの完全修飾パスを入力します。たとえば、SNMPトラップの更新、アラートの自動化、ログの送信を行うスクリプトを実行できます。スクリプトパスは、スクリプトの実行時に検証されます。
 
 
 NOTE: プリスクリプトとポストスクリプトは仮想アプライアンス VM 上にある必要があります。複数のスクリプトを入力するには、スクリプトパスの入力後に * Enter キーを押し、スクリプトごとに改行します。セミコロンは使用できません。

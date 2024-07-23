@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_remove_plugin.html 
 keywords:  
-summary: SnapCenter のデータ保護機能を使用する必要がなくなった場合は、 SnapCenter VMware プラグインを無効にして vCenter から登録を解除し、 vCenter から SnapCenter VMware プラグインを削除して、残りのファイルを手動で削除する必要があります。 
+summary: SnapCenterのデータ保護機能を使用する必要がなくなった場合は、SnapCenter Plug-in for VMware vSphereを無効にしてvCenterから登録を解除してから、vCenterからSnapCenter Plug-in for VMware vSphereを削除してから、残りのファイルを手動で削除する必要があります。 
 ---
 = SnapCenter Plug-in for VMware vSphere を削除します
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter のデータ保護機能を使用する必要がなくなっ
 
 
 [role="lead"]
-SnapCenter のデータ保護機能を使用する必要がなくなった場合は、 SnapCenter VMware プラグインを無効にして vCenter から登録を解除し、 vCenter から SnapCenter VMware プラグインを削除して、残りのファイルを手動で削除する必要があります。
+SnapCenterのデータ保護機能を使用する必要がなくなった場合は、SnapCenter Plug-in for VMware vSphereを無効にしてvCenterから登録を解除してから、vCenterからSnapCenter Plug-in for VMware vSphereを削除してから、残りのファイルを手動で削除する必要があります。
 
 .作業を開始する前に
 * 管理者権限が必要です。
@@ -22,17 +22,17 @@ SnapCenter のデータ保護機能を使用する必要がなくなった場合
 
 
 .手順
-. 次の形式を使用して、SnapCenter VMwareプラグインの管理GUIにログインします `\https://<OVA-IP-address>:8080`。
+. の形式を使用して、SnapCenter Plug-in for VMware vSphere管理GUIにログインし `\https://<OVA-IP-address>:8080`ます。
 +
-プラグインの導入時に、 SnapCenter VMware プラグインの IP が表示されます。
+プラグインの導入時に、SnapCenter Plug-in for VMware vSphereのIPアドレスが表示されます。
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
 . VMware vSphere にログインします。
-. 左側のナビゲータ画面で、SnapCenter VMwareプラグインのインスタンス（の名前）を右クリックします `.tar` 仮想アプライアンスの導入時に使用されたファイル）を選択し、*ディスクから削除*を選択します。
-. SnapCenter VMware プラグインを使用して、アプリケーションと整合性のあるバックアップを作成する他の SnapCenter プラグインをサポートしていた場合は、 SnapCenter にログインして vSphere ホストを削除してください。
+. 左側のナビゲーション画面で、SnapCenter Plug-in for VMware vSphereのインスタンス（仮想アプライアンスの導入時に使用されたファイルの名前）を右クリックし `.tar` 、*[ディスクから削除]*を選択します。
+. SnapCenter Plug-in for VMware vSphereを使用して、アプリケーションと整合性のあるバックアップ用の他のSnapCenterプラグインをサポートしていた場合は、SnapCenterにログインしてvSphereホストを削除します。
 
 
 .完了後
-仮想アプライアンスは導入されますが、 SnapCenter VMware プラグインは削除されます。
+仮想アプライアンスはまだ導入されていますが、SnapCenter Plug-in for VMware vSphereは削除されています。
 
-SnapCenter VMware プラグインのホスト VM を削除したあと、ローカルの vCenter キャッシュが更新されるまでプラグインが vCenter に表示されたままになる場合があります。ただし、プラグインが削除されたため、そのホストでは SnapCenter の VMware vSphere 処理を実行できません。ローカルの vCenter キャッシュを更新する場合は、先に SnapCenter の VMware プラグインの設定ページでアプライアンスが無効状態になっていることを確認してから、 vCenter の Web Client Service を再起動してください。
+SnapCenter Plug-in for VMware vSphere用のホストVMを削除したあと、ローカルのvCenterキャッシュが更新されるまでプラグインがvCenterに表示されたままになることがあります。ただし、プラグインが削除されたため、そのホストでSnapCenter VMware vSphereの処理を実行できません。ローカルvCenterキャッシュを更新する場合は、最初にSnapCenter Plug-in for VMware vSphereの[設定]ページでアプライアンスが無効な状態になっていることを確認してから、vCenter Web Client Serviceを再起動します。

@@ -52,21 +52,21 @@ SnapCenter Plug-in for VMware vSphere がゲスト上でのゲスト処理の完
 
 * * guestFileRestore.monitorInterval=30 *
 +
-SnapCenter VMware プラグインが期限切れのゲストファイルリストアセッションを監視する時間間隔を分単位で指定します。設定されたセッション時間を超えて実行されているセッションは切断されます。
+SnapCenter Plug-in for VMware vSphereが、期限切れのゲストファイルリストアセッションを監視する時間間隔（分）です。設定されたセッション時間を超えて実行されているセッションはすべて切断されます。
 
 +
 デフォルト値は「 30 」です。
 
 * * guestFileRestore.online.disk.timeout=100*
 +
-SnapCenter VMware プラグインがゲスト VM のオンラインディスク処理の完了を待機する時間を秒単位で指定します。プラグインがオンラインディスクの処理の完了をポーリングするまでに、さらに 30 秒の待機時間が発生することに注意してください。
+SnapCenter Plug-in for VMware vSphereが、ゲストVMでオンラインのディスク処理が完了するまで待機する時間（秒）です。プラグインがオンラインディスク処理の完了をポーリングするまでに、さらに30秒の待機時間があります。
 
 +
 デフォルト値は「 100 」です。
 
 * * guestFileRestore.restore.files.timeout=3600 *
 +
-SnapCenter VMware プラグインがゲスト VM のファイルリストア処理を完了するまで待機する時間を秒単位で指定します。時間を超過すると、プロセスは終了し、ジョブは失敗としてマークされます。
+SnapCenter Plug-in for VMware vSphereがゲストVMでファイルのリストア処理が完了するまで待機する時間（秒）です。時間を超過すると、プロセスは終了し、ジョブは失敗としてマークされます。
 
 +
 デフォルト値は「 3600 」（ 1 時間）です。
@@ -113,7 +113,7 @@ SnapCenter Plug-in for VMware vSphere がゲストファイルのリストアセ
 
 * * include.esx.initiator.id.from.cluster=true*
 +
-VMDK ワークフローを介したアプリケーションで、クラスタ内のすべての ESXi ホストの iSCSI イニシエータ ID と FCP イニシエータ ID を SnapCenter VMware プラグインに含めるように指定します。
+VMDKワークフローを介したアプリケーションで、クラスタ内のすべてのESXiホストのiSCSIイニシエータとFCPイニシエータのIDをSnapCenter Plug-in for VMware vSphereに含めるように指定します。
 
 +
 デフォルト値は「 false 」です。
@@ -124,18 +124,18 @@ VMDK ワークフローを介したアプリケーションで、クラスタ内
 
 * * 最大同時 DS.storage.query.count=15 *
 +
-SnapCenter VMware プラグインがデータストアのストレージ設置面積を検出するために SnapCenter サーバに対して実行できる同時呼び出しの最大数です。これらの呼び出しは、 SnapCenter VMware プラグイン VM ホストで Linux サービスを再起動するとプラグインによって実行されます。
+SnapCenter Plug-in for VMware vSphereがデータストアのストレージフットプリントを検出するためにSnapCenterサーバに対して実行できる同時呼び出しの最大数です。これらの呼び出しは、SnapCenter Plug-in for VMware vSphere VMホストでLinuxサービスを再起動すると、プラグインによって実行されます。
 
 * * nfs.datastore.mount.retry.count= 3 *
 +
-SnapCenter VMware プラグインが、 vCenter でボリュームを NFS データストアとしてマウントする際の最大試行回数です。
+SnapCenter Plug-in for VMware vSphereがvCenterでボリュームをNFSデータストアとしてマウントする最大回数です。
 
 +
 デフォルト値は「 3 」です。
 
 * * nfs.datastore.mount.retry.delay=60000*
 +
-SnapCenter VMware プラグインが、 vCenter で NFS データストアとしてボリュームをマウントしようとする間隔をミリ秒単位で指定します。
+SnapCenter Plug-in for VMware vSphereが、vCenterでボリュームをNFSデータストアとしてマウントする試行の間隔（ミリ秒）です。
 
 +
 デフォルト値は「 60000 」（ 60 秒）です。
@@ -173,17 +173,17 @@ SnapCenter サーバがストレージシステムからの応答を待機する
 
 * * vmware.esx.ip.kernel.ip.map*
 +
-デフォルト値はありません。この値は、 ESXi IP アドレスを VMkernel IP アドレスにマッピングするために使用します。デフォルトでは、 SnapCenter VMware プラグインは ESXi ホストの管理 VMkernel アダプタ IP アドレスを使用します。SnapCenter VMware プラグインで別の VMkernel アダプタ IP アドレスを使用する場合は、上書き値を指定する必要があります。
+デフォルト値はありません。この値を使用して、ESXiホストのIPアドレスをVMkernelのIPアドレスにマッピングします。SnapCenter Plug-in for VMware vSphereは、デフォルトでESXiホストの管理VMkernelアダプタIPアドレスを使用します。SnapCenter Plug-in for VMware vSphereで別のVMkernelアダプタIPアドレスを使用する場合は、上書き値を指定する必要があります。
 
 +
-次の例では、管理 VMkernel アダプタ IP アドレスは 10.225.10.56 ですが、 SnapCenter VMware プラグインでは指定したアドレス 10.225.11.57 と 10.225.11.58 が使用されます。管理 VMkernel アダプタ IP アドレスが 10.225.10.60 の場合、プラグインではアドレス 10.225.11.61 が使用されます。
+次の例では、管理VMkernelアダプタIPアドレスは10.225.10.56ですが、SnapCenter Plug-in for VMware vSphereでは指定されたアドレス10.225.11.57と10.225.11.58が使用されます。管理VMkernelアダプタIPアドレスが10.225.10.60の場合、プラグインはアドレス10.225.11.61を使用します。
 
 +
 vmware.esx.ip.kernel.ip.map=10.225.10.56:10.225.11.57,10.225.11.58; 10.225.10.60: 10.225.11.61'
 
 * * VMware. 最大同時スナップショット数 =30 *
 +
-SnapCenter VMware プラグインがサーバで実行できる同時 VMware スナップショットの最大数です。
+SnapCenter Plug-in for VMware vSphereがサーバで実行する同時VMwareスナップショットの最大数です。
 
 +
 この数はデータストア単位でチェックされ、ポリシーで「 VM と整合性」が選択されている場合にのみチェックされます。crash-consistent バックアップを実行する場合、この設定は適用されません。
@@ -193,7 +193,7 @@ SnapCenter VMware プラグインがサーバで実行できる同時 VMware ス
 
 * * vmware.max.concurrent.snapshots.delete=30*
 +
-SnapCenter VMware プラグインがサーバで実行する、データストアごとの VMware スナップショットの同時削除処理の最大数です。
+SnapCenter Plug-in for VMware vSphereがサーバで実行する、データストアあたりのVMwareスナップショットの同時削除処理の最大数です。
 
 +
 この数はデータストア単位でチェックされます。
@@ -203,56 +203,56 @@ SnapCenter VMware プラグインがサーバで実行する、データスト�
 
 * * vmware.query.unresolve.retry.count=10 *
 +
-SnapCenter VMware プラグインが、「 ...time limit for holding off I/O... 」エラーが原因で未解決のボリュームに関するクエリの送信を再試行する最大回数です。
+SnapCenter Plug-in for VMware vSphereが「...time limit for holding off I/O...」が原因で未解決のボリュームに関するクエリの送信を再試行する最大回数です。 エラー。
 
 +
 デフォルト値は「 10 」です。
 
 * * vmware.quiesce .retry.count = 0 *
 +
-バックアップ中の「 ...time limit for holding off I/O... 」エラーが原因で SnapCenter プラグインが VMware スナップショットに関するクエリの送信を再試行する最大回数です。
+SnapCenter Plug-in for VMware vSphereが、「...time limit for holding off I/O...」が原因でVMwareスナップショットに関するクエリの送信を再試行する最大回数です。 バックアップ中にエラーが発生しました。
 
 +
 デフォルト値は「 0 」です。
 
 * * vmware.quiesce.retry.interval=5*
 +
-バックアップ中の VMware スナップショット "...time limit for holding off I/O... " エラーに関するクエリの送信間隔を、 SnapCenter プラグインが待機する時間（秒）を指定します。
+SnapCenter Plug-in for VMware vSphereが、VMwareスナップショット「...time limit for holding off I/O...」に関するクエリの送信を待機する時間（秒）です。 バックアップ中にエラーが発生しました。
 
 +
 デフォルト値は「 5 」です。
 
 * * vmware.query.unresolved.retry.delay= 60000 *
 +
-「 ...time limit for holding off I/O... 」エラーが原因で未解決のボリュームに関するクエリを送信するまでの SnapCenter プラグインの待機時間をミリ秒単位で指定します。このエラーは、 VMFS データストアのクローニング時に発生します。
+SnapCenter Plug-in for VMware vSphereが「...time limit for holding off I/O...」が原因で未解決のボリュームに関するクエリを送信する間隔（ミリ秒）です。 エラー。このエラーは、VMFSデータストアのクローニング時に発生します。
 
 +
 デフォルト値は「 60000 」（ 60 秒）です。
 
 * * vmware.reconfig.vm.retry.count = 10 *
 +
-SnapCenter VMware プラグインが、「 ...time limit for holding off I/O... 」エラーが原因で VM の再設定に関するクエリの送信を再試行する最大回数です。
+SnapCenter Plug-in for VMware vSphereが、「...time limit for holding off I/O...」が原因でVMの再設定に関するクエリの送信を再試行する最大回数です。 エラー。
 
 +
 デフォルト値は「 10 」です。
 
 * * vmware.reconfig.vm.retry.delay=30000*
 +
-「 ...time limit for holding off I/O... 」エラーが原因で VM の再設定に関するクエリを送信するまで SnapCenter プラグインが待機する最大時間をミリ秒単位で指定します。
+SnapCenter Plug-in for VMware vSphereが、「...time limit for holding off I/O...」が原因でVMの再設定に関するクエリを送信する間隔（ミリ秒）です。 エラー。
 
 +
 デフォルト値は「 30000 」（ 30 秒）です。
 
 * * vmware.rescan.HBA.retry.count= 3 *
 +
-「 ...time limit for holding off I/O... 」エラーが原因で、 SnapCenter VMware プラグインがホストバスアダプタの再スキャンに関するクエリを送信する間隔をミリ秒単位で指定します。
+SnapCenter Plug-in for VMware vSphereが、「...time limit for holding off I/O...」が原因でホストバスアダプタの再スキャンに関するクエリを送信する間隔（ミリ秒）です。 エラー。
 
 +
 デフォルト値は「 3 」です。
 
 * * vmware.rescan.hba.retry.delay=30000*
 +
-SnapCenter VMware プラグインが、ホストバスアダプタの再スキャン要求を再試行する最大回数を指定します。
+SnapCenter Plug-in for VMware vSphereがホストバスアダプタの再スキャン要求を再試行する最大回数です。
 
 +
 デフォルト値は「 30000 」です。

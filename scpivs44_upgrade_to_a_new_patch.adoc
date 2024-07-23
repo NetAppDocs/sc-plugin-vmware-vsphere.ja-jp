@@ -19,7 +19,7 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
 
 * vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
-* SnapCenter VMware 仮想アプライアンスを vCenter 1 に導入しました。その後、この SnapCenter VMware プラグインを新しい vCenter2 に登録しました。SnapCenter VMware プラグインの新しいインスタンスが、パッチを適用して vCenter1 に登録されます。ただし、パッチを適用しないで最初の SnapCenter VMware プラグインからのプラグインを vCenter1 にキャッシュしたままにしているため、キャッシュをクリアする必要があります。
+* SnapCenter VMware仮想アプライアンスはvCenter 1に導入しました。その後、このSnapCenter Plug-in for VMware vSphereを新しいvCenter2に登録しました。SnapCenter Plug-in for VMware vSphereの新しいインスタンスがパッチを使用して作成され、vCenter1に登録されます。ただし、vCenter1にはパッチが適用されていない最初のSnapCenter Plug-in for VMware vSphereのプラグインがキャッシュされているため、キャッシュをクリアする必要があります。
 
 
 
@@ -31,10 +31,10 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 フォルダ名はリリースごとに変更されます。
 
 +
-お使いのオペレーティングシステムの「 vsphere-client-serenity 」フォルダの場所については、 VMware のマニュアルを参照してください。
+使用しているオペレーティングシステムに対応するフォルダの場所については、VMwareのドキュメントを参照して `vsphere-client-serenity` ください。
 
 . vCenter Server を再起動します。
 +
-その後、 SnapCenter VMware プラグインをアップグレードできます。
+その後、SnapCenter Plug-in for VMware vSphereをアップグレードできます。
 
 

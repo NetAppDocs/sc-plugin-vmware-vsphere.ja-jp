@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_the_time_zones.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere リソースグループのバックアップスケジュールを設定すると、 SnapCenter VMware プラグインが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。 
+summary: SnapCenter Plug-in for VMware vSphereリソースグループのバックアップスケジュールを設定すると、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。 
 ---
 = バックアップのタイムゾーンを変更します
 :hardbreaks:
@@ -16,19 +16,19 @@ summary: SnapCenter Plug-in for VMware vSphere リソースグループのバッ
 :authorinitials: [
 :authors: [.lead]
 :revnumber: 
-:revdate: the schedule is automatically set for the time zone in which SnapCenter VMware plug-in is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
+:revdate: the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
 
 
 .作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
+* このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
+* SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
 * メンテナンスコンソールの[System Configuration]オプションを使用して、6桁のMFAトークンを生成します。
 
 
 .手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
+. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
 の形式を使用します `\https://<appliance-IP-address>:8080`
 
@@ -39,6 +39,6 @@ image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 . [ * 設定 * ] ページの [ * 日付と時刻 * ] セクションで、 [ * 編集 * ] をクリックします。
 . 新しいタイムゾーンを選択し、 * 保存 * をクリックします。
 +
-新しいタイムゾーンは、 SnapCenter VMware プラグインで実行されるすべてのバックアップに使用されます。
+新しいタイムゾーンは、SnapCenter Plug-in for VMware vSphereで実行されるすべてのバックアップに使用されます。
 
 

@@ -55,7 +55,7 @@ NOTE: IPv6 HTML Web クライアントの場合は、 Chrome または Firefox �
 
 NOTE: 指定するユーザ名とパスワードを書き留めます。SnapCenter Plug-in for VMware vSphere の設定をあとから変更する場合は、これらのクレデンシャルを使用する必要があります。
 
-[ ネットワークプロパティの設定 *] に、ネットワーク情報を入力します。* Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。
+[ネットワークプロパティの設定]セクションで、ネットワーク情報を入力します。[Setup Date and Time]*セクションで、vCenterが配置されているタイムゾーンを選択します。
 
 
 
@@ -65,15 +65,15 @@ NOTE: 指定するユーザ名とパスワードを書き留めます。SnapCent
 
 NOTE: すべてのホストに IP アドレスが設定されている必要があります（ FQDN ホスト名はサポートされません）。展開操作では、展開前に入力が検証されません。
 
-. SnapCenter Plug-in for VMware vSphere が導入されている VM に移動し、 * 概要 * タブをクリックして * 電源オン * ボックスをクリックして、 SnapCenter VMware プラグインを起動します。
-. SnapCenter VMware プラグインの電源をオンにした状態で、展開された SnapCenter VMware プラグインを右クリックし、 * ゲスト OS * を選択して、 * VMware Tools のインストール * をクリックします。
+. SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブをクリックし、*[電源オン]*ボックスをクリックしてSnapCenter Plug-in for VMware vSphereを起動します。
+. SnapCenter Plug-in for VMware vSphereの電源投入時に、導入したSnapCenter Plug-in for VMware vSphereを右クリックし、*[ゲストOS ]*を選択して*[VMwareツールのインストール]*をクリックします。
 +
-導入が完了するまでに数分かかることがあります。導入が成功すると、 SnapCenter VMware プラグインの電源がオンになり、 VMware ツールがインストールされ、 SnapCenter VMware プラグインにログインするように求める画面が表示されます。
+導入が完了するまでに数分かかることがあります。SnapCenter Plug-in for VMware vSphereの電源がオンになると導入が成功したことが通知され、VMware Toolsがインストールされ、SnapCenter Plug-in for VMware vSphereへのログインを求める画面が表示されます。
 
 +
-画面に、 SnapCenter VMware プラグインが導入されている IP アドレスが表示されます。IP アドレスをメモします。SnapCenter の VMware プラグイン設定を変更する場合は、 SnapCenter の VMware プラグイン管理 GUI にログインする必要があります。
+画面に、SnapCenter Plug-in for VMware vSphereの導入先のIPアドレスが表示されます。IPアドレスをメモします。SnapCenter Plug-in for VMware vSphereの設定を変更する場合は、SnapCenter Plug-in for VMware vSphere管理GUIにログインする必要があります。
 
-. 導入ウィザードで指定したクレデンシャルを使用して、導入画面に表示された IP アドレスで SnapCenter VMware プラグイン管理 GUI にログインし、ダッシュボードで SnapCenter VMware プラグインが vCenter に正常に接続されて有効になっていることを確認します。
+. 導入画面に表示されたIPアドレスで導入ウィザードで指定したクレデンシャルを使用してSnapCenter Plug-in for VMware vSphere管理GUIにログインし、SnapCenter Plug-in for VMware vSphereがvCenterに正常に接続されて有効になっていることをダッシュボードで確認します。
 +
 の形式を使用します `\https://<appliance-IP-address>:8080` をクリックして管理GUIにアクセスします。
 

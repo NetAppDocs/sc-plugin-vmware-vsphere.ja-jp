@@ -16,8 +16,8 @@ summary: SnapCenter Plug-in for VMware vSphere は、仮想化されたリソー
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere は、仮想化されたリソースを管理するための追加の RBAC を提供します。このプラグインは、 vCenter Server RBAC と Data ONTAP RBAC の両方をサポートしています。
 
-SnapCenter および ONTAP RBAC は、 SnapCenter サーバのアプリケーションと整合性のある（アプリケーション over VMDK ）ジョブにのみ適用されます。SnapCenter VMware プラグインを使用して SnapCenter アプリケーションと整合性のあるジョブをサポートする場合は、 SnapCenterAdmin ロールを割り当てる必要があります。 SnapCenterAdmin ロールの権限は変更できません。
+SnapCenterおよびONTAP RBACは、SnapCenterサーバのアプリケーション整合性（VMDK経由のアプリケーション整合性）ジョブにのみ適用されます。SnapCenter Plug-in for VMware vSphereを使用してSnapCenterのアプリケーション整合性ジョブをサポートする場合は、SnapCenterAdminロールを割り当てる必要があります。SnapCenterAdminロールの権限を変更することはできません。
 
-SnapCenter VMware プラグインには、事前定義された vCenter ロールが付属しています。これらのロールを vCenter の Active Directory ユーザに追加して SnapCenter の処理を実行するには、 vCenter の GUI を使用する必要があります。
+SnapCenter Plug-in for VMware vSphereには、事前定義されたvCenterロールが付属しています。SnapCenterの処理を実行するには、vCenter GUIを使用してvCenter Active Directoryユーザにこれらのロールを追加する必要があります。
 
-ロールの作成と変更、およびユーザへのリソースアクセスの追加はいつでも実行できます。ただし、 SnapCenter VMware プラグインを初めてセットアップするときは、少なくとも Active Directory ユーザまたはグループをロールに追加してから、それらのユーザまたはグループにリソースアクセスを追加する必要があります。
+ロールの作成と変更、ユーザへのリソースアクセスの追加はいつでも実行できます。ただし、SnapCenter Plug-in for VMware vSphereを初めてセットアップするときは、少なくともActive Directoryのユーザまたはグループをロールに追加してから、それらのユーザまたはグループにリソースアクセスを追加する必要があります。

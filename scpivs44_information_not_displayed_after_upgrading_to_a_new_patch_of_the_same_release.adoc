@@ -21,7 +21,7 @@ SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチ
 プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
 
 * vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
-* SnapCenter VMware 仮想アプライアンスを vCenter 1 に導入しました。その後、この SnapCenter VMware プラグインを新しい vCenter2 に登録しました。SnapCenter VMware プラグインの新しいインスタンスが、パッチを適用して vCenter1 に登録されます。ただし、パッチを適用しないで最初の SnapCenter VMware プラグインからのプラグインを vCenter1 にキャッシュしたままにしているため、キャッシュをクリアする必要があります。
+* SnapCenter VMware仮想アプライアンスはvCenter 1に導入しました。その後、このSnapCenter Plug-in for VMware vSphereを新しいvCenter2に登録しました。SnapCenter Plug-in for VMware vSphereの新しいインスタンスがパッチを使用して作成され、vCenter1に登録されます。ただし、vCenter1にはパッチが適用されていない最初のSnapCenter Plug-in for VMware vSphereのプラグインがキャッシュされているため、キャッシュをクリアする必要があります。
 
 
 キャッシュは、サーバオペレーティングシステムのタイプに基づいて次の場所に格納されます。
@@ -40,13 +40,13 @@ SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチ
 
 == キャッシュをクリアする前にすでにアップグレードしている場合は回避策
 
-. SnapCenter VMware プラグインの管理 GUI にログインします。
+. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
-IP は、 SnapCenter VMware プラグインを導入するときに表示されます。
+IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されます。
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを無効にします。
 +
-SnapCenter VMware プラグインサービスが無効になり、 vCenter で登録解除されます。
+SnapCenter Plug-in for VMware vSphereサービスが無効になり、vCenterで拡張機能の登録が解除されます。
 
 . を探します `vsphere-client-serenity` フォルダを選択し、を選択します `com.netapp.scv.client-<release-number>` フォルダを削除します。
 +
@@ -56,6 +56,6 @@ SnapCenter VMware プラグインサービスが無効になり、 vCenter で�
 . VMware vSphere Clientにログインします。
 . 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを有効にします。
 +
-SnapCenter の VMware プラグインサービスが有効になり、拡張機能が vCenter に登録されます。
+SnapCenter Plug-in for VMware vSphereサービスが有効になり、vCenterに拡張機能が登録されます。
 
 

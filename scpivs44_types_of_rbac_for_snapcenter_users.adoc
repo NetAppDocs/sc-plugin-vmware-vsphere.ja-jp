@@ -20,9 +20,9 @@ SnapCenter Plug-in for VMware vSphere を使用している場合、 vCenter Ser
 
 == vCenter Server RBAC
 
-このセキュリティメカニズムでは、 SnapCenter VMware プラグインによって実行されるすべてのジョブが環境に実装されます。このプラグインには、 VM と整合性のある、 VM の crash-consistent 、および SnapCenter サーバのアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブが含まれます。このレベルの RBAC は、仮想マシン（ VM ）やデータストアなどの vSphere オブジェクトに対して SnapCenter VMware プラグインタスクを実行する vSphere ユーザの権限を制限します。
+このセキュリティメカニズムは、SnapCenter Plug-in for VMware vSphereで実行されるすべてのジョブに適用されます。ジョブには、VM-consistent、VM crash-consistent、SnapCenter Server application-consistent（VMDK経由のアプリケーション）が含まれます。このレベルのRBACは、仮想マシン（VM）やデータストアなどのvSphereオブジェクトに対してSnapCenter Plug-in for VMware vSphereタスクを実行するvSphereユーザの権限を制限します。
 
-SnapCenter の VMware プラグイン環境では、 vCenter での SnapCenter 処理に次のロールが作成されます。
+SnapCenter Plug-in for VMware vSphereを導入すると、vCenterでのSnapCenter処理用に次のロールが作成されます。
 
 「 CV 管理者」「 CV ゲストファイルの復元」「 CV の復元」「 S CV ビュー」
 

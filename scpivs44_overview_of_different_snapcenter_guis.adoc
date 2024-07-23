@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理には、vCenterのVMware vSphere Client GUIを使用する必要があります。 
 ---
 = 各種 SnapCenter GUI の概要
 :hardbreaks:
@@ -16,11 +16,11 @@ summary: SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグ
 [role="lead"]
 SnapCenter 環境では、適切な GUI を使用して、データ保護と管理の処理を実行する必要があります。
 
-SnapCenter Plug-in for VMware vSphere は、他の SnapCenter プラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理を実行するには、vCenterでVMware vSphere Client GUIを使用する必要があります。また、 Web クライアントの GUI ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。バックアップ、リストア、ジョブ監視など、他のすべてのSnapCenterプラグイン（アプリケーションベースのプラグイン）処理には、SnapCenter GUIを使用します。
+SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理には、vCenterのVMware vSphere Client GUIを使用する必要があります。また、WebクライアントのGUIダッシュボードを使用して、保護されているVMと保護されていないVMのリストを監視することもできます。バックアップ、リストア、ジョブ監視など、他のすべてのSnapCenterプラグイン（アプリケーションベースのプラグイン）処理には、SnapCenter GUIを使用します。
 
 VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。WebクライアントGUIは、ストレージシステム上でNetApp Snapshotテクノロジと統合されます。これにより、 VM およびデータストアを数秒でバックアップし、 ESXi ホストをオフラインにすることなく VM をリストアできます。
 
-また、SnapCenter VMwareプラグインで管理操作を実行するための管理GUIも用意されています。
+また、SnapCenter Plug-in for VMware vSphereで管理操作を実行するための管理GUIも用意されています。
 
 次の表に、SnapCenter GUIで実行される処理を示します。
 

@@ -17,8 +17,8 @@ summary: SnapCenter Plug-in for VMware vSphere GUI からサポートバンド�
 [role="lead"]
 SnapCenter Plug-in for VMware vSphere の管理 GUI にログオンするには、 IP アドレスとログインクレデンシャルが必要です。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
+* このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
+* SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
 * メンテナンスコンソールの[System Configuration]オプションを使用して、6桁のMFAトークンを生成します。
 
 

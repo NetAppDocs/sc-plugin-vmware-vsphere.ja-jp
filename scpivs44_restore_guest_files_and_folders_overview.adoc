@@ -83,7 +83,7 @@ SnapCenter Plug-in for VMware vSphere では、リストアするファイルや
 
 * Linux ゲスト OS からのリストアはサポートされていません
 +
-Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
 
 
 
@@ -98,7 +98,7 @@ Linux ゲスト OS を実行している VM からはファイルやフォルダ
 * [ ゲストファイルの参照 ] ページには、フィルタできない隠しファイルと隠しフォルダが表示されます。
 * Linux ゲスト OS からはリストアできません。
 +
-Linux ゲスト OS を実行している VM からはファイルやフォルダをリストアできません。ただし、 VMDK を接続し、ファイルとフォルダを手動でリストアすることは可能です。サポートされているゲスト OS の最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]。
+LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照して https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^]ください。
 
 * NTFS ファイルシステムから FAT ファイルシステムにリストアすることはできません。
 +

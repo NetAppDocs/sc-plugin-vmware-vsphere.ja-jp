@@ -29,18 +29,18 @@ SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲート
 VVOLデータ保護を使用するには、SnapCenter Plug-in for VMware vSphereおよびONTAP tools for VMware vSphereにストレージクラスタを追加する必要があります。
 
 +
-詳細については、を参照してください https://docs.netapp.com/vapp-98/index.jsp["VMware vSphere 用の ONTAP ツール"^]
+詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
 
 
 
 .作業を開始する前に
-ESXi サーバ、 SnapCenter VMware プラグイン、および各 vCenter は、同時に同期する必要があります。ストレージを追加しようとしても、 vCenter の時刻設定が同期されていないと、 Java 証明書エラーが表示されて処理が失敗することがあります。
+ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterが同じ時刻に同期されている必要があります。ストレージを追加しようとしたが、vCenterの時間設定が同期されていない場合、Java証明書エラーが発生して処理が失敗することがあります。
 
 .このタスクについて
-SnapCenter VMware プラグインは、直接接続された Storage VM と Storage クラスタ内の Storage VM でバックアップおよびリストア処理を実行します。
+SnapCenter Plug-in for VMware vSphereは、直接接続されたStorage VMおよびストレージクラスタ内のStorage VMに対してバックアップとリストアの処理を実行します。
 
 
-NOTE: SnapCenter VMwareプラグインを使用してVMDK上のアプリケーションベースのバックアップをサポートしている場合は、SnapCenter のGUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。
+NOTE: SnapCenter Plug-in for VMware vSphereを使用してVMDK上のアプリケーションベースのバックアップをサポートする場合は、SnapCenter GUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。
 
 * リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。
 * SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。
@@ -50,11 +50,12 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 +
 管理 LIF に解決できない名前の Storage VM を追加すると、プラグインがその Storage VM 上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、 Storage VM を SnapCenter に追加して管理 LIF を指定するか、 Storage VM を含むクラスタを追加してクラスタ管理 LIF を指定してください。
 
-* ストレージ認証の詳細は、SnapCenter VMwareプラグインの複数のインスタンス間、またはWindows SnapCenter ServerとvCenterのSnapCenter プラグイン間で共有されません。
+* ストレージ認証の詳細は、SnapCenter Plug-in for VMware vSphereの複数のインスタンス間、またはWindows SnapCenter ServerとvCenter上のSnapCenterプラグイン間で共有されません。
 
 
 .手順
-. vSphereクライアントの左側のナビゲーションペインで、*ストレージシステム*をクリックします。
+. vCenterクライアントのショートカットページで、SnapCenter Plug-in for VMware vSphere（SCV）を選択します。
+. SCVの左側のナビゲーションペインで、*[ダッシュボード]*>*[ストレージシステム]*を選択します。
 . [ストレージシステム]ページで、*[追加]*オプションを選択します。
 . Add Storage System * ウィザードで、次の表に示す基本的な Storage VM またはクラスタ情報を入力します。
 +
@@ -62,11 +63,10 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 | フィールド名 | 操作 
 
 
-| ストレージシステム | ストレージクラスタまたはStorage VMのFQDNまたは管理LIFのIPアドレスを入力します。
-SnapCenter VMwareプラグインでは、異なるクラスタにある同じ名前のStorage VMは複数サポートされません。 
+| ストレージシステム | ストレージクラスタまたはStorage VMのFQDNまたは管理LIFのIPアドレスを入力します。SnapCenter Plug-in for VMware vSphereでは、異なるクラスタにある同じ名前のStorage VMは複数サポートされません。 
 
 
-| 認証方式 | 資格情報または証明書のいずれかを選択します。次の2種類の証明書がサポートされています。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA署名証明書"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自己署名証明書"^] 
+| 認証方式 | 資格情報または証明書のいずれかを選択します。2種類の証明書がサポートされています。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自己署名証明書"^] https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA署名証明書"] 
 
 
 | ユーザ名 | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタへのログオンに使用するONTAPユーザ名を入力してください。 
@@ -89,17 +89,16 @@ SnapCenter VMwareプラグインでは、異なるクラスタにある同じ名
 -80（HTTP接続用） 
 
 
-| タイムアウト | SnapCenter VMwareプラグインが処理をタイムアウトするまで待機する秒数を入力します。デフォルトは 60 秒です 
+| タイムアウト | SnapCenter Plug-in for VMware vSphereが処理をタイムアウトするまでに待機する秒数を入力します。デフォルトは60秒です。 
 
 
-| 優先 IP | Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter VMwareプラグインで使用するIPアドレスを入力します。
-* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
+| 優先IPアドレス | Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter Plug-in for VMware vSphereで使用するIPアドレスを入力します。* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
 
 
 | Event Management System（EMS；イベント管理システム）およびAutoSupport の設定 | 保護適用、リストア処理の完了、または処理の失敗のために AutoSupport メッセージをストレージシステムに送信する場合は、該当するチェックボックスを選択します。AutoSupport 通知を有効にするには、[失敗した操作に関するAutoSupport 通知をストレージ・システムに送信する*]チェックボックスと[ SnapCenter サーバ・イベントをsyslogに記録する*]チェックボックスをオンにします。 
 
 
-| SnapCenter サーバイベントを syslog に記録します | SnapCenter VMware プラグインのイベントをログに記録するチェックボックスをオンにします。 
+| SnapCenter サーバイベントを syslog に記録します | SnapCenter Plug-in for VMware vSphereのイベントをログに記録するチェックボックスをオンにします。 
 
 
 | 処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します | 失敗したデータ保護ジョブに関する AutoSupport 通知を有効にする場合は、このチェックボックスをオンにします。また、 Storage VM で AutoSupport を有効にし、 AutoSupport E メールを設定する必要があります。 

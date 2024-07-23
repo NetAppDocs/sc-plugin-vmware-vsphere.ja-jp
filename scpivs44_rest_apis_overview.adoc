@@ -32,7 +32,7 @@ SnapCenter Plug-in for VMware vSphere REST API を使用して、一般的なデ
 * VMware vSphere 用の REST API でサポートされていない処理
 +
 ** ゲストファイルのリストア
-** SnapCenter VMware プラグインのインストールと設定
+** SnapCenter Plug-in for VMware vSphereのインストールと設定
 ** RBAC ロールまたはアクセスをユーザに割り当てます
 
 

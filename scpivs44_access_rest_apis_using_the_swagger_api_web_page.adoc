@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
 keywords:  
-summary: REST API は Swagger Web ページから利用できます。Swagger Web ページにアクセスして SnapCenter サーバまたは SnapCenter Plug-in for VMware vSphere REST API を表示したり、 API 呼び出しを手動で問題したりできます。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアに対して保護処理を実行します。 
+summary: REST APIはSwagger Webページから利用できます。Swagger Web ページにアクセスして SnapCenter サーバまたは SnapCenter Plug-in for VMware vSphere REST API を表示したり、 API 呼び出しを手動で問題したりできます。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアの保護処理を実行します。 
 ---
 = Swagger API Web ページから REST API にアクセスします
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: REST API は Swagger Web ページから利用できます。Swagger We
 
 
 [role="lead"]
-REST API は Swagger Web ページから利用できます。Swagger Webページにアクセスして、SnapCenter サーバまたはSnapCenter Plug-in for VMware vSphere REST APIを表示することも、API呼び出しを手動で問題 することもできます。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアに対して処理を実行します。
+REST APIはSwagger Webページから利用できます。SnapCenterサーバまたはSnapCenter Plug-in for VMware vSphere REST APIを表示したり、APIを手動で呼び出したりするには、Swagger Webページにアクセスします。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアに対して処理を実行します。
 
 プラグインには、SnapCenter Server Swagger Webページとは異なるSwagger Webページがあります。
 
 .作業を開始する前に
-SnapCenter Plug-in for VMware vSphere REST API の場合は、 SnapCenter VMware プラグインの IP アドレスまたはホスト名を確認しておく必要があります。
+SnapCenter Plug-in for VMware vSphere REST APIの場合は、SnapCenter Plug-in for VMware vSphereのIPアドレスまたはホスト名を確認しておく必要があります。
 
 
 NOTE: このプラグインでは、サードパーティのアプリケーションと統合する目的で REST API のみがサポートされます。 PowerShell コマンドレットや CLI はサポートされません。
@@ -35,10 +35,12 @@ IMPORTANT: REST API URL には、 + 、を使用しないでください。、 %
 
 +
 .例
-SnapCenter VMware プラグイン REST API にアクセスします。
+SnapCenter Plug-in for VMware vSphere REST APIにアクセスします。
 
 +
 `\https://<SCV_IP>:8144/api/swagger-ui/index.html`
+
++
 `\https://OVAhost:8144/api/swagger-ui/index.html`
 
 +

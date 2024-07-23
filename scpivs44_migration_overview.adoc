@@ -43,7 +43,7 @@ SnapCenter メタデータ。ストレージシステム、カスタマイズさ
 
 * 移行コマンドレットのプロセス
 +
-SnapCenter に登録されている SnapCenter プラグインの各インスタンスには、 Windows PowerShell コマンドレット「 Invoke-NaSCVOVAMigration 」を使用する必要があります。
+SnapCenterに登録されているSnapCenter Plug-in for VMware vSphereのインスタンスごとに、Windows PowerShellコマンドレットを使用する必要があります `invoke-SCVOVAMigration` 。
 
 +
 このコマンドレットでは次の処理が実行されます
@@ -54,15 +54,15 @@ SnapCenter に登録されている SnapCenter プラグインの各インスタ
 ** 移行後のバックアップのバックアップスケジュールを作成します。
 ** Windows ホストから既存の SnapCenter Plug-in for VMware vSphere をアンインストールします。
 +
-SnapCenter VMware プラグインが SnapCenter サーバホストにインストールされていて、 SnapCenter リポジトリ用に保護が設定されている場合は、移行プロセスによって、 SnapCenter Plug-in for VMware vSphere および SnapCenter Plug-in for Windows を含む Windows ベースのプラグインパッケージもアンインストールされます。 次に、リポジトリの保護をサポートするために、最新バージョンの SnapCenter Plug-in for Windows を再インストールします。SnapCenter GUI のホストタイプが「 vSphere 」から「 Windows 」に変わります。
+SnapCenter Plug-in for VMware vSphereがSnapCenter Serverホストにインストールされていて、SnapCenterリポジトリ用に保護が設定されている場合は、SnapCenter Plug-in for VMware vSphereおよびSnapCenter Plug-in for Windowsを含むWindowsベースのプラグインパッケージも移行プロセスによってアンインストールされます。 その後、リポジトリ保護をサポートするために最新バージョンのSnapCenter Plug-in for Windowsを再インストールします。SnapCenter GUIのホストタイプが「vsphere」から「windows」に変わります。
 
 ** Windows SnapCenter サーバから vSphere ホストとリソースグループを削除します。
-** Linux ベースの SnapCenter VMware プラグインのバックアップジョブをアクティブ化します。
-** 仮想化されたデータベースおよびファイル・システム（ VMDK バックアップを介したアプリケーション・ベースのバックアップ）をサポートするために、 SnapCenter VMware プラグイン用の vSphere ホストを SnapCenter に登録します。
+** LinuxベースのSnapCenter Plug-in for VMware vSphereでバックアップジョブをアクティブ化します。
+** SnapCenter Plug-in for VMware vSphereのvSphereホストをSnapCenterに登録して、仮想化されたデータベースとファイルシステムのアプリケーションベースのバックアップ（VMDKバックアップ経由のアプリケーション）をサポートします。
 
 
 * メタデータの保存場所
 +
-アプリケーションベースの VMDK バックアップのメタデータは、 SnapCenter サーバリポジトリに格納されます。VM およびデータストアのバックアップのメタデータは、 SnapCenter VMware プラグインの MySQL リポジトリに格納されます。
+アプリケーションベースのVMDKバックアップのメタデータは、SnapCenterサーバリポジトリに格納されます。VMとデータストアのバックアップのメタデータは、SnapCenter Plug-in for VMware vSphere MySQLリポジトリに格納されます。
 
 

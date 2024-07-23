@@ -26,7 +26,7 @@ SnapCenter を使用していて、 SnapCenter 4.2 にアップグレードし�
 .このタスクについて
 * SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録するには、 SnapCenter GUI を使用して「 vSphere 」タイプのホストを追加します。
 +
-ポート 8144 は、 SnapCenter VMware プラグイン内の通信用に事前定義されています。
+ポート8144は、SnapCenter Plug-in for VMware vSphere内の通信用に事前定義されています。
 
 +
 SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ SnapCenter Server 4.2 に登録することで、 VM に対するアプリケーションベースのデータ保護処理をサポートできます。複数の SnapCenter Server に同じ SnapCenter Plug-in for VMware vSphere を登録することはできません。
@@ -50,7 +50,7 @@ SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ Sn
 | ホスト名 | 仮想アプライアンスの IP アドレスを確認します。 
 
 
-| クレデンシャル | 導入時に指定した SnapCenter VMware プラグインのユーザ名とパスワードを入力します。 
+| クレデンシャル | 導入時に指定したSnapCenter Plug-in for VMware vSphereのユーザ名とパスワードを入力します。 
 |===
 . [Submit （送信） ] をクリックします。
 +

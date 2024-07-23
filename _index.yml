@@ -5,15 +5,13 @@ indexpage:
     VM 、データストア、および VMDK の高速でスペース効率に優れた、クラッシュ整合性のある、 VM と整合性のあるバックアップおよびリストア処理を実現します。また、
     SnapCenter Server と連携して、 SnapCenter アプリケーション固有のプラグインを対象とした VMware 環境でのアプリケーションベースのバックアップおよびリストア処理もサポートします。
   keywords: SnapCenter Plug-in for VMware vSphere, SCV
-  lead: SnapCenter Plug-in for VMware vSphere （ SCV ）は Linux ベースの仮想アプライアンスです。スタンドアロン構成として、
-    VM 、データストア、および VMDK の高速でスペース効率に優れた、クラッシュ整合性のある、 VM と整合性のあるバックアップおよびリストア処理を実現します。また、
-    SnapCenter Server と連携して、 SnapCenter アプリケーション固有のプラグインを対象とした VMware 環境でのアプリケーションベースのバックアップおよびリストア処理もサポートします。このドキュメントライブラリでは、SnapCenter
-    Plug-in for VMware vSphereバージョン5.0について説明します。
+  lead: SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。このドキュメントライブラリでは、SnapCenter
+    Plug-in for VMware vSphereバージョン6.0について説明します。
   tiles:
   - title: はじめに
     links:
     - title: リリースノート
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886920
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664
     - title: SCVの詳細
       url: "/scpivs44_concepts_overview.html"
     - title: 導入の要件
@@ -24,7 +22,7 @@ indexpage:
     links:
     - title: データを保護
       url: "/scpivs44_protect_data_overview.html"
-    - title: バックアップからリストアします
+    - title: バックアップをリストアする
       url: "/scpivs44_restore_from_backups_overview.html"
     - title: REST APIs を使用します
       url: "/scpivs44_rest_apis_overview.html"

@@ -17,7 +17,7 @@ summary: SnapCenter Plug-in for VMware vSphere のメンテナンスコンソー
 SnapCenter Plug-in for VMware vSphereのメンテナンスコンソールを使用して、アプリケーション、システム、およびネットワークの構成を管理できます。管理者パスワードの変更、メンテナンスパスワードの変更、サポートバンドルの生成、およびリモート診断の開始を行うことができます。
 
 .作業を開始する前に
-SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する前に、すべてのスケジュールを一時停止する必要があります。
+SnapCenter Plug-in for VMware vSphereサービスを停止して再起動する前に、すべてのスケジュールを一時停止しておく必要があります。
 
 .このタスクについて
 * SnapCenter Plug-in for VMware vSphere 4.6P1では、SnapCenter Plug-in for VMware vSphereの初回インストール時にパスワードを指定する必要があります。リリース4.6以前からリリース4.6P1以降にアップグレードした場合は、以前のデフォルトパスワードが使用できます。
@@ -28,8 +28,8 @@ SnapCenter Plug-in for VMware vSphere サービスを停止して再起動する
 
 
 .手順
-. VMware vSphere Clientで、SnapCenter VMwareプラグインが配置されているVMを選択します。
-. 仮想マシンを右クリックし、仮想アプライアンスの * サマリ * タブで * リモートコンソールの起動 * をクリックして、メンテナンスコンソールウィンドウを開きます。
+. VMware vSphere Clientで、SnapCenter Plug-in for VMware vSphereが配置されているVMを選択します。
+. 仮想アプライアンスの*[概要]*タブで*[リモートコンソールの起動]*をクリックして、メンテナンスコンソールウィンドウを開きます。
 +
 デフォルトのメンテナンスコンソールのユーザ名を使用してログインします `maint` およびインストール時に設定したパスワード。
 
@@ -40,7 +40,7 @@ image:scpivs44_image11.png["メンテナンスコンソールのウィンドウ"
 +
 ** オプション 1 ：アプリケーション構成
 +
-SnapCenter VMwareプラグインの起動または停止SnapCenter VMwareプラグインサービスの概要を表示するSnapCenter プラグインのログインユーザ名またはパスワードの変更MySQLパスワードの変更MySQLパスワードのバックアップとリストア、MySQLの設定と一覧表示を行います
+SnapCenter Plug-in for VMware vSphereの概要を表示するSnapCenter Plug-in for VMware vSphereサービスの起動または停止SnapCenter Plug-in for VMware vSphereのログインユーザ名またはパスワードの変更MySQLパスワードの変更MySQLパスワードのバックアップとリストア、MySQLバックアップの設定と一覧表示
 
 ** オプション 2 ：システム構成
 +

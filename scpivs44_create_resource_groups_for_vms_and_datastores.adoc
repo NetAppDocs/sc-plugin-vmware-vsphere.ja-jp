@@ -47,7 +47,7 @@ summary: リソースグループは、保護するVM、データストア、vSp
 すべてのリソースグループ：
 
 
-IMPORTANT: VMware vSphere Cluster Service （ vCLS ）を使用している場合は、 vCLS によって管理される VM を SnapCenter VMware プラグインのリソースグループに含めないでください。
+IMPORTANT: VMware vSphere Cluster Service（vCLS）を使用している場合は、vCLSで管理されるVMをSnapCenter Plug-in for VMware vSphereリソースグループに含めないでください。
 
 
 TIP: SnapCenter Plug-in for VMware vSphere 4.5以降では、最大300TBのボリュームで、最大128TBの大規模なLUNおよびファイル上のデータストアがサポートされます。大規模なLUNを保護する場合は、レイテンシを回避するためにシックプロビジョニングされたLUNのみを使用します。
@@ -73,7 +73,7 @@ VVOL VMを含むリソースグループを作成する前に、VMware用のONTA
 
 * MetroCluster 環境で FlexGroup ボリュームを含むリソースグループ
 +
-ONTAP 9.8 または ONTAP 9.9 で実行している場合は、スイッチオーバーまたはスイッチバック後に、 MetroCluster SnapCenter プラグインサービスを再起動し、 SnapMirror 関係を再同期してから、 環境でリソースグループをバックアップする必要があります。
+ONTAP 9.8またはONTAP 9.9を実行している場合は、スイッチオーバーまたはスイッチバックのあとに、SnapCenter Plug-in for VMware vSphereサービスを再起動してSnapMirror関係を再同期してから、MetroCluster環境でリソースグループをバックアップする必要があります。
 
 +
 ONTAP 9.8 では、スイッチバック後にバックアップがハングします。この問題は、 ONTAP 9.9 で修正されています。
@@ -102,13 +102,13 @@ NOTE: Snapshotロック期間が設定されたバックアップポリシーを
 
 
 .手順
-. SCVプラグインの左側ナビゲータペインで、*[リソースグループ]*をクリックし、*[作成]*を選択してウィザードを開始します。
+. SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*をクリックし、*[作成]*を選択してウィザードを開始します。
 
 
 リソースグループを作成するには、この方法が最も簡単です。ただし、次のいずれかを実行して、 1 つのリソースで構成されるリソースグループを作成することもできます。
 
-* 1つのVMのリソースグループを作成するには、*[メニュー]*>*[ホストおよびクラスタ]*をクリックし、VMを右クリックしてNetApp SnapCenterを選択し、*[リソースグループの作成]*を選択します。
-* 1つのデータストアのリソースグループを作成するには、*[メニュー]*>*[ホストおよびクラスタ]*をクリックし、データストアを右クリックして*[ NetApp SnapCenter ]*を選択し、*[リソースグループの作成]*を選択します。
+* 1つのVMのリソースグループを作成するには、ショートカットページで*[ホストおよびクラスタ]*を選択し、VMを右クリックして* SnapCenter Plug-in for VMware vSphere *>*[リソースグループの作成]*を選択します。
+* 1つのデータストアのリソースグループを作成するには、ショートカットページで*[ホストおよびクラスタ]*を選択し、データストアを右クリックして* SnapCenter Plug-in for VMware vSphere *>*[リソースグループの作成]*を選択します。
 +
 .. ウィザードの [ 一般情報と通知 *] ページで、次の操作を行います。
 +
@@ -119,7 +119,7 @@ NOTE: Snapshotロック期間が設定されたバックアップポリシーを
 | vCenter Server の各サービスを提供 | vCenter サーバを選択します。 
 
 
-| 名前 | リソースグループの名前を入力します。VM 、データストア、ポリシー、バックアップ、リソースグループの名前には、次の特殊文字は使用できません： %&*$#@ ！\ / ： * ？"<> - [ 垂直バー ] ； ' 、アンダースコア文字（ _ ）を使用できます。特殊文字を含む VM またはデータストアの名前は切り捨てられるため、特定のバックアップを検索することが難しくなります。リンクモードでは、各 vCenter に個別の SnapCenter VMware プラグインリポジトリがあります。そのため、 vCenter 間で名前の重複を使用できます。 
+| 名前 | リソースグループの名前を入力します。VM 、データストア、ポリシー、バックアップ、リソースグループの名前には、次の特殊文字は使用できません： %&*$#@ ！\ / ： * ？"<> - [ 垂直バー ] ； ' 、アンダースコア（_）を使用できます。特殊文字を含むVMまたはデータストアの名前は切り捨てられるため、特定のバックアップを検索することが困難になります。リンクモードでは、各vCenterに個別のSnapCenter Plug-in for VMware vSphereリポジトリがあります。そのため、複数のvCenterで重複した名前を使用できます。 
 
 
 | 説明 | リソースグループの概要を入力します。 
@@ -183,10 +183,10 @@ FlexGroup データストア内のVMを個別に選択することはできま�
 [ 次へ ] をクリックすると、システムはまず SnapCenter が管理していることを確認し、選択したリソースがあるストレージと互換性があることを確認します。
 
 +
-「 Selected <resource-key > is not SnapCenter compatible 」というメッセージが表示される場合、選択したリソースは SnapCenter と互換性がありません。を参照してください <<互換性チェックの失敗を管理します>> を参照してください。
+メッセージが表示される場合は `Selected <resource-name> is not SnapCenter compatible` 、選択したリソースがSnapCenterと互換性がありません。
 
 +
-バックアップから1つ以上のデータストアをグローバルに除外するには、構成ファイル「scbr.override」の「global.DS.exclude.pattern」プロパティでデータストア名を指定する必要があります。を参照してください <<scpivs44_properties_you_can_override.adoc#Properties you can override,オーバーライドできるプロパティ>>。
+1つ以上のデータストアをバックアップからグローバルに除外するには、構成ファイルのプロパティにデータストア名を指定する必要があり `global.ds.exclusion.pattern` `scbr.override` ます。を参照してください link:scpivs44_properties_you_can_override.html["オーバーライドできるプロパティ"]。
 
 .. [ * スパニングディスク * ] ページで、複数のデータストアに複数の VMDK がある VM のオプションを選択します。
 +
@@ -224,10 +224,10 @@ image:scpivs44_image18.png["[リソースグループの作成]ウィンドウ"]
 開始時間フィールドに、 0 以外の日時を入力します。日付は「日 / 月 / 年」の形式で指定する必要があります。
 
 +
-「各 * 」フィールドで日数を選択すると、その月の 1 日目にバックアップが実行され、そのあとは指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。
+[Every]フィールドで日数を選択すると、月の1日目にバックアップが実行され、その後、指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。
 
 +
-各フィールドに入力する必要があります。SnapCenter VMware プラグインは、 SnapCenter VMware プラグインが導入されているタイムゾーンでスケジュールを作成します。タイムゾーンは、 SnapCenter Plug-in for VMware vSphere GUI を使用して変更できます。
+各フィールドに入力する必要があります。SnapCenter Plug-in for VMware vSphereでは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンでスケジュールが作成されます。タイムゾーンは、SnapCenter Plug-in for VMware vSphere GUIを使用して変更できます。
 
 +
 link:scpivs44_modify_the_time_zones.html["バックアップのタイムゾーンを変更します"]。
@@ -261,18 +261,18 @@ NOTE: バックアップ内のいずれかの VM で休止処理が失敗する�
 SnapCenter バージョン 4.x では、 ONTAP 8.3.1 以降がサポートされます。
 
 +
-SnapCenter Plug-in for VMware vSphere では、すべての ONTAP バージョンの互換性チェックは実行されません。 ONTAP バージョン 8.2.1 以前にのみ実行されます。したがって、を常に参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] SnapCenter サポートの最新情報については、を参照してください。
+SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] 。
 
 * 共有 PCI デバイスが VM に接続されている。
-* 優先 IP は SnapCenter で設定されていません。
-* Storage VM （ SVM ）の管理 IP を SnapCenter に追加していません。
+* 優先IPアドレスがSnapCenterに設定されていません。
+* Storage VM（SVM）管理IPアドレスをSnapCenterに追加していません。
 * Storage VM は停止しています。
 
 
 互換性エラーを修正するには、次の手順に従います。
 
 . Storage VM が実行されていることを確認してください。
-. VM が配置されているストレージシステムが SnapCenter Plug-in for VMware vSphere インベントリに追加されていることを確認します。
+. VMが配置されているストレージシステムがSnapCenter Plug-in for VMware vSphereインベントリに追加されていることを確認します。
 . Storage VM が SnapCenter に追加されていることを確認してください。VMware vSphere ClientのGUIで、Add storage systemオプションを使用します。
 . ネットアップデータストアとネットアップ以外のデータストアの両方に VMDK がある複数の VM がまたがっている場合は、 VMDK をネットアップデータストアに移動します。
 

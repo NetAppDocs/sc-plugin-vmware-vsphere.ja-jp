@@ -19,19 +19,19 @@ SnapCenter Plug-in for VMware vSphere で設定されているネットワーク
 .作業を開始する前に
 SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
-* SnapCenter VMware プラグインを導入したときに表示された IP アドレスです。
-* SnapCenter VMware プラグインの導入時に提供された、またはあとから変更されたログインクレデンシャルを使用してください。
+* このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
+* SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
 * メンテナンスコンソールの[System Configuration]オプションを使用して、6桁のMFAトークンを生成します。
 
 
 .手順
-. SnapCenter VMware プラグインの管理 GUI にログインします。
+. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
 の形式を使用します `\https://<appliance-IP-address>:8080`
 
 . 上部のツールバーの [ 設定 ] アイコンをクリックします。
 +
-image:scpivs44_image31.png["SnapCenter VMwareプラグインの管理GUI"]
+image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere の管理 GUI を使用します"]
 
 . [ * 設定 * ] ページの [ * ネットワーク設定 * ] セクションで、 [* IPv4 * または * IPv6 * ] をクリックし、 [ * 編集 ] をクリックします。
 +
