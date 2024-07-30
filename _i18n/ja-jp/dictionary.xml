@@ -972,14 +972,11 @@
   <block id="6735a8ae7975c90de27a83556fa63791" category="paragraph">SnapCenter Plug-in for VMware vSphere の処理を実行するための適切な権限を取得するには、 Storage VM の「 vsadmin 」としてログインする必要があります。</block>
   <block id="c1baf46f8c1f04fa3cc96df859f88fe2" category="list-text">ONTAP 8.3 以降を実行している場合：</block>
   <block id="8134cf1fb1cf193c0ab9fa188232e858" category="paragraph">「 vsadmin 」としてログインするか、上記の表に記載された最小権限を持つロールでログインする必要があります。</block>
-  <block id="fc5672573975422a722953bf5496e5ad" category="section-title">Linux vCenter で Web Client Service を再起動します</block>
-  <block id="df005eed1212d84ddce99431a04fc779" category="paragraph">vCenter 6.5 以降が実行されている必要があります。</block>
   <block id="d9ac8e6076d4e4d7529e26c9238771a4" category="list-text">SSH を使用して、 root として vCenter Server Appliance にログインします。</block>
   <block id="263de88bd463a408f8eabe4c8a4ace37" category="list-text">次のコマンドを使用して、 Appliance Shell または bash Shell にアクセスします。</block>
   <block id="ad288d5d0843f98ebb574a6ae9d65a4e" category="paragraph">「Shell」</block>
   <block id="76acab39397c08b9a6f90dc3612ad3b4" category="list-text">次の HTML5 コマンドを使用して Web Client Service を停止します。</block>
   <block id="fe179a5e6c3cce08786099d7d4f4c814" category="paragraph">「 service-control 」 -- 「 vsphere-ui 」を停止します</block>
-  <block id="4c09019cb803ffc62d7d0666df0def34" category="list-text">次の HTML5 コマンドを使用して、 vCenter 上の古い scvm パッケージをすべて削除します。</block>
   <block id="1ee241c7544c04de9f1ca46058beb4cb" category="list-text">次の HTML5 コマンドを使用して Web Client Service を開始します。</block>
   <block id="6b76a32b7668e5fed9b8e910943fdee7" category="paragraph">「 service-control -- start vsphere-ui 」を参照してください</block>
   <block id="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link"><block ref="7c7ae5acd39e33d9d69f3338f6b09a4a" category="inline-link-rx"></block></block>
@@ -1416,7 +1413,6 @@
   <block id="ca1e84c5fdfae2e245ce6dbdbd1c628f" category="paragraph">クラスタの一部として自動的に追加された Storage VM （暗黙的な Storage VM とも呼ばれます）を変更すると、その Storage VM は明示的な Storage VM に変更され、そのクラスタ内の残りの Storage VM を変更することなく個別に削除できます。認証方法が証明書を通過している場合は、[Storage Systems]ページにユーザ名がN/Aと表示されます。ユーザ名は、クラスタリスト内の明示的なStorage VMに対してのみ表示され、ExpicitSVMフラグはtrueに設定されます。すべての Storage VM は、関連付けられたクラスタの下に常に表示されます。</block>
   <block id="bebc6d6c31f801875b9e77f07bdb01e7" category="paragraph">VMware vSphere Clientを使用して、vCenterのインベントリからStorage VMを削除できます。</block>
   <block id="47407cf5b03fece3c5c171eab2b9b01a" category="inline-link-macro">VMware vSphere Client Serviceを再起動します</block>
-  <block id="d1bcb651c16c1e49822b4f7c61910214" category="paragraph"><block ref="882f890d3418627cf43cd6225ef7eb22" category="inline-link-macro-rx"></block>。</block>
   <block id="2d70acf0a1999b3558f2c043c08ac3b6" category="paragraph">最低限、すべてのユーザが vCenter オブジェクトを表示できる必要があります。この権限がないユーザはVMware vSphere Client GUIにアクセスできません。</block>
   <block id="57ece9f7f3b3d9621593aeee1cb35996" category="summary">VMware vCenterに認証局のルート証明書と中間証明書を追加して、証明書と署名済みのアーティファクトを信頼します。</block>
   <block id="ee28a4160e701596abbbfdd58c421736" category="doc">VMware証明書ストアに証明書を追加します</block>
@@ -1550,9 +1546,6 @@
   <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">VMwareツールがインストールされ、実行されている必要があります。</block>
   <block id="7a6f0192e4916d4a7238add9c2d4e982" category="paragraph">SnapCenter は、VMwareツールからの情報を使用して、VMwareゲストOSへの接続を確立します。</block>
   <block id="48e30f31b43c0ce0d7b2ae5cff7665bc" category="list-text">VMware vSphere ClientのGUIで、ツールバーの* Menu *をクリックし、次のいずれかを実行します。</block>
-  <block id="15522b8dcb225880b816b8456110deaf" category="summary">SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、VMware vSphere Client Serviceを再起動します。</block>
-  <block id="bbbb4a3d88d4a0dafc319898d6206ae7" category="paragraph">Linuxアプライアンス上のvCenterでSnapCenter VMware vSphere Client Serviceを再起動するには、Linuxコマンドを使用する必要があります。</block>
-  <block id="7f52ae2d13fc881eab436a11ad6556a4" category="paragraph"><block ref="ca3710e05c94c666b5609593ee562322" prefix="" category="inline-code"></block></block>
   <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">リソースグループを作成するには、次の手順に従います。</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">VMware vCenter 7.0.3以降のバージョンでは、の手順に従います <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> をクリックしてvCenterに証明書をインポートします。</block>
   <block id="8775bf884912200ed43fd5a867b909a3" category="cell">* 特権 *</block>
@@ -2223,4 +2216,5 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="c0407ba9e12515280efc0fea9f89e131" category="sidebar">バックアップをリストアする</block>
   <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">SnapCenter Plug-in for VMware vSphere GUIからのサポートバンドルの生成</block>
+  <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>です。</block>
 </blocks>

@@ -53,6 +53,6 @@ Storage VM を削除する前に、 Storage VM 内のすべてのデータスト
 . [* ストレージシステム * ] ページで、削除する Storage VM を選択し、 [ * 削除 ] をクリックします。
 . [ ストレージ・システムの削除 ] 確認ボックスで '[ ストレージ・システムの削除 *] のチェックボックスをオンにし '[ はい *] をクリックして確定します*注：* ESXiホスト7.0U1以降のリリースのみがサポートされます。
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します"]。
+link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します"]です。
 
 
