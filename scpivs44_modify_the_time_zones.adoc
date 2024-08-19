@@ -4,7 +4,7 @@ permalink: scpivs44_modify_the_time_zones.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereリソースグループのバックアップスケジュールを設定すると、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。 
 ---
-= バックアップのタイムゾーンを変更します
+= バックアップのタイムゾーンの変更
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,8 +19,8 @@ summary: SnapCenter Plug-in for VMware vSphereリソースグループのバッ�
 :revdate: the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
 
 
-.作業を開始する前に
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログインクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
+.開始する前に
+SnapCenter Plug-in for VMware vSphere管理GUIのIPアドレスとログインクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
 * このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
 * SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
@@ -30,9 +30,9 @@ SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログ
 .手順
 . SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
-の形式を使用します `\https://<appliance-IP-address>:8080`
+次の形式を使用： `\https://<appliance-IP-address>:8080`
 
-. 上部のツールバーの [ 設定 ] アイコンをクリックします。
+. 上部ツールバーの[設定]アイコンをクリックします。
 +
 image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 

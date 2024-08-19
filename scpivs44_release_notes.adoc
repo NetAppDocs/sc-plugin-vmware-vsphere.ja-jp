@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_release_notes.html 
 keywords:  
-summary: リリースノートには、このリリースの SnapCenter Plug-in for VMware vSphere に関する、ライセンス要件、既知の問題、注意事項、制限事項などの重要な情報が記載されています。 ドキュメントの更新や修正が必要です。 
+summary: リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。 
 ---
 = リリースノート
 :hardbreaks:

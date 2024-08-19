@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_monitor_jobs.html 
 keywords:  
-summary: VMware vSphere Clientを使用してデータ保護処理を実行したら、ダッシュボードのジョブモニタタブでジョブのステータスを監視し、ジョブの詳細を確認できます。 
+summary: 'VMware vSphere Clientを使用してデータ保護処理を実行したあと、ダッシュボードの[Job Monitor]タブでジョブステータスを監視し、ジョブの詳細を確認できます。' 
 ---
-= ジョブを監視する
+= ジョブの監視
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: VMware vSphere Clientを使用してデータ保護処理を実行し�
 
 
 [role="lead"]
-VMware vSphere Clientを使用してデータ保護処理を実行したら、ダッシュボードのジョブモニタタブでジョブのステータスを監視し、ジョブの詳細を確認できます。
+VMware vSphere Clientを使用してデータ保護処理を実行したあと、ダッシュボードの[Job Monitor]タブでジョブステータスを監視し、ジョブの詳細を確認できます。
 
 .手順
 . vCenterクライアントのショートカットページで、SnapCenter Plug-in for VMware vSphere（SCV）を選択します。

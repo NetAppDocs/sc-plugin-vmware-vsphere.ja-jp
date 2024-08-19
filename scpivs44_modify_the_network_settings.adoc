@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_the_network_settings.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere で設定されているネットワーク設定を変更することができます。これらの設定は、プラグインが vCenter にアクセスするために使用します。 
+summary: SnapCenter Plug-in for VMware vSphereで設定されているネットワーク設定を変更することができます。プラグインはこれらの設定を使用してvCenterにアクセスします。 
 ---
-= ネットワーク設定を変更します
+= ネットワーク設定の変更
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,10 +14,10 @@ summary: SnapCenter Plug-in for VMware vSphere で設定されているネット
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere で設定されているネットワーク設定を変更することができます。これらの設定は、プラグインが vCenter にアクセスするために使用します。
+SnapCenter Plug-in for VMware vSphereで設定されているネットワーク設定を変更することができます。プラグインはこれらの設定を使用してvCenterにアクセスします。
 
-.作業を開始する前に
-SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログオンクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
+.開始する前に
+SnapCenter Plug-in for VMware vSphere管理GUIのIPアドレスとログオンクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
 
 * このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
 * SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
@@ -27,11 +27,11 @@ SnapCenter Plug-in for VMware vSphere の管理 GUI の IP アドレスとログ
 .手順
 . SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
-の形式を使用します `\https://<appliance-IP-address>:8080`
+次の形式を使用： `\https://<appliance-IP-address>:8080`
 
-. 上部のツールバーの [ 設定 ] アイコンをクリックします。
+. 上部ツールバーの[設定]アイコンをクリックします。
 +
-image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere の管理 GUI を使用します"]
+image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere管理GUI"]
 
 . [ * 設定 * ] ページの [ * ネットワーク設定 * ] セクションで、 [* IPv4 * または * IPv6 * ] をクリックし、 [ * 編集 ] をクリックします。
 +
@@ -39,11 +39,11 @@ image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere の管理 GUI 
 
 . ネットワーク設定を削除する場合は、次の手順を実行します。
 +
-** IPv4 ： [IP アドレス *] フィールドに「 0.0.0.0 」と入力し、 [ 保存 *] をクリックします。
-** IPv6: [IP アドレス *] フィールドに「 ::0' 」と入力し、 *Save* をクリックします。
+** IPv4：[IPアドレス]*フィールドにと入力し、*[保存]*を `0.0.0.0` クリックします。
+** IPv6：[IP Address]フィールドにと入力し、*[Save]*をクリックします。 `: :0`
 
 
 
 
 
-NOTE: IPv4 と IPv6 の両方を使用している場合は、両方のネットワーク設定を削除できません。残りのネットワークでは、 [DNS サーバ ] フィールドと [ 検索ドメイン ] フィールドを指定する必要があります。
+NOTE: IPv4とIPv6の両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。

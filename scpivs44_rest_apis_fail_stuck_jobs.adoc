@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere ClientのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。 
 ---
-= REST API を使用して、停止したジョブを失敗としてマークします
+= 停止したジョブを失敗としてマークするREST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,15 +14,15 @@ summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSp
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。これらの REST API は、 SnapCenter Plug-in for VMware vSphere 4.4 で追加されています。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere ClientのジョブIDを検索するには、VMware vSphereのREST API呼び出しを使用する必要があります。これらのREST APIは、SnapCenter Plug-in for VMware vSphere 4.4で追加されました。
 
 各APIについて、REST APIの先頭に\https：//<server>：<port>を追加して、完全なエンドポイントを形成します。
 
-ジョブセクションで次の REST API を使用して、実行中の状態で停止したジョブを失敗状態に変更します。
+実行中状態で停止しているジョブを失敗状態に変更するには、[Jobs]セクションで次のREST APIを使用します。
 
 |===
 | REST API | コメント 
 
 
-| `/4.1/jobs/{id}/failJobs` | 実行中の状態で停止しているジョブの ID を渡すと、「 failJobs 」はそのジョブを失敗としてマークします。実行中の状態で停止しているジョブを特定するには、ジョブモニタの GUI を使用して、すべてのジョブの状態とジョブ ID を確認します。 
+| `/4.1/jobs/{id}/failJobs` | 実行中の状態で停止しているジョブのIDを渡すと、は `failJobs` それらのジョブを失敗としてマークします。実行中の状態で停止しているジョブを特定するには、ジョブ監視GUIを使用して各ジョブの状態とジョブIDを確認します。 
 |===

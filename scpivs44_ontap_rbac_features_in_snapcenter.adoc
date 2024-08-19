@@ -4,7 +4,7 @@ permalink: scpivs44_ontap_rbac_features_in_snapcenter.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereは、vCenter Server RBAC、SnapCenter RBAC（アプリケーションベースの処理をサポートするために必要な場合）、およびONTAP RBACと連携して、特定のストレージシステムのオブジェクトに対して特定のユーザが実行できるSnapCenterタスクを決定します。 
 ---
-= SnapCenter Plug-in for VMware vSphere の ONTAP RBAC 機能
+= SnapCenter Plug-in for VMware vSphereのONTAP RBAC機能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,22 +14,22 @@ summary: SnapCenter Plug-in for VMware vSphereは、vCenter Server RBAC、SnapCe
 
 
 
-NOTE: ONTAP RBAC は、 SnapCenter サーバアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。
+NOTE: ONTAP RBACは、SnapCenterサーバのアプリケーション整合性（VMDK経由のアプリケーション整合性）ジョブにのみ適用されます。
 
 [role="lead"]
 ONTAPのRole-Based Access Control（RBAC；ロールベースアクセス制御）を使用すると、特定のストレージシステムへのアクセスと、それらのストレージシステムでユーザが実行できる操作を制御できます。SnapCenter Plug-in for VMware vSphereは、vCenter Server RBAC、SnapCenter RBAC（アプリケーションベースの処理をサポートするために必要な場合）、およびONTAP RBACと連携して、特定のストレージシステムのオブジェクトに対して特定のユーザが実行できるSnapCenterタスクを決定します。
 
 SnapCenterでは、設定したクレデンシャル（ユーザ名とパスワード）を使用して各ストレージシステムを認証し、そのストレージシステムで実行できる処理を決定します。SnapCenter Plug-in for VMware vSphereは、ストレージシステムごとに1セットのクレデンシャルを使用します。このクレデンシャルに基づいて、そのストレージシステムで実行できるすべてのタスクが決まります。つまり、このクレデンシャルは SnapCenter のクレデンシャルであり、個々の SnapCenter ユーザに対するものではありません。
 
-ONTAP RBAC は、ストレージシステムへのアクセス、および VM のバックアップなどのストレージに関連する SnapCenter タスクの実行にのみ適用されます。それぞれのストレージシステムに対する適切な ONTAP RBAC 権限がないと、そのストレージシステムでホストされる vSphere オブジェクトに対してタスクを実行することはできません。
+ONTAP RBAC は、ストレージシステムへのアクセス、および VM のバックアップなどのストレージに関連する SnapCenter タスクの実行にのみ適用されます。特定のストレージシステムに対する適切なONTAP RBAC権限がないと、そのストレージシステムでホストされているvSphereオブジェクトに対してタスクを実行することはできません。
 
-各ストレージシステムには、一連の ONTAP 権限が関連付けられます。
+各ストレージシステムには、一連のONTAP権限が関連付けられます。
 
-ONTAP RBAC と vCenter Server RBAC の両方を使用すると、次のような利点があります。
+ONTAP RBACとvCenter Server RBACの両方を使用すると、次のようなメリットがあります。
 
 * セキュリティ
 +
-どのユーザがどのタスクを実行できるかを、 vCenter Server オブジェクトレベルおよびストレージシステムレベルで制御できます。
+どのユーザがどのタスクを実行できるかを、vCenter Serverオブジェクトレベルとストレージシステムレベルの両方で制御できます。
 
 * 監査情報
 +
@@ -37,6 +37,6 @@ ONTAP RBAC と vCenter Server RBAC の両方を使用すると、次のような
 
 * 使いやすさ
 +
-コントローラのクレデンシャルを集約して一元管理できます。
+コントローラのクレデンシャルを一元的に管理できます。
 
 

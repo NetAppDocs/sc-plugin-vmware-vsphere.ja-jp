@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチにアップグレードすると、ダッシュボードとジョブモニタに最近のジョブやその他の情報が表示されないことがあります。 
+summary: SnapCenter Plug-in for VMware vSphereを同じリリースの新しいパッチにアップグレードしたあと、最近のジョブやその他の情報がダッシュボードとジョブモニタに表示されないことがあります。 
 ---
 = 同じリリースの新しいパッチにアップグレードしたあとに情報が表示されない
 :hardbreaks:
@@ -14,23 +14,23 @@ summary: SnapCenter Plug-in for VMware vSphere を同じリリースの新しい
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチにアップグレードすると、ダッシュボードとジョブモニタに最近のジョブやその他の情報が表示されないことがあります。
+SnapCenter Plug-in for VMware vSphereを同じリリースの新しいパッチにアップグレードしたあと、最近のジョブやその他の情報がダッシュボードとジョブモニタに表示されないことがあります。
 
-同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。
+同じリリースの新しいパッチにアップグレードする場合は、アップグレードまたは登録を行う前に、vCenter Web ServerでSnapCenter Plug-in for VMware vSphereのキャッシュをクリアし、サーバを再起動する必要があります。
 
-プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
+次の場合、プラグインのキャッシュがクリアされないと、最近のジョブはダッシュボードとジョブモニタに表示されません。
 
-* vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
+* SnapCenter Plug-in for VMware vSphereはvCenterを使用して導入し、その後同じリリースのパッチにアップグレードしました。
 * SnapCenter VMware仮想アプライアンスはvCenter 1に導入しました。その後、このSnapCenter Plug-in for VMware vSphereを新しいvCenter2に登録しました。SnapCenter Plug-in for VMware vSphereの新しいインスタンスがパッチを使用して作成され、vCenter1に登録されます。ただし、vCenter1にはパッチが適用されていない最初のSnapCenter Plug-in for VMware vSphereのプラグインがキャッシュされているため、キャッシュをクリアする必要があります。
 
 
-キャッシュは、サーバオペレーティングシステムのタイプに基づいて次の場所に格納されます。
+キャッシュは、サーバのオペレーティングシステムのタイプに応じて、次の場所に配置されます。
 
-* vCenter Server Linux Appliance の略
+* vCenter Server Linuxアプライアンス
 +
-/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity / です
+`/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/`
 
-* Windows OS の場合
+* Windows OS
 +
 `%PROGRAMFILES%/VMware/vSphere client/vc-packages/vsphere-client-serenity/`
 
@@ -38,7 +38,7 @@ SnapCenter Plug-in for VMware vSphere を同じリリースの新しいパッチ
 
 
 
-== キャッシュをクリアする前にすでにアップグレードしている場合は回避策
+== キャッシュをクリアする前にアップグレード済みの場合の対処方法
 
 . SnapCenter Plug-in for VMware vSphere管理GUIにログインします。
 +
@@ -48,11 +48,11 @@ IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示�
 +
 SnapCenter Plug-in for VMware vSphereサービスが無効になり、vCenterで拡張機能の登録が解除されます。
 
-. を探します `vsphere-client-serenity` フォルダを選択し、を選択します `com.netapp.scv.client-<release-number>` フォルダを削除します。
+. フォルダを探し `vsphere-client-serenity` 、フォルダを見つけ `com.netapp.scv.client-<release-number>` て削除します。
 +
 フォルダ名はリリースごとに変更されます。
 
-. vCenter Server を再起動します。
+. vCenter Serverを再起動します。
 . VMware vSphere Clientにログインします。
 . 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを有効にします。
 +

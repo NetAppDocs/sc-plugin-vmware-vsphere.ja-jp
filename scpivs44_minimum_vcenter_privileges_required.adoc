@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_minimum_vcenter_privileges_required.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限必要な vCenter 権限があることを確認する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphereの導入を開始する前に、最小限必要なvCenter Privilegesが揃っていることを確認してください。 
 ---
-= 最小限の vCenter 権限が必要です
+= vCenter Privilegesの最小要件
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,17 @@ summary: SnapCenter Plug-in for VMware vSphere の導入を開始する前に、
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere の導入を開始する前に、最小限必要な vCenter 権限があることを確認する必要があります。
+SnapCenter Plug-in for VMware vSphereの導入を開始する前に、最小限必要なvCenter Privilegesが揃っていることを確認してください。
 
 
 
-== vCenter Admin ロールに必要な権限
+== vCenter Adminロールに必要なPrivileges
 
 Datastore.PowerLocateSpace Datastore.Browse Datastore.Delete Datastore.FileManagement Datastore.Move Extension.Register Extensionの更新Host.Config.AdvancedConfig Host.Config.Resources Host.Config.Config.Settings Host.Config.Config.Storage VirtualVirtualVirtualVirtualVirtualVMHost.Local.CreateVM Host.Local.DeleteVM Network.ReconfigVM Network.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Assign Resource.Config.Assign Resource.Config.VM Resource.Config.VM Resource.Config.Config.Config.VM Resource.Config.VM Resource.Config.Datast.VM Resource.Config.Datast.Config.Datast.Datast.Datastoronymous仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンの仮想マシンのリソースのリソースの仮想マシンリソース
 
 
 
-== SnapCenter Plug-in for VMware vCenter に固有の必要な権限
+== SnapCenter Plug-in for VMware vCenterに固有の必要な権限
 
 |===
 
@@ -32,35 +32,35 @@ Datastore.PowerLocateSpace Datastore.Browse Datastore.Delete Datastore.FileManag
 | * 特権 * | *ラベル* 
 
 
-| netappSCV。Guest。RestoreFile | ゲストファイルのリストア 
+| netappscv.Guest.RestoreFile | ゲストファイルのリストア 
 
 
-| netappSCV。Recovery).MountUnmount | mount / Unmount 
+| netappSCV.Recovery.MountUnMount | マウント/アンマウント 
 
 
-| SCV。Backup.DeleteBackupJobを指定します | リソースグループ/バックアップを削除します 
+| netappSCV.Backup.DeleteBackupJob | リソースグループ/バックアップを削除 
 
 
-| netappSCV。Configure.ConfigureStorageSystems.Deleteの順にクリックします | ストレージシステムを削除 
+| netappscv.Configure.ConfigureStorageSystems.Delete | ストレージシステムの削除 
 
 
-| netappSCV。ビュー | 表示 
+| netappSCV： 視聴する | 視聴する 
 
 
-| SCV。リカバリ。RecoverVMを指定します | VMをリカバリします 
+| netappscv.Recovery.RecoverVM | VMのリカバリ 
 
 
-| netappSCV。Configure.ConfigureStorageSystems.AddUpdateを実行します | ストレージシステムを追加/変更 
+| netappSCV.Configure.ConfigureStorageSystems.AddUpdate | ストレージシステムを追加/変更 
 
 
-| netappSCV。Backup.BackupNow | 今すぐバックアップする 
+| netappscv.Backup.BackupNow | 今すぐバックアップ 
 
 
-| netappSCV。Guest。設定 | ゲストの設定 
+| netappscv.Guest：設定 | ゲストの設定 
 
 
-| netappSCV。Configure.ConfigureSnapCenterServerを実行します | SnapCenter サーバを設定します 
+| netappSCV.Configure.ConfigureSnapCenterServer | SnapCenterサーバの設定 
 
 
-| 必要なバックアップスケジュールを設定します | リソースグループを作成します 
+| netappSCV.Backup.BackupScheduled | リソースグループを作成 
 |===

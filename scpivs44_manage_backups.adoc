@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_backups.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere で実行されたバックアップを、名前変更および削除することができます。複数のバックアップを同時に削除することもできます。 
+summary: SnapCenter Plug-in for VMware vSphereで実行されるバックアップの名前変更と削除を行うことができます。複数のバックアップを同時に削除することもできます。 
 ---
-= バックアップを管理します
+= バックアップの管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: SnapCenter Plug-in for VMware vSphere で実行されたバックアッ
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere で実行されたバックアップを、名前変更および削除することができます。複数のバックアップを同時に削除することもできます。
+SnapCenter Plug-in for VMware vSphereで実行されるバックアップの名前変更と削除を行うことができます。複数のバックアップを同時に削除することもできます。
 
 
 
-== バックアップの名前を変更する
+== バックアップの名前変更
 
-検索を簡単にするために、 SnapCenter Plug-in for VMware vSphere バックアップの名前を変更できます。
+検索しやすくするためにSnapCenter Plug-in for VMware vSphereバックアップの名前を変更することができます。
 
 .手順
 . [*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 [*VMware vSphere* 用 SnapCenter プラグイン ] セクションの [*Backups] をクリックします。
@@ -30,20 +30,20 @@ image:scv50_image1.png["vSphere Client画面"]
 . [ 構成 ] タブでバックアップを選択し、 [* 名前の変更 *] をクリックします。
 . [ バックアップ名の変更 *] ダイアログボックスで新しい名前を入力し、 [OK] をクリックします。
 +
-VM 、データストア、ポリシー、バックアップ、リソースグループの名前には、次の特殊文字は使用できません。 * $#@ ！\ / ： * ？"<> - | ； ' 、。アンダースコア文字（ _ ）を使用できます。
+VM 、データストア、ポリシー、バックアップ、リソースグループの名前には、次の特殊文字は使用できません。 * $#@ ！\ / ： * ？"<> - | ； ' 、。アンダースコア（_）を使用できます。
 
 
 
 
 
-== バックアップを削除します
+== バックアップの削除
 
-他のデータ保護処理に使用する必要がなくなった SnapCenter Plug-in for VMware vSphere バックアップは削除することができます。1 つのバックアップを削除したり、複数のバックアップを同時に削除したりできます。
+他のデータ保護処理に不要になったSnapCenter Plug-in for VMware vSphereのバックアップは削除できます。1つのバックアップを削除することも、複数のバックアップを同時に削除することもできます。
 
-.作業を開始する前に
-マウントされているバックアップは削除できません。バックアップを削除する前に、アンマウントする必要があります。
+.開始する前に
+マウントされているバックアップは削除できません。削除するには、バックアップをアンマウントする必要があります。
 
-.このタスクについて
+.タスクの内容
 セカンダリストレージ上のSnapshotは、SnapCenter Plug-in for VMware vSphereではなく、ONTAPの保持設定で管理されます。そのため、SnapCenter Plug-in for VMware vSphereを使用してバックアップを削除すると、プライマリストレージのSnapshotは削除されますが、セカンダリストレージのSnapshotは削除されません。セカンダリストレージにSnapshotが残っている場合は、リストア要求をサポートするために、SnapCenter Plug-in for VMware vSphereでバックアップに関連付けられたメタデータが保持されます。ONTAPの保持プロセスでセカンダリSnapshotが削除されると、SnapCenter Plug-in for VMware vSphereはパージジョブを使用してメタデータを削除します。パージジョブは定期的に実行されます。
 
 . [*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 [*VMware vSphere* 用 SnapCenter プラグイン ] セクションの [*Backups] をクリックします。
@@ -52,8 +52,8 @@ image:scv50_image1.png["vSphere Clientウィンドウ"]
 
 . 1 つ以上のバックアップを選択し、 * Delete * をクリックします。
 +
-削除するバックアップは最大 40 個まで選択できます。
+削除するバックアップは最大40個まで選択できます。
 
 . [OK] をクリックして削除操作を確定します。
-. 左側の vSphere メニューバーにある更新アイコンをクリックして、バックアップリストを更新します。
+. 左側のvSphereメニューバーにある更新アイコンをクリックして、バックアップリストを更新します。
 

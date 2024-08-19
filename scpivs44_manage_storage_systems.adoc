@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_manage_storage_systems.html 
 keywords:  
-summary: VMware vSphere Clientを使用してVMやデータストアをバックアップまたはリストアするには、ストレージを追加する必要があります。 
+summary: VMware vSphere Clientを使用してVMまたはデータストアをバックアップまたはリストアする前に、ストレージを追加する必要があります。 
 ---
-= ストレージシステムを管理
+= ストレージシステムを管理する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,18 @@ summary: VMware vSphere Clientを使用してVMやデータストアをバック
 
 
 [role="lead"]
-VMware vSphere Clientを使用してVMやデータストアをバックアップまたはリストアするには、ストレージを追加する必要があります。
+VMware vSphere Clientを使用してVMまたはデータストアをバックアップまたはリストアする前に、ストレージを追加する必要があります。
 
 
 
-== Storage VM を変更します
+== Storage VMの変更
 
-VMware vSphere Clientを使用して、SnapCenter Plug-in for VMware vSphereに登録されているクラスタおよびStorage VMの構成を変更し、VMのデータ保護処理に使用することができます。
+VMware vSphere Clientを使用して、SnapCenter Plug-in for VMware vSphereに登録されてVMのデータ保護処理に使用されるクラスタおよびStorage VMの設定を変更できます。
 
-クラスタの一部として自動的に追加された Storage VM （暗黙的な Storage VM とも呼ばれます）を変更すると、その Storage VM は明示的な Storage VM に変更され、そのクラスタ内の残りの Storage VM を変更することなく個別に削除できます。認証方法が証明書を通過している場合は、[Storage Systems]ページにユーザ名がN/Aと表示されます。ユーザ名は、クラスタリスト内の明示的なStorage VMに対してのみ表示され、ExpicitSVMフラグはtrueに設定されます。すべての Storage VM は、関連付けられたクラスタの下に常に表示されます。
+クラスタの一部として自動的に追加されたStorage VM（暗黙的なStorage VMと呼ばれることもあります）を変更すると、そのStorage VMは明示的なStorage VMに変更され、クラスタ内の残りのStorage VMを変更することなく個別に削除できます。証明書を使用した認証方式を使用している場合、[ストレージシステム]ページにユーザ名がN/Aと表示されます。ユーザ名はクラスタリスト内の明示的なStorage VMに対してのみ表示され、ExplicitSVMフラグがtrueに設定されています。すべてのStorage VMは、常に関連するクラスタの下に表示されます。
 
 
-IMPORTANT: SnapCenter の GUI を使用してアプリケーションベースのデータ保護処理用に Storage VM を追加した場合は、追加した Storage VM を変更するために同じ GUI を使用する必要があります。
+IMPORTANT: SnapCenter GUIを使用してアプリケーションベースのデータ保護処理用にStorage VMを追加した場合は、同じGUIを使用してそれらのStorage VMを変更する必要があります。
 
 .手順
 . SCVプラグインの左側のナビゲータペインで、*[ストレージシステム]*をクリックします。
@@ -35,24 +35,24 @@ IMPORTANT: SnapCenter の GUI を使用してアプリケーションベース�
 
 
 
-== Storage VM を削除します
+== Storage VMの削除
 
 VMware vSphere Clientを使用して、vCenterのインベントリからStorage VMを削除できます。
 
 
-NOTE: SnapCenter の GUI を使用してアプリケーションベースのデータ保護処理用に Storage VM を追加した場合は、追加した Storage VM を変更するために同じ GUI を使用する必要があります。
+NOTE: SnapCenter GUIを使用してアプリケーションベースのデータ保護処理用にStorage VMを追加した場合は、同じGUIを使用してそれらのStorage VMを変更する必要があります。
 
-.作業を開始する前に
-Storage VM を削除する前に、 Storage VM 内のすべてのデータストアをアンマウントする必要があります。
+.開始する前に
+Storage VMを削除する前に、Storage VM内のすべてのデータストアをアンマウントする必要があります。
 
-.このタスクについて
-削除する Storage VM に存在するバックアップがリソースグループに含まれていると、そのリソースグループのそれ以降のバックアップは失敗します。
+.タスクの内容
+削除するStorage VM上のバックアップがリソースグループに含まれていると、そのリソースグループの以降のバックアップは失敗します。
 
 .手順
 . SCVプラグインの左側のナビゲータペインで、*[ストレージシステム]*をクリックします。
 . [* ストレージシステム * ] ページで、削除する Storage VM を選択し、 [ * 削除 ] をクリックします。
 . [ ストレージ・システムの削除 ] 確認ボックスで '[ ストレージ・システムの削除 *] のチェックボックスをオンにし '[ はい *] をクリックして確定します*注：* ESXiホスト7.0U1以降のリリースのみがサポートされます。
 +
-link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します"]です。
+link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["VMware vSphere Client Serviceを再起動します。"]です。
 
 

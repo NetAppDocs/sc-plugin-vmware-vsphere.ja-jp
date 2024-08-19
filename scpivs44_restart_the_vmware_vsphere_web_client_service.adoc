@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_restart_the_vmware_vsphere_web_client_service.html 
 keywords:  
-summary: SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。 
+summary: SnapCenter VMware vSphere Clientの動作が正しくない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、Webクライアントサービスを再起動します。 
 ---
-= VMware vSphere Client Serviceを再起動します
+= VMware vSphere Client Serviceを再起動します。
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,28 @@ summary: SnapCenter VMware vSphere Clientが正しく動作しない場合は、
 
 
 [role="lead"]
-SnapCenter VMware vSphere Clientが正しく動作しない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、 Web Client Service を再起動します。
+SnapCenter VMware vSphere Clientの動作が正しくない場合は、ブラウザキャッシュのクリアが必要になることがあります。問題が解決しない場合は、Webクライアントサービスを再起動します。
 
 
 
-== Linux vCenterでVMware vSphere Client Serviceを再起動します
+== Linux vCenterでVMware vSphere Client Serviceを再起動する
 
-.作業を開始する前に
-vCenter 7.0U1以降が実行されている必要があります。
+.開始する前に
+vCenter 7.0U1以降を実行している必要があります。
 
 .手順
-. SSH を使用して、 root として vCenter Server Appliance にログインします。
-. 次のコマンドを使用して、 Appliance Shell または bash Shell にアクセスします。
+. SSHを使用してvCenter Server Applianceにrootとしてログインします。
+. 次のコマンドを使用して、アプライアンスシェルまたはbashシェルにアクセスします。
 +
-「Shell」
+`shell`
 
-. 次の HTML5 コマンドを使用して Web Client Service を停止します。
+. 次のHTML5コマンドを使用してWeb Client Serviceを停止します。
 +
-「 service-control 」 -- 「 vsphere-ui 」を停止します
+`service-control --stop vsphere-ui`
 
-. 次のシェルコマンドを使用して、 vCenter 上の古い HTML5 scvm パッケージをすべて削除します。
+. 次のシェルコマンドを使用して、vCenterで古いHTML5 scvmパッケージをすべて削除します。
 +
-/etc/vmware/vsphere-clientui/vc-packages/vsphere-client-serenity / です
+`etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/`
 
 +
 `rm -rf com.netapp.scv.client-<version_number>`
@@ -44,8 +44,8 @@ vCenter 7.0U1以降が実行されている必要があります。
 
 IMPORTANT: VASAまたはvCenter 7.x以降のパッケージは削除しないでください。
 
-. 次の HTML5 コマンドを使用して Web Client Service を開始します。
+. 次のHTML5コマンドを使用してWebクライアントサービスを開始します。
 +
-「 service-control -- start vsphere-ui 」を参照してください
+`service-control --start vsphere-ui`
 
 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。 
+summary: SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。 
 ---
-= 以前のリリースの SnapCenter Plug-in for VMware vSphere からアップグレードする
+= 以前のリリースのSnapCenter Plug-in for VMware vSphereからのアップグレード
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使
 
 NOTE: SCV 6.0へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。
 
-SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスによって、既存のプラグインの登録が解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
+SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスでは、既存のプラグインが登録解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
 
 
 
@@ -43,34 +43,34 @@ SnapCenter Plug-in for VMware vSphere 仮想アプライアンスを使用して
 | SCV 4.6 | SCV 4.7およびSCV 4.8へのアップグレード 
 |===
 
-TIP: アップグレードを開始する前に、 SnapCenter Plug-in for VMware vSphere OVA をバックアップします。
+TIP: アップグレードを開始する前に、SnapCenter Plug-in for VMware vSphere OVAをバックアップしてください。
 
 
-NOTE: ネットワーク設定を静的アドレスから DHCP アドレスに切り替えることはできません。
+NOTE: ネットワーク設定を静的からDHCPに切り替えることはできません。
 
 .手順
-. SnapCenter Plug-in for VMware vSphere を無効にしてアップグレードを準備します。
+. SnapCenter Plug-in for VMware vSphereを無効にしてアップグレードを準備します。
 +
 .. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されます。
 .. 左側のナビゲーションペインで * Configuration * をクリックし、次に Plug-in Details セクションの * Service * オプションをクリックしてプラグインを無効にします。
 
 
-. アップグレードの「 .iso 」ファイルをダウンロードします。
+. アップグレードファイルをダウンロードし `.iso` ます。
 +
-.. ネットアップサポートサイトにログインします。 。
+.. NetAppサポートサイトにログインし (https://mysupport.netapp.com/products/index.html[]ます）。
 .. 製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。
-.. SnapCenter Plug-in for VMware vSphere アップグレードの「 .iso 」ファイルを任意の場所にダウンロードしてください。
+.. SnapCenter Plug-in for VMware vSphereのアップグレードファイルを任意の場所にダウンロードし `.iso` ます。
 
 
-. アップグレードをインストールする。
+. アップグレードをインストールします。
 +
-.. ブラウザから VMware vSphere vCenter にアクセスします。
+.. ブラウザで、VMware vSphere vCenterに移動します。
 .. vCenter GUIで、* vSphere Client（HTML）*をクリックします。
 .. VMware vCenter Single Sign-On * ページにログインします。
 .. ナビゲータペインで、アップグレードするVMをクリックし、*[概要]*タブをクリックします。
 .. [*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。
 .. 選択したデータストアの「 * ファイル * 」タブで、リスト内の任意のフォルダをクリックし、「 * ファイルのアップロード * 」をクリックします。
-.. アップロードポップアップ画面で '.iso ファイルをダウンロードした場所に移動し '.iso ファイルイメージをクリックしてから '*Open* をクリックしますファイルがデータストアにアップロードされます。
+.. アップロードポップアップ画面で、ファイルをダウンロードした場所に移動し `.iso` 、ファイルイメージをクリックして*開く*をクリックし `.iso` ます。ファイルがデータストアにアップロードされます。
 .. アップグレードする VM に移動し、 * Summary * タブをクリックします。[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
 .. [CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。
 +
@@ -78,8 +78,8 @@ image:scpivs44_image42.png["vCenter UI"]
 
 .. ウィザードで、次の手順を実行します。
 +
-... Datastores カラムで '.iso ファイルをアップロードしたデータストアを選択します
-... [Contents] 列で、アップロードした「 .iso 」ファイルに移動し、 [File Type] フィールドで [ISO IMAGE] が選択されていることを確認して、 [OK] をクリックします。フィールドに「接続済み」ステータスが表示されるまで待ちます。
+... [Datastores]列で、ファイルをアップロードしたデータストアを選択し `.iso` ます。
+... [Contents]列で、アップロードしたファイルに移動し `.iso` 、[File Type]フィールドで[ISO image]が選択されていることを確認して、*[OK]*をクリックします。フィールドに「Connected」ステータスが表示されるまで待ちます。
 
 
 .. 仮想アプライアンスの [Summary] * タブにアクセスしてメンテナンスコンソールにログオンし、緑のラン矢印をクリックしてメンテナンスコンソールを起動します。

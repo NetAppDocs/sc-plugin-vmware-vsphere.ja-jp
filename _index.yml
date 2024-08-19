@@ -1,9 +1,7 @@
 ---
 indexpage:
-  title: SnapCenter Plug-in for VMware vSphere のドキュメント
-  summary: SnapCenter Plug-in for VMware vSphere （ SCV ）は Linux ベースの仮想アプライアンスです。スタンドアロン構成として、
-    VM 、データストア、および VMDK の高速でスペース効率に優れた、クラッシュ整合性のある、 VM と整合性のあるバックアップおよびリストア処理を実現します。また、
-    SnapCenter Server と連携して、 SnapCenter アプリケーション固有のプラグインを対象とした VMware 環境でのアプリケーションベースのバックアップおよびリストア処理もサポートします。
+  title: SnapCenter Plug-in for VMware vSphereのドキュメント
+  summary: SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。
   keywords: SnapCenter Plug-in for VMware vSphere, SCV
   lead: SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。このドキュメントライブラリでは、SnapCenter
     Plug-in for VMware vSphereバージョン6.0について説明します。
@@ -18,25 +16,25 @@ indexpage:
       url: "/scpivs44_deployment_planning_and_requirements.html"
     - title: クイックスタート
       url: "/scpivs44_quick_start_overview.html"
-  - title: VM 、 VMDK 、データストアを保護する
+  - title: VM、VMDK、データストアの保護
     links:
     - title: データを保護
       url: "/scpivs44_protect_data_overview.html"
     - title: バックアップをリストアする
       url: "/scpivs44_restore_from_backups_overview.html"
-    - title: REST APIs を使用します
+    - title: REST APIの使用
       url: "/scpivs44_rest_apis_overview.html"
   - title: ブログとコミュニティ
     links:
-    - title: ネットアップブログ– SCV
+    - title: NetAppブログ–SCV
       url: https://blog.netapp.com/tag/snapcenter/
-    - title: ネットアップコミュニティ– SCV
+    - title: NetAppコミュニティ–SCV
       url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
-  - title: リソースの追加
+  - title: その他のリソース
     links:
-    - title: SnapCenter ソフトウェアのドキュメント
+    - title: SnapCenterソフトウェアのドキュメント
       url: https://docs.netapp.com/us-en/snapcenter/index.html
-    - title: 以前のバージョンの SCV のドキュメント
+    - title: 以前のバージョンのSCVのドキュメント
       url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
-    - title: ネットアップのナレッジベース - SCV
+    - title: NetAppナレッジベース–SCV
       url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter

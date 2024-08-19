@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_minimum_ontap_privileges_required.html 
 keywords:  
-summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。 
+summary: 必要な最小ONTAP Privilegesは、データ保護に使用するSnapCenterプラグインによって異なります。 
 ---
-= ONTAP 権限が必要です
+= ONTAP Privilegesが必要です
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,16 +14,16 @@ summary: 必要な最小 ONTAP 権限は、データ保護に使用する SnapCe
 
 
 [role="lead"]
-必要な最小 ONTAP 権限は、データ保護に使用する SnapCenter プラグインによって異なります。
+必要な最小ONTAP Privilegesは、データ保護に使用するSnapCenterプラグインによって異なります。
 
 
 NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタマイズされたロールベースアクセスを持つすべてのONTAPユーザに対して、HTTPおよびONTAPIタイプのアプリケーションをユーザのログイン方法として追加する必要があります。これらのアプリケーションにアクセスできないと、バックアップは失敗します。ONTAPユーザのログイン方法の変更を認識するには、SCVサービスを再起動する必要があります。
 
 
 
-== 必要な最小 ONTAP 権限
+== 必要な最小ONTAP権限
 
-すべての SnapCenter プラグインには、次の最小権限が必要です。
+すべてのSnapCenterプラグインに必要な最小権限は次のとおりです。
 
 |===
 
@@ -31,12 +31,10 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 | フルアクセスコマンド：ONTAP 8.3以降で必要な最小限の権限。 
 
 
-| event generate-autosupport-log を指定します 
+| イベント生成- AutoSupportログ 
 
 
-| ジョブ履歴の表示
-ジョブの表示
-ジョブが停止しました 
+| job history show job show job stop 
 
 
 | lun lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping remove-reporting-nodes lun mapping show lun modify lun move-in-volume LUN offline LUN online lun persistent-reservation clear lun resize lun serial lun show をクリックします 
@@ -48,32 +46,7 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 | バージョン 
 
 
-| volume clone create を実行します
-volume clone show を実行します
-ボリュームクローンスプリット開始
-ボリュームクローンスプリットは停止します
-volume create を実行します
-volume delete
-ボリュームを削除します
-volume file clone create を実行します
-volume file show-disk-usage
-ボリュームはオフラインです
-ボリュームはオンラインです
-volume modify を使用します
-volume qtree create を実行します
-volume qtree delete
-volume qtree modify の略
-volume qtree show の略
-ボリュームの制限
-volume show のコマンドです
-volume snapshot create を実行します
-ボリューム Snapshot の削除
-volume snapshot modify の実行
-ボリューム Snapshot の名前が変更されます
-ボリューム Snapshot リストア
-ボリューム Snapshot の restore-file
-volume snapshot show の実行
-ボリュームのアンマウント 
+| volume clone create volume clone show volume clone split start volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume show volume snapshot create volume snapshot delete volume snapshot modify volume snapshot rename volume snapshot restore volume snapshot restore -file volume snapshot show volume unmount 
 
 
 | vserver cifs vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs share show vserver export-policy vserver export-policy create vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem host add vserver nvme subsystem host delete vserver nvme namespace network interface network interface failover-groupsを表示します。 
@@ -89,17 +62,17 @@ NOTE: サポートされていないvServerコマンドに関する警告メッ�
 
 
 
-== ONTAP に関するその他の情報
+== ONTAPに関するその他の情報
 
-* ONTAP 8.2.x を実行している場合：
+* ONTAP 8.2.xを実行している場合：
 +
-SnapCenter Plug-in for VMware vSphere の処理を実行するための適切な権限を取得するには、 Storage VM の「 vsadmin 」としてログインする必要があります。
+SnapCenter Plug-in for VMware vSphereの処理を実行するための適切な権限を割り当てるには、Storage VMにとしてログインする必要があります `vsadmin` 。
 
-* ONTAP 8.3 以降を実行している場合：
+* ONTAP 8.3以降を実行している場合：
 +
-「 vsadmin 」としてログインするか、上記の表に記載された最小権限を持つロールでログインする必要があります。
+またはとして、上記の表に記載されている最小限の権限を持つロールでログインする必要があります `vsadmin` 。
 
-* ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザは、クラスタStorage VMまたはStorage VMに関連付けることができます。
+* ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザをクラスタStorage VMまたはStorage VMに関連付けることができます。
 * SnapMirrorのアクティブ同期機能を使用するには、ONTAP 9.12.1以降のバージョンが必要です。
 * 改ざん防止スナップショット（TPS）機能を使用するには、次の手順を実行します。
 +

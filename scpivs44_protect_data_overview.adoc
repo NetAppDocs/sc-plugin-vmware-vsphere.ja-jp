@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_protect_data_overview.html 
 keywords:  
-summary: すべてのバックアップ処理はリソースグループに対して実行されます。リソースグループには 1 つ以上の VM とデータストアを任意の組み合わせで含めることができます。バックアップは、オンデマンドで実行することも、定義した保護スケジュールに従って実行することもできます。 
+summary: すべてのバックアップ処理はリソースグループに対して実行されます。リソースグループには、1つ以上のVMとデータストアを任意に組み合わせて含めることができます。バックアップはオンデマンドで実行することも、定義した保護スケジュールに従って実行することもできます。 
 ---
 = データ保護のワークフロー
 :hardbreaks:
@@ -14,20 +14,20 @@ summary: すべてのバックアップ処理はリソースグループに対�
 
 
 [role="lead"]
-SnapCenter vSphereクライアントを使用して、VM、VMDK、およびデータストアのデータ保護処理を実行します。すべてのバックアップ処理はリソースグループに対して実行されます。リソースグループには 1 つ以上の VM とデータストアを任意の組み合わせで含めることができます。バックアップは、オンデマンドで実行することも、定義した保護スケジュールに従って実行することもできます。
+SnapCenter vSphere Clientを使用して、VM、VMDK、およびデータストアのデータ保護処理を実行します。すべてのバックアップ処理はリソースグループに対して実行されます。リソースグループには、1つ以上のVMとデータストアを任意に組み合わせて含めることができます。バックアップはオンデマンドで実行することも、定義した保護スケジュールに従って実行することもできます。
 
-データストアをバックアップすると、そのデータストア内のすべての VM がバックアップされます。
+データストアをバックアップする場合は、そのデータストア内のすべてのVMがバックアップされます。
 
-バックアップ処理とリストア処理を同じリソースグループで同時に実行することはできません。
+同じリソースグループでバックアップ処理とリストア処理を同時に実行することはできません。
 
 SnapCenter Plug-in for VMware vSphereでサポートされる機能とサポートされない機能について説明します。 link:scpivs44_deployment_planning_and_requirements.html["導入の計画と要件"]
 
-MetroCluster 構成の場合：
+MetroCluster構成の場合：
 
 * フェイルオーバー後、SnapCenter Plug-in for VMware vSphereで保護関係を検出できないことがあります。詳細については、を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["技術情報アーティクル： Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover"^] 。
-* バックアップが失敗し、「 Unable to discover resources on SCV ： <xxx> …」というエラーが表示された場合 スイッチオーバー / スイッチバック後に NFS VM と VMFS VM の場合は、メンテナンスコンソールから SnapCenter VMware サービスを再起動します。
+* スイッチオーバー/スイッチバック後にNFS VMおよびVMFS VMのバックアップがエラーで失敗した場合は `Unable to discover resources on SCV: <xxx>…` 、メンテナンスコンソールからSnapCenter VMwareサービスを再起動します。
 
 
-次のワークフロー図に、バックアップ処理の実行順序を示します。
+次のワークフロー図は、バックアップ処理の実行順序を示しています。
 
 image:scpivs44_image13.png["バックアップ処理ワークフロー"]

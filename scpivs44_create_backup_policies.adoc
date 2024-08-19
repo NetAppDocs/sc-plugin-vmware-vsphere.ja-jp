@@ -4,7 +4,7 @@ permalink: scpivs44_create_backup_policies.html
 keywords:  
 summary:  
 ---
-= バックアップポリシーを作成する
+= バックアップポリシーの作成
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary:
 
 
 [role="lead"]
-以下の手順に従って、バックアップポリシーを作成します
+バックアップポリシーを作成するには、次の手順に従います。
 
 . SCVプラグインの左側のナビゲータペインで、*[Policies]*をクリックし、*[New Policy]*を選択します。
 . [ 新しいバックアップ・ポリシー * ] ページで、ポリシー設定情報を入力し、 [ * 追加 ] をクリックします。

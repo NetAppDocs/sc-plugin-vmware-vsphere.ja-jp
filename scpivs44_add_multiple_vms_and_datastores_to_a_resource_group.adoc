@@ -4,7 +4,7 @@ permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
 keywords:  
 summary: SnapCenter のVMware vSphere Clientのリソースグループの編集ウィザードを使用して、既存のリソースグループに複数のリソースを追加できます。 
 ---
-= リソースグループに複数の VM とデータストアを追加する
+= リソースグループへの複数のVMとデータストアの追加
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,33 +16,33 @@ summary: SnapCenter のVMware vSphere Clientのリソースグループの編集
 [role="lead"]
 SnapCenter VMware vSphere Clientの[Edit Resource Group]ウィザードを使用して、既存のリソースグループに複数のリソースを追加できます。
 
-リソースグループには、次のいずれかを含めることができます。
+リソースグループには次のいずれかを含めることができます。
 
-* 従来の VM と SAN および NAS のデータストアを任意に組み合わせたもの（ VVol データストアはサポートされません）。
-* 1 つの FlexGroup データストア（複数の VM のスパニングはサポートされていません）。
-* 1 つ以上の FlexVol データストア（複数の VM のスパニングがサポートされます）。
-* 1 つ以上の VVol VM が必要です。
+* 従来のVMとSANデータストアとNASデータストアの任意の組み合わせ（VVOLデータストアはサポートされません）。
+* 1つのFlexGroupデータストア（複数のVMにまたがることはサポートされません）。
+* 1つ以上のFlexVolデータストア（複数のVMにまたがることがサポートされます）。
+* 1つ以上のVVol VM。
 * 指定したvSphereタグが設定されているすべてのVVol VM。
-* 指定したフォルダ内のすべての VVol VM 。
+* 指定したフォルダ内のすべてのVVol VM。
 
 
 
-NOTE: 複数のVVolデータストアにまたがるVVol VM SnapCenter は、プライマリまたは選択したVVolデータストアにのみバックアップされるため、サポートされません。
+NOTE: SnapCenterでは、選択したプライマリのVVOLデータストアのVVOLのみがバックアップされるため、複数のVVOLデータストアにまたがるVVOL VMはサポートされません。
 
 .手順
 . SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*をクリックし、リソースグループを選択して*[リソースグループの編集]*をクリックし image:scpivs44_image39.png["編集アイコン"] てウィザードを開始します。
 . [* リソース *] ページで、次の操作を実行します。
 +
-.. Datastores フィールドで、追加する VM またはデータストアに移動します。
+.. [Datastores]フィールドで、追加するVMまたはデータストアに移動します。
 .. 使用可能なエンティティのリストで、リソースグループに追加する VM またはデータストアを 1 つ以上選択し、 * > * をクリックして選択したエンティティを選択リストに移動します。使用可能なすべてのエンティティを移動するには、*>>*をクリックします。
 +
-デフォルトでは、使用可能なエンティティリストには、 Datacenter オブジェクトが表示されます。データストアをクリックすると、データストア内の VM を表示してリソースグループに追加できます。
+デフォルトでは、[Available entities]リストには[Datacenter]オブジェクトが表示されます。データストアをクリックすると、データストア内のVMが表示され、リソースグループに追加されます。
 
 +
-[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。というメッセージが表示された場合は `Some entities are not SnapCenter compatible` 、選択したVMまたはデータストアがSnapCenterと互換性がありません。詳細については、を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理します"] 。
+[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。というメッセージが表示された場合は `Some entities are not SnapCenter compatible` 、選択したVMまたはデータストアがSnapCenterと互換性がありません。詳細については、を参照してください link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["互換性チェックの失敗を管理"] 。
 
 
 
-. 追加する VM またはデータストアごとに手順 2 を繰り返します。
+. 追加するVMまたはデータストアごとに手順2を繰り返します。
 . 「 * 次へ * 」をクリックして、「 * 概要 * 」ページに移動し、サマリーを確認して「 * 完了 * 」をクリックします。
 

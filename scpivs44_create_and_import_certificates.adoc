@@ -4,7 +4,7 @@ permalink: scpivs44_create_and_import_certificates.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereは、クライアントブラウザとのセキュアな通信にSSL暗号化を採用しています。この方法ではネットワーク全体でデータを暗号化できますが、新しい自己署名証明書を作成するか、独自の認証局（CA）インフラまたはサードパーティのCAを使用すると、証明書が環境に固有であることが保証されます。 
 ---
-= 証明書を作成してインポートします
+= 証明書の作成とインポート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST API を使用してリソースグループの作成や変更の処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してリソースグループの作成処理と変更処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。 
 ---
-= REST API のワークフローを使用して、リソースグループを作成および変更できます
+= リソースグループを作成および変更するためのREST APIワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,32 +14,33 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用してリソー
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用してリソースグループの作成や変更の処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してリソースグループの作成処理と変更処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。
 
-各REST APIに、を追加します `\https://<server>:<port>` を使用して完全なエンドポイントを形成します。
+各REST APIについて、REST APIの先頭にを追加し `\https://<server>:<port>` て完全なエンドポイントを形成します。
 
-リソースグループを作成するには、次のワークフローを実行します。
-
-|===
-| ステップ | REST API | コメント 
-
-
-| 1. | 「 /4.1/policies 」と入力します | `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、を使用します `Create Policy` REST APIを使用して新しいポリシーを作成する。 
-
-
-| 2. | 「 /4.1/resource-key グループ」を使用します | 「リソースグループの作成」では、指定したポリシーを持つリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。 
-|===
-リソースグループを変更するには、次のワークフローを実行します。
+リソースグループを作成するワークフローは次のとおりです。
 
 |===
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/resource-key グループ」を使用します | `Get List of Resource Groups` VMware vSphereクライアントのリソースグループのリストを取得します。変更する * resourceGroupId * をメモします。 
+| 1 | `/4.1/policies` | `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、REST APIを使用して `Create Policy` 新しいポリシーを作成します。 
 
 
-| 2. | 「 /4.1/policies 」と入力します | 割り当てられたポリシーを変更する場合は、 `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * を変更する際に使用する * policyId * をメモします。 
+| 2 | `/4.1/resource-groups` | `Create a Resource Group` 指定したポリシーでリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。 
+|===
+リソースグループを変更するワークフローは次のとおりです。
+
+|===
+| ステップ | REST API | コメント 
 
 
-| 3. | `/4.1/resource-groups/{resouceGroupId}` | 「リソースグループを更新」は、指定したリソースグループを変更します。手順 1 から * resourceGroupId * を渡します。必要に応じて、手順 2 の * policyId * を渡し、その他すべての必須属性に加えて * frequency * の詳細を入力します。 
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` VMware vSphereクライアントのリソースグループのリストを取得します。変更する * resourceGroupId * をメモします。 
+
+
+| 2 | `/4.1/policies` | 割り当てられているポリシーを変更する場合は `Get Policies` 、VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * を変更する際に使用する * policyId * をメモします。 
+
+
+| 3 | `/4.1/resource-groups/
+{resouceGroupId}` | `Update a Resource Group` 指定したリソースグループを変更します。手順 1 から * resourceGroupId * を渡します。必要に応じて、手順 2 の * policyId * を渡し、その他すべての必須属性に加えて * frequency * の詳細を入力します。 
 |===

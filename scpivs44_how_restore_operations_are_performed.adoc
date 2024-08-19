@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary: VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リストア処理を実行するために、 Storage VMotion でクローンおよびマウント処理を使用します。NFS 環境の場合、このプラグインはネイティブの ONTAP Single File SnapRestore （ SFSR ）を使用して、ほとんどのリストア処理を効率よく実行できます。VVOL VM の場合、このプラグインは ONTAP 単一ファイル Snapshot リストアおよび SnapMirror リストアをリストア処理に使用します。 
+summary: VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VM の場合、このプラグインは ONTAP 単一ファイル Snapshot リストアおよび SnapMirror リストアをリストア処理に使用します。 
 ---
 = リストア処理の実行方法
 :hardbreaks:
@@ -14,34 +14,34 @@ summary: VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リ
 
 
 [role="lead"]
-VMFS 環境の場合、 SnapCenter Plug-in for VMware vSphere は、リストア処理を実行するために、 Storage VMotion でクローンおよびマウント処理を使用します。NFS 環境の場合、このプラグインはネイティブの ONTAP Single File SnapRestore （ SFSR ）を使用して、ほとんどのリストア処理を効率よく実行できます。VVOL VM の場合、プラグインは ONTAP Single File Snapshot Restore （ ONTAP SFSR ）と SnapMirror Restore をリストア処理に使用します。次の表に、リストア処理の実行方法を示します。
+VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはリストア処理にONTAP Single File Snapshot Restore（ONTAP SFSR）とSnapMirror Restoreを使用します。次の表に、リストア処理の実行方法を示します。
 
 |===
-| リストア処理 | 移動元 | を使用して実行 
+| リストア処理 | 開始 | を使用して実行 
 
 
-| VM および VMDK | プライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
+| VMとVMDK | プライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VM および VMDK | セカンダリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
+| VMとVMDK | セカンダリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VM および VMDK が削除された | プライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
+| 削除されたVMとVMDK | プライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VM および VMDK が削除された | セカンダリバックアップ | NFS 環境： Storage VMotion VMFS 環境でのクローン作成とマウント： Storage VMotion を使用したクローン作成とマウント 
+| 削除されたVMとVMDK | セカンダリバックアップ | NFS 環境： Storage VMotion VMFS 環境でのクローン作成とマウント： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VM および VMDK | VM と整合性のあるプライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
+| VMとVMDK | VMと整合性のあるプライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VM および VMDK | VM と整合性のあるセカンダリバックアップ | NFS 環境： Storage VMotion VMFS 環境でのクローン作成とマウント： Storage VMotion を使用したクローン作成とマウント 
+| VMとVMDK | VMと整合性のあるセカンダリバックアップ | NFS 環境： Storage VMotion VMFS 環境でのクローン作成とマウント： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VVol VM | crash-consistent プライマリバックアップ | ONTAP ：すべてのプロトコルを対象とした単一ファイルの SnapRestore 
+| VVOL VM | crash-consistentプライマリバックアップ | すべてのプロトコルに対応するONTAP単一ファイルSnapRestore 
 
 
-| VVol VM | crash-consistent セカンダリバックアップ | すべてのプロトコルを対象とした ONTAP の SnapMirror リストア 
+| VVOL VM | crash-consistentセカンダリバックアップ | すべてのプロトコルでのONTAP SnapMirrorリストア 
 
 
 | FlexGroup VM | プライマリバックアップ  a| 
@@ -52,10 +52,10 @@ VMFS 環境： FlexGroup ではサポートされません
 
 
 | FlexGroup VM | セカンダリバックアップ  a| 
-NFS 環境：
+NFS環境：
 
 * ONTAP バージョン 9.10.1 以降を使用している場合の ONTAP SnapMirror リストア
-* 以前 ONTAP のバージョンの Storage VMotion を使用して、クローン作成とマウントを行います
+* 以前のバージョンのStorage VMotion for ONTAPを使用したクローン作成とマウント
 
 
 VMFS 環境： FlexGroup ではサポートされません
@@ -64,7 +64,7 @@ VMFS 環境： FlexGroup ではサポートされません
 
 NOTE: VVolコンテナのリバランシング後にVVol VMをリストアすることはできません。
 
-ゲストファイルのリストア操作は、 NFS 環境と VMFS 環境の両方で、（ Storage VMotion ではなく）クローン操作とマウント操作を使用して実行されます。
+ゲストファイルのリストア処理は、NFS環境とVMFS環境の両方で、クローンおよびマウント処理（Storage VMotionではない）を使用して実行されます。
 
 
 IMPORTANT: リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり `Host unresolved volumes is null` `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。

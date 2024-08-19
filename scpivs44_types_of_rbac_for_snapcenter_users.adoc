@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_types_of_rbac_for_snapcenter_users.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere を使用している場合、 vCenter Server によってさらに細かく RBAC を実装できます。このプラグインは、 vCenter Server RBAC と ONTAP RBAC の両方をサポートしています。 
+summary: SnapCenter Plug-in for VMware vSphereを使用している場合は、vCenter ServerによってさらにレベルのRBACが提供されます。このプラグインでは、vCenter Server RBACとONTAP RBACの両方がサポートされています。 
 ---
-= SnapCenter Plug-in for VMware vSphere ユーザ用の RBAC のタイプ
+= SnapCenter Plug-in for VMware vSphereユーザ向けのRBACのタイプ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere を使用している場合、 vC
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere を使用している場合、 vCenter Server によってさらに細かく RBAC を実装できます。このプラグインは、 vCenter Server RBAC と ONTAP RBAC の両方をサポートしています。
+SnapCenter Plug-in for VMware vSphereを使用している場合は、vCenter ServerによってさらにレベルのRBACが提供されます。このプラグインでは、vCenter Server RBACとONTAP RBACの両方がサポートされています。
 
 
 
@@ -24,14 +24,18 @@ SnapCenter Plug-in for VMware vSphere を使用している場合、 vCenter Ser
 
 SnapCenter Plug-in for VMware vSphereを導入すると、vCenterでのSnapCenter処理用に次のロールが作成されます。
 
-「 CV 管理者」「 CV ゲストファイルの復元」「 CV の復元」「 S CV ビュー」
+`SCV Administrator`
+`SCV Backup`
+`SCV Guest File Restore`
+`SCV Restore`
+`SCV View`
 
-vSphere 管理者は、次の手順で vCenter Server RBAC を設定します。
+vSphere管理者は、次の手順でvCenter Server RBACを設定します。
 
-* vCenter Server アクセス許可をルートオブジェクト（ルートフォルダ）に対して設定します。その後、アクセス許可が不要な子エンティティのアクセスを禁止することでセキュリティを強化できます。
-* Active Directory ユーザに SCV ロールを割り当てます。
+* ルートオブジェクト（ルートフォルダとも呼ばれます）に対するvCenter Serverアクセス許可を設定します。その後、アクセス許可が不要な子エンティティのアクセスを禁止することでセキュリティを強化できます。
+* Active DirectoryユーザにSCVロールを割り当てます。
 +
-最低限、すべてのユーザが vCenter オブジェクトを表示できる必要があります。この権限がないユーザはVMware vSphere Client GUIにアクセスできません。
+少なくとも、すべてのユーザがvCenterオブジェクトを表示できる必要があります。この権限がないと、ユーザはVMware vSphere Client GUIにアクセスできません。
 
 
 
@@ -39,20 +43,20 @@ vSphere 管理者は、次の手順で vCenter Server RBAC を設定します。
 
 == ONTAP RBAC
 
-このセキュリティメカニズムは、 SnapCenter サーバのアプリケーションと整合性のある（ VMDK 経由のアプリケーション）ジョブにのみ適用されます。特定のストレージシステムに対して、 SnapCenter から、データストアのストレージをバックアップするなどの特定のストレージ処理を実行する権限を制限します。
+このセキュリティメカニズムは、SnapCenterサーバのアプリケーション整合性（VMDK経由のアプリケーション整合性）ジョブにのみ適用されます。このレベルでは、特定のストレージシステムに対して、データストアのストレージのバックアップなど、特定のストレージ処理をSnapCenterで実行する権限が制限されます。
 
-ONTAP と SnapCenter RBAC を設定するには、次のワークフローを使用します。
+ONTAPおよびSnapCenter RBACを設定するには、次のワークフローを使用します。
 
-. ストレージ管理者が、必要な権限を持つロールを Storage VM 上に作成します。
+. ストレージ管理者が、必要な権限を持つロールをStorage VM上に作成します。
 . 次に、ストレージ管理者がそのロールをストレージユーザに割り当てます。
-. SnapCenter 管理者が、ストレージユーザ名を使用して、 Storage VM を SnapCenter サーバに追加します。
+. SnapCenter管理者は、そのストレージユーザ名を使用してSnapCenterサーバにStorage VMを追加します。
 . 次に、 SnapCenter 管理者が SnapCenter ユーザにロールを割り当てます。
 
 
 
 
-== RBAC 権限の検証ワークフロー
+== RBAC権限の検証ワークフロー
 
-次の図は、 RBAC 権限（ vCenter と ONTAP の両方）の検証ワークフローの概要を示しています。
+次の図に、RBAC権限（vCenterとONTAPの両方）の検証ワークフローの概要を示します。
 
-image:scpivs44_image1.png["RBAC 権限の検証ワークフロー"]
+image:scpivs44_image1.png["RBAC権限の検証ワークフロー"]

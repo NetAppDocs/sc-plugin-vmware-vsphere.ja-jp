@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_quick_start_overview.html 
 keywords:  
-summary: クイックスタートのドキュメントには、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの導入および SnapCenter Plug-in for VMware vSphere の有効化の手順が要約して記載されています。ここに記載する手順は、 SnapCenter がインストールされておらず、 VM とデータストアのみを保護する必要があるお客様を対象としています。 
+summary: このクイックスタートドキュメントには、SnapCenter Plug-in for VMware vSphere仮想アプライアンスを導入してSnapCenter Plug-in for VMware vSphereを有効にする手順がまとめられています。これらの手順は、SnapCenterをまだインストールしておらず、VMとデータストアのみを保護したいお客様を対象としています。 
 ---
 = 概要
 :hardbreaks:
@@ -14,6 +14,6 @@ summary: クイックスタートのドキュメントには、 SnapCenter Plug-
 
 
 [role="lead"]
-クイックスタートのドキュメントには、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの導入および SnapCenter Plug-in for VMware vSphere の有効化の手順が要約して記載されています。ここに記載する手順は、 SnapCenter がインストールされておらず、 VM とデータストアのみを保護する必要があるお客様を対象としています。
+このクイックスタートドキュメントには、SnapCenter Plug-in for VMware vSphere仮想アプライアンスを導入してSnapCenter Plug-in for VMware vSphereを有効にする手順がまとめられています。これらの手順は、SnapCenterをまだインストールしておらず、VMとデータストアのみを保護したいお客様を対象としています。
 
 作業を開始する前に、を参照してください link:scpivs44_deployment_planning_and_requirements.html["導入の計画と要件"]。

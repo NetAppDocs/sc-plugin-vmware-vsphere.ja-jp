@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST API を使用してデータストアのバックアップのマウントやアンマウントの処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してデータストアバックアップのマウントおよびアンマウント処理を実行するには、所定の順序のREST API呼び出しに従う必要があります。 
 ---
-= REST API のワークフローを使用してデータストアをマウントおよびアンマウントできます
+= REST APIワークフローによるデータストアのマウントとアンマウント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: SnapCenter Plug-in for VMware vSphere REST API を使用してデータ
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST API を使用してデータストアのバックアップのマウントやアンマウントの処理を実行するには、規定された順序で REST API 呼び出しを実行する必要があります。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してデータストアバックアップのマウントおよびアンマウント処理を実行するには、所定の順序のREST API呼び出しに従う必要があります。
 
-各REST APIに、を追加します `\https://<server>:<port>` を使用して完全なエンドポイントを形成します。
+各REST APIについて、REST APIの先頭にを追加し `\https://<server>:<port>` て完全なエンドポイントを形成します。
 
 
 
@@ -26,30 +26,35 @@ SnapCenter Plug-in for VMware vSphere REST API を使用してデータストア
 | ステップ | REST API | コメント 
 
 
-| 1. | に進みます `\http://<vCenter-IP>/mob` | VMware Managed Objects の URL からデータストア MORef を探します。マウントするデータストアの * MORef * をメモします。 
+| 1 | に移動 `\http://<vCenter-IP>/mob` | VMware Managed ObjectsのURLからデータストアMORefを検索します。マウントするデータストアの * MORef * をメモします。 
 
 
-| 2. | 「 /4.1/datastores 」 /{moref}/backups 」 | 「データストアのバックアップのリストを取得」は、指定されたデータストアのバックアップのリストを取得します。手順 1 から * MORef * を渡します。マウントする * backupid * をメモします。 
+| 2 | `/4.1/datastores/{moref}/
+backups` | `Get the list of backups for a datastore` 指定したデータストアのバックアップのリストを取得します。手順 1 から * MORef * を渡します。マウントする * backupid * をメモします。 
 
 
-| 3. | 「 /4.1/datastores /backups/{backupid}/snapshotlocators 」と入力します | 'get the list of Snapshot Location' は ' 指定されたバックアップの場所に関する詳細を取得します手順 2 から * backupid * を渡します。データストア * と、 * snapshotsLocalizationsList * リスト内の場所をメモします。 
+| 3 | `/4.1/datastores/backups/
+{backupId}/snapshotlocators` | `Get the list of Snapshot Locations` 指定したバックアップの場所に関する詳細を取得します。手順 2 から * backupid * を渡します。データストア * と、 * snapshotsLocalizationsList * リスト内の場所をメモします。 
 
 
-| 4. | 「 /4.1/datastores 」 /{moref}/availableEsxHosts 」 | 利用可能な ESXi ホストのリストを取得しますマウント操作に使用できる ESXi ホストのリストを取得します手順 1 から * MORef * を渡します。入手可能な EsxHostsList* 情報に注意してください。 
+| 4 | `/4.1/datastores/{moref}/
+availableEsxHosts` | `Get the list of Available Esxi Hosts` マウント処理に使用できるESXiホストのリストを取得します。手順 1 から * MORef * を渡します。入手可能な EsxHostsList* 情報に注意してください。 
 
 
-| 5. | 「 /4.1/datastores /backups/{backupid}/mount` 」 | 「バックアップ用のデータストアのマウント」では、指定したデータストアバックアップがマウントされます。手順 2 から * backupid * を渡します。データストア * 属性と * 場所 * 属性で、手順 3 の「 snapmirror shotLocationsList 」からの情報を渡します。「 * esxHostName * 」属性で、手順 4 の「 available EsxHostsList 」からの情報を渡します。 
+| 5 | `/4.1/datastores/backups/
+{backupId}/mount` | `Mount datastores for a backup` 指定したデータストアバックアップをマウントします。手順 2 から * backupid * を渡します。「* datastore *」属性と「* location *」属性で、手順3の情報を渡します `snapshotLocationsList` 。「 * esxHostName * 」属性で、手順 4 の「 available EsxHostsList 」からの情報を渡します。 
 |===
 
 
-== データストアをアンマウントするワークフローは次のとおりです。
+== データストアをアンマウントするには、次のワークフローを実行します。
 
 |===
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/datastores /backups/{backupid}/mounted 」となります | マウントされたデータストアのリストを取得しますアンマウントするデータストア * MORef * をメモします。 
+| 1 | `/4.1/datastores/backups/
+{backupId}/mounted` | `Get the list of mounted datastores`です。アンマウントするデータストア * MORef * をメモします。 
 
 
-| 2. | 「 /4.1/datastores /unmount 」 | 「バックアップのためにデータストアをアンマウント」は、指定されたデータストアのバックアップをアンマウントします。手順 1 からデータストア * MORef * を渡します。 
+| 2 | `/4.1/datastores/unmount` | `UnMount datastores for a backup` 指定したデータストアバックアップをアンマウントします。手順 1 からデータストア * MORef * を渡します。 
 |===

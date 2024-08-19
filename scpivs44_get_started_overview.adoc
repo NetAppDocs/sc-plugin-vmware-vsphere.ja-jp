@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_get_started_overview.html 
 keywords:  
-summary: SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。 
+summary: SnapCenterの機能を使用して仮想マシン上のVM、データストア、アプリケーションと整合性のあるデータベースを保護するには、SnapCenter Plug-in for VMware vSphereを導入する必要があります。 
 ---
 = 導入の概要
 :hardbreaks:
@@ -14,6 +14,6 @@ summary: SnapCenter の機能を使用して仮想マシン、データストア
 
 
 [role="lead"]
-SnapCenter の機能を使用して仮想マシン、データストア、およびアプリケーションと整合性のあるデータベースを保護するには、 SnapCenter Plug-in for VMware vSphere を導入する必要があります。
+SnapCenterの機能を使用して仮想マシン上のVM、データストア、アプリケーションと整合性のあるデータベースを保護するには、SnapCenter Plug-in for VMware vSphereを導入する必要があります。
 
-既存の SnapCenter ユーザは、新しい SnapCenter ユーザとは異なる導入ワークフローを使用する必要があります。
+既存のSnapCenterユーザは、新しいSnapCenterユーザとは別の導入ワークフローを使用する必要があります。

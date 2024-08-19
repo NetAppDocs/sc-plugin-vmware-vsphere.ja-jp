@@ -4,7 +4,7 @@ permalink: scpivs44_disable_and_enable_plugin.html
 keywords:  
 summary: SnapCenterのデータ保護機能が不要になった場合は、SnapCenter Plug-in for VMware vSphereの設定を変更する必要があります。たとえば、テスト環境にプラグインを導入した場合は、その環境で SnapCenter 機能を無効にして、本番環境で有効にする必要があります。 
 ---
-= SnapCenter Plug-in for VMware vSphere を無効にして有効にします
+= SnapCenter Plug-in for VMware vSphereを無効にして有効にする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,12 +16,12 @@ summary: SnapCenterのデータ保護機能が不要になった場合は、Snap
 [role="lead"]
 SnapCenterのデータ保護機能が不要になった場合は、SnapCenter Plug-in for VMware vSphereの設定を変更する必要があります。たとえば、テスト環境にプラグインを導入した場合は、その環境で SnapCenter 機能を無効にして、本番環境で有効にする必要があります。
 
-.作業を開始する前に
+.開始する前に
 * 管理者権限が必要です。
-* 実行中の SnapCenter ジョブがないことを確認します。
+* 実行中のSnapCenterジョブがないことを確認します。
 
 
-.このタスクについて
+.タスクの内容
 SnapCenter Plug-in for VMware vSphereを無効にすると、すべてのリソースグループが中断され、プラグインがvCenterで拡張機能として登録解除されます。
 
 SnapCenter Plug-in for VMware vSphereを有効にすると、プラグインがvCenterで拡張機能として登録され、すべてのリソースグループが本番モードになり、すべてのスケジュールが有効になります。
@@ -29,28 +29,28 @@ SnapCenter Plug-in for VMware vSphereを有効にすると、プラグインがv
 .手順
 . オプション：新しい仮想アプライアンスにリストアする場合に備えて、SnapCenter Plug-in for VMware vSphere MySQLリポジトリをバックアップします。
 +
-link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["SnapCenter Plug-in for VMware vSphere MySQL データベースをバックアップします"]。
+link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html["SnapCenter Plug-in for VMware vSphere MySQLデータベースのバックアップ"]です。
 
 . の形式を使用して、SnapCenter Plug-in for VMware vSphere管理GUIにログインし `\https://<OVA-IP-address>:8080`ます。導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。
 +
 プラグインの導入時に、SnapCenter Plug-in for VMware vSphereのIPアドレスが表示されます。
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
-. 選択を確定します。
+. 選択内容を確認します。
 +
 ** VMと整合性のあるバックアップを実行するためにSnapCenter Plug-in for VMware vSphereのみを使用した場合
 +
-プラグインが無効になっており、これ以上の操作は必要ありません。
+プラグインは無効になっており、これ以上の操作は必要ありません。
 
 ** SnapCenter Plug-in for VMware vSphereを使用してアプリケーションと整合性のあるバックアップを実行した場合
 +
-プラグインが無効になっているため、さらにクリーンアップする必要があります。
+プラグインが無効になっているため、さらにクリーンアップが必要です。
 
 +
-... VMware vSphere にログインします。
-... VM の電源をオフにします。
+... VMware vSphereにログインします。
+... VMの電源をオフにします。
 ... 左側のナビゲーション画面で、SnapCenter Plug-in for VMware vSphereのインスタンス（仮想アプライアンスの導入時に使用されたファイルの名前）を右クリックし `.ova` 、*[ディスクから削除]*を選択します。
-... SnapCenter にログインして、 vSphere ホストを削除します。
+... SnapCenterにログインし、vSphereホストを削除します。
 
 
 

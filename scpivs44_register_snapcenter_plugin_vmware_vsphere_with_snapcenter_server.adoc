@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_register_snapcenter_plugin_vmware_vsphere_with_snapcenter_server.html 
 keywords:  
-summary: SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。 
+summary: SnapCenter（仮想化されたデータベースとファイルシステムのアプリケーションベースの保護ワークフロー）でVMDKを介したアプリケーションワークフローを実行する場合は、SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録する必要があります。 
 ---
-= SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録
+= SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,24 +14,24 @@ summary: SnapCenter でアプリケーションオーバー VMDK ワークフロ
 
 
 [role="lead"]
-SnapCenter でアプリケーションオーバー VMDK ワークフロー（仮想化されたデータベースおよびファイルシステム用のアプリケーションベースの保護ワークフロー）を実行する場合は、 SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録する必要があります。
+SnapCenter（仮想化されたデータベースとファイルシステムのアプリケーションベースの保護ワークフロー）でVMDKを介したアプリケーションワークフローを実行する場合は、SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録する必要があります。
 
-SnapCenter を使用していて、 SnapCenter 4.2 にアップグレードし、アプリケーション over VMDK のバックアップを SnapCenter Plug-in for VMware に移行した場合は、移行コマンドによってプラグインが自動的に登録されます。
+SnapCenterユーザがSnapCenter 4.2にアップグレードし、VMDK経由のアプリケーションバックアップをSnapCenter Plug-in for VMwareに移行した場合は、migrationコマンドによってプラグインが自動的に登録されます。
 
-.作業を開始する前に
-* SnapCenter サーバ 4.2 以降が実行されている必要があります。
-* SnapCenter Plug-in for VMware vSphere を導入して有効にしておく必要があります。
+.開始する前に
+* SnapCenterサーバ4.2以降を実行している必要があります。
+* SnapCenter Plug-in for VMware vSphereを導入して有効にしておく必要があります。
 
 
-.このタスクについて
-* SnapCenter Plug-in for VMware vSphere を SnapCenter サーバに登録するには、 SnapCenter GUI を使用して「 vSphere 」タイプのホストを追加します。
+.タスクの内容
+* SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録するには、SnapCenter GUIを使用して「vSphere」タイプのホストを追加します。
 +
 ポート8144は、SnapCenter Plug-in for VMware vSphere内の通信用に事前定義されています。
 
 +
-SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ SnapCenter Server 4.2 に登録することで、 VM に対するアプリケーションベースのデータ保護処理をサポートできます。複数の SnapCenter Server に同じ SnapCenter Plug-in for VMware vSphere を登録することはできません。
+SnapCenter Plug-in for VMware vSphereの複数のインスタンスを同じSnapCenter Server 4.2に登録することで、VMでのアプリケーションベースのデータ保護処理をサポートできます。同じSnapCenter Plug-in for VMware vSphereを複数のSnapCenter Serverに登録することはできません。
 
-* リンクモードの vCenter の場合は、 vCenter ごとに SnapCenter Plug-in for VMware vSphere を登録する必要があります。
+* vCenterがリンクモードの場合は、vCenterごとにSnapCenter Plug-in for VMware vSphereを登録する必要があります。
 
 
 .手順
@@ -41,28 +41,28 @@ SnapCenter Plug-in for VMware vSphere の複数のインスタンスを同じ Sn
 . [Add Hosts] ダイアログ・ボックスで ' 次の表に示すように SnapCenter サーバに追加するホストを指定します
 +
 |===
-| フィールド名 | 操作 
+| このフィールドでは… | 操作 
 
 
 | ホストタイプ | ホストのタイプとして「 * vsphere * 」を選択します。 
 
 
-| ホスト名 | 仮想アプライアンスの IP アドレスを確認します。 
+| ホスト名 | 仮想アプライアンスのIPアドレスを確認します。 
 
 
 | クレデンシャル | 導入時に指定したSnapCenter Plug-in for VMware vSphereのユーザ名とパスワードを入力します。 
 |===
 . [Submit （送信） ] をクリックします。
 +
-VM ホストが正常に追加されると、 [Managed Hosts] タブに表示されます。
+追加されたVMホストは、[Managed Hosts]タブに表示されます。
 
 . 左側のナビゲーションペインで、*[設定]*をクリックし、*[クレデンシャル]*タブをクリックし、*[追加]*を選択して仮想アプライアンスのクレデンシャルを追加します。
-. SnapCenter Plug-in for VMware vSphere の導入時に指定したクレデンシャル情報を入力します。
+. SnapCenter Plug-in for VMware vSphereの導入時に指定したクレデンシャル情報を入力します。
 +
 
-NOTE: [Authentication] フィールドに [Linux] を選択する必要があります。
+NOTE: [Authentication]フィールドで[Linux]を選択する必要があります。
 
 
 
-.完了後
-SnapCenter Plug-in for VMware vSphere のクレデンシャルが変更された場合は、 SnapCenter の管理対象ホストページを使用して SnapCenter サーバで登録を更新する必要があります。
+.終了後
+SnapCenter Plug-in for VMware vSphereのクレデンシャルが変更された場合は、SnapCenterの[Managed Hosts]ページを使用してSnapCenterサーバでの登録を更新する必要があります。

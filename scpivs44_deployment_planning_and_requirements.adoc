@@ -40,27 +40,27 @@ SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、�
 
 
 
-* VVol VM（VMware VVOLデータストア上のVM）を保護するには、まずVMware vSphere用のONTAP ツールを導入する必要があります。ONTAP ツールは、ONTAP およびVMware Web Client上でVVol用のストレージをプロビジョニングして設定します。
+* VVOL VM（VMware VVOLデータストア上のVM）を保護するには、最初にONTAP tools for VMware vSphereを導入する必要があります。ONTAP toolsは、ONTAPおよびVMware WebクライアントでVVOL用のストレージをプロビジョニングおよび設定します。
 +
-詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
+詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere向けONTAPツール"^]
 
 +
-サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 * SnapCenter Plug-in for VMware vSphereでは、Storage vMotionをサポートする仮想マシンの制限により、共有PCIデバイスまたはPCIeデバイス（NVIDIA Grid GPUなど）のサポートが制限されます。詳細については、ベンダーのドキュメント『VMware導入ガイド』を参照してください。
 +
-** サポートされる内容：
+** サポート内容：
 +
-リソースグループを作成しています
+リソースグループの作成
 
 +
-VM 整合性なしでバックアップを作成する
+VMの整合性を伴わないバックアップの作成
 
 +
-すべての VMDK が NFS データストアにあり、かつ Storage vMotion を使用する必要がない場合の VM 全体のリストア
+すべてのVMDKがNFSデータストアにあり、プラグインでStorage vMotionを使用する必要がない場合の、VM全体のリストア
 
 +
-VMDK の接続と接続解除
+VMDKの接続と接続解除
 
 +
 データストアのマウントとアンマウント
@@ -68,16 +68,16 @@ VMDK の接続と接続解除
 +
 ゲストファイルのリストア
 
-** サポートされない機能：
+** サポートされていないもの：
 +
-VM と整合性のあるバックアップを作成しています
+VM整合性を維持したバックアップの作成
 
 +
-VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全体のリストア
+VMFSデータストア上に1つ以上のVMDKがある場合のVM全体のリストア
 
 
 
-* SnapCenter Plug-in for VMware vSphereの制限事項の詳細については、を参照してください link:scpivs44_release_notes.html["『 SnapCenter Plug-in for VMware vSphere リリースノート』"^]。
+* SnapCenter Plug-in for VMware vSphereの制限事項の詳細については、を参照してください link:scpivs44_release_notes.html["SnapCenter Plug-in for VMware vSphere リリースノート"^]。
 
 
 
@@ -88,20 +88,20 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | 次のライセンスを提供する必要があります。 | ライセンス要件 
 
 
-| ONTAP | 次のいずれか： SnapMirror または SnapVault （関係のタイプに関係なくセカンダリデータ保護を行う場合） 
+| ONTAP | いずれか：SnapMirrorまたはSnapVault（関係のタイプに関係なくセカンダリデータ保護用） 
 
 
-| その他の製品 | Storage vMotion を使用するリストア処理を実行するには、 vSphere Standard 、 Enterprise 、または Enterprise Plus vSphere ライセンスが必要です。vSphere Essentials または Essentials Plus ライセンスには、 Storage vMotion は含まれません。 
+| その他の製品 | vSphere Standard、Enterprise、またはEnterprise Plusリストア処理（Storage vMotionを使用）を実行するには、vSphereライセンスが必要です。 vSphere EssentialsまたはEssentials Plusライセンスには、Storage vMotionは含まれていません。 
 
 
-| 主な目的地 | SnapCenter Standard ： VMware SnapRestore を介したアプリケーションベースの保護を実行する場合に必要： VMware の VM およびデータストアのみ FlexClone のリストア処理を実行する場合に必要： VMware の VM およびデータストアのみのマウント処理と接続処理に使用 
+| プライマリデスティネーション | SnapCenter Standard ： VMware SnapRestore を介したアプリケーションベースの保護を実行する場合に必要： VMware の VM およびデータストアのみ FlexClone のリストア処理を実行する場合に必要： VMware の VM およびデータストアのみのマウント処理と接続処理に使用 
 
 
 | セカンダリデスティネーション | SnapCenter Standard ： VMware FlexClone を介したアプリケーションベースの保護のフェイルオーバー処理に使用： VMware の VM およびデータストアのみでのマウント処理と接続処理に使用されます 
 |===
 
 
-== ソフトウェアサポート
+== ソフトウェアのサポート
 
 |===
 | 項目 | サポートされるバージョン 
@@ -113,21 +113,21 @@ VMFS データストア上にある VMDK が 1 つ以上ある場合の VM 全�
 | ESXiサーバ | 7.0U1以上 
 
 
-| IP アドレス | IPv4 、 IPv6 
+| IPアドレス | IPv4、IPv6 
 
 
 | VMware TLS | 1.2、1.3 
 
 
-| SnapCenter サーバ上の TLS | 1.2と1.3 SnapCenterサーバは、VMDKのデータ保護処理を介してアプリケーション用のSnapCenter Plug-in for VMware vSphereと通信するためにこのプロトコルを使用します。 
+| SnapCenterサーバ上のTLS | 1.2と1.3 SnapCenterサーバは、VMDKのデータ保護処理を介してアプリケーション用のSnapCenter Plug-in for VMware vSphereと通信するためにこのプロトコルを使用します。 
 
 
-| VMware Application vStorage API for Array Integration （ VAAI ） | SnapCenter Plug-in for VMware vSphere は、この設定を使用してリストア処理のパフォーマンスを向上させます。また、 NFS 環境のパフォーマンスも向上します。 
+| VMwareアプリケーションvStorage API for Array Integration（VAAI） | SnapCenter Plug-in for VMware vSphereは、この設定を使用してリストア処理のパフォーマンスを向上させます。また、NFS環境でのパフォーマンスも向上します。 
 
 
-| VMware向けONTAP ツール | SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。 
+| VMware向けONTAPツール | SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。 
 |===
-サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool で確認できます"^]。
+サポートされているバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 
 
@@ -148,16 +148,16 @@ NVMe over TCPプロトコルをサポートするための最小ソフトウェ�
 | 項目 | 要件 
 
 
-| オペレーティングシステム | Linux の場合 
+| オペレーティングシステム | Linux 
 
 
-| 最小 CPU 数 | 4 コア 
+| 最小CPU数 | 4コア 
 
 
-| 最小 RAM | 最小： 12GB 。推奨： 16GB 
+| 最小RAM | 最小構成：12GB推奨：16GB 
 
 
-| SnapCenter Plug-in for VMware vSphere 、ログ、および MySQL データベースの最小ハードドライブスペース | 100 GB 
+| SnapCenter Plug-in for VMware vSphere、ログ、MySQLデータベース用の最小ハードドライブスペース | 100GB 
 |===
 
 
@@ -170,52 +170,52 @@ NVMe over TCPプロトコルをサポートするための最小ソフトウェ�
 | VMware ESXi Serverのポート | 443（HTTPS）、双方向のゲストファイルリストア機能では、このポートが使用されます。 
 
 
-| SnapCenter Plug-in for VMware vSphere のポート  a| 
+| SnapCenter Plug-in for VMware vSphereのポート  a| 
 8144（HTTPS）。双方向のポートは、VMware vSphereクライアントとSnapCenter サーバからの通信に使用されます。8080 bidirectionalこのポートは、仮想アプライアンスの管理に使用されます。
 
 注：SnapCenterにSCVホストを追加するためのカスタムポートがサポートされています。
 
 
 
-| VMware vSphere vCenter Server のポート | VVol VM を保護する場合はポート 443 を使用する必要があります。 
+| VMware vSphere vCenter Serverのポート | VVol VMを保護する場合は、ポート443を使用する必要があります。 
 
 
-| ストレージクラスタまたは Storage VM ポート | 443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。 
+| ストレージクラスタまたはStorage VMポート | 443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。 
 |===
 
 
 == サポートされる構成
 
-各プラグインインスタンスでサポートされる vCenter Server は 1 つだけです。リンクモードの vCenter がサポートされます。次の図に示すように、複数のプラグインインスタンスで同じ SnapCenter サーバをサポートできます。
+各プラグイン インスタンスでサポートされるvCenter Serverは1つだけです。リンク モードのvCenterがサポートされます。次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。
 
 image:scpivs44_image4.png["サポートされている構成グラフィック表現"]
 
 
 
-== RBAC 権限が必要です
+== RBACケンケンノヒツヨウ
 
-vCenter 管理者アカウントには、次の表に示す vCenter 権限が必要です。
+vCenter管理者アカウントには、次の表に示す必要なvCenter権限が必要です。
 
 |===
 | この操作を実行するには ... | 次の vCenter 権限が必要です ... 
 
 
-| SnapCenter Plug-in for VMware vSphere を導入して vCenter に登録 | 拡張子：拡張子を登録します 
+| vCenterでSnapCenter Plug-in for VMware vSphereを導入して登録する | 拡張子：拡張子を登録します 
 
 
-| SnapCenter Plug-in for VMware vSphere をアップグレードまたは削除します  a| 
-内線番号
+| SnapCenter Plug-in for VMware vSphereをアップグレードまたは削除する  a| 
+エクステンション
 
-* 拡張機能を更新します
-* 拡張機能を登録解除します
-
-
+* 拡張機能の更新
+* 拡張機能の登録解除
 
 
-| SnapCenter に登録された vCenter Credential ユーザアカウントに、 SnapCenter Plug-in for VMware vSphere へのユーザアクセスが検証されるようにします | sessions.validate.session 
 
 
-| ユーザに SnapCenter Plug-in for VMware vSphere へのアクセスを許可します | SCV Administrator Backup SCV Guest File Restore SCV Restore SCV View 権限が vCenter ルートで割り当てられている必要があります。 
+| SnapCenterに登録されたvCenterクレデンシャルユーザアカウントに、SnapCenter Plug-in for VMware vSphereへのユーザアクセスの検証を許可する | sessions.validate.session 
+
+
+| ユーザにSnapCenter Plug-in for VMware vSphereへのアクセスを許可する | SCV Administrator Backup SCV Guest File Restore SCV Restore SCV View 権限が vCenter ルートで割り当てられている必要があります。 
 |===
 
 

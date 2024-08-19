@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_upgrade_to_a_new_patch.html 
 keywords:  
-summary: 同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。 
+summary: 同じリリースの新しいパッチにアップグレードする場合は、アップグレードまたは登録を行う前に、vCenter Web ServerでSnapCenter Plug-in for VMware vSphereのキャッシュをクリアし、サーバを再起動する必要があります。 
 ---
-= SnapCenter Plug-in for VMware vSphere の同じリリースの新しいパッチにアップグレードします
+= 同じリリースのSnapCenter Plug-in for VMware vSphereの新しいパッチにアップグレードする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 
 
 [role="lead"]
-同じリリースの新しいパッチにアップグレードする場合は、 vCenter Web Server で SnapCenter Plug-in for VMware vSphere キャッシュをクリアし、アップグレードまたは登録を行う前にサーバを再起動する必要があります。
+同じリリースの新しいパッチにアップグレードする場合は、アップグレードまたは登録を行う前に、vCenter Web ServerでSnapCenter Plug-in for VMware vSphereのキャッシュをクリアし、サーバを再起動する必要があります。
 
-プラグインキャッシュがクリアされない場合、次のシナリオではダッシュボードとジョブモニタに最新のジョブは表示されません。
+次の場合、プラグインのキャッシュがクリアされないと、最近のジョブはダッシュボードとジョブモニタに表示されません。
 
-* vCenter を使用して SnapCenter Plug-in for VMware vSphere を導入し、その後同じリリースのパッチにアップグレードしました。
+* SnapCenter Plug-in for VMware vSphereはvCenterを使用して導入し、その後同じリリースのパッチにアップグレードしました。
 * SnapCenter VMware仮想アプライアンスはvCenter 1に導入しました。その後、このSnapCenter Plug-in for VMware vSphereを新しいvCenter2に登録しました。SnapCenter Plug-in for VMware vSphereの新しいインスタンスがパッチを使用して作成され、vCenter1に登録されます。ただし、vCenter1にはパッチが適用されていない最初のSnapCenter Plug-in for VMware vSphereのプラグインがキャッシュされているため、キャッシュをクリアする必要があります。
 
 
@@ -26,14 +26,14 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 
 == キャッシュをクリアする手順
 
-. を探します `vsphere-client-serenity` フォルダを選択し、を選択します `com.netapp.scv.client-<release-number>` フォルダを削除します。
+. フォルダを探し `vsphere-client-serenity` 、フォルダを見つけ `com.netapp.scv.client-<release-number>` て削除します。
 +
 フォルダ名はリリースごとに変更されます。
 
 +
 使用しているオペレーティングシステムに対応するフォルダの場所については、VMwareのドキュメントを参照して `vsphere-client-serenity` ください。
 
-. vCenter Server を再起動します。
+. vCenter Serverを再起動します。
 +
 その後、SnapCenter Plug-in for VMware vSphereをアップグレードできます。
 

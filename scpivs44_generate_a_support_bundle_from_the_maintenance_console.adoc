@@ -27,4 +27,4 @@ image:scpivs44_image11.png["メンテナンスコンソールのウィンドウ"
 . Support and Diagnostics （サポートおよび診断）メニューから、オプション * 1 ） Generate support bundle （サポートバンドルの生成）と入力します。 *
 
 
-サポートバンドルにアクセスするには、 [ サポートと診断（ Support and Diagnostics ） ] メニューでオプション * 2 ）診断シェルへのアクセス * を入力します。コンソールで '/support/support/ <bundle_name>.tar.gz' に移動します
+サポートバンドルにアクセスするには、 [ サポートと診断（ Support and Diagnostics ） ] メニューでオプション * 2 ）診断シェルへのアクセス * を入力します。コンソールで、に移動します `/support/support/<bundle_name>.tar.gz`。

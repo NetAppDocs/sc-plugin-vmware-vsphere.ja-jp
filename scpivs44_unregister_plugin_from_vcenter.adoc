@@ -4,7 +4,7 @@ permalink: scpivs44_unregister_plugin_from_vcenter.html
 keywords:  
 summary: リンクモードのvCenterでSnapCenter Plug-in for VMware vSphereサービスを停止すると、リンクされた他のvCenterでSnapCenter Plug-in for VMware vSphereサービスが実行されている場合でも、リンクされたすべてのvCenterでリソースグループを使用できなくなります。SnapCenter Plug-in for VMware vSphere拡張機能の登録を手動で解除する必要があります。 
 ---
-= vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除します
+= vCenterからSnapCenter Plug-in for VMware vSphereの登録解除
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -21,5 +21,5 @@ SnapCenter Plug-in for VMware vSphere拡張機能の登録を手動で解除す�
 .手順
 . SnapCenter Plug-in for VMware vSphereサービスが停止しているリンクされたvCenterで、Managed Object Reference（MOB）マネージャに移動します。
 . [ プロパティ ] オプションで、 [ 値 ] 列の [*content*] を選択し、次の画面で [ 値 ] 列の [*ExtensionManager*] を選択して、登録された内線番号のリストを表示します。
-. 拡張機能の登録を解除します `com.netapp.scv.client` および `com.netapp.aegis`。
+. 拡張機能との登録を解除します `com.netapp.scv.client` `com.netapp.aegis`。
 

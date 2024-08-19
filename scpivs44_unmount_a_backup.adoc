@@ -4,7 +4,7 @@ permalink: scpivs44_unmount_a_backup.html
 keywords:  
 summary: データストア内のファイルにアクセスする必要がなくなった場合は、バックアップをアンマウントできます。 
 ---
-= バックアップをアンマウント
+= バックアップのアンマウント
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,16 +16,16 @@ summary: データストア内のファイルにアクセスする必要がな�
 [role="lead"]
 データストア内のファイルにアクセスする必要がなくなった場合は、バックアップをアンマウントできます。
 
-VMware vSphere ClientのGUIにマウント済みとして表示されているバックアップがアンマウントのバックアップ画面に表示されない場合は、REST APIを使用する必要があります `/backup/{backup-Id}/cleanup` バインドされていないデータストアをクリーンアップしてから、手順 のアンマウントをもう一度実行してください。
+VMware vSphere ClientのGUIにバックアップがマウント済みと表示され、バックアップのアンマウント画面には表示されない場合は、REST APIを使用してバインドされていないデータストアをクリーンアップし、アンマウント手順をもう一度実行する必要があり `/backup/{backup-Id}/cleanup` ます。
 
-負荷共有ミラー関係が確立されたルートボリュームを含む Storage VM （ SVM ）に NFS データストアのバックアップコピーをマウントしようとすると、「 You may have reached the maximum number of NFS volumes configured in the vCenter 」というエラーが表示されることがあります。vSphere Client でエラーメッセージを確認してください この問題を回避するには、 [*ESX*>*Manage*>*Settings*>*Advance System Settings*] に移動して NFS.MaxVolumes の値を変更し、最大ボリューム数の設定を変更します。最大値は 256 です。
+負荷共有ミラー関係が確立されたルートボリュームを含むStorage VM（SVM）にNFSデータストアのバックアップコピーをマウントしようとすると、エラーが発生してこの問題を回避することがあり `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` ます。 最大ボリューム数の設定を変更するには、* ESX *>* Manage *>* Settings *>* Advanced System Settings *に移動し、NFSを変更します。 MaxVolumesの値。最大値は256です。
 
 .手順
 . VMware vSphere Clientのショートカットページで、*[ストレージ]*を選択します。
 . 左側のナビゲーションペインで、データストアを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*アンマウント*を選択します。
 +
 
-IMPORTANT: アンマウントするデータストアを間違えないようにしてください。そうしないと、原因が本番環境に与える影響が発生する可能性があります。
+IMPORTANT: アンマウントするデータストアを間違えないようにしてください。そうしないと、本番環境の作業に影響を与える可能性があります。
 
 . Unmount cloned Datastore * ダイアログボックスで、データストアを選択し、 * Unmount the cloned datastore * チェックボックスをオンにして、 * Unmount * をクリックします。
 

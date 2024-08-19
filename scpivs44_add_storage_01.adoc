@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_add_storage_01.html 
 keywords:  
-summary: ストレージを追加すると、 SnapCenter Plug-in for VMware vSphere が vCenter でバックアップとリストアの処理を認識して管理できるようになります。 
+summary: ストレージを追加すると、SnapCenter Plug-in for VMware vSphereでvCenterのバックアップとリストアの処理を認識して管理できるようになります。 
 ---
-= ストレージを追加します
+= ストレージの追加
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,41 +14,41 @@ summary: ストレージを追加すると、 SnapCenter Plug-in for VMware vSph
 
 
 [role="lead"]
-VM をバックアップまたはリストアする前に、ストレージクラスタまたは Storage VM を追加する必要があります。ストレージを追加すると、 SnapCenter Plug-in for VMware vSphere が vCenter でバックアップとリストアの処理を認識して管理できるようになります。
+VMをバックアップまたはリストアする前に、ストレージクラスタまたはStorage VMを追加する必要があります。ストレージを追加すると、SnapCenter Plug-in for VMware vSphereでvCenterのバックアップとリストアの処理を認識して管理できるようになります。
 
-* 使用する GUI
+* 使用するGUI
 +
 VMware vSphere Clientを使用してストレージを追加します。
 
-* サイズの大きい LUN
+* 大規模なLUN
 +
-SnapCenter Plug-in for VMware vSphere 4.5 以降では、 ASA アグリゲートで最大 128TB の大容量 LUN サイズのデータストアがサポートされます。大規模な LUN の場合、 SnapCenter ではレイテンシを回避するためにシックプロビジョニング LUN のみがサポートされます。
+SnapCenter Plug-in for VMware vSphere 4.5以降では、ASAアグリゲートで最大128TBの大規模なLUNのデータストアがサポートされます。大規模なLUNの場合、レイテンシを回避するために、SnapCenterではシックプロビジョニングLUNのみがサポートされます。
 
-* VMware の仮想ボリューム（ VVOL ）
+* VMwareの仮想ボリューム（VVOL）
 +
 VVOLデータ保護を使用するには、SnapCenter Plug-in for VMware vSphereおよびONTAP tools for VMware vSphereにストレージクラスタを追加する必要があります。
 
 +
-詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere 用の ONTAP ツール"^]
+詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere向けONTAPツール"^]
 
 
 
-.作業を開始する前に
+.開始する前に
 ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterが同じ時刻に同期されている必要があります。ストレージを追加しようとしたが、vCenterの時間設定が同期されていない場合、Java証明書エラーが発生して処理が失敗することがあります。
 
-.このタスクについて
+.タスクの内容
 SnapCenter Plug-in for VMware vSphereは、直接接続されたStorage VMおよびストレージクラスタ内のStorage VMに対してバックアップとリストアの処理を実行します。
 
 
 NOTE: SnapCenter Plug-in for VMware vSphereを使用してVMDK上のアプリケーションベースのバックアップをサポートする場合は、SnapCenter GUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。
 
-* リンクモードの vCenter では、各 vCenter にストレージシステムを個別に追加する必要があります。
+* リンクモードのvCenterでは、各vCenterにストレージシステムを個別に追加する必要があります。
 * SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。
 +
 SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合は、それらのエントリも仮想アプライアンスから解決できることを確認する必要があります。そうでない場合は、アプライアンス内の_etc/hosts_fileに同様のエントリを追加する必要があります。
 
 +
-管理 LIF に解決できない名前の Storage VM を追加すると、プラグインがその Storage VM 上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、 Storage VM を SnapCenter に追加して管理 LIF を指定するか、 Storage VM を含むクラスタを追加してクラスタ管理 LIF を指定してください。
+管理LIFに解決できない名前のStorage VMを追加した場合、プラグインがそのStorage VM上のデータストアまたはボリュームを検出できないため、スケジュールされたバックアップジョブが失敗します。この場合は、Storage VMをSnapCenterに追加して管理LIFを指定するか、Storage VMを含むクラスタを追加してクラスタ管理LIFを指定してください。
 
 * ストレージ認証の詳細は、SnapCenter Plug-in for VMware vSphereの複数のインスタンス間、またはWindows SnapCenter ServerとvCenter上のSnapCenterプラグイン間で共有されません。
 
@@ -60,7 +60,7 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 . Add Storage System * ウィザードで、次の表に示す基本的な Storage VM またはクラスタ情報を入力します。
 +
 |===
-| フィールド名 | 操作 
+| このフィールドでは… | 操作 
 
 
 | ストレージシステム | ストレージクラスタまたはStorage VMのFQDNまたは管理LIFのIPアドレスを入力します。SnapCenter Plug-in for VMware vSphereでは、異なるクラスタにある同じ名前のStorage VMは複数サポートされません。 
@@ -69,24 +69,22 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 | 認証方式 | 資格情報または証明書のいずれかを選択します。2種類の証明書がサポートされています。 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["自己署名証明書"^] https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["CA署名証明書"] 
 
 
-| ユーザ名 | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタへのログオンに使用するONTAPユーザ名を入力してください。 
+| ユーザ名 | このフィールドは、認証方法として[Credentials]を選択すると表示されます。Storage VMまたはクラスタへのログオンに使用するONTAPユーザ名を入力してください。 
 
 
-| パスワード | このフィールドは、認証方法として資格情報を選択した場合に表示されます。Storage VMまたはクラスタのログインパスワードを入力してください。 
+| パスワード | このフィールドは、認証方法として[Credentials]を選択すると表示されます。Storage VMまたはクラスタのログインパスワードを入力してください。 
 
 
-| 証明書 | このフィールドは、認証方法として証明書を選択すると表示されます。証明書ファイルを参照して選択します。 
+| 証明書 | このフィールドは、認証方法として[証明書]を選択すると表示されます。証明書ファイルを参照して選択します。 
 
 
-| 秘密鍵 | このフィールドは、認証方法として証明書を選択すると表示されます。秘密鍵ファイルを参照して選択します。 
+| 秘密鍵 | このフィールドは、認証方法として[証明書]を選択すると表示されます。秘密鍵ファイルを参照して選択します。 
 
 
 | プロトコル | ストレージプロトコルを選択します。 
 
 
-| ポート | ストレージシステムが受け入れるポート。
--443（HTTPS接続用）
--80（HTTP接続用） 
+| ポート | ストレージシステムが受け入れるポート。-443（HTTPS接続）-80（HTTP接続） 
 
 
 | タイムアウト | SnapCenter Plug-in for VMware vSphereが処理をタイムアウトするまでに待機する秒数を入力します。デフォルトは60秒です。 
@@ -95,16 +93,16 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 | 優先IPアドレス | Storage VMに管理IPアドレスが複数ある場合は、このボックスをオンにして、SnapCenter Plug-in for VMware vSphereで使用するIPアドレスを入力します。* 注： * IP アドレスを入力するときは角かっこ（ [] ）を使用しないでください。 
 
 
-| Event Management System（EMS；イベント管理システム）およびAutoSupport の設定 | 保護適用、リストア処理の完了、または処理の失敗のために AutoSupport メッセージをストレージシステムに送信する場合は、該当するチェックボックスを選択します。AutoSupport 通知を有効にするには、[失敗した操作に関するAutoSupport 通知をストレージ・システムに送信する*]チェックボックスと[ SnapCenter サーバ・イベントをsyslogに記録する*]チェックボックスをオンにします。 
+| イベント管理システム（EMS）およびAutoSupportの設定 | 保護が適用された場合、リストア処理が完了した場合、または処理が失敗した場合にEMSメッセージをストレージシステムのsyslogに送信したり、AutoSupportメッセージをストレージシステムに送信したりする場合は、該当するチェックボックスを選択します。AutoSupport 通知を有効にするには、[失敗した操作に関するAutoSupport 通知をストレージ・システムに送信する*]チェックボックスと[ SnapCenter サーバ・イベントをsyslogに記録する*]チェックボックスをオンにします。 
 
 
-| SnapCenter サーバイベントを syslog に記録します | SnapCenter Plug-in for VMware vSphereのイベントをログに記録するチェックボックスをオンにします。 
+| SnapCenterサーバのイベントをsyslogに記録 | SnapCenter Plug-in for VMware vSphereのイベントをログに記録するチェックボックスをオンにします。 
 
 
-| 処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します | 失敗したデータ保護ジョブに関する AutoSupport 通知を有効にする場合は、このチェックボックスをオンにします。また、 Storage VM で AutoSupport を有効にし、 AutoSupport E メールを設定する必要があります。 
+| 処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します | データ保護ジョブが失敗したときにAutoSupport通知を送信する場合は、このチェックボックスをオンにします。また、Storage VMでAutoSupportを有効にし、AutoSupport Eメールを設定する必要があります。 
 |===
-. [ 追加（ Add ） ] をクリックします。
+. [追加]*をクリックします。
 +
-ストレージクラスタを追加すると、そのクラスタ内のすべての Storage VM が自動的に追加されます。自動的に追加された Storage VM （「暗黙的な」 Storage VM とも呼ばれます）は、クラスタのサマリーページに、ユーザ名ではなくハイフン（ - ）で表示されます。ユーザ名は、明示的なストレージエンティティに対してのみ表示されます。
+ストレージクラスタを追加した場合は、そのクラスタ内のすべてのStorage VMが自動的に追加されます。自動的に追加されたStorage VM（「暗黙的な」Storage VMと呼ばれることもあります）は、クラスタの概要ページにユーザ名ではなくハイフン（-）が表示されます。ユーザ名は、明示的なストレージエンティティに対してのみ表示されます。
 
 

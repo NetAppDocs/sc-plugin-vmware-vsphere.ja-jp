@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの組み込みのスケジュールを変更するには、規定された順序のREST API呼び出しに従う必要があります。 
+summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere Clientジョブの組み込みスケジュールを変更するには、所定の順序でREST API呼び出しを実行する必要があります。 
 ---
-= REST API ワークフロー：組み込みのスケジュールを変更できます
+= 組み込みのスケジュールを変更するためのREST APIワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,18 +14,23 @@ summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSp
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphereクライアントジョブの組み込みのスケジュールを変更するには、規定された順序のREST API呼び出しに従う必要があります。
+SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere Clientジョブの組み込みスケジュールを変更するには、所定の順序でREST API呼び出しを実行する必要があります。
 
-組み込みのスケジュールは、 MySQL データベースのダンプスケジュールなど、製品の一部として提供されるスケジュールです。以下のスケジュールを変更することができます：「スケジュール - データベースダンプ」「スケジュール - パージバックアップ」「スケジュール - アーダコレクション」「スケジュール - コンピューティングストレージ保存」「スケジュール - パージジョブ」
+組み込みのスケジュールは、MySQLデータベースのダンプスケジュールなど、製品の一部として提供されるスケジュールです。次のスケジュールを変更できます。
+`Schedule-DatabaseDump`
+`Schedule-PurgeBackups`
+`Schedule-AsupDataCollection`
+`Schedule-ComputeStorageSaving`
+`Schedule-PurgeJobs`
 
-各REST APIに、を追加します `\https://<server>:<port>` を使用して完全なエンドポイントを形成します。
+各REST APIについて、REST APIの先頭にを追加し `\https://<server>:<port>` て完全なエンドポイントを形成します。
 
 |===
 | ステップ | REST API | コメント 
 
 
-| 1. | 「 /4.1/schedules 」 | 「すべての組み込みスケジュールを取得」は、製品で最初に提供されたジョブスケジュールのリストを取得します。変更するスケジュールの名前と、関連する cron 式をメモします。 
+| 1 | `/4.1/schedules` | `Get all built-in` Schedules製品で最初に提供されたジョブスケジュールのリストを取得します。変更するスケジュール名と、関連付けられているcron式をメモします。 
 
 
-| 2. | 「 /4.1/schedules 」 | 「組み込みスケジュールを変更する」と、指定したスケジュールが変更されます。手順 1 で作成したスケジュール名を渡し、スケジュール用の新しい cron 式を作成します。 
+| 2 | `/4.1/schedules` | `Modify any built-in schedule` 指定したスケジュールを変更します。手順1で指定したスケジュール名を渡し、スケジュールの新しいcron式を作成します。 
 |===

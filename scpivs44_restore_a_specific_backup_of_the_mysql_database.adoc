@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_restore_a_specific_backup_of_the_mysql_database.html 
 keywords:  
-summary: メンテナンスコンソールを使用して、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの MySQL データベース（ NSM データベース）の特定のバックアップをリストアできます。 
+summary: メンテナンスコンソールを使用して、SnapCenter Plug-in for VMware vSphere仮想アプライアンスのMySQLデータベース（NSMデータベース）の特定のバックアップをリストアすることができます。 
 ---
-= MySQL データベースの特定のバックアップをリストアします
+= MySQLデータベースの特定のバックアップをリストアする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,12 @@ summary: メンテナンスコンソールを使用して、 SnapCenter Plug-in 
 
 
 [role="lead"]
-メンテナンスコンソールを使用して、 SnapCenter Plug-in for VMware vSphere 仮想アプライアンスの MySQL データベース（ NSM データベース）の特定のバックアップをリストアできます。
+メンテナンスコンソールを使用して、SnapCenter Plug-in for VMware vSphere仮想アプライアンスのMySQLデータベース（NSMデータベース）の特定のバックアップをリストアすることができます。
 
 .手順
 . メンテナンスコンソールのウィンドウを開きます。
 +
-link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]。
+link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアクセスします"^]です。
 
 . メインメニューから、オプション * 1 ）「アプリケーションの設定 * 」を入力します。
 . [ アプリケーションの設定 ] メニューから、オプション *6 ）「 mysql backup and restore * 」と入力します。
@@ -28,6 +28,6 @@ link:scpivs44_access_the_maintenance_console.html["Maintenance Consoleにアク�
 . 「 Restore using the most recent backup 」というプロンプトが表示されたら、「 * n * 」と入力します。
 . 「 Backup to restore from 」というプロンプトで、バックアップ名を入力し、 *Enter* キーを押します。
 +
-選択したバックアップの MySQL データベースが元の場所にリストアされます。
+選択したバックアップMySQLデータベースが元の場所にリストアされます。
 
 

@@ -4,7 +4,7 @@ permalink: scpivs44_remove_plugin.html
 keywords:  
 summary: SnapCenterのデータ保護機能を使用する必要がなくなった場合は、SnapCenter Plug-in for VMware vSphereを無効にしてvCenterから登録を解除してから、vCenterからSnapCenter Plug-in for VMware vSphereを削除してから、残りのファイルを手動で削除する必要があります。 
 ---
-= SnapCenter Plug-in for VMware vSphere を削除します
+= SnapCenter Plug-in for VMware vSphereの削除
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,9 +16,9 @@ summary: SnapCenterのデータ保護機能を使用する必要がなくなっ�
 [role="lead"]
 SnapCenterのデータ保護機能を使用する必要がなくなった場合は、SnapCenter Plug-in for VMware vSphereを無効にしてvCenterから登録を解除してから、vCenterからSnapCenter Plug-in for VMware vSphereを削除してから、残りのファイルを手動で削除する必要があります。
 
-.作業を開始する前に
+.開始する前に
 * 管理者権限が必要です。
-* 実行中の SnapCenter ジョブがないことを確認します。
+* 実行中のSnapCenterジョブがないことを確認します。
 
 
 .手順
@@ -27,12 +27,12 @@ SnapCenterのデータ保護機能を使用する必要がなくなった場合�
 プラグインの導入時に、SnapCenter Plug-in for VMware vSphereのIPアドレスが表示されます。
 
 . 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
-. VMware vSphere にログインします。
+. VMware vSphereにログインします。
 . 左側のナビゲーション画面で、SnapCenter Plug-in for VMware vSphereのインスタンス（仮想アプライアンスの導入時に使用されたファイルの名前）を右クリックし `.tar` 、*[ディスクから削除]*を選択します。
 . SnapCenter Plug-in for VMware vSphereを使用して、アプリケーションと整合性のあるバックアップ用の他のSnapCenterプラグインをサポートしていた場合は、SnapCenterにログインしてvSphereホストを削除します。
 
 
-.完了後
+.終了後
 仮想アプライアンスはまだ導入されていますが、SnapCenter Plug-in for VMware vSphereは削除されています。
 
 SnapCenter Plug-in for VMware vSphere用のホストVMを削除したあと、ローカルのvCenterキャッシュが更新されるまでプラグインがvCenterに表示されたままになることがあります。ただし、プラグインが削除されたため、そのホストでSnapCenter VMware vSphereの処理を実行できません。ローカルvCenterキャッシュを更新する場合は、最初にSnapCenter Plug-in for VMware vSphereの[設定]ページでアプライアンスが無効な状態になっていることを確認してから、vCenter Web Client Serviceを再起動します。

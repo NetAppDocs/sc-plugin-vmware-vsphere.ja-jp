@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_prescripts_and_postscripts.html 
 keywords:  
-summary: カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトにより、データ保護ジョブの前後の処理を自動化できます。 
+summary: カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトを使用すると、データ保護ジョブの実行前または実行後に自動化を実行できます。 
 ---
 = プリスクリプトとポストスクリプト
 :hardbreaks:
@@ -14,31 +14,31 @@ summary: カスタムのプリスクリプトとポストスクリプトをデ�
 
 
 [role="lead"]
-カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトにより、データ保護ジョブの前後の処理を自動化できます。たとえば、データ保護ジョブのエラーや警告を自動的に通知するスクリプトを組み込むことができます。プリスクリプトとポストスクリプトを設定する前に、スクリプトを作成するための要件を理解しておく必要があります。
+カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトを使用すると、データ保護ジョブの実行前または実行後に自動化を実行できます。たとえば、データ保護ジョブのエラーや警告を自動的に通知するスクリプトを組み込むことができます。プリスクリプトとポストスクリプトを設定する前に、スクリプトを作成するための要件を理解しておく必要があります。
 
 
 
-== サポートされているスクリプトタイプ
+== サポートされるスクリプトタイプ
 
-Perl スクリプトとシェルスクリプトがサポートされています。シェルスクリプトは '!/bin/bash' で開始する必要があります(`!/bin/sh` はサポートされていません )
+Perlスクリプトとシェルスクリプトがサポートされています。シェルスクリプトはで始まる必要があり `!/bin/bash`ます。(`!/bin/sh` はサポートされていません）。
 
 
 
 == スクリプトパスの場所
 
-プリスクリプトとポストスクリプトは、 SnapCenter Plug-in for VMware vSphere によって実行されます。そのため、スクリプトは SnapCenter Plug-in for VMware vSphere OVA にあり、実行権限が必要です。
+プリスクリプトとポストスクリプトは、SnapCenter Plug-in for VMware vSphereで実行されます。そのため、スクリプトは実行可能な権限を持つSnapCenter Plug-in for VMware vSphere OVA内に格納されている必要があります。
 
-例えば :* Perl スクリプト・パスは '/support/ssupport/ script.pl * のようになりますシェル・スクリプト・パスは '/support/socl.sh' のようになります
+例：* Perlスクリプトパスは*シェルスクリプトパス `/support/support/script.pl` は `/support/support/script.sh`
 
-スクリプトパスは、スクリプト実行時に検証されます。
+スクリプトパスは、スクリプトの実行時に検証されます。
 
 
 
 == スクリプトを指定する場所
 
-スクリプトはバックアップポリシーに指定します。バックアップジョブが開始されると、ポリシーによってスクリプトがバックアップ対象のリソースに自動的に関連付けられます。
+スクリプトはバックアップポリシーで指定されます。バックアップジョブが開始されると、ポリシーによってスクリプトがバックアップ対象のリソースに自動的に関連付けられます。
 
-複数のスクリプトを指定するには、スクリプトパスの入力後に * Enter キーを押し、スクリプトごとに改行します。セミコロン（ ; ）は使用できません。プリスクリプトとポストスクリプトをそれぞれ複数指定できます。1 つのスクリプトをプリスクリプトとポストスクリプトの両方として作成し、そのスクリプトから他のスクリプトを呼び出すことができます。
+複数のスクリプトを指定するには、スクリプトパスの入力後に * Enter キーを押し、スクリプトごとに改行します。セミコロン（;）は使用できません。プリスクリプトとポストスクリプトをそれぞれ複数指定できます。1つのスクリプトをプリスクリプトとポストスクリプトの両方としてコーディングし、他のスクリプトを呼び出すことができます。
 
 
 
@@ -46,14 +46,14 @@ Perl スクリプトとシェルスクリプトがサポートされています
 
 スクリプトは、 Backup_phase に設定された値に従って実行されます。
 
-* Backup_phase = pre_backup
+* backup_phase = pre_backup
 +
 処理の PRE_BACKUP フェーズでプリスクリプトが実行されます。
 
 
 
 
-NOTE: プリスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
+NOTE: プレスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
 
 * BACKUP_PHASE=POST_BACKUP または BACKUP_PHASE=FAILED_BACKUP
 +
@@ -64,73 +64,106 @@ NOTE: プリスクリプトが失敗すると、バックアップは正常に�
 
 NOTE: ポストスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
 
-次の項目をチェックして、スクリプト値が設定されていることを確認してください。 * Perl スクリプトの場合 : `/support/support/log_env.log シェルスクリプトの場合 : `/support/log_file.log
+次の点をチェックして、スクリプトの値が入力されていることを確認します。* Perlスクリプトの場合 `/support/support/log_env.log` ：*シェルスクリプトの場合： `/support/support/log_file.log`
 
 
 
 == スクリプトに渡される環境変数
 
-次の表に示す環境変数をスクリプトで使用できます。
+次の表に示す環境変数は、スクリプトで使用できます。
 
 |===
-| 環境変数 | 説明 
+| 環境変数 | 製品説明 
 
 
-| 「 backup_name 」と入力します | バックアップの名前。ポストスクリプトでのみ渡される変数です。 
+| `BACKUP_NAME` | バックアップの名前。ポストスクリプトでのみ渡される変数です。 
 
 
-| 「 backup_ddate 」 | スクリプトでのみ渡される「 yyyymmdd 」形式のバックアップの日付。 
+| `BACKUP_DATE` | バックアップの日付（ポストスクリプトでのみ渡される変数形式）。 `yyyymmdd` 
 
 
-| 「 backup_time 」と入力します | バックアップの時刻。形式は「 hhmmss 」。ポストスクリプトでのみ渡されます。 
+| `BACKUP_TIME` | バックアップの時刻（「Variable passed in postscripts only」形式） `hhmmss` 。 
 
 
-| 「 backup_fPHASE 」 | スクリプトを実行するバックアップのフェーズ。有効な値は 'pre_backup'POST_backup' および failed_backup' ですプリスクリプトとポストスクリプトで渡される変数です。 
+| `BACKUP_PHASE` | スクリプトを実行するバックアップのフェーズ。有効な値は、 `PRE_BACKUP, POST_BACKUP, and FAILED_BACKUP`です。プリスクリプトとポストスクリプトで渡される変数です。 
 
 
-| 「 storage snapshots 」を選択します | バックアップ内のストレージ Snapshot の数。ポストスクリプトでのみ渡される変数です。 
+| `STORAGE_SNAPSHOTS` | バックアップ内のストレージSnapshotの数。ポストスクリプトでのみ渡される変数です。 
 
 
-| 'storage-snapshot.#' | 定義済みのストレージ Snapshot の 1 つ。「 <filer> ： /vol/<volume > ： <ONTAP-snapshot-name> 」の形式で、ポストスクリプトでのみ渡されます。 
+| `STORAGE_SNAPSHOT.#` | 次の形式で定義されたストレージスナップショットの1つ。ポストスクリプトでのみ渡される変数。
+`<filer>:/vol/<volume>:<ONTAP-snapshot-name>` 
 
 
-| 「 VIRTUE_MACES' | バックアップ内の VM の数。プリスクリプトとポストスクリプトで渡される変数です。 
+| `VIRTUAL_MACHINES` | バックアップ内のVMの数。プリスクリプトとポストスクリプトで渡される変数です。 
 
 
-| 「 VIRTUE_MACHINE 」と入力します | 定義された仮想マシンのうちの 1 つで、次の形式を使用します。 'VM name> [vertical bar]<power-state> [vertical bar]<VM snapshot> [vertical bar]<ip-address><power-state> には powered_on 、 powered_off 、または suspended 「 VM snapshot> 」には、「変数プリスクリプト」と「変数」が渡されます。 
+| `VIRTUAL_MACHINE.#` | 次の形式で定義された仮想マシンの1つ。プリスクリプトとポストスクリプトで値または変数が渡されます。
+`<VM name>[vertical bar]<VM UUID>[vertical bar]<power-state>[vertical bar]<VM snapshot>[vertical bar]<ip-addresses>
+<power-state> has the values POWERED_ON, POWERED_OFF, or
+SUSPENDED`
+`<VM snapshot>` `true` `false` 
 |===
 
 
 == スクリプトのタイムアウト
 
-バックアップスクリプトのタイムアウトは 15 分です。この値は変更できません。
+バックアップスクリプトのタイムアウトは15分で、変更することはできません。
 
 
 
-== Perl スクリプトの例 1.
+== Perlスクリプトの例1
 
-次に、 Perl スクリプトの例を示します。バックアップの実行時に環境変数が出力されます。
+次のPerlスクリプトの例では、バックアップの実行時に環境変数が出力されます。
 
-`#!/usr/bin/perl `use warnings ； `use strict ； `m y $argnum;```````````````````````````s y$logfile='/support/logv' ； `open (fh, '>'>'>', $logfile) or die $!;`foreach (sortkeys%ENV=print=\fd`n=\fd`n=print=\`n$Fr = "=\fd`n$`n=print=\`n$Fr
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
+`foreach (sort keys %ENV) {`
+`print FH "$_ = $ENV{$_}\n";`
+`}`
+`print FH "=========\n";`
+`close (FH);`
 
 
 
-== Perl スクリプトの例 2.
+== Perlスクリプトの例2
 
-次の例は、バックアップに関する情報を出力します。
+次に、バックアップに関する情報を出力する例を示します。
 
-`#!/usr/bin/perl `Use warnings ； `Use strict ； `
+`#!/usr/bin/perl`
+`use warnings;`
+`use strict;`
 
-`m $argnum;`m `y$logfile='/support/support/log_env.log';`open (FH 、 '>',$logfile) or die $!;`
+`my $argnum;`
+`my $logfile = '/support/support/log_env.log';`
+`open (FH, '>>', $logfile) or die $!;`
 
-'print FHD " backup_sphase is $ENV {' backup_sphase '}\n; 'print FHD " バックアップ名 $ENV {' バックアップ名 $ENV {' バックアップ名 '}\n"'ENV {' スナップショット {'backup_name'}\n; 'print FHD ' バーチャルマシン 'Virtual Machine $ENV' {'F' バーチャル・スナップショット 'FH_PRINT 'F' {'F' バーチャル・イメージ \'F' 日付 }\n'F' バーチャル・ストレージ 'F' {'FH_F' {'F' バーチャル・イメージ \'F' バーチャル・バックアップ 'F' バーチャル・イメージ \'F' 日付 }\n\'F' {'F' {'F' バーチャル・バックアップ 'F' バーチャル・バックアップ 'SUF' バーチャル・ストレージ 'SUF' {'SUF' 日付 }\n\'SUF' 日付 \n\'SUF' {'SUF' バーチャル・バックアップ '\'\'\'\'\'\
+`print FH "BACKUP_PHASE is $ENV{'BACKUP_PHASE'}\n";`
+`print FH "Backup name  $ENV{'BACKUP_NAME'}\n";`
+`print FH "Virtual Machine  $ENV{'VIRTUAL_MACHINES'}\n";`
+`print FH "VIRTUAL_MACHINE # is $ENV{'VIRTUAL_MACHINE.1'}\n";`
+`print FH "BACKUP_DATE is $ENV{'BACKUP_DATE'}\n";`
+`print FH "BACKUP_TIME is $ENV{'BACKUP_TIME'}\n";`
+`print FH "STORAGE_SNAPSHOTS is $ENV{'STORAGE_SNAPSHOTS'}\n";`
+`print FH "STORAGE_SNAPSHOT # is $ENV{'STORAGE_SNAPSHOT.1'}\n";`
 
-'print FH_" PWD は $ENV {'PWD'}\n; 'print FH_" DELING_ID は $ENV {'REJPLAY_ID'}\n";` です
+`print FH "PWD is $ENV{'PWD'}\n";`
+`print FH "INVOCATION_ID is $ENV{'INVOCATION_ID'}\n";`
 
-'print fh" ====\n" ； `close (FH) ； `
+`print FH "=========\n";`
+`close (FH);`
 
 
 
 == シェルスクリプトの例
 
-`==== == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == == bash`echo Stage $backup_name>/>/>/support/log_file =es=es=es=es=es=es=es=es=es=es==es=es=======es=rof========log =======es==es=es===es=es=es====es===es======es==es=ro====
+
+`===============================================`
+`#!/bin/bash`
+`echo Stage $BACKUP_NAME >> /support/support/log_file.log`
+`env >> /support/support/log_file.log`
+`===============================================`

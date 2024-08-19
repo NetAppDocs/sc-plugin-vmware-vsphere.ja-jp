@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_configuration_default_values.html 
 keywords:  
-summary: 運用効率を高めるために、「 CBR 上書き」コンフィギュレーションファイルを変更してデフォルト値を変更できます。 
+summary: '運用効率を高めるために、構成ファイルを変更してデフォルト値を変更することができます `scbr.override` 。' 
 ---
-= 設定のデフォルト値を変更します
+= 設定のデフォルト値を変更します。
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,6 +14,6 @@ summary: 運用効率を高めるために、「 CBR 上書き」コンフィギ
 
 
 [role="lead"]
-運用効率を高めるために、「 CBR 上書き」コンフィギュレーションファイルを変更してデフォルト値を変更できます。これらの値は、バックアップの実行時に作成または削除する VMware スナップショットの数や、バックアップスクリプトの実行を中止するまでの時間などの設定を制御します。
+運用効率を高めるために、構成ファイルを変更してデフォルト値を変更することができます `scbr.override` 。これらの値は、バックアップ中に作成または削除されるVMwareスナップショットの数、バックアップスクリプトの実行を停止するまでの時間などの設定を制御します。
 
-「 scbr.override 」構成ファイルは、 SnapCenter アプリケーションベースのデータ保護処理をサポートする環境で、 SnapCenter Plug-in for VMware vSphere によって使用されます。このファイルが存在しない場合は、テンプレートファイルから作成する必要があります。
+ `scbr.override`構成ファイルは、SnapCenterアプリケーションベースのデータ保護処理をサポートする環境でSnapCenter Plug-in for VMware vSphereで使用されます。このファイルが存在しない場合は、テンプレートファイルから作成する必要があります。

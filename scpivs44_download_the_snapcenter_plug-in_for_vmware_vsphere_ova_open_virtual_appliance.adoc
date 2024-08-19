@@ -14,22 +14,22 @@ summary: SnapCenter Plug-in for VMware vSphereの.tarファイルは、NetApp Su
 
 
 [role="lead"]
-Open Virtual Appliance（OVA；オープン仮想アプライアンス）をインストールする前に、vCenterに証明書を追加してください。.tarファイルにはOVA証明書とEntrust Root証明書とIntermediate証明書が含まれており、証明書は証明書フォルダ内にあります。OVA環境はVMware vCenter 7u1以降でサポートされます。
+Open Virtual Appliance（OVA）をインストールする前に、vCenterに証明書を追加します。.tarファイルにはOVA証明書とEntrustルート証明書と中間証明書が含まれており、証明書は証明書フォルダ内にあります。OVA環境は、VMware vCenter 7u1以上でサポートされます。
 
-VMware vCenter 7.0.3以降のバージョンでは、Entrust証明書によって署名されたOVAは信頼されなくなりました。問題 を解決するには、次の手順 を実行する必要があります。
+VMware vCenter 7.0.3以降のバージョンでは、Entrust証明書によって署名されたOVAは信頼されなくなりました。この問題を解決するには、次の手順を実行する必要があります。
 
 .手順
 . SnapCenter Plug-in for VMwareをダウンロードするには、次の手順を実行します。
 +
-** ネットアップサポートサイト（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
+** NetAppサポートサイトにログインします（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
 ** 製品のリストから、「 SnapCenter Plug-in for VMware vSphere * 」を選択し、「最新リリースをダウンロード」ボタンをクリックします。
-** SnapCenter Plug-in for VMware vSphereをダウンロードします `.tar` 任意の場所にファイルを移動します。
+** SnapCenter Plug-in for VMware vSphereのファイルを任意の場所にダウンロードし `.tar` ます。
 
 
-. vSphere ClientからvCenter Serverにログインします。
+. vSphere ClientでvCenter Serverにログインします。
 . [管理]>[証明書]>[証明書の管理]に移動します。
 . [信頼されたルートストア*]の横にある[*追加]をクリックします
-. Entrustルート証明書と中間証明書の場所を参照して選択します。証明書は、[*Trusted Root Certificates*]の下のパネルに追加されます。証明書をインストールすると、OVAを検証して導入できます。
+. Entrustルート証明書と中間証明書の場所を参照して選択します。証明書は、[*Trusted Root Certificates*]の下のパネルに追加されます。証明書をインストールしたら、OVAを検証して導入できます。
 
 
 

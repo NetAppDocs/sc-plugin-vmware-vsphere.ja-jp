@@ -27,31 +27,16 @@ summary: REST APIを使用してストレージの名前を変更できます。
 次のAPIを使用してストレージの名前を変更します。
 
 +
-パッチ
-/4.1/ストレージシステム
+パッチ/ 4.1 /ストレージシステム
 
 +
-例
-｛
-  "existingSVM"：｛
-    "name"："string"
-  }、
-  「newSVM」：｛
-    "name"："string"
-  ｝
-｝
+例：｛"existingSVM"：｛"name"："string"｝、"newSVM"：｛"name"："string"｝｝
 
 +
 対応：
 
 +
-｛
-  "statusMessage"："OK"、
-  "statusCode"：200、
-  "responseMessage"：[
-    "ストレージシステムの名前が変更されました。"
-  ]
-｝
+｛"statusMessage"："OK"、"statusCode"：200、"responseMessage"：["ストレージシステムの名前が正常に変更されました。"]}
 
 +
 このAPIを実行すると、古いバックアップからのリストア処理を含むすべてのワークフローを実行できるようになります。
