@@ -1959,7 +1959,6 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="2170988af7c90eecfa54f101aa51fdea" category="list-text">SnapCenter Plug-in for VMware vSphereをLinux VMの仮想アプライアンスとして導入</block>
   <block id="d43c8490fc8d00a5a9b8b5c9491f9d0c" category="paragraph">仮想アプライアンスはLinux VMとしてインストールする必要がありますが、SnapCenter Plug-in for VMware vSphereではWindowsベースとLinuxベースの両方のvCenterがサポートされます。SnapCenterは、このプラグインを標準で使用します。ユーザの介入は必要ありません。vCenterと通信し、WindowsおよびLinuxの仮想アプリケーションに対してデータ保護処理を実行するSnapCenterアプリケーションベースのプラグインをサポートします。</block>
   <block id="2bb936cdd9c74df577504952ecadc5ae" category="paragraph">SnapCenter Plug-in for VMware vSphereは、これらの主要な機能に加えて、iSCSI、ファイバチャネル、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、 NVMe over TCPをサポートします。</block>
-  <block id="7ff9bb4b13e56cf051cc1303e64808b4" category="paragraph">サポートされるバージョンの最新情報については、（IMT）を参照して<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block> ください。</block>
   <block id="62c4e12eaf898bb7a4fa14f2be8f874b" category="paragraph">NFSプロトコルとESXiホストについては、VMwareが提供するvSphere Storageのドキュメントを参照してください。</block>
   <block id="a2509a0543299c76d33b0c54e8658789" category="paragraph">SnapCenterのデータ保護の詳細については、のSnapCenterプラグインのデータ保護に関する情報を参照して<block ref="4be00348c5f700eec4bebc72bc1bc49c" category="inline-link-rx"></block>ください。</block>
   <block id="81303c47eb8370a9253bb073cb0edc5e" category="paragraph">サポートされるアップグレードパスと移行パスについては、を参照してください <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
@@ -1993,7 +1992,6 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="f1381c3464fcec41ea788ba3061a6adb" category="paragraph">1つ以上のデータストアをバックアップからグローバルに除外するには、構成ファイルのプロパティにデータストア名を指定する必要があり<block ref="501d684ffe56268631cacb45d6a11474" prefix=" " category="inline-code"></block><block ref="c7d1d750bd6b50c426013a326fa505ba" prefix=" " category="inline-code"></block> ます。を参照してください <block ref="85a3298a3ddc49d556dd2f507b17347f" category="inline-link-macro-rx"></block>。</block>
   <block id="5a0224c26b4097d544acbe092343725a" category="paragraph">[Every]フィールドで日数を選択すると、月の1日目にバックアップが実行され、その後、指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
   <block id="8d849bfecdb9ab23e919753ad2a6b109" category="paragraph">各フィールドに入力する必要があります。SnapCenter Plug-in for VMware vSphereでは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンでスケジュールが作成されます。タイムゾーンは、SnapCenter Plug-in for VMware vSphere GUIを使用して変更できます。</block>
-  <block id="632bb02e5d0a2f2350fb9272460b94e4" category="paragraph">SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block> 。</block>
   <block id="a5db6a98135361a01660f39f4e92797c" category="list-text">優先IPアドレスがSnapCenterに設定されていません。</block>
   <block id="eb8da80159410f82b0725426ca163dad" category="list-text">Storage VM（SVM）管理IPアドレスをSnapCenterに追加していません。</block>
   <block id="ec9973f6952651f75a5f915fe16d937b" category="list-text">VMが配置されているストレージシステムがSnapCenter Plug-in for VMware vSphereインベントリに追加されていることを確認します。</block>
@@ -2048,14 +2046,11 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="18ddbf443f973a535ca1b5fb7410cf19" category="list-text">各vCenter Serverは、リンクモードかどうかに関係なく、SnapCenter Plug-in for VMware vSphereの個別のインスタンスとペアリングする必要があります。</block>
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">SnapCenter Plug-in for VMware vSphereの各インスタンスを個別のLinux VMとして導入する必要があります。</block>
   <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行する場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入し、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。</block>
-  <block id="b53293dc1967c4f8a232c12e9b89bf9c" category="paragraph">サポートされているONTAP toolsのバージョンの最新情報については、を参照してください<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">SnapCenter Plug-in for VMware vSphereでは、Storage vMotionをサポートする仮想マシンの制限により、共有PCIデバイスまたはPCIeデバイス（NVIDIA Grid GPUなど）のサポートが制限されます。詳細については、ベンダーのドキュメント『VMware導入ガイド』を参照してください。</block>
   <block id="9dda9990139fd29842c044b5c5471a76" category="list-text">SnapCenter Plug-in for VMware vSphereの制限事項の詳細については、を参照してください <block ref="bdbfb8bb150c7bdb16e7ed7779280aad" category="inline-link-macro-rx"></block>。</block>
   <block id="d20cc380823f43f0acf872e3020e3bd2" category="cell">7.0U1以上</block>
   <block id="cd7d50c8df32692f671c1e63989f485a" category="cell">ESXiサーバ</block>
   <block id="fe115ae8a7d04d4f6b25288b9c0d157b" category="cell">1.2と1.3 SnapCenterサーバは、VMDKのデータ保護処理を介してアプリケーション用のSnapCenter Plug-in for VMware vSphereと通信するためにこのプロトコルを使用します。</block>
-  <block id="a569487b43126a296801a18c63338706" category="cell">SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
-  <block id="ccb01c1fed73ae0745105a88f4f14dcd" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="f480f082c29fcf628f934199402ad852" category="inline-link-rx"></block>。</block>
   <block id="608d0cc0a62b7ecff9cf09f3405773c5" category="section-title">NVMe over TCPプロトコルの要件</block>
   <block id="ec3a0c65dec1eee8127351ce116aa730" category="paragraph">NVMe over TCPプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。</block>
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0U3</block>
@@ -2173,9 +2168,6 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="39555852d385a77b40d2bcf7d790ab82" category="list-text">VMを右クリックし、* SnapCenter Plug-in for VMware vSphere *&gt;*[Guest File Restore]*を選択します。</block>
   <block id="65895b7403885311119261f9146fcd0e" category="list-text">接続されている仮想ディスクからリストアするファイルを検索するには、vSphere Clientのショートカットウィンドウで* SnapCenter Plug-in for VMware vSphere *を選択します。</block>
   <block id="3384140e800c2f652b9cef13ac075fa2" category="list-text">左側のナビゲータペインで、*[Guest File Restore]*&gt;*[Guest Configuration]*を選択します。</block>
-  <block id="44c6fb205ff700ce92d55729cd516c13" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
-  <block id="c30b54b2f0c6c2e9a103d286e7b23ce5" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照してください<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>。</block>
-  <block id="6ec40fd66ac6ea02299c4fabd83e8275" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照して<block ref="045f3ddde5c3413f11a91218d71b4b1a" category="inline-link-rx"></block>ください。</block>
   <block id="b59c69b3461a70dfc0aa2e0732ab7524" category="list-text">接続処理とリストア処理では、デフォルトのSCSIコントローラを使用してVMDKが接続されます。ただし、NVMeディスクを使用してVMに接続されたVMDKをバックアップする場合は、可能な場合はNVMeコントローラが接続処理とリストア処理で使用されます。</block>
   <block id="ebdc37577a43d781541f86f380fcfba9" category="list-text">左側のナビゲーションペインで、VMを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*[リストア]*を選択します。</block>
   <block id="0e75737369597ad96531f41e66789232" category="paragraph">VMをリストアする前に、SnapCenter Plug-in for VMware vSphereを使用してVMのバックアップを作成しておく必要があります。</block>
@@ -2217,4 +2209,13 @@ Snapshot ラベルは、このポリシーで作成された Snapshot をセカ�
   <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">SnapCenter Plug-in for VMware vSphere GUIからのサポートバンドルの生成</block>
   <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>です。</block>
+  <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">サポートされるバージョンの最新情報については、（IMT）を参照して<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> ください。</block>
+  <block id="20f6a12d4ccfce9e9c6f58459fac2777" category="admonition">ファンアウト構成では、3番目のサイトでは整合グループはサポートされません。</block>
+  <block id="3458fc42f0b377624eb1de9c23c10655" category="paragraph">SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block> 。</block>
+  <block id="b1213a15d0ce0cefa635cb9a1238b7ad" category="paragraph">サポートされているONTAP toolsのバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="8c9e5a8991367cd2b398f6da00fcacea" category="cell">SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="14f6e09e94edb505729ffc8766177413" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="9a8a39bfd809f914e270e3aa295af606" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
+  <block id="3759b6e9ee7be120a52636d5811b2cb5" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照してください<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
+  <block id="6b98cc6c5d2c3be456270dd9cd0c49b3" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、を参照して<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>ください。</block>
 </blocks>

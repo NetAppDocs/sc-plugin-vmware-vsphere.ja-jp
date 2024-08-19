@@ -43,6 +43,10 @@ SnapMirror Active Sync環境でVMFSデータストアを保護するには、Sna
 +
 ** テクニカルレポートの説明に従って、クラスタとメディエーターを設定します https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：『SnapMirror active sync（formerly SMBC）』"]。
 ** VMFSデータストアに関連付けられているボリュームを整合性グループに追加し、2つのONTAPストレージシステム間に_AutomatedFailOver_or_AutomatedFailOverDuplex_protectionポリシーを使用してデータ保護関係を作成します。_AutomatedFailOverDuplex_policyは、ONTAP 9.15.1リリース以降でサポートされています。
++
+
+NOTE: ファンアウト構成では、3番目のサイトでは整合グループはサポートされません。
+
 
 
 

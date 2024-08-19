@@ -261,7 +261,7 @@ NOTE: バックアップ内のいずれかの VM で休止処理が失敗する�
 SnapCenter バージョン 4.x では、 ONTAP 8.3.1 以降がサポートされます。
 
 +
-SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] 。
+SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["ネットアップの Interoperability Matrix Tool （ IMT ）"^] 。
 
 * 共有 PCI デバイスが VM に接続されている。
 * 優先IPアドレスがSnapCenterに設定されていません。
