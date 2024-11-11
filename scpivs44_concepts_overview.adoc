@@ -59,7 +59,7 @@ NFS環境のほとんどのリストア処理では、ONTAPの標準機能（Sin
 ONTAPツールを使用して、ONTAPおよびVMware Web ClientでVVOL用のストレージをプロビジョニングおよび設定します。
 
 +
-詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere向けONTAPツール"^]
+詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 * SnapCenter Plug-in for VMware vSphereをLinux VMの仮想アプライアンスとして導入
 +

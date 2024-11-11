@@ -99,10 +99,6 @@
   <block id="29b39b2b805d36f8dc5499179622da3f" category="list-text">オプション 2 ：システム構成</block>
   <block id="603cbed8f7baa50983a476190f811eb7" category="paragraph">仮想マシンの再起動仮想マシンのシャットダウン「maint」ユーザパスワードの変更タイムゾーンの変更NTPサーバの変更SSHアクセスの有効化jailディスクサイズ（/jail）の増加アップグレードインストールVMware Tools MFAトークンの生成</block>
   <block id="3ab95c6c65b605b34daedfc235dfd995" category="admonition">MFAは常に有効になっており、MFAを無効にすることはできません。</block>
-  <block id="05515bf0519f34381e6466f01c282678" category="paragraph">+*オプション3：ネットワーク構成</block>
-  <block id="ff261448949c973f9f063cf77445b8d1" category="paragraph">+ IPアドレス設定の表示または変更ドメイン名検索設定の表示または変更静的ルートの表示または変更変更変更のコミットホストへのping</block>
-  <block id="cee76f4df6b5dbfa117c54383d070d0f" category="paragraph">+*オプション4：サポートと診断</block>
-  <block id="0724cc6860049b7b304c5747fdff089a" category="paragraph">+サポートバンドルの生成診断シェルへのアクセスリモート診断アクセスの有効化コアダンプバンドルの生成</block>
   <block id="2aefcd91cb5d3d55e389e951b79daf51" category="summary">SnapCenter Plug-in for VMware vSphereで管理されている既存のリソースグループに、単一のVMまたはデータストアを簡単に追加できます。</block>
   <block id="824107dbad8e3882e5944fdc7db863f5" category="doc">単一のVMまたはデータストアをリソースグループに追加する</block>
   <block id="975652e8f125ca81c2e1b1c65ac8b2c9" category="paragraph">SANおよびNASデータストアは追加できますが、VSANまたはVVOLデータストアは追加できません。</block>
@@ -145,8 +141,6 @@
   <block id="33e08b47384637a2a728f7c687e8b540" category="paragraph">SnapCenter Plug-in for VMware vSphere 4.5以降では、ASAアグリゲートで最大128TBの大規模なLUNのデータストアがサポートされます。大規模なLUNの場合、レイテンシを回避するために、SnapCenterではシックプロビジョニングLUNのみがサポートされます。</block>
   <block id="3c41488122e916d8d25efa353f26b05c" category="list-text">VMwareの仮想ボリューム（VVOL）</block>
   <block id="a5760e04dea15becd0f211df3320ab07" category="paragraph">VVOLデータ保護を使用するには、SnapCenter Plug-in for VMware vSphereおよびONTAP tools for VMware vSphereにストレージクラスタを追加する必要があります。</block>
-  <block id="ed9018b2e8611a3d2c03bb6a205b9715" category="inline-link">VMware vSphere向けONTAPツール</block>
-  <block id="6959136d9bbe341d018c5b1972d2ad84" category="paragraph">詳細については、を参照してください。<block ref="803b0580f102da00b07f33d2f17fdadb" category="inline-link-rx"></block></block>
   <block id="46d6be65c26292b8a7b6abc4d4608ab0" category="paragraph">ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterが同じ時刻に同期されている必要があります。ストレージを追加しようとしたが、vCenterの時間設定が同期されていない場合、Java証明書エラーが発生して処理が失敗することがあります。</block>
   <block id="2065b3ffa5ea044c72d7fd30a206b5f8" category="paragraph">SnapCenter Plug-in for VMware vSphereは、直接接続されたStorage VMおよびストレージクラスタ内のStorage VMに対してバックアップとリストアの処理を実行します。</block>
   <block id="3090c6393064b77b009ddfb43dc67322" category="admonition">SnapCenter Plug-in for VMware vSphereを使用してVMDK上のアプリケーションベースのバックアップをサポートする場合は、SnapCenter GUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。</block>
@@ -395,7 +389,6 @@
   <block id="db9f46474186d8c960347226166c2a57" category="admonition">SnapCenter Plug-in for VMware vSphere 4.5以降では、最大300TBのボリュームで、最大128TBの大規模なLUNおよびファイル上のデータストアがサポートされます。大規模なLUNを保護する場合は、レイテンシを回避するためにシックプロビジョニングLUNのみを使用してください。</block>
   <block id="14a4c06df8c2378b5b2b307902f01931" category="admonition">アクセスできない状態のVMは追加しないでください。アクセスできないVMを含むリソースグループを作成することは可能ですが、そのリソースグループのバックアップは失敗します。</block>
   <block id="a751540accbac3082773b3074f77377e" category="paragraph">VVOL VMを含むリソースグループを作成する前に、ONTAP tools for VMwareを導入しておく必要があります。</block>
-  <block id="27031270e8731adaad52d4c23ac29e91" category="paragraph">詳細については、を参照してください<block ref="803b0580f102da00b07f33d2f17fdadb" category="inline-link-rx"></block>。</block>
   <block id="9cce6f26b63d9eb5d76faeab404389aa" category="paragraph">リソースグループのリソースは、いつでも追加または削除できます。</block>
   <block id="52fb0b971147f2d50f41f8affa7cbf5e" category="list-text">単一リソースのバックアップ</block>
   <block id="7a4e960b3e8caf86e44f1b38aac5596b" category="paragraph">単一のリソース（単一のVMなど）をバックアップするには、その単一のリソースを含むリソースグループを作成する必要があります。</block>
@@ -598,7 +591,6 @@
   <block id="6434a38a990d4dfe06acd349c83f8c37" category="list-text">vSphere Clientのすべてのブラウザセッションからログアウトして閉じておく必要があります。また、SnapCenter Plug-in for VMware vSphereの導入時にブラウザキャッシュの問題が発生しないように、ブラウザキャッシュを削除しておく必要があります。</block>
   <block id="8ba7fa3d7ed705b172a2802a36085538" category="list-text">vCenterでTransport Layer Security（TLS）を有効にしておく必要があります。VMwareのドキュメントを参照してください。</block>
   <block id="99a0d0b84051a0e9e9194e2eb31ace23" category="list-text">SnapCenter Plug-in for VMware vSphereが導入されているvCenter以外のvCenterでバックアップを実行する場合は、ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterを同時に同期する必要があります。</block>
-  <block id="aad79d639f6c735bc78843f60f60e25b" category="list-text">VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。ONTAP Tools for VMware vSphereバージョン9.10以降がサポートされます。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。</block>
   <block id="e7d701a56a002995230e991e41a72df1" category="paragraph">vCenterと同じタイムゾーンでSnapCenter Plug-in for VMware vSphereを導入します。バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。</block>
   <block id="596e6d7cbb1dd1b33baf91e428660d8d" category="inline-link-macro">Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">VMware vCenter 7.0.3以降のバージョンの場合は、の手順に従って、 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 証明書をvCenterにインポートします。</block>
@@ -700,7 +692,6 @@
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">SnapCenter Plug-in for VMware vSphereの各インスタンスを個別のLinux VMとして導入する必要があります。</block>
   <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行する場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入し、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。</block>
   <block id="f69439260ecee7ac85f815e8701071d9" category="list-text">VVOL VM（VMware VVOLデータストア上のVM）を保護するには、最初にONTAP tools for VMware vSphereを導入する必要があります。ONTAP toolsは、ONTAPおよびVMware WebクライアントでVVOL用のストレージをプロビジョニングおよび設定します。</block>
-  <block id="b1213a15d0ce0cefa635cb9a1238b7ad" category="paragraph">サポートされているONTAP toolsのバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">SnapCenter Plug-in for VMware vSphereでは、Storage vMotionをサポートする仮想マシンの制限により、共有PCIデバイスまたはPCIeデバイス（NVIDIA Grid GPUなど）のサポートが制限されます。詳細については、ベンダーのドキュメント『VMware導入ガイド』を参照してください。</block>
   <block id="2ea5568824b820ba2bfad023e6bb3573" category="list-text">サポート内容：</block>
   <block id="71404dd2d545c3a05e70f63a5eb8d4e8" category="paragraph">リソースグループの作成</block>
@@ -2119,4 +2110,13 @@
   <block id="c257f5c852c12409e63afb17104f69c5" category="sidebar">REST API</block>
   <block id="a3d53cfe9124531cb5f9bbfefe704326" category="sidebar">組み込みのスケジュールを変更するREST APIワークフロー</block>
   <block id="3da6944b1baaec4beb70694ac307fd1f" category="sidebar">同じリリースの新しいパッチにアップグレードする</block>
+  <block id="99227cc56eb10094b5911955997594bd" category="list-text">オプション 3 ：ネットワーク構成</block>
+  <block id="eb6403fe72c82873180af4e1fbe24094" category="paragraph">IP アドレス設定の表示または変更ドメイン名検索設定の表示または変更静的ルートの表示または変更ホストへの Ping 変更のコミット</block>
+  <block id="85fe6d094a622a1eeb362f8dda82c97e" category="list-text">オプション 4 ：サポートと診断</block>
+  <block id="d34a5ffb5a21003f9819a1371ce31cc8" category="paragraph">サポートバンドルの生成診断シェルの有効化リモート診断アクセスコアダンプバンドルの生成</block>
+  <block id="b60beee083dba233367ef7318fb10b25" category="paragraph">詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
+  <block id="33e4404acb572de935dae083d63033a8" category="inline-link">vCenterを7.0.xに更新したあとにSCVでvCLS VMをバックアップできない</block>
+  <block id="8c2a5a560e2f4170197d66660fb8d4f9" category="paragraph">詳細については、を参照してください。<block ref="a5f674bd21d863d8804d3aaee35bd7df" category="inline-link-rx"></block></block>
+  <block id="e6f2686f361e5123b41a78ec7cf82976" category="list-text">VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。サポートされているONTAP toolsのバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。</block>
+  <block id="c162715bd54906edd2726c5a128225ec" category="paragraph">データSVMに関連付けるロールを作成する場合は、_cluster identity show_cluster levelコマンドは無視してかまいません。</block>
 </blocks>

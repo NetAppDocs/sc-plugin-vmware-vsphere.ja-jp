@@ -49,6 +49,8 @@ summary: リソースグループは、保護するVM、データストア、vSp
 
 IMPORTANT: VMware vSphere Cluster Service（vCLS）を使用している場合は、vCLSで管理されるVMをSnapCenter Plug-in for VMware vSphereリソースグループに含めないでください。
 
+詳細については、を参照してください。 https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x["vCenterを7.0.xに更新したあとにSCVでvCLS VMをバックアップできない"]
+
 
 TIP: SnapCenter Plug-in for VMware vSphere 4.5以降では、最大300TBのボリュームで、最大128TBの大規模なLUNおよびファイル上のデータストアがサポートされます。大規模なLUNを保護する場合は、レイテンシを回避するためにシックプロビジョニングLUNのみを使用してください。
 
@@ -58,7 +60,7 @@ IMPORTANT: アクセスできない状態のVMは追加しないでください�
 .開始する前に
 VVOL VMを含むリソースグループを作成する前に、ONTAP tools for VMwareを導入しておく必要があります。
 
-詳細については、を参照してください https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere向けONTAPツール"^]。
+詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 .タスクの内容
 リソースグループのリソースは、いつでも追加または削除できます。

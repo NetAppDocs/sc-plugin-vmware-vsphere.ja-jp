@@ -42,10 +42,7 @@ SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、�
 
 * VVOL VM（VMware VVOLデータストア上のVM）を保護するには、最初にONTAP tools for VMware vSphereを導入する必要があります。ONTAP toolsは、ONTAPおよびVMware WebクライアントでVVOL用のストレージをプロビジョニングおよび設定します。
 +
-詳細については、を参照してください。 https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["VMware vSphere向けONTAPツール"^]
-
-+
-サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
+詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 * SnapCenter Plug-in for VMware vSphereでは、Storage vMotionをサポートする仮想マシンの制限により、共有PCIデバイスまたはPCIeデバイス（NVIDIA Grid GPUなど）のサポートが制限されます。詳細については、ベンダーのドキュメント『VMware導入ガイド』を参照してください。
 +

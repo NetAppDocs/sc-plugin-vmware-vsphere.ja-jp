@@ -57,6 +57,8 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 
 | cluster identity show network interface show vserver peer vserver show 
 |===
+データSVMに関連付けるロールを作成する場合は、_cluster identity show_cluster levelコマンドは無視してかまいません。
+
 
 NOTE: サポートされていないvServerコマンドに関する警告メッセージは無視してかまいません。
 
