@@ -1400,8 +1400,6 @@
   <block id="7af76100be5ace159efb0a1fb46267ce" category="paragraph">SnapCenter Plug-in for VMware vSphereの複数のインスタンスを同じSnapCenter Server 4.2に登録することで、VMでのアプリケーションベースのデータ保護処理をサポートできます。同じSnapCenter Plug-in for VMware vSphereを複数のSnapCenter Serverに登録することはできません。</block>
   <block id="421829fbd339504809d87be62b8dd3b1" category="summary">リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="doc">リリースノート</block>
-  <block id="0cb419de6360c724e26df691f8d52375" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.0リリースノート</block>
-  <block id="ef1a838b98177650f2583e0684bb4f04" category="paragraph">リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項など）が記載されています。 およびドキュメントの更新または修正。詳細については、を参照してください。<block ref="8064e7a1b1bb715ac6ad5ebb68124ef0" category="inline-link-rx"></block></block>
   <block id="81825a917dcd9f5f496e5c2e475ea698" category="summary">SnapCenterのデータ保護機能を使用する必要がなくなった場合は、SnapCenter Plug-in for VMware vSphereを無効にしてvCenterから登録を解除してから、vCenterからSnapCenter Plug-in for VMware vSphereを削除してから、残りのファイルを手動で削除する必要があります。</block>
   <block id="92d37724657724129ae0451584c728aa" category="doc">SnapCenter Plug-in for VMware vSphereの削除</block>
   <block id="1c7d667e742402e56daf3c18150d0523" category="list-text">の形式を使用して、SnapCenter Plug-in for VMware vSphere管理GUIにログインし<block ref="3dfacd84c996ac983963942e2712a0bf" prefix=" " category="inline-code"></block>ます。</block>
@@ -2119,4 +2117,6 @@
   <block id="00b932dfc365b7b36023fc7e5a151179" category="paragraph">NVMe over TCPおよびNVMe over FCプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。</block>
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPおよびNVMe over FCストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
+  <block id="ec1055ea33266617a541d92dfa6e5b67" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート</block>
+  <block id="23ea4d7ccec896acdd587b616d6cc4ee" category="paragraph">リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。詳細については、を参照してください。<block ref="1433bf204e910686ea87dd6be31fd4c0" category="inline-link-rx"></block></block>
 </blocks>
