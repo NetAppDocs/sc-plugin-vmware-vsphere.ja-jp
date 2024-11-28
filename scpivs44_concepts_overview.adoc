@@ -67,7 +67,7 @@ ONTAPツールを使用して、ONTAPおよびVMware Web ClientでVVOL用のス�
 
 
 
-SnapCenter Plug-in for VMware vSphereは、これらの主要な機能に加えて、iSCSI、ファイバチャネル、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、 NVMe over TCPをサポートします。
+SnapCenter Plug-in for VMware vSphereは、これらの主要な機能に加えて、iSCSI、ファイバチャネル、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、NVMe over FC、NVMe over TCPもサポートしています。
 
 サポートされるバージョンの最新情報については、（IMT）を参照して https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] ください。
 

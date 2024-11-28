@@ -82,7 +82,7 @@ SnapCenter Plug-in for VMware vSphereの処理を実行するための適切な�
 ** NFSにはONTAP 9.12.1以降のバージョンが必要です。
 
 
-* NVMe over TCPプロトコルにはONTAP 9.10.1以降が必要です。
+* NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。
 
 
 

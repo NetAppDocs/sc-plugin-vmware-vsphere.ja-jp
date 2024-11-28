@@ -266,7 +266,6 @@
   <block id="ab9f567063d45a42b5368e31b1fa1ee5" category="paragraph">ONTAPツールを使用して、ONTAPおよびVMware Web ClientでVVOL用のストレージをプロビジョニングおよび設定します。</block>
   <block id="2170988af7c90eecfa54f101aa51fdea" category="list-text">SnapCenter Plug-in for VMware vSphereをLinux VMの仮想アプライアンスとして導入</block>
   <block id="d43c8490fc8d00a5a9b8b5c9491f9d0c" category="paragraph">仮想アプライアンスはLinux VMとしてインストールする必要がありますが、SnapCenter Plug-in for VMware vSphereではWindowsベースとLinuxベースの両方のvCenterがサポートされます。SnapCenterは、このプラグインを標準で使用します。ユーザの介入は必要ありません。vCenterと通信し、WindowsおよびLinuxの仮想アプリケーションに対してデータ保護処理を実行するSnapCenterアプリケーションベースのプラグインをサポートします。</block>
-  <block id="2bb936cdd9c74df577504952ecadc5ae" category="paragraph">SnapCenter Plug-in for VMware vSphereは、これらの主要な機能に加えて、iSCSI、ファイバチャネル、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、 NVMe over TCPをサポートします。</block>
   <block id="9ed4a475dd3705157a9fed8811f63ce2" category="inline-link">NetApp Interoperability Matrix Tool</block>
   <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">サポートされるバージョンの最新情報については、（IMT）を参照して<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block> ください。</block>
   <block id="62c4e12eaf898bb7a4fa14f2be8f874b" category="paragraph">NFSプロトコルとESXiホストについては、VMwareが提供するvSphere Storageのドキュメントを参照してください。</block>
@@ -732,8 +731,6 @@
   <block id="652b6799454f23103801798b5880725b" category="cell">VMware向けONTAPツール</block>
   <block id="8c9e5a8991367cd2b398f6da00fcacea" category="cell">SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
   <block id="14f6e09e94edb505729ffc8766177413" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。</block>
-  <block id="608d0cc0a62b7ecff9cf09f3405773c5" category="section-title">NVMe over TCPプロトコルの要件</block>
-  <block id="ec3a0c65dec1eee8127351ce116aa730" category="paragraph">NVMe over TCPプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。</block>
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0U3</block>
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0U3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1</block>
@@ -927,7 +924,6 @@
   <block id="51a5d5da98cf5178b170023fee4cbe00" category="list-text">以前のバージョンのStorage VMotion for ONTAPを使用したクローン作成とマウント</block>
   <block id="5f7a22e6bc1efc88f124202fb98db729" category="admonition">VVolコンテナのリバランシング後にVVol VMをリストアすることはできません。</block>
   <block id="764c22e450dbc5e74f71923d5157420e" category="paragraph">ゲストファイルのリストア処理は、NFS環境とVMFS環境の両方で、クローンおよびマウント処理（Storage VMotionではない）を使用して実行されます。</block>
-  <block id="ce202327d684f714d79712b7e7d5ad13" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
   <block id="db5fdb9b050a01b11abea23e40b9585d" category="inline-link">技術情報アーティクル：SCV clone or restores fail with error 'Host Unresolved volumes is Null</block>
   <block id="fd8f2fbe73fe09f5d08a36f7b4d3bcd1" category="paragraph">エラーの詳細については、を参照してください<block ref="1077fe6ba26e5db8ea58ede2a1d4f949" category="inline-link-rx"></block> 。</block>
   <block id="9e2b96fdadc4a465b5cc131e5d0acd88" category="summary">ONTAP RBACは、SnapCenterサーバのアプリケーション整合性（VMDK経由のアプリケーション整合性）ジョブにのみ適用されます。</block>
@@ -1114,7 +1110,6 @@
   <block id="25ab5901983aa5a82a72f4d01731feda" category="list-text">改ざん防止スナップショット（TPS）機能を使用するには、次の手順を実行します。</block>
   <block id="a4866b08c203cfce4bb493afcc8b8295" category="list-text">SANにはONTAP 9.13.1以降のバージョンが必要です。</block>
   <block id="d66052df70896b2def96ac137cf820f5" category="list-text">NFSにはONTAP 9.12.1以降のバージョンが必要です。</block>
-  <block id="7e5d063e76d4bd57ccc370986b9505e0" category="list-text">NVMe over TCPプロトコルにはONTAP 9.10.1以降が必要です。</block>
   <block id="b49cf949bc4e3959497059a7bfdd0369" category="inline-link">RestAPIを使用してSCVの設定パラメータを編集する方法</block>
   <block id="edf08e5a72e49a6f8e59f09ad7747a6b" category="admonition">ONTAPバージョン9.11.1以降では、REST APIを使用してONTAPクラスタと通信します。ONTAPユーザは、httpアプリケーションを有効にしておく必要があります。ただし、ONTAP REST APIで問題が見つかった場合は、設定キー「force_zapi」を使用して従来のZAPIワークフローに切り替えることができます。設定APIを使用してこのキーを追加または更新し、trueに設定する必要がある場合があります。詳細については、技術情報の記事を参照して<block ref="1c569ff15e6174002858600fc974b74f" category="inline-link-rx"></block> ください。</block>
   <block id="b148e71859cffdb60779d0fd79307d95" category="summary">SnapCenter Plug-in for VMware vSphereの導入を開始する前に、最小限必要なvCenter Privilegesが揃っていることを確認してください。</block>
@@ -2119,4 +2114,9 @@
   <block id="8c2a5a560e2f4170197d66660fb8d4f9" category="paragraph">詳細については、を参照してください。<block ref="a5f674bd21d863d8804d3aaee35bd7df" category="inline-link-rx"></block></block>
   <block id="e6f2686f361e5123b41a78ec7cf82976" category="list-text">VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。サポートされているONTAP toolsのバージョンの最新情報については、を参照してください<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。</block>
   <block id="c162715bd54906edd2726c5a128225ec" category="paragraph">データSVMに関連付けるロールを作成する場合は、_cluster identity show_cluster levelコマンドは無視してかまいません。</block>
+  <block id="ce979aca6aa053e43e8e7148e876185c" category="paragraph">SnapCenter Plug-in for VMware vSphereは、これらの主要な機能に加えて、iSCSI、ファイバチャネル、FCoE、NFS 3.0/4.1、VMFS 5.0/6.0、NVMe over FC、NVMe over TCPもサポートしています。</block>
+  <block id="18ba359970ff64681ed643864ce8bced" category="section-title">NVMeoverTCPオヨヒNVMeoverFCフロトコルノヨウケン</block>
+  <block id="00b932dfc365b7b36023fc7e5a151179" category="paragraph">NVMe over TCPおよびNVMe over FCプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。</block>
+  <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPおよびNVMe over FCストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
+  <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
 </blocks>

@@ -128,9 +128,9 @@ VMFSデータストア上に1つ以上のVMDKがある場合のVM全体のリス
 
 
 
-==== NVMe over TCPプロトコルの要件
+==== NVMeoverTCPオヨヒNVMeoverFCフロトコルノヨウケン
 
-NVMe over TCPプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。
+NVMe over TCPおよびNVMe over FCプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。
 
 * vCenter vSphere 7.0U3
 * ESXi 7.0U3
