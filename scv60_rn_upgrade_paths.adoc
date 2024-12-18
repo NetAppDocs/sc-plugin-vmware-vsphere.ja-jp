@@ -1,0 +1,92 @@
+---
+permalink: scv60_rn_upgrade_paths.html 
+sidebar: sidebar 
+keywords: upgrade paths, scv, 6.0, 6.0.1 
+summary: SnapCenter Plug-in for VMware vSphere 6.0の新機能について説明します。 
+---
+= アップグレードパス
+:allow-uri-read: 
+
+
+[role="lead"]
+アップグレード可能なSnapCenter Plug-in for VMware vSphere（SCV）のバージョンは、現在実行しているバージョンによって異なります。
+
+[NOTE]
+====
+SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。
+
+====
+[cols="50%,50%"]
+|===
+| SCVバージョンを使用している場合 | SCVを次のように直接アップグレードできます。 
+
+
+ a| 
+SCV 5.0
+ a| 
+SCV 6.0
+
+
+
+ a| 
+SCV 4.9
+ a| 
+SCV 5.0 および SCV 6.0
+
+
+
+ a| 
+SCV 4.8
+ a| 
+SCV 4.9 および SCV 5.0
+
+
+
+ a| 
+SCV 4.7
+ a| 
+SCV 4.8 および SCV 4.9
+
+|===
+SnapCenterに統合されている仮想データベースおよびファイルシステムの場合は、次のアップグレードパスを使用します。
+
+[cols="30%,30%,40%"]
+|===
+| 使用するポート | VMwareプラグインの状態 | 以下に直接アップグレードできます。 
+
+
+ a| 
+SnapCenter 6.0
+ a| 
+SCV 5.0
+ a| 
+SCV 6.0
+
+
+
+ a| 
+SnapCenter 5.0
+ a| 
+SCV 4.9
+ a| 
+SCV 5.0
+
+
+
+ a| 
+SnapCenter 4.9
+ a| 
+SCV 4.8
+ a| 
+SCV 4.9
+
+
+
+ a| 
+SnapCenter 4.8
+ a| 
+SCV 4.7
+ a| 
+SCV 4.8
+
+|===

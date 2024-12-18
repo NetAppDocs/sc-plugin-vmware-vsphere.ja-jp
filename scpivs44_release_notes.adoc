@@ -4,7 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:  
 summary: リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。 
 ---
-= リリースノート
+= SnapCenter Plug-in for VMware vSphereリリースノート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,4 +14,12 @@ summary: リリースノートには、このリリースのSnapCenter Plug-in f
 
 
 [role="lead"]
-リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。詳細については、を参照してください。 https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート"^]
+SnapCenter Plug-in for VMware vSphere 6.0.1および6.0の新機能と拡張機能について説明します。
+
+既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート"^]。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。
+
+[NOTE]
+====
+サポートされるバージョンの最新情報については、NetApp Interoperability Matrix Toolを(http://mysupport.netapp.com/matrix["IMT"^]参照してください）。
+
+====

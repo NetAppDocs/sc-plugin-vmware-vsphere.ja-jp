@@ -1,0 +1,28 @@
+---
+permalink: scv60_releasenotes_601_whats_new.html 
+sidebar: sidebar 
+keywords: 'what"s new, release notes, scv, 6.0, 6.0.1' 
+summary: SnapCenter Plug-in for VMware vSphere 6.0の新機能について説明します。 
+---
+= SnapCenter Plug-in for VMware vSphere 6.0.1の新機能
+:allow-uri-read: 
+
+
+[cols="30%,70%"]
+|===
+| 更新 | 製品説明 
+
+
+ a| 
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html["NVMe over FCプロトコルのサポート"]
+ a| 
+SnapCenter Plug-in for VMware vSphere 6.0.1では、VMFSデータストアに対してNVMe over FCプロトコルがサポートされるようになり、パフォーマンスの最適化、コストの削減、継続的なパフォーマンスの確保が可能になりました。
+
+
+
+ a| 
+https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html["ONTAP Tools for VMware vSphere 10.xとSCV 6.0.1の統合"]
+ a| 
+ONTAP Tools for VMware vSphere 10.xは、VMware vSphere Virtual Volumesの設定に役立ちます。この統合により、NFSベースのvVolデータストア上にある仮想マシンを設定、バックアップ、およびリストアできます。
+
+|===

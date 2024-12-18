@@ -2118,5 +2118,46 @@
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPおよびNVMe over FCストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
   <block id="ec1055ea33266617a541d92dfa6e5b67" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート</block>
-  <block id="23ea4d7ccec896acdd587b616d6cc4ee" category="paragraph">リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。詳細については、を参照してください。<block ref="1433bf204e910686ea87dd6be31fd4c0" category="inline-link-rx"></block></block>
+  <block id="2233cc73f35f4d66a36bbbeebab35281" category="doc">SnapCenter Plug-in for VMware vSphereリリースノート</block>
+  <block id="297142e178601173053624e9ef12f108" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0.1および6.0の新機能と拡張機能について説明します。</block>
+  <block id="3b3c714cc3d97185d38b7de5a06604eb" category="paragraph">既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください<block ref="1433bf204e910686ea87dd6be31fd4c0" category="inline-link-rx"></block>。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。</block>
+  <block id="c5dcd35af16918a17ee9c3a5c153f0af" category="inline-link">IMT</block>
+  <block id="2d15261526cfe20309636c59ec64f54e" category="paragraph">サポートされるバージョンの最新情報については、NetApp Interoperability Matrix Toolを<block ref="b3ca33d6c3d8c65c6db17cc2a6a779f0" category="inline-link-rx"></block>参照してください）。</block>
+  <block id="ccbdf0b4f3977d9d972b8053561475b1" category="summary">SnapCenter Plug-in for VMware vSphere 6.0の新機能について説明します。</block>
+  <block id="4ab6fdda3b84dfae82088c2bc01040ec" category="doc">SnapCenter Plug-in for VMware vSphere 6.0.1の新機能</block>
+  <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">更新</block>
+  <block id="42740cd9317367a2589caeffd362cff0" category="inline-link">NVMe over FCプロトコルのサポート</block>
+  <block id="50be082c76f5c49324bb5bd7608ae3b2" category="paragraph"><block ref="50be082c76f5c49324bb5bd7608ae3b2" category="inline-link-rx"></block></block>
+  <block id="5ba878c4a46b0a8571800aaa6e8445a7" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0.1では、VMFSデータストアに対してNVMe over FCプロトコルがサポートされるようになり、パフォーマンスの最適化、コストの削減、継続的なパフォーマンスの確保が可能になりました。</block>
+  <block id="1c7703c1d060b65ce6fd3a75ba50400e" category="inline-link">ONTAP Tools for VMware vSphere 10.xとSCV 6.0.1の統合</block>
+  <block id="0d1fedc1c92b2bac1ad8d29266340940" category="paragraph"><block ref="0d1fedc1c92b2bac1ad8d29266340940" category="inline-link-rx"></block></block>
+  <block id="41d114a9720ad1ac299b2dffec2f7186" category="paragraph">ONTAP Tools for VMware vSphere 10.xは、VMware vSphere Virtual Volumesの設定に役立ちます。この統合により、NFSベースのvVolデータストア上にある仮想マシンを設定、バックアップ、およびリストアできます。</block>
+  <block id="704fc5c8ea6982e3179f495b7b832121" category="doc">SnapCenter Plug-in for VMware vSphere 6.0の新機能</block>
+  <block id="05355694c1b9a07fdbe4cd953d66f950" category="inline-link">NVMe over TCPプロトコルのサポート</block>
+  <block id="537b09dbac250171d06580c68b67b2f2" category="paragraph"><block ref="537b09dbac250171d06580c68b67b2f2" category="inline-link-rx"></block></block>
+  <block id="a629ec953583fe39117309ef9a508a81" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0では、VMFSデータストアに対してNVMe over TCPプロトコルがサポートされるようになりました。</block>
+  <block id="ead1e4398d30de28a2a5ea2f82cb8d47" category="paragraph">NVMe over TCPプロトコルの導入に追加のハードウェアは必要ないため、シンプルで対費用効果に優れています。</block>
+  <block id="b154808e6bcc13034e613c359731ad79" category="paragraph">iSCSIと同様に、NVMe over TCPプロトコルを使用するVMFSデータストアは、任意のイーサネットNICおよびスイッチを使用でき、バックアップ、リストア、マウント、接続、接続解除などのすべての標準処理をサポートします。</block>
+  <block id="4f53b479c6b47d73b1fdb28f399b1301" category="inline-link">SnapMirrorアクティブ同期のサポート</block>
+  <block id="a3dde13a3e6b0437cbcc67d81b0b023f" category="paragraph"><block ref="a3dde13a3e6b0437cbcc67d81b0b023f" category="inline-link-rx"></block></block>
+  <block id="88ae2479bcea5ca16281e31626f2f8d8" category="paragraph">SnapCenter Plug-in for VMware vSphereを使用して、ゼロ目標復旧時点（RPO）、目標復旧時間（RTO）、透過的アプリケーションフェイルオーバーなどのSnapMirrorアクティブ同期機能を設定できるようになりました。</block>
+  <block id="6884e6f09d7d01f963a72f6d4b4dee73" category="paragraph">SnapMirrorアクティブ同期は、VMFSデータストアでのみサポートされます。</block>
+  <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">アップグレード可能なSnapCenter Plug-in for VMware vSphere（SCV）のバージョンは、現在実行しているバージョンによって異なります。</block>
+  <block id="4181b34482469dce169449ef3b643b27" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。</block>
+  <block id="e369a7ee41a72fa8a44419a1129cc575" category="cell">SCVバージョンを使用している場合</block>
+  <block id="189db0c09008fdcd0e2cc9be6b313231" category="cell">SCVを次のように直接アップグレードできます。</block>
+  <block id="1ad22725dc59b3f21bd032fe84861bc1" category="paragraph">SCV 6.0</block>
+  <block id="f4448feccabcefa77ecd89689a4f8422" category="paragraph">SCV 5.0 および SCV 6.0</block>
+  <block id="f7223e4d64308089fc60a4ed6aef55f1" category="paragraph">SCV 4.9 および SCV 5.0</block>
+  <block id="b29558d756ecb0469c1e18fb8ffb2428" category="paragraph">SCV 4.8 および SCV 4.9</block>
+  <block id="36112713b4999c5619fad06e104ac585" category="paragraph">SnapCenterに統合されている仮想データベースおよびファイルシステムの場合は、次のアップグレードパスを使用します。</block>
+  <block id="a8167c30d181002ec48569e2d6c3ceb1" category="cell">使用するポート</block>
+  <block id="204326f9ae1f832298654cd349f16dcc" category="cell">VMwareプラグインの状態</block>
+  <block id="d63b9d0523105aa499fd355a5431da08" category="cell">以下に直接アップグレードできます。</block>
+  <block id="13c1ef900fc885a20b94324d41ba496e" category="paragraph">SnapCenter 6.0</block>
+  <block id="8e07dd0a7cef005f474929f3ccd8ab15" category="paragraph">SnapCenter 5.0</block>
+  <block id="07d190428eb856174f602dfb1555b388" category="paragraph">SnapCenter 4.9</block>
+  <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
+  <block id="9fb9e3e27a3792a16059036c9b877598" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0.1の新機能</block>
+  <block id="43e9871fb2ac1e50ad02c9c15dce6a93" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0の新機能</block>
 </blocks>
