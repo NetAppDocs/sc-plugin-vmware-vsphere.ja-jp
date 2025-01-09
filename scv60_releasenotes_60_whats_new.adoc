@@ -27,7 +27,7 @@ iSCSIと同様に、NVMe over TCPプロトコルを使用するVMFSデータス�
  a| 
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_create_backup_policies_for_vms_and_datastores.html["SnapMirrorアクティブ同期のサポート"]
  a| 
-SnapCenter Plug-in for VMware vSphereを使用して、ゼロ目標復旧時点（RPO）、目標復旧時間（RTO）、透過的アプリケーションフェイルオーバーなどのSnapMirrorアクティブ同期機能を設定できるようになりました。
+SnapCenter Plug-in for VMware vSphereを使用して、目標復旧時点（RPO）ゼロ、目標復旧時間（RTO）、透過的なアプリケーションフェイルオーバーなどのSnapMirrorアクティブ同期機能を設定できるようになりました。
 
 SnapMirrorアクティブ同期は、VMFSデータストアでのみサポートされます。
 
