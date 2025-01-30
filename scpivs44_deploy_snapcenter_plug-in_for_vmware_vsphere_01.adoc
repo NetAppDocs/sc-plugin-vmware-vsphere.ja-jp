@@ -20,7 +20,7 @@ SnapCenterの機能を使用して仮想マシン上のVM、データストア�
 . ブラウザで、VMware vSphere vCenterに移動します。
 +
 
-NOTE: IPv6 HTML Webクライアントの場合は、ChromeまたはFirefoxを使用する必要があります。
+NOTE: IPv6アドレスのHTML Webクライアントの場合は、ChromeまたはFirefoxを使用する必要があります。
 
 . VMware vCenter Single Sign-Onページにログインします。
 . ナビゲーションペインで、データセンター、フォルダ、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、[OVFテンプレートの展開*]を選択してVMware導入ウィザードを開始します。

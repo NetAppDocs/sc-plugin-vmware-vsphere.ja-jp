@@ -46,16 +46,22 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 | バージョン 
 
 
-| volume clone create volume clone show volume clone split start volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume show volume snapshot create volume snapshot delete volume snapshot modify volume snapshot rename volume snapshot restore volume snapshot restore -file volume snapshot show volume unmount 
+| volume clone create volume clone show volume clone split start volume clone split status volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume managed-feature SnapLock volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume snapshot delete volume snapshot modify -expiry-time volume snapshot rename volume snapshot restore volume snapshot restore 
 
 
-| vserver cifs vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs share show vserver export-policy vserver export-policy create vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem host add vserver nvme subsystem host delete vserver nvme namespace network interface network interface failover-groupsを表示します。 
+| vserver cifs vserver cifs share create vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs shadowcopy vserver cifs share show vserver export-policy vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem 
 |===
 |===
 | 読み取り専用コマンド： ONTAP 8.3 以降で必要な最小権限 
 
 
 | cluster identity show network interface show vserver peer vserver show 
+|===
+|===
+| フルアクセスコマンド：ONTAP 9以降で必要な最小限の権限。 
+
+
+| consistency-group storage-unit show 
 |===
 データSVMに関連付けるロールを作成する場合は、_cluster identity show_cluster levelコマンドは無視してかまいません。
 

@@ -28,7 +28,7 @@ SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加�
 
 * 仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。
 +
-** IPv4を実行しており、SnapCenter VMware vSphereホストのIPアドレスが2つある。その結果、ジョブ要求はSnapCenterサーバで認識されないIPアドレスに送信されます。この問題を回避するには、使用するIPアドレスを次のように追加します。
+** IPv4アドレスを実行しており、SnapCenter VMware vSphereホストのIPアドレスが2つある。その結果、ジョブ要求はSnapCenterサーバで認識されないIPアドレスに送信されます。この問題を回避するには、使用するIPアドレスを次のように追加します。
 +
 ... SnapCenter Plug-in for VMware vSphereの導入先に移動します。 `/opt/netapp/scvservice/standalone_aegis/etc`
 ... ネットワーク- interface.propertiesファイルを開きます。

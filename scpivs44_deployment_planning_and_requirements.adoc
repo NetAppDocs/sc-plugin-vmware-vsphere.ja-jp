@@ -139,7 +139,7 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 
 
 
-== スペースとサイジングの要件
+== スペース、サイジング、拡張の要件
 
 |===
 | 項目 | 要件 
@@ -148,13 +148,16 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 | オペレーティングシステム | Linux 
 
 
-| 最小CPU数 | 4コア 
+| 推奨CPU数 | 8コア 
 
 
-| 最小RAM | 最小構成：12GB推奨：16GB 
+| 推奨RAM | 24 GB 
 
 
 | SnapCenter Plug-in for VMware vSphere、ログ、MySQLデータベース用の最小ハードドライブスペース | 100GB 
+
+
+| アプライアンス内のvmcontrolサービスの最大ヒープサイズ | 8 GB 
 |===
 
 

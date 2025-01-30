@@ -27,7 +27,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してリソースグル�
 | 1 | `/4.1/policies` | `Get Policies` VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、REST APIを使用して `Create Policy` 新しいポリシーを作成します。 
 
 
-| 2 | `/4.1/resource-groups` | `Create a Resource Group` 指定したポリシーでリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。 
+| 2 | `/4.1/resource-groups` | `Create a Resource Group` 指定したポリシーでリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。このREST APIを使用してセカンダリ保護を有効にすることができます。 
 |===
 リソースグループを変更するワークフローは次のとおりです。
 

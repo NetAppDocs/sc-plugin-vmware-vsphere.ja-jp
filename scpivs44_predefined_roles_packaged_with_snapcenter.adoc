@@ -28,10 +28,10 @@ vCenter Server RBACの使用を簡易化するために、SnapCenter Plug-in for
 | ロール | 製品説明 
 
 
-| SCV管理者 | すべての SnapCenter Plug-in for VMware vSphere タスクを実行するために必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。 
+| SCV管理者 | すべてのSnapCenter Plug-in for VMware vSphereタスクの実行に必要なvCenter Server標準とSnapCenter固有のPrivilegesがすべて提供されています。SCV 6.1リリース以降では、セカンダリ保護を作成するための新しい権限がこのロールに追加されています。 
 
 
-| SCV バックアップ | vSphere オブジェクト（仮想マシンおよびデータストア）のバックアップに必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。また、ユーザはconfigure権限にもアクセスできます。ユーザはバックアップをリストアできません。 
+| SCV バックアップ | vSphereオブジェクト（仮想マシンおよびデータストア）のバックアップに必要なvCenter Server標準およびSnapCenter固有のPrivilegesがすべて提供されています。また、ユーザはconfigure権限にもアクセスできます。ユーザはバックアップをリストアできません。SCV 6.1リリース以降では、セカンダリ保護を作成するための新しい権限がこのロールに追加されています。 
 
 
 | SCVゲストファイルのリストア | ゲストファイルとフォルダのリストアに必要なvCenter Server標準およびSnapCenter固有のPrivilegesがすべて提供されています。VMまたはVMDKをリストアすることはできません。 

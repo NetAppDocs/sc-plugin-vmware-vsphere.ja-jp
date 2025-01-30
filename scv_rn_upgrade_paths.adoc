@@ -1,8 +1,8 @@
 ---
-permalink: scv60_rn_upgrade_paths.html 
+permalink: scv_rn_upgrade_paths.html 
 sidebar: sidebar 
-keywords: upgrade paths, scv, 6.0, 6.0.1 
-summary: SnapCenter Plug-in for VMware vSphere 6.0の新機能について説明します。 
+keywords: upgrade paths, scv, 6.1 
+summary: SnapCenter Plug-in for VMware vSphere 6.1の新機能について説明します。 
 ---
 = アップグレードパス
 :allow-uri-read: 
@@ -22,9 +22,16 @@ SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレー�
 
 
  a| 
+SCV 6.0
+ a| 
+SCV 6.1
+
+
+
+ a| 
 SCV 5.0
  a| 
-SCV 6.0
+SCV 6.0 および SCV 6.1
 
 
 
@@ -53,6 +60,15 @@ SnapCenterに統合されている仮想データベースおよびファイル�
 [cols="30%,30%,40%"]
 |===
 | 使用するポート | VMwareプラグインの状態 | 以下に直接アップグレードできます。 
+
+
+ a| 
+SnapCenter 6.1
+ a| 
+SCV 6.0
+ a| 
+SCV 6.1
+
 
 
  a| 
@@ -90,3 +106,4 @@ SCV 4.7
 SCV 4.8
 
 |===
+サポートされるバージョンの最新情報については、（IMT）を参照して https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] ください。

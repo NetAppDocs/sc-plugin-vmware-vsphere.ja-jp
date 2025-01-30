@@ -27,6 +27,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用して、一般的なデ�
 ** データストアのマウントとアンマウント
 ** ジョブのダウンロードとレポートの生成
 ** 組み込みのスケジュールを変更
+** ASA R2のセカンダリ保護の設定
 
 
 * REST API for VMware vSphereでサポートされない処理

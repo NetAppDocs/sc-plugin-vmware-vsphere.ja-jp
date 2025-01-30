@@ -33,7 +33,7 @@ SnapCenter Plug-in for VMware vSphere管理GUIのIPアドレスとログオン�
 +
 image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere管理GUI"]
 
-. [ * 設定 * ] ページの [ * ネットワーク設定 * ] セクションで、 [* IPv4 * または * IPv6 * ] をクリックし、 [ * 編集 ] をクリックします。
+. [設定]ページの*[ネットワーク設定]*セクションで、* IPv4 *または* IPv6 *アドレスをクリックし、*[編集]*をクリックします。
 +
 新しい情報を入力し、 * 保存 * をクリックします。
 
@@ -46,4 +46,4 @@ image:scpivs44_image31.png["SnapCenter Plug-in for VMware vSphere管理GUI"]
 
 
 
-NOTE: IPv4とIPv6の両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。
+NOTE: IPv4アドレスとIPv6アドレスの両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。

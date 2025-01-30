@@ -19,8 +19,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">オープンソース</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
-  <block id="c509b8a656aef03a24bb97d38089d79d" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.0に関する注意事項</block>
-  <block id="d6333f2d4419de88c51591a532f89ca4" category="paragraph"><block ref="d6333f2d4419de88c51591a532f89ca4" category="inline-link-rx"></block></block>
   <block id="d3f72758cf0a8156e66fa0d7b643122f" category="summary">REST APIを使用してストレージの名前を変更できます。</block>
   <block id="16ceb93d669340dd2ab2325671f71daf" category="doc">名前が変更されたストレージのバックアップのリストア</block>
   <block id="a52fd082737b9604d73b0ea5362cc5bd" category="paragraph">ストレージの名前を変更すると、名前変更前に作成されたバックアップを使用するワークフローが失敗します。REST APIからのみアクセスできるバックアップ名変更機能が導入され、ストレージ名変更前に作成されたバックアップを使用できるようになりました。REST APIのワークフローと使用方法を以下に示します。</block>
@@ -128,7 +126,6 @@
   <block id="ccdaf65f600f0c505b15315d8df78297" category="paragraph">デフォルトでは、[Available entities]リストには[Datacenter]オブジェクトが表示されます。データストアをクリックすると、データストア内のVMが表示され、リソースグループに追加されます。</block>
   <block id="17703492b9c14634026aba1ce2eba4be" category="paragraph">[Next] をクリックすると、 SnapCenter が管理していること、および選択した VM またはデータストアが配置されているストレージとの互換性があることが最初に確認されます。というメッセージが表示された場合は<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> 、選択したVMまたはデータストアがSnapCenterと互換性がありません。詳細については、を参照してください <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
   <block id="bea0ca05b5e1fc971afeba63c277ff99" category="list-text">追加するVMまたはデータストアごとに手順2を繰り返します。</block>
-  <block id="2fe0db662b9371f06a8b5392db88b6b1" category="list-text">「 * 次へ * 」をクリックして、「 * 概要 * 」ページに移動し、サマリーを確認して「 * 完了 * 」をクリックします。</block>
   <block id="6888e60d18ef291e7b86bc7e530fe2a8" category="doc">ストレージの追加</block>
   <block id="0a631d60b99e22182e8049161c23edfe" category="paragraph">ストレージを追加するには、このセクションの手順を実行します。</block>
   <block id="1a9f29efd8808d12b52443b2a7c2345c" category="list-text">SCVプラグインの左側のナビゲータペインで、*[ストレージシステム]*をクリックし、*[追加]*オプションを選択します。</block>
@@ -365,7 +362,6 @@
   <block id="020a36deb114af1bb518c70d5975e940" category="doc">リソースグループの作成</block>
   <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">リソースグループを作成するには、次の手順を実行します。</block>
   <block id="3e75833fca9e76ef6912688f5fce699b" category="list-text">SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*をクリックし、*[作成]*を選択します。</block>
-  <block id="08b700204b080921e158ac4569ab02b7" category="list-text">[Create Resource Group]ウィザードの各ページで必要な情報を入力し、リソースグループに含めるVMとデータストアを選択してから、リソースグループに適用するバックアップポリシーを選択し、バックアップスケジュールを指定します。</block>
   <block id="d4a6978acacfefd87687ddcaa390823d" category="paragraph">バックアップは、リソースグループに対して設定されているバックアップポリシーの指定に従って実行されます。</block>
   <block id="f39d1b5ce3c4df954b444643fe062bd4" category="inline-image-macro">再生アイコン</block>
   <block id="388b702f54518810e19e7ac7da349911" category="paragraph">オンデマンドでバックアップを実行するには、*[リソースグループ]*ページで*[今すぐ実行]*を選択し <block ref="3b0d2a888e66a4061c822e3f42e77666" category="inline-image-macro-rx" type="image"></block> ます。</block>
@@ -449,20 +445,17 @@
   <block id="3210952a5fb8d5ccfeba07ae678f1775" category="list-text">[* Policies] ページで、次の表に示すように 1 つ以上のバックアップポリシーを選択または作成します。</block>
   <block id="2cdd19659310fc48844c26aedc8fd9a4" category="cell">を使用するには ...</block>
   <block id="6059ad69090f1a7b85ee31e84e827f9c" category="cell">既存のポリシー</block>
-  <block id="5e8922fe6b33e53144f78b8592674a6c" category="cell">リストから1つ以上のポリシーを選択します。</block>
   <block id="9c5b7358395094126cc2831e0ded69a9" category="cell">新しいポリシー</block>
   <block id="bf18811faac9b8e4fcaebab51afd1113" category="list-text">「 * Create * 」を選択します。</block>
   <block id="fd9ca72572d4ab5e600c85b32f8a9e6a" category="list-text">[New Backup Policy]ウィザードの手順に従って[Create Resource Group]ウィザードに戻ります。</block>
   <block id="f756ba31a99a4185d9ca1e432a20a83f" category="paragraph">リンクモードでは、リンクされたすべてのvCenterのポリシーがリストに含まれます。リソースグループと同じvCenter上にあるポリシーを選択する必要があります。</block>
   <block id="5049311e411f306df5ef01765b9dc8ec" category="list-text">[* Schedules* ] ページで、選択した各ポリシーのバックアップスケジュールを設定します。</block>
   <block id="2d9c6a052b962f45f8525e4ec1dec880" category="inline-image-macro">[リソースグループの作成]ウィンドウ</block>
-  <block id="3ec7abcc0f628e9d54f81021b20cd0b8" category="paragraph"><block ref="3ec7abcc0f628e9d54f81021b20cd0b8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d53fb85cd7b48e31e4ae938dd8a9d13" category="paragraph">[Starting hour]フィールドに、ゼロ以外の日時を入力します。日付はの形式で指定する必要があり<block ref="8aab24d4e5fcc880d089c1c29ea13f0b" prefix=" " category="inline-code"></block>ます。</block>
   <block id="5a0224c26b4097d544acbe092343725a" category="paragraph">[Every]フィールドで日数を選択すると、月の1日目にバックアップが実行され、その後、指定した間隔でバックアップが実行されます。たとえば、オプション「 * Every 2 days * 」を選択すると、開始日が偶数か奇数かに関係なく、 1 日目、 3 日目、 5 日目、 7 日目などの月全体にバックアップが実行されます。</block>
   <block id="8d849bfecdb9ab23e919753ad2a6b109" category="paragraph">各フィールドに入力する必要があります。SnapCenter Plug-in for VMware vSphereでは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンでスケジュールが作成されます。タイムゾーンは、SnapCenter Plug-in for VMware vSphere GUIを使用して変更できます。</block>
   <block id="67b9c02e71508024192e407aa7425aa2" category="inline-link-macro">バックアップのタイムゾーンの変更</block>
   <block id="381ccd52bbe70b77caebf5b7721bc854" category="paragraph"><block ref="a1b611f7f1d7d8197cb1d43fb49ccfda" category="inline-link-macro-rx"></block>です。</block>
-  <block id="fed1c121dc4f5a5484e5623e297385fb" category="list-text">概要を確認し、 [ 完了 ] をクリックします。</block>
   <block id="00c4e348fbc4d70b3f20028f27a0b2ab" category="paragraph">「 * 完了」をクリックする前に、ウィザードの任意のページに戻って情報を変更できます。</block>
   <block id="c32889f5fe21a50841ec14f3184ac30b" category="paragraph">[ 完了 ] をクリックすると ' 新しいリソースグループがリソースグループリストに追加されます</block>
   <block id="2ff2dc58f2ec2635705f09ff662f69ce" category="admonition">バックアップ内のいずれかのVMで休止処理が失敗した場合、選択したポリシーでVM整合性が選択されていても、バックアップはVM整合性なしとマークされます。この場合、一部のVMが正常に休止されている可能性があります。</block>
@@ -594,7 +587,6 @@
   <block id="596e6d7cbb1dd1b33baf91e428660d8d" category="inline-link-macro">Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">VMware vCenter 7.0.3以降のバージョンの場合は、の手順に従って、 <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> 証明書をvCenterにインポートします。</block>
   <block id="9e6343514537d0d6a99bafe616c5aa86" category="list-text">ブラウザで、VMware vSphere vCenterに移動します。</block>
-  <block id="13ca46cd634ae1f7c847dd56daefc40c" category="admonition">IPv6 HTML Webクライアントの場合は、ChromeまたはFirefoxを使用する必要があります。</block>
   <block id="8d668d142d0f3d31fe81d5725d775268" category="list-text">VMware vCenter Single Sign-On * ページにログインします。</block>
   <block id="2eebc560b73748e82dc828dccfa95727" category="list-text">ナビゲータペインで、仮想マシンの有効な親オブジェクトであるインベントリオブジェクト（データセンター、クラスタ、ホストなど）を右クリックし、*[Deploy OVF Template]*を選択してVMware導入ウィザードを開始します。</block>
   <block id="4ac856ec3b3bf79b5253ad31fba9ff73" category="list-text">.ovaファイルを含む.tarファイルをローカルシステムに展開します。[Select an OVF template*]ページで、.tar抽出フォルダ内のファイルの場所を指定します<block ref="8d8b01a4d628953e7a2225813c8edb3f" prefix=" " category="inline-code"></block> 。</block>
@@ -628,7 +620,6 @@
   <block id="78ec48b7c749b3a7a8080d651afc3669" category="list-text">[ネットワークプロパティのセットアップ]セクションで、ホスト名を入力します。</block>
   <block id="0b691d0bcd0bae175f4dcfd7491922bc" category="list-text">[IPv4ネットワークプロパティの設定]セクションで、IPv4アドレス、IPv4ネットマスク、IPv4ゲートウェイ、IPv4プライマリDNS、IPv4セカンダリDNSなどのネットワーク情報を入力します。 およびIPv4検索ドメイン。</block>
   <block id="43a7a2ab4be51a09780bb39357d5251a" category="list-text">[IPv6ネットワークプロパティの設定]セクションで、IPv6アドレス、IPv6ネットマスク、IPv6ゲートウェイ、IPv6プライマリDNS、IPv6セカンダリDNSなどのネットワーク情報を入力します。 およびIPv6検索ドメイン。</block>
-  <block id="1421f12d822ef0a0be6928cf3d192201" category="paragraph">必要に応じて、[IPv4]フィールド、[IPv6]フィールド、またはその両方を選択します。IPv4とIPv6の両方を使用している場合は、そのうちの1つにのみプライマリDNSを指定する必要があります。</block>
   <block id="da8ca49d9d20bd0409b70809cfef56bc" category="admonition">ネットワーク設定として DHCP を使用する場合は、これらの手順を省略し、 [*Setup Network Properties*] セクションのエントリを空白のままにしておくことができます。</block>
   <block id="71f9ed6b3799a05b8e015c69367cfb37" category="list-text">* Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。</block>
   <block id="e69d6a911676da089c14c8e8f2935510" category="list-text">[ 完了準備完了 ] ページでページを確認し、 [ 完了 ] をクリックします。</block>
@@ -734,14 +725,9 @@
   <block id="128a673672e69a9c3a9a57cd50e753fd" category="list-text">vCenter vSphere 7.0U3</block>
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0U3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1</block>
-  <block id="18cd7192921dd5ac27a1a7c5ef795c20" category="section-title">スペースとサイジングの要件</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">要件</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティングシステム</block>
   <block id="edc9f0a5a5d57797bf68e37364743831" category="cell">Linux</block>
-  <block id="44e5a606cb3fbfaed79ce8eb853ed886" category="cell">最小CPU数</block>
-  <block id="39d305d656d2efca941f50ce8253a426" category="cell">4コア</block>
-  <block id="a88605ea0ad2e6919ae06fa5bb9e26d2" category="cell">最小RAM</block>
-  <block id="50ba65e996b60e443a12aa7a9036f5d1" category="cell">最小構成：12GB推奨：16GB</block>
   <block id="3cb874290f06f3c2d44ce2e858bb041f" category="cell">SnapCenter Plug-in for VMware vSphere、ログ、MySQLデータベース用の最小ハードドライブスペース</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="cell">100GB</block>
   <block id="9a0980e2d2a75eb076f41f7a4d439162" category="section-title">接続とポートの要件</block>
@@ -1036,7 +1022,6 @@
   <block id="683a572529e7ee01c3f3b2f6e84ee453" category="paragraph">リソースグループの名前を変更する場合は、VM、データストア、ポリシー、バックアップ、またはリソースグループの名前に次の特殊文字を使用しないでください。</block>
   <block id="bf6bb853aafb837a490acb97d9acbf87" category="paragraph">%&amp;*$#@！\ / ： * ？"&lt;&gt; - | ； ' 、。</block>
   <block id="bc967eed1e1f8494f71a02de0d06a1ba" category="list-text">[ リソースグループの編集 ] ウィザードの左側のリストで、変更するカテゴリをクリックし、変更を入力します。</block>
-  <block id="e71911e6fc1645b76466cbac653dbb12" category="paragraph">複数のカテゴリに変更を加えることができます。</block>
   <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">[ 概要 ] ページが表示されるまで [ 次へ ] をクリックし、 [ 完了 ] をクリックします。</block>
   <block id="ad9a47e46e4ad7c3e60285f394572957" category="section-title">リソースグループの削除</block>
   <block id="16b1a35ba7401a13d918126c70a9b4e4" category="paragraph">リソースグループ内のリソースを保護する必要がなくなった場合は、vCenterでリソースグループを削除できます。vCenterからSnapCenter Plug-in for VMware vSphereを削除する前に、すべてのリソースグループを削除する必要があります。</block>
@@ -1095,8 +1080,6 @@
   <block id="510b17a83061d1709c7a07368d7f8b8f" category="cell">lun lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping remove-reporting-nodes lun mapping show lun modify lun move-in-volume LUN offline LUN online lun persistent-reservation clear lun resize lun serial lun show をクリックします</block>
   <block id="847b8685554d07af7c2a25cc92eb932c" category="cell">snapmirror list-destinations snapmirror policy add-rule snapmirror policy modify -rule snapmirror policy show snapmirror restore snapmirror show -history snapmirror update snapmirror update-ls-set</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">バージョン</block>
-  <block id="f70ff09711c9d04b2cce7fac4814083d" category="cell">volume clone create volume clone show volume clone split start volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume show volume snapshot create volume snapshot delete volume snapshot modify volume snapshot rename volume snapshot restore volume snapshot restore -file volume snapshot show volume unmount</block>
-  <block id="57442019ae8a4f358f6ca948df78b8a7" category="cell">vserver cifs vserver cifs share create vserver cifs share delete vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs share show vserver export-policy vserver export-policy create vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem host add vserver nvme subsystem host delete vserver nvme namespace network interface network interface failover-groupsを表示します。</block>
   <block id="c6752ce5f8c095ac974d2740edaf533c" category="cell">読み取り専用コマンド： ONTAP 8.3 以降で必要な最小権限</block>
   <block id="de92ae935b9e0d1f381bebce31b4ae2e" category="cell">cluster identity show network interface show vserver peer vserver show</block>
   <block id="3658e079605148c7ffe020b7c8da9b1a" category="admonition">サポートされていないvServerコマンドに関する警告メッセージは無視してかまいません。</block>
@@ -1170,12 +1153,10 @@
   <block id="d120dfcded58a5506ff23bf511e0f19f" category="doc">ネットワーク設定の変更</block>
   <block id="0e7f37a8cfb79d079f359e951ceeb17f" category="inline-image-macro">SnapCenter Plug-in for VMware vSphere管理GUI</block>
   <block id="42b28c5e4b79ea465cae97cdbeb34e45" category="paragraph"><block ref="42b28c5e4b79ea465cae97cdbeb34e45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="593612012c0fd1880ba8813c8d41d02c" category="list-text">[ * 設定 * ] ページの [ * ネットワーク設定 * ] セクションで、 [* IPv4 * または * IPv6 * ] をクリックし、 [ * 編集 ] をクリックします。</block>
   <block id="32e625127a9589134f64d90dac6cb7cd" category="paragraph">新しい情報を入力し、 * 保存 * をクリックします。</block>
   <block id="3c1620dc3cd833488e7cde6109b6d1bb" category="list-text">ネットワーク設定を削除する場合は、次の手順を実行します。</block>
   <block id="63abf295f097ef207b859912a9f5c590" category="list-text">IPv4：[IPアドレス]*フィールドにと入力し、*[保存]*を<block ref="f1f17934834ae2613699701054ef9684" prefix=" " category="inline-code"></block> クリックします。</block>
   <block id="b24ed737f6ddf4dab1777258847520d0" category="list-text">IPv6：[IP Address]フィールドにと入力し、*[Save]*をクリックします。<block ref="c36786bc262473df7cbe294ed6ea806b" prefix=" " category="inline-code"></block></block>
-  <block id="0158c9c916e2f0de4c880aed70d061aa" category="admonition">IPv4とIPv6の両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。</block>
   <block id="947f73db8b88cb117d0bea132431eb20" category="summary">SnapCenter Plug-in for VMware vSphereリソースグループのバックアップスケジュールを設定すると、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンに対してスケジュールが自動的に設定されます。このタイムゾーンは、SnapCenter Plug-in for VMware vSphereの管理GUIまたはメンテナンスコンソールを使用して変更できます。</block>
   <block id="07469a3427540cc9f743a04851332eb8" category="paragraph">SnapCenter Plug-in for VMware vSphere管理GUIのIPアドレスとログインクレデンシャルを確認しておく必要があります。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。</block>
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="inline-image-macro">SnapCenter Plug-in for VMware vSphere</block>
@@ -1260,7 +1241,6 @@
   <block id="0e4f66e22412e12df416b87028ca8fff" category="paragraph">SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加してからデータ保護処理を実行する必要があります。Storage VMを追加するときは、管理LIFを指定してください。クラスタを追加してクラスタ管理LIFを指定することもできます。ストレージの追加については、を参照して <block ref="a83c5384e42700c13fcc0778429c0b28" category="inline-link-macro-rx"></block>ください。</block>
   <block id="40e6eca2154c52c78e678989d72d7903" category="section-title">トウニユウニカンスルモンタイ</block>
   <block id="b4f66c551198bcae0c148df6464649d2" category="list-text">仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。</block>
-  <block id="01247ceba6ba6adacf0cb970001c3199" category="list-text">IPv4を実行しており、SnapCenter VMware vSphereホストのIPアドレスが2つある。その結果、ジョブ要求はSnapCenterサーバで認識されないIPアドレスに送信されます。この問題を回避するには、使用するIPアドレスを次のように追加します。</block>
   <block id="99a3335440eae171fa3d8c12c610999f" category="list-text">SnapCenter Plug-in for VMware vSphereの導入先に移動します。<block ref="e67cfb6015670f4b59ab4eee4b36d81a" prefix=" " category="inline-code"></block></block>
   <block id="cdb0aee875e47386f8401b32252a3dd0" category="list-text">ネットワーク- interface.propertiesファイルを開きます。</block>
   <block id="fcc3a5678f0005b20d9b7c499d1b8dc3" category="list-text"><block ref="b2aafe9ac180ff5dd3d3d8b6145097cd" prefix=" " category="inline-code"></block>フィールドに、使用するIPアドレスを追加します。</block>
@@ -1306,9 +1286,7 @@
   <block id="5a8be763f7b47c14c6c0fca91e41acc6" category="paragraph">次の表に示すように、 vCenter GUI で事前定義されたロールを表示するには、 * メニュー &gt; 管理 &gt; ロール * をクリックします。</block>
   <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">ロール</block>
   <block id="3d0f61a1174e21cbdd43433a0cdd1587" category="cell">SCV管理者</block>
-  <block id="2f1662883e3b660770fa59a127bc029a" category="cell">すべての SnapCenter Plug-in for VMware vSphere タスクを実行するために必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。</block>
   <block id="9e5d312df6041327157130535c90513a" category="cell">SCV バックアップ</block>
-  <block id="c8c51f25f2c35a602348ef48786a61e7" category="cell">vSphere オブジェクト（仮想マシンおよびデータストア）のバックアップに必要な vCenter Server 標準の権限と SnapCenter 固有の権限がすべて含まれています。また、ユーザはconfigure権限にもアクセスできます。ユーザはバックアップをリストアできません。</block>
   <block id="fab80f3b151fabee7b9febb22c2ebc54" category="cell">SCVゲストファイルのリストア</block>
   <block id="29aa027fb0fee4e7b2990e1a7dc146d2" category="cell">ゲストファイルとフォルダのリストアに必要なvCenter Server標準およびSnapCenter固有のPrivilegesがすべて提供されています。VMまたはVMDKをリストアすることはできません。</block>
   <block id="b64ee0fdf90244f79181f1afb007c08b" category="cell">SCV Restore （ SCV リストア）</block>
@@ -1484,7 +1462,6 @@
   <block id="99aca73e7bf6d92c807a47e7e35aaae9" category="paragraph">リソースグループを作成するワークフローは次のとおりです。</block>
   <block id="e97ce39b2b8a10ba21e7830c5ea5b49e" category="cell"><block ref="eb2894246e8c5f4670fca9f0575c9b7a" prefix="" category="inline-code"></block></block>
   <block id="4e597935ea2294ca23b3d188204bd5ac" category="cell"><block ref="0dea22b6f92cc5216c8c25dd30613855" prefix="" category="inline-code"></block> VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * の作成時に使用する * policyId * をメモします。ポリシーが表示されない場合は、REST APIを使用して<block ref="dc34af9dab91ee63dc5061320d408072" prefix=" " category="inline-code"></block> 新しいポリシーを作成します。</block>
-  <block id="7c14f4e0699b64ee7c9bc363420c3238" category="cell"><block ref="8877dc9fcfb6df8dad34589e1a225411" prefix="" category="inline-code"></block> 指定したポリシーでリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。</block>
   <block id="3c621082440c8e5f88e802202f106575" category="paragraph">リソースグループを変更するワークフローは次のとおりです。</block>
   <block id="d20ccedcf7be9ea11f1f0f93975422b7" category="cell"><block ref="339b206c33fd676f6b8ec7c4e8df2406" prefix="" category="inline-code"></block> VMware vSphereクライアントのリソースグループのリストを取得します。変更する * resourceGroupId * をメモします。</block>
   <block id="c63fb99af65af76b2e8f24650bd717d2" category="cell">割り当てられているポリシーを変更する場合は<block ref="0dea22b6f92cc5216c8c25dd30613855" prefix=" " category="inline-code"></block> 、VMware vSphereクライアントポリシーのリストを取得します。リソースグループおよびポリシー * frequency * を変更する際に使用する * policyId * をメモします。</block>
@@ -1699,7 +1676,6 @@
   <block id="1404a4829eb43be207dc9d418c129c51" category="list-text">[ リストア先の選択 *] ページで、次の項目を指定します。</block>
   <block id="054b4f3ea543c990f6b125f41af6ebf7" category="cell">オプション</block>
   <block id="64ed3fcb4250d337b2f6551bf3310d35" category="cell">パスへのリストア</block>
-  <block id="c260f02960f3654c5d72d72244a8221e" category="cell">選択したファイルをリストアするゲストへのUNC共有パスを入力します。IPv4の例<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block> ：IPv6の例：<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
   <block id="788a23520c9ca6920e284fe4dfdfcf9c" category="cell">元のファイルが存在する場合</block>
   <block id="92555e73117a4723c02849a8e31de3e3" category="paragraph">リストア先にリストア対象のファイルまたはフォルダがすでに存在する場合に実行する処理を選択します。 Always overwrite または always skip 。</block>
   <block id="883a7ba4f8c59dbcd87a8b94a15652c6" category="admonition">フォルダがすでに存在する場合は、フォルダの内容が既存のフォルダにマージされます。</block>
@@ -1879,13 +1855,11 @@
   <block id="0211b73ea8989b942ef4df5df02fce20" category="list-text">拡張機能との登録を解除します<block ref="6e551029da4d3fc2a0ec2eaaf6340fe3" prefix=" " category="inline-code"></block><block ref="e6d17d899e2a5d0700cc16120b733afb" prefix=" " category="inline-code"></block>。</block>
   <block id="015b635404a717ebcfa72500098a5d70" category="summary">SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。</block>
   <block id="331b48aba7178950c3dc14c31a21f9c0" category="doc">以前のリリースのSnapCenter Plug-in for VMware vSphereからのアップグレード</block>
-  <block id="6190c9a80a66f4e25e577241857efd45" category="admonition">SCV 6.0へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。</block>
   <block id="637f9e5cc0956a7a76dc0a24cefff651" category="paragraph">SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスでは、既存のプラグインが登録解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。</block>
   <block id="e614f4fd5db40ad1197def61d63aaeef" category="section-title">アップグレードパス</block>
   <block id="224ceeb2917402bd6d8dd7a3e2f19e1a" category="cell">SnapCenter Plug-in for VMware vSphere（SCV）のバージョン</block>
   <block id="6f95773fb09a10c0a1a8350183ddd7fd" category="cell">SnapCenter Plug-in for VMware vSphereを直接アップグレードできる環境</block>
   <block id="7f82273caf689b5fe5d147479aee9dab" category="cell">SCV 5.0</block>
-  <block id="b96efbc0a65341ba7e683489ae34fe60" category="cell">SCV 6.0へのアップグレード</block>
   <block id="d6efd9a0701d44c2a386de616f0467d8" category="cell">SCV 4.9</block>
   <block id="8f0cfebd2785db3468780aa4a2fe25f0" category="cell">SCV 5.0およびSCV 6.0へのアップグレード</block>
   <block id="bfa55b54891f35acedca543067d8d978" category="cell">SCV 4.8</block>
@@ -2036,7 +2010,6 @@
   <block id="f4f70727dc34561dfde1a3c529b6205c" category="list-text">設定</block>
   <block id="d2cf8cb85b7643c0afec512224617b11" category="list-text">adminクレデンシャルを変更</block>
   <block id="31a101d4cc913440856e9bc9979b76a4" category="list-text">タイムゾーンの変更</block>
-  <block id="da9a9075e0c02d8cf100e9f40220a9db" category="list-text">IPv4/IPv6設定の変更</block>
   <block id="4f4f4543ab03d05f7af5ae78d5aebe61" category="list-text">vCenterクレデンシャルの変更</block>
   <block id="74696cef76e7f4a4ca8d4e46191e2843" category="list-text">プラグインの有効化/無効化</block>
   <block id="5bf8b772b0bf5c6fd039f997e4394cd6" category="section-title">syslogサーバを設定します</block>
@@ -2057,7 +2030,6 @@
   <block id="bf59ac9161d0f4561a155103d8ea2d10" category="list-text">[監査ログ設定]*ペインで、監査ログファイルの最大数と監査ログファイルの最大サイズを入力します。</block>
   <block id="32458f17a77f27841fa1e786f430f2d6" category="list-text">ログをsyslogサーバに送信することを選択した場合は、*[Send audit logs to Syslog server]*オプションを選択します。サーバの詳細を入力します。</block>
   <block id="df127e661b212457f6bc59234c70fec6" category="list-text">設定を保存します。</block>
-  <block id="1f9cad256c1f5e6e0bf8e1f70171d493" category="sidebar">SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。このドキュメントライブラリでは、SnapCenter Plug-in for VMware vSphereバージョン6.0について説明します。</block>
   <block id="8c3d0c00ea667e3e0723e5cdc6473a09" category="sidebar">SnapCenter Plug-in for VMware vSphereのドキュメント</block>
   <block id="35b654fd14f12a33551c1993b5321fcb" category="sidebar">SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">はじめに</block>
@@ -2076,7 +2048,6 @@
   <block id="7608e75619cff3eeb4e8bce40481b456" category="sidebar">SnapCenterソフトウェアのドキュメント</block>
   <block id="11d88a82190664755120fc16494310df" category="sidebar">以前のバージョンのSCVのドキュメント</block>
   <block id="74fe1f888648848c4fd5f85ae847a16c" category="sidebar">NetAppナレッジベース–SCV</block>
-  <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">概念</block>
   <block id="8b1375f200206162c06fc46aeb476858" category="sidebar">SCVの導入要件</block>
   <block id="3c5a43054ca25fffdc4ecfb3151b2dc0" category="sidebar">監視とレポート</block>
@@ -2117,29 +2088,9 @@
   <block id="00b932dfc365b7b36023fc7e5a151179" category="paragraph">NVMe over TCPおよびNVMe over FCプロトコルをサポートするための最小ソフトウェア要件は次のとおりです。</block>
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPおよびNVMe over FCストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
-  <block id="ec1055ea33266617a541d92dfa6e5b67" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート</block>
   <block id="2233cc73f35f4d66a36bbbeebab35281" category="doc">SnapCenter Plug-in for VMware vSphereリリースノート</block>
-  <block id="297142e178601173053624e9ef12f108" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0.1および6.0の新機能と拡張機能について説明します。</block>
-  <block id="3b3c714cc3d97185d38b7de5a06604eb" category="paragraph">既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください<block ref="1433bf204e910686ea87dd6be31fd4c0" category="inline-link-rx"></block>。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。</block>
   <block id="c5dcd35af16918a17ee9c3a5c153f0af" category="inline-link">IMT</block>
   <block id="2d15261526cfe20309636c59ec64f54e" category="paragraph">サポートされるバージョンの最新情報については、NetApp Interoperability Matrix Toolを<block ref="b3ca33d6c3d8c65c6db17cc2a6a779f0" category="inline-link-rx"></block>参照してください）。</block>
-  <block id="ccbdf0b4f3977d9d972b8053561475b1" category="summary">SnapCenter Plug-in for VMware vSphere 6.0の新機能について説明します。</block>
-  <block id="4ab6fdda3b84dfae82088c2bc01040ec" category="doc">SnapCenter Plug-in for VMware vSphere 6.0.1の新機能</block>
-  <block id="06933067aafd48425d67bcb01bba5cb6" category="cell">更新</block>
-  <block id="42740cd9317367a2589caeffd362cff0" category="inline-link">NVMe over FCプロトコルのサポート</block>
-  <block id="50be082c76f5c49324bb5bd7608ae3b2" category="paragraph"><block ref="50be082c76f5c49324bb5bd7608ae3b2" category="inline-link-rx"></block></block>
-  <block id="5ba878c4a46b0a8571800aaa6e8445a7" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0.1では、VMFSデータストアに対してNVMe over FCプロトコルがサポートされるようになり、パフォーマンスの最適化、コストの削減、継続的なパフォーマンスの確保が可能になりました。</block>
-  <block id="1c7703c1d060b65ce6fd3a75ba50400e" category="inline-link">ONTAP Tools for VMware vSphere 10.xとSCV 6.0.1の統合</block>
-  <block id="0d1fedc1c92b2bac1ad8d29266340940" category="paragraph"><block ref="0d1fedc1c92b2bac1ad8d29266340940" category="inline-link-rx"></block></block>
-  <block id="704fc5c8ea6982e3179f495b7b832121" category="doc">SnapCenter Plug-in for VMware vSphere 6.0の新機能</block>
-  <block id="05355694c1b9a07fdbe4cd953d66f950" category="inline-link">NVMe over TCPプロトコルのサポート</block>
-  <block id="537b09dbac250171d06580c68b67b2f2" category="paragraph"><block ref="537b09dbac250171d06580c68b67b2f2" category="inline-link-rx"></block></block>
-  <block id="a629ec953583fe39117309ef9a508a81" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.0では、VMFSデータストアに対してNVMe over TCPプロトコルがサポートされるようになりました。</block>
-  <block id="ead1e4398d30de28a2a5ea2f82cb8d47" category="paragraph">NVMe over TCPプロトコルの導入に追加のハードウェアは必要ないため、シンプルで対費用効果に優れています。</block>
-  <block id="b154808e6bcc13034e613c359731ad79" category="paragraph">iSCSIと同様に、NVMe over TCPプロトコルを使用するVMFSデータストアは、任意のイーサネットNICおよびスイッチを使用でき、バックアップ、リストア、マウント、接続、接続解除などのすべての標準処理をサポートします。</block>
-  <block id="4f53b479c6b47d73b1fdb28f399b1301" category="inline-link">SnapMirrorアクティブ同期のサポート</block>
-  <block id="a3dde13a3e6b0437cbcc67d81b0b023f" category="paragraph"><block ref="a3dde13a3e6b0437cbcc67d81b0b023f" category="inline-link-rx"></block></block>
-  <block id="6884e6f09d7d01f963a72f6d4b4dee73" category="paragraph">SnapMirrorアクティブ同期は、VMFSデータストアでのみサポートされます。</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">アップグレード可能なSnapCenter Plug-in for VMware vSphere（SCV）のバージョンは、現在実行しているバージョンによって異なります。</block>
   <block id="4181b34482469dce169449ef3b643b27" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。</block>
   <block id="e369a7ee41a72fa8a44419a1129cc575" category="cell">SCVバージョンを使用している場合</block>
@@ -2156,8 +2107,78 @@
   <block id="8e07dd0a7cef005f474929f3ccd8ab15" category="paragraph">SnapCenter 5.0</block>
   <block id="07d190428eb856174f602dfb1555b388" category="paragraph">SnapCenter 4.9</block>
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
-  <block id="9fb9e3e27a3792a16059036c9b877598" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0.1の新機能</block>
-  <block id="43e9871fb2ac1e50ad02c9c15dce6a93" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.0の新機能</block>
-  <block id="2c1653c7d21f34b83ac4f6c2e6d95617" category="paragraph">ONTAP Tools for VMware vSphere 10.xは、VMware vSphere Virtual Volumesの設定に役立ちます。この統合により、NFSベースのvVolデータストア上にある仮想マシンを設定、バックアップ、およびリストアできます。</block>
-  <block id="260461e32230b11c5e5f1e46e498eb6d" category="paragraph">SnapCenter Plug-in for VMware vSphereを使用して、目標復旧時点（RPO）ゼロ、目標復旧時間（RTO）、透過的なアプリケーションフェイルオーバーなどのSnapMirrorアクティブ同期機能を設定できるようになりました。</block>
+  <block id="2acd783e8dee0eed27b40328899eef19" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.1に関する注意事項</block>
+  <block id="8ebd9207a610e17e383416d90951290e" category="paragraph"><block ref="8ebd9207a610e17e383416d90951290e" category="inline-link-rx"></block></block>
+  <block id="f8a96ad66100bda7d69f0d2cf5b27f72" category="admonition">ASA R2ストレージシステムでは、_recent Snapshot命名機能はサポートされていません。</block>
+  <block id="414f994a73d1f79098abf3d5d51e5555" category="list-text">[概要]ページが表示されるまで[次へ]*をクリックし、概要を確認して*[完了]*をクリックします。</block>
+  <block id="9329e69bb4e74e1c55c47a7b13b20c73" category="admonition">ASA R2のバックアップでは、整合グループのSnapshotが作成され、指定したリソースにプライマリ整合グループがない場合はプロビジョニングされます。</block>
+  <block id="94e5f239a67b0bdbb293ad6d93a70fae" category="list-text">[Create Resource Group]ウィザードの各ページで必要な情報を入力し、リソースグループに含めるVMとデータストアを選択してから、リソースグループに適用するバックアップポリシーを選択します。リモートのセカンダリ保護の詳細を追加し、バックアップスケジュールを指定します。</block>
+  <block id="47b5545e20c1c3ff97bf1931ed1bb71c" category="list-text">ASA R2上のVMとデータストア</block>
+  <block id="e2910993c5df37efecb77ead3d46c061" category="paragraph">ASA R2のVMとデータストアを他のVMやデータストアと組み合わせることはできません。</block>
+  <block id="29d5d806d07657990827260e1cb0e2f6" category="list-text">リソースグループのセカンダリ保護の作成</block>
+  <block id="d2c627ac86e99bf486f92df0e01e564d" category="paragraph">セカンダリ保護では、リソースグループに追加されたリソースのレプリケーション関係が作成されます。プライマリから指定したポリシーを使用して、優先クラスタおよびSVMの整合性グループベースのSnapMirror関係を作成する必要があります。セカンダリ保護は、ASA R2システムベースのデータストアと仮想マシンでのみサポートされます。クラスタピアリングとSVMピアリングを事前に設定しておく必要があります。セカンダリ保護で許可されるのは非同期SnapMirrorポリシーのみです。セカンダリ保護を作成するときは、整合グループサフィックスを指定する必要があります。</block>
+  <block id="1aa6cfe25429fc4eec3c516dcd2dc639" category="paragraph">セカンダリ保護では、リソースグループに追加されたリソースのレプリケーション関係が作成されます。</block>
+  <block id="d225ffa0857e0c1621ca548327cac09f" category="admonition">ASA R2ストレージシステムではSnapshotの名前変更がサポートされないため、SCVのrename backupおよび_recent Snapshotの命名機能はサポートされません。</block>
+  <block id="581b0ff55ddecb82a36105092c53ed37" category="cell">リストから1つ以上のポリシーを選択します。セカンダリ保護は、SnapMirrorとSnapVaultの両方の更新を選択した既存のポリシーと新しいポリシーに適用されます。</block>
+  <block id="4a9546a9033ba87fc7117a1294a5e336" category="list-text">[セカンダリ保護]*ページには、選択したリソースのリストとその保護ステータスが表示されます。保護されていないリソースを保護するには、レプリケーションポリシータイプ、整合性グループサフィックス、デスティネーションクラスタ、およびデスティネーションSVMをドロップダウンから選択します。リソースグループを作成すると、セカンダリ保護用に別のジョブが作成され、ジョブ監視ウィンドウに表示されます。</block>
+  <block id="a4ca5edd20d0b5d502ebece575681f58" category="cell">フィールド</block>
+  <block id="8dd087319387caee893992e7d4ecc261" category="cell">レプリケーションポリシー名</block>
+  <block id="a7f3190e89f834e1d38e7cebabf3c23f" category="cell">SnapMirrorポリシーの名前。サポートされるセカンダリポリシーは、*非同期*および*ミラーとバックアップ*のみです。</block>
+  <block id="839b3ef85841170c07a83d90446b7293" category="cell">整合グループサフィックス</block>
+  <block id="8498712eae1f3fc8c3deb49a103330ab" category="cell">デスティネーション整合グループ名を形成するためにプライマリ整合グループに追加するデスティネーション設定。たとえば、プライマリ整合グループ名がsccg_2024-11-28_120918で、サフィックスに_destと入力した場合、セカンダリ整合グループはsccg_2024-11-28_120918_destとして作成されます。サフィックスは、保護されていない整合性グループにのみ適用されます。</block>
+  <block id="3ab54d36af02d892dd7d414e434c3861" category="cell">デスティネーションクラスタ</block>
+  <block id="ef8896c7f223eacb1843ca55578ccd99" category="cell">保護されていないすべてのストレージユニットについて、SCVのドロップダウンにピアクラスタ名が表示されます。SCVに追加されたストレージがSVMスコープの場合は、ONTAPの制限により、名前の代わりにクラスタIDが表示されます。</block>
+  <block id="17927681be29e47d557b71ca94c6f8cb" category="cell">デスティネーション SVM</block>
+  <block id="66f217caf728d2deab852334afef97a6" category="cell">保護されていないすべてのストレージユニットについて、SCVにはピアSVM名が表示されます。クラスタとSVMは、整合グループに属するストレージユニットの1つを選択すると自動的に選択されます。同じ整合グループ内の他のすべてのストレージユニットにも同じことが適用されます。</block>
+  <block id="4e2041ff5ea66c23b660f1aa1270c0d4" category="cell">セカンダリで保護されるリソース</block>
+  <block id="2c66ae4d8465ecaa0277c97c3f9e52cc" category="cell">リソースページに追加されたリソースの保護されているすべてのストレージユニットについて、セカンダリ関係の詳細（クラスタ、SVM、レプリケーションタイプなど）が表示されます。</block>
+  <block id="55d4ade9a708df3a3dea5a7b596b3bec" category="paragraph"><block ref="55d4ade9a708df3a3dea5a7b596b3bec" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="219530a6f91e9e652edabda0d6abb52e" category="list-text">概要を確認し、*[終了]*をクリックします。SCV 6.1以降では、ASA R2システムのセカンダリ保護リソースが概要ページに表示されます。</block>
+  <block id="1fbf8001bce3062cf570e802cd34a515" category="admonition">IPv6アドレスのHTML Webクライアントの場合は、ChromeまたはFirefoxを使用する必要があります。</block>
+  <block id="7763535bfb2dc82fb2cbf445d64a697c" category="paragraph">必要に応じて、IPv4またはIPv6アドレスのフィールド、あるいはその両方を選択します。IPv4アドレスとIPv6アドレスの両方を使用する場合は、そのうちの1つにのみプライマリDNSを指定する必要があります。</block>
+  <block id="858e1231bf7d2fa0b29910623e458a4d" category="section-title">スペース、サイジング、拡張の要件</block>
+  <block id="58836b9412219914161fb60855f74bae" category="cell">推奨CPU数</block>
+  <block id="856e1714b1d49f0d567463f553ef9120" category="cell">8コア</block>
+  <block id="2a9f9ccc193010032b655ecfc76e40c8" category="cell">推奨RAM</block>
+  <block id="dde8b54fa4a91beedb7b736869c08569" category="cell">24 GB</block>
+  <block id="f8bce6aa95f5621d608c29e258b620d2" category="cell">アプライアンス内のvmcontrolサービスの最大ヒープサイズ</block>
+  <block id="af5700014f646d2567efa6288d85ab2b" category="cell">8 GB</block>
+  <block id="4fa7e925220267d7b768f4b3a78c6148" category="admonition">ASA R2ストレージシステムでは、バックアップの名前変更はサポートされていません。</block>
+  <block id="d106abcc28b08528e977427482cfc257" category="paragraph">複数のカテゴリに変更を加えることができます。このオプションでは、保護されたセカンダリリソースを編集することもできます。</block>
+  <block id="875b0302744a0f026125fde0002031ee" category="cell">volume clone create volume clone show volume clone split start volume clone split status volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume managed-feature SnapLock volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume snapshot delete volume snapshot modify -expiry-time volume snapshot rename volume snapshot restore volume snapshot restore</block>
+  <block id="8f63ee5bc3100343496937f88eb71b0f" category="cell">vserver cifs vserver cifs share create vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs shadowcopy vserver cifs share show vserver export-policy vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem</block>
+  <block id="5e7e64c339a65a35f9dd642d25809870" category="cell">フルアクセスコマンド：ONTAP 9以降で必要な最小限の権限。</block>
+  <block id="4e822e8bd084f0d55645c04096f9f2e8" category="cell">consistency-group storage-unit show</block>
+  <block id="19899f4e43a0adc60e21e11b5620c400" category="list-text">[設定]ページの*[ネットワーク設定]*セクションで、* IPv4 *または* IPv6 *アドレスをクリックし、*[編集]*をクリックします。</block>
+  <block id="73bf8d0963d0fce608d5706a43357517" category="admonition">IPv4アドレスとIPv6アドレスの両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。</block>
+  <block id="82483f0ce94e070521dde3173ea8f007" category="list-text">IPv4アドレスを実行しており、SnapCenter VMware vSphereホストのIPアドレスが2つある。その結果、ジョブ要求はSnapCenterサーバで認識されないIPアドレスに送信されます。この問題を回避するには、使用するIPアドレスを次のように追加します。</block>
+  <block id="cab2abd3782f0d1cb3afdd1d41344792" category="cell">すべてのSnapCenter Plug-in for VMware vSphereタスクの実行に必要なvCenter Server標準とSnapCenter固有のPrivilegesがすべて提供されています。SCV 6.1リリース以降では、セカンダリ保護を作成するための新しい権限がこのロールに追加されています。</block>
+  <block id="3c25218c53c1fe4763ef556ebed0058e" category="cell">vSphereオブジェクト（仮想マシンおよびデータストア）のバックアップに必要なvCenter Server標準およびSnapCenter固有のPrivilegesがすべて提供されています。また、ユーザはconfigure権限にもアクセスできます。ユーザはバックアップをリストアできません。SCV 6.1リリース以降では、セカンダリ保護を作成するための新しい権限がこのロールに追加されています。</block>
+  <block id="803b820f28def2648af601377cd8f65d" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.1の新機能と拡張機能について説明します。</block>
+  <block id="f1e9602e9f3c53a3cefb7d07c096dbc2" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.1リリースノート</block>
+  <block id="4a58337a4c5239462c0a728544f6bfeb" category="paragraph">既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください<block ref="04c13539a5d154a6fc636a4d15810317" category="inline-link-rx"></block>。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。</block>
+  <block id="14a88b79b7eae8723a8ca7d5fe6807fc" category="cell"><block ref="8877dc9fcfb6df8dad34589e1a225411" prefix="" category="inline-code"></block> 指定したポリシーでリソースグループを作成します。手順 1 の * policyId * を渡し、他のすべての必須属性に加えて、ポリシー * frequency * の詳細を入力します。このREST APIを使用してセカンダリ保護を有効にすることができます。</block>
+  <block id="34b3c572ebc9bfec8d4ff1eb372fc521" category="list-text">ASA R2のセカンダリ保護の設定</block>
+  <block id="15ca3652a44eb871e28b0f7ed33ab5f8" category="list-text">概要を確認し、*[終了]*をクリックします。</block>
+  <block id="511a61be3395b836dbaacf9a77e28d9c" category="cell">選択したファイルをリストアするゲストへのUNC共有パスを入力します。IPv4アドレスの例<block ref="c1efda00eba14c667cfd89393b2be583" prefix=" " category="inline-code"></block>：IPv6アドレスの例：<block ref="f7a108079a0dc952ef09921776f4796f" prefix=" " category="inline-code"></block></block>
+  <block id="12cbe201763ebb8c3712b94674ec18dc" category="admonition">SCV 6.1へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。</block>
+  <block id="7e876cb2f9911c683b816e2dcbbc43a3" category="cell">SCV 6.1へのアップグレード</block>
+  <block id="d86e4811939307b3183e2dfd4eb853b6" category="cell">SCV 6.0およびSCV 6.1へのアップグレード</block>
+  <block id="b0ef2ccf9ac61cfaed33ce8cd24eae39" category="list-text">IPv4/IPv6アドレス設定の変更</block>
+  <block id="2fd5adf936b993ca4d80eea4c1f5d1e5" category="summary">SnapCenter Plug-in for VMware vSphere 6.1の新機能について説明します。</block>
+  <block id="6ac456c08060bbfaa97a7dd6e787b943" category="doc">SnapCenter Plug-in for VMware vSphere 6.1の新機能</block>
+  <block id="21d5f6e174bd644ffb485588eaf88aa1" category="paragraph">* ASA R2システムでのVMおよびVMFSデータストアのサポート*</block>
+  <block id="4ff1c74f59c8af7628ad4bba73e7a214" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.1リリースで、ASA R2システムで仮想マシン（VM）とVMFSデータストアのプロビジョニングがサポートされるようになりました。ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。SnapCenter Plug-in for VMware vSphere 6.1でサポートされるASA R2システム上のVM、データストア、仮想マシンディスクフォーマット（VMDK）の機能は次のとおりです。</block>
+  <block id="58750fe248e0ff18b9fc2f1aef5f3790" category="list-text">プライマリ保護のための整合グループのプロビジョニング</block>
+  <block id="aa90edd6232295850b0461777246c50b" category="list-text">整合グループベースのバックアップ</block>
+  <block id="9a1901c6fb175880508a4835b0898446" category="list-text">クローニングのワークフロー</block>
+  <block id="d4fc87c71eab8d183e02273ad78a7c04" category="list-text">リストアのワークフロー</block>
+  <block id="bfb1fb42df848164986651f570a11d61" category="list-text">リソースグループを作成または変更するときのセカンダリ保護プロビジョニング。</block>
+  <block id="386b235edd065e17ecd990587ac6f70d" category="admonition">セカンダリ保護はONTAP 9.16.1以降のバージョンでのみサポートされます。</block>
+  <block id="5db6882763ebe6a093c82ca0da5652f2" category="paragraph">SCV 6.1</block>
+  <block id="d61532c65e483bb3822f5a0a1ae885f5" category="paragraph">SCV 6.0 および SCV 6.1</block>
+  <block id="dd3471364a418c5d14272ff6d6881150" category="paragraph">SnapCenter 6.1</block>
+  <block id="06f856f616715d0e20b174cd2c7fb47a" category="sidebar">SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。このドキュメントライブラリでは、SnapCenter Plug-in for VMware vSphereバージョン6.1について説明します。</block>
+  <block id="94e8421982a2fb673cf72156837a22d4" category="sidebar">VMware vSphere 6.1向けSnapCenterプラグイン</block>
+  <block id="a90ceefdbe215fb84520872833bfb5a2" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.1の新機能</block>
 </blocks>

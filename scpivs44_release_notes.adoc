@@ -14,9 +14,9 @@ summary: リリースノートには、このリリースのSnapCenter Plug-in f
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere 6.0.1および6.0の新機能と拡張機能について説明します。
+SnapCenter Plug-in for VMware vSphere 6.1の新機能と拡張機能について説明します。
 
-既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["SnapCenter Plug-in for VMware vSphere 6.0および6.0.1リリースノート"^]。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。
+既知の問題、制限事項、および解決済みの問題の詳細については、を参照してください https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464["SnapCenter Plug-in for VMware vSphere 6.1リリースノート"^]。リリースノートにアクセスするには、NetAppアカウントでサインインするか、アカウントを作成する必要があります。
 
 [NOTE]
 ====
