@@ -669,18 +669,12 @@
   <block id="05f682de80179c0aadcfd997d1abae48" category="list-text">vCenter HTML5 クライアントにログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します</block>
   <block id="3a3bfcea804c014276e7672b06f18879" category="summary">仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。</block>
   <block id="d3520107017d5a966a91cb89b0a1057f" category="doc">導入の計画と要件</block>
-  <block id="db2aeb24ed12922fe15bc09cfd1f528b" category="paragraph">仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の表に示します。</block>
   <block id="fc076765cbc4aef219c970ffdd93f443" category="section-title">ホストの要件</block>
   <block id="59d59b410909e6449498dfd7dabe204b" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、ホストの要件を確認しておく必要があります。</block>
-  <block id="d4ff2a4ba3e5af06f352373f50430bce" category="list-text">SnapCenter Plug-in for VMware vSphereは、プラグインを使用してWindowsシステムとLinuxシステムのどちらのデータを保護するかに関係なく、Linux VMとして導入されます。</block>
   <block id="5897423e9fe4df49061445b3104d9dbb" category="list-text">SnapCenter Plug-in for VMware vSphereをvCenter Serverに導入する必要があります。</block>
-  <block id="77e6a5095dbf7f9171bcc524ed6e1476" category="paragraph">バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。</block>
-  <block id="5d7c1f071b8bebdb7a96ab764852bb32" category="list-text">名前と特殊文字が含まれるフォルダにSnapCenter Plug-in for VMware vSphereを導入しないでください。</block>
   <block id="a7c99fa4270e567a328e88618380eaa4" category="paragraph">フォルダ名には、 $ ！ @ # % ^ &amp; （） _ + ｛ ｝ ' ；、 * ？ " &lt;&gt; | という特殊文字は使用できません</block>
   <block id="43685458a1d84184e89d6917bc3f3a30" category="list-text">vCenter Serverごとに、一意のSnapCenter Plug-in for VMware vSphereインスタンスを個別に導入して登録する必要があります。</block>
-  <block id="18ddbf443f973a535ca1b5fb7410cf19" category="list-text">各vCenter Serverは、リンクモードかどうかに関係なく、SnapCenter Plug-in for VMware vSphereの個別のインスタンスとペアリングする必要があります。</block>
   <block id="a893739e55ea1f12f5171b7f54a73977" category="list-text">SnapCenter Plug-in for VMware vSphereの各インスタンスを個別のLinux VMとして導入する必要があります。</block>
-  <block id="6475183430549d8c41dcdf49b6e454d9" category="paragraph">たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行する場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入し、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。</block>
   <block id="f69439260ecee7ac85f815e8701071d9" category="list-text">VVOL VM（VMware VVOLデータストア上のVM）を保護するには、最初にONTAP tools for VMware vSphereを導入する必要があります。ONTAP toolsは、ONTAPおよびVMware WebクライアントでVVOL用のストレージをプロビジョニングおよび設定します。</block>
   <block id="ce5825ca299ec1e545f124bbf257a2c7" category="list-text">SnapCenter Plug-in for VMware vSphereでは、Storage vMotionをサポートする仮想マシンの制限により、共有PCIデバイスまたはPCIeデバイス（NVIDIA Grid GPUなど）のサポートが制限されます。詳細については、ベンダーのドキュメント『VMware導入ガイド』を参照してください。</block>
   <block id="2ea5568824b820ba2bfad023e6bb3573" category="list-text">サポート内容：</block>
@@ -700,7 +694,6 @@
   <block id="253b40ae359ba25b56231803430c4873" category="cell">ONTAP</block>
   <block id="3560c7ef415d0e13191c33fa995b7005" category="cell">いずれか：SnapMirrorまたはSnapVault（関係のタイプに関係なくセカンダリデータ保護用）</block>
   <block id="2b5932460c4f1e726c2fe5eb4c84cf64" category="cell">その他の製品</block>
-  <block id="9f7e37bd05b30c134ff1660c6d52c186" category="cell">vSphere Standard、Enterprise、またはEnterprise Plusリストア処理（Storage vMotionを使用）を実行するには、vSphereライセンスが必要です。 vSphere EssentialsまたはEssentials Plusライセンスには、Storage vMotionは含まれていません。</block>
   <block id="6c1ccb0198e251b6df82fd2d169fdcf0" category="cell">プライマリデスティネーション</block>
   <block id="9c864fe971ea9ba615c7a517d7552160" category="cell">SnapCenter Standard ： VMware SnapRestore を介したアプリケーションベースの保護を実行する場合に必要： VMware の VM およびデータストアのみ FlexClone のリストア処理を実行する場合に必要： VMware の VM およびデータストアのみのマウント処理と接続処理に使用</block>
   <block id="5be74f1e9c3cdce99e50c0e439ec19b3" category="cell">セカンダリデスティネーション</block>
@@ -726,28 +719,21 @@
   <block id="83796d186e6e678e53d65b677d9068ca" category="list-text">ESXi 7.0U3</block>
   <block id="ab8296c5ef7a7b056b384680f89a9379" category="list-text">ONTAP 9.10.1</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="cell">要件</block>
-  <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">オペレーティングシステム</block>
-  <block id="edc9f0a5a5d57797bf68e37364743831" category="cell">Linux</block>
   <block id="3cb874290f06f3c2d44ce2e858bb041f" category="cell">SnapCenter Plug-in for VMware vSphere、ログ、MySQLデータベース用の最小ハードドライブスペース</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="cell">100GB</block>
   <block id="9a0980e2d2a75eb076f41f7a4d439162" category="section-title">接続とポートの要件</block>
   <block id="3672cca688eb0474cd3fee2add1a2067" category="cell">ポートのタイプ</block>
-  <block id="1af12a0ed126e7e6b194370c0c0be5eb" category="cell">事前設定されたポート</block>
   <block id="2cb2843b629d315325aac076907ec4b9" category="cell">VMware ESXi Serverのポート</block>
   <block id="ad676153bac7535311261fab671b77b9" category="cell">443（HTTPS）、双方向のゲストファイルリストア機能では、このポートが使用されます。</block>
   <block id="926bafe6b6d4e07892751c7ca73ad20d" category="cell">SnapCenter Plug-in for VMware vSphereのポート</block>
-  <block id="ea35a5ceed1579f5b902ce081cd9eba5" category="paragraph">8144（HTTPS）。双方向のポートは、VMware vSphereクライアントとSnapCenter サーバからの通信に使用されます。8080 bidirectionalこのポートは、仮想アプライアンスの管理に使用されます。</block>
   <block id="716306984040e1bf7dc3b8c1b0a05422" category="paragraph">注：SnapCenterにSCVホストを追加するためのカスタムポートがサポートされています。</block>
   <block id="7c1239972879fe0b69b4bb6d5c9a743e" category="cell">VMware vSphere vCenter Serverのポート</block>
   <block id="1f5ccbd5c3e6d6be1c440296630a5678" category="cell">VVol VMを保護する場合は、ポート443を使用する必要があります。</block>
   <block id="131b9f1c14d26ba7a0cce7389e7679a9" category="cell">ストレージクラスタまたはStorage VMポート</block>
-  <block id="4ebb46027adb5b26fc62dffc3aab358e" category="cell">443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。</block>
   <block id="bd6873be6e44dbd5504531679d8ca1ef" category="section-title">サポートされる構成</block>
-  <block id="f377fb769eb12fc39f5abb7af2a27054" category="paragraph">各プラグイン インスタンスでサポートされるvCenter Serverは1つだけです。リンク モードのvCenterがサポートされます。次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。</block>
   <block id="cf0ab757341ba6d3dc7ba387b7608080" category="inline-image-macro">サポートされている構成グラフィック表現</block>
   <block id="9dfe68c8c0e7d63c6014f412ad6f64f4" category="paragraph"><block ref="9dfe68c8c0e7d63c6014f412ad6f64f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="44245d918ad9aae8ea6514501fcfa0e8" category="section-title">RBACケンケンノヒツヨウ</block>
-  <block id="59e5a4ee48160cd7955828dd0c4db401" category="paragraph">vCenter管理者アカウントには、次の表に示す必要なvCenter権限が必要です。</block>
   <block id="3226b4d551073b03b6999f2db6d26c26" category="cell">この操作を実行するには ...</block>
   <block id="ebbed56187bf88c2773b58885cb13924" category="cell">次の vCenter 権限が必要です ...</block>
   <block id="246180f43b6fb5d5b8945e640f176b32" category="cell">vCenterでSnapCenter Plug-in for VMware vSphereを導入して登録する</block>
@@ -2181,4 +2167,16 @@
   <block id="06f856f616715d0e20b174cd2c7fb47a" category="sidebar">SnapCenter Plug-in for VMware vSphere（SCV）は、Linuxベースの仮想アプライアンスです。スタンドアロンとして、VM、データストア、VMDKに対して、スペース効率に優れた、クラッシュ整合性のあるVM整合性バックアップおよびリストア処理を高速で実行できます。また、SnapCenterサーバと連携して、VMware環境でのSnapCenterアプリケーション固有のプラグインのアプリケーションベースのバックアップおよびリストア処理をサポートします。このドキュメントライブラリでは、SnapCenter Plug-in for VMware vSphereバージョン6.1について説明します。</block>
   <block id="94e8421982a2fb673cf72156837a22d4" category="sidebar">VMware vSphere 6.1向けSnapCenterプラグイン</block>
   <block id="a90ceefdbe215fb84520872833bfb5a2" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.1の新機能</block>
+  <block id="7ba297bc556c4bd891e83b1943e116d5" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、次の要件を理解しておく必要があります。</block>
+  <block id="ca7b78e6e086f02d5ea9e3c5f9719822" category="list-text">SnapCenter Plug-in for VMware vSphereは、WindowsシステムとLinuxシステムのどちらのデータ保護に使用されているかに関係なく、Linux VMとして導入されます。</block>
+  <block id="ea84ccf1b1b24d5d18322d9bcac320d5" category="paragraph">バックアップスケジュールはSnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行され、vCenterはデータを配置されているタイムゾーンでレポートします。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。</block>
+  <block id="c8ab109ee626a90547277ef790b2ecc5" category="list-text">特殊文字を含む名前のフォルダにSnapCenter Plug-in for VMware vSphereを導入しないでください。</block>
+  <block id="b8d538e51a79520b3157b17c50b7394d" category="list-text">各vCenter Serverは、リンクモードかどうかに関係なく、SnapCenter Plug-in for VMware vSphereの個別のインスタンスとペアリングする必要があります。</block>
+  <block id="bfd5317e73c9442ee1915a6588c0366c" category="paragraph">たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行するとします。その場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入する必要があり、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。</block>
+  <block id="94065d09aa28da13308f15b08c2c3e89" category="cell">vSphere Standard、Enterprise、またはEnterprise Plus Storage vMotionを使用してリストア処理を実行するには、vSphereライセンスが必要です。vSphere EssentialsまたはEssentials Plusライセンスには、Storage vMotionは含まれていません。</block>
+  <block id="99ddf0e823c1be51589f68696f62cf56" category="cell">事前設定されたポート</block>
+  <block id="f96e5ffe0e86002fbdb3cab444ac57b9" category="paragraph">8144（HTTPS）、双方向ポートは、VMware vSphereクライアントとSnapCenterサーバからの通信に使用されます。8080 bidirectionalこのポートは、仮想アプライアンスの管理に使用されます。</block>
+  <block id="ffa5dd2af4873dbfd89f9ae07a815104" category="cell">443（HTTPS）、双方向80（HTTP）、双方向ポートは、仮想アプライアンスとStorage VMまたはStorage VMを含むクラスタの間の通信に使用されます。</block>
+  <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">各プラグインインスタンスでサポートされるvCenter Serverは1つだけです（リンクモード）。ただし、次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。</block>
+  <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">vCenter管理者アカウントには、次の表に示す必要なvCenter Privilegesが必要です。</block>
 </blocks>

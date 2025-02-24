@@ -14,7 +14,7 @@ summary: 仮想アプライアンスを導入する前に、導入要件を確�
 
 
 [role="lead"]
-仮想アプライアンスを導入する前に、導入要件を確認しておく必要があります。導入要件を次の表に示します。
+SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、次の要件を理解しておく必要があります。
 
 
 
@@ -22,12 +22,12 @@ summary: 仮想アプライアンスを導入する前に、導入要件を確�
 
 SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、ホストの要件を確認しておく必要があります。
 
-* SnapCenter Plug-in for VMware vSphereは、プラグインを使用してWindowsシステムとLinuxシステムのどちらのデータを保護するかに関係なく、Linux VMとして導入されます。
+* SnapCenter Plug-in for VMware vSphereは、WindowsシステムとLinuxシステムのどちらのデータ保護に使用されているかに関係なく、Linux VMとして導入されます。
 * SnapCenter Plug-in for VMware vSphereをvCenter Serverに導入する必要があります。
 +
-バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。
+バックアップスケジュールはSnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行され、vCenterはデータを配置されているタイムゾーンでレポートします。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。
 
-* 名前と特殊文字が含まれるフォルダにSnapCenter Plug-in for VMware vSphereを導入しないでください。
+* 特殊文字を含む名前のフォルダにSnapCenter Plug-in for VMware vSphereを導入しないでください。
 +
 フォルダ名には、 $ ！ @ # % ^ & （） _ + ｛ ｝ ' ；、 * ？ " <> | という特殊文字は使用できません
 
@@ -36,7 +36,7 @@ SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、�
 ** 各vCenter Serverは、リンクモードかどうかに関係なく、SnapCenter Plug-in for VMware vSphereの個別のインスタンスとペアリングする必要があります。
 ** SnapCenter Plug-in for VMware vSphereの各インスタンスを個別のLinux VMとして導入する必要があります。
 +
-たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行する場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入し、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。
+たとえば、6つの異なるvCenter Serverインスタンスからバックアップを実行するとします。その場合は、6つのホストにSnapCenter Plug-in for VMware vSphereを導入する必要があり、各vCenter ServerをSnapCenter Plug-in for VMware vSphereの固有のインスタンスとペアリングする必要があります。
 
 
 
@@ -88,7 +88,7 @@ VMFSデータストア上に1つ以上のVMDKがある場合のVM全体のリス
 | ONTAP | いずれか：SnapMirrorまたはSnapVault（関係のタイプに関係なくセカンダリデータ保護用） 
 
 
-| その他の製品 | vSphere Standard、Enterprise、またはEnterprise Plusリストア処理（Storage vMotionを使用）を実行するには、vSphereライセンスが必要です。 vSphere EssentialsまたはEssentials Plusライセンスには、Storage vMotionは含まれていません。 
+| その他の製品 | vSphere Standard、Enterprise、またはEnterprise Plus Storage vMotionを使用してリストア処理を実行するには、vSphereライセンスが必要です。vSphere EssentialsまたはEssentials Plusライセンスには、Storage vMotionは含まれていません。 
 
 
 | プライマリデスティネーション | SnapCenter Standard ： VMware SnapRestore を介したアプリケーションベースの保護を実行する場合に必要： VMware の VM およびデータストアのみ FlexClone のリストア処理を実行する場合に必要： VMware の VM およびデータストアのみのマウント処理と接続処理に使用 
@@ -145,9 +145,6 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 | 項目 | 要件 
 
 
-| オペレーティングシステム | Linux 
-
-
 | 推奨CPU数 | 8コア 
 
 
@@ -171,7 +168,7 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 
 
 | SnapCenter Plug-in for VMware vSphereのポート  a| 
-8144（HTTPS）。双方向のポートは、VMware vSphereクライアントとSnapCenter サーバからの通信に使用されます。8080 bidirectionalこのポートは、仮想アプライアンスの管理に使用されます。
+8144（HTTPS）、双方向ポートは、VMware vSphereクライアントとSnapCenterサーバからの通信に使用されます。8080 bidirectionalこのポートは、仮想アプライアンスの管理に使用されます。
 
 注：SnapCenterにSCVホストを追加するためのカスタムポートがサポートされています。
 
@@ -180,13 +177,13 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 | VMware vSphere vCenter Serverのポート | VVol VMを保護する場合は、ポート443を使用する必要があります。 
 
 
-| ストレージクラスタまたはStorage VMポート | 443 （ HTTPS ）、双方向 80 （ HTTP ）、仮想アプライアンスと Storage VM または Storage VM を含むクラスタ間の通信に使用されるポート。 
+| ストレージクラスタまたはStorage VMポート | 443（HTTPS）、双方向80（HTTP）、双方向ポートは、仮想アプライアンスとStorage VMまたはStorage VMを含むクラスタの間の通信に使用されます。 
 |===
 
 
 == サポートされる構成
 
-各プラグイン インスタンスでサポートされるvCenter Serverは1つだけです。リンク モードのvCenterがサポートされます。次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。
+各プラグインインスタンスでサポートされるvCenter Serverは1つだけです（リンクモード）。ただし、次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。
 
 image:scpivs44_image4.png["サポートされている構成グラフィック表現"]
 
@@ -194,7 +191,7 @@ image:scpivs44_image4.png["サポートされている構成グラフィック�
 
 == RBACケンケンノヒツヨウ
 
-vCenter管理者アカウントには、次の表に示す必要なvCenter権限が必要です。
+vCenter管理者アカウントには、次の表に示す必要なvCenter Privilegesが必要です。
 
 |===
 | この操作を実行するには ... | 次の vCenter 権限が必要です ... 
