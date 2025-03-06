@@ -29,7 +29,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してVMDKのリストア
 
 
 | 3 | `/4.1/vm/backups/{backupId}/
-snapshotlocations` | `Get snapshot locations` 指定したバックアップのSnapshotの場所を取得します。手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。 
+snapshotlocations` | `Get snapshot locations`指定したバックアップのSnapshotの場所を取得します。手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。 
 
 
 | 4 | `/4.1/vm/{moref}/backups/

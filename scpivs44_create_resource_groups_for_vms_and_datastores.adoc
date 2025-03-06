@@ -162,7 +162,7 @@ NOTE: ASA R2ストレージシステムではSnapshotの名前変更がサポー
 Snapshot名にカスタム形式を使用する場合は、このボックスをオンにして名前形式を入力します。
 
 *** デフォルトでは、この機能は無効になっています。
-*** デフォルトのSnapshot名はの形式を使用し `<ResourceGroup>_<Date-TimeStamp>` ますが、変数$ResourceGroup、$Policy、$HostName、$ScheduleType、および$CustomTextを使用してカスタムの形式を指定できます。[カスタム名]フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。$CustomTextを選択した場合、名前の形式はになります `<CustomName>_<Date-TimeStamp>`。表示された追加ボックスにカスタムテキストを入力します。[注]：「_recent」サフィックスも選択する場合は、カスタムSnapshot名がデータストア内で一意であることを確認する必要があります。そのため、$resourcegroup変数と$Policy変数を名前に追加する必要があります。
+*** デフォルトのSnapshot名はの形式を使用し `<ResourceGroup>_<Date-TimeStamp>`ますが、変数$ResourceGroup、$Policy、$HostName、$ScheduleType、および$CustomTextを使用してカスタムの形式を指定できます。[カスタム名]フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。$CustomTextを選択した場合、名前の形式はになります `<CustomName>_<Date-TimeStamp>`。表示された追加ボックスにカスタムテキストを入力します。[注]：「_recent」サフィックスも選択する場合は、カスタムのSnapshot名がデータストア内で一意であることを確認する必要があります。そのため、$resourcegroup変数と$Policy変数を名前に追加する必要があります。
 *** 名前に特殊文字が含まれている場合は、 Name フィールドと同じガイドラインに従ってください。
 
 

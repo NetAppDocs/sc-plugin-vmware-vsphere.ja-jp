@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary: VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VM の場合、このプラグインは ONTAP 単一ファイル Snapshot リストアおよび SnapMirror リストアをリストア処理に使用します。 
+summary: VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはONTAP単一ファイルのSnapshotリストアとSnapMirrorリストアをリストア処理に使用します。 
 ---
 = リストア処理の実行方法
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storag
 
 
 [role="lead"]
-VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはリストア処理にONTAP Single File Snapshot Restore（ONTAP SFSR）とSnapMirror Restoreを使用します。次の表に、リストア処理の実行方法を示します。
+VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはONTAPの単一ファイルSnapshotリストア（ONTAP SFSR）とSnapMirrorリストアをリストア処理に使用します。次の表に、リストア処理の実行方法を示します。
 
 |===
 | リストア処理 | 開始 | を使用して実行 

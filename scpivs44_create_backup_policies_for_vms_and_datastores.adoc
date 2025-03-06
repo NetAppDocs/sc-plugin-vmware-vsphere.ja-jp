@@ -21,8 +21,8 @@ SnapCenter Plug-in for VMware vSphereを使用してVMとデータストアを�
 * セカンダリストレージの関係を設定しておく必要があります。
 +
 ** Snapshotをミラーセカンダリストレージまたはバックアップセカンダリストレージにレプリケートする場合は、関係が設定されている必要があり、SnapCenter管理者がソースとデスティネーションの両方のボリューム用にStorage VMを割り当てておく必要があります。
-** NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でSnapshotをセカンダリストレージに正常に転送するには、SnapMirrorポリシーのタイプがAsynchronous Mirrorであり、「all_source_snapshots」オプションがオンになっていることを確認します。
-** セカンダリストレージ（mirror-vault）のSnapshot数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。 `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
+** NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でスナップショットをセカンダリストレージに正常に転送するには、SnapMirrorポリシータイプが非同期ミラーであり、「all_source_snapshots」オプションがオンになっていることを確認します。
+** セカンダリストレージ（mirror-vault）上のSnapshotの数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。 `This snapshot is currently used as a reference snapshot by one or more SnapMirror relationships. Deleting the snapshot can cause future SnapMirror operations to fail.`
 +
 この問題を解決するには、Snapshotの最大数に達しないようにセカンダリストレージのSnapMirror保持ポリシーを設定します。
 
@@ -56,7 +56,7 @@ NOTE: ファンアウト構成では、3番目のサイトでは整合グルー�
 .手順
 . SCVプラグインの左側のナビゲータペインで、*[Policies]*をクリックします。
 . [ポリシー]*ページで、*[作成]*を選択してウィザードを開始します。
-. [New Backup Policy] ページで、ポリシーを使用する vCenter Server を選択し、ポリシー名と概要を入力します。
+. [新しいバックアップポリシー]*ページで、ポリシーの名前と説明を入力します。
 +
 ** リンクモード
 +
@@ -75,7 +75,11 @@ VM 、データストア、クラスタ、ポリシー、バックアップ、 �
 +
 ポリシーではバックアップの頻度のみを指定します。バックアップの具体的な保護スケジュールは、リソースグループで定義します。そのため、複数のリソースグループで同じポリシーとバックアップ頻度を共有していても、バックアップスケジュールが異なる場合があります。
 
-. Snapshotロックを有効にするには、*[ロック期間]*チェックボックスを選択します。Snapshotのロック期間は、日/月/年として選択できます。
+. スナップショットのロックを有効にするには、*[ロック期間]*チェックボックスを選択します。プライマリおよびセカンダリSnapshotのロック期間は、日/月/年として選択できます。
++
+
+NOTE: ONTAP SnapMirrorポリシーで設定された保持値に関係なく、セカンダリSnapshotコピーは、指定されたセカンダリSnapshotロック期間までは削除されません。
+
 . 保持設定を指定します。
 +
 
@@ -114,10 +118,10 @@ NOTE: このオプションは、SnapCenter Plug-in for VMware vSphere 4.5以降
 
 
 | Snapshotラベル  a| 
-このポリシーで作成されたSnapVaultおよびSnapMirror Snapshotに追加するカスタムラベル（オプション）を入力します。Snapshotラベルは、このポリシーで作成されたSnapshotをセカンダリストレージシステム上の他のSnapshotと区別するのに役立ちます。
+このポリシーで作成されたSnapVault SnapshotおよびSnapMirror Snapshotに追加するオプションのカスタムラベルを入力します。Snapshotラベルは、このポリシーで作成されたSnapshotをセカンダリストレージシステム上の他のSnapshotと区別するのに役立ちます。
 
 
-NOTE: Snapshotラベルに使用できる文字数は最大31文字です。
+NOTE: Snapshotラベルに使用できる最大文字数は31文字です。
 
 |===
 . オプション： ［ * 詳細設定 * ］ フィールドで、必要なフィールドを選択します。[Advanced]フィールドの詳細を次の表に示します。

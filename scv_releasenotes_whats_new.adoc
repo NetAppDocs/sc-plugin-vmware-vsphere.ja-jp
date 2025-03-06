@@ -23,3 +23,7 @@ SnapCenter Plug-in for VMware vSphere 6.1リリースで、ASA R2システムで
 NOTE: セカンダリ保護はONTAP 9.16.1以降のバージョンでのみサポートされます。
 
 
+
+*セカンダリ改ざん防止スナップショット（TPS）のサポート*
+
+SnapCenter Plug-in for VMware vSphereでは、セカンダリTPSのサポートが導入されています。これにより、ランサムウェア攻撃者や不正な管理者による削除や変更からセカンダリSnapshotコピーを保護し、攻撃後も使用できるようになります。

@@ -67,7 +67,7 @@ IMPORTANT: 組み込みの管理者アカウントではなく、VM内の管理�
 
 * リストア元のバックアップSnapshotとVMDKを確認しておく必要があります。
 +
-SnapCenter Plug-in for VMware vSphereでは、リストアするファイルやフォルダの検索はサポートされていません。そのため、作業を開始する前に、Snapshotと対応するVMDKに関するファイルまたはフォルダの場所を把握しておく必要があります。
+SnapCenter Plug-in for VMware vSphereでは、リストアするファイルやフォルダの検索はサポートされていません。そのため、作業を開始する前に、Snapshotと対応するVMDKに対するファイルまたはフォルダの場所を把握しておく必要があります。
 
 * 接続する仮想ディスクはSnapCenterバックアップに含まれている必要があります。
 +

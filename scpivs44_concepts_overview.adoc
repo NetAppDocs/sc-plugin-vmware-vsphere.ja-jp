@@ -41,11 +41,11 @@ SnapCenter GUIと適切なSnapCenterアプリケーションプラグインを�
 SnapCenterは、SnapCenter Plug-in for VMware vSphereを標準で活用して、VMDK、rawデバイスマッピング（RDM）、NFSデータストア上のすべてのデータ保護処理を実行します。仮想アプライアンスの導入後は、vCenterとのやり取りがすべてプラグインで処理されます。SnapCenter Plug-in for VMware vSphereは、SnapCenterのアプリケーションベースのプラグインをすべてサポートしています。
 
 +
-SnapCenterでは、データベースとVMのシングルSnapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。SnapCenter GUIを使用してデータベースアプリケーションのバックアップのスケジュールを設定し、VMware vSphere Client GUIを使用してVMとデータストアのバックアップのスケジュールを設定します。
+SnapCenterでは、データベースとVMの単一Snapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。SnapCenter GUIを使用してデータベースアプリケーションのバックアップのスケジュールを設定し、VMware vSphere Client GUIを使用してVMとデータストアのバックアップのスケジュールを設定します。
 
-* VMと整合性のあるSnapshotにはVMwareツールが必要
+* VMと整合性のあるスナップショットにはVMwareツールが必要
 +
-VMware toolsがインストールされて実行されていない場合、ファイルシステムは休止されず、crash-consistent Snapshotが作成されます。
+VMware Toolsがインストールされて実行されていない場合、ファイルシステムは休止されず、crash-consistentスナップショットが作成されます。
 
 * SAN （ VMFS ）環境でのリストア処理には、 VMware Storage vMotion が必要です
 +

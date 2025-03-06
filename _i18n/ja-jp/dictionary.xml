@@ -55,14 +55,10 @@
   <block id="67617c3dd7048bff7de2a5db0e9bb12c" category="cell">レポートタイプ</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">製品説明</block>
   <block id="347242fe4a580f39a58e63bf5a9a87b1" category="cell">バックアップレポート</block>
-  <block id="30f4f6955fba03a8013c2694049c90b8" category="cell">バックアップジョブに関する概要データが表示されます。グラフ上のセクション / ステータスをクリックすると、そのステータスのジョブのリストが ［ * レポート * ］ タブに表示されます。各ジョブについて、ジョブID、対応するリソースグループ、バックアップポリシー、開始時間と期間、ステータス、およびジョブの詳細が表示されます。ジョブが完了した場合はジョブ名（Snapshot名）、警告またはエラーメッセージが表示されます。レポートテーブルは、HTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。削除されたバックアップはレポートに含まれません。</block>
   <block id="755dabe92541934db9e3a875e31e6e2c" category="cell">マウントレポート</block>
-  <block id="9c4a4bb63bd5e1a0810596b78da4baef" category="cell">マウントジョブに関する概要データが表示されます。グラフのセクション/ステータスをクリックすると、[Reports]タブにそのステータスのジョブのリストが表示されます。各ジョブについて、ジョブID、ジョブステータス、ジョブ名、およびジョブの開始時刻と終了時刻が表示されます。ジョブ名にはSnapshot名が含まれています。たとえば、<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block> レポートテーブルをHTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。</block>
   <block id="b55709c705ec13fc234183b9c6ee70a3" category="cell">リストアレポート</block>
-  <block id="36c9a2b98b205327142a9e705c4b9572" category="cell">リストアジョブに関する概要ステータス情報が表示されます。グラフのセクション/ステータスをクリックすると、[Reports]タブにそのステータスのジョブのリストが表示されます。各ジョブについて、ジョブID、ジョブステータス、ジョブ名、およびジョブの開始時刻と終了時刻が表示されます。ジョブ名にはSnapshot名が含まれています。たとえば、<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block> レポートテーブルをHTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。</block>
   <block id="5e959015896cfd3bbb41171b7d8fc743" category="cell">Last Protection Status of VM or Datastores レポート</block>
   <block id="8cc0e4b5a5103db908c5596542e3c27e" category="inline-link-macro">設定のデフォルト値を変更します。</block>
-  <block id="b9c6040e19e979fdcb513c0fd37529ee" category="cell">SnapCenter Plug-in for VMware vSphereで管理されているVMとデータストアについて、指定された日数における保護ステータスに関する概要情報が表示されます。デフォルトは7日です。プロパティファイルの値を変更するには、を参照してください <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。プライマリ保護グラフでセクション / ステータスをクリックすると、そのステータスの VM またはデータストアのリストが * Reports * タブに表示されます。保護されているVMとデータストアの[VM or Datastores Protection Status Report]には、設定された日数内にバックアップされたVMまたはデータストアの名前、最新のSnapshot名、および最新のバックアップ実行の開始時刻と終了時刻が表示されます。保護されていないVMまたはデータストアの[VM or Datastores Protection Status Report]には、設定された日数内にバックアップが完了していないVMまたはデータストアの名前が表示されます。レポートテーブルは、HTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。このレポートは、プラグインのキャッシュが更新されると1時間ごとに更新されます。そのため、最近バックアップされたVMまたはデータストアが表示されないことがあります。</block>
   <block id="4cfec9964bf84a35be4d941696759bca" category="summary">REST APIはSwagger Webページから利用できます。Swagger Web ページにアクセスして SnapCenter サーバまたは SnapCenter Plug-in for VMware vSphere REST API を表示したり、 API 呼び出しを手動で問題したりできます。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアの保護処理を実行します。</block>
   <block id="aba5f0a683edf4f29d2940f278f2d102" category="doc">Swagger API Webページを使用したREST APIへのアクセス</block>
   <block id="930080270cd7b9a56b6c02b7abc28d36" category="paragraph">REST APIはSwagger Webページから利用できます。SnapCenterサーバまたはSnapCenter Plug-in for VMware vSphere REST APIを表示したり、APIを手動で呼び出したりするには、Swagger Webページにアクセスします。SnapCenter Plug-in for VMware vSphere REST APIを使用して、VMとデータストアに対して処理を実行します。</block>
@@ -201,7 +197,6 @@
   <block id="fbfbbb98438908f6278b91f3e912dd4f" category="list-text">VMware vSphere ClientのGUIで、ツールバーの* Menu *をクリックし、ドロップダウンリストから* Hosts and clusters *を選択します。</block>
   <block id="8588874df1ca5973e80112c52aa99008" category="list-text">左側のナビゲーションペインで、VMを右クリックし、* SnapCenter Plug-in for VMware vSphere *&gt;*[仮想ディスクの接続]*を選択します。</block>
   <block id="4f6399d375703e081ff1b5332c86263c" category="list-text">仮想ディスクの接続 * ウィンドウの * バックアップ * セクションで、バックアップを選択します。</block>
-  <block id="72b644d7b8a7568e076044cf69d95fbf" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMware Snapshotを含むバックアップの有無、マウントの有無、および場所を選択します。[OK]*をクリックします。</block>
   <block id="775753d105c5c21b1080c5ea812205ff" category="list-text">ディスクの選択 * セクションで、接続するディスクを 1 つ以上選択し、接続元の場所（プライマリまたはセカンダリ）を選択します。</block>
   <block id="0ccbe2c092fc378c75aa9ebb7bd7d5ab" category="paragraph">フィルタを変更して、プライマリロケーションとセカンダリロケーションを表示できます。</block>
   <block id="340a7bef18ba8f879a1fdc1e1e4b47df" category="list-text">デフォルトでは、選択した仮想ディスクは親VMに接続されます。選択した仮想ディスクを同じESXiホスト内の代替VMに接続するには、*[ここをクリックして代替VMに接続]*を選択し、代替VMを指定します。</block>
@@ -253,9 +248,6 @@
   <block id="60932d86af6c12b8d9b85fd3e78528a3" category="list-text">アプリケーションと整合性のある（VMDK / RDM経由の）データ保護処理がサポートされます。</block>
   <block id="a186b835db367f1091a446d680ffebd6" category="paragraph">SnapCenter GUIと適切なSnapCenterアプリケーションプラグインを使用して、VM上のプライマリストレージとセカンダリストレージ上のデータベースとファイルシステムのすべてのバックアップ処理とリストア処理を実行できます。</block>
   <block id="8948a149db0e61e41cadfc936cde0889" category="paragraph">SnapCenterは、SnapCenter Plug-in for VMware vSphereを標準で活用して、VMDK、rawデバイスマッピング（RDM）、NFSデータストア上のすべてのデータ保護処理を実行します。仮想アプライアンスの導入後は、vCenterとのやり取りがすべてプラグインで処理されます。SnapCenter Plug-in for VMware vSphereは、SnapCenterのアプリケーションベースのプラグインをすべてサポートしています。</block>
-  <block id="e36d64fc51e56fd0361e1824369bf78b" category="paragraph">SnapCenterでは、データベースとVMのシングルSnapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。SnapCenter GUIを使用してデータベースアプリケーションのバックアップのスケジュールを設定し、VMware vSphere Client GUIを使用してVMとデータストアのバックアップのスケジュールを設定します。</block>
-  <block id="82cae014f28918df8bf16d2dffbc6ae7" category="list-text">VMと整合性のあるSnapshotにはVMwareツールが必要</block>
-  <block id="c8fc1db15ada67618adabf802e158c27" category="paragraph">VMware toolsがインストールされて実行されていない場合、ファイルシステムは休止されず、crash-consistent Snapshotが作成されます。</block>
   <block id="8c7c2cb1417499c5570603cb36dc36f0" category="list-text">SAN （ VMFS ）環境でのリストア処理には、 VMware Storage vMotion が必要です</block>
   <block id="65f14cafdbd8c340c6512c6463609375" category="paragraph">VMwareファイルシステム（VMFS）のリストアワークフローでは、VMware Storage vMotion機能を使用します。Storage vMotionはvSphere Standardライセンスに含まれていますが、vSphere EssentialsまたはEssentials Plusライセンスでは使用できません。</block>
   <block id="0fe732af45de5f3f394c2d1728dc657b" category="paragraph">NFS環境のほとんどのリストア処理では、ONTAPの標準機能（Single File SnapRestoreなど）が使用され、VMware Storage vMotionは必要ありません。</block>
@@ -306,10 +298,6 @@
   <block id="8e76505b54822d8003db9695ebc8dded" category="doc">VMとデータストアのバックアップポリシーの作成</block>
   <block id="271beae8f11b01c3f45767fc1bd5c1a9" category="list-text">前提条件を確認しておく必要があります。</block>
   <block id="020c68712d58d0c6ae79d6422851ae45" category="list-text">セカンダリストレージの関係を設定しておく必要があります。</block>
-  <block id="0063a09a9fbca08e1c4b484a0bc2f44e" category="list-text">Snapshotをミラーセカンダリストレージまたはバックアップセカンダリストレージにレプリケートする場合は、関係が設定されている必要があり、SnapCenter管理者がソースとデスティネーションの両方のボリューム用にStorage VMを割り当てておく必要があります。</block>
-  <block id="f388a512c05d28e7ac94288c4bd5da97" category="list-text">NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でSnapshotをセカンダリストレージに正常に転送するには、SnapMirrorポリシーのタイプがAsynchronous Mirrorであり、「all_source_snapshots」オプションがオンになっていることを確認します。</block>
-  <block id="3ce9db2a38b1f87c4fb955db8882eed6" category="list-text">セカンダリストレージ（mirror-vault）のSnapshot数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。<block ref="30496723c454b60aabe26e3e2608097f" prefix=" " category="inline-code"></block></block>
-  <block id="b0131629306c9240f3789f9e15396c3b" category="paragraph">この問題を解決するには、Snapshotの最大数に達しないようにセカンダリストレージのSnapMirror保持ポリシーを設定します。</block>
   <block id="585f74b2337dcf50d5f84248087dbc7a" category="inline-link">ロールベースアクセス制御の使用に関する SnapCenter 情報</block>
   <block id="6371946f7a59bb407f5608582531db43" category="paragraph">管理者がユーザーにリソースを割り当てる方法については'を参照して<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>ください</block>
   <block id="ddad3ed39c11da21249f852ea88d160e" category="list-text">VMと整合性のあるバックアップが必要な場合は、VMware Toolsをインストールして実行しておく必要があります。VMを休止するには、VMware Toolsが必要です。VM整合性バックアップはVVOL VMではサポートされません。</block>
@@ -323,7 +311,6 @@
   <block id="567ee5fafb197286f35c17cbadbca640" category="paragraph">ウィザードの各ページのフィールドのほとんどはわかりやすいもので、説明を必要としません。以下の手順では、説明が必要な一部のフィールドを取り上げます。</block>
   <block id="5c010c674f2546a075db61f84c21cee8" category="list-text">SCVプラグインの左側のナビゲータペインで、*[Policies]*をクリックします。</block>
   <block id="6f30de27462e7513b2536a2c20f5b4f0" category="list-text">[ポリシー]*ページで、*[作成]*を選択してウィザードを開始します。</block>
-  <block id="dcac92a09611b2662a02b0b9aa5734c2" category="list-text">[New Backup Policy] ページで、ポリシーを使用する vCenter Server を選択し、ポリシー名と概要を入力します。</block>
   <block id="1d92d0cbfdf6166c05997268d3378fe0" category="list-text">リンクモード</block>
   <block id="35f1c688325b0062756b2d7b0d00be28" category="paragraph">リンクモードでは、各vCenterに個別の仮想アプライアンスがあります。そのため、複数のvCenterで重複した名前を使用できます。ただし、ポリシーはリソースグループと同じvCenterで作成する必要があります。</block>
   <block id="9efc9e0c08da510b5195bb9dc4b1b7c2" category="list-text">サポートされない文字</block>
@@ -331,9 +318,7 @@
   <block id="a051f3eeac4a83ec1f5d55c7aeba6f06" category="paragraph">アンダースコア（_）を使用できます。</block>
   <block id="6e0b19728555d1c2b7bc98ce7895aced" category="list-text">頻度の設定を指定します。</block>
   <block id="52b19e85e6a29b6fe5690f47944f859f" category="paragraph">ポリシーではバックアップの頻度のみを指定します。バックアップの具体的な保護スケジュールは、リソースグループで定義します。そのため、複数のリソースグループで同じポリシーとバックアップ頻度を共有していても、バックアップスケジュールが異なる場合があります。</block>
-  <block id="beebc895773b56339a9e46c0233ba7cd" category="list-text">Snapshotロックを有効にするには、*[ロック期間]*チェックボックスを選択します。Snapshotのロック期間は、日/月/年として選択できます。</block>
   <block id="a923c6bf503ee78e9fc4b4479248cff6" category="list-text">保持設定を指定します。</block>
-  <block id="901c681d3a288c3808f21d058d8434d7" category="admonition">SnapVaultレプリケーションを有効にする場合は、バックアップの保持数を2以上に設定する必要があります。保持するバックアップの保持数を1に設定すると、保持処理が失敗することがあります。これは、新しいSnapshotがターゲットにレプリケートされるまで、最初のSnapshotがSnapVault関係の参照Snapshotになるためです。</block>
   <block id="427e05e41441693fe3177478aa3c69eb" category="admonition">保持できる最大値は、ONTAP 9.4以降のリソースのバックアップが1018個、ONTAP 9.3以前のリソースのバックアップが254個です。保持数を使用しているONTAPバージョンでサポートされる値よりも大きい値に設定すると、バックアップは失敗します。これは、複数のデータストアにも当てはまります。スパニングデータストアにONTAP 9.3以前とONTAP 9.4以降の両方のリソースが含まれている場合は、保持値を254未満に設定してください。</block>
   <block id="cf8572abaca84a096c3646473a75b21b" category="list-text">[ * Replication * ] フィールドで、次の表に示すように、セカンダリ・ストレージへのレプリケーションのタイプを指定します。</block>
   <block id="fa23470db7b9905492d6e4cdd14b03e5" category="cell">バックアップ後にSnapMirrorを更新</block>
@@ -344,14 +329,11 @@
   <block id="7f7a2015d521bd1848a92d266cd3fae5" category="paragraph">プライマリバックアップボリュームとのSnapVault関係がある別のボリュームでディスクツーディスクバックアップレプリケーションを実行する場合は、このオプションを選択します。</block>
   <block id="ec9a0601ee927cc668ce79eac801b520" category="admonition">ボリュームにmirror-vault関係が設定されている場合、このオプションはmirror-vaultデスティネーションにバックアップをコピーする場合にのみ選択する必要があります。</block>
   <block id="765c798c0aa1aec3ca7ca68ec68f7e28" category="cell">Snapshotラベル</block>
-  <block id="1d923d5ae6e4db3dca056c9a5b89c97f" category="paragraph">このポリシーで作成されたSnapVaultおよびSnapMirror Snapshotに追加するカスタムラベル（オプション）を入力します。Snapshotラベルは、このポリシーで作成されたSnapshotをセカンダリストレージシステム上の他のSnapshotと区別するのに役立ちます。</block>
-  <block id="6cb0b8338ef71274b378652e10e95076" category="admonition">Snapshotラベルに使用できる文字数は最大31文字です。</block>
   <block id="d590e65bf4bdcba55c00121b359dd8cb" category="list-text">オプション： ［ * 詳細設定 * ］ フィールドで、必要なフィールドを選択します。[Advanced]フィールドの詳細を次の表に示します。</block>
   <block id="a7ef08fff5cdd9899a1574f69f5c4428" category="cell">VM整合性</block>
   <block id="c5622748b0dae394073783566c4253de" category="paragraph">バックアップジョブの実行時に毎回VMを休止してVMwareスナップショットを作成する場合は、このチェックボックスをオンにします。</block>
   <block id="166fcfb07f657d1f99605d258bb5bfcb" category="paragraph">このオプションはVVOLではサポートされていません。VVol VMの場合は、crash-consistentバックアップのみが実行されます。</block>
   <block id="c852f476fffd15ea31d953d2cd0be4cd" category="admonition">VM整合性バックアップを実行するには、VMでVMware Toolsが実行されている必要があります。VMware toolsが実行されていない場合は、代わりにcrash-consistentバックアップが実行されます。</block>
-  <block id="20d4f4be2ccc6c4f003a0063fa83d6a7" category="admonition">[VM consistency]チェックボックスをオンにすると、バックアップ処理に時間がかかり、より多くのストレージスペースが必要になることがあります。このシナリオでは、まずVMを休止してから、VMwareがVM整合性スナップショットを実行し、SnapCenterがバックアップ処理を実行してから、VMの処理を再開します。VMゲストメモリは、VM整合性スナップショットには含まれません。</block>
   <block id="d29d1dc03e0823975f46be5259a9780c" category="cell">独立型ディスクのデータストアを含める</block>
   <block id="495ad64d2a6a40cfac27d689d4edd34b" category="cell">一時的なデータを含む独立型ディスクのデータストアをバックアップに含める場合は、このボックスをオンにします。</block>
   <block id="a83f1ca5ad00b39773d9e6a26b0e70b2" category="cell">スクリプト</block>
@@ -392,11 +374,8 @@
   <block id="a2193680362aab6bb476324517e60f4f" category="list-text">MetroCluster環境のFlexGroupを含むリソースグループ</block>
   <block id="55bc441bdeb0f43c60379f5dc78f6abf" category="paragraph">ONTAP 9.8またはONTAP 9.9を実行している場合は、スイッチオーバーまたはスイッチバックのあとに、SnapCenter Plug-in for VMware vSphereサービスを再起動してSnapMirror関係を再同期してから、MetroCluster環境でリソースグループをバックアップする必要があります。</block>
   <block id="f8f3f62bebda67bddda44e1dfe268e63" category="paragraph">ONTAP 9 .8では、スイッチバック後にバックアップがハングします。この問題はONTAP 9で修正されています。9</block>
-  <block id="4695e455608ec835ee8afbf8897a2f9c" category="list-text">Snapshotの最適化</block>
-  <block id="f46c0979021c8025122fff51faa81bd8" category="paragraph">Snapshotを最適化するには、同じボリュームに関連付けられているVMとデータストアを1つのリソースグループにグループ化する必要があります。</block>
   <block id="9f02509e5496e861df4c341dba05386e" category="list-text">バックアップポリシー</block>
   <block id="69e6b23ed013e0011d69b00b06dfb367" category="paragraph">リソースグループはバックアップポリシーなしで作成できますが、データ保護処理はリソースグループに少なくとも1つのポリシーが適用されている場合にのみ実行できます。リソースグループの作成プロセスで、既存のポリシーを使用するか、新しいポリシーを作成できます。</block>
-  <block id="492eb88027a90161462dae716848e606" category="admonition">Snapshotロック期間が設定されたバックアップポリシーを選択する場合は、ONTAP 9.12.1以降のバージョンを選択する必要があります。</block>
   <block id="4360fc5d869bf831be60cbb2a380170e" category="list-text">互換性チェック</block>
   <block id="830d37b05f2ce774b9a3bf6afe319d15" category="paragraph">SnapCenterは、リソースグループの作成時に互換性チェックを実行します。</block>
   <block id="f2674e0010597a541e3758cbd4368e87" category="paragraph"><block ref="6c9b49ac3dbdf01a593410d52afe429e" category="inline-xref-macro-rx"></block></block>
@@ -418,13 +397,8 @@
   <block id="c63a88a6e42f1cea88a31cbb2987791e" category="cell">通知の受信者のEメールアドレスを入力します。受信者が複数いる場合は、Eメールアドレスをカンマで区切って指定します。</block>
   <block id="80ab38b942fb2da88ca496f8bbe237f7" category="cell">Eメールの件名</block>
   <block id="33d090cfef78f60a9e7e106bb140a048" category="cell">通知メールの件名を入力します。</block>
-  <block id="7de3288fd2437e3f9a0393ef772632c0" category="cell">最新のSnapshot名</block>
-  <block id="ddc15f81cd36a8510f67cf58cea9fdb1" category="paragraph">最新のSnapshotにサフィックス「_recent」を追加する場合は、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。</block>
   <block id="d2df0b923abc21af57a4dd120ecd6e47" category="admonition"><block ref="304fa48c8e2b7acfb254c5ee0d2dc901" prefix=" " category="inline-code"></block>バックアップは、リソースグループに適用されているポリシーごとに作成されます。そのため、リソースグループに複数のポリシーが設定されている場合は、複数のバックアップが作成され<block ref="304fa48c8e2b7acfb254c5ee0d2dc901" prefix=" " category="inline-code"></block> ます。バックアップの名前を手動で変更しない<block ref="304fa48c8e2b7acfb254c5ee0d2dc901" prefix=" " category="inline-code"></block> でください。</block>
-  <block id="db483b4b52b624fc9163590680bfec11" category="cell">カスタムSnapshot形式</block>
-  <block id="723b537ef97ac7ce95d53da5a816b3d8" category="paragraph">Snapshot名にカスタム形式を使用する場合は、このボックスをオンにして名前形式を入力します。</block>
   <block id="424f6337d74c16c2d02e5cb2e6d97f82" category="list-text">デフォルトでは、この機能は無効になっています。</block>
-  <block id="2a41ff5a92e3ebd527bb827dc47335ba" category="list-text">デフォルトのSnapshot名はの形式を使用し<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block> ますが、変数$ResourceGroup、$Policy、$HostName、$ScheduleType、および$CustomTextを使用してカスタムの形式を指定できます。[カスタム名]フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。$CustomTextを選択した場合、名前の形式はになります<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。表示された追加ボックスにカスタムテキストを入力します。[注]：「_recent」サフィックスも選択する場合は、カスタムSnapshot名がデータストア内で一意であることを確認する必要があります。そのため、$resourcegroup変数と$Policy変数を名前に追加する必要があります。</block>
   <block id="f6023484d4c2c1da1f8822ae43bc066a" category="list-text">名前に特殊文字が含まれている場合は、 Name フィールドと同じガイドラインに従ってください。</block>
   <block id="2b2620f1962d78eb23f6f754d96e6546" category="list-text">[* リソース *] ページで、次の操作を実行します。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">適用範囲</block>
@@ -870,9 +844,7 @@
   <block id="e2b253374500e2e93f1c334a2bb7ddd4" category="section-title">ゲストファイルのリストアセッションを中断したあとにバックアップが切断されない</block>
   <block id="898c4d9cd797d45ca2066478fd269974" category="paragraph">この問題は、VM整合性バックアップからゲストファイルのリストア処理を実行する場合に発生します。ゲストファイルのリストアセッションがアクティブな間に、同じVMに対して別のVM整合性バックアップが実行されます。ゲストファイルリストアセッションが手動または24時間後に自動的に切断されても、セッションのバックアップは切断されません。</block>
   <block id="5857a2699c75798b2ae21bc0b06aff95" category="paragraph">この問題を解決するには、アクティブなゲストファイルリストアセッションから接続されていたVMDKを手動で接続解除します。</block>
-  <block id="508fd664c51b81e70c2be429237ee2ef" category="summary">VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VM の場合、このプラグインは ONTAP 単一ファイル Snapshot リストアおよび SnapMirror リストアをリストア処理に使用します。</block>
   <block id="6312ee9320a2e7d34bcaf52de5c06f78" category="doc">リストア処理の実行方法</block>
-  <block id="ea823eece32dabf410d5f215cf99d2cb" category="paragraph">VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはリストア処理にONTAP Single File Snapshot Restore（ONTAP SFSR）とSnapMirror Restoreを使用します。次の表に、リストア処理の実行方法を示します。</block>
   <block id="f5843b30a2a766ab4eace2681fcbee4a" category="cell">リストア処理</block>
   <block id="5da618e8e4b89c66fe86e32cdafde142" category="cell">開始</block>
   <block id="9f8f555cd6d2412cf59d8fe435cc9568" category="cell">を使用して実行</block>
@@ -960,7 +932,6 @@
   <block id="de00c1e27be1485dd099e4cd2aaa554d" category="section-title">バックアップの削除</block>
   <block id="811a38ca6a4a37270419c2834515cf5c" category="paragraph">他のデータ保護処理に不要になったSnapCenter Plug-in for VMware vSphereのバックアップは削除できます。1つのバックアップを削除することも、複数のバックアップを同時に削除することもできます。</block>
   <block id="4b3cb5948249f5d59292e97ced52522d" category="paragraph">マウントされているバックアップは削除できません。削除するには、バックアップをアンマウントする必要があります。</block>
-  <block id="12e0d65e7b7974e70338d764c2d9f665" category="paragraph">セカンダリストレージ上のSnapshotは、SnapCenter Plug-in for VMware vSphereではなく、ONTAPの保持設定で管理されます。そのため、SnapCenter Plug-in for VMware vSphereを使用してバックアップを削除すると、プライマリストレージのSnapshotは削除されますが、セカンダリストレージのSnapshotは削除されません。セカンダリストレージにSnapshotが残っている場合は、リストア要求をサポートするために、SnapCenter Plug-in for VMware vSphereでバックアップに関連付けられたメタデータが保持されます。ONTAPの保持プロセスでセカンダリSnapshotが削除されると、SnapCenter Plug-in for VMware vSphereはパージジョブを使用してメタデータを削除します。パージジョブは定期的に実行されます。</block>
   <block id="f4b8d6321a2be1101bc17bbd298bd7a3" category="inline-image-macro">vSphere Clientウィンドウ</block>
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="057ce6a4f3ab47ccdfeafe4dab712fc3" category="list-text">1 つ以上のバックアップを選択し、 * Delete * をクリックします。</block>
@@ -977,7 +948,6 @@
   <block id="a3123051c7309d8a5b39a7de4e9f9ba8" category="paragraph">ポリシーをチェックしてリソースグループにポリシーを追加することもできます。</block>
   <block id="cbd35673a02f04d4a8686fa03491191d" category="list-text">ウィザードの残りの部分でリソースグループに追加の変更を加えてから、 [ 完了 ] をクリックします。</block>
   <block id="8a83564fb6cc1ce1968a698b16797b87" category="section-title">ポリシーの変更</block>
-  <block id="71ef781dae45cfbf666fbb693d3227ac" category="paragraph">SnapCenter Plug-in for VMware vSphereリソースグループのポリシーを変更できます。リソースグループにポリシーが適用されている場合は、頻度、レプリケーションオプション、Snapshotの保持設定、またはスクリプトの情報を変更できます。</block>
   <block id="7ed58acf20fe291c9901087f37961432" category="paragraph">SnapCenter Plug-in for VMware vSphereのバックアップポリシーの変更は、SnapCenterアプリケーションベースのプラグインのバックアップポリシーの変更とは異なります。プラグインのポリシーを変更するときに、リソースグループからポリシーの適用を解除する必要はありません。</block>
   <block id="1cba6481a8dfe62a6732da61855667eb" category="paragraph">レプリケーションまたは保持の設定を変更する前に、その影響を考慮する必要があります。</block>
   <block id="8cde2f45172b8235e7b298986bf25883" category="list-text">レプリケーションまたは保持の設定を増やす</block>
@@ -1011,8 +981,6 @@
   <block id="cb0503d668bf3e03dd4da3d424936f20" category="list-text">[ 概要 ] ページが表示されるまで [ 次へ ] をクリックし、 [ 完了 ] をクリックします。</block>
   <block id="ad9a47e46e4ad7c3e60285f394572957" category="section-title">リソースグループの削除</block>
   <block id="16b1a35ba7401a13d918126c70a9b4e4" category="paragraph">リソースグループ内のリソースを保護する必要がなくなった場合は、vCenterでリソースグループを削除できます。vCenterからSnapCenter Plug-in for VMware vSphereを削除する前に、すべてのリソースグループを削除する必要があります。</block>
-  <block id="d67967470b9c73c5afb040931a7e6578" category="paragraph">リソースグループの削除処理はすべて強制削除として実行されます。削除処理を実行すると、vCenterリソースグループからすべてのポリシーが解除され、リソースグループがSnapCenter Plug-in for VMware vSphereから削除され、リソースグループのすべてのバックアップとSnapshotが削除されます。</block>
-  <block id="2e98fb5c5d12bcc1fb0bdf89d865b603" category="admonition">SnapVault関係では、最新のSnapshotは削除できないため、リソースグループは削除できません。SnapVault関係の一部であるリソースグループを削除する場合は、事前にOnCommandシステムマネージャまたはONTAP CLIを使用してSnapVault関係を削除してから、最後のSnapshotを削除する必要があります。</block>
   <block id="1dea17902eec8c260fdbaac8234b9721" category="list-text">SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*をクリックし、リソースグループを選択して*[削除]*をクリックします。</block>
   <block id="689c8a8dce8d8ad4077d2a59cced9fda" category="list-text">[ リソースグループの削除 *] 確認ボックスで、 [OK] をクリックして確定します。</block>
   <block id="8c37da7815ca25f5e4e2da4009856294" category="summary">VMware vSphere Clientを使用してVMまたはデータストアをバックアップまたはリストアする前に、ストレージを追加する必要があります。</block>
@@ -1184,8 +1152,6 @@
   <block id="18641fac10a89302c14853de671e8f34" category="list-text">オプション：データストアがマウントされたことを確認するには、次の手順を実行します。</block>
   <block id="3e67fbd13b6c5bc4e91e14df35bb4faf" category="list-text">ツールバーの * メニュー * をクリックし、ドロップダウン・リストから * ストレージ * を選択します。</block>
   <block id="dc54de6a374115b1549695b6d49f9e14" category="list-text">左側のナビゲーションペインで、マウントしたデータストアがリストの上部に表示されます。</block>
-  <block id="48c532a91a39978d27f7f4a9a7f5991b" category="paragraph">SnapVaultスケジュールで保護されており、ONTAP 8.3を実行しているSnapVaultデスティネーションボリュームで接続またはマウント処理を実行すると、接続またはマウントダイアログ画面に追加のSnapshotが表示されることがあります。これは、接続処理またはマウント処理でSnapVaultデスティネーションボリュームがクローニングされ、ONTAPで新しいSnapshotを作成してボリュームが更新されるためです。</block>
-  <block id="c37f70b28958723ba6b25680a8a14c5c" category="paragraph">ボリュームのクローニング時に新しいSnapshotが作成されないようにするには、SnapVaultボリュームのONTAPスケジュールをオフにします。以前の既存のSnapshotは削除されません。</block>
   <block id="d53a7d8d71c6d488e101d24361b79a0f" category="summary">SnapCenter Plug-in for VMware vSphereは、vCenter Server RBAC、SnapCenter RBAC（アプリケーションベースの処理をサポートするために必要な場合）、およびONTAP RBACと連携して、特定のストレージシステムのオブジェクトに対して特定のユーザが実行できるSnapCenterタスクを決定します。</block>
   <block id="07b89cf973d20a53bb1c4f114173833d" category="doc">SnapCenter Plug-in for VMware vSphereのONTAP RBAC機能</block>
   <block id="8868ffc30ea2ca1a8fa936612697da5e" category="paragraph">ONTAPのRole-Based Access Control（RBAC；ロールベースアクセス制御）を使用すると、特定のストレージシステムへのアクセスと、それらのストレージシステムでユーザが実行できる操作を制御できます。SnapCenter Plug-in for VMware vSphereは、vCenter Server RBAC、SnapCenter RBAC（アプリケーションベースの処理をサポートするために必要な場合）、およびONTAP RBACと連携して、特定のストレージシステムのオブジェクトに対して特定のユーザが実行できるSnapCenterタスクを決定します。</block>
@@ -1203,7 +1169,6 @@
   <block id="883fd3a999b576424bc7a7ce53cc2e8a" category="doc">各種SnapCenter GUIの概要</block>
   <block id="568a0ca21263fa919f552d5a59509f7b" category="paragraph">SnapCenter環境では、適切なGUIを使用してデータ保護処理と管理処理を実行する必要があります。</block>
   <block id="2172eb72d076175790c77de563a1f8c2" category="paragraph">SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理には、vCenterのVMware vSphere Client GUIを使用する必要があります。また、WebクライアントのGUIダッシュボードを使用して、保護されているVMと保護されていないVMのリストを監視することもできます。バックアップ、リストア、ジョブ監視など、他のすべてのSnapCenterプラグイン（アプリケーションベースのプラグイン）処理には、SnapCenter GUIを使用します。</block>
-  <block id="bf8d701c477c13e534e6d20e0696950a" category="paragraph">VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。WebクライアントGUIは、ストレージシステム上でNetApp Snapshotテクノロジと統合されます。これにより、VMとデータストアを数秒でバックアップし、ESXiホストをオフラインにすることなくVMをリストアできます。</block>
   <block id="220dcea22a82ca7dbf03567d62b47c9d" category="paragraph">また、SnapCenter Plug-in for VMware vSphereで管理操作を実行するための管理GUIも用意されています。</block>
   <block id="06c615df2f8ec55473b26eed4f5eedbd" category="paragraph">次の表に、SnapCenter GUIで実行される処理を示します。</block>
   <block id="62882ef8fe7d5fd42d42bffbc2997106" category="cell">使用する GUI</block>
@@ -1220,7 +1185,6 @@
   <block id="a4bce44c238268a0cd1a9d21b6709f04" category="cell">vCenter GUI</block>
   <block id="fff430a88ba050aeda536123c99c39c8" category="cell">vCenter Active Directory ユーザに SCV ロールを追加するユーザまたはグループにリソースアクセスを追加する</block>
   <block id="b6618107278d92d54e80b1f930a98a14" category="paragraph">VM整合性のあるバックアップおよびリストア処理には、VMware vSphere Client GUIを使用する必要があります。データストアのマウントや名前変更など、一部の処理はVMwareツールを使用して実行できますが、それらの処理はSnapCenterリポジトリに登録されず、認識されません。</block>
-  <block id="de09c59b7c20ebde6241f016a1040952" category="paragraph">SnapCenterでは、データベースとVMのシングルSnapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。そのため、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。アプリケーションベースのバックアップはSnapCenter GUIを使用してスケジュール設定する必要があります。VM整合性バックアップはVMware vSphere Client GUIを使用してスケジュール設定する必要があります。</block>
   <block id="f71bd0a1884e2547796a0669e5a44f10" category="summary">SnapCenter Plug-in for VMware vSphereを導入したら、インストールを完了する必要があります。</block>
   <block id="b3b58566d772ea091ad559ad7c722828" category="doc">導入後に必要な処理と問題</block>
   <block id="624b86ee772b09351048910fc4a730dc" category="section-title">導入後に必要な処理</block>
@@ -1391,7 +1355,6 @@
   <block id="e3d8a902b976f14935a74a07f0a8ff70" category="cell"><block ref="180c60808a741f14fed08ebd47075256" prefix="" category="inline-code"></block> 指定したVMのバックアップのリストを取得します。手順 1 から * uuid * を渡します。リストアするバックアップの * backupid * をメモします。</block>
   <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3</block>
   <block id="1396ed7e5eaba2f2a9d66c52606b7200" category="cell"><block ref="d8e2abe315ab3c4d79dc93692fcdc459" prefix="" category="inline-code"></block></block>
-  <block id="5f4cf09d9b2b9a7a5e0f5ded931a3aa3" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block> 指定したバックアップのSnapshotの場所を取得します。手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="405a7d9fcc2a16f96442a76dd028bbde" category="cell"><block ref="b46f55ca0f70c8287c9f5c57435507ec" prefix="" category="inline-code"></block></block>
   <block id="1ed4c767960d8b89a9dd8cd0e8369b7c" category="cell"><block ref="cd167a8bf45e589a93aea03099990bf5" prefix="" category="inline-code"></block> バックアップが格納されているホストの情報を取得します。入手可能な EsxHostsList* 情報に注意してください。</block>
@@ -1574,9 +1537,7 @@
   <block id="10cdb4feb2dea4da0fb0c500304666b9" category="list-text">バックアップをダブルクリックすると、バックアップに含まれるすべてのVMのリストが表示されます。</block>
   <block id="721dbd87e9ecd1ae54c0718f20cae8fc" category="list-text">バックアップ・リストから削除された VM を選択し、 * リストア * をクリックします。</block>
   <block id="63cef9780576628d2ececde8d6316073" category="list-text">リストア * ウィザードの * バックアップの選択 * ページで、リストア元のバックアップ・コピーを選択します。</block>
-  <block id="43bf8720e765e5ec5249782941ceb574" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックして、日時の範囲、VMwareスナップショットの有無、マウントの有無、および場所を選択します。[OK] をクリックしてウィザードに戻ります。</block>
   <block id="dc5a42787776a865ff8c8a8ac021440d" category="list-text">[Select Scope]ページで、[Restore scope]フィールドで*[Entire virtual machine]*を選択し、リストア先を選択してから、バックアップをマウントするデスティネーションESXiホストの情報を入力します。</block>
-  <block id="18c22e30c39ace97af7ec9f62038e710" category="paragraph">リストア先は、SnapCenterに追加されている任意のESXiホストにすることができます。このオプションを選択すると、指定した日時のSnapshotから、VMが配置されていた選択したバックアップの内容がリストアされます。このオプションを選択して VM の電源をオンにすると、 * Restart VM * チェックボックスがオンになります。</block>
   <block id="7d095eee366e6f2ce831a4097c5c2c23" category="paragraph">NFSデータストア内のVMをESXiクラスタ内の代替ESXiホストにリストアすると、リストア後にそのVMが代替ホストに登録されます。</block>
   <block id="2b8952e2a3eecf608f1229e12bda5009" category="list-text">［ * 場所の選択 * ］ ページで、リストア元のバックアップ（プライマリまたはセカンダリ）の場所を選択します。</block>
   <block id="ea5b9f5c973a98f6f3a6964373da57b1" category="list-text">[ 概要 ] ページを確認し、 [ 完了 ] をクリックします。</block>
@@ -1692,8 +1653,6 @@
   <block id="9a8a39bfd809f914e270e3aa295af606" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="860b18b04b199a7f740acbad2e027732" category="inline-link-rx"></block>。</block>
   <block id="8eafca0087eab5ecb2870b27ade88f3c" category="list-text">ターゲットVMのクレデンシャルで、ビルトインドメイン管理者アカウントまたはビルトインローカル管理者アカウントを指定する必要があります。ユーザ名は「Administrator」である必要があります。リストア処理を開始する前に、仮想ディスクを接続するVMのクレデンシャルを設定する必要があります。このクレデンシャルは、接続処理と後続のリストア処理の両方で必要です。ワークグループユーザは、組み込みのローカル管理者アカウントを使用できます。</block>
   <block id="ae010d54b0afb3a6e93783bbe5550d22" category="admonition">組み込みの管理者アカウントではなく、VM内の管理者権限を持つアカウントを使用する必要がある場合は、ゲストVMのUACを無効にする必要があります。</block>
-  <block id="63135ded402e94eb90e91d3b29c03007" category="list-text">リストア元のバックアップSnapshotとVMDKを確認しておく必要があります。</block>
-  <block id="8dd3af98abb3e4b7c4a2824e64cd30d2" category="paragraph">SnapCenter Plug-in for VMware vSphereでは、リストアするファイルやフォルダの検索はサポートされていません。そのため、作業を開始する前に、Snapshotと対応するVMDKに関するファイルまたはフォルダの場所を把握しておく必要があります。</block>
   <block id="9a1aba4a1efbd81e1ffe65938cc52acd" category="list-text">接続する仮想ディスクはSnapCenterバックアップに含まれている必要があります。</block>
   <block id="1d0dd5be12536496d431d9fdd1baefb1" category="paragraph">リストアするファイルまたはフォルダが格納されている仮想ディスクが、SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用して実行されたVMバックアップに含まれている必要があります。</block>
   <block id="3277407828b8713b5f9be81275930144" category="list-text">プロキシVMを使用するには、プロキシVMを設定する必要があります。</block>
@@ -1731,7 +1690,6 @@
   <block id="b59c69b3461a70dfc0aa2e0732ab7524" category="list-text">接続処理とリストア処理では、デフォルトのSCSIコントローラを使用してVMDKが接続されます。ただし、NVMeディスクを使用してVMに接続されたVMDKをバックアップする場合は、可能な場合はNVMeコントローラが接続処理とリストア処理で使用されます。</block>
   <block id="ebdc37577a43d781541f86f380fcfba9" category="list-text">左側のナビゲーションペインで、VMを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*[リストア]*を選択します。</block>
   <block id="d5abdff77ff28e7e91bddda62c7529ef" category="list-text">リストア * ウィザードのバックアップの選択ページで、リストア元のバックアップ・コピーを選択します。</block>
-  <block id="1fb9fd8a0fdffb5af1849f79f84bf103" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックし、日時の範囲、VMwareスナップショットの有無、マウントの有無、 およびプライマリまたはセカンダリの場所。[OK] をクリックしてウィザードに戻ります。</block>
   <block id="2a38f504911ad62ae867f66c2974aef0" category="list-text">［ * スコープの選択 * ］ ページで、リストア先を選択します。</block>
   <block id="a5daf42def68b7a4c33242cbfca9efcf" category="cell">リストア先</block>
   <block id="7ff99aff75a4ffc74b705fb26d592f75" category="cell">リストア先を指定 ...</block>
@@ -1739,7 +1697,6 @@
   <block id="4168cedfe7de9b5c17ed84cfb9e9d3fc" category="cell">ドロップダウン・リストから * 特定のディスク * を選択し、 * 次へ * をクリックします。[Datastore]選択テーブルで、VMDKを選択または選択解除できます。</block>
   <block id="46ddbb26d4adb6887d8fc9f992672ea7" category="cell">別の場所にある別のデータストア</block>
   <block id="b1b5deb6a79469cf24ab15c74c8d0fd5" category="cell">デスティネーションデータストアをクリックし、リストから別のデータストアを選択します。</block>
-  <block id="f7f98b33a00dd6478600c36dc25fcf40" category="list-text">[場所の選択]*ページで、リストアするSnapshot（プライマリまたはセカンダリ）を選択します。</block>
   <block id="92ebc27a2cd9d1ab4039f811c8ddafc4" category="list-text">オプション：画面下部の * 最近のタスク * をクリックして、処理の進行状況を監視します。</block>
   <block id="041b4550a0ec6359f99eb2257afd1afa" category="summary">VMをリストアするときに、選択したバックアップコピーで既存の内容を上書きするか、VMのコピーを作成できます。</block>
   <block id="0b156eb7ae06ec8e963e1dd7bed83e94" category="doc">バックアップからのVMのリストア</block>
@@ -1747,7 +1704,6 @@
   <block id="8e24219ca6fb8a4cabab608cfb039ffd" category="admonition">VVol VMを別のホストにリストアすることはできません。</block>
   <block id="e9256d2afe5b54eb42af0cd3cf084596" category="admonition">次のリストアワークフローはサポートされていません。 Storage VM を追加してからその VM のバックアップを実行し、その Storage VM を削除してその Storage VM を含むクラスタを追加してから、元のバックアップのリストアを試みてください。</block>
   <block id="0e75737369597ad96531f41e66789232" category="paragraph">VMをリストアする前に、SnapCenter Plug-in for VMware vSphereを使用してVMのバックアップを作成しておく必要があります。</block>
-  <block id="3da92a184b003bf8d8e0c383eabc1d01" category="admonition">SnapCenter Plug-in for VMware vSphere以外のソフトウェアで実行されたVMのSnapshotがあると、リストア処理を正常に完了できません。</block>
   <block id="f6e2b122c14789499a3002f5505f91ec" category="list-text">デスティネーションデータストアの準備が完了している必要があります。</block>
   <block id="ebe7781b711bfe9908f50914e09c5d3a" category="list-text">リストア処理のデスティネーションデータストアには、すべてのVMファイル（vmdk、vmx、vmsdなど）のコピーを格納できるだけの十分なスペースが必要です。</block>
   <block id="9f7c2eac58bd5684501ac39129661043" category="list-text">デスティネーションデータストアに、以前のリストア処理の失敗で発生した古いVMファイルが含まれていないことを確認してください。古いファイルは名前形式です<block ref="96e0132bb695d46c99e6668549581dfc" prefix=" " category="inline-code"></block>。</block>
@@ -1757,7 +1713,6 @@
   <block id="04e7854ad2ab0b224bbc68945de9b412" category="list-text">別の場所にリストアする場合は、リストア処理のデスティネーションであるvCenterでSnapCenter Plug-in for VMware vSphereが実行されている必要があります。デスティネーションデータストアに十分なスペースが必要です。</block>
   <block id="3f0b96c5ae72ff6fdcb84e2d7f5bed11" category="list-text">[Restore to alternate Location]フィールドでデスティネーションvCenterをDNSで解決できる必要があります。</block>
   <block id="16418461ea993661bce261e8a36887d1" category="list-text">VMが登録解除され、再登録されました</block>
-  <block id="59793dbbf73242ccdd32deff8d4d7c0b" category="paragraph">VMのリストア処理を実行すると、元のVMの登録が解除され、バックアップSnapshotからVMがリストアされ、リストアされたVMが同じESXiサーバに同じ名前と設定で登録されます。リストア後に、VMをリソースグループに手動で追加する必要があります。</block>
   <block id="3ccb545df639f8d635171ca5cad8bac1" category="list-text">データストアのリストア</block>
   <block id="bfc4ec4cec3102b4af40dcb7615e7e93" category="list-text">VVol VMのリストア</block>
   <block id="007b03bd2ae7b16d42b53ba8a2330186" category="list-text">複数のVMにまたがるVVOLデータストアはサポートされません。VMにまたがるVVOLデータストア内の接続されたVMDKはバックアップされないため、リストア後のVMには一部のVMDKのみが含まれます。</block>
@@ -1767,8 +1722,6 @@
   <block id="9bc06664020c3544933597c45b308bce" category="paragraph">VMのVMware整合性スナップショットが失敗した場合でも、VMはバックアップされます。バックアップコピーに格納されたエンティティはリストアウィザードで表示し、リストア処理に使用できます。</block>
   <block id="8afc1242eb1afb36331fc8a76c44f4f3" category="admonition">削除したVMをリストアする場合は、SnapCenter Plug-in for VMware vSphereに追加したStorage VMのクレデンシャルは、またはと同じ権限を持つユーザアカウントである必要があります<block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block><block ref="6173aa5206484b5224450952747c7148" prefix=" " category="inline-code"></block>。ONTAP 8.2.2以降を実行しているストレージシステムにホストが配置されている必要があります。</block>
   <block id="b2c2581a4bff93f5e7e86553f208ea7a" category="list-text">左側のナビゲーションペインで、VMを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*リストア*を選択してウィザードを開始します。</block>
-  <block id="a4c18c73748d0715312a439bad78189e" category="list-text">リストア*ウィザードの*[バックアップの選択]*ページで、リストアするバックアップSnapshotを選択します。</block>
-  <block id="3808b1e272e7712ca9f90b82529f9ca1" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックして、日時の範囲、VMwareスナップショットの有無、マウントの有無、および場所を選択します。[OK] をクリックしてウィザードに戻ります。</block>
   <block id="8d75e6a09efb228ca1289deaf2a7a40b" category="list-text">[ スコープの選択 *] ページの [ リストア範囲 *] フィールドで [ 仮想マシン全体 *] を選択し、リストア先を選択して、バックアップをマウントするデスティネーション情報を入力します。</block>
   <block id="cb20f8f94249850e0d68df73de19b747" category="paragraph">[* VM name *]フィールドで、同じVM名が存在する場合、新しいVM名の形式はになります<block ref="c64ac35ffb6457b475472b1ddb6f68a6" prefix=" " category="inline-code"></block>。</block>
   <block id="9d7f2f9bd72cb1eb66d906abadf682b1" category="paragraph">パーシャル・バックアップをリストアする場合、リストア処理では * Select Scope * ページがスキップされます。</block>
@@ -1794,7 +1747,6 @@
   <block id="97fc92de3254c8d8ff694ff888deb17a" category="list-text">左側のナビゲーションペインで、VMまたはデータストアを含むデータセンターを展開します。</block>
   <block id="607dd7a09bba06bb1d6e0a23e15ead0e" category="list-text">オプション：VMまたはデータストアを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*リストア*を選択します。</block>
   <block id="569b4ad91428d120f380fb5d92288931" category="list-text">* リストア * ウィザードで検索名を入力し、 * 検索 * をクリックします。</block>
-  <block id="d2fe9562864357eed887b91a56a42a0e" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMware Snapshotを含むバックアップの有無、マウントの有無、および場所を選択します。[OK]*をクリックします。</block>
   <block id="3ea1027d3f48da653af6e3aa5536c419" category="summary">ゲストファイルのリストア処理にプロキシVMを使用して仮想ディスクを接続する場合は、リストア処理を開始する前にプロキシVMを設定する必要があります。プロキシVMはいつでもセットアップできますが、プラグインの導入が完了したらすぐにセットアップする方が便利な場合があります。</block>
   <block id="1e2028a623e51fec3d186608663f4540" category="doc">リストア処理用のプロキシVMのセットアップ</block>
   <block id="a9a75ce6f1fddd6aa36cbdc142ed45a4" category="list-text">Run As Credentials * ダイアログボックスで、クレデンシャルを入力します。</block>
@@ -1906,15 +1858,9 @@
   <block id="254f642527b45bc260048e30704edb39" category="paragraph">構成</block>
   <block id="b2830ac7ac8953a655c6f91092fd77d7" category="paragraph">SnapCenter Plug-in for VMware vSphere で管理されている各タイプのオブジェクトの総数。</block>
   <block id="8c4aa541ee911e8d80451ef8cc304806" category="paragraph">ストレージ</block>
-  <block id="9ed765e8e957bd37870392d8e17ee242" category="paragraph">Snapshot、SnapVault、SnapMirror Snapshotの総数と、生成されたプライマリSnapshotとセカンダリSnapshotに使用されているストレージ容量。折れ線グラフには、過去90日間のプライマリストレージとセカンダリストレージの日単位の消費量が表示されます。ストレージ情報は24時間ごとに午前1時8分に更新されます。ストレージ削減量は、プライマリストレージの物理容量に対する論理容量（Snapshotによる削減量とストレージ消費量の合計）の比率です。棒グラフはストレージ削減量を示しています。</block>
   <block id="5f5ba9130776790de2145fb2332ae6d9" category="paragraph">グラフの線にカーソルを合わせると、1日ごとの詳細な結果が表示されます。</block>
   <block id="fe5a15ae670c4a446e877ef3f375fe1f" category="summary">VMまたはデータストアのバックアップまたはリストアの準備中に、そのリソースに使用できるすべてのバックアップを表示し、それらのバックアップの詳細を確認することができます。</block>
   <block id="d076807af778318099a7f649b1a2425a" category="doc">VMとデータストアのバックアップの表示</block>
-  <block id="27b2e549cc51fb06281af543965846c2" category="paragraph">10k個のファイルフォルダなど、大きなファイルフォルダを参照するには、最初に1分以上かかることがあります。以降のブラウズセッションの所要時間は短くなります。</block>
-  <block id="bb46ac4338fc50ace325640971d87b41" category="list-text">[*Menu*] をクリックし、 [*Hosts and Clusters*] メニューオプションを選択してから、 VM を選択し、 [*Configure*] タブを選択して、 SnapCenter Plug-in for VMware vSphere のセクション * で [*Backups] をクリックします。</block>
-  <block id="67b5e7cdb9f6fc8b9cf2e5acd6f703b8" category="inline-image-macro">vSphere Client UIの略</block>
-  <block id="9fa3adb07ccab8c66f18c216f4901022" category="paragraph"><block ref="9fa3adb07ccab8c66f18c216f4901022" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7f9834a181f8fd15bc168c47caf536e3" category="list-text">表示するバックアップをクリックします。</block>
   <block id="8185fd5ab2a2535af7e64d939ac1cbd0" category="summary">監査ログを生成するREST API</block>
   <block id="6c12f807f144eb6524b63afb02b83abf" category="paragraph">監査ログの詳細は、swagger REST APIおよびSCVプラグインのユーザインターフェイスから収集できます。</block>
   <block id="4adb3d1301aa65e433a44c69a82366a2" category="paragraph">次に、Swagger REST APIを示します。</block>
@@ -2095,7 +2041,6 @@
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
   <block id="2acd783e8dee0eed27b40328899eef19" category="inline-link">SnapCenter Plug-in for VMware vSphere 6.1に関する注意事項</block>
   <block id="8ebd9207a610e17e383416d90951290e" category="paragraph"><block ref="8ebd9207a610e17e383416d90951290e" category="inline-link-rx"></block></block>
-  <block id="f8a96ad66100bda7d69f0d2cf5b27f72" category="admonition">ASA R2ストレージシステムでは、_recent Snapshot命名機能はサポートされていません。</block>
   <block id="414f994a73d1f79098abf3d5d51e5555" category="list-text">[概要]ページが表示されるまで[次へ]*をクリックし、概要を確認して*[完了]*をクリックします。</block>
   <block id="9329e69bb4e74e1c55c47a7b13b20c73" category="admonition">ASA R2のバックアップでは、整合グループのSnapshotが作成され、指定したリソースにプライマリ整合グループがない場合はプロビジョニングされます。</block>
   <block id="94e5f239a67b0bdbb293ad6d93a70fae" category="list-text">[Create Resource Group]ウィザードの各ページで必要な情報を入力し、リソースグループに含めるVMとデータストアを選択してから、リソースグループに適用するバックアップポリシーを選択します。リモートのセカンダリ保護の詳細を追加し、バックアップスケジュールを指定します。</block>
@@ -2104,7 +2049,6 @@
   <block id="29d5d806d07657990827260e1cb0e2f6" category="list-text">リソースグループのセカンダリ保護の作成</block>
   <block id="d2c627ac86e99bf486f92df0e01e564d" category="paragraph">セカンダリ保護では、リソースグループに追加されたリソースのレプリケーション関係が作成されます。プライマリから指定したポリシーを使用して、優先クラスタおよびSVMの整合性グループベースのSnapMirror関係を作成する必要があります。セカンダリ保護は、ASA R2システムベースのデータストアと仮想マシンでのみサポートされます。クラスタピアリングとSVMピアリングを事前に設定しておく必要があります。セカンダリ保護で許可されるのは非同期SnapMirrorポリシーのみです。セカンダリ保護を作成するときは、整合グループサフィックスを指定する必要があります。</block>
   <block id="1aa6cfe25429fc4eec3c516dcd2dc639" category="paragraph">セカンダリ保護では、リソースグループに追加されたリソースのレプリケーション関係が作成されます。</block>
-  <block id="d225ffa0857e0c1621ca548327cac09f" category="admonition">ASA R2ストレージシステムではSnapshotの名前変更がサポートされないため、SCVのrename backupおよび_recent Snapshotの命名機能はサポートされません。</block>
   <block id="581b0ff55ddecb82a36105092c53ed37" category="cell">リストから1つ以上のポリシーを選択します。セカンダリ保護は、SnapMirrorとSnapVaultの両方の更新を選択した既存のポリシーと新しいポリシーに適用されます。</block>
   <block id="4a9546a9033ba87fc7117a1294a5e336" category="list-text">[セカンダリ保護]*ページには、選択したリソースのリストとその保護ステータスが表示されます。保護されていないリソースを保護するには、レプリケーションポリシータイプ、整合性グループサフィックス、デスティネーションクラスタ、およびデスティネーションSVMをドロップダウンから選択します。リソースグループを作成すると、セカンダリ保護用に別のジョブが作成され、ジョブ監視ウィンドウに表示されます。</block>
   <block id="a4ca5edd20d0b5d502ebece575681f58" category="cell">フィールド</block>
@@ -2156,7 +2100,6 @@
   <block id="21d5f6e174bd644ffb485588eaf88aa1" category="paragraph">* ASA R2システムでのVMおよびVMFSデータストアのサポート*</block>
   <block id="4ff1c74f59c8af7628ad4bba73e7a214" category="paragraph">SnapCenter Plug-in for VMware vSphere 6.1リリースで、ASA R2システムで仮想マシン（VM）とVMFSデータストアのプロビジョニングがサポートされるようになりました。ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。SnapCenter Plug-in for VMware vSphere 6.1でサポートされるASA R2システム上のVM、データストア、仮想マシンディスクフォーマット（VMDK）の機能は次のとおりです。</block>
   <block id="58750fe248e0ff18b9fc2f1aef5f3790" category="list-text">プライマリ保護のための整合グループのプロビジョニング</block>
-  <block id="aa90edd6232295850b0461777246c50b" category="list-text">整合グループベースのバックアップ</block>
   <block id="9a1901c6fb175880508a4835b0898446" category="list-text">クローニングのワークフロー</block>
   <block id="d4fc87c71eab8d183e02273ad78a7c04" category="list-text">リストアのワークフロー</block>
   <block id="bfb1fb42df848164986651f570a11d61" category="list-text">リソースグループを作成または変更するときのセカンダリ保護プロビジョニング。</block>
@@ -2179,4 +2122,68 @@
   <block id="ffa5dd2af4873dbfd89f9ae07a815104" category="cell">443（HTTPS）、双方向80（HTTP）、双方向ポートは、仮想アプライアンスとStorage VMまたはStorage VMを含むクラスタの間の通信に使用されます。</block>
   <block id="822926837c6e218e71716b72e1a7017f" category="paragraph">各プラグインインスタンスでサポートされるvCenter Serverは1つだけです（リンクモード）。ただし、次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。</block>
   <block id="1c0894625a89e433ba87d14aebdc6088" category="paragraph">vCenter管理者アカウントには、次の表に示す必要なvCenter Privilegesが必要です。</block>
+  <block id="80d239c54104b637db16d32ddcf6ff89" category="admonition">ASA R2ストレージシステムは、_recentスナップショット命名機能をサポートしていません。</block>
+  <block id="68e34cb9e3a60830aed69c89f5c923aa" category="cell">バックアップジョブに関する概要データが表示されます。グラフ上のセクション / ステータスをクリックすると、そのステータスのジョブのリストが ［ * レポート * ］ タブに表示されます。各ジョブについて、ジョブID、対応するリソースグループ、バックアップポリシー、開始時間と期間、ステータス、およびジョブの詳細（ジョブが完了した場合はジョブ名（Snapshot名）、警告またはエラーメッセージなど）が表示されます。レポートテーブルは、HTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。削除されたバックアップはレポートに含まれません。</block>
+  <block id="b509945ce76230a5eeff2083503f5495" category="cell">マウントジョブに関する概要データが表示されます。グラフのセクション/ステータスをクリックすると、[Reports]タブにそのステータスのジョブのリストが表示されます。各ジョブについて、ジョブID、ジョブステータス、ジョブ名、およびジョブの開始時刻と終了時刻が表示されます。ジョブ名にはスナップショット名が含まれています。たとえば、<block ref="5885e660153b51d912f9f11bb4649003" prefix=" " category="inline-code"></block> レポートテーブルをHTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。</block>
+  <block id="fe39f815c00ab0cdc48133dd4394febe" category="cell">リストアジョブに関する概要ステータス情報が表示されます。グラフのセクション/ステータスをクリックすると、[Reports]タブにそのステータスのジョブのリストが表示されます。各ジョブについて、ジョブID、ジョブステータス、ジョブ名、およびジョブの開始時刻と終了時刻が表示されます。ジョブ名にはスナップショット名が含まれています。たとえば、<block ref="13d80bb12ac7353f6e745081e5946c14" prefix=" " category="inline-code"></block> レポートテーブルをHTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。</block>
+  <block id="5d6ca3a9d35eb5459130306f5807c2f3" category="cell">SnapCenter Plug-in for VMware vSphereで管理されているVMとデータストアについて、指定された日数における保護ステータスに関する概要情報が表示されます。デフォルトは7日です。プロパティファイルの値を変更するには、を参照してください <block ref="716011655678aa6d92cdd15196f612ff" category="inline-link-macro-rx"></block>。プライマリ保護グラフでセクション / ステータスをクリックすると、そのステータスの VM またはデータストアのリストが * Reports * タブに表示されます。保護されているVMとデータストアの[VM or Datastores Protection Status Report]には、設定された日数内にバックアップされたVMまたはデータストアの名前、最新のSnapshot名、および最新のバックアップ実行の開始時刻と終了時刻が表示されます。保護されていないVMまたはデータストアの[VM or Datastores Protection Status Report]には、設定された日数内にバックアップが完了していないVMまたはデータストアの名前が表示されます。レポートテーブルは、HTML形式またはCSV形式でダウンロードできます。レポート内のジョブだけでなく、すべてのジョブのジョブモニタジョブログをダウンロードすることもできます。このレポートは、プラグインのキャッシュが更新されると1時間ごとに更新されます。そのため、最近バックアップされたVMまたはデータストアが表示されないことがあります。</block>
+  <block id="a3f8064d6a9d17254355b89f290da65d" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*をクリックします。</block>
+  <block id="75df3e6b9f46cc58a0ff9c56046b0977" category="paragraph">SnapCenterでは、データベースとVMの単一Snapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。これにより、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。SnapCenter GUIを使用してデータベースアプリケーションのバックアップのスケジュールを設定し、VMware vSphere Client GUIを使用してVMとデータストアのバックアップのスケジュールを設定します。</block>
+  <block id="c0d9eeb671fe20a76e29ca04e5053b74" category="list-text">VMと整合性のあるスナップショットにはVMwareツールが必要</block>
+  <block id="78f7815c68e90eaacbd9cc9cc5e128c5" category="paragraph">VMware Toolsがインストールされて実行されていない場合、ファイルシステムは休止されず、crash-consistentスナップショットが作成されます。</block>
+  <block id="7e568888fb10657f9473564c7d777f02" category="list-text">Snapshotをミラーセカンダリストレージまたはバックアップセカンダリストレージにレプリケートする場合は、関係が設定されている必要があり、SnapCenter管理者がソースとデスティネーションの両方のボリューム用にStorage VMを割り当てておく必要があります。</block>
+  <block id="f06fe1377f87aa8df44d2ee3312293a0" category="list-text">NFSまたはVMFSデータストア上のVersion-FlexibleMirror関係でスナップショットをセカンダリストレージに正常に転送するには、SnapMirrorポリシータイプが非同期ミラーであり、「all_source_snapshots」オプションがオンになっていることを確認します。</block>
+  <block id="a39157e0ac589845c37cbdc729254197" category="list-text">セカンダリストレージ（mirror-vault）上のSnapshotの数が上限に達すると、バックアップ処理でバックアップを登録して保持を適用する処理が失敗し、次のエラーが表示されます。<block ref="a3059186481cd77c6852e6ddd88e84af" prefix=" " category="inline-code"></block></block>
+  <block id="a106499a896f7e52f3025e26415785ae" category="paragraph">この問題を解決するには、Snapshotの最大数に達しないようにセカンダリストレージのSnapMirror保持ポリシーを設定します。</block>
+  <block id="2e88e0aaabba73198bea2bc09ded1f6e" category="list-text">[新しいバックアップポリシー]*ページで、ポリシーの名前と説明を入力します。</block>
+  <block id="bf596bbc0d9d0d247cb65bc521d4c4dd" category="list-text">スナップショットのロックを有効にするには、*[ロック期間]*チェックボックスを選択します。プライマリおよびセカンダリSnapshotのロック期間は、日/月/年として選択できます。</block>
+  <block id="338eff3cf3ea538d4dddcb15d34cf9f5" category="admonition">ONTAP SnapMirrorポリシーで設定された保持値に関係なく、セカンダリSnapshotコピーは、指定されたセカンダリSnapshotロック期間までは削除されません。</block>
+  <block id="867d3cae1de1c2aa933faf18ecf34efe" category="admonition">SnapVaultレプリケーションを有効にする場合は、バックアップの保持数を2以上に設定する必要があります。保持するバックアップの保持数を1に設定すると、保持処理が失敗することがあります。これは、新しいSnapshotがターゲットにレプリケートされるまで、最初のSnapshotがSnapVault関係の参照Snapshotになるためです。</block>
+  <block id="8187d70c0911a1d7b0d72f813e3de707" category="paragraph">このポリシーで作成されたSnapVault SnapshotおよびSnapMirror Snapshotに追加するオプションのカスタムラベルを入力します。Snapshotラベルは、このポリシーで作成されたSnapshotをセカンダリストレージシステム上の他のSnapshotと区別するのに役立ちます。</block>
+  <block id="c96b78ab3b546f1c6350447b6b0b69e9" category="admonition">Snapshotラベルに使用できる最大文字数は31文字です。</block>
+  <block id="e7c088e25fc4bf9f423f53697a7ebc9f" category="admonition">[VM consistency]チェックボックスをオンにすると、バックアップ処理に時間がかかり、より多くのストレージスペースが必要になることがあります。このシナリオでは、まずVMを休止してから、VMwareがVM整合性スナップショットを実行し、SnapCenterがバックアップ処理を実行してから、VMの処理を再開します。VMゲストメモリは、VM整合性スナップショットには含まれません。</block>
+  <block id="1d8fc89c22ffba017784a94c288acc73" category="list-text">Snapshotの最適化</block>
+  <block id="f2f64708aa812b59278d786b60b3b7d7" category="paragraph">Snapshotを最適化するには、同じボリュームに関連付けられているVMとデータストアを1つのリソースグループにグループ化する必要があります。</block>
+  <block id="7d637f0545a627149d95ca39f96e3f50" category="admonition">Snapshotロック期間が設定されたバックアップポリシーを選択する場合は、ONTAP 9.12.1以降のバージョンを選択する必要があります。</block>
+  <block id="003fe3722b3d94694e8082a2ccce7d4e" category="cell">最新のSnapshot名</block>
+  <block id="ef7c1c422fafb269a96680a835f28111" category="paragraph">最新のSnapshotにサフィックス「_recent」を追加する場合は、このチェックボックスをオンにします。「 _recent 」サフィックスは、日付とタイムスタンプを置き換えます。</block>
+  <block id="b048816ac59c8bb52848d42e3d20198b" category="admonition">ASA R2ストレージシステムではSnapshotの名前変更がサポートされないため、SCVのrename backupおよび_recent Snapshotの命名機能はサポートされません。</block>
+  <block id="e8e16f80b6cc95f387b7be62fa0f532e" category="cell">カスタムSnapshot形式</block>
+  <block id="284b15bb42ed466d7ea099d41647444d" category="paragraph">Snapshot名にカスタム形式を使用する場合は、このボックスをオンにして名前形式を入力します。</block>
+  <block id="88d5f42bbf75213962df2697649c497f" category="list-text">デフォルトのSnapshot名はの形式を使用し<block ref="ba8f4cc4ace4f3315ea21bd52fbde9d9" prefix=" " category="inline-code"></block>ますが、変数$ResourceGroup、$Policy、$HostName、$ScheduleType、および$CustomTextを使用してカスタムの形式を指定できます。[カスタム名]フィールドのドロップダウンリストを使用して、使用する変数とその使用順序を選択します。$CustomTextを選択した場合、名前の形式はになります<block ref="ad231838859064f0fe437a9669c0d36f" prefix=" " category="inline-code"></block>。表示された追加ボックスにカスタムテキストを入力します。[注]：「_recent」サフィックスも選択する場合は、カスタムのSnapshot名がデータストア内で一意であることを確認する必要があります。そのため、$resourcegroup変数と$Policy変数を名前に追加する必要があります。</block>
+  <block id="c2c8a1e1f67b255a6abf4fc5fc809a95" category="summary">VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはONTAP単一ファイルのSnapshotリストアとSnapMirrorリストアをリストア処理に使用します。</block>
+  <block id="f82af7cf32f7be8c379046b826f182bc" category="paragraph">VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotionでクローンおよびマウント処理を使用してリストア処理を実行します。NFS環境では、標準のONTAP Single File SnapRestore（SFSR）を使用して、ほとんどのリストア処理を効率化します。VVOL VMの場合、プラグインはONTAPの単一ファイルSnapshotリストア（ONTAP SFSR）とSnapMirrorリストアをリストア処理に使用します。次の表に、リストア処理の実行方法を示します。</block>
+  <block id="b2ca7b7f9ce9a9907bcc75c5514315e5" category="paragraph">セカンダリストレージ上のSnapshotは、SnapCenter Plug-in for VMware vSphereではなく、ONTAPの保持設定で管理されます。そのため、SnapCenter Plug-in for VMware vSphereを使用してバックアップを削除しても、プライマリストレージのSnapshotは削除されますが、セカンダリストレージのSnapshotは削除されません。セカンダリストレージにSnapshotが残っている場合は、リストア要求に対応するために、SnapCenter Plug-in for VMware vSphereでバックアップに関連付けられたメタデータが保持されます。ONTAP保持プロセスでセカンダリSnapshotが削除されると、SnapCenter Plug-in for VMware vSphereはパージジョブを使用してメタデータを削除します。パージジョブは定期的に実行されます。</block>
+  <block id="73de513c4d9b5d1aede9f09e6412115d" category="paragraph">SnapCenter Plug-in for VMware vSphereリソースグループのポリシーを変更できます。リソースグループにポリシーが適用されている場合は、頻度、レプリケーションオプション、Snapshotの保持設定、またはスクリプトの情報を変更できます。</block>
+  <block id="ae969b2c3623f7b712e8dc90ea64bc7e" category="paragraph">リソースグループの削除処理はすべて強制削除として実行されます。削除処理を実行すると、vCenterリソースグループからすべてのポリシーが解除され、リソースグループがSnapCenter Plug-in for VMware vSphereから削除され、リソースグループのすべてのバックアップとSnapshotが削除されます。</block>
+  <block id="9211a296b4cd2f3f54ffbe3156475a01" category="admonition">SnapVault関係では、最後のSnapshotは削除できないため、リソースグループは削除できません。SnapVault関係の一部であるリソースグループを削除する前に、OnCommand System ManagerまたはONTAP CLIを使用してSnapVault関係を削除してから、最後のSnapshotを削除する必要があります。</block>
+  <block id="ce2c264a7f2ac0d42d9d859e550d04e7" category="paragraph">SnapVaultスケジュールで保護されており、ONTAP 8.3を実行しているSnapVaultデスティネーションボリュームで接続またはマウント処理を実行すると、接続またはマウントダイアログ画面に追加のSnapshotが表示されることがあります。これは、接続処理またはマウント処理でSnapVaultデスティネーションボリュームがクローニングされ、ONTAPで新しいSnapshotを作成してボリュームが更新されるためです。</block>
+  <block id="84ade123b589aaaa8cb58a5dc5af2c14" category="paragraph">ボリュームのクローニング時に新しいSnapshotが作成されないようにするには、SnapVaultボリュームのONTAPスケジュールをオフにします。既存のSnapshotは削除されません。</block>
+  <block id="7aa7ae49984d77593e48b6fd70844775" category="paragraph">VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。WebクライアントGUIは、ストレージシステム上でNetAppスナップショットテクノロジと統合されます。これにより、VMとデータストアを数秒でバックアップし、ESXiホストをオフラインにすることなくVMをリストアできます。</block>
+  <block id="b68c25841ace1ebf87dee9af54aa2e69" category="paragraph">SnapCenterでは、データベースとVMの単一Snapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。そのため、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。アプリケーションベースのバックアップはSnapCenter GUIを使用してスケジュール設定する必要があります。VM整合性バックアップはVMware vSphere Client GUIを使用してスケジュール設定する必要があります。</block>
+  <block id="1471fa425a9c79f7e8a4a4bc34704d6a" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block>指定したバックアップのSnapshotの場所を取得します。手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。</block>
+  <block id="c61b48c7cee87295644b3139e3651375" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックし、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK] をクリックしてウィザードに戻ります。</block>
+  <block id="8b740d927c7014ac116bad7dac5e90f3" category="paragraph">リストア先は、SnapCenterに追加されている任意のESXiホストにすることができます。このオプションを選択すると、指定した日時のスナップショットから、VMが存在していた選択したバックアップの内容がリストアされます。このオプションを選択して VM の電源をオンにすると、 * Restart VM * チェックボックスがオンになります。</block>
+  <block id="8eb1b908e8b622c31068641ddc091252" category="list-text">リストア元のバックアップSnapshotとVMDKを確認しておく必要があります。</block>
+  <block id="cd38aa1b745074ce7b3e671b2737e16f" category="paragraph">SnapCenter Plug-in for VMware vSphereでは、リストアするファイルやフォルダの検索はサポートされていません。そのため、作業を開始する前に、Snapshotと対応するVMDKに対するファイルまたはフォルダの場所を把握しておく必要があります。</block>
+  <block id="3307c3ba0f8faacd2a6ad53d834854b4" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックして、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントされたバックアップの有無、プライマリまたはセカンダリの場所を選択します。[OK] をクリックしてウィザードに戻ります。</block>
+  <block id="c497b5cdfb468a78f47eeead674d8de4" category="list-text">[場所の選択]*ページで、リストアするSnapshot（プライマリまたはセカンダリ）を選択します。</block>
+  <block id="f1e1ac5eb6498170a571f7c9baa59473" category="admonition">SnapCenter Plug-in for VMware vSphere以外のソフトウェアで実行されたVMのSnapshotがあると、リストア処理を正常に完了できません。</block>
+  <block id="848e6a50c59fc9f63956382b0072922e" category="paragraph">VMのリストア処理を実行すると、元のVMの登録が解除され、バックアップSnapshotからVMがリストアされ、リストアされたVMが同じESXiサーバに同じ名前と設定で登録されます。リストア後に、VMをリソースグループに手動で追加する必要があります。</block>
+  <block id="2e0cc418cfa86596897965026b31e6df" category="list-text">リストア*ウィザードの*[バックアップの選択]*ページで、リストアするバックアップSnapshotを選択します。</block>
+  <block id="8f35b8f7de8f7e8d9b02e6a422cc70cb" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックし、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK] をクリックしてウィザードに戻ります。</block>
+  <block id="a1954b7ef0b95a152868596fad609446" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*をクリックします。</block>
+  <block id="7cd13333ae1cedbd3aa5baace69fd245" category="paragraph">Snapshot、SnapVault、SnapMirrorのSnapshotの総数、生成されたSnapshotの数、およびプライマリSnapshotとセカンダリSnapshotに使用されているストレージの容量。折れ線グラフには、過去90日間のプライマリストレージとセカンダリストレージの日単位の消費量が表示されます。ストレージ情報は24時間ごとに午前1時8分に更新されます。ストレージ削減量とは、プライマリストレージの物理容量に対する論理容量（スナップショットによる削減量と消費ストレージによる削減量）の比率です。棒グラフはストレージ削減量を示しています。</block>
+  <block id="186f10ad0ae1bb6638a07f29fcf47c80" category="paragraph">VMまたはデータストアのバックアップまたはリストアを準備する際に、そのリソースの使用可能なすべてのバックアップを確認し、それらのバックアップの詳細を確認することができます。</block>
+  <block id="51857ca23f1dc86274f568542e984fe5" category="paragraph">10kファイルフォルダなどの大きなファイルフォルダを参照するには、最初に1分以上かかることがあります。以降のブラウズセッションの所要時間は短くなります。</block>
+  <block id="a270592232d9d6514ce0ee979df39631" category="list-text">vCenter Serverにログインします。</block>
+  <block id="4fb4ce8111ab842297ec1ee06f128e55" category="list-text">[インベントリ]*ページに移動し、データストアまたはVMを選択します。</block>
+  <block id="f961fdd56c58ceb684e1bc66c0048696" category="list-text">右側のペインで、*[設定]*&gt;* SnapCenter Plug-in for VMware vSphere *&gt;*[バックアップ]*を選択します。</block>
+  <block id="272dbc82d7ded4803d59e20847c18877" category="inline-image-macro">[Backups]ビュー</block>
+  <block id="cf1dafd1cdfffc3ffd25de8f579759be" category="paragraph"><block ref="cf1dafd1cdfffc3ffd25de8f579759be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="58d2e74d546e138eca3824144c5ce719" category="paragraph">ポリシーの作成段階で*[セカンダリスナップショットロックを有効にする]*オプションが選択されていない場合、デフォルトで*[プライマリスナップショットロックを有効にする]*オプションに設定された値が使用されます。バックアップのリストで、*[Secondary Snapshot Lock Expiration]*フィールドにハイフンが表示され、プライマリとセカンダリの両方のロック期間が同じであることが示されます。</block>
+  <block id="e59481e00b5fbf25c9d83bb6cf1e1fc6" category="list-text">表示するバックアップを選択します。</block>
+  <block id="10816353eaa2dd5ab8374ef58f982e29" category="list-text">整合グループベースのバックアップ</block>
+  <block id="7282e5c8f3184e4f914d701f82b621ff" category="paragraph">*セカンダリ改ざん防止スナップショット（TPS）のサポート*</block>
+  <block id="553dc280ed86f90ffb054d20f311a8f9" category="paragraph">SnapCenter Plug-in for VMware vSphereでは、セカンダリTPSのサポートが導入されています。これにより、ランサムウェア攻撃者や不正な管理者による削除や変更からセカンダリSnapshotコピーを保護し、攻撃後も使用できるようになります。</block>
 </blocks>

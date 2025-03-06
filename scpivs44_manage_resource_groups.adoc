@@ -67,7 +67,7 @@ vCenterでリソースグループ内のリソースの削除や追加、ポリ�
 リソースグループの削除処理はすべて強制削除として実行されます。削除処理を実行すると、vCenterリソースグループからすべてのポリシーが解除され、リソースグループがSnapCenter Plug-in for VMware vSphereから削除され、リソースグループのすべてのバックアップとSnapshotが削除されます。
 
 
-NOTE: SnapVault関係では、最新のSnapshotは削除できないため、リソースグループは削除できません。SnapVault関係の一部であるリソースグループを削除する場合は、事前にOnCommandシステムマネージャまたはONTAP CLIを使用してSnapVault関係を削除してから、最後のSnapshotを削除する必要があります。
+NOTE: SnapVault関係では、最後のSnapshotは削除できないため、リソースグループは削除できません。SnapVault関係の一部であるリソースグループを削除する前に、OnCommand System ManagerまたはONTAP CLIを使用してSnapVault関係を削除してから、最後のSnapshotを削除する必要があります。
 
 .手順
 . SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*をクリックし、リソースグループを選択して*[削除]*をクリックします。
