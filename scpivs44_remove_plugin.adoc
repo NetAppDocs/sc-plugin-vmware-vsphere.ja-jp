@@ -26,7 +26,7 @@ SnapCenterのデータ保護機能を使用する必要がなくなった場合�
 +
 プラグインの導入時に、SnapCenter Plug-in for VMware vSphereのIPアドレスが表示されます。
 
-. 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
+. 左側のナビゲーションペインで*[設定]*を選択し、*[プラグインの詳細]*セクションで[サービス]オプションの選択を解除してプラグインを無効にします。
 . VMware vSphereにログインします。
 . 左側のナビゲーション画面で、SnapCenter Plug-in for VMware vSphereのインスタンス（仮想アプライアンスの導入時に使用されたファイルの名前）を右クリックし `.tar` 、*[ディスクから削除]*を選択します。
 . SnapCenter Plug-in for VMware vSphereを使用して、アプリケーションと整合性のあるバックアップ用の他のSnapCenterプラグインをサポートしていた場合は、SnapCenterにログインしてvSphereホストを削除します。

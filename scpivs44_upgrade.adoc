@@ -51,43 +51,43 @@ TIP: アップグレードを開始する前に、SnapCenter Plug-in for VMware 
 
 NOTE: ネットワーク設定を静的からDHCPに切り替えることはできません。
 
-サポートされるバージョンの最新情報については、（IMT）を参照して https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] ください。
+サポートされるバージョンの最新情報については、（IMT）を参照して https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] ください。
 
 .手順
 . SnapCenter Plug-in for VMware vSphereを無効にしてアップグレードを準備します。
 +
 .. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されます。
-.. 左側のナビゲーションペインで * Configuration * をクリックし、次に Plug-in Details セクションの * Service * オプションをクリックしてプラグインを無効にします。
+.. 左側のナビゲーションペインで*[設定]*を選択し、[プラグインの詳細]セクションで*[サービス]*オプションを選択してプラグインを無効にします。
 
 
 . アップグレードファイルをダウンロードし `.iso` ます。
 +
 .. NetAppサポートサイトにログインし (https://mysupport.netapp.com/products/index.html[]ます）。
-.. 製品のリストから「 * SnapCenter Plug-in for VMware vSphere * 」を選択し、「 Download latest release * 」ボタンをクリックします。
+.. 製品のリストから* SnapCenter Plug-in for VMware vSphere *を選択し、*最新リリースのダウンロード*ボタンを選択します。
 .. SnapCenter Plug-in for VMware vSphereのアップグレードファイルを任意の場所にダウンロードし `.iso` ます。
 
 
 . アップグレードをインストールします。
 +
 .. ブラウザで、VMware vSphere vCenterに移動します。
-.. vCenter GUIで、* vSphere Client（HTML）*をクリックします。
+.. vCenter GUIで、* vSphere Client（HTML）*を選択します。
 .. VMware vCenter Single Sign-On * ページにログインします。
-.. ナビゲータペインで、アップグレードするVMをクリックし、*[概要]*タブをクリックします。
-.. [*Related Objects*] ペインで、リスト内の任意のデータストアをクリックし、 [*Summary*] タブをクリックします。
-.. 選択したデータストアの「 * ファイル * 」タブで、リスト内の任意のフォルダをクリックし、「 * ファイルのアップロード * 」をクリックします。
-.. アップロードポップアップ画面で、ファイルをダウンロードした場所に移動し `.iso` 、ファイルイメージをクリックして*開く*をクリックし `.iso` ます。ファイルがデータストアにアップロードされます。
-.. アップグレードする VM に移動し、 * Summary * タブをクリックします。[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
-.. [CD/DVD] フィールドの接続アイコンをクリックし、 [* データストア上の CD/DVD イメージに接続する *] を選択します。
+.. ナビゲータペインで、アップグレードするVMを選択し、*[概要]*タブを選択します。
+.. [関連オブジェクト]ペインで、リスト内の任意のデータストアを選択し、*[概要]*タブを選択します。
+.. 選択したデータストアの*[ファイル]*タブで、リスト内の任意のフォルダを選択し、*[ファイルのアップロード]*を選択します。
+.. アップロードポップアップ画面で、ファイルをダウンロードした場所に移動し `.iso`、ファイルイメージでを選択して*開く*を選択し `.iso`ます。ファイルがデータストアにアップロードされます。
+.. アップグレードするVMに戻り、*[概要]*タブを選択します。[* VM Hardware * （ VM ハードウェア * ） ] ペインの [CD/DVD （ CD/DVD ） ] フィールドで、値を「切断」にする必要があります。
+.. [CD/DVD]フィールドで接続アイコンを選択し、*[データストア上のCD/DVDイメージに接続]*を選択します。
 +
 image:scpivs44_image42.png["vCenter UI"]
 
 .. ウィザードで、次の手順を実行します。
 +
 ... [Datastores]列で、ファイルをアップロードしたデータストアを選択し `.iso` ます。
-... [Contents]列で、アップロードしたファイルに移動し `.iso` 、[File Type]フィールドで[ISO image]が選択されていることを確認して、*[OK]*をクリックします。フィールドに「Connected」ステータスが表示されるまで待ちます。
+... [Contents]列で、アップロードしたファイルに移動し `.iso`、[File Type]フィールドで[ISO image]が選択されていることを確認してから、*OK*を選択します。フィールドに「Connected」ステータスが表示されるまで待ちます。
 
 
-.. 仮想アプライアンスの [Summary] * タブにアクセスしてメンテナンスコンソールにログオンし、緑のラン矢印をクリックしてメンテナンスコンソールを起動します。
+.. 仮想アプライアンスの*[概要]*タブにアクセスしてメンテナンスコンソールにログオンし、緑の実行矢印を選択してメンテナンスコンソールを起動します。
 .. 「システム構成」に「 * 2 」と入力し、「アップグレード」に「 * 8 」と入力します。
 .. 「 * y * 」と入力してアップグレードを続行し、開始します。
 

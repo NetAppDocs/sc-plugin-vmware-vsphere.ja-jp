@@ -22,13 +22,13 @@ VMware vCenter 7.0.3以降のバージョンでは、Entrust証明書によっ�
 . SnapCenter Plug-in for VMwareをダウンロードするには、次の手順を実行します。
 +
 ** NetAppサポートサイトにログインします（ https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]）。
-** 製品のリストから、「 SnapCenter Plug-in for VMware vSphere * 」を選択し、「最新リリースをダウンロード」ボタンをクリックします。
+** 製品のリストから* SnapCenter Plug-in for VMware vSphere *を選択し、*最新リリースのダウンロード*ボタンを選択します。
 ** SnapCenter Plug-in for VMware vSphereのファイルを任意の場所にダウンロードし `.tar` ます。
 
 
 . vSphere ClientでvCenter Serverにログインします。
 . [管理]>[証明書]>[証明書の管理]に移動します。
-. [信頼されたルートストア*]の横にある[*追加]をクリックします
+. [信頼されたルートストア]*の横にある*[追加]*を選択します。
 . Entrustルート証明書と中間証明書の場所を参照して選択します。証明書は、[*Trusted Root Certificates*]の下のパネルに追加されます。証明書をインストールしたら、OVAを検証して導入できます。
 
 

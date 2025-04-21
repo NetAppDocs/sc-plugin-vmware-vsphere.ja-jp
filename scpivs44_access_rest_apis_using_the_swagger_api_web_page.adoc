@@ -46,5 +46,5 @@ SnapCenter Plug-in for VMware vSphere REST APIにアクセスします。
 +
 ログインvCenter認証メカニズムを使用してトークンを生成します。
 
-. APIリソースタイプをクリックすると、そのリソースタイプのAPIが表示されます。
+. APIリソースタイプを選択すると、そのリソースタイプのAPIが表示されます。
 

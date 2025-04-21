@@ -32,12 +32,12 @@ SnapCenter Plug-in for VMware vSphere管理GUIのIPアドレスとログイン�
 +
 次の形式を使用： `\https://<appliance-IP-address>:8080`
 
-. 上部ツールバーの[設定]アイコンをクリックします。
+. 上部ツールバーの[設定]アイコンを選択します。
 +
 image:scpivs44_image28.jpg["SnapCenter Plug-in for VMware vSphere"]
 
-. [ * 設定 * ] ページの [ * 日付と時刻 * ] セクションで、 [ * 編集 * ] をクリックします。
-. 新しいタイムゾーンを選択し、 * 保存 * をクリックします。
+. [設定]*ページの*[日時]*セクションで、*[編集]*を選択します。
+. 新しいタイムゾーンを選択し、*[保存]*を選択します。
 +
 新しいタイムゾーンは、SnapCenter Plug-in for VMware vSphereで実行されるすべてのバックアップに使用されます。
 

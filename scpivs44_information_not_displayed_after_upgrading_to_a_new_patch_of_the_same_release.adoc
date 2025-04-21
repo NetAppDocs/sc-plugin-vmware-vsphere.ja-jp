@@ -44,7 +44,7 @@ SnapCenter Plug-in for VMware vSphereを同じリリースの新しいパッチ�
 +
 IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されます。
 
-. 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを無効にします。
+. 左側のナビゲーションペインで*[設定]*を選択し、*[プラグインの詳細]*セクションで[サービス]オプションを選択してプラグインを無効にします。
 +
 SnapCenter Plug-in for VMware vSphereサービスが無効になり、vCenterで拡張機能の登録が解除されます。
 
@@ -54,7 +54,7 @@ SnapCenter Plug-in for VMware vSphereサービスが無効になり、vCenterで
 
 . vCenter Serverを再起動します。
 . VMware vSphere Clientにログインします。
-. 左側のナビゲーションペインで * Configuration * をクリックし、 * Plug-in Details * セクションのサービスオプションをクリックしてプラグインを有効にします。
+. 左側のナビゲーションペインで*[設定]*を選択し、*[プラグインの詳細]*セクションで[サービス]オプションを選択してプラグインを有効にします。
 +
 SnapCenter Plug-in for VMware vSphereサービスが有効になり、vCenterに拡張機能が登録されます。
 

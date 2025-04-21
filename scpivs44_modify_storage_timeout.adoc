@@ -19,8 +19,8 @@ summary: 以前は正常に実行されていましたが、ストレージシ�
 次のエラーが発生することがあります。 `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
 
 .手順
-. SCVプラグインの左側のナビゲータペインで、*[ストレージシステム]*をクリックします。
-. Storage Systems （ストレージ・システム）ページで、変更するストレージ・システムを選択し、 * Edit （編集） * をクリックします。
+. SCVプラグインの左側のナビゲータペインで、*[Storage Systems]*を選択します。
+. [ストレージシステム]ページで、変更するストレージシステムを選択し、*[編集]*を選択します。
 . [Timeout]フィールドで、秒数を増やします。
 +
 

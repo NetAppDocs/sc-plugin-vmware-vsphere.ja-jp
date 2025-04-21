@@ -27,5 +27,5 @@ VMware vSphere ClientのGUIにバックアップがマウント済みと表示�
 
 IMPORTANT: アンマウントするデータストアを間違えないようにしてください。そうしないと、本番環境の作業に影響を与える可能性があります。
 
-. Unmount cloned Datastore * ダイアログボックスで、データストアを選択し、 * Unmount the cloned datastore * チェックボックスをオンにして、 * Unmount * をクリックします。
+. [Unmount Cloned Datastore]ダイアログボックスで、データストアを選択し、*[Unmount the cloned datastore]*チェックボックスを選択して*[Unmount]*を選択します。
 

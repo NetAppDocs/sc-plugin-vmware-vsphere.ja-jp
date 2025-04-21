@@ -32,7 +32,7 @@ NOTE: OVA環境は、VMware vCenter 7u1以上でサポートされます。
 * vSphere Clientのすべてのブラウザセッションからログアウトして閉じておく必要があります。また、SnapCenter Plug-in for VMware vSphereの導入時にブラウザキャッシュの問題が発生しないように、ブラウザキャッシュを削除しておく必要があります。
 * vCenterでTransport Layer Security（TLS）を有効にしておく必要があります。VMwareのドキュメントを参照してください。
 * SnapCenter Plug-in for VMware vSphereが導入されているvCenter以外のvCenterでバックアップを実行する場合は、ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterを同時に同期する必要があります。
-* VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。
+* VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。
 
 
 vCenterと同じタイムゾーンでSnapCenter Plug-in for VMware vSphereを導入します。バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。
@@ -47,16 +47,16 @@ NOTE: IPv6アドレスのHTML Webクライアントの場合は、Chromeまた�
 . VMware vCenter Single Sign-On * ページにログインします。
 . ナビゲータペインで、仮想マシンの有効な親オブジェクトであるインベントリオブジェクト（データセンター、クラスタ、ホストなど）を右クリックし、*[Deploy OVF Template]*を選択してVMware導入ウィザードを開始します。
 . .ovaファイルを含む.tarファイルをローカルシステムに展開します。[Select an OVF template*]ページで、.tar抽出フォルダ内のファイルの場所を指定します `.ova` 。
-. 「 * 次へ * 」をクリックします。
-. [ 名前とフォルダの選択 * ] ページで、 VM または vApp の一意の名前を入力し、導入場所を選択して、 [ 次へ * ] をクリックします。
+. 「 * 次へ * 」を選択します。
+. [名前とフォルダの選択]*ページで、VMまたはvAppの一意の名前を入力し、導入先を選択して*[次へ]*を選択します。
 +
 この手順では、ファイルをvCenterにインポートする場所を指定し `.tar` ます。VMのデフォルト名は、選択したファイルの名前と同じ `.ova` です。デフォルトの名前を変更した場合は、各vCenter Server VMフォルダ内で一意の名前を選択します。
 
 +
 VMのデフォルトの導入場所は、ウィザードを開始したインベントリオブジェクトです。
 
-. [ リソースの選択 *] ページで、導入した VM テンプレートを実行するリソースを選択し、 [ 次へ *] をクリックします。
-. [詳細の確認]ページで、テンプレートの詳細を確認し `.tar` 、*[次へ]*をクリックします。
+. [リソースの選択]*ページで、導入したVMテンプレートを実行するリソースを選択し、*[次へ]*を選択します。
+. [詳細の確認]ページで、テンプレートの詳細を確認し `.tar`、*[次へ]*を選択します。
 . [ ライセンス契約 * ] ページで、 [ すべてのライセンス契約に同意します ] のチェックボックスをオンにします。 *
 . ［ * ストレージの選択 * ］ ページで、導入した OVF テンプレートのファイルの保存場所と保存方法を定義します。
 +
@@ -80,7 +80,7 @@ VMのデフォルトの導入場所は、ウィザードを開始したインベ
 +
 [Source Network]列には、OVAテンプレートで定義されているすべてのネットワークが表示されます。
 
-.. [IP Allocation Settings]*セクションで、必要なIPアドレスプロトコルを選択し、*[Next]*をクリックします。
+.. [IP Allocation Settings]*セクションで、必要なIPアドレスプロトコルを選択し、*[Next]*を選択します。
 +
 SnapCenter Plug-in for VMware vSphereは、1つのネットワークインターフェイスをサポートします。複数のネットワークアダプタが必要な場合は、手動で設定する必要があります。を参照してください https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["技術情報アーティクル：「 How to create additional network adapters"^]。
 
@@ -117,7 +117,7 @@ IMPORTANT: ネットワーク設定として DHCP を使用する場合は、こ
 .. * Setup Date and Time * で、 vCenter が配置されているタイムゾーンを選択します。
 
 
-. [ 完了準備完了 ] ページでページを確認し、 [ 完了 ] をクリックします。
+. [選択内容の確認]ページで、ページを確認して*[完了]*を選択します。
 +
 すべてのホストにIPアドレスを設定する必要があります（FQDNホスト名はサポートされません）。導入処理では、導入前に入力した内容は検証されません。
 
@@ -127,8 +127,8 @@ OVFのインポートタスクと導入タスクが完了するまでの間、[R
 +
 SnapCenter Plug-in for VMware vSphereの導入が完了すると、Linux VMとして導入されてvCenterに登録され、VMware vSphere Clientがインストールされます。
 
-. SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブをクリックし、*[電源オン]*ボックスをクリックして仮想アプライアンスを起動します。
-. SnapCenter Plug-in for VMware vSphereの電源投入時に、導入したSnapCenter Plug-in for VMware vSphereを右クリックし、*[ゲストOS ]*を選択して*[VMwareツールのインストール]*をクリックします。
+. SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブを選択し、*[電源オン]*ボックスを選択して仮想アプライアンスを起動します。
+. SnapCenter Plug-in for VMware vSphereの電源投入時に、導入したSnapCenter Plug-in for VMware vSphereを右クリックし、*[ゲストOS ]*を選択して*[VMwareツールのインストール]*を選択します。
 +
 VMware Toolsは、SnapCenter Plug-in for VMware vSphereが導入されているVMにインストールされます。VMware Toolsのインストールの詳細については、VMwareのドキュメントを参照してください。
 

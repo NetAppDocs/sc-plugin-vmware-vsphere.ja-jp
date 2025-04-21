@@ -24,7 +24,7 @@ vCenterでTransport Layer Security（TLS）が有効になっている必要が�
 . VMware vCenter Single Sign-On * ページにログインします。
 +
 
-IMPORTANT: [* ログイン * ] ボタンをクリックします。VMwareの既知の問題のため、Enterキーを使用してログインしないでください。 詳細については、ESXi Embedded Host Clientの問題に関するVMwareのドキュメントを参照してください。
+IMPORTANT: [Login]ボタンを選択します。VMwareの既知の問題のため、ENTERキーを使用してログインしないでください。詳細については、ESXi Embedded Host Clientの問題に関するVMwareのドキュメントを参照してください。
 
-. VMware vSphereクライアント*ページで、ツールバーのメニューをクリックし、* SnapCenter Plug-in for VMware vSphere *を選択します。
+. [VMware vSphere Client]ページで、ツールバーの[メニュー]を選択し、* SnapCenter Plug-in for VMware vSphere *を選択します。
 

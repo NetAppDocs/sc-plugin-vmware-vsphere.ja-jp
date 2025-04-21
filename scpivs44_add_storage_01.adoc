@@ -29,7 +29,7 @@ SnapCenter Plug-in for VMware vSphere 4.5以降では、ASAアグリゲートで
 VVOLデータ保護を使用するには、SnapCenter Plug-in for VMware vSphereおよびONTAP tools for VMware vSphereにストレージクラスタを追加する必要があります。
 
 +
-詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
+詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。
 
 
 
@@ -101,7 +101,7 @@ SnapCenterでStorage VM名の_etc\hosts_fileにエントリを追加した場合
 
 | 処理に失敗した場合に AutoSupport 通知をストレージシステムに送信します | データ保護ジョブが失敗したときにAutoSupport通知を送信する場合は、このチェックボックスをオンにします。また、Storage VMでAutoSupportを有効にし、AutoSupport Eメールを設定する必要があります。 
 |===
-. [追加]*をクリックします。
+. 「 * 追加」を選択します。
 +
 ストレージクラスタを追加した場合は、そのクラスタ内のすべてのStorage VMが自動的に追加されます。自動的に追加されたStorage VM（「暗黙的な」Storage VMと呼ばれることもあります）は、クラスタの概要ページにユーザ名ではなくハイフン（-）が表示されます。ユーザ名は、明示的なストレージエンティティに対してのみ表示されます。
 

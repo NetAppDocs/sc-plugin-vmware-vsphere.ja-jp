@@ -24,7 +24,7 @@ NOTE: IPv6アドレスのHTML Webクライアントの場合は、Chromeまた�
 
 . VMware vCenter Single Sign-Onページにログインします。
 . ナビゲーションペインで、データセンター、フォルダ、クラスタ、ホストなどの仮想マシンの有効な親オブジェクトであるインベントリオブジェクトを右クリックし、[OVFテンプレートの展開*]を選択してVMware導入ウィザードを開始します。
-. [Select an OVF template*（OVFテンプレートの選択）]ページで、ファイルの場所（次の表を参照）を指定し `.ova` 、*[Next]*をクリックします。
+. [Select an OVF template*（OVFテンプレートの選択）]ページで、ファイルの場所（次の表を参照）を指定し `.ova`、[* Next（次へ）]*を選択します。
 +
 |===
 | このウィザードのページ | 操作 
@@ -58,14 +58,14 @@ NOTE: 指定したユーザ名とパスワードをメモしておきます。Sn
 
 
 
-| 選択内容の確認 | ページを確認して、 [ 完了 ] をクリックします。 
+| 選択内容の確認 | ページを確認し、*[終了]*を選択します。 
 |===
 +
 
 NOTE: すべてのホストにIPアドレスを設定する必要があります（FQDNホスト名はサポートされません）。導入処理では、導入前に入力した内容は検証されません。
 
-. SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブをクリックし、*[電源オン]*ボックスをクリックしてSnapCenter Plug-in for VMware vSphereを起動します。
-. SnapCenter Plug-in for VMware vSphereの電源投入時に、導入したSnapCenter Plug-in for VMware vSphereを右クリックし、*[ゲストOS ]*を選択して*[VMwareツールのインストール]*をクリックします。
+. SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブを選択し、*[電源オン]*ボックスを選択してSnapCenter Plug-in for VMware vSphereを起動します。
+. SnapCenter Plug-in for VMware vSphereの電源投入時に、導入したSnapCenter Plug-in for VMware vSphereを右クリックし、*[ゲストOS ]*を選択して*[VMwareツールのインストール]*を選択します。
 +
 導入が完了するまでに数分かかることがあります。SnapCenter Plug-in for VMware vSphereの電源がオンになると導入が成功したことが通知され、VMware Toolsがインストールされ、SnapCenter Plug-in for VMware vSphereへのログインを求める画面が表示されます。
 
@@ -79,5 +79,5 @@ NOTE: すべてのホストにIPアドレスを設定する必要があります
 +
 導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。
 
-. vCenter HTML5 クライアントにログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します
+. vCenter HTML5クライアントにログインし、ツールバーの*[メニュー]*を選択し、*[VMware vSphere用SnapCenterプラグイン]*を選択します。
 

@@ -47,7 +47,7 @@ SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加�
 +
 問題が解決しない場合は、VMware vSphere Client Serviceを再起動します
 
-. vCenter にログインし、ツールバーの * メニュー * をクリックして、 * SnapCenter Plug-in for VMware vSphere * を選択します。
+. vCenterにログインし、ツールバーの*[メニュー]*を選択し、*[ SnapCenter Plug-in for VMware vSphere ]*を選択します。
 
 
 
@@ -84,9 +84,9 @@ SnapCenter Plug-in for VMware vSphereの複数のインスタンスを同じSnap
 
 
 .手順
-. SnapCenter GUI の左ナビゲーションペインで、 *Hosts* をクリックします。
+. SnapCenter GUIの左側のナビゲーションペインで、*[ホスト]*を選択します。
 . 上部で [Managed Hosts] タブが選択されていることを確認し、仮想アプライアンスのホスト名を見つけて、 SnapCenter サーバから解決されることを確認します。
-. 「 * 追加」をクリックしてウィザードを開始します。
+. [追加]*を選択してウィザードを開始します。
 . [Add Hosts] ダイアログ・ボックスで ' 次の表に示すように SnapCenter サーバに追加するホストを指定します
 +
 |===
@@ -101,11 +101,11 @@ SnapCenter Plug-in for VMware vSphereの複数のインスタンスを同じSnap
 
 | クレデンシャル | 導入時に指定したSnapCenter Plug-in for VMware vSphereのユーザ名とパスワードを入力します。 
 |===
-. [Submit （送信） ] をクリックします。
+. [ 送信 ] を選択します。
 +
 追加されたVMホストは、[Managed Hosts]タブに表示されます。
 
-. 左側のナビゲーションペインで、*[設定]*をクリックし、*[クレデンシャル]*タブをクリックし、*[追加]*を選択して仮想アプライアンスのクレデンシャルを追加します。
+. 左側のナビゲーションペインで、*[設定]*を選択し、*[クレデンシャル]*タブを選択し、*[追加]*を選択して仮想アプライアンスのクレデンシャルを追加します。
 . SnapCenter Plug-in for VMware vSphereの導入時に指定したクレデンシャル情報を入力します。
 +
 

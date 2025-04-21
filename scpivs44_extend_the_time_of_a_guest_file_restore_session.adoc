@@ -20,8 +20,8 @@ summary: 'デフォルトでは、接続されたゲストファイルリスト�
 接続されたVMDKから追加のファイルやフォルダをあとでリストアする場合は、ゲストファイルのリストアセッションを拡張できます。ただし、ゲストファイルリストアセッションでは多くのリソースが使用されるため、セッション時間の延長は時折実行する必要があります。
 
 .手順
-. VMware vSphere Clientで、* Guest File Restore *をクリックします。
-. ゲストファイルの復元セッションを選択し、Guest Session MonitorのタイトルバーでExtend Selected Guest Sessionアイコンをクリックします。
+. VMware vSphere Clientで、*[Guest File Restore]*を選択します。
+. ゲストファイルの復元セッションを選択し、Guest Session MonitorのタイトルバーでExtend Selected Guest Sessionアイコンを選択します。
 +
 セッションはさらに24時間延長されます。
 

@@ -35,7 +35,7 @@ link:scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.h
 +
 プラグインの導入時に、SnapCenter Plug-in for VMware vSphereのIPアドレスが表示されます。
 
-. 左側のナビゲーションペインで * Configuration * をクリックし、次に * Plug-in Details * セクションの Service オプションの選択を解除してプラグインを無効にします。
+. 左側のナビゲーションペインで*[設定]*を選択し、*[プラグインの詳細]*セクションで[サービス]オプションの選択を解除してプラグインを無効にします。
 . 選択内容を確認します。
 +
 ** VMと整合性のあるバックアップを実行するためにSnapCenter Plug-in for VMware vSphereのみを使用した場合
