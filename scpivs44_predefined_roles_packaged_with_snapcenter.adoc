@@ -22,7 +22,7 @@ vCenter Server RBACの使用を簡易化するために、SnapCenter Plug-in for
 
 これらのロールは、vCenter Web Client Serviceの再起動やインストールの変更を行うたびに、SnapCenter Plug-in for VMware vSphereによってデフォルト値（初期セットの権限）に戻ります。SnapCenter Plug-in for VMware vSphereをアップグレードすると、事前定義されたロールがそのバージョンのプラグインで使用できるように自動的にアップグレードされます。
 
-次の表に示すように、 vCenter GUI で事前定義されたロールを表示するには、 * メニュー > 管理 > ロール * をクリックします。
+事前定義されたロールをvCenter GUIで確認するには、*[メニュー]>[管理]>[ロール]*を選択します（次の表を参照）。
 
 |===
 | ロール | 製品説明 

@@ -203,7 +203,6 @@
   <block id="76e9befea76516ca72c9f475d7334897" category="paragraph">以前のリリースのVirtual Storage Console（VSC）では、VMまたはデータストアのバックアップジョブを設定せずにオンデマンドバックアップを実行できました。ただし、SnapCenter Plug-in for VMware vSphereでは、バックアップを実行する前にVMとデータストアがリソースグループに含まれている必要があります。</block>
   <block id="7dec9dcf8e38ded3e0697c5adf28b03d" category="inline-image-macro">再生アイコン</block>
   <block id="c7cf19dde0a4f0c65a5e383de57d33c1" category="list-text">リソースグループに複数のポリシーが設定されている場合は、 * 今すぐバックアップ * ダイアログボックスで、このバックアップ処理に使用するポリシーを選択します。</block>
-  <block id="8bf5cf5dea41cc14b69ffe6c6732b880" category="list-text">オプション：ウィンドウ下部の「最近のタスク」をクリックするか、ダッシュボードの「ジョブモニタ」をクリックして、処理の進捗状況を監視します。結果</block>
   <block id="c9f88dac59bd7db8545fafc230d3c135" category="paragraph">バックアップ内のいずれかのVMで休止処理が失敗すると、バックアップは警告付きで完了し、選択したポリシーでVM整合性が選択されていてもVM整合性なしとマークされます。この場合、一部のVMが正常に休止されている可能性があります。ジョブモニタでは、障害が発生したVMの詳細に休止が失敗したと表示されます。</block>
   <block id="803b4aa7d4fed42c6a2488a4e70f45a1" category="summary">SnapCenter Plug-in for VMware vSphereには、プラグインで実行されるすべてのジョブのメタデータを格納するMySQLデータベース（NSMデータベースとも呼ばれます）が含まれています。 このリポジトリは定期的にバックアップする必要があります。</block>
   <block id="5dac34c17251fac8f2ecb245375e0680" category="doc">SnapCenter Plug-in for VMware vSphere MySQLデータベースのバックアップ</block>
@@ -867,7 +866,6 @@
   <block id="f4b8d6321a2be1101bc17bbd298bd7a3" category="inline-image-macro">vSphere Clientウィンドウ</block>
   <block id="8857a92c9dd7ad8b9a97a4565e945efb" category="paragraph"><block ref="8857a92c9dd7ad8b9a97a4565e945efb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8f28d5b9bdfd45d62e73866daa7c7c7" category="paragraph">削除するバックアップは最大40個まで選択できます。</block>
-  <block id="8dd89a625f95fb62c70506be2c26dc97" category="list-text">左側のvSphereメニューバーにある更新アイコンをクリックして、バックアップリストを更新します。</block>
   <block id="2833997454e257549c1ee754caa5789a" category="summary">SnapCenter Plug-in for VMware vSphereのバックアップポリシーを作成、変更、表示、適用解除、および削除できます。データ保護処理を実行するにはポリシーが必要です。</block>
   <block id="e7326f303b8abf78625da7d8f22fa0b4" category="doc">ポリシーの管理</block>
   <block id="78f1e90e675a66cb2a884cded1ec1e11" category="section-title">ポリシーの適用解除</block>
@@ -1129,7 +1127,6 @@
   <block id="7725ffbf0bad378c06b12868afb9039b" category="paragraph">事前定義されたロールには、タスクを正しく完了するために必要なSnapCenter固有の権限とvCenter Server標準の権限の両方が含まれています。また、サポートされるすべてのバージョンのvCenter Serverで必要な権限がロールに設定されています。</block>
   <block id="2f6888b85318bb632604e471f8b46b60" category="paragraph">管理者は、これらのロールを適切なユーザに割り当てることができます。</block>
   <block id="2fc5b5221c79ffd8bb3f63dc3aaf9a6e" category="paragraph">これらのロールは、vCenter Web Client Serviceの再起動やインストールの変更を行うたびに、SnapCenter Plug-in for VMware vSphereによってデフォルト値（初期セットの権限）に戻ります。SnapCenter Plug-in for VMware vSphereをアップグレードすると、事前定義されたロールがそのバージョンのプラグインで使用できるように自動的にアップグレードされます。</block>
-  <block id="5a8be763f7b47c14c6c0fca91e41acc6" category="paragraph">次の表に示すように、 vCenter GUI で事前定義されたロールを表示するには、 * メニュー &gt; 管理 &gt; ロール * をクリックします。</block>
   <block id="bbbabdbe1b262f75d99d62880b953be1" category="cell">ロール</block>
   <block id="3d0f61a1174e21cbdd43433a0cdd1587" category="cell">SCV管理者</block>
   <block id="9e5d312df6041327157130535c90513a" category="cell">SCV バックアップ</block>
@@ -1478,7 +1475,6 @@
   <block id="fa4def48e95c558805a7c02c07472bfb" category="paragraph">処理の進捗状況はダッシュボードのジョブモニタで確認できます。または、Eメール通知が表示されるまで待つこともできます。</block>
   <block id="65895b7403885311119261f9146fcd0e" category="list-text">接続されている仮想ディスクからリストアするファイルを検索するには、vSphere Clientのショートカットウィンドウで* SnapCenter Plug-in for VMware vSphere *を選択します。</block>
   <block id="3384140e800c2f652b9cef13ac075fa2" category="list-text">左側のナビゲータペインで、*[Guest File Restore]*&gt;*[Guest Configuration]*を選択します。</block>
-  <block id="25e78af0a6469670457f3d69f3af2d24" category="paragraph">[Guest Session Monitor]テーブルで、[*...]*をクリックします。</block>
   <block id="c6b1cccb1d41d1779899104b727ed6e0" category="list-text">通知メールに記載されている仮想ディスクのゲストファイルリストアセッションを選択します。</block>
   <block id="0af578ae1d8a85026f8bc49091baff88" category="paragraph">システムで予約されているパーティションを含め、すべてのパーティションにドライブ文字が割り当てられます。VMDKに複数のパーティションがある場合は、[Guest File Browse]ページの上部にあるドライブフィールドのドロップダウンリストでドライブを選択して、特定のドライブを選択できます。</block>
   <block id="f4ff83956db6d6134a1d1743238a844b" category="paragraph">検索を簡単にするために、検索文字列にフィルタを使用できます。フィルタでは、スペースを含まないPerl式で大文字と小文字が区別されます。デフォルトの検索文字列は*です<block ref="5058f1af8388633f609cadb75a75dc9d" prefix=" " category="inline-code"></block>。次の表に、Perlの検索式の例を示します。</block>
@@ -1581,7 +1577,6 @@
   <block id="7ff99aff75a4ffc74b705fb26d592f75" category="cell">リストア先を指定 ...</block>
   <block id="cbb42e8a1e30a5617b85b703b275a35a" category="cell">元のデータストア</block>
   <block id="46ddbb26d4adb6887d8fc9f992672ea7" category="cell">別の場所にある別のデータストア</block>
-  <block id="92ebc27a2cd9d1ab4039f811c8ddafc4" category="list-text">オプション：画面下部の * 最近のタスク * をクリックして、処理の進行状況を監視します。</block>
   <block id="041b4550a0ec6359f99eb2257afd1afa" category="summary">VMをリストアするときに、選択したバックアップコピーで既存の内容を上書きするか、VMのコピーを作成できます。</block>
   <block id="0b156eb7ae06ec8e963e1dd7bed83e94" category="doc">バックアップからのVMのリストア</block>
   <block id="b14e0e0fe870958315bd1b702bfa088a" category="list-text">元のESXiホストにマウントされている元のデータストア（元のVMは上書きされます）</block>
@@ -2144,9 +2139,7 @@
   <block id="ee3e8b5ce13430356556fee5021d9317" category="list-text">[追加]*を選択してウィザードを開始します。</block>
   <block id="b623e6ded9a852f4e7cd9765578d0c08" category="list-text">[ 送信 ] を選択します。</block>
   <block id="8fbd6a3eab66d75eb22802cd7bdab5ee" category="list-text">左側のナビゲーションペインで、*[設定]*を選択し、*[クレデンシャル]*タブを選択し、*[追加]*を選択して仮想アプライアンスのクレデンシャルを追加します。</block>
-  <block id="e556309e3738293954426d97ff80e5be" category="list-text">[メニュー]*を選択して*[ストレージ]*メニューオプションを選択し、データストアを選択して*[設定]*タブを選択し、* SnapCenter [VMware Plug-in for VMware vSphere]*セクションで*[バックアップ]*を選択します。</block>
   <block id="340644a6feb53a4c0cf17d7dc95e37bb" category="list-text">削除したVMをバックアップリストから選択し、*[リストア]*を選択します。</block>
-  <block id="216106f9c289ff5c0e156f155d915eb2" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックし、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
   <block id="496e324a452b0d9825c96401dab61646" category="list-text">[概要]ページを確認し、*[完了]*を選択します。</block>
   <block id="ce90ba667f9b72c9d09d9562f81efad6" category="list-text">概要を確認し、*[終了]*を選択します。</block>
   <block id="b89dbb3a27a140b56ee4c00016ec02b6" category="list-text">[Browse Files]（ファイルの参照）アイコンを選択して、仮想ディスク上のファイルとフォルダのリストを表示します。</block>
@@ -2156,10 +2149,8 @@
   <block id="903d29a0523ca22e4dcbac24e33ef3f4" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
   <block id="e48b6aae8f268fb1220ec073d110a1ec" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアできます。サポートされているゲストOSの最新情報については、を参照してください<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
   <block id="1ebf62949d055407b1151236c6390c01" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアできます。サポートされているゲストOSの最新情報については、を参照して<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>ください。</block>
-  <block id="c8a6eba78508876c1b9a258628d9ab40" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックして、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントされたバックアップの有無、プライマリまたはセカンダリの場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
   <block id="78e939bd5a7e9753b83a4aa950117e52" category="cell">ドロップダウンリストから*[特定のディスク]*を選択し、*[次へ]*を選択します。[Datastore]選択テーブルで、VMDKを選択または選択解除できます。</block>
   <block id="99b54fcdde08e8f03e3d080dede7ffaf" category="cell">デスティネーションデータストアを選択し、リストから別のデータストアを選択します。</block>
-  <block id="d7a906f85d31c95c7ab0435b6e7cdc0f" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンをクリックし、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
   <block id="98767e400dba33bddecdcdc37263012a" category="list-text">VMware vSphere ClientのGUIで、ツールバーの*[メニュー]*を選択し、次のいずれかを実行します。</block>
   <block id="c6e0d914d3ce8312422c0f87cce38dec" category="cell">[ホストおよびクラスタ]*メニューオプションを選択し、VMを選択して*[設定]*タブを選択し、* SnapCenter Plug-in for VMware vSphereセクション*で*[バックアップ]*を選択します。</block>
   <block id="fb3dfed215ac2d206151a0e8d833297e" category="cell">[ストレージ]*メニューオプションを選択し、データストアを選択して*[設定]*タブを選択し、* SnapCenter Plug-in for VMware vSphere *セクションで*[バックアップ]*を選択します。</block>
@@ -2185,4 +2176,14 @@
   <block id="3ffdb973715173d60486ae13bf2ee05d" category="list-text">[すべて表示]*を選択して[ジョブモニタ]タブに移動し、すべてのジョブの詳細を確認します。</block>
   <block id="ef93b45ade97012d47885d846fcd6b08" category="list-text">ドロップダウンメニューで*[VMs]*または*[Datastores]*を選択します。</block>
   <block id="463e735b6ee05559608eaafd56818816" category="list-text">[保存]*を選択して、syslogサーバの設定を保存します。</block>
+  <block id="13d524209ba94b0873b6255f4494fe81" category="list-text">オプション：ウィンドウ下部の*[最近のタスク]*を選択するか、ダッシュボード*[ジョブモニタ]*で詳細を確認して、処理の進捗状況を監視します。結果</block>
+  <block id="899accda8c7d730753ee12fb9b4342b1" category="list-text">左側のvSphereメニューバーにある更新アイコンを選択して、バックアップリストを更新します。</block>
+  <block id="643e3f4c7463111dfd9afa193aa2e09c" category="paragraph">事前定義されたロールをvCenter GUIで確認するには、*[メニュー]&gt;[管理]&gt;[ロール]*を選択します（次の表を参照）。</block>
+  <block id="c772934c065697aae46df88ed53eab3f" category="list-text">vCenter Serverで、*[インベントリ]*&gt;*[データストア]*に移動し、データストアを選択します。</block>
+  <block id="ef3c1d17a8f973bdf23643b64b38658f" category="list-text">SnapCenter Plug-in for VMware vSphereセクションで*[設定]&gt;*[バックアップ]*を選択します。</block>
+  <block id="666970fb5d9dc8c5bae1257323fafeb9" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
+  <block id="1988ceb51e4af4b5dedd4e824e247a32" category="paragraph">[Guest Session Monitor]テーブルで、[*...]*をクリックします。</block>
+  <block id="2ce4687225c7becae3c948e55ccdcc4d" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントバックアップの有無、プライマリまたはセカンダリの場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
+  <block id="f427270dda7af9bd5bacffe7bda1edcf" category="list-text">オプション：画面下部の*[最近のタスク]*を選択して、処理の進捗状況を監視します。</block>
+  <block id="6210995c19095fd21a24c3cd89967878" category="paragraph">特定のバックアップ名またはバックアップ名の一部を検索するか、バックアップリストをフィルタすることができます。フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。[OK]*を選択してウィザードに戻ります。</block>
 </blocks>
