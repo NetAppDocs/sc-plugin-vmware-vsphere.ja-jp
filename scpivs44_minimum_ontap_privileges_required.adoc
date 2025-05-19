@@ -28,7 +28,7 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 |===
 
 
-| フルアクセスコマンド：ONTAP 8.3以降で必要な最小限の権限。 
+| フルアクセスコマンド：最小ONTAP Privileges。 
 
 
 | イベント生成- AutoSupportログ 
@@ -52,13 +52,13 @@ NOTE: SnapCenter Plug-in for VMware（SCV）5.0以降では、SCVへのカスタ
 | vserver cifs vserver cifs share create vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs shadowcopy vserver cifs share show vserver export-policy vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem 
 |===
 |===
-| 読み取り専用コマンド： ONTAP 8.3 以降で必要な最小権限 
+| 読み取り専用コマンド：最小ONTAP Privileges 
 
 
 | cluster identity show network interface show vserver peer vserver show 
 |===
 |===
-| フルアクセスコマンド：ONTAP 9以降で必要な最小限の権限。 
+| フルアクセスコマンド：最小ONTAP Privileges 
 
 
 | consistency-group storage-unit show 
@@ -72,15 +72,6 @@ NOTE: サポートされていないvServerコマンドに関する警告メッ�
 
 == ONTAPに関するその他の情報
 
-* ONTAP 8.2.xを実行している場合：
-+
-SnapCenter Plug-in for VMware vSphereの処理を実行するための適切な権限を割り当てるには、Storage VMにとしてログインする必要があります `vsadmin` 。
-
-* ONTAP 8.3以降を実行している場合：
-+
-またはとして、上記の表に記載されている最小限の権限を持つロールでログインする必要があります `vsadmin` 。
-
-* ユーザロールを作成および管理するには、クラスタ管理者である必要があります。ユーザをクラスタStorage VMまたはStorage VMに関連付けることができます。
 * SnapMirrorのアクティブ同期機能を使用するには、ONTAP 9.12.1以降のバージョンが必要です。
 * 改ざん防止スナップショット（TPS）機能を使用するには、次の手順を実行します。
 +

@@ -41,7 +41,7 @@ NOTE: SnapMirrorアクティブ同期はVMFSデータストアでのみサポー
 SnapMirror Active Sync環境でVMFSデータストアを保護するには、SnapCenter管理者が次の作業を行う必要があります。
 
 +
-** テクニカルレポートの説明に従って、クラスタとメディエーターを設定します https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878：『SnapMirror active sync（formerly SMBC）』"]。
+** テクニカルレポートの説明に従って、クラスタとメディエーターを設定します https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html["SnapMirrorアクティブ同期用のONTAP Mediatorとクラスタの設定"]。
 ** VMFSデータストアに関連付けられているボリュームを整合性グループに追加し、2つのONTAPストレージシステム間に_AutomatedFailOver_or_AutomatedFailOverDuplex_protectionポリシーを使用してデータ保護関係を作成します。_AutomatedFailOverDuplex_policyは、ONTAP 9.15.1リリース以降でサポートされています。
 
 
@@ -87,7 +87,9 @@ IMPORTANT: SnapVaultレプリケーションを有効にする場合は、バッ
 
 +
 
-NOTE: 保持できる最大値は、ONTAP 9.4以降のリソースのバックアップが1018個、ONTAP 9.3以前のリソースのバックアップが254個です。保持数を使用しているONTAPバージョンでサポートされる値よりも大きい値に設定すると、バックアップは失敗します。これは、複数のデータストアにも当てはまります。スパニングデータストアにONTAP 9.3以前とONTAP 9.4以降の両方のリソースが含まれている場合は、保持値を254未満に設定してください。
+NOTE: 最大保持数は1018個です。保持数を使用しているONTAPバージョンでサポートされる値よりも大きい値に設定すると、バックアップは失敗します。これは、複数のデータストアにも当てはまります。
+
+
 
 . [ * Replication * ] フィールドで、次の表に示すように、セカンダリ・ストレージへのレプリケーションのタイプを指定します。
 +

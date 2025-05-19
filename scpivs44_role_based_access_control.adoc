@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_role_based_access_control.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphereは、仮想化されたリソースを管理するためのRBACを強化します。このプラグインでは、vCenter Server RBACとData ONTAP RBACの両方がサポートされています。 
+summary: SnapCenter Plug-in for VMware vSphereは、仮想化されたリソースを管理するためのRBACを強化します。このプラグインでは、vCenter Server RBACとONTAP RBACの両方がサポートされています。 
 ---
 = ロールベースアクセス制御（RBAC）
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphereは、仮想化されたリソー�
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphereは、仮想化されたリソースを管理するためのRBACを強化します。このプラグインでは、vCenter Server RBACとData ONTAP RBACの両方がサポートされています。
+SnapCenter Plug-in for VMware vSphereは、仮想化されたリソースを管理するためのRBACを強化します。このプラグインでは、vCenter Server RBACとONTAP RBACの両方がサポートされています。
 
 SnapCenterおよびONTAP RBACは、SnapCenterサーバのアプリケーション整合性（VMDK経由のアプリケーション整合性）ジョブにのみ適用されます。SnapCenter Plug-in for VMware vSphereを使用してSnapCenterのアプリケーション整合性ジョブをサポートする場合は、SnapCenterAdminロールを割り当てる必要があります。SnapCenterAdminロールの権限を変更することはできません。
 

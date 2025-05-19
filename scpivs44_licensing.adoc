@@ -16,11 +16,9 @@ summary: ここでは、 SnapCenter Plug-in for VMware vSphere のライセン�
 [role="lead"]
 次のストレージシステムを使用している場合、SnapCenter Plug-in for VMware vSphereは無償の製品です。
 
-* FAS
-* AFF
+* オンプレミスのONTAPクラスタ（FAS、AFF、ASAシステム）
 * Cloud Volumes ONTAP
 * ONTAP Select
-* ASA
 
 
 セカンダリデスティネーションにSnapCenter Standardライセンスを追加することを推奨しますが、必須ではありません。セカンダリシステムで SnapCenter 標準ライセンスが有効になっていないと、フェイルオーバー処理の実行後に SnapCenter を使用できません。ただし、マウントおよび接続処理を実行するには、セカンダリストレージにFlexCloneライセンスが必要です。リストア処理を実行するにはSnapRestoreライセンスが必要です。

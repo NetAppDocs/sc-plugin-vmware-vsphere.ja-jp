@@ -100,7 +100,7 @@ VMのVMware整合性スナップショットが失敗した場合でも、VMは�
 . VMware vSphere ClientのGUIで、ツールバーの*[メニュー]*を選択し、ドロップダウンリストから*[仮想マシンおよびテンプレート]*を選択します。
 +
 
-NOTE: 削除したVMをリストアする場合は、SnapCenter Plug-in for VMware vSphereに追加したStorage VMのクレデンシャルは、またはと同じ権限を持つユーザアカウントである必要があります `vsadmin` `vsadmin`。ONTAP 8.2.2以降を実行しているストレージシステムにホストが配置されている必要があります。
+NOTE: 削除したVMをリストアする場合は、SnapCenter Plug-in for VMware vSphereに追加したStorage VMのクレデンシャルは、またはと同じ権限を持つユーザアカウントである必要があります `vsadmin` `vsadmin`。
 
 . 左側のナビゲーションペインで、VMを右クリックし、ドロップダウンリストから* SnapCenter Plug-in for VMware vSphere *を選択し、2番目のドロップダウンリストから*リストア*を選択してウィザードを開始します。
 . リストア*ウィザードの*[バックアップの選択]*ページで、リストアするバックアップSnapshotを選択します。

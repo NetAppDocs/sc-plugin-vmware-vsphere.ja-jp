@@ -11,7 +11,7 @@ summary: SnapCenter Plug-in for VMware vSphere 6.1の新機能について説明
 [role="lead"]
 * ASA R2システムでのVMおよびVMFSデータストアのサポート*
 
-SnapCenter Plug-in for VMware vSphere 6.1リリースで、ASA R2システムで仮想マシン（VM）とVMFSデータストアのプロビジョニングがサポートされるようになりました。ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。SnapCenter Plug-in for VMware vSphere 6.1でサポートされるASA R2システム上のVM、データストア、仮想マシンディスクフォーマット（VMDK）の機能は次のとおりです。
+SnapCenter Plug-in for VMware vSphere 6.1リリースでは、ASA R2システムでの仮想マシン（VM）とVMFSデータストアのプロビジョニングがサポートされます。ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。SnapCenter Plug-in for VMware vSphere 6.1でサポートされるASA R2システム上のVM、データストア、仮想マシンディスクフォーマット（VMDK）の機能は次のとおりです。
 
 * プライマリ保護のための整合グループのプロビジョニング
 * 整合グループベースのバックアップ

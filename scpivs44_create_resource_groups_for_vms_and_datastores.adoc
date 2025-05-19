@@ -273,17 +273,7 @@ NOTE: バックアップ内のいずれかのVMで休止処理が失敗した場
 
 == 互換性チェックの失敗を管理
 
-SnapCenterは、リソースグループを作成しようとすると互換性チェックを実行します。
-
-互換性がない理由は次のとおりです。
-
-* VMDKがサポート対象外のストレージ（7-Modeを実行しているONTAPシステムやONTAP以外のデバイスなど）に配置されている。
-* データストアがclustered Data ONTAP 8.2.1以前を実行しているNetAppストレージにある。
-+
-SnapCenterバージョン4.xではONTAP 8.3.1以降がサポートされます。
-
-+
-SnapCenter Plug-in for VMware vSphereでは、すべてのONTAPバージョンの互換性チェックは実行されません。ONTAPバージョン8.2.1以前の場合のみです。そのため、SnapCenterのサポートに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool（IMT）"^] 。
+SnapCenterは、リソースグループを作成しようとすると互換性チェックを実行します。SnapCenterのサポートに関する最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool（IMT）"^]。互換性がない理由は次のとおりです。
 
 * 共有PCIデバイスがVMに接続されている。
 * 優先IPアドレスがSnapCenterに設定されていません。
