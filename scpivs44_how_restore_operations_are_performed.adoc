@@ -35,7 +35,7 @@ VMFS環境の場合、SnapCenter Plug-in for VMware vSphereは、Storage VMotion
 | VMとVMDK | VMと整合性のあるプライマリバックアップ | NFS 環境： ONTAP 単一ファイル SnapRestore VMFS 環境： Storage VMotion を使用したクローン作成とマウント 
 
 
-| VMとVMDK | VMと整合性のあるセカンダリバックアップ | NFS 環境： Storage VMotion VMFS 環境でのクローン作成とマウント： Storage VMotion を使用したクローン作成とマウント 
+| VMとVMDK | VMと整合性のあるセカンダリバックアップ | NFS環境: ONTAP SnapMirrorリストア VMFS環境: Storage VMotionによるクローン作成とマウント 
 
 
 | VVOL VM | crash-consistentプライマリバックアップ | すべてのプロトコルに対応するONTAP単一ファイルSnapRestore 
