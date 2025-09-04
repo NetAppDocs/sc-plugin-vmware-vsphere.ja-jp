@@ -27,7 +27,7 @@ SnapCenter Plug-in for VMware vSphereを使用してVMとデータストアを�
 この問題を解決するには、Snapshotの最大数に達しないようにセカンダリストレージのSnapMirror保持ポリシーを設定します。
 
 +
-管理者がユーザーにリソースを割り当てる方法については'を参照して https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["ロールベースアクセス制御の使用に関する SnapCenter 情報"^]ください
+管理者がユーザーにリソースを割り当てる方法については、以下を参照してください。 https://docs.netapp.com/us-en/snapcenter/get-started/rbac-snapcenter.html["ロールベースアクセス制御の使用に関する SnapCenter 情報"^] 。
 
 
 

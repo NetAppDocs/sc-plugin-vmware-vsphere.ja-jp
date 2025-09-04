@@ -274,7 +274,6 @@
   <block id="271beae8f11b01c3f45767fc1bd5c1a9" category="list-text">前提条件を確認しておく必要があります。</block>
   <block id="020c68712d58d0c6ae79d6422851ae45" category="list-text">セカンダリストレージの関係を設定しておく必要があります。</block>
   <block id="585f74b2337dcf50d5f84248087dbc7a" category="inline-link">ロールベースアクセス制御の使用に関する SnapCenter 情報</block>
-  <block id="6371946f7a59bb407f5608582531db43" category="paragraph">管理者がユーザーにリソースを割り当てる方法については'を参照して<block ref="3c6a9a14d0d13aed475a45101fc3cc00" category="inline-link-rx"></block>ください</block>
   <block id="ddad3ed39c11da21249f852ea88d160e" category="list-text">VMと整合性のあるバックアップが必要な場合は、VMware Toolsをインストールして実行しておく必要があります。VMを休止するには、VMware Toolsが必要です。VM整合性バックアップはVVOL VMではサポートされません。</block>
   <block id="e90ae72a4d203cde9c1d660d983bec13" category="list-text">SnapMirror Active Syncを使用すると、サイト全体に障害が発生してもビジネスサービスの運用を継続できるため、アプリケーションをセカンダリコピーを使用して透過的にフェイルオーバーできます。</block>
   <block id="c2bc8f54778a0e6f72a8fa3f9c96aae7" category="admonition">SnapMirrorアクティブ同期はVMFSデータストアでのみサポートされます。</block>
@@ -2173,4 +2172,5 @@
   <block id="88464b0f22e28142bc76c51bba424a64" category="cell">NFS環境: ONTAP SnapMirrorリストア VMFS環境: Storage VMotionによるクローン作成とマウント</block>
   <block id="12b816ebabce7bea08d953072a6f5d5b" category="paragraph">VM 、データストア、ポリシー、バックアップ、リソースグループの名前には、次の特殊文字は使用できません。 * $#@ ！\ / ： * ？" &lt; &gt; - | ; ' 、およびスペース。アンダースコア文字 (_) も使用できます。</block>
   <block id="8651a2d0c6ade87f04ae0bca90386289" category="paragraph">% &amp; * $ # @ ! \ / ： * ？" &lt; &gt; - | ; ' 、およびスペース。アンダースコア文字 (_) も使用できます。</block>
+  <block id="32ac8d4494e62d5a13c33b3927b542bb" category="paragraph">管理者がユーザーにリソースを割り当てる方法については、以下を参照してください。<block ref="d818f211a7449f29082596280ad483fa" category="inline-link-rx"></block> 。</block>
 </blocks>
