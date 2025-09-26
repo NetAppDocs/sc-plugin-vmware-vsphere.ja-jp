@@ -54,7 +54,7 @@ SnapCenterに登録されているSnapCenter Plug-in for VMware vSphereのイン
 ** 移行後のバックアップのバックアップスケジュールを作成します。
 ** Windowsホストから既存のSnapCenter Plug-in for VMware vSphereをアンインストールします。
 +
-SnapCenter Plug-in for VMware vSphereがSnapCenter Serverホストにインストールされていて、SnapCenterリポジトリ用に保護が設定されている場合は、SnapCenter Plug-in for VMware vSphereおよびSnapCenter Plug-in for Windowsを含むWindowsベースのプラグインパッケージも移行プロセスによってアンインストールされます。 その後、リポジトリ保護をサポートするために最新バージョンのSnapCenter Plug-in for Windowsを再インストールします。SnapCenter GUIのホストタイプが「vsphere」から「windows」に変わります。
+SnapCenter Plug-in for VMware vSphereがSnapCenter Serverホストにインストールされていて、SnapCenterリポジトリの保護が設定されている場合は、SnapCenter Plug-in for VMware vSphereとSnapCenter Plug-in for Windowsが含まれるWindowsベースのプラグイン パッケージも移行プロセスでアンインストールされ、その後リポジトリ保護をサポートするために最新バージョンのSnapCenter Plug-in for Windowsが再インストールされます。SnapCenterユーザー インターフェイスのホスト タイプが「vsphere」から「Windows」に変更されます。
 
 ** Windows SnapCenterサーバからvSphereホストとリソースグループを削除します。
 ** LinuxベースのSnapCenter Plug-in for VMware vSphereでバックアップジョブをアクティブ化します。

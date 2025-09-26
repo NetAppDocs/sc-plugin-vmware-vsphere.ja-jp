@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMバッ�
 
 
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere REST APIを使用してVMバックアップのリストア処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。
+SnapCenter Plug-in for VMware vSphere REST API を使用して VM バックアップを復元するには、以下に示す REST API 呼び出しの必要なシーケンスに従います。
 
 各REST APIについて、REST APIの先頭にを追加し `\https://<server>:<port>` て完全なエンドポイントを形成します。
 

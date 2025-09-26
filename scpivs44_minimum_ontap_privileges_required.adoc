@@ -83,4 +83,4 @@ NOTE: サポートされていないvServerコマンドに関する警告メッ�
 
 
 
-NOTE: ONTAPバージョン9.11.1以降では、REST APIを使用してONTAPクラスタと通信します。ONTAPユーザは、httpアプリケーションを有効にしておく必要があります。ただし、ONTAP REST APIで問題が見つかった場合は、設定キー「force_zapi」を使用して従来のZAPIワークフローに切り替えることができます。設定APIを使用してこのキーを追加または更新し、trueに設定する必要がある場合があります。詳細については、技術情報の記事を参照して https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["RestAPIを使用してSCVの設定パラメータを編集する方法"] ください。
+NOTE: ONTAPバージョン9.11.1以降の場合、ONTAPクラスタとの通信にはREST APIを使用します。ONTAPユーザは、httpアプリケーションを有効にしておく必要があります。ただし、ONTAP REST APIで問題が見つかった場合は、設定キー「FORCE_ZAPI」を使用して従来のZAPIワークフローに切り替えることができます。構成 API を使用してこのキーを追加または更新し、true に設定する必要がある場合があります。  KB記事を参照してください。 https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["RestAPIを使用してSCVの設定パラメータを編集する方法"]詳細についてはこちらをご覧ください。

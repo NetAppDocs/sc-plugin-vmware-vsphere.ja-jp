@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP3337670["SnapCenter Plug-in for VMware vSphere 6.1に関する注意事項"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP3359465["SnapCenter Plug-in for VMware vSphereに関するお知らせ"^]

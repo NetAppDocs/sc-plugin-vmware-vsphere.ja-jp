@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphere GUI からサポートバンドルを生成できます。 
+summary: SnapCenter Plug-in for VMware vSphereユーザー インターフェイスからサポート バンドルを生成できます。 
 ---
-= SnapCenter Plug-in for VMware vSphere GUIからのサポートバンドルの生成
+= SnapCenter Plug-in for VMware vSphereユーザーインターフェイスからサポートバンドルを生成します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,7 +15,7 @@ summary: SnapCenter Plug-in for VMware vSphere GUI からサポートバンド�
 
 .開始する前に
 [role="lead"]
-SnapCenter Plug-in for VMware vSphere管理GUIにログオンするには、IPアドレスとログインクレデンシャルが必要です。また、メンテナンスコンソールから生成されたMFAトークンもメモしておく必要があります。
+SnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログオンするには、IP アドレスとログイン資格情報が必要です。また、メンテナンス コンソールから生成されたMFAトークンもメモしておく必要があります。
 
 * このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されていました。
 * SnapCenter Plug-in for VMware vSphereの導入時に指定したログインクレデンシャル、またはあとで変更したログインクレデンシャルを使用します。
@@ -23,7 +23,7 @@ SnapCenter Plug-in for VMware vSphere管理GUIにログオンするには、IP�
 
 
 .手順
-. SnapCenter Plug-in for VMware vSphere GUIにログインします。
+. SnapCenter Plug-in for VMware vSphereユーザー インターフェイスにログインします。
 +
 の形式を使用します `\https://<OVA-IP-address>:8080`。
 

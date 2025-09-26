@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere
+  name: SnapCenter Plug-in for VMware vSphere 6.2
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '6.1'
+  - version-number: '6.2'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '6.1'
+    url: "/sc-plugin-vmware-vsphere-61"
   - version-number: '6.0'
     url: "/sc-plugin-vmware-vsphere-60"
   - version-number: '5.0'
@@ -26,13 +28,13 @@ settings:
   langs: ja-jp,us-en,de-de,es-es,fr-fr,it-it,pt-br,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: VMware vSphere 6.1向けSnapCenterプラグイン
+  - title: SnapCenter Plug-in for VMware vSphere 6.2
     url: "/index.html"
   - title: リリースノート
     entries:
     - title: SnapCenter Plug-in for VMware vSphereリリースノート
       url: "/scpivs44_release_notes.html"
-    - title: SnapCenter Plug-in for VMware vSphere 6.1の新機能
+    - title: SnapCenter Plug-in for VMware vSphereの新機能
       url: "/scv_releasenotes_whats_new.html"
     - title: アップグレードパス
       url: "/scv_rn_upgrade_paths.html"
@@ -40,7 +42,7 @@ sidebar:
     entries:
     - title: 製品概要
       url: "/scpivs44_concepts_overview.html"
-    - title: 各種SnapCenter GUIの概要
+    - title: さまざまなSnapCenterユーザーインターフェースの概要
       url: "/scpivs44_overview_of_different_snapcenter_guis.html"
     - title: ライセンス
       url: "/scpivs44_licensing.html"
@@ -100,7 +102,7 @@ sidebar:
       url: "/scpivs44_download_job_logs.html"
     - title: レポートへのアクセス
       url: "/scpivs44_access_reports.html"
-    - title: SnapCenter Plug-in for VMware vSphere GUIからのサポートバンドルの生成
+    - title: SnapCenter Plug-in for VMware vSphereユーザー インターフェイスからサポート バンドルを生成します。
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: メンテナンスコンソールからサポートバンドルを生成する
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"

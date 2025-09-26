@@ -24,7 +24,7 @@ SnapCenterユーザがSnapCenter 4.2にアップグレードし、VMDK経由の�
 
 
 .タスクの内容
-* SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録するには、SnapCenter GUIを使用して「vSphere」タイプのホストを追加します。
+* SnapCenterユーザー インターフェイスを使用して「vsphere」タイプのホストを追加し、 SnapCenter Plug-in for VMware vSphere をSnapCenter Server に登録します。
 +
 ポート8144は、SnapCenter Plug-in for VMware vSphere内の通信用に事前定義されています。
 
@@ -35,7 +35,7 @@ SnapCenter Plug-in for VMware vSphereの複数のインスタンスを同じSnap
 
 
 .手順
-. SnapCenter GUIの左側のナビゲーションペインで、*[ホスト]*を選択します。
+. SnapCenterユーザー インターフェイスの左側のナビゲーション ペインで、*ホスト* を選択します。
 . 上部で [Managed Hosts] タブが選択されていることを確認し、仮想アプライアンスのホスト名を見つけて、 SnapCenter サーバから解決されることを確認します。
 . [追加]*を選択してウィザードを開始します。
 . [Add Hosts] ダイアログ・ボックスで ' 次の表に示すように SnapCenter サーバに追加するホストを指定します

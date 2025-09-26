@@ -22,9 +22,16 @@ SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレー�
 
 
  a| 
+SCV 6.1
+ a| 
+SCV 6.2
+
+
+
+ a| 
 SCV 6.0
  a| 
-SCV 6.1
+SCV 6.1 および SCV 6.2
 
 
 
@@ -40,26 +47,21 @@ SCV 4.9
  a| 
 SCV 5.0 および SCV 6.0
 
-
-
- a| 
-SCV 4.8
- a| 
-SCV 4.9 および SCV 5.0
-
-
-
- a| 
-SCV 4.7
- a| 
-SCV 4.8 および SCV 4.9
-
 |===
 SnapCenterに統合されている仮想データベースおよびファイルシステムの場合は、次のアップグレードパスを使用します。
 
 [cols="30%,30%,40%"]
 |===
 | 使用するポート | VMwareプラグインの状態 | 以下に直接アップグレードできます。 
+
+
+ a| 
+SnapCenter 6.2
+ a| 
+SCV 6.1
+ a| 
+SCV 6.2
+
 
 
  a| 

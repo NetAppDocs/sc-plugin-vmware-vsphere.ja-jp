@@ -14,7 +14,7 @@ summary: SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使�
 
 
 
-NOTE: SCV 6.1へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。
+NOTE: SCV 6.2へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。
 
 SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスでは、既存のプラグインが登録解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
 
@@ -28,7 +28,10 @@ SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用して�
 | SnapCenter Plug-in for VMware vSphere（SCV）のバージョン | SnapCenter Plug-in for VMware vSphereを直接アップグレードできる環境 
 
 
-| SCV 6.0 | SCV 6.1へのアップグレード 
+| SCV 6.1 | SCV 6.2へのアップグレード 
+
+
+| SCV 6.0 | SCV 6.1およびSCV 6.2へのアップグレード 
 
 
 | SCV 5.0 | SCV 6.0およびSCV 6.1へのアップグレード 
@@ -56,7 +59,7 @@ NOTE: ネットワーク設定を静的からDHCPに切り替えることはで�
 .手順
 . SnapCenter Plug-in for VMware vSphereを無効にしてアップグレードを準備します。
 +
-.. SnapCenter Plug-in for VMware vSphere管理GUIにログインします。IPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されます。
+.. SnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインします。このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されたものです。
 .. 左側のナビゲーションペインで*[設定]*を選択し、[プラグインの詳細]セクションで*[サービス]*オプションを選択してプラグインを無効にします。
 
 
@@ -70,7 +73,7 @@ NOTE: ネットワーク設定を静的からDHCPに切り替えることはで�
 . アップグレードをインストールします。
 +
 .. ブラウザで、VMware vSphere vCenterに移動します。
-.. vCenter GUIで、* vSphere Client（HTML）*を選択します。
+.. vCenter ユーザー インターフェイスで、*vSphere クライアント (HTML)* を選択します。
 .. VMware vCenter Single Sign-On * ページにログインします。
 .. ナビゲータペインで、アップグレードするVMを選択し、*[概要]*タブを選択します。
 .. [関連オブジェクト]ペインで、リスト内の任意のデータストアを選択し、*[概要]*タブを選択します。

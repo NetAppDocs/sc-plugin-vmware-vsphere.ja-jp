@@ -19,7 +19,7 @@ REST APIはSwagger Webページから利用できます。SnapCenterサーバま
 このプラグインには、SnapCenterサーバのSwagger Webページとは別のSwagger Webページがあります。
 
 .開始する前に
-SnapCenter Plug-in for VMware vSphere REST APIの場合は、SnapCenter Plug-in for VMware vSphereのIPアドレスまたはホスト名を確認しておく必要があります。
+SnapCenter Plug-in for VMware vSphere REST API にアクセスするには、 SnapCenter Plug-in for VMware vSphere のIP アドレスまたはホスト名があることを確認してください。
 
 
 NOTE: このプラグインでは、サードパーティ製アプリケーションとの統合を目的としたREST APIのみがサポートされており、PowerShellコマンドレットやCLIはサポートされていません。

@@ -28,7 +28,11 @@ Perlスクリプトとシェルスクリプトがサポートされています�
 
 プリスクリプトとポストスクリプトは、SnapCenter Plug-in for VMware vSphereで実行されます。そのため、スクリプトは実行可能な権限を持つSnapCenter Plug-in for VMware vSphere OVA内に格納されている必要があります。
 
-例：* Perlスクリプトパスは*シェルスクリプトパス `/support/support/script.pl` は `/support/support/script.sh`
+例えば：
+
+* PERLスクリプトのパスは次のようになります `/support/support/script.pl`
+* シェルスクリプトのパスは次のようになります `/support/support/script.sh`
+
 
 スクリプトパスは、スクリプトの実行時に検証されます。
 
@@ -64,7 +68,11 @@ NOTE: プレスクリプトが失敗すると、バックアップは正常に�
 
 NOTE: ポストスクリプトが失敗すると、バックアップは正常に完了し、警告メッセージが送信されます。
 
-次の点をチェックして、スクリプトの値が入力されていることを確認します。* Perlスクリプトの場合 `/support/support/log_env.log` ：*シェルスクリプトの場合： `/support/support/log_file.log`
+次のファイルを調べて、スクリプトの値が設定されていることを確認します。
+
+* PERL スクリプトの場合: `/support/support/log_env.log`
+* シェルスクリプトの場合: `/support/support/log_file.log`
+
 
 
 

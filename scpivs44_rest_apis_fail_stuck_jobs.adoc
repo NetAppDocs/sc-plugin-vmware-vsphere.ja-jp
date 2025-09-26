@@ -24,5 +24,5 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere Clie
 | REST API | コメント 
 
 
-| `/4.1/jobs/{id}/failJobs` | 実行中の状態で停止しているジョブのIDを渡すと、は `failJobs` それらのジョブを失敗としてマークします。実行中の状態で停止しているジョブを特定するには、ジョブ監視GUIを使用して各ジョブの状態とジョブIDを確認します。 
+| `/4.1/jobs/{id}/failJobs` | 実行状態のままになっているジョブのIDを渡すと、 `failJobs`これらのジョブを失敗としてマークします。実行状態のままになっているジョブを識別するには、ジョブ モニターのユーザー インターフェイスを使用して、すべてのジョブの状態とジョブ ID を確認します。 
 |===

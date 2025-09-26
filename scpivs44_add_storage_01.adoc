@@ -16,7 +16,7 @@ summary: ストレージを追加すると、SnapCenter Plug-in for VMware vSphe
 [role="lead"]
 VMをバックアップまたはリストアする前に、ストレージクラスタまたはStorage VMを追加する必要があります。ストレージを追加すると、SnapCenter Plug-in for VMware vSphereでvCenterのバックアップとリストアの処理を認識して管理できるようになります。
 
-* 使用するGUI
+* 使用するユーザーインターフェース
 +
 VMware vSphere Clientを使用してストレージを追加します。
 
@@ -40,7 +40,7 @@ ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterが�
 SnapCenter Plug-in for VMware vSphereは、直接接続されたStorage VMおよびストレージクラスタ内のStorage VMに対してバックアップとリストアの処理を実行します。
 
 
-NOTE: SnapCenter Plug-in for VMware vSphereを使用してVMDK上のアプリケーションベースのバックアップをサポートする場合は、SnapCenter GUIを使用してストレージ認証の詳細を入力し、ストレージシステムを登録する必要があります。
+NOTE: VMDK 上のアプリケーションベースのバックアップをサポートするためにSnapCenter Plug-in for VMware vSphereを使用している場合は、 SnapCenterユーザー インターフェイスを使用してストレージ認証の詳細を入力し、ストレージ システムを登録する必要があります。
 
 * リンクモードのvCenterでは、各vCenterにストレージシステムを個別に追加する必要があります。
 * SVMを追加する場合は、Storage VMの名前が管理LIFに解決される必要があります。

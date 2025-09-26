@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_overview_of_different_snapcenter_guis.html 
 keywords:  
-summary: SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理には、vCenterのVMware vSphere Client GUIを使用する必要があります。 
+summary: SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロン プラグインです。VM、VMDK、およびデータストアのすべてのバックアップおよび復元操作には、vCenter の VMware vSphere クライアント ユーザー インターフェイスを使用する必要があります。 
 ---
-= 各種SnapCenter GUIの概要
+= さまざまなSnapCenterユーザーインターフェースの概要
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,31 +14,31 @@ summary: SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグイ
 
 
 [role="lead"]
-SnapCenter環境では、適切なGUIを使用してデータ保護処理と管理処理を実行する必要があります。
+SnapCenter環境では、適切なユーザー インターフェイスを使用してデータ保護および管理操作を実行する必要があります。
 
-SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロンプラグインです。VM、VMDK、およびデータストアのすべてのバックアップ処理とリストア処理には、vCenterのVMware vSphere Client GUIを使用する必要があります。また、WebクライアントのGUIダッシュボードを使用して、保護されているVMと保護されていないVMのリストを監視することもできます。バックアップ、リストア、ジョブ監視など、他のすべてのSnapCenterプラグイン（アプリケーションベースのプラグイン）処理には、SnapCenter GUIを使用します。
+SnapCenter Plug-in for VMware vSphereは、他のSnapCenterプラグインとは異なるスタンドアロン プラグインです。VM、VMDK、およびデータストアのすべてのバックアップおよび復元操作には、vCenter の VMware vSphere クライアント ユーザー インターフェイスを使用する必要があります。また、Web クライアント ユーザー インターフェイス ダッシュボードを使用して、保護されている VM と保護されていない VM のリストを監視することもできます。バックアップと復元、ジョブ監視などのその他のすべてのSnapCenterプラグイン (アプリケーション ベースのプラグイン) 操作では、 SnapCenterユーザー インターフェイスを使用します。
 
-VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。WebクライアントGUIは、ストレージシステム上でNetAppスナップショットテクノロジと統合されます。これにより、VMとデータストアを数秒でバックアップし、ESXiホストをオフラインにすることなくVMをリストアできます。
+VMとデータストアを保護するには、VMware vSphere Clientインターフェイスを使用します。Web クライアント ユーザー インターフェイスは、ストレージ システム上のNetAppスナップショット テクノロジと統合されます。これにより、VMやデータストアを数秒でバックアップし、ESXiホストをオフラインにすることなくVMをリストアすることが可能です。
 
-また、SnapCenter Plug-in for VMware vSphereで管理操作を実行するための管理GUIも用意されています。
+SnapCenter Plug-in for VMware vSphereで管理操作を実行するための管理ユーザー インターフェイスもあります。
 
-次の表に、SnapCenter GUIで実行される処理を示します。
+次の表は、 SnapCenterユーザー インターフェイスが実行する操作を示しています。
 
 |===
-| 使用する GUI | 実行する処理 | バックアップへのアクセス 
+| このユーザー インターフェースを使用します... | 実行する処理 | バックアップへのアクセス 
 
 
-| SnapCenter vSphereクライアントGUI | VM およびデータストアバックアップ VMDK を接続し、データストアマウントを接続解除して、 VM および VMDK リストアゲストファイルおよびフォルダのリストアをアンマウントします | VMware vSphere Client GUIを使用したVMとデータストアのバックアップ 
+| SnapCenter vSphere クライアント ユーザー インターフェース | VM およびデータストアバックアップ VMDK を接続し、データストアマウントを接続解除して、 VM および VMDK リストアゲストファイルおよびフォルダのリストアをアンマウントします | VMware vSphere クライアント ユーザー インターフェイスを使用した VM およびデータストアのバックアップ。 
 
 
-| SnapCenter GUI | VM上のデータベースとアプリケーションのバックアップとリストア（Microsoft SQL Server、Microsoft Exchange、Oracleのデータベースの保護など）データベースクローン | バックアップはSnapCenter GUIを使用して実行されます。 
+| SnapCenterユーザーインターフェース | VM上のデータベースとアプリケーションのバックアップとリストア（Microsoft SQL Server、Microsoft Exchange、Oracleのデータベースの保護など）データベースクローン | SnapCenterユーザー インターフェイスを使用して実行されるバックアップ。 
 
 
-| SnapCenter Plug-in for VMware vSphere管理GUI | ネットワーク設定の変更サポートバンドルの生成 NTP サーバ設定の変更プラグインを無効 / 有効にします | N/A 
+| SnapCenter Plug-in for VMware vSphere | ネットワーク設定の変更サポートバンドルの生成 NTP サーバ設定の変更プラグインを無効 / 有効にします | N/A 
 
 
-| vCenter GUI | vCenter Active Directory ユーザに SCV ロールを追加するユーザまたはグループにリソースアクセスを追加する | N/A 
+| vCenter ユーザーインターフェース | vCenter Active Directory ユーザに SCV ロールを追加するユーザまたはグループにリソースアクセスを追加する | N/A 
 |===
-VM整合性のあるバックアップおよびリストア処理には、VMware vSphere Client GUIを使用する必要があります。データストアのマウントや名前変更など、一部の処理はVMwareツールを使用して実行できますが、それらの処理はSnapCenterリポジトリに登録されず、認識されません。
+VM 整合性のあるバックアップおよび復元操作を行うには、VMware vSphere クライアント ユーザー インターフェイスを使用する必要があります。データストアのマウントや名前変更など、一部の処理はVMware Toolsを使用して実行できますが、これらの処理はSnapCenterリポジトリに登録されず、認識されません。
 
-SnapCenterでは、データベースとVMの単一Snapshotを同時に作成することはできません。VMとデータベースのバックアップは、スケジュールを設定して個別に実行する必要があります。そのため、データベースとVMが同じボリュームでホストされている場合でも、個別のSnapshotが作成されます。アプリケーションベースのバックアップはSnapCenter GUIを使用してスケジュール設定する必要があります。VM整合性バックアップはVMware vSphere Client GUIを使用してスケジュール設定する必要があります。
+SnapCenter は、データベースと VM の単一スナップショットをサポートしていません。 VM とデータベースのバックアップは個別にスケジュール設定して実行する必要があり、データベースと VM が同じボリュームにホストされている場合でも個別のスナップショットが作成されます。アプリケーションベースのバックアップはSnapCenterユーザー インターフェイスを使用してスケジュールする必要があります。VM 整合性バックアップは VMware vSphere クライアント ユーザー インターフェイスを使用してスケジュールする必要があります。

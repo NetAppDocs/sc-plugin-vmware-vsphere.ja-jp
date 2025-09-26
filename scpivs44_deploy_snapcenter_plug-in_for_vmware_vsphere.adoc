@@ -22,17 +22,17 @@ SnapCenterの機能を使用して仮想マシン上のVM、データストア�
 
 NOTE: OVA環境は、VMware vCenter 7u1以上でサポートされます。
 
-* 導入要件を確認しておく必要があります。
-* サポートされているバージョンのvCenter Serverが実行されている必要があります。
-* vCenter Server環境の設定とセットアップが完了している必要があります。
-* SnapCenter Plug-in for VMware vSphere VM用のESXiホストのセットアップが完了している必要があります。
-* SnapCenter Plug-in for VMware vsphere.tarファイルをダウンロードしておく必要があります。
-* vCenter Serverインスタンスのログイン認証の詳細を確認しておく必要があります。
-* 有効な公開鍵ファイルと秘密鍵ファイルを持つ証明書が必要です。詳細については、セクションの記事を参照して https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["ストレージ証明書の管理"] ください。
-* vSphere Clientのすべてのブラウザセッションからログアウトして閉じておく必要があります。また、SnapCenter Plug-in for VMware vSphereの導入時にブラウザキャッシュの問題が発生しないように、ブラウザキャッシュを削除しておく必要があります。
-* vCenterでTransport Layer Security（TLS）を有効にしておく必要があります。VMwareのドキュメントを参照してください。
-* SnapCenter Plug-in for VMware vSphereが導入されているvCenter以外のvCenterでバックアップを実行する場合は、ESXiサーバ、SnapCenter Plug-in for VMware vSphere、および各vCenterを同時に同期する必要があります。
-* VVOLデータストアのVMを保護するには、まずONTAP tools for VMware vSphereを導入する必要があります。サポートされているONTAP toolsのバージョンの最新情報については、を参照してください https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]。ONTAP toolsは、ONTAPおよびVMware Web Client上でストレージをプロビジョニングおよび設定します。
+* 展開要件を必ず確認してください。
+* サポートされているバージョンの vCenter Server を実行していることを確認します。
+* vCenter Server 環境が構成され、セットアップされていることを確認します。
+* SnapCenter Plug-in for VMware vSphere VM 用の ESXi ホストを準備します。
+* SnapCenter Plug-in for VMware vSphere .tar ファイルをダウンロードします。
+* vCenter Server インスタンスのログイン資格情報を取得します。
+* 有効な公開キー ファイルと秘密キー ファイルを含む証明書を取得します。詳細については、 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["ストレージ証明書の管理"]セクション。
+* 展開中に問題が発生しないように、すべての vSphere クライアント ブラウザ セッションからログアウトして閉じ、ブラウザ キャッシュをクリアします。
+* vCenter でトランスポート層セキュリティ (TLS) を有効にします。  VMware のドキュメントを参照してください。
+* SnapCenter Plug-in for VMware vSphereがデプロイされている vCenter 以外の vCenter でバックアップを実行する場合は、ESXi サーバ、 SnapCenter Plug-in for VMware vSphere、および各 vCenter が同じ時刻に同期されていることを確認してください。
+* vVol データストア上の VM を保護するには、まずONTAP tools for VMware vSphereを導入します。サポートされているONTAPツールのバージョンについては、 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] 。  ONTAPツールは、 ONTAPおよび VMware Web クライアント上のストレージをプロビジョニングおよび構成します。
 
 
 vCenterと同じタイムゾーンでSnapCenter Plug-in for VMware vSphereを導入します。バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。
@@ -136,11 +136,11 @@ VMware Toolsは、SnapCenter Plug-in for VMware vSphereが導入されているV
 導入が完了するまでに数分かかることがあります。SnapCenter Plug-in for VMware vSphereの電源がオンになると導入が成功したことが通知され、VMware Toolsがインストールされ、SnapCenter Plug-in for VMware vSphereへのログインを求める画面が表示されます。初回リブート時に、ネットワーク設定を DHCP から静的に切り替えることができます。ただし、スタティックからDHCPへの切り替えはサポートされていません。
 
 +
-画面に、SnapCenter Plug-in for VMware vSphereの導入先のIPアドレスが表示されます。IPアドレスをメモします。SnapCenter Plug-in for VMware vSphereの設定を変更する場合は、SnapCenter Plug-in for VMware vSphere管理GUIにログインする必要があります。
+画面にはSnapCenter Plug-in for VMware vSphereの導入先のIPアドレスが表示されます。IPアドレスをメモしておきます。SnapCenter Plug-in for VMware vSphere の設定を変更する場合は、SnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインする必要があります。
 
-. 導入画面に表示されたIPアドレスと導入ウィザードで指定したクレデンシャルを使用して、SnapCenter Plug-in for VMware vSphere管理GUIにログインします。 ダッシュボードで、SnapCenter Plug-in for VMware vSphereがvCenterに接続され、有効になっていることを確認します。
+. デプロイメント画面に表示された IP アドレスとデプロイメント ウィザードで指定した資格情報を使用してSnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインし、ダッシュボードでSnapCenter Plug-in for VMware vSphereが vCenter に正常に接続され、有効になっていることを確認します。
 +
-管理GUIにアクセスするには、の形式を使用し `\https://<appliance-IP-address>:8080` ます。
+フォーマットを使用する `\https://<appliance-IP-address>:8080`管理ユーザー インターフェイスにアクセスします。
 
 +
 導入時に設定したadminユーザ名とパスワード、およびメンテナンスコンソールを使用して生成されたMFAトークンを使用してログインします。

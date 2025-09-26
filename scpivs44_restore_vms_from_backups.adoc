@@ -97,7 +97,7 @@ VMのVMware整合性スナップショットが失敗した場合でも、VMは�
 
 
 .手順
-. VMware vSphere ClientのGUIで、ツールバーの*[メニュー]*を選択し、ドロップダウンリストから*[仮想マシンおよびテンプレート]*を選択します。
+. VMware vSphere クライアント ユーザー インターフェイスで、ツールバーの *メニュー* を選択し、ドロップダウン リストから *VM とテンプレート* を選択します。
 +
 
 NOTE: 削除したVMをリストアする場合は、SnapCenter Plug-in for VMware vSphereに追加したStorage VMのクレデンシャルは、またはと同じ権限を持つユーザアカウントである必要があります `vsadmin` `vsadmin`。

@@ -1,29 +1,22 @@
 ---
 permalink: scv_releasenotes_whats_new.html 
 sidebar: sidebar 
-keywords: 'what"s new, release notes, scv, 6.1' 
-summary: SnapCenter Plug-in for VMware vSphere 6.1の新機能について説明します。 
+keywords: 'what"s new, release notes, scv, 6.2' 
+summary: SnapCenter Plug-in for VMware vSphereで利用できる新しい機能について説明します。 
 ---
-= SnapCenter Plug-in for VMware vSphere 6.1の新機能
+= SnapCenter Plug-in for VMware vSphereの新機能
 :allow-uri-read: 
 
 
 [role="lead"]
-* ASA R2システムでのVMおよびVMFSデータストアのサポート*
+SnapCenter Plug-in for VMware vSphereで利用できる新しい機能について説明します。
 
-SnapCenter Plug-in for VMware vSphere 6.1リリースでは、ASA R2システムでの仮想マシン（VM）とVMFSデータストアのプロビジョニングがサポートされます。ASA R2システムは、ハードウェアとソフトウェアの統合ソリューションを提供し、SANのみのお客様のニーズに合わせてシンプルな操作性を実現します。SnapCenter Plug-in for VMware vSphere 6.1でサポートされるASA R2システム上のVM、データストア、仮想マシンディスクフォーマット（VMDK）の機能は次のとおりです。
+SnapCenter Plug-in for VMware vSphere 6.2 リリースでは、 ONTAP 9.17.1 以降を実行しているASA r2 システムの VMFS データストア上の仮想マシン (VM) のバックアップとリカバリのサポートが追加されました。このリリースでは、 ASA r2 システム上の VM、データストア、および仮想マシン ディスク (VMDK) 形式に対して次の操作を実行できます。
 
-* プライマリ保護のための整合グループのプロビジョニング
-* 整合グループベースのバックアップ
-* クローニングのワークフロー
-* リストアのワークフロー
-* リソースグループを作成または変更するときのセカンダリ保護プロビジョニング。
-+
+* プライマリ保護のための整合性グループのプロビジョニング
+* 整合性グループベースのバックアップを実行する
+* 階層的整合性グループを使用する（ ONTAP 9.17.1以降のバージョンで利用可能）
+* クローンワークフローを実行する
+* 復元ワークフローを実行する
+* リソース グループの作成または変更時に二次保護をプロビジョニングする ( ONTAP 9.16.1 以降のバージョンで利用可能)
 
-NOTE: セカンダリ保護はONTAP 9.16.1以降のバージョンでのみサポートされます。
-
-
-
-*セカンダリ改ざん防止スナップショット（TPS）のサポート*
-
-SnapCenter Plug-in for VMware vSphereでは、セカンダリTPSのサポートが導入されています。これにより、ランサムウェア攻撃者や不正な管理者による削除や変更からセカンダリSnapshotコピーを保護し、攻撃後も使用できるようになります。
