@@ -2163,4 +2163,6 @@
   <block id="90a8886635ee0da0c4b0c0f9f05014c9" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.2</block>
   <block id="62889a042309a4c109020af336b64d80" category="sidebar">SnapCenter Plug-in for VMware vSphereの新機能</block>
   <block id="5f9632818cc0b2ae9e72f12df491a0d9" category="sidebar">SnapCenter Plug-in for VMware vSphereユーザー インターフェイスからサポート バンドルを生成します。</block>
+  <block id="d6ede90a002c3b83d155e427efb5f090" category="admonition">Amazon FSx for NetApp ONTAPストレージ システムのサポートは、SCV 6.2 リリース以降で利用可能になります。</block>
+  <block id="7b373df72819a720b694167ed282840b" category="list-text">グローバル権限の下で、ユーザーを事前定義されたロールに関連付けることができます。</block>
 </blocks>

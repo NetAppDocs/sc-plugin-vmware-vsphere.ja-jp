@@ -32,6 +32,7 @@ SnapCenter Plug-in for VMware vSphereを導入すると、vCenterでのSnapCente
 
 vSphere管理者は、次の手順でvCenter Server RBACを設定します。
 
+* グローバル権限の下で、ユーザーを事前定義されたロールに関連付けることができます。
 * ルートオブジェクト（ルートフォルダとも呼ばれます）に対するvCenter Serverアクセス許可を設定します。その後、アクセス許可が不要な子エンティティのアクセスを禁止することでセキュリティを強化できます。
 * Active DirectoryユーザにSCVロールを割り当てます。
 +
