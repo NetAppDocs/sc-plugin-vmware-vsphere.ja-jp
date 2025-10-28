@@ -32,7 +32,7 @@ NOTE: OVA環境は、VMware vCenter 7u1以上でサポートされます。
 * 展開中に問題が発生しないように、すべての vSphere クライアント ブラウザ セッションからログアウトして閉じ、ブラウザ キャッシュをクリアします。
 * vCenter でトランスポート層セキュリティ (TLS) を有効にします。  VMware のドキュメントを参照してください。
 * SnapCenter Plug-in for VMware vSphereがデプロイされている vCenter 以外の vCenter でバックアップを実行する場合は、ESXi サーバ、 SnapCenter Plug-in for VMware vSphere、および各 vCenter が同じ時刻に同期されていることを確認してください。
-* vVol データストア上の VM を保護するには、まずONTAP tools for VMware vSphereを導入します。サポートされているONTAPツールのバージョンについては、 https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] 。  ONTAPツールは、 ONTAPおよび VMware Web クライアント上のストレージをプロビジョニングおよび構成します。
+* vVol データストア上の VM を保護するには、まずONTAP tools for VMware vSphereを導入します。サポートされているONTAPツールのバージョンについては、 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] 。ONTAPツールは、 ONTAPおよび VMware Web クライアント上のストレージをプロビジョニングおよび構成します。
 
 
 vCenterと同じタイムゾーンでSnapCenter Plug-in for VMware vSphereを導入します。バックアップスケジュールは、SnapCenter Plug-in for VMware vSphereが導入されているタイムゾーンで実行されます。 vCenterでは、vCenterが配置されているタイムゾーンのデータが報告されます。そのため、SnapCenter Plug-in for VMware vSphereとvCenterが異なるタイムゾーンにある場合は、SnapCenter Plug-in for VMware vSphereダッシュボードのデータがレポートのデータと同じでない可能性があります。

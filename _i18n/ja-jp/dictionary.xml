@@ -1758,8 +1758,6 @@
   <block id="f6599049db87ec18cb4b8b124bbae9bb" category="admonition">リストア処理中に、エラーが表示されることがあります。または、SnapCenter Plug-in for VMware vSphereがクローンの再署名を試みたときにこのエラーが発生することがあり<block ref="8bca5bf79dc6a0592d8b28b7fc9c19a9" prefix=" " category="inline-code"></block><block ref="9e17d1b629230b07cfa91237bf97bfc3" prefix=" " category="inline-code"></block> ます。VMwareの制限により、高度なESXiホスト構成では、SnapCenter Plug-in for VMware vSphereで自動再署名の値を制御できません。NVMe over TCPおよびNVMe over FCストレージでは、新しいサブシステムを追加したときにSCVでコントローラを動的に追加することはできません。マウント処理の前に、必要なマッピングを作成しておく必要があります。</block>
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
   <block id="2233cc73f35f4d66a36bbbeebab35281" category="doc">SnapCenter Plug-in for VMware vSphereリリースノート</block>
-  <block id="c5dcd35af16918a17ee9c3a5c153f0af" category="inline-link">IMT</block>
-  <block id="2d15261526cfe20309636c59ec64f54e" category="paragraph">サポートされるバージョンの最新情報については、NetApp Interoperability Matrix Toolを<block ref="b3ca33d6c3d8c65c6db17cc2a6a779f0" category="inline-link-rx"></block>参照してください）。</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">アップグレード可能なSnapCenter Plug-in for VMware vSphere（SCV）のバージョンは、現在実行しているバージョンによって異なります。</block>
   <block id="4181b34482469dce169449ef3b643b27" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。</block>
   <block id="e369a7ee41a72fa8a44419a1129cc575" category="cell">SCVバージョンを使用している場合</block>
@@ -1884,14 +1882,12 @@
   <block id="3401faaaca2b403aa3e354193cdbe7a1" category="paragraph">[次へ]*を選択すると、SnapCenterが管理しており、選択したVMまたはデータストアが配置されているストレージと互換性があるかどうかが最初にチェックされます。というメッセージが表示された場合は<block ref="c238c6c4153d32597097e3ae5ddc6f78" prefix=" " category="inline-code"></block> 、選択したVMまたはデータストアがSnapCenterと互換性がありません。詳細については、を参照してください <block ref="83219d9586902f9891ecf56cd903fe4b" category="inline-link-macro-rx"></block> 。</block>
   <block id="fd656c0bdef7b84ded620741d1ebb376" category="list-text">[概要]ページが表示されるまで[次へ]*を選択し、概要を確認して*[完了]*を選択します。</block>
   <block id="9908ac5f8e797129562c3b75eb5fb433" category="list-text">SCVプラグインの左側のナビゲータペインで、*[Storage Systems]*を選択し、*[Add]*オプションを選択します。</block>
-  <block id="5340605920c74d43338f5c58ec29e22c" category="paragraph">詳細については、ONTAP Tools for VMware vSphereのドキュメントを参照してください。また、ONTAP toolsでサポートされるバージョンの最新情報については、を参照してください<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
   <block id="dd5a6f2f3b2995c6412ee7fc5c68ae87" category="paragraph">バックアップリストをフィルタするには、フィルタアイコンを選択し、日時の範囲、VMwareスナップショットを含むバックアップの有無、マウントするバックアップの有無、および場所を選択します。「* OK *」を選択します。</block>
   <block id="05a059f12f4b8c90596d54cd9440e965" category="list-text">[Attach]*を選択します。</block>
   <block id="6eec9b5b83edb792f92ed90fcf16c67b" category="list-text">ツールバーの*[メニュー]*を選択し、ドロップダウンリストから*[仮想マシンおよびテンプレート]*を選択します。</block>
   <block id="5024f06eaeb6343b1d2db413894a44c8" category="list-text">SCVプラグインの左側のナビゲーションペインで、*[リソースグループ]*を選択し、リソースグループを選択して*[今すぐ実行]*を選択し<block ref="aeba2b9f883565da26d0265e5ca2ca10" category="inline-image-macro-rx" type="image"></block>てバックアップを開始します。</block>
   <block id="100c073728a93280afb75a57112c2bf8" category="list-text">[OK]*を選択してバックアップを開始します。</block>
   <block id="cc5ac12b41743b16bd07f0041afa5ef1" category="list-text">仮想アプライアンスの*[概要]*タブで*[リモートコンソールの起動]*または[Webコンソールの起動]*を選択して、メンテナンスコンソールウィンドウを開きます。</block>
-  <block id="18eb3325cee0222ae3e641b5398c3ad1" category="paragraph">サポートされるバージョンの最新情報については、（IMT）を参照して<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block> ください。</block>
   <block id="58cfdd22a1545e36ea707ea6bf21028f" category="list-text">[Select VM]*を選択し、*[Proxy VM]*ダイアログボックスでVMを選択します。[保存]*を選択して*[クレデンシャルとして実行]*ダイアログボックスに戻ります。クレデンシャルの認証に使用するVMを選択します。</block>
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">[ 保存（ Save ） ] を選択します。</block>
   <block id="bbe1604d17d5228e6cf954f520fbcea1" category="list-text">SCVプラグインの左側のナビゲータペインで、*[Policies]*を選択し、*[New Policy]*を選択します。</block>
@@ -1916,8 +1912,6 @@
   <block id="16d41e5fa51f9cba7e28f18a6e0fc481" category="cell">ページを確認し、*[終了]*を選択します。</block>
   <block id="3edcaaa1fd86e6f2a40157811ebb01e1" category="list-text">SnapCenter Plug-in for VMware vSphereを導入したVMに移動し、*[概要]*タブを選択し、*[電源オン]*ボックスを選択してSnapCenter Plug-in for VMware vSphereを起動します。</block>
   <block id="4c42aedb90b93c454e82cb69bd919064" category="list-text">vCenter HTML5クライアントにログインし、ツールバーの*[メニュー]*を選択し、*[VMware vSphere用SnapCenterプラグイン]*を選択します。</block>
-  <block id="6ead0b569222ee8512a314e45dd85a21" category="cell">SnapCenter Plug-in for VMware vSphereは、このを使用してVVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、を参照してください<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
-  <block id="b87a35e8b1ff0c734dec37c43fc7ba6e" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block>。</block>
   <block id="d0f9811f0da480925e8c3f5e76409f54" category="list-text">[仮想ディスクの接続解除]*画面で、接続を解除するディスクを1つ以上選択し、*[選択したディスクの接続解除]*チェックボックスを選択して*[接続解除]*を選択します。</block>
   <block id="786a1456c6dc1153a986286442b671dc" category="list-text">左側のナビゲーションペインで*[設定]*を選択し、*[プラグインの詳細]*セクションで[サービス]オプションの選択を解除してプラグインを無効にします。</block>
   <block id="6dfcb68f8429554bd841be76d633bbd1" category="paragraph">ジョブをダブルクリックして[Job Details]ウィンドウにアクセスし、*[Download Job Logs]*を選択することもできます。</block>
@@ -1980,9 +1974,6 @@
   <block id="ecaa5b9363bd3e23ada741ccc7512473" category="paragraph">個 々 のファイルを参照して選択するフォルダをダブル選択すると、実行時にフェッチ操作が実行されるため、ファイルのリストのフェッチ中に時間遅延が発生することがあります。</block>
   <block id="642918e808461b51c37c9e8d7909ffdb" category="list-text">リストアするファイルまたはフォルダを1つ以上選択し、*リストア先の選択*を選択します。</block>
   <block id="f77361b272ce81d8275727f7b1a756a8" category="list-text">[* Restore] を選択します。</block>
-  <block id="903d29a0523ca22e4dcbac24e33ef3f4" category="paragraph">サポートされているバージョンの最新情報については、を参照してください<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
-  <block id="e48b6aae8f268fb1220ec073d110a1ec" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアできます。サポートされているゲストOSの最新情報については、を参照してください<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。</block>
-  <block id="1ebf62949d055407b1151236c6390c01" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアできます。サポートされているゲストOSの最新情報については、を参照して<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>ください。</block>
   <block id="78e939bd5a7e9753b83a4aa950117e52" category="cell">ドロップダウンリストから*[特定のディスク]*を選択し、*[次へ]*を選択します。[Datastore]選択テーブルで、VMDKを選択または選択解除できます。</block>
   <block id="99b54fcdde08e8f03e3d080dede7ffaf" category="cell">デスティネーションデータストアを選択し、リストから別のデータストアを選択します。</block>
   <block id="c6e0d914d3ce8312422c0f87cce38dec" category="cell">[ホストおよびクラスタ]*メニューオプションを選択し、VMを選択して*[設定]*タブを選択し、* SnapCenter Plug-in for VMware vSphereセクション*で*[バックアップ]*を選択します。</block>
@@ -2020,7 +2011,6 @@
   <block id="cf26c37864b6057757bc11f14c25d631" category="inline-link">SnapMirrorアクティブ同期用のONTAP Mediatorとクラスタの設定</block>
   <block id="7bf83651187bd5c60252c236bb21bf9c" category="list-text">テクニカルレポートの説明に従って、クラスタとメディエーターを設定します<block ref="dee2443effe2653b7b7862728c1a701c" category="inline-link-rx"></block>。</block>
   <block id="0b9c25bd5b5eaced6be5a08c296638a2" category="admonition">最大保持数は1018個です。保持数を使用しているONTAPバージョンでサポートされる値よりも大きい値に設定すると、バックアップは失敗します。これは、複数のデータストアにも当てはまります。</block>
-  <block id="1f7a12a98590c88658034c05ec2de1fb" category="paragraph">SnapCenterは、リソースグループを作成しようとすると互換性チェックを実行します。SnapCenterのサポートに関する最新情報については、を参照してください<block ref="361fee5724018df312396e88d348d8b5" category="inline-link-rx"></block>。互換性がない理由は次のとおりです。</block>
   <block id="cb7cb42890ccd7035c776387ce9c759c" category="list-text">オンプレミスのONTAPクラスタ（FAS、AFF、ASAシステム）</block>
   <block id="d1a5389ce9c0d52e7ee4639d806d7008" category="cell">フルアクセスコマンド：最小ONTAP Privileges。</block>
   <block id="54eadeca2b2bd492eb03529cf49b5ade" category="cell">読み取り専用コマンド：最小ONTAP Privileges</block>
@@ -2046,7 +2036,6 @@
   <block id="75a9afdca6c89eec0ab219e5bdeac793" category="list-text">単一のFlexGroupデータストア。SCV は、 FlexGroupデータストアのスパニングをサポートしていません。FlexGroupデータストアを従来のVMまたはデータストアと組み合わせることはできません。</block>
   <block id="e863be193793af4172263065990cb61e" category="list-text">ASA r2 ストレージ システム上の VM およびデータストア。  ASA r2 VM およびデータストアを他の VM およびデータストアと組み合わせることはできません。</block>
   <block id="e8b07d018037f28da5152141e242af4d" category="admonition">VMware vSphere Cluster Service (vCLS) を使用している場合は、vCLS で管理される VM をSnapCenter Plug-in for VMware vSphereリソース グループに追加しないでください。</block>
-  <block id="b53f2580cfbfaccc767005acaf236e4b" category="paragraph">詳細については、 ONTAP tools for VMware vSphereのドキュメントを参照してください。サポートされているバージョンについては、<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block> 。</block>
   <block id="ac84b1a7e72a9605445240fa9a3b3d29" category="list-text">リソース グループへのリソースの追加や削除はいつでも行えます。</block>
   <block id="9cda0af381aa1b4f8bea1f399ea0d7fa" category="list-text">VM などの単一のリソースをバックアップするには、そのリソースのみを含むリソース グループを作成します。</block>
   <block id="ee4aa19a5d187373cae36a8063c1a4fa" category="list-text">複数のリソースをバックアップするには、保護するすべてのリソースを含むリソース グループを作成します。</block>
@@ -2077,7 +2066,6 @@
   <block id="6df2f9689a6255e2c498bc4bfb1abbf2" category="list-text">展開中に問題が発生しないように、すべての vSphere クライアント ブラウザ セッションからログアウトして閉じ、ブラウザ キャッシュをクリアします。</block>
   <block id="f6c9b4635b5425929b1d75520484e3a1" category="list-text">vCenter でトランスポート層セキュリティ (TLS) を有効にします。  VMware のドキュメントを参照してください。</block>
   <block id="228276fa8cafcca2276f7b3f56cc1c22" category="list-text">SnapCenter Plug-in for VMware vSphereがデプロイされている vCenter 以外の vCenter でバックアップを実行する場合は、ESXi サーバ、 SnapCenter Plug-in for VMware vSphere、および各 vCenter が同じ時刻に同期されていることを確認してください。</block>
-  <block id="587c9ed3c0a9b0bbee1033a084dbb713" category="list-text">vVol データストア上の VM を保護するには、まずONTAP tools for VMware vSphereを導入します。サポートされているONTAPツールのバージョンについては、<block ref="3a209fb27f7f233fd0ce1196af83183f" category="inline-link-rx"></block> 。  ONTAPツールは、 ONTAPおよび VMware Web クライアント上のストレージをプロビジョニングおよび構成します。</block>
   <block id="b1226251f40950720f8b0d1c0db0107e" category="paragraph">画面にはSnapCenter Plug-in for VMware vSphereの導入先のIPアドレスが表示されます。IPアドレスをメモしておきます。SnapCenter Plug-in for VMware vSphere の設定を変更する場合は、SnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインする必要があります。</block>
   <block id="5d950bf8c254fb969efdbfc4db96e1b1" category="list-text">デプロイメント画面に表示された IP アドレスとデプロイメント ウィザードで指定した資格情報を使用してSnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインし、ダッシュボードでSnapCenter Plug-in for VMware vSphereが vCenter に正常に接続され、有効になっていることを確認します。</block>
   <block id="e7a5ee24eea46c33667413c3e3f1e89f" category="paragraph">フォーマットを使用する<block ref="cf854de4a942e42c016ef31d206a66c3" prefix=" " category="inline-code"></block>管理ユーザー インターフェイスにアクセスします。</block>
@@ -2165,4 +2153,14 @@
   <block id="5f9632818cc0b2ae9e72f12df491a0d9" category="sidebar">SnapCenter Plug-in for VMware vSphereユーザー インターフェイスからサポート バンドルを生成します。</block>
   <block id="d6ede90a002c3b83d155e427efb5f090" category="admonition">Amazon FSx for NetApp ONTAPストレージ システムのサポートは、SCV 6.2 リリース以降で利用可能になります。</block>
   <block id="7b373df72819a720b694167ed282840b" category="list-text">グローバル権限の下で、ユーザーを事前定義されたロールに関連付けることができます。</block>
+  <block id="65d85f7b30631ef25b698588ad1c6d70" category="paragraph">詳細については、 ONTAP tools for VMware vSphereのドキュメントを参照してください。さらに、以下を参照してください<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block>ONTAPツールでサポートされているバージョンに関する最新情報。</block>
+  <block id="b0a08790fc072a9142432d7a767cb288" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block> （IMT）。</block>
+  <block id="5d47851b653e8af8cb032e72d0258b2b" category="paragraph">詳細については、 ONTAP tools for VMware vSphereのドキュメントを参照してください。サポートされているバージョンについては、<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block> 。</block>
+  <block id="6994de96d1aec646ddcf3fc872669a22" category="paragraph">リソース グループを作成しようとすると、SnapCenterによって互換性チェックが実行されます。常に参照する<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block>SnapCenterサポートの最新情報については、こちらをご覧ください。互換性の問題が発生する理由は次のとおりです。</block>
+  <block id="c1ae70ea35887b6844fa48639efbda0d" category="list-text">vVol データストア上の VM を保護するには、まずONTAP tools for VMware vSphereを導入します。サポートされているONTAPツールのバージョンについては、<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block> 。ONTAPツールは、 ONTAPおよび VMware Web クライアント上のストレージをプロビジョニングおよび構成します。</block>
+  <block id="ee3365d72219428ca65e587d89bdfcc7" category="cell">SnapCenter Plug-in for VMware vSphereは、これを使用してvVolデータストア（VMwareの仮想ボリューム）を管理します。サポートされているバージョンについては、<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block> 。</block>
+  <block id="8ac9572d9a2e6569c451b7e81c7b6662" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="3a652b73dae301a6be8009ba1c8bc98c" category="inline-link-rx"></block> 。</block>
+  <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
+  <block id="65d35124c2bde72fba0fccdd4037d284" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
+  <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
 </blocks>
