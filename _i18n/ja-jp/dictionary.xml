@@ -1792,8 +1792,6 @@
   <block id="856e1714b1d49f0d567463f553ef9120" category="cell">8コア</block>
   <block id="2a9f9ccc193010032b655ecfc76e40c8" category="cell">推奨RAM</block>
   <block id="dde8b54fa4a91beedb7b736869c08569" category="cell">24 GB</block>
-  <block id="f8bce6aa95f5621d608c29e258b620d2" category="cell">アプライアンス内のvmcontrolサービスの最大ヒープサイズ</block>
-  <block id="af5700014f646d2567efa6288d85ab2b" category="cell">8 GB</block>
   <block id="4fa7e925220267d7b768f4b3a78c6148" category="admonition">ASA R2ストレージシステムでは、バックアップの名前変更はサポートされていません。</block>
   <block id="d106abcc28b08528e977427482cfc257" category="paragraph">複数のカテゴリに変更を加えることができます。このオプションでは、保護されたセカンダリリソースを編集することもできます。</block>
   <block id="875b0302744a0f026125fde0002031ee" category="cell">volume clone create volume clone show volume clone split start volume clone split status volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume managed-feature SnapLock volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume snapshot delete volume snapshot modify -expiry-time volume snapshot rename volume snapshot restore volume snapshot restore</block>
@@ -2163,4 +2161,7 @@
   <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
   <block id="65d35124c2bde72fba0fccdd4037d284" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
   <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">LinuxゲストOSを実行しているVMからファイルやフォルダをリストアすることはできません。ただし、VMDKを接続し、ファイルとフォルダを手動でリストアすることもできます。サポートされているゲストOSの最新情報については、<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> 。</block>
+  <block id="dcd97a739116b3e37a21b24d1b1d508d" category="cell">NetApp ONTAPストレージ向け Amazon FSxN</block>
+  <block id="b6e6ac3bc87c50849332d71bd687f2ee" category="cell">9.10以上</block>
+  <block id="af6ccd5ef578462110c3f8bfdb7d3622" category="paragraph">このリリースから、 SnapCenter Plug-in for VMware vSphereは、バージョン 9.10 以降を実行しているNetApp ONTAPストレージ システム用の Amazon FSxN をサポートします。</block>
 </blocks>

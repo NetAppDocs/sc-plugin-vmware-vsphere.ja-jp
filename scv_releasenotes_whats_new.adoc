@@ -20,3 +20,5 @@ SnapCenter Plug-in for VMware vSphere 6.2 リリースでは、 ONTAP 9.17.1 以
 * 復元ワークフローを実行する
 * リソース グループの作成または変更時に二次保護をプロビジョニングする ( ONTAP 9.16.1 以降のバージョンで利用可能)
 
+
+このリリースから、 SnapCenter Plug-in for VMware vSphereは、バージョン 9.10 以降を実行しているNetApp ONTAPストレージ システム用の Amazon FSxN をサポートします。
