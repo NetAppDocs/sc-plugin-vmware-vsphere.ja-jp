@@ -4,7 +4,7 @@ permalink: scv48_audit_logs.html
 keywords:  
 summary: 監査ログでは、誰がいつどのような行動をしたかを追跡できます。監査ログはイベントを時系列順に集めたもので、アプライアンス内のファイルに書き込まれます。 
 ---
-= 監査ログ
+= SnapCenter Plug-in for VMware vSphereの監査ログ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

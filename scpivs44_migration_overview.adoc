@@ -4,7 +4,7 @@ permalink: scpivs44_migration_overview.html
 keywords:  
 summary:  
 ---
-= 移行の概要
+= Windows ベースの SnapCenter for VMware vSphere からメタデータを移行する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

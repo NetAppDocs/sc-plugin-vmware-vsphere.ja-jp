@@ -4,7 +4,7 @@ permalink: scpivs44_predefined_roles_packaged_with_snapcenter.html
 keywords:  
 summary: vCenter Server RBACの使用を簡易化するために、SnapCenter Plug-in for VMware vSphereには、ユーザによるSnapCenterタスクの実行を可能にする一連の事前定義されたロールが用意されています。また、タスクの実行を制限し、 SnapCenter 情報の表示のみを許可する読み取り専用ロールもあります。 
 ---
-= SnapCenter Plug-in for VMware vSphereに付属の事前定義されたロール
+= SCVにパッケージ化された事前定義ロール
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

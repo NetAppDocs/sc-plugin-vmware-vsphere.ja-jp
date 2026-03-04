@@ -4,7 +4,7 @@ permalink: scv48_add_certificates_to_certificate_store.html
 keywords:  
 summary: VMware vCenterに認証局のルート証明書と中間証明書を追加して、証明書と署名済みのアーティファクトを信頼します。 
 ---
-= VMware証明書ストアへの証明書の追加
+= SCV の VMware 証明書ストアに証明書を追加します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

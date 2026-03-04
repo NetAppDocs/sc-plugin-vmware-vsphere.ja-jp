@@ -4,7 +4,7 @@ permalink: scpivs44_properties_you_can_override.html
 keywords:  
 summary: 'コンフィギュレーションファイルにリストされているプロパティを使用して、デフォルト値を変更できます `scbr.override` 。' 
 ---
-= オーバーライド可能なプロパティ
+= SCVで上書きできるプロパティ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

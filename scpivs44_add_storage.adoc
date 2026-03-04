@@ -4,7 +4,7 @@ permalink: scpivs44_add_storage.html
 keywords:  
 summary:  
 ---
-= ストレージの追加
+= SnapCenter Plug-in for VMware vSphere にストレージシステムを追加する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

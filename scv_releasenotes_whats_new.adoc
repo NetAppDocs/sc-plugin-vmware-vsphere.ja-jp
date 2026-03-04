@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: 'what"s new, release notes, scv, 6.2' 
 summary: SnapCenter Plug-in for VMware vSphereで利用できる新しい機能について説明します。 
 ---
-= SnapCenter Plug-in for VMware vSphereの新機能
+= SnapCenter Plug-in for VMware vSphere 6.2の新機能
 :allow-uri-read: 
 
 

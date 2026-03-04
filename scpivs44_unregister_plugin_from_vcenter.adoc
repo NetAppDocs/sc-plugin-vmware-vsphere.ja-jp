@@ -4,7 +4,7 @@ permalink: scpivs44_unregister_plugin_from_vcenter.html
 keywords:  
 summary: リンクモードのvCenterでSnapCenter Plug-in for VMware vSphereサービスを停止すると、リンクされた他のvCenterでSnapCenter Plug-in for VMware vSphereサービスが実行されている場合でも、リンクされたすべてのvCenterでリソースグループを使用できなくなります。SnapCenter Plug-in for VMware vSphere拡張機能の登録を手動で解除する必要があります。 
 ---
-= vCenterからSnapCenter Plug-in for VMware vSphereの登録解除
+= vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

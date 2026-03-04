@@ -4,7 +4,7 @@ permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vm
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereユーザー インターフェイスからサポート バンドルを生成できます。 
 ---
-= SnapCenter Plug-in for VMware vSphereユーザーインターフェイスからサポートバンドルを生成します
+= SCV ユーザインターフェイスからサポートバンドルを生成する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:  
 summary: リリースノートには、このリリースのSnapCenter Plug-in for VMware vSphereに関する重要な情報（ライセンス要件、既知の問題、注意事項、制限事項、ドキュメントの更新または修正など）が記載されています。 
 ---
-= SnapCenter Plug-in for VMware vSphereリリースノート
+= SnapCenter Plug-in for VMware vSphereのリリースノート
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

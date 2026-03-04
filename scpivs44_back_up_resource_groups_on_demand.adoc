@@ -4,7 +4,7 @@ permalink: scpivs44_back_up_resource_groups_on_demand.html
 keywords:  
 summary: バックアップ処理は、リソースグループに定義されているすべてのリソースに対して実行されます。リソースグループにポリシーが適用され、スケジュールが設定されている場合は、スケジュールに従って自動的にバックアップが実行されます。 
 ---
-= オンデマンドでリソースグループをバックアップ
+= SCV でリソースグループをオンデマンドでバックアップする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

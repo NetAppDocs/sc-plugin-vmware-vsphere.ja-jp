@@ -4,7 +4,7 @@ permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
 keywords:  
 summary: SnapCenter のVMware vSphere Clientのリソースグループの編集ウィザードを使用して、既存のリソースグループに複数のリソースを追加できます。 
 ---
-= リソースグループへの複数のVMとデータストアの追加
+= SCV のリソースグループに複数の VM とデータストアを追加する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

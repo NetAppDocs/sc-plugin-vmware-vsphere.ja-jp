@@ -4,7 +4,7 @@ permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html
 keywords:  
 summary: リソースグループは、保護するVM、データストア、vSphereタグ、およびvSphere VMフォルダのコンテナです。 
 ---
-= リソースグループの作成
+= SCV 内の VM とデータストアのリソースグループを作成する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

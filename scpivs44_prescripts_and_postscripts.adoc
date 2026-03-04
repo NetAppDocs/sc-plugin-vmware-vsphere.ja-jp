@@ -4,7 +4,7 @@ permalink: scpivs44_prescripts_and_postscripts.html
 keywords:  
 summary: カスタムのプリスクリプトとポストスクリプトをデータ保護処理の一部として使用することができます。これらのスクリプトを使用すると、データ保護ジョブの実行前または実行後に自動化を実行できます。 
 ---
-= プリスクリプトとポストスクリプト
+= SCVのプリスクリプトとポストスクリプト
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

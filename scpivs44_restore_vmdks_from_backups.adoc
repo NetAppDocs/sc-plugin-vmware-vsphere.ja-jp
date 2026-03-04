@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vmdks_from_backups.html
 keywords:  
 summary: 従来のVMまたはVVol VMのプライマリバックアップまたはセカンダリバックアップから、既存のVMDK、または削除または接続解除したVMDKをリストアできます。 
 ---
-= バックアップからのVMDKのリストア
+= SCVを使用してバックアップからVMDKを復元する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

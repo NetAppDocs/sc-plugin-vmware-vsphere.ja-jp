@@ -4,7 +4,7 @@ permalink: scpivs44_upgrade.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。 
 ---
-= 以前のリリースのSnapCenter Plug-in for VMware vSphereからのアップグレード
+= SCVの以前のリリースからのアップグレード
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

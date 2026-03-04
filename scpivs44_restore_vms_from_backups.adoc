@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vms_from_backups.html
 keywords:  
 summary: VMをリストアするときに、選択したバックアップコピーで既存の内容を上書きするか、VMのコピーを作成できます。 
 ---
-= バックアップからのVMのリストア
+= SCVを使用してバックアップからVMを復元する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_manage_backups.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereで実行されるバックアップの名前変更と削除を行うことができます。複数のバックアップを同時に削除することもできます。 
 ---
-= バックアップの管理
+= SnapCenter Plug-in for VMware vSphereでバックアップを管理する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

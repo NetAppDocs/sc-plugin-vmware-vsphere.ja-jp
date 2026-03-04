@@ -4,7 +4,7 @@ permalink: scpivs44_customize_your_configuration.html
 keywords:  
 summary: 運用効率を高めるために、 scbr.override 構成ファイルを変更して、デフォルト値を変更することができます。これらの値は、バックアップ中に作成または削除されるVMwareスナップショットの数、バックアップスクリプトの実行を停止するまでの時間などの設定を制御します。 
 ---
-= 構成のカスタマイズ
+= SnapCenter Plug-in for VMware vSphere の設定をカスタマイズする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

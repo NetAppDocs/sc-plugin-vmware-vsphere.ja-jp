@@ -4,7 +4,7 @@ permalink: scpivs44_view_vm_and_datastore_backups.html
 keywords:  
 summary: VMまたはデータストアのバックアップまたはリストアの準備中に、そのリソースに使用できるすべてのバックアップを表示し、それらのバックアップの詳細を確認することができます。 
 ---
-= VMとデータストアのバックアップの表示
+= SnapCenter Plug-in for VMware vSphere で VM とデータストアのバックアップを表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

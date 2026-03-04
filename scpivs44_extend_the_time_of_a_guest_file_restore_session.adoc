@@ -4,7 +4,7 @@ permalink: scpivs44_extend_the_time_of_a_guest_file_restore_session.html
 keywords:  
 summary: 'デフォルトでは、接続されたゲストファイルリストアVMDKは24時間使用可能であり、その後自動的に接続解除されます。[Guest Configuration] ページで時間を延長できます。' 
 ---
-= ゲストファイルリストアセッションの時間を延長する
+= SCV でゲストファイルのリストアセッションの時間を延長する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

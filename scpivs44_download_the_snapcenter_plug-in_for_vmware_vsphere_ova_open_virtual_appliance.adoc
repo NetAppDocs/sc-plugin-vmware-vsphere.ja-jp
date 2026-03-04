@@ -4,7 +4,7 @@ permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereの.tarファイルは、NetApp Support Site からダウンロードできます。 
 ---
-= Open Virtual Appliance（OVA；オープン仮想アプライアンス）のダウンロード
+= SnapCenter Plug-in for VMware vSphere OVAをダウンロードします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_monitor_jobs.html
 keywords:  
 summary: 'VMware vSphere Clientを使用してデータ保護処理を実行したあと、ダッシュボードの[Job Monitor]タブでジョブステータスを監視し、ジョブの詳細を確認できます。' 
 ---
-= ジョブの監視
+= SnapCenter Plug-in for VMware vSphereでジョブを監視する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

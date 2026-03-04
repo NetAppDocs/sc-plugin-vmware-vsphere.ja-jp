@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere Clientジョブの組み込みスケジュールを変更するには、所定の順序でREST API呼び出しを実行する必要があります。 
 ---
-= 組み込みのスケジュールを変更するためのREST APIワークフロー
+= REST API SCVに組み込まれたスケジュールを変更するワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

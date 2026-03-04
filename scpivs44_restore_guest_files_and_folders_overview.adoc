@@ -4,7 +4,7 @@ permalink: scpivs44_restore_guest_files_and_folders_overview.html
 keywords:  
 summary: WindowsゲストOSの仮想マシンディスク（VMDK）からファイルやフォルダをリストアできます。 
 ---
-= ワークフロー、前提条件、および制限事項
+= SCV におけるゲストファイルの復元ワークフロー、前提条件、および制限事項
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

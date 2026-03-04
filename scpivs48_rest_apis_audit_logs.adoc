@@ -4,7 +4,7 @@ permalink: scpivs48_rest_apis_audit_logs.html
 keywords:  
 summary: 監査ログを生成するREST API 
 ---
-= 監査ログを生成するREST API
+= SCVの監査ログを生成するREST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

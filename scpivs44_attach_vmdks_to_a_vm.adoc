@@ -4,7 +4,7 @@ permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:  
 summary: バックアップの1つ以上のVMDKを親VM、同じESXiホスト上の代替VM、またはリンクモードの同じvCenterまたは別のvCenterで管理されている代替ESXiホスト上の代替VMに接続できます。従来のデータストア内のVMとVVolデータストア内のVMがサポートされます。 
 ---
-= VMまたはVVOL VMへのVMDKの接続
+= VMDKをVMに接続するには、SnapCenter Plug-in for VMware vSphereを使用します
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

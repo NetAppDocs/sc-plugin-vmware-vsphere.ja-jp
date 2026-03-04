@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflow__restore_vmdks.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMDKのリストア処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。 
 ---
-= VMDKをリストアするためのREST APIのワークフロー
+= SCVを使用してVMDKを復元するREST APIワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

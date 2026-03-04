@@ -4,7 +4,7 @@ permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html
 keywords:  
 summary: ゲストファイルをリストアしようとすると、ゲストファイルのリストアセッションが空白になったり、ゲストファイルのリストア接続ディスクの処理が失敗したり、ゲストファイルのリストアセッションが終了したあとにバックアップが切断されない場合があります。 
 ---
-= ゲストファイルのリストアシナリオ
+= SCV でのゲストファイルのリストアシナリオ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

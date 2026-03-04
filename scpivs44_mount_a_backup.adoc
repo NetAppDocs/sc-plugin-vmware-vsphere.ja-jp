@@ -4,7 +4,7 @@ permalink: scpivs44_mount_a_backup.html
 keywords:  
 summary: バックアップ内のファイルにアクセスする必要がある場合は、バックアップから従来のデータストアをマウントできます。バックアップは、バックアップが作成されたESXiホスト、または同じタイプのVMおよびホスト構成を使用する別のESXiホストにマウントできます。データストアはホストに複数回マウントできます。 
 ---
-= バックアップのマウント
+= SnapCenter Plug-in for VMware vSphereを使用してバックアップをマウントする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

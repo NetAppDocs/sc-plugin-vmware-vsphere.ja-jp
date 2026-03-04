@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してデータストアバックアップのマウントおよびアンマウント処理を実行するには、所定の順序のREST API呼び出しに従う必要があります。 
 ---
-= REST APIワークフローによるデータストアのマウントとアンマウント
+= SCV 内のデータストアをマウントおよびアンマウントする REST API ワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

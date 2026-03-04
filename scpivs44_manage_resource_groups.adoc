@@ -4,7 +4,7 @@ permalink: scpivs44_manage_resource_groups.html
 keywords:  
 summary: バックアップリソースグループを作成、変更、削除したり、リソースグループに対してバックアップ処理を実行したりできます。 
 ---
-= リソースグループの管理
+= SnapCenter Plug-in for VMware vSphereでリソースグループを管理する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

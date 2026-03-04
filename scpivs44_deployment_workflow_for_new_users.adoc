@@ -4,7 +4,7 @@ permalink: scpivs44_deployment_workflow_for_new_users.html
 keywords:  
 summary: このワークフローは、 SnapCenter の導入前に SnapCenter バックアップを使用したことがなく、 バックアップがない場合に使用できます。 
 ---
-= 新規ユーザ向けの導入ワークフロー
+= 新規SnapCenterユーザーの導入ワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

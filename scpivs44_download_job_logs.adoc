@@ -4,7 +4,7 @@ permalink: scpivs44_download_job_logs.html
 keywords:  
 summary: 'ジョブログは、SnapCenter VMware vSphere Clientのダッシュボードにある[Job Monitor]タブからダウンロードできます。' 
 ---
-= ジョブログをダウンロード
+= SnapCenter Plug-in for VMware vSphereからジョブログをダウンロード
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

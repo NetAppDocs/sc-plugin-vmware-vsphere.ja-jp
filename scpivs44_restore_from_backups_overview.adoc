@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: プライマリバックアップまたはセカンダリバックアップからVM、VMDK、ファイル、フォルダをリストアできます。 
 ---
-= リストアの概要
+= SnapCenter Plug-in for VMware vSphereのリストアオプション
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

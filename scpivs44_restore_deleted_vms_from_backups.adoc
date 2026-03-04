@@ -4,7 +4,7 @@ permalink: scpivs44_restore_deleted_vms_from_backups.html
 keywords:  
 summary: 削除したVMは、データストアのプライマリバックアップまたはセカンダリバックアップから選択したESXiホストにリストアできます。 
 ---
-= 削除したVMをバックアップからリストア
+= SCVを使用してバックアップから削除されたVMを復元する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

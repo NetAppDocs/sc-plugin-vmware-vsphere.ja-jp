@@ -4,7 +4,7 @@ permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphere REST APIを使用してVMware vSphere Clientジョブのレポートを生成し、ログをダウンロードするには、VMware vSphereのREST API呼び出しを使用する必要があります。 
 ---
-= ジョブのダウンロードとレポートの生成に使用するREST API
+= SCV でジョブをダウンロードしレポートを生成するための REST API
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

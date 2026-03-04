@@ -4,7 +4,7 @@ permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html
 keywords:  
 summary: ゲストファイルのリストア処理にプロキシVMを使用して仮想ディスクを接続する場合は、リストア処理を開始する前にプロキシVMを設定する必要があります。プロキシVMはいつでもセットアップできますが、プラグインの導入が完了したらすぐにセットアップする方が便利な場合があります。 
 ---
-= リストア処理用のプロキシVMのセットアップ
+= SCV でリストア処理用のプロキシ VM を設定する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

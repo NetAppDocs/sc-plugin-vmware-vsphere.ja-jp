@@ -4,7 +4,7 @@ permalink: scpivs44_access_the_maintenance_console.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereのメンテナンスコンソールを使用して、アプリケーション、システム、およびネットワークの構成を管理できます。管理者パスワード、メンテナンスパスワードの変更、サポートバンドルの生成、リモート診断の開始を行うことができます。 
 ---
-= メンテナンスコンソールへのアクセス
+= SnapCenter Plug-in for VMware vSphereメンテナンスコンソールへのアクセス
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

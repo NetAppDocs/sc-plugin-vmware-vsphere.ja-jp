@@ -4,7 +4,7 @@ permalink: scpivs44_protect_data_overview.html
 keywords:  
 summary: すべてのバックアップ処理はリソースグループに対して実行されます。リソースグループには、1つ以上のVMとデータストアを任意に組み合わせて含めることができます。バックアップはオンデマンドで実行することも、定義した保護スケジュールに従って実行することもできます。 
 ---
-= データ保護のワークフロー
+= SnapCenter Plug-in for VMware vSphereのデータ保護ワークフロー
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_unmount_a_backup.html
 keywords:  
 summary: データストア内のファイルにアクセスする必要がなくなった場合は、バックアップをアンマウントできます。 
 ---
-= バックアップのアンマウント
+= SnapCenter Plug-in for VMware vSphereを使用してバックアップをアンマウントする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

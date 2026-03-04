@@ -4,7 +4,7 @@ permalink: scpivs44_detach_a_virtual_disk.html
 keywords:  
 summary: 仮想ディスクを接続して個 々 のファイルをリストアしたら、親VMから仮想ディスクの接続を解除できます。 
 ---
-= 仮想ディスクの接続解除
+= SnapCenter Plug-in for VMware vSphereで仮想ディスクをデタッチする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

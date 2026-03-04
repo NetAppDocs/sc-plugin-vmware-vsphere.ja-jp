@@ -4,7 +4,7 @@ permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
 keywords:  
 summary: WindowsゲストOSでは、VMDKから1つ以上のファイルまたはフォルダをリストアできます。 
 ---
-= VMDKからのゲストファイルとフォルダのリストア
+= SCVを使用してVMDKからゲストファイルとフォルダをリストアする
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_view_status_information.html
 keywords:  
 summary: vSphere Clientのダッシュボードでステータス情報を確認できます。ステータス情報は1時間に1回更新されます。 
 ---
-= ステータス情報の表示
+= SnapCenter Plug-in for VMware vSphereでステータス情報を表示する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

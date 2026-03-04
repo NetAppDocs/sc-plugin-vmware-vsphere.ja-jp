@@ -4,7 +4,7 @@ permalink: scpivs44_concepts_overview.html
 keywords:  
 summary: SnapCenter Plug-in for VMware vSphereは、VMとデータストアにデータ保護サービスを提供するスタンドアロンの仮想アプライアンス（オープン仮想アプライアンス形式）であり、SnapCenterアプリケーションベースのプラグインに対してデータ保護サービスをサポートします。このドキュメントでは、SnapCenter Plug-in for VMware vSphereの導入方法と使用方法について説明します。クイックスタート情報も記載されています。 
 ---
-= 製品概要
+= SnapCenter Plug-in for VMware vSphereについて学ぶ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

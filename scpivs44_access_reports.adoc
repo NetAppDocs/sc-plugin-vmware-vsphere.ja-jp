@@ -4,7 +4,7 @@ permalink: scpivs44_access_reports.html
 keywords:  
 summary: ダッシュボードから1つ以上のジョブのレポートを要求できます。 
 ---
-= レポートへのアクセス
+= SnapCenter Plug-in for VMware vSphereのレポートにアクセスします
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

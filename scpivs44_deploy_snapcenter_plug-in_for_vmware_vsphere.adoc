@@ -4,7 +4,7 @@ permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
 keywords:  
 summary: SnapCenterの機能を使用して仮想マシン上のVM、データストア、アプリケーションと整合性のあるデータベースを保護するには、SnapCenter Plug-in for VMware vSphereを導入する必要があります。 
 ---
-= SnapCenter Plug-in for VMware vSphereの導入
+= SnapCenter Plug-in for VMware vSphere を導入する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

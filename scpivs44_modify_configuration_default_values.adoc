@@ -4,7 +4,7 @@ permalink: scpivs44_modify_configuration_default_values.html
 keywords:  
 summary: '運用効率を高めるために、構成ファイルを変更してデフォルト値を変更することができます `scbr.override` 。' 
 ---
-= 設定のデフォルト値を変更します。
+= SCV の設定のデフォルト値を変更する
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
