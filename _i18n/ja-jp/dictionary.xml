@@ -215,7 +215,6 @@
   <block id="3239764956f57bba4049ffcba88a16eb" category="admonition">リポジトリバックアップの名前は「 backup-&lt;date&gt; 」です。リポジトリのリストア機能では「backup」プレフィックスが検索されるため、変更しないでください。</block>
   <block id="daf7cc2554c2855a22d49a54327d1a02" category="summary">SnapCenter Plug-in for VMware vSphereは、VMとデータストアにデータ保護サービスを提供するスタンドアロンの仮想アプライアンス（オープン仮想アプライアンス形式）であり、SnapCenterアプリケーションベースのプラグインに対してデータ保護サービスをサポートします。このドキュメントでは、SnapCenter Plug-in for VMware vSphereの導入方法と使用方法について説明します。クイックスタート情報も記載されています。</block>
   <block id="4b983fff716674f120176e09551dd445" category="doc">製品概要</block>
-  <block id="536d4cac2b03788a96cdff576afafb34" category="paragraph">SnapCenter Plug-in for VMware vSphereは、Linuxベースの仮想アプライアンスとして導入されます。</block>
   <block id="c3a6fddfa271f6c290c0d444610ccf18" category="paragraph">SnapCenter Plug-in for VMware vSphereは、環境に次の機能を追加します。</block>
   <block id="afcad3789276fda29a982b7d67489a6b" category="list-text">VM整合性およびクラッシュ整合性のあるデータ保護処理がサポートされます。</block>
   <block id="4c7b144e68815e7d228ce1ee54a5f05e" category="paragraph">VM、VMDK、およびデータストアをバックアップする場合、プラグインではRDMはサポートされません。VMのバックアップジョブではRDMが無視されます。RDMをバックアップする必要がある場合は、SnapCenterアプリケーションベースのプラグインを使用する必要があります。</block>
@@ -2244,4 +2243,26 @@
   <block id="14d41fc6e0457940b61268ea99ba5c3d" category="doc">SnapCenter Plug-in for VMware vSphereの監査ログ</block>
   <block id="7a6363fb7129589beeb8e33959c94905" category="doc">SnapCenter Plug-in for VMware vSphere 6.2の新機能</block>
   <block id="c095219d8aef8343cd2a9685ddd0dda3" category="doc">SnapCenter Plug-in for VMware vSphereのアップグレードパス</block>
+  <block id="bef219d35a4468480b0ce759221cdceb" category="inline-link-macro">NetApp Backup and Recovery ドキュメント</block>
+  <block id="3883b8ba948d42c388cccbf895964cbf" category="admonition">NetApp Backup and Recoveryを使用してVMware保護を強化します。3-2-1バックアップ、ランサムウェア保護、自動バックアップ管理、拡張性の向上、コスト削減、および単一のインターフェースから複数のvCenterインスタンスにわたるデータストアとVMの集中バックアップ管理を提供します。SCVポリシー、スナップショット、スケジュールをNetApp Backup and Recoveryに移行し、単一のコンソールからすべてのVM保護を管理できます。詳細については、<block ref="6cdfe604dd727224521f5102aa0e3962" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="f38f2973f63b76d824eba0e5aa81ebf3" category="paragraph">SnapCenter Plug-in for VMware vSphereは、VMとデータストアにデータ保護サービスを提供し、SnapCenterアプリケーションベースのプラグインに対するデータ保護サービスをサポートするスタンドアロンの仮想アプライアンス（オープン仮想アプライアンス形式）です。このドキュメントでは、SnapCenter Plug-in for VMware vSphereの導入方法と使用方法について説明します。また、クイック スタート情報も記載されています。SnapCenter Plug-in for VMware vSphereは、Linuxベースの仮想アプライアンスとして導入されます。</block>
+  <block id="2728192d9da29a0398498d517f5c33d9" category="admonition">NetApp Backup and Recoveryを使用してVMware保護を強化します。3-2-1バックアップ、ランサムウェア対策、自動化されたバックアップ管理、拡張性の向上、コスト削減、複数のvCenterインスタンスの集中管理を提供します。SCVポリシー、スナップショット、スケジュールをNetApp Backup and Recoveryに移行し、単一のコンソールからすべてのVM保護を管理できます。詳細については、<block ref="6cdfe604dd727224521f5102aa0e3962" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="5df2c78d1856546962ed831cc6f4a80a" category="paragraph">SnapCenter Plug-in for VMwareからNetApp Backup and Recoveryへのシームレスでワンクリック、無停止の移行を実行できるようになりました。NetApp Backup and Recoveryは、次のような強化されたデータ保護および管理機能を提供します：</block>
+  <block id="458dd2c9c3bbc835fc1d4811da1865d8" category="list-text">3-2-1バックアップおよびアーカイブ戦略のサポート</block>
+  <block id="3cca3b4cb162541269dd5f663c6936a9" category="list-text">SnapLockとオブジェクトロックを使用した論理的なエアギャップバックアップによるランサムウェア対策</block>
+  <block id="b1319284bc2b2d4a48e58e76635adc31" category="list-text">ランサムウェアスキャン中の自動修復</block>
+  <block id="0d886ceae4d71a239a1403d5fe895cde" category="list-text">セカンダリストレージおよびオブジェクトストレージターゲットの自動化されたSnapMirror関係の作成、合理化されたバックアップ保持管理、および簡素化されたアプリケーションおよびVMバックアップワークフロー</block>
+  <block id="0648473a6d134921680c915ee5ff7684" category="list-text">データ量の増加に対応するための拡張性とパフォーマンスの向上</block>
+  <block id="f72c03c20d8facba6972ad9c9a1082dd" category="list-text">完全管理型のバックアップサービスにより、諸経費と総所有コストを削減できます。</block>
+  <block id="f3197c2c28232cab966afe14fea9b96d" category="list-text">単一のインターフェースから複数のvCenterインスタンスにわたるデータストアとVMの集中型バックアップ管理</block>
+  <block id="8d5d5288732cbd648dfedbc0a96970bf" category="list-text">WindowsおよびLinuxゲストOSからのファイルとフォルダの迅速なリストア</block>
+  <block id="5591a8ed61bb64684d8e07da7932a28c" category="paragraph">詳細については、以下のリンクを参照してください：</block>
+  <block id="0e9f99d977ed1300ac8b870e3204a3e4" category="list-text"><block ref="5813d682dfbbe57779f6b71dabccce0d" category="inline-link-rx"></block>。</block>
+  <block id="f1e9f00ae199ca6520d1d2e98102cd84" category="inline-link">NetApp Backup and Recoveryを使用したVMwareワークロードの検出</block>
+  <block id="45914ee45a130a84e56547b9e11b6dd4" category="list-text"><block ref="45914ee45a130a84e56547b9e11b6dd4" category="inline-link-rx"></block></block>
+  <block id="c055fc9337a8b1ecf06de87b2294213b" category="inline-link">NetApp Backup and Recoveryにログインします</block>
+  <block id="ec8b6eb38883e5854f69d9c0ca20d68f" category="list-text"><block ref="ec8b6eb38883e5854f69d9c0ca20d68f" category="inline-link-rx"></block></block>
+  <block id="6aa30740f7e61daa6dbeb98d1762ef2e" category="inline-link">NetApp Backup and Recoveryサービスにアクセスします</block>
+  <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
+  <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">NetApp Backup and Recoveryを使用してVMware環境を保護</block>
 </blocks>

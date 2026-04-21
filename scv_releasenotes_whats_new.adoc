@@ -22,3 +22,32 @@ SnapCenter Plug-in for VMware vSphere 6.2 リリースでは、 ONTAP 9.17.1 以
 
 
 このリリースから、 SnapCenter Plug-in for VMware vSphereは、バージョン 9.10 以降を実行しているNetApp ONTAPストレージ システム用の Amazon FSxN をサポートします。
+
+[NOTE]
+====
+SnapCenter Plug-in for VMwareからNetApp Backup and Recoveryへのシームレスでワンクリック、無停止の移行を実行できるようになりました。NetApp Backup and Recoveryは、次のような強化されたデータ保護および管理機能を提供します：
+
+* 3-2-1バックアップおよびアーカイブ戦略のサポート
+* SnapLockとオブジェクトロックを使用した論理的なエアギャップバックアップによるランサムウェア対策
+* ランサムウェアスキャン中の自動修復
+* セカンダリストレージおよびオブジェクトストレージターゲットの自動化されたSnapMirror関係の作成、合理化されたバックアップ保持管理、および簡素化されたアプリケーションおよびVMバックアップワークフロー
+* データ量の増加に対応するための拡張性とパフォーマンスの向上
+* 完全管理型のバックアップサービスにより、諸経費と総所有コストを削減できます。
+* 単一のインターフェースから複数のvCenterインスタンスにわたるデータストアとVMの集中型バックアップ管理
+* WindowsおよびLinuxゲストOSからのファイルとフォルダの迅速なリストア
+
+
+====
+詳細については、以下のリンクを参照してください：
+
+* https://docs.netapp.com/us-en/data-services-backup-recovery/["NetApp Backup and Recovery ドキュメント"]。
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-discovery.html["NetApp Backup and Recoveryを使用したVMwareワークロードの検出"]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html["NetApp Backup and Recoveryにログインします"]
+* https://console.netapp.com/unified-backup-restore["NetApp Backup and Recoveryサービスにアクセスします"]
+
+
+
+
+== NetApp Backup and Recoveryを使用してVMware環境を保護
+
+video::UeT9yFssTug[youtube,width=848,height=480]
