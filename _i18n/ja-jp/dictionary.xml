@@ -259,7 +259,6 @@
   <block id="110328d238985c18e0a7947b09b1ff0f" category="summary">SnapCenter Plug-in for VMware vSphereは、クライアントブラウザとのセキュアな通信にSSL暗号化を採用しています。この方法ではネットワーク全体でデータを暗号化できますが、新しい自己署名証明書を作成するか、独自の認証局（CA）インフラまたはサードパーティのCAを使用すると、証明書が環境に固有であることが保証されます。</block>
   <block id="8fbcd736aac5b9c6baba8f4db349f50e" category="doc">証明書の作成とインポート</block>
   <block id="9668b00eae1748d51afb7f725a15301a" category="inline-link">技術情報アーティクル：「 How to create or import an SSL certificate to SnapCenter Plug-in for VMware vSphere</block>
-  <block id="6886be2ac69a368a307204ccfa1e00d9" category="paragraph">詳細については、を参照してください<block ref="bf84a7958c466b4ea912f7e396459ac9" category="inline-link-rx"></block> 。</block>
   <block id="0a4a3719bc7519d1162060e0f0e08f8a" category="doc">バックアップポリシーの作成</block>
   <block id="a70216f52adf1eb56f9c607820ec2859" category="paragraph">バックアップポリシーを作成するには、次の手順に従います。</block>
   <block id="f3a07562dfcba402848f7481f951cabf" category="summary">SnapCenter Plug-in for VMware vSphereを使用してVMとデータストアをバックアップする前に、バックアップポリシーを作成する必要があります。</block>
@@ -2265,4 +2264,5 @@
   <block id="6aa30740f7e61daa6dbeb98d1762ef2e" category="inline-link">NetApp Backup and Recoveryサービスにアクセスします</block>
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">NetApp Backup and Recoveryを使用してVMware環境を保護</block>
+  <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">詳細については、<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
 </blocks>
