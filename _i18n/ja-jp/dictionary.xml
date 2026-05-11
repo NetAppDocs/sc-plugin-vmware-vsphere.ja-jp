@@ -924,8 +924,6 @@
   <block id="3390e3575b3e341afa2b7172ff5b33a7" category="inline-image-macro">SnapCenter Plug-in for VMware vSphere</block>
   <block id="bd891b75b7b195d1b26cc7dc247e67f0" category="paragraph"><block ref="bd891b75b7b195d1b26cc7dc247e67f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7569a237854b3e7f025960fc346c49b9" category="paragraph">新しいタイムゾーンは、SnapCenter Plug-in for VMware vSphereで実行されるすべてのバックアップに使用されます。</block>
-  <block id="58a095d28f14349299e54bd7a6d4ee7f" category="summary">SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを変更できます。プラグインはこれらの設定を使用してvCenterにアクセスします。</block>
-  <block id="bbb6afd68a87e9a7640bf0db8ce41bae" category="paragraph">SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを変更できます。プラグインはこれらの設定を使用してvCenterにアクセスします。vCenterのパスワードを変更した場合、VVOLバックアップがシームレスに機能するためには、ONTAP tools for VMware vSphereの登録を解除し、新しいパスワードで再登録する必要があります。</block>
   <block id="d9a651242a5b8ae831d8957f135ebd64" category="paragraph">ポート番号は変更しないでください。</block>
   <block id="21a2a6efe53ed1369868aa991298fb0e" category="summary">VMware vSphere Clientを使用してデータ保護処理を実行したあと、ダッシュボードの[Job Monitor]タブでジョブステータスを監視し、ジョブの詳細を確認できます。</block>
   <block id="4639d0e2e2909a747265c2f704128bca" category="doc">ジョブの監視</block>
@@ -1089,7 +1087,6 @@
   <block id="8c091f6bdef9cd93efbf1fea5b02c21e" category="paragraph">データストアをバックアップする場合は、そのデータストア内のすべてのVMがバックアップされます。</block>
   <block id="6d6ff2a577fe3009d934f68d92350fca" category="paragraph">同じリソースグループでバックアップ処理とリストア処理を同時に実行することはできません。</block>
   <block id="2b9e23fd8fb5fef0620a58a6db51b728" category="paragraph">SnapCenter Plug-in for VMware vSphereでサポートされる機能とサポートされない機能について説明します。 <block ref="a00337a9991b14e4173adaeb83b5a3ec" category="inline-link-macro-rx"></block></block>
-  <block id="76752ff072d438537747c49941f2e4a9" category="paragraph">MetroCluster構成の場合：</block>
   <block id="b210fa5b49a526e6abc94c6017d696a5" category="inline-link">技術情報アーティクル： Unable to detect SnapMirror or SnapVault relationship after MetroCluster failover</block>
   <block id="79f1e63de506798ce60c620c8f028ee2" category="list-text">フェイルオーバー後、SnapCenter Plug-in for VMware vSphereで保護関係を検出できないことがあります。詳細については、を参照してください<block ref="99fba7c040a549996b92e8d8a4600af2" category="inline-link-rx"></block> 。</block>
   <block id="70cb87c6754343f91541c5c34271ad1a" category="list-text">スイッチオーバー/スイッチバック後にNFS VMおよびVMFS VMのバックアップがエラーで失敗した場合は<block ref="41e99ceddfd3c08cd2b2c98681a28240" prefix=" " category="inline-code"></block> 、メンテナンスコンソールからSnapCenter VMwareサービスを再起動します。</block>
@@ -2019,7 +2016,6 @@
   <block id="ac84b1a7e72a9605445240fa9a3b3d29" category="list-text">リソース グループへのリソースの追加や削除はいつでも行えます。</block>
   <block id="9cda0af381aa1b4f8bea1f399ea0d7fa" category="list-text">VM などの単一のリソースをバックアップするには、そのリソースのみを含むリソース グループを作成します。</block>
   <block id="ee4aa19a5d187373cae36a8063c1a4fa" category="list-text">複数のリソースをバックアップするには、保護するすべてのリソースを含むリソース グループを作成します。</block>
-  <block id="74650e169a790c0e2cab1222243cfea0" category="list-text">MetroCluster環境のFlexGroupボリュームでは、 ONTAP 9.8 または 9.9 を使用している場合は、リソース グループをバックアップする前に、スイッチオーバーまたはスイッチバック後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、 SnapMirror関係を再同期します。  ONTAP 9.8 では、スイッチバック後にバックアップがハングすることがありましたが、これはONTAP 9.9 で解決されています。</block>
   <block id="9c008267bc61cd2c0b1de1c4a468b4eb" category="list-text">スナップショットのパフォーマンスを最適化するには、同じボリューム上の VM とデータストアを 1 つのリソース グループにグループ化します。</block>
   <block id="dbac0bf54cf1e476080b620dc08a5c10" category="list-text">バックアップ ポリシーなしでリソース グループを作成することもできますが、データ保護には少なくとも 1 つのポリシーが必要です。リソース グループの作成中に、既存のポリシーを選択するか、新しいポリシーを作成します。</block>
   <block id="b42a61ea00ba84dca34c7fa2791cc6d2" category="paragraph">セカンダリ保護により、リソース グループ内のリソースのレプリケーションが可能になります。セカンダリ保護を使用するには、指定されたポリシーを使用して、プライマリから優先クラスタおよび SVM への整合性グループベースのSnapMirror関係を作成します。この機能は、 ASA r2 システムベースのデータストアおよび仮想マシンでのみサポートされます。クラスタと SVM ピアリングが事前に設定されていることを確認します。非同期SnapMirrorポリシーのみがサポートされます。セカンダリ保護を構成するときは、整合性グループのサフィックスを指定する必要があります。</block>
@@ -2265,4 +2261,8 @@
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">NetApp Backup and Recoveryを使用してVMware環境を保護</block>
   <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">詳細については、<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
+  <block id="7132edc8383e0e83b6f687d75f421aa2" category="list-text">NetApp MetroCluster環境のFlexGroupボリュームでONTAP 9.8または9.9を使用している場合、リソースグループをバックアップする前に、スイッチオーバーまたはスイッチバック後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、SnapMirror関係を再同期してください。ONTAP 9.8では、スイッチバック後にバックアップがハングする可能性があります。これはONTAP 9.9で解決されています。</block>
+  <block id="b60052c3864c4fab5da0f6b383192ef3" category="summary">SnapCenter Plug-in for VMware vSphere（SCV）で使用されるvCenterログオンクレデンシャルを更新します。vCenterクレデンシャルの変更後にこのタスクを使用し、vVolバックアップの場合はONTAP tools for VMware vSphereを再登録します。</block>
+  <block id="e1960404cde13a4aedb9ab257401c3c6" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。これらのクレデンシャルは、vCenterへのアクセスに使用されます。クレデンシャルの変更後にSCVをvCenterに登録または再登録する必要がある場合は、このタスクを実行します。vCenterのパスワードが変更された場合は、vVolバックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
+  <block id="370783e751b9f81d87d5e4b05672a702" category="paragraph">NetApp MetroCluster構成の場合：</block>
 </blocks>
