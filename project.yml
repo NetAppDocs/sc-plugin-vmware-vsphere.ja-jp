@@ -210,7 +210,7 @@ sidebar:
       url: "/scpivs44_modify_the_time_zones.html"
     - title: ログオン資格情報の変更
       url: "/scpivs44_modify_the_logon_credentials.html"
-    - title: vCenterログオンクレデンシャルの変更
+    - title: SCVで設定されたvCenterクレデンシャルを更新する
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
     - title: ネットワーク設定の変更
       url: "/scpivs44_modify_the_network_settings.html"

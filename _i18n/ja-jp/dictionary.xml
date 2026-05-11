@@ -1716,7 +1716,6 @@
   <block id="f04e1cf825b6adbdd02179d720a3d56e" category="sidebar">構成の管理</block>
   <block id="d175eac72dbff1925f585004c7748333" category="sidebar">タイムゾーンの変更</block>
   <block id="39431018d345c4625ee6755997cbf0d6" category="sidebar">ログオン資格情報の変更</block>
-  <block id="6a92d475ead3e7f8d1055d94b7ec26fa" category="sidebar">vCenterログオンクレデンシャルの変更</block>
   <block id="4d82de788a9432bc467645d5849b54d6" category="sidebar">ネットワーク設定の変更</block>
   <block id="e8c19d50a62ef0c84239952feb395afa" category="sidebar">scbr.overrideファイルを作成する</block>
   <block id="e83ed49b67b001041250970bfbe7efab" category="sidebar">上書き可能な設定プロパティ</block>
@@ -2189,7 +2188,6 @@
   <block id="e285884386e2062ad98e8deecfd04560" category="doc">SnapCenter Plug-in for VMware vSphereのログオン資格情報を変更する</block>
   <block id="4dc305a364ab194377cea35093fafc91" category="doc">SCVのネットワーク設定を変更する</block>
   <block id="5db02314d963fe8a8fa75d43311a04f3" category="doc">SCV のバックアップのタイムゾーンを変更する</block>
-  <block id="3cefaebf21784290ec70bd0954b54ab9" category="doc">SCVのvCenterログオン資格情報を変更する</block>
   <block id="34895ac2b07a353b62fe3587b973f9aa" category="doc">SnapCenter Plug-in for VMware vSphereでジョブを監視する</block>
   <block id="b03c3bad2790d92ae4869f34a2b1b13c" category="doc">SnapCenter Plug-in for VMware vSphereを使用してバックアップをマウントする</block>
   <block id="cc66b31e4a27a920d55087e0b904f14e" category="doc">ONTAP RBAC の機能（ SnapCenter Plug-in for VMware vSphere ）</block>
@@ -2261,8 +2259,9 @@
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">NetApp Backup and Recoveryを使用してVMware環境を保護</block>
   <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">詳細については、<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
-  <block id="b60052c3864c4fab5da0f6b383192ef3" category="summary">SnapCenter Plug-in for VMware vSphere（SCV）で使用されるvCenterログオンクレデンシャルを更新します。vCenterクレデンシャルの変更後にこのタスクを使用し、vVolバックアップの場合はONTAP tools for VMware vSphereを再登録します。</block>
   <block id="74650e169a790c0e2cab1222243cfea0" category="list-text">MetroCluster環境のFlexGroupボリュームについて、ONTAP 9.8または9.9を使用している場合は、リソースグループをバックアップする前に、スイッチオーバーまたはスイッチバックの後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、SnapMirror関係を再同期してください。ONTAP 9.8では、スイッチバック後にバックアップがハングする可能性があります。これはONTAP 9.9で解決されています。</block>
-  <block id="00759daaffda87f838af0da06a84529c" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。これらのクレデンシャルは、vCenterへのアクセスに使用されます。vCenterのパスワードが変更された場合は、vVolバックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
   <block id="76752ff072d438537747c49941f2e4a9" category="paragraph">MetroCluster構成：</block>
+  <block id="0f6f81c54b2b5420fb1a6022ed399ea3" category="summary">SCV で設定された vCenter ログオン認証情報を更新します。vCenter 認証情報が変更された場合は、SCV で更新して vCenter が SCV に登録されたままになるようにします。</block>
+  <block id="023b1b7df19ea2584c5a257d5d7a36fb" category="doc">SCVで設定されたvCenterクレデンシャルを更新する</block>
+  <block id="2b4de7524492b82672c6bb6e1f6c142a" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。SCVはこれらのクレデンシャルを使用してvCenterにアクセスします。vCenterのクレデンシャルが変更された場合は、vCenterがSCVに登録されたままになるように、SCVでクレデンシャルを更新してください。vVolバックアップの場合は、バックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
 </blocks>
