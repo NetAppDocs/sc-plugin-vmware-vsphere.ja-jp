@@ -2261,8 +2261,8 @@
   <block id="938c2a8ffc581d610f5a993251309046" category="list-text"><block ref="938c2a8ffc581d610f5a993251309046" category="inline-link-rx"></block></block>
   <block id="36fabaf7f4604c508ea56a9df930fef3" category="section-title">NetApp Backup and Recoveryを使用してVMware環境を保護</block>
   <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">詳細については、<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
-  <block id="7132edc8383e0e83b6f687d75f421aa2" category="list-text">NetApp MetroCluster環境のFlexGroupボリュームでONTAP 9.8または9.9を使用している場合、リソースグループをバックアップする前に、スイッチオーバーまたはスイッチバック後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、SnapMirror関係を再同期してください。ONTAP 9.8では、スイッチバック後にバックアップがハングする可能性があります。これはONTAP 9.9で解決されています。</block>
   <block id="b60052c3864c4fab5da0f6b383192ef3" category="summary">SnapCenter Plug-in for VMware vSphere（SCV）で使用されるvCenterログオンクレデンシャルを更新します。vCenterクレデンシャルの変更後にこのタスクを使用し、vVolバックアップの場合はONTAP tools for VMware vSphereを再登録します。</block>
-  <block id="e1960404cde13a4aedb9ab257401c3c6" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。これらのクレデンシャルは、vCenterへのアクセスに使用されます。クレデンシャルの変更後にSCVをvCenterに登録または再登録する必要がある場合は、このタスクを実行します。vCenterのパスワードが変更された場合は、vVolバックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
-  <block id="370783e751b9f81d87d5e4b05672a702" category="paragraph">NetApp MetroCluster構成の場合：</block>
+  <block id="74650e169a790c0e2cab1222243cfea0" category="list-text">MetroCluster環境のFlexGroupボリュームについて、ONTAP 9.8または9.9を使用している場合は、リソースグループをバックアップする前に、スイッチオーバーまたはスイッチバックの後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、SnapMirror関係を再同期してください。ONTAP 9.8では、スイッチバック後にバックアップがハングする可能性があります。これはONTAP 9.9で解決されています。</block>
+  <block id="00759daaffda87f838af0da06a84529c" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。これらのクレデンシャルは、vCenterへのアクセスに使用されます。vCenterのパスワードが変更された場合は、vVolバックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
+  <block id="76752ff072d438537747c49941f2e4a9" category="paragraph">MetroCluster構成：</block>
 </blocks>
