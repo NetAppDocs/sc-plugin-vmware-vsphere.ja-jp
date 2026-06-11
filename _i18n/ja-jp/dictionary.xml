@@ -322,7 +322,6 @@
   <block id="e55c3cdc89e781170175d407fcc99d3e" category="list-text">1つのデータストアのリソースグループを作成するには、ショートカットページで*[ホストおよびクラスタ]*を選択し、データストアを右クリックして* SnapCenter Plug-in for VMware vSphere *&gt;*[リソースグループの作成]*を選択します。</block>
   <block id="80a40ff5b64afb4b2371d7fc0660350f" category="list-text">ウィザードの [ 一般情報と通知 *] ページで、次の操作を行います。</block>
   <block id="c4436d4a190778b7ec1e9461f6454bdd" category="cell">vCenter Server</block>
-  <block id="df86b612dee850ddbf3bd636d14cd09e" category="cell">vCenterサーバを選択します。</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名前</block>
   <block id="b1358d1843f648e7ea781a21a690cdd0" category="cell">リソースグループの説明を入力します。</block>
   <block id="96d008db67fc0b5551a926842bbb6a71" category="cell">通知</block>
@@ -864,7 +863,6 @@
   <block id="510b17a83061d1709c7a07368d7f8b8f" category="cell">lun lun create lun delete lun igroup add lun igroup create lun igroup delete lun igroup rename lun igroup rename lun igroup show lun mapping add-reporting-nodes lun mapping create lun mapping remove-reporting-nodes lun mapping show lun modify lun move-in-volume LUN offline LUN online lun persistent-reservation clear lun resize lun serial lun show をクリックします</block>
   <block id="847b8685554d07af7c2a25cc92eb932c" category="cell">snapmirror list-destinations snapmirror policy add-rule snapmirror policy modify -rule snapmirror policy show snapmirror restore snapmirror show -history snapmirror update snapmirror update-ls-set</block>
   <block id="34b6cd75171affba6957e308dcbd92be" category="cell">バージョン</block>
-  <block id="de92ae935b9e0d1f381bebce31b4ae2e" category="cell">cluster identity show network interface show vserver peer vserver show</block>
   <block id="3658e079605148c7ffe020b7c8da9b1a" category="admonition">サポートされていないvServerコマンドに関する警告メッセージは無視してかまいません。</block>
   <block id="7a69b919de28d081f80cd742609937a9" category="section-title">ONTAPに関するその他の情報</block>
   <block id="f492e93d9d3e86fc62690b1632797659" category="list-text">SnapMirrorのアクティブ同期機能を使用するには、ONTAP 9.12.1以降のバージョンが必要です。</block>
@@ -1737,7 +1735,6 @@
   <block id="c2ad807051aed38647dbaf48da9bc4e7" category="list-text">NVMe over TCPおよびNVMe over FCプロトコルを使用するには、ONTAP 9 10.1以降が必要です。</block>
   <block id="2233cc73f35f4d66a36bbbeebab35281" category="doc">SnapCenter Plug-in for VMware vSphereリリースノート</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">アップグレード可能なSnapCenter Plug-in for VMware vSphere（SCV）のバージョンは、現在実行しているバージョンによって異なります。</block>
-  <block id="4181b34482469dce169449ef3b643b27" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。</block>
   <block id="e369a7ee41a72fa8a44419a1129cc575" category="cell">SCVバージョンを使用している場合</block>
   <block id="189db0c09008fdcd0e2cc9be6b313231" category="cell">SCVを次のように直接アップグレードできます。</block>
   <block id="1ad22725dc59b3f21bd032fe84861bc1" category="paragraph">SCV 6.0</block>
@@ -1773,8 +1770,6 @@
   <block id="4fa7e925220267d7b768f4b3a78c6148" category="admonition">ASA R2ストレージシステムでは、バックアップの名前変更はサポートされていません。</block>
   <block id="d106abcc28b08528e977427482cfc257" category="paragraph">複数のカテゴリに変更を加えることができます。このオプションでは、保護されたセカンダリリソースを編集することもできます。</block>
   <block id="875b0302744a0f026125fde0002031ee" category="cell">volume clone create volume clone show volume clone split start volume clone split status volume clone split stop volume create volume delete volume destroy volume file clone create volume file show -disk-usage volume offline volume online volume managed-feature SnapLock volume modify volume qtree create volume qtree delete volume qtree modify volume qtree show volume restrict volume snapshot delete volume snapshot modify -expiry-time volume snapshot rename volume snapshot restore volume snapshot restore</block>
-  <block id="8f63ee5bc3100343496937f88eb71b0f" category="cell">vserver cifs vserver cifs share create vserver cifs shadowcopy show vserver cifs share show vserver cifs share show vserver cifs shadowcopy vserver cifs share show vserver export-policy vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver export-policy show vserver iscsi vserver iscsi connection show vserver nvme subsystem</block>
-  <block id="4e822e8bd084f0d55645c04096f9f2e8" category="cell">consistency-group storage-unit show</block>
   <block id="73bf8d0963d0fce608d5706a43357517" category="admonition">IPv4アドレスとIPv6アドレスの両方を使用している場合、両方のネットワーク設定を削除することはできません。残りのネットワークでは、[DNS Servers]フィールドと[Search Domains]フィールドを指定する必要があります。</block>
   <block id="82483f0ce94e070521dde3173ea8f007" category="list-text">IPv4アドレスを実行しており、SnapCenter VMware vSphereホストのIPアドレスが2つある。その結果、ジョブ要求はSnapCenterサーバで認識されないIPアドレスに送信されます。この問題を回避するには、使用するIPアドレスを次のように追加します。</block>
   <block id="cab2abd3782f0d1cb3afdd1d41344792" category="cell">すべてのSnapCenter Plug-in for VMware vSphereタスクの実行に必要なvCenter Server標準とSnapCenter固有のPrivilegesがすべて提供されています。SCV 6.1リリース以降では、セカンダリ保護を作成するための新しい権限がこのロールに追加されています。</block>
@@ -2104,7 +2099,6 @@
   <block id="1b0aac0d178a998b03e863394b3e7950" category="paragraph">最低限、すべてのユーザがvCenterオブジェクトを表示できる必要があります。この権限がないと、ユーザーは VMware vSphere クライアント ユーザー インターフェイスにアクセスできません。</block>
   <block id="7a454073261572d07d840fe38e19ccc6" category="paragraph">VMware vSphereクライアントのユーザーインターフェースにバックアップがマウント済みとして表示されているが、バックアップのアンマウント画面に表示されない場合は、REST APIを使用する必要があります。<block ref="2e3469d072cd789ddb510e2b63330047" prefix=" " category="inline-code"></block>範囲外のデータストアをクリーンアップしてから、マウント解除手順を再度試してください。</block>
   <block id="c2ac51352318f6eb34d2d1b5ed80c9c4" category="paragraph">負荷共有ミラー関係にあるルートボリュームを持つストレージVM（SVM）にNFSデータストアのバックアップコピーをマウントしようとすると、次のエラーが発生する可能性があります。<block ref="83833b8e4bd60dcfc6d03ae3f87763a8" prefix=" " category="inline-code"></block>この問題を回避するには、*ESX* &gt; *管理* &gt; *設定* &gt; *詳細システム設定* に移動して NFS.MaxVolumes 値を変更し、最大ボリューム設定を変更します。最大値は256です。</block>
-  <block id="cc5fab4c3664faa9c9ca004a97e1b105" category="admonition">SCV 6.2へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。サポートされていないバージョンのVMware vCenter Serverでは、アップグレードが中断されます。</block>
   <block id="62f7c78d5c0a5936b8cfb0c8ebc643ee" category="cell">SCV 6.2へのアップグレード</block>
   <block id="cd3f9b67c376119780d19a21bcf00550" category="cell">SCV 6.1およびSCV 6.2へのアップグレード</block>
   <block id="8be9482100b17d6c7657ad094600bdb4" category="list-text">SnapCenter Plug-in for VMware vSphere管理ユーザー インターフェイスにログインします。このIPアドレスは、SnapCenter Plug-in for VMware vSphereの導入時に表示されたものです。</block>
@@ -2261,7 +2255,68 @@
   <block id="04bc8505634cea728bd42022dbbe2763" category="paragraph">詳細については、<block ref="3cc65228ae073aa630520717edc687a9" category="inline-link-rx"></block>を参照してください。</block>
   <block id="74650e169a790c0e2cab1222243cfea0" category="list-text">MetroCluster環境のFlexGroupボリュームについて、ONTAP 9.8または9.9を使用している場合は、リソースグループをバックアップする前に、スイッチオーバーまたはスイッチバックの後にSnapCenter Plug-in for VMware vSphereサービスを再起動し、SnapMirror関係を再同期してください。ONTAP 9.8では、スイッチバック後にバックアップがハングする可能性があります。これはONTAP 9.9で解決されています。</block>
   <block id="76752ff072d438537747c49941f2e4a9" category="paragraph">MetroCluster構成：</block>
-  <block id="0f6f81c54b2b5420fb1a6022ed399ea3" category="summary">SCV で設定された vCenter ログオン認証情報を更新します。vCenter 認証情報が変更された場合は、SCV で更新して vCenter が SCV に登録されたままになるようにします。</block>
   <block id="023b1b7df19ea2584c5a257d5d7a36fb" category="doc">SCVで設定されたvCenterクレデンシャルを更新する</block>
   <block id="2b4de7524492b82672c6bb6e1f6c142a" category="paragraph">このタスクを使用して、SnapCenter Plug-in for VMware vSphereで設定されているvCenterログオンクレデンシャルを更新します。SCVはこれらのクレデンシャルを使用してvCenterにアクセスします。vCenterのクレデンシャルが変更された場合は、vCenterがSCVに登録されたままになるように、SCVでクレデンシャルを更新してください。vVolバックアップの場合は、バックアップが引き続き機能するように、ONTAP tools for VMware vSphereの登録を解除してから、新しいパスワードでONTAP toolsを再登録してください。</block>
+  <block id="43c52d8f3d25db07d38b9871146a2da2" category="summary">このタスクを使用して、認証情報、ネットワーク、またはアプライアンスの変更後にvCenterでのSCV登録を復元します。</block>
+  <block id="5a070f348389de9cff0a193b562d7b21" category="doc">vCenterとのSCV接続と登録を復元します</block>
+  <block id="919a3a3d19319fe5014e205c33934d23" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）は、アプライアンスをデプロイすると自動的にvCenterに登録されます。登録が破損した場合（たとえば、vCenterパスワードの変更、SCVのIPアドレスまたはホスト名の変更、接続障害、または部分的なデプロイメントの失敗後など）は、このタスクを使用して接続と登録を復旧し、正常であることを確認してください。</block>
+  <block id="5991a149088e8fe77731e475f3b785b6" category="paragraph">登録が正常に完了しない場合は、以下のいずれかの方法で再試行してください：</block>
+  <block id="ef427469780c21b942dad7d22b4246d5" category="list-text">VMware vSphere クライアントサービス<block ref="b9bd73cd48507ef4110c9e03dc696012" prefix="(" category="inline-code"></block>）が再起動されます。</block>
+  <block id="4abd7894ecab8338c2db9e68d7a90070" category="list-text">SCVアプライアンスのIPアドレスまたはホスト名が変更されます。</block>
+  <block id="8cb51049f35f92c8309522057424230d" category="list-text">vCenterの認証情報はSCVに再保存されます。</block>
+  <block id="1496ea61e8bb33de525b04fbe775876a" category="list-text">SCV管理ユーザインターフェイスのIPアドレスとログオン認証情報を確認しておく必要があります。</block>
+  <block id="f5c8495f15b4c71d17cc00ff1c1f1f4f" category="list-text">多要素認証（MFA）が有効になっている場合は、メンテナンスコンソールから新しい6桁のMFAトークンを生成してください。</block>
+  <block id="6e5c4686c366608c244b57b0f4d069c4" category="list-text">SCVが使用するvCenterアカウントに、vCenterルートで必要な権限が割り当てられていることを確認してください。</block>
+  <block id="6a166972b82d0eab4cb668dc791c63c6" category="paragraph">詳細については、<block ref="c9e6463b994872f5c325b738adbc5cd9" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="182a24a443bd65bde9589f0241ce1fbe" category="section-title">リカバリ手順</block>
+  <block id="ddea65b4f2838b9f5de7daab0cb9f9fd" category="list-text">VMware vSphere クライアントサービスを再起動します。</block>
+  <block id="f42533ed4dcea74c28de2e6a45add359" category="paragraph">再起動すると、拡張機能の登録が自動的に再実行されます。詳細については、<block ref="a16731bdba744dbf60aba55ebd326640" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="b54ea8d2396716d0d9a41a78ccda0f06" category="list-text">再起動しても問題が解決しない場合は、以下の手順を実行してください：</block>
+  <block id="cb1fd69f30b8a54a084a8631921fed6b" category="list-text">SnapCenter Plug-in for VMware vSphere管理ユーザインターフェイスに、次の形式を使用してログインします<block ref="cf854de4a942e42c016ef31d206a66c3" prefix=" " category="inline-code"></block>。</block>
+  <block id="20026c0b8b9fcb3f6b465db3ed9d98f5" category="list-text">*構成* &gt; *vCenter* &gt; *編集*を選択します。</block>
+  <block id="8cf0862c3708f53a590bc1acaca2601e" category="list-text">現在のパスワードを入力し、*保存*を選択します。</block>
+  <block id="1bdb304d45c45d760db874fe6c9fad0c" category="paragraph">詳細については、<block ref="14048bf28187e1083f8714a79e8ea796" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="9d62fc990128d09df105233e7367a2b7" category="list-text">プラグインの登録を解除して再登録します。</block>
+  <block id="932b34b60e4c002b7c1a281ada9973d8" category="paragraph">プラグインがまだ接続されていない場合は、以下の手順を実行してください：</block>
+  <block id="fe733b75b255a0cc9c1a059cd27340de" category="list-text">vCenterからSCVの登録を解除します。</block>
+  <block id="638c3fa156ff7fb8413257f1e29b0df1" category="list-text">vCenter のクレデンシャルを再保存するか、VMware vSphere クライアントサービスを再起動して、SCV を再登録します。</block>
+  <block id="48b859f1035a311bf5d5dca8c444be84" category="paragraph">登録された拡張機能が古い SCV IP アドレスを指している場合、プラグインの登録を解除して再登録すると、登録情報が更新されます。</block>
+  <block id="8aba17441f2cb36426a8079a21174224" category="paragraph">詳細については、<block ref="5e29aaecbba6fa7e778be2d54737f47f" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="054d14a3e1ea888b8a0aceaa5aaeb932" category="inline-link-macro">登録が成功したことを確認します</block>
+  <block id="2d8d53614f2a7258c741d72e25abc772" category="list-text"><block ref="73927d9f5734a6d56496ea1dc9aad0a3" category="inline-link-macro-rx"></block>.</block>
+  <block id="2341a650916af7661beea7eacf223138" category="paragraph">以下のいずれかのチェックを使用して、SCVが登録され接続されていることを確認します。</block>
+  <block id="c43d62a94696b0504dbbf371dafbcd1e" category="list-text">*管理ユーザーインターフェース*：*ダッシュボード*で、SCVがvCenterに接続され、有効になっていることを確認します。</block>
+  <block id="e40a04fabb7f9febc361754e6c56f12c" category="list-text">*vSphere Client*：*SnapCenter Plug-in for VMware vSphere* メニューが表示され、プラグインページが読み込まれることを確認してください。</block>
+  <block id="3e617e58af06c5f67ead57257935062a" category="list-text">*ログ（アプライアンス）*：<block ref="9be40132e1a18d95517f496b87011326" prefix=" " category="inline-code"></block>で、<block ref="5236833c9e3b43c6b1c69d1a9861427c" prefix=" " category="inline-code"></block>や<block ref="6cbee1c212d96e17b497155f167d0ca7" prefix=" " category="inline-code"></block>などの登録メッセージを探してください。クレデンシャルの変更も<block ref="c1ace7a3d9378453ad7a99427543d23e" prefix=" " category="inline-code"></block>に記録されます。</block>
+  <block id="26de167c2f11fbc71083eaeaf4e62b91" category="paragraph">以下の資料は、高度なトラブルシューティングを行う場合にのみ使用してください。入手可能性および正確な値は、リリースや環境によって異なる場合があります。</block>
+  <block id="6e33c492cba08f3c2dead5625b3ca224" category="list-text">vCenter拡張機能マネージャーでは、SCV関連の拡張機能<block ref="e6d17d899e2a5d0700cc16120b733afb" prefix=" " category="inline-code"></block>および<block ref="6e551029da4d3fc2a0ec2eaaf6340fe3" prefix=" " category="inline-code"></block>が表示される場合があります。</block>
+  <block id="17e25b037261fac76c0a2f7053399fa1" category="list-text">環境によっては、従来の HTML クライアント拡張機能<block ref="044d220e5ce47ab71a56bfa88a3fe8d8" prefix=" " category="inline-code"></block>が表示される場合もあります。</block>
+  <block id="0f0f99fcfb4ddc7485a8d743c13e5117" category="list-text">アプライアンスのログにアクセスできる場合は、このトピックで前述した登録関連のエントリやAPIアクティビティを確認することもできます。</block>
+  <block id="ca05d25b67ed3de731ca63dd819edc20" category="section-title">よくある登録エラーとその対処法</block>
+  <block id="4418fe9a3c32e8daa1f2bd504a070c20" category="list-text">*無効なログイン認証情報*</block>
+  <block id="c4f5fdbaaad6d27bf95b0efa277de132" category="list-text">正しいvCenterユーザー名<block ref="93dead10a7b3f8e9571207c1c5ecc9c9" prefix="(" category="inline-code"></block>）とパスワードを再入力してください。</block>
+  <block id="faa1be5d2914d87b8dcac52ccec7e639" category="list-text">メンテナンスコンソールから新しい6桁のMFAトークンを生成してください。</block>
+  <block id="87c2757f6f84eaa094d2644d0cf59158" category="list-text">*権限不足（RBAC）*：vCenterアカウントに、拡張機能を登録する権限を含む、SCVで必要な権限がvCenterルートに割り当てられていることを確認してください。</block>
+  <block id="9c575971ab1b2b1247ca8903a756ba9d" category="list-text">*vCenter に接続できない、または接続が拒否されました*：vCenter のホストとポート、ネットワークとファイアウォールの接続性、および vCenter が実行中であることを確認してください。</block>
+  <block id="e8c13763d0e454ac37a03be4c6450f0e" category="list-text">*不明なホスト*：vCenterのFQDNまたはIPアドレスを確認し、アプライアンスからDNS解決が機能することを確認してください。</block>
+  <block id="57ea16a1b1df2116d1af963e99026cf4" category="list-text">*サポート対象外のvCenterバージョン*：SCVはvCenter Server 7.0U1以降をサポートしています。</block>
+  <block id="27132d229f2cea60080795427649eae1" category="paragraph">詳細については、<block ref="6f3bd7747e3dcc75f2d93f69bee57be5" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="817650ebcd081deb1c3da280c402a1e7" category="list-text">*サービスが実行されていません*：VMware vSphere クライアントサービスが停止している場合、登録を実行できません。</block>
+  <block id="9d7e0542459b60f98e1d8529e2c87e4e" category="section-title">関連トピック</block>
+  <block id="14048bf28187e1083f8714a79e8ea796" category="list-text"><block ref="14048bf28187e1083f8714a79e8ea796" category="inline-link-macro-rx"></block></block>
+  <block id="a16731bdba744dbf60aba55ebd326640" category="list-text"><block ref="a16731bdba744dbf60aba55ebd326640" category="inline-link-macro-rx"></block></block>
+  <block id="5e29aaecbba6fa7e778be2d54737f47f" category="list-text"><block ref="5e29aaecbba6fa7e778be2d54737f47f" category="inline-link-macro-rx"></block></block>
+  <block id="c9e6463b994872f5c325b738adbc5cd9" category="list-text"><block ref="c9e6463b994872f5c325b738adbc5cd9" category="inline-link-macro-rx"></block></block>
+  <block id="bf66889dc0e5fa58a9b7443b0851e8e7" category="cell">vCenter サーバを選択します。</block>
+  <block id="79b270058931826b792551f81ad31e75" category="cell">vserver cifs vserver export-policy vserver export-policy create vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem create vserver nvme subsystem delete vserver nvme subsystem host vserver nvme subsystem host show vserver nvme subsystem host add vserver nvme subsystem host remove vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem modify vserver nvme subsystem show vserver nvme namespace create vserver nvme namespace delete vserver nvme namespace modify vserver nvme namespace show network interface</block>
+  <block id="17c15daeacf43c5df6651bee53929afe" category="cell">cluster identity show network interface show vserver</block>
+  <block id="211972e7ef3be37421ce3be715572865" category="cell">vserver consistency-group</block>
+  <block id="6dd1a2af733d08e665056a19eb8ef3f6" category="summary">vCenterのクレデンシャル変更後にこのタスクを使用して、SCVのクレデンシャルを更新し、SCVをvCenterに登録したままにします。</block>
+  <block id="31cce324bf8ce5126b85c7e725e273c0" category="paragraph">新しい認証情報を保存した後、SCVがまだvCenterに接続されていることを確認してください。</block>
+  <block id="d9488458897e0fbe38829bb5c5bedc5b" category="list-text">SnapCenter Plug-in for VMware vSphere管理ユーザーインターフェイスで、*ダッシュボード*を開き、SCVがvCenterに接続され、有効になっていることを確認します。</block>
+  <block id="a1a47c5e382c52e2184cfe8377316234" category="list-text">vSphere Client で、*SnapCenter Plug-in for VMware vSphere* メニューが表示され、プラグインページが読み込まれることを確認します。</block>
+  <block id="6898784428bbe5e5955903bef50af0a1" category="list-text">オプション：リソースグループを開くか、オンデマンドバックアップを実行して、vCenterの処理が機能することを確認します。</block>
+  <block id="20ceb481fbc8f4970bcc1d340df1f4e3" category="paragraph">認証情報の変更後に SCV が接続されない場合は、VMware vSphere クライアントサービスを再起動してください。SCV がまだ接続されていない場合は、<block ref="f2a6ad7f72b7a890165a515940ad8314" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="570c179f2910eb222c034a71d4857354" category="admonition">SCV 6.2へのアップグレードは、VMware vCenter Server 7 update 1以降のバージョンでのみサポートされています。VMware vCenter Server バージョン7 update 1より前のバージョンをご利用の場合は、引き続きSCV 4.7をご使用ください。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードによって動作に支障をきたします。</block>
+  <block id="430ae1961340ee0cb232fabeaa98e220" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 update 1以降のバージョンでのみサポートされます。バージョン7 update 1より前のVMware vCenter Serverについては、引き続きSCV 4.7を使用する必要があります。</block>
 </blocks>

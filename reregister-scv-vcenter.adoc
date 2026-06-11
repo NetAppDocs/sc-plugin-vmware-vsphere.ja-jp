@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reregister-scv-vcenter.html 
+keywords: re-register SCV with vCenter, recover SCV registration, SCV not connected to vCenter, update vCenter credentials in SCV, unregister SCV extension 
+summary: このタスクを使用して、認証情報、ネットワーク、またはアプライアンスの変更後にvCenterでのSCV登録を復元します。 
+---
+= vCenterとのSCV接続と登録を復元します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere（SCV）は、アプライアンスをデプロイすると自動的にvCenterに登録されます。登録が破損した場合（たとえば、vCenterパスワードの変更、SCVのIPアドレスまたはホスト名の変更、接続障害、または部分的なデプロイメントの失敗後など）は、このタスクを使用して接続と登録を復旧し、正常であることを確認してください。
+
+登録が正常に完了しない場合は、以下のいずれかの方法で再試行してください：
+
+* VMware vSphere クライアントサービス(`scvservice`）が再起動されます。
+* SCVアプライアンスのIPアドレスまたはホスト名が変更されます。
+* vCenterの認証情報はSCVに再保存されます。
+
+
+.開始する前に
+* SCV管理ユーザインターフェイスのIPアドレスとログオン認証情報を確認しておく必要があります。
+* 多要素認証（MFA）が有効になっている場合は、メンテナンスコンソールから新しい6桁のMFAトークンを生成してください。
+* SCVが使用するvCenterアカウントに、vCenterルートで必要な権限が割り当てられていることを確認してください。
++
+詳細については、link:scpivs44_minimum_vcenter_privileges_required.html["SCV に必要な最小限の vCenter 権限"]を参照してください。
+
+
+
+
+
+== リカバリ手順
+
+. VMware vSphere クライアントサービスを再起動します。
++
+再起動すると、拡張機能の登録が自動的に再実行されます。詳細については、link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["SCV の VMware vSphere クライアントサービスを再起動します"]を参照してください。
+
+. 再起動しても問題が解決しない場合は、以下の手順を実行してください：
++
+.. SnapCenter Plug-in for VMware vSphere管理ユーザインターフェイスに、次の形式を使用してログインします `\https://<appliance-IP-address>:8080`。
+.. *構成* > *vCenter* > *編集*を選択します。
+.. 現在のパスワードを入力し、*保存*を選択します。
++
+詳細については、link:scpivs44_modify_the_vcenter_logon_credentials.html["SCVで設定されたvCenterクレデンシャルを更新する"]を参照してください。
+
+
+
+. プラグインの登録を解除して再登録します。
++
+プラグインがまだ接続されていない場合は、以下の手順を実行してください：
+
++
+.. vCenterからSCVの登録を解除します。
+.. vCenter のクレデンシャルを再保存するか、VMware vSphere クライアントサービスを再起動して、SCV を再登録します。
++
+登録された拡張機能が古い SCV IP アドレスを指している場合、プラグインの登録を解除して再登録すると、登録情報が更新されます。
+
++
+詳細については、link:scpivs44_unregister_plugin_from_vcenter.html["vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除する"]を参照してください。
+
+
+
+. link:#verify-registration-succeeded["登録が成功したことを確認します"].
+
+
+
+
+== 登録が成功したことを確認します
+
+以下のいずれかのチェックを使用して、SCVが登録され接続されていることを確認します。
+
+* *管理ユーザーインターフェース*：*ダッシュボード*で、SCVがvCenterに接続され、有効になっていることを確認します。
+* *vSphere Client*：*SnapCenter Plug-in for VMware vSphere* メニューが表示され、プラグインページが読み込まれることを確認してください。
+* *ログ（アプライアンス）*： `/var/log/netapp/vmcontrol/vmcontrol.log`で、 `Registering Aegis as a Vcenter Extension`や `Registered com.netapp.aegis extension`などの登録メッセージを探してください。クレデンシャルの変更も `/var/log/netapp/audit/audit.log`に記録されます。
+
+
+[NOTE]
+====
+以下の資料は、高度なトラブルシューティングを行う場合にのみ使用してください。入手可能性および正確な値は、リリースや環境によって異なる場合があります。
+
+* vCenter拡張機能マネージャーでは、SCV関連の拡張機能 `com.netapp.aegis`および `com.netapp.scv.client`が表示される場合があります。
+* 環境によっては、従来の HTML クライアント拡張機能 `com.netapp.scvm.webclient`が表示される場合もあります。
+* アプライアンスのログにアクセスできる場合は、このトピックで前述した登録関連のエントリやAPIアクティビティを確認することもできます。
+
+
+====
+
+
+== よくある登録エラーとその対処法
+
+* *無効なログイン認証情報*
++
+.. 正しいvCenterユーザー名(`domain\username`）とパスワードを再入力してください。
+.. メンテナンスコンソールから新しい6桁のMFAトークンを生成してください。
+
+
+* *権限不足（RBAC）*：vCenterアカウントに、拡張機能を登録する権限を含む、SCVで必要な権限がvCenterルートに割り当てられていることを確認してください。
++
+詳細については、link:scpivs44_minimum_vcenter_privileges_required.html["SCV に必要な最小限の vCenter 権限"]を参照してください。
+
+* *vCenter に接続できない、または接続が拒否されました*：vCenter のホストとポート、ネットワークとファイアウォールの接続性、および vCenter が実行中であることを確認してください。
+* *不明なホスト*：vCenterのFQDNまたはIPアドレスを確認し、アプライアンスからDNS解決が機能することを確認してください。
+* *サポート対象外のvCenterバージョン*：SCVはvCenter Server 7.0U1以降をサポートしています。
++
+詳細については、link:scpivs44_deployment_planning_and_requirements.html["SCVの導入計画と要件"]を参照してください。
+
+* *サービスが実行されていません*：VMware vSphere クライアントサービスが停止している場合、登録を実行できません。
++
+VMware vSphere クライアントサービスを再起動します。
+
+
+
+
+
+== 関連トピック
+
+* link:scpivs44_modify_the_vcenter_logon_credentials.html["SCVで設定されたvCenterクレデンシャルを更新する"]
+* link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["SCV の VMware vSphere クライアントサービスを再起動します"]
+* link:scpivs44_unregister_plugin_from_vcenter.html["vCenter から SnapCenter Plug-in for VMware vSphere の登録を解除する"]
+* link:scpivs44_minimum_vcenter_privileges_required.html["SCV に必要な最小限の vCenter 権限"]
+

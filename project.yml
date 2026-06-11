@@ -212,6 +212,8 @@ sidebar:
       url: "/scpivs44_modify_the_logon_credentials.html"
     - title: SCVで設定されたvCenterクレデンシャルを更新する
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
+    - title: vCenterとのSCV接続と登録を復元します
+      url: "/reregister-scv-vcenter.html"
     - title: ネットワーク設定の変更
       url: "/scpivs44_modify_the_network_settings.html"
     - title: 設定のデフォルト値を変更します。

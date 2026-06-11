@@ -13,7 +13,7 @@ summary: SnapCenter Plug-in for VMware vSphere 6.1の新機能について説明
 
 [NOTE]
 ====
-SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 Update 1以降のバージョンでのみサポートされます。バージョン7 Update 1より前のVMware vCenter Serverでは、引き続きSCV 4.7を使用する必要があります。
+SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 update 1以降のバージョンでのみサポートされます。バージョン7 update 1より前のVMware vCenter Serverについては、引き続きSCV 4.7を使用する必要があります。
 
 ====
 [cols="50%,50%"]
