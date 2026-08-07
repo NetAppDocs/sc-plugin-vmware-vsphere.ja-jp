@@ -18,12 +18,14 @@ SnapCenter Plug-in for VMware vSphereを導入したら、インストールを�
 
 
 
+[[required-operations-after-deployment]]
 == 導入後に必要な処理
 
 SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加してからデータ保護処理を実行する必要があります。Storage VMを追加するときは、管理LIFを指定してください。クラスタを追加してクラスタ管理LIFを指定することもできます。ストレージの追加については、を参照して link:scpivs44_add_storage_01.html["ストレージの追加"^]ください。
 
 
 
+[[deployment-issues-you-might-encounter]]
 == トウニユウニカンスルモンタイ
 
 * 仮想アプライアンスの導入後、ダッシュボードの * Backup Jobs * タブに次のような状況でロードされないことがあります。
@@ -52,6 +54,7 @@ SnapCenterを初めて使用する場合は、Storage VMをSnapCenterに追加�
 
 
 
+[[manage-authentication-errors]]
 == 認証エラーを管理します。
 
 adminクレデンシャルを使用しないと、SnapCenter Plug-in for VMware vSphereの導入後または移行後に認証エラーが表示されることがあります。認証エラーが発生した場合は、サービスを再起動する必要があります。
@@ -63,6 +66,7 @@ adminクレデンシャルを使用しないと、SnapCenter Plug-in for VMware 
 
 
 
+[[register-snapcenter-plug-in-for-vmware-vsphere-with-snapcenter-server]]
 == SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録
 
 SnapCenter（仮想化されたデータベースとファイルシステムのアプリケーションベースの保護ワークフロー）でVMDKを介したアプリケーションワークフローを実行する場合は、SnapCenter Plug-in for VMware vSphereをSnapCenter Serverに登録する必要があります。

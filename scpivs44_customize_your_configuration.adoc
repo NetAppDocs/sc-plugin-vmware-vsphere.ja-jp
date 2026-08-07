@@ -20,6 +20,7 @@ summary: 運用効率を高めるために、 scbr.override 構成ファイル�
 
 
 
+[[create-the-scbr-override-configuration-file]]
 == scbr.override構成ファイルを作成します。
 
 . に進みます `/opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.override-template`。
@@ -28,6 +29,7 @@ summary: 運用効率を高めるために、 scbr.override 構成ファイル�
 
 
 
+[[properties-you-can-override]]
 == オーバーライド可能なプロパティ
 
 * デフォルトでは、テンプレートはハッシュ記号を使用して構成プロパティをコメント化します。プロパティを使用して設定値を変更するには、文字を削除する必要があり `#` ます。

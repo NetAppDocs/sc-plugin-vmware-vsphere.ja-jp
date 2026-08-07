@@ -18,6 +18,7 @@ VMware vSphere Clientを使用してVMまたはデータストアをバックア
 
 
 
+[[modify-storage-vms]]
 == Storage VMの変更
 
 VMware vSphere Clientを使用して、SnapCenter Plug-in for VMware vSphereに登録されてVMのデータ保護処理に使用されるクラスタおよびStorage VMの設定を変更できます。
@@ -35,6 +36,7 @@ IMPORTANT: SnapCenterユーザー インターフェイスを使用してアプ�
 
 
 
+[[remove-storage-vms]]
 == Storage VMの削除
 
 VMware vSphere Clientを使用して、vCenterのインベントリからStorage VMを削除できます。

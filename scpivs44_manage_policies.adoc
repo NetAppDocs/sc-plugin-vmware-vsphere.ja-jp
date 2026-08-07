@@ -18,6 +18,7 @@ SnapCenter Plug-in for VMware vSphereのバックアップポリシーを作成�
 
 
 
+[[detach-policies]]
 == ポリシーの適用解除
 
 リソースのデータ保護を管理するポリシーが不要になった場合は、SnapCenter Plug-in for VMware vSphereリソースグループからポリシーの適用を解除できます。ポリシーを削除する前、またはスケジュール頻度を変更する前に、ポリシーの適用を解除する必要があります。
@@ -36,6 +37,7 @@ SnapCenter Plug-in for VMware vSphereリソースグループからポリシー�
 
 
 
+[[modify-policies]]
 == ポリシーの変更
 
 SnapCenter Plug-in for VMware vSphereリソースグループのポリシーを変更できます。リソースグループにポリシーが適用されている場合は、頻度、レプリケーションオプション、Snapshotの保持設定、またはスクリプトの情報を変更できます。
@@ -68,6 +70,7 @@ NOTE: SnapCenter Plug-in for VMware vSphereポリシーのスケジュールを�
 
 
 
+[[delete-policies]]
 == ポリシーの削除
 
 SnapCenter Plug-in for VMware vSphere用に設定したバックアップポリシーが不要になった場合は、ポリシーを削除できます。

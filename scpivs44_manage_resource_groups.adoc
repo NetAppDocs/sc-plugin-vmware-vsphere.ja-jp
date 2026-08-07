@@ -21,6 +21,7 @@ NOTE: Virtual Storage Console（VSC）では、リソースグループはバッ
 
 
 
+[[suspend-and-resume-operations-on-resource-groups]]
 == リソースグループに対する処理の一時停止と再開
 
 リソース グループでスケジュールされた操作を一時停止します。必要に応じて再度有効にします。
@@ -37,6 +38,7 @@ NOTE: Virtual Storage Console（VSC）では、リソースグループはバッ
 
 
 
+[[modify-resource-groups]]
 == リソースグループの変更
 
 vCenterでリソースグループ内のリソースの削除や追加、ポリシーの適用解除や適用、スケジュールの変更、その他のリソースグループオプションの変更を行うことができます。
@@ -57,6 +59,7 @@ vCenterでリソースグループ内のリソースの削除や追加、ポリ�
 
 
 
+[[delete-resource-groups]]
 == リソースグループの削除
 
 リソースを保護する必要がない場合は、vCenter でリソース グループを削除します。  SnapCenter Plug-in for VMware vSphereを削除する前に、すべてのリソース グループを削除します。

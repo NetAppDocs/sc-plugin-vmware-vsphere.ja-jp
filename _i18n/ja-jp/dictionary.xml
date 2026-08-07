@@ -1547,7 +1547,6 @@
   <block id="ae40a6aa6dbafd02a1a6877c0cd95c90" category="admonition">ネットワーク設定を静的からDHCPに切り替えることはできません。</block>
   <block id="a115e2512005f81c492d368a9613ee58" category="list-text">SnapCenter Plug-in for VMware vSphereを無効にしてアップグレードを準備します。</block>
   <block id="47ad474a6a92b78b6ce74b61fe8b6bbb" category="list-text">アップグレードファイルをダウンロードし<block ref="1ba589501f1cc472dfdecac1bd09a624" prefix=" " category="inline-code"></block> ます。</block>
-  <block id="b41450a0b1e390fd09941d73050688f9" category="list-text">NetAppサポートサイトにログインし <block ref="82ad09cc2a56a6454a10d6f7b4058c3c" category="inline-link-rx"></block>ます）。</block>
   <block id="7dfb2dcb3c7621537351eac0e0c6d1af" category="list-text">SnapCenter Plug-in for VMware vSphereのアップグレードファイルを任意の場所にダウンロードし<block ref="1ba589501f1cc472dfdecac1bd09a624" prefix=" " category="inline-code"></block> ます。</block>
   <block id="f5b0696bfd02863abb2d114ef575a203" category="list-text">アップグレードをインストールします。</block>
   <block id="1ced0a64a9eacafaada35a9482d31c57" category="list-text">ブラウザで、VMware vSphere vCenterに移動します。</block>
@@ -2319,4 +2318,9 @@
   <block id="20ceb481fbc8f4970bcc1d340df1f4e3" category="paragraph">認証情報の変更後に SCV が接続されない場合は、VMware vSphere クライアントサービスを再起動してください。SCV がまだ接続されていない場合は、<block ref="f2a6ad7f72b7a890165a515940ad8314" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="570c179f2910eb222c034a71d4857354" category="admonition">SCV 6.2へのアップグレードは、VMware vCenter Server 7 update 1以降のバージョンでのみサポートされています。VMware vCenter Server バージョン7 update 1より前のバージョンをご利用の場合は、引き続きSCV 4.7をご使用ください。サポート対象外のバージョンのVMware vCenter Serverでは、アップグレードによって動作に支障をきたします。</block>
   <block id="430ae1961340ee0cb232fabeaa98e220" category="paragraph">SnapCenter Plug-in for VMware vSphere（SCV）4.8以降へのアップグレードは、VMware vCenter Server 7 update 1以降のバージョンでのみサポートされます。バージョン7 update 1より前のVMware vCenter Serverについては、引き続きSCV 4.7を使用する必要があります。</block>
+  <block id="e7cf50365f6cd8b8191b1582a763572f" category="inline-link-macro">SnapCenter Plug-in for VMware vSphere の導入計画と要件</block>
+  <block id="e265dbaceed2be137ef9239c0c28ca81" category="admonition">アップグレードを行う前に、お使いの環境がシステム要件を満たしていることを確認してください。詳細については、<block ref="a0e1882159016587140942a1478a5aea" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="be0cdd104110166e130ddd84d1c1fc51" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="c4b2de34dedab2af97f29b6fccd6575c" category="inline-link-macro-rx"></block>を参照してください。</block>
+  <block id="8c41baf1ca98e1184f48c4721d44d431" category="inline-link-macro">NetApp サポート サイト</block>
+  <block id="9eeb0054bc82844b2782a42bddf7c681" category="list-text"><block ref="fe673711457a0919d053a9db0146aa49" category="inline-link-macro-rx"></block>にログインします。</block>
 </blocks>

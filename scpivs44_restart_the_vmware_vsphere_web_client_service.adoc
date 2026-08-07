@@ -18,6 +18,7 @@ SnapCenter VMware vSphere Clientの動作が正しくない場合は、ブラウ
 
 
 
+[[restart-the-vmware-vsphere-client-service-in-a-linux-vcenter]]
 == Linux vCenterでVMware vSphere Client Serviceを再起動する
 
 .開始する前に

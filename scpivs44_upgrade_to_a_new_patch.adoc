@@ -24,6 +24,7 @@ summary: 同じリリースの新しいパッチにアップグレードする�
 
 
 
+[[steps-for-clearing-the-cache]]
 == キャッシュをクリアする手順
 
 . フォルダを探し `vsphere-client-serenity` 、フォルダを見つけ `com.netapp.scv.client-<release-number>` て削除します。

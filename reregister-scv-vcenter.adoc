@@ -34,6 +34,7 @@ SnapCenter Plug-in for VMware vSphere（SCV）は、アプライアンスをデ�
 
 
 
+[[recovery-steps]]
 == リカバリ手順
 
 . VMware vSphere クライアントサービスを再起動します。
@@ -70,6 +71,8 @@ SnapCenter Plug-in for VMware vSphere（SCV）は、アプライアンスをデ�
 
 
 
+[[verify-that-the-registration-succeeded]]
+[[verify-registration-succeeded]]
 == 登録が成功したことを確認します
 
 以下のいずれかのチェックを使用して、SCVが登録され接続されていることを確認します。
@@ -91,6 +94,7 @@ SnapCenter Plug-in for VMware vSphere（SCV）は、アプライアンスをデ�
 ====
 
 
+[[common-registration-errors-and-remediations]]
 == よくある登録エラーとその対処法
 
 * *無効なログイン認証情報*
@@ -117,6 +121,7 @@ VMware vSphere クライアントサービスを再起動します。
 
 
 
+[[related-topics]]
 == 関連トピック
 
 * link:scpivs44_modify_the_vcenter_logon_credentials.html["SCVで設定されたvCenterクレデンシャルを更新する"]

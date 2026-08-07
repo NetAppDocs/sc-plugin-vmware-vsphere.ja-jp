@@ -41,6 +41,7 @@ summary: ダッシュボードから1つ以上のジョブのレポートを要�
 
 
 
+[[types-of-reports-from-the-vmware-vsphere-client]]
 == VMware vSphere Clientからのレポートの種類
 
 VMware vSphere Client for SnapCenterにはカスタマイズ可能なレポートオプションが用意されており、データ保護ジョブやプラグインリソースのステータスに関する詳細を確認できます。一次保護のレポートのみを生成できます。

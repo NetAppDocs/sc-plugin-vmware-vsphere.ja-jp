@@ -19,7 +19,11 @@ NOTE: SCV 6.2へのアップグレードは、VMware vCenter Server 7 update 1�
 SnapCenter Plug-in for VMware vSphere仮想アプライアンスを使用している場合は、新しいリリースにアップグレードできます。アップグレードプロセスでは、既存のプラグインが登録解除され、vSphere 7.0U1以降のバージョンとのみ互換性のあるプラグインが導入されます。
 
 
+CAUTION: アップグレードを行う前に、お使いの環境がシステム要件を満たしていることを確認してください。詳細については、link:scpivs44_deployment_planning_and_requirements.html["SnapCenter Plug-in for VMware vSphere の導入計画と要件"]を参照してください。
 
+
+
+[[upgrade-paths]]
 == アップグレードパス
 
 |===
@@ -54,7 +58,7 @@ TIP: アップグレードを開始する前に、SnapCenter Plug-in for VMware 
 
 NOTE: ネットワーク設定を静的からDHCPに切り替えることはできません。
 
-サポートされているバージョンに関する最新情報については、 https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^] （IMT）。
+サポートされているバージョンに関する最新情報については、link:https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool（IMT）"^]を参照してください。
 
 .手順
 . SnapCenter Plug-in for VMware vSphereを無効にしてアップグレードを準備します。
@@ -65,7 +69,7 @@ NOTE: ネットワーク設定を静的からDHCPに切り替えることはで�
 
 . アップグレードファイルをダウンロードし `.iso` ます。
 +
-.. NetAppサポートサイトにログインし (https://mysupport.netapp.com/products/index.html[]ます）。
+.. link:https://mysupport.netapp.com/products/index.html["NetApp サポート サイト"^]にログインします。
 .. 製品のリストから* SnapCenter Plug-in for VMware vSphere *を選択し、*最新リリースのダウンロード*ボタンを選択します。
 .. SnapCenter Plug-in for VMware vSphereのアップグレードファイルを任意の場所にダウンロードし `.iso` ます。
 

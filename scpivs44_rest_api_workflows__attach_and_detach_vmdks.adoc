@@ -20,6 +20,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してVMDKの接続およ
 
 
 
+[[to-attach-vmdks-follow-this-workflow]]
 == VMDKを接続するには、次のワークフローを実行します。
 
 |===
@@ -45,6 +46,7 @@ NOTE: VMDKを別のVMに接続するには、alternateVmMoref属性にターゲ�
 |===
 
 
+[[to-detach-vmdks-follow-this-workflow]]
 == VMDKの接続を解除するには、次のワークフローを実行します。
 
 |===

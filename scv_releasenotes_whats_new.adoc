@@ -48,6 +48,7 @@ SnapCenter Plug-in for VMwareからNetApp Backup and Recoveryへのシームレ�
 
 
 
+[[protect-your-vmware-estate-using-netapp-backup-and-recovery]]
 == NetApp Backup and Recoveryを使用してVMware環境を保護
 
 video::UeT9yFssTug[youtube,width=848,height=480]

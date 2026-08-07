@@ -18,6 +18,7 @@ SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、�
 
 
 
+[[host-requirements]]
 == ホストの要件
 
 SnapCenter Plug-in for VMware vSphere（SCV）の導入を開始する前に、ホストの要件を確認しておく必要があります。
@@ -79,6 +80,7 @@ VMFSデータストア上に1つ以上のVMDKがある場合のVM全体のリス
 
 
 
+[[license-requirements]]
 == ライセンス要件
 
 |===
@@ -98,6 +100,7 @@ VMFSデータストア上に1つ以上のVMDKがある場合のVM全体のリス
 |===
 
 
+[[software-support]]
 == ソフトウェアのサポート
 
 |===
@@ -142,6 +145,7 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 
 
 
+[[space-sizing-and-scaling-requirements]]
 == スペース、サイジング、拡張の要件
 
 |===
@@ -158,6 +162,7 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 |===
 
 
+[[connection-and-port-requirements]]
 == 接続とポートの要件
 
 |===
@@ -181,6 +186,7 @@ NVMe over TCPおよびNVMe over FCプロトコルをサポートするための�
 |===
 
 
+[[configurations-supported]]
 == サポートされる構成
 
 各プラグインインスタンスでサポートされるvCenter Serverは1つだけです（リンクモード）。ただし、次の図に示すように、複数のプラグインインスタンスで同じSnapCenterサーバをサポートできます。
@@ -189,6 +195,7 @@ image:scpivs44_image4.png["サポートされている構成グラフィック�
 
 
 
+[[rbac-privileges-required]]
 == RBACケンケンノヒツヨウ
 
 vCenter管理者アカウントには、次の表に示す必要なvCenter Privilegesが必要です。
@@ -216,6 +223,7 @@ vCenter管理者アカウントには、次の表に示す必要なvCenter Privi
 |===
 
 
+[[autosupport]]
 == AutoSupport
 
 SnapCenter Plug-in for VMware vSphereは、プラグインのURLなど、使用状況を追跡するための最小限の情報を提供します。AutoSupportには、AutoSupportビューアに表示されるインストール済みプラグインの表が含まれています。

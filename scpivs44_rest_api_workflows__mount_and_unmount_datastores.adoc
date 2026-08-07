@@ -20,6 +20,7 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してデータストア�
 
 
 
+[[to-mount-datastores-follow-this-workflow]]
 == データストアをマウントするには、次のワークフローを実行します。
 
 |===
@@ -46,6 +47,7 @@ availableEsxHosts` | `Get the list of Available Esxi Hosts` マウント処理�
 |===
 
 
+[[to-unmount-datastores-follow-this-workflow]]
 == データストアをアンマウントするには、次のワークフローを実行します。
 
 |===

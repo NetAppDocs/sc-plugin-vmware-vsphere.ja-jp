@@ -18,6 +18,7 @@ SnapCenter Plug-in for VMware vSphereで実行されるバックアップの名�
 
 
 
+[[rename-backups]]
 == バックアップの名前変更
 
 検索しやすくするためにSnapCenter Plug-in for VMware vSphereバックアップの名前を変更することができます。
@@ -39,6 +40,7 @@ VM 、データストア、ポリシー、バックアップ、リソースグ�
 
 
 
+[[delete-backups]]
 == バックアップの削除
 
 他のデータ保護処理に不要になったSnapCenter Plug-in for VMware vSphereのバックアップは削除できます。1つのバックアップを削除することも、複数のバックアップを同時に削除することもできます。
