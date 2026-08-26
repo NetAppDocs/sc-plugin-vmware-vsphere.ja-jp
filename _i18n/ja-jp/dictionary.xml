@@ -2166,13 +2166,11 @@
   <block id="b7b8f6b1819db0f110d159a8db1ae50f" category="doc">SCV でのゲストファイルのリストアシナリオ</block>
   <block id="a5b5bbaab0477105f54c80657a42858f" category="doc">SCV による復元処理の実行方法</block>
   <block id="4b941a49c8c4f2361abf530aa6d23a53" category="doc">SnapCenter Plug-in for VMware vSphere 用の ONTAP RBAC を設定する</block>
-  <block id="f09becdfd77a0c14076f6312e72a5fbe" category="doc">SCV の新しいパッチにアップグレードした後、情報が表示されない</block>
   <block id="12f70185f36225d9e785483fa5adec93" category="doc">SnapCenter Plug-in for VMware vSphereのライセンス</block>
   <block id="c60c8305c7704e2a6b481202a87d34a4" category="doc">SnapCenter Plug-in for VMware vSphereでバックアップを管理する</block>
   <block id="7806a0fcfddb17a7ef5ffbc6f69a5d84" category="doc">SnapCenter Plug-in for VMware vSphereでポリシーを管理する</block>
   <block id="a9cf02408b537b32836b3b5e779b0f56" category="doc">SnapCenter Plug-in for VMware vSphereでリソースグループを管理する</block>
   <block id="8ec10186a814e49a8603f7758664c43b" category="doc">SnapCenter Plug-in for VMware vSphereでストレージシステムを管理する</block>
-  <block id="b3f0168240889017e1bf32ba930c88f9" category="doc">Windows ベースの SnapCenter for VMware vSphere からメタデータを移行する</block>
   <block id="53e2ff616a1db867b9b0647caed4ea4e" category="doc">SCV に必要な最小限の ONTAP 権限</block>
   <block id="c468fa820a55a1c100c86b2078a91c63" category="doc">SCV に必要な最小限の vCenter 権限</block>
   <block id="c27d4740b5308a914185b9a6ec4534ba" category="doc">SCV の設定のデフォルト値を変更する</block>
@@ -2192,7 +2190,6 @@
   <block id="6803040d0deefc5c64d293411d2eae3c" category="doc">SnapCenter Plug-in for VMware vSphereのデータ保護ワークフロー</block>
   <block id="2c20cf3dbe62e059162072efca505843" category="doc">SnapCenter Plug-in for VMware vSphereのクイックスタート</block>
   <block id="706c1ecc5e0dfbf5d0b578709966a41b" category="doc">SCVをSnapCenter Serverに登録</block>
-  <block id="946449a09a5e8fe514190b45b1239172" category="doc">SnapCenter Plug-in for VMware vSphereのリリースノート</block>
   <block id="e6613d4a408bd1c5af7c93c35fd5c766" category="doc">SnapCenter Plug-in for VMware vSphereを削除する</block>
   <block id="9dc439c0b26590060b9baae9a11cef15" category="doc">REST API を使用した SCV によるオンデマンドバックアップのワークフロー</block>
   <block id="10a69d330fd1bd443bb763f537b74f8c" category="doc">SCV を使用して削除された VM を復元する REST API ワークフロー</block>
@@ -2204,14 +2201,12 @@
   <block id="a78e138b777bd9b17098fbb8bee31a72" category="doc">REST API SCVに組み込まれたスケジュールを変更するワークフロー</block>
   <block id="e01d2deaa3a9b8da7ed18a0423a240d2" category="doc">SCV 内のデータストアをマウントおよびアンマウントする REST API ワークフロー</block>
   <block id="0ab92c1e3d210a1078c8bcb60c815cda" category="doc">SCV でジョブをダウンロードしレポートを生成するための REST API</block>
-  <block id="251106474aba3c73dfbbf781349c0420" category="doc">REST API：SCVでスタックしたジョブを失敗としてマークする</block>
   <block id="a74666d3669e18922af35742c6e64a2a" category="doc">SnapCenter Plug-in for VMware vSphereのREST APIについて学ぶ</block>
   <block id="ea4aaf388f103ba4af0328e2438f506c" category="doc">SCV の VMware vSphere クライアントサービスを再起動します</block>
   <block id="b97006b94b5abbef2e4cab535709f798" category="doc">SCV MySQLデータベースの特定のバックアップをリストアする</block>
   <block id="62bb165014392b3ca2d868cae754a575" category="doc">SCVを使用してバックアップから削除されたVMを復元する</block>
   <block id="1c1d699bb8ba3233d50c545bbd1fae6d" category="doc">SnapCenter Plug-in for VMware vSphereのリストアオプション</block>
   <block id="d537acd00dd3c27290078e423c835ef5" category="doc">SCVを使用してVMDKからゲストファイルとフォルダをリストアする</block>
-  <block id="26c55d24b1e98dfc0abb17486fa64729" category="doc">SCV におけるゲストファイルの復元ワークフロー、前提条件、および制限事項</block>
   <block id="9fd1425d563e70975dbff208034dfa99" category="doc">SCV MySQLデータベースの最新のバックアップをリストアします</block>
   <block id="8092cfbde9cd8cf3324b5adcbf7237e2" category="doc">SCVを使用してバックアップからVMDKを復元する</block>
   <block id="5e711cf8e194d973e01259462c98c155" category="doc">SCVを使用してバックアップからVMを復元する</block>
@@ -2323,4 +2318,11 @@
   <block id="be0cdd104110166e130ddd84d1c1fc51" category="paragraph">サポートされているバージョンに関する最新情報については、<block ref="c4b2de34dedab2af97f29b6fccd6575c" category="inline-link-macro-rx"></block>を参照してください。</block>
   <block id="8c41baf1ca98e1184f48c4721d44d431" category="inline-link-macro">NetApp サポート サイト</block>
   <block id="9eeb0054bc82844b2782a42bddf7c681" category="list-text"><block ref="fe673711457a0919d053a9db0146aa49" category="inline-link-macro-rx"></block>にログインします。</block>
+  <block id="6fe778bd4f381bc596c1ad2205bf7850" category="doc">SnapCenter Plug-in for VMware vSphereの法的通知</block>
+  <block id="96fb488c6d5d6ed5f3816ffc8e3f6397" category="doc">SCVの新しいパッチにアップグレードした後に発生する情報不足の問題を解決する</block>
+  <block id="09f90d69ac8c406b9baae622de8de691" category="doc">SnapCenter Plug-in for VMware vSphere クライアントにログインする</block>
+  <block id="d1feecd02693b9e7b54bae1972ce21f7" category="doc">WindowsベースのSnapCenter for VMware vSphereからのメタデータ移行</block>
+  <block id="14e70facdd7f1056b19624a65647f611" category="doc">SnapCenter Plug-in for VMware vSphere 6.2のリリースノート</block>
+  <block id="0e1c5e24c38bf97d9c3a9e07e8ea35ac" category="doc">SCVでREST APIを使用してスタックしたジョブを失敗としてマークする</block>
+  <block id="25dc68a1ecd07d4ec635e66b5aba9478" category="doc">SCVでのゲストファイルのリストアについて</block>
 </blocks>
