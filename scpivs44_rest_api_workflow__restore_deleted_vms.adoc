@@ -22,21 +22,20 @@ SnapCenter Plug-in for VMware vSphere REST APIを使用してVMバックアッ�
 | ステップ | REST API | コメント 
 
 
-| 1 | に移動
-`\http://<vCenter-IP>/mob` | VMware Managed ObjectsのURLからVM UUIDを検索します。リストアする VM の * uuid * をメモします。 
+| 1 | に移動 `\http://<vCenter-IP>/mob` | VMware Managed Objects URL からデータストア *moref* を見つけてください。削除された仮想マシンが存在していたデータストアの moref をメモしてください。 
 
 
-| 2 | `/4.1/vm/{uuid}/backups` | `Get VM Backups` 指定したVMのバックアップのリストを取得します。手順 1 から * uuid * を渡します。リストアするバックアップの * backupid * をメモします。 
+| 2 | `/4.1/datastores/{moref}/backups` | `Get Datastore Backups`指定されたデータストアのバックアップ一覧を取得します。ステップ1の*moref*を渡します。復元するバックアップの*backupId*をメモします。 
 
 
-| 3 | `/4.1/vm/backups/{backupId}/
-snapshotlocations` | `Get snapshot locations`指定したバックアップのSnapshotの場所を取得します。手順 2 から * backupid * を渡します。この *snapshotsList* 情報に注意してください。 
+| 3 | `/4.1/backups/{backupId}` | `Get Backup Details`指定されたバックアップの詳細を取得します。ステップ2の*backupId*を渡してください。エンティティリストで、削除されたVMと一致する *entityName* を見つけ、*UUID* をメモしてください。 
 
 
-| 4 | `/4.1/vm/{moref}/backups/
-availableesxhosts` | `Get available ESX Hosts` バックアップが格納されているホストの情報を取得します。入手可能な EsxHostsList* 情報に注意してください。 
+| 4 | `/4.1/vm/backups/{backupId}/snapshotlocations` | `Get snapshot locations`指定されたバックアップのスナップショットの場所を取得します。ステップ2の*backupId*を渡してください。*snapshotLocationsList* の情報を確認してください。 
 
 
-| 5 | `/4.1/vm/{uuid}/backups/
-{backupId}/restore` | `Restore VM from a backup using uuid or restore a deleted VM` 指定したバックアップをリストアします。手順 1 から * uuid * を渡します。手順 2 から * backupid * を渡します。ステップ 3 と 4 の情報を *restoreLocations* 属性に渡しますVMバックアップがパーシャルバックアップの場合は、パラメータを「false」に設定します `restartVM` 。* 注： * テンプレートの VM はリストアできません。 
+| 5 | `/4.1/datastores/{moref}/availableEsxHosts` | `Get available ESX Hosts`バックアップが保存されているホストの情報を取得します。ステップ1の*moref*を渡します。*availableEsxHostsList*の情報を確認します。 
+
+
+| 6 | `/4.1/vm/{uuid}/backups/{backupId}/restoreVm` | `Restore a VM from a backup`指定されたバックアップを復元します。ステップ3の*UUID*を渡してください。ステップ2の*backupId*を渡してください。*restoreLocations*属性には、ステップ4の*snapshotLocationsList*の情報を渡し、*esxHost*属性には、ステップ5の*availableEsxHostsList*の情報を渡してください。VMバックアップが部分バックアップの場合は、 `restartVM`パラメータを*false*に設定してください。*注：*テンプレートである仮想マシンは復元できません。 
 |===

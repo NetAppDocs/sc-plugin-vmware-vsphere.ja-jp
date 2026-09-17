@@ -1118,18 +1118,12 @@
   <block id="e425f4a6b828d90cb52b0122cc580f9e" category="cell"><block ref="02a19238a98a0855ef7a4dee646f2ce9" prefix="" category="inline-code"></block> リソースグループをオンデマンドでバックアップします。手順 1 の * resourceGroupId* と * policyId* を渡します</block>
   <block id="f1abae2f40d33bbd71a1d0a29cc016cc" category="summary">SnapCenter Plug-in for VMware vSphere REST APIを使用してVMバックアップのリストア処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。</block>
   <block id="c1634a907000ddd630d2959e055bed59" category="doc">削除したVMをリストアするためのREST APIワークフロー</block>
-  <block id="5b845076b112586b7fff13b10d9f0612" category="cell">に移動<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
-  <block id="c40cc36b9154fdd4a91c01ccb09ce903" category="cell">VMware Managed ObjectsのURLからVM UUIDを検索します。リストアする VM の * uuid * をメモします。</block>
-  <block id="e59122dd4a3b9560e419d80fe5d7705c" category="cell"><block ref="680e278bed5cdf20b100ef3fbfa7a37f" prefix="" category="inline-code"></block></block>
-  <block id="e3d8a902b976f14935a74a07f0a8ff70" category="cell"><block ref="180c60808a741f14fed08ebd47075256" prefix="" category="inline-code"></block> 指定したVMのバックアップのリストを取得します。手順 1 から * uuid * を渡します。リストアするバックアップの * backupid * をメモします。</block>
   <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3</block>
   <block id="1396ed7e5eaba2f2a9d66c52606b7200" category="cell"><block ref="d8e2abe315ab3c4d79dc93692fcdc459" prefix="" category="inline-code"></block></block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="405a7d9fcc2a16f96442a76dd028bbde" category="cell"><block ref="b46f55ca0f70c8287c9f5c57435507ec" prefix="" category="inline-code"></block></block>
   <block id="1ed4c767960d8b89a9dd8cd0e8369b7c" category="cell"><block ref="cd167a8bf45e589a93aea03099990bf5" prefix="" category="inline-code"></block> バックアップが格納されているホストの情報を取得します。入手可能な EsxHostsList* 情報に注意してください。</block>
   <block id="e4da3b7fbbce2345d7772b0674a318d5" category="cell">5</block>
-  <block id="3a2a882001dd7896eb2b32739b29471d" category="cell"><block ref="acc5e65ecf55336d9dcae6c4b21ff885" prefix="" category="inline-code"></block></block>
-  <block id="7f8c1c53fd7e08fda5762c3337c0bce6" category="cell"><block ref="200347e95ff17482e774ac785275c8ce" prefix="" category="inline-code"></block> 指定したバックアップをリストアします。手順 1 から * uuid * を渡します。手順 2 から * backupid * を渡します。ステップ 3 と 4 の情報を *restoreLocations* 属性に渡しますVMバックアップがパーシャルバックアップの場合は、パラメータを「false」に設定します<block ref="0736c145ca7c004b573fcb3b6242d260" prefix=" " category="inline-code"></block> 。* 注： * テンプレートの VM はリストアできません。</block>
   <block id="b28cc44ec7d89a3db43ec0fae8bec76a" category="summary">SnapCenter Plug-in for VMware vSphere REST APIを使用してVMDKのリストア処理を実行するには、所定の順序でREST API呼び出しを実行する必要があります。</block>
   <block id="e4af61e7b7a5732dae774b1e49745727" category="doc">VMDKをリストアするためのREST APIのワークフロー</block>
   <block id="309de2a87bff7ae7c6fdf613c07456cd" category="cell">に移動<block ref="7c61e9e4b133f96dbd184942bce35796" prefix=" " category="inline-code"></block></block>
@@ -2325,4 +2319,15 @@
   <block id="14e70facdd7f1056b19624a65647f611" category="doc">SnapCenter Plug-in for VMware vSphere 6.2のリリースノート</block>
   <block id="0e1c5e24c38bf97d9c3a9e07e8ea35ac" category="doc">SCVでREST APIを使用してスタックしたジョブを失敗としてマークする</block>
   <block id="25dc68a1ecd07d4ec635e66b5aba9478" category="doc">SCVでのゲストファイルのリストアについて</block>
+  <block id="cecbb6d90c269c98fdac515b81e0d73b" category="cell">VMware Managed Objects URL からデータストア *moref* を見つけてください。削除された仮想マシンが存在していたデータストアの moref をメモしてください。</block>
+  <block id="f61beb61662c6537a3f0ae8663f661fe" category="cell"><block ref="00dc830fa803616a49708e2e3e3c8b5b" prefix="" category="inline-code"></block></block>
+  <block id="b009dd3584db37104eeb85f282f3ed53" category="cell"><block ref="66205e1770e6dcf2b2bd1b6d83d6e19a" prefix="" category="inline-code"></block>指定されたデータストアのバックアップ一覧を取得します。ステップ1の*moref*を渡します。復元するバックアップの*backupId*をメモします。</block>
+  <block id="3287b26eea51f72abac4a77e5b4829cd" category="cell"><block ref="f2a41487d6a8e863e610ba88a60bc84f" prefix="" category="inline-code"></block></block>
+  <block id="747eb4264c2de88633140e938e184ca6" category="cell"><block ref="4e49071979e4a204bd91c87e101a1a96" prefix="" category="inline-code"></block>指定されたバックアップの詳細を取得します。ステップ2の*backupId*を渡してください。エンティティリストで、削除されたVMと一致する *entityName* を見つけ、*UUID* をメモしてください。</block>
+  <block id="1600ae4c16a60cd5ad67ed50a8ba0f1e" category="cell"><block ref="0d42da7d88167ed4dd002c063a3dcb70" prefix="" category="inline-code"></block></block>
+  <block id="796d765a2681401240691e1d250c6fa1" category="cell"><block ref="af62a8975e8577db87448344c585507f" prefix="" category="inline-code"></block>指定されたバックアップのスナップショットの場所を取得します。ステップ2の*backupId*を渡してください。*snapshotLocationsList* の情報を確認してください。</block>
+  <block id="ef223d3a6282eb2d29c9050b41c058a6" category="cell"><block ref="17602b67d88fcff6d9024b3d93710f9e" prefix="" category="inline-code"></block></block>
+  <block id="704566d14e7a9a5778c823d1b4ec8f66" category="cell"><block ref="cd167a8bf45e589a93aea03099990bf5" prefix="" category="inline-code"></block>バックアップが保存されているホストの情報を取得します。ステップ1の*moref*を渡します。*availableEsxHostsList*の情報を確認します。</block>
+  <block id="d87a25d74744053d50de6457d00b0f8c" category="cell"><block ref="35fb52fb97add0bf107e8814314da67c" prefix="" category="inline-code"></block></block>
+  <block id="31533fd2e85160fecb2398d5ece8c194" category="cell"><block ref="42deac4908a17efb438eb8235d8b5154" prefix="" category="inline-code"></block>指定されたバックアップを復元します。ステップ3の*UUID*を渡してください。ステップ2の*backupId*を渡してください。*restoreLocations*属性には、ステップ4の*snapshotLocationsList*の情報を渡し、*esxHost*属性には、ステップ5の*availableEsxHostsList*の情報を渡してください。VMバックアップが部分バックアップの場合は、<block ref="0736c145ca7c004b573fcb3b6242d260" prefix=" " category="inline-code"></block>パラメータを*false*に設定してください。*注：*テンプレートである仮想マシンは復元できません。</block>
 </blocks>
