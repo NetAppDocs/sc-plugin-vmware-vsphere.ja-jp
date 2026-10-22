@@ -34,6 +34,8 @@ sidebar:
     entries:
     - title: SnapCenter Plug-in for VMware vSphereリリースノート
       url: "/scpivs44_release_notes.html"
+    - title: SnapCenter Plug-in for VMware vSphere 6.2.1の新機能
+      url: "/scv_releasenotes_621_whats_new.html"
     - title: SnapCenter Plug-in for VMware vSphereの新機能
       url: "/scv_releasenotes_whats_new.html"
     - title: アップグレードパス

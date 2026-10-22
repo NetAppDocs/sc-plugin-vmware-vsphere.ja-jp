@@ -1,0 +1,56 @@
+---
+permalink: scv_releasenotes_621_whats_new.html 
+sidebar: sidebar 
+keywords: 'what"s new, release notes, scv, 6.2.1' 
+summary: SnapCenter Plug-in for VMware vSphere 6.2.1 で利用可能な新機能について 
+---
+= SnapCenter Plug-in for VMware vSphere 6.2.1 の新機能
+:allow-uri-read: 
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere 6.2.1はメンテナンスリリースです。このリリースでは、アプライアンスに同梱されているサードパーティ製ソフトウェアが更新され、SnapCenter Plug-in for VMware vSphere 6.2リリース以降に発見された問題の修正が含まれています。
+
+
+
+[[updated-components]]
+== 更新されたコンポーネント
+
+|===
+| コンポーネント | SnapCenter Plug-in for VMware vSphere 6.2.1 
+
+
+| Javaランタイム | OpenJDK 21.0.12 
+
+
+| .NETランタイム | .NET 10.0.11 
+
+
+| アプライアンスのオペレーティングシステム | Debian 13 
+|===
+
+
+[[fixed-issues]]
+== 解決済みの問題
+
+アップグレードする前に、そのリリースで修正された既知の問題を確認することをお勧めします。
+
+* VMDP-7072：Oracle Cloud上のクラウド管理ONTAPをストレージシステムとして追加できます。
+* VMDP-7052：VMを別の場所にリストアしても、VMのストレージポリシーが保持されるため、デフォルト以外のポリシーを使用しているVMでもリストアが拒否されなくなりました。
+* VMDP-7027：サポートログバンドルには、構成済みのストレージシステムの一覧が含まれます。
+* VMDP-6987：vCenterがデータストアを一時的に利用不可と報告した場合でも、仮想ディスクのアタッチまたはリストアが失敗しなくなりました。
+* VMDP-6965：スケジュールレコードが1件でも不完全な場合に、スケジュールページが読み込まれなくなる問題が解消されました。
+* VMDP-6952：ユーザーがリソースグループを削除する権限を持っていない場合、権限に関するメッセージが表示されます。
+* VMDP-6939：メンテナンスコンソールで、VMware Toolsが見つからないという報告がなくなりました。
+* VMDP-6935：バックアップを参照して個々のファイルを復元する際に、エラーが発生しなくなりました。
+* VMDP-6933：新規アプライアンスの展開が、初回セットアップ時に完了できなくなる問題が解消されました。
+* VMDP-6931：セカンダリバックアップのクリーンアップ処理で、アクセスできない1つのボリュームに対して何時間も待機することがなくなりました。その他のボリュームの処理は引き続き行われます。
+* VMDP-6817：ソースのONTAPボリュームの名前を変更しても、セカンダリバックアップが古い名前のままになったり、無効になったエントリが表示されたりすることがなくなりました。
+
+
+
+
+[[supported-snapcenter-releases]]
+== サポート対象SnapCenterリリース
+
+サポートされているバージョンの最新情報については、 https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperability Matrix Tool"^]（IMT）を参照してください。
