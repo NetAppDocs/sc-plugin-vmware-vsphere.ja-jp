@@ -2342,17 +2342,6 @@
   <block id="1061da8067873a5bbcf3b13a320008da" category="cell">Debian 13</block>
   <block id="69464e68a5cdd0b54694ac92276fa1a3" category="section-title">解決済みの問題</block>
   <block id="4bf7189ca42b78c35cf4f9f936645b31" category="paragraph">アップグレードする前に、そのリリースで修正された既知の問題を確認することをお勧めします。</block>
-  <block id="f1b0557f30f515cd6d2e1aa2e60580b5" category="list-text">VMDP-7072：Oracle Cloud上のクラウド管理ONTAPをストレージシステムとして追加できます。</block>
-  <block id="7e30746a2e14afbe290955d5099a0827" category="list-text">VMDP-7052：VMを別の場所にリストアしても、VMのストレージポリシーが保持されるため、デフォルト以外のポリシーを使用しているVMでもリストアが拒否されなくなりました。</block>
-  <block id="ffbb81ba0942679379246214302064d0" category="list-text">VMDP-7027：サポートログバンドルには、構成済みのストレージシステムの一覧が含まれます。</block>
-  <block id="54df73c8ac14d36d89e624c6bcb25c15" category="list-text">VMDP-6987：vCenterがデータストアを一時的に利用不可と報告した場合でも、仮想ディスクのアタッチまたはリストアが失敗しなくなりました。</block>
-  <block id="a0d9c0a5825a0a479c3c1abf79736802" category="list-text">VMDP-6965：スケジュールレコードが1件でも不完全な場合に、スケジュールページが読み込まれなくなる問題が解消されました。</block>
-  <block id="ae1fe0096853dc264aef45e1af3a1c54" category="list-text">VMDP-6952：ユーザーがリソースグループを削除する権限を持っていない場合、権限に関するメッセージが表示されます。</block>
-  <block id="807a094ef06af183d78e766a9312e93b" category="list-text">VMDP-6939：メンテナンスコンソールで、VMware Toolsが見つからないという報告がなくなりました。</block>
-  <block id="d10b5064d7908d30ce794457a6f3a36d" category="list-text">VMDP-6935：バックアップを参照して個々のファイルを復元する際に、エラーが発生しなくなりました。</block>
-  <block id="67edb748ed65475a815d4782acf1f80a" category="list-text">VMDP-6933：新規アプライアンスの展開が、初回セットアップ時に完了できなくなる問題が解消されました。</block>
-  <block id="447fa43309a40a78d5e193fd06081614" category="list-text">VMDP-6931：セカンダリバックアップのクリーンアップ処理で、アクセスできない1つのボリュームに対して何時間も待機することがなくなりました。その他のボリュームの処理は引き続き行われます。</block>
-  <block id="1aa76d24b907dec4cb76b6d8a77fed05" category="list-text">VMDP-6817：ソースのONTAPボリュームの名前を変更しても、セカンダリバックアップが古い名前のままになったり、無効になったエントリが表示されたりすることがなくなりました。</block>
   <block id="e5c7cede4b737581cd66c16346d917c5" category="section-title">サポート対象SnapCenterリリース</block>
   <block id="a8873f8f7715ad49732b43f6bdd600b5" category="paragraph">サポートされているバージョンの最新情報については、<block ref="64fc8efacd4fa13b8c1907c1db527b3d" category="inline-link-rx"></block>（IMT）を参照してください。</block>
   <block id="fdc5680e65fa7898d151f608475ae69c" category="summary">SnapCenter Plug-in for VMware vSphere 6.2.1および6.2で利用可能な新機能について説明します。</block>
@@ -2360,4 +2349,27 @@
   <block id="184c7c0c678f365279a40216ed22fe8a" category="paragraph">SCV 6.2 および SCV 6.2.1</block>
   <block id="09e5cb2777291d8cdab464a3f4d035e6" category="paragraph">SCV6.1およびSCV 6.2</block>
   <block id="20afa33773b6c08681241027158bf0c6" category="sidebar">SnapCenter Plug-in for VMware vSphere 6.2.1の新機能</block>
+  <block id="b066ca6122c9857ad1ee3a44f18cc5e7" category="cell">バグID</block>
+  <block id="fbe32e5130ccbbb1ffa89d9f70c1b083" category="cell">VMDP-7072を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="e53e7d9e47b290851f5322670e9ecb11" category="cell">Oracle Cloud上のクラウド管理ONTAPは、ストレージシステムとして追加できます。</block>
+  <block id="db83ccd5ec2a7d5b47fcb16bff367994" category="cell">VMDP-7052を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="978341053f0d4727fa2d3f60e89ef8d7" category="cell">仮想マシンを別の場所に復元しても、仮想マシンのストレージポリシーは保持されるため、デフォルト以外のポリシーを使用している仮想マシンでも復元が拒否されることはなくなりました。</block>
+  <block id="eebb3d78418add83056fa6e98ab314c6" category="cell">VMDP-7027を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="16f06a0d6af2ec373955e5deebcf1c92" category="cell">サポートログバンドルには、構成済みのストレージシステムの一覧が含まれます。</block>
+  <block id="1ad7bcd66dc23dcde3ce1b6d54e11fa5" category="cell">VMDP-6987を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="bd60983e3cd2a710b8bf94a4d46be475" category="cell">vCenterがデータストアを一時的に利用不可と報告した場合でも、仮想ディスクのアタッチまたは復元が失敗しなくなりました。</block>
+  <block id="085a21f40a096fe8d421f595412e35c8" category="cell">VMDP-6965を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="3e8dc69bde1348a24d095a52a5213e68" category="cell">スケジュール記録が1件でも不完全な場合に、スケジュールページが読み込まれなくなる問題が解消されました。</block>
+  <block id="8ca9bc2edece27e6a5ce2cd1d7869b10" category="cell">VMDP-6952を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="889a2d10bb7e6f4de708d61ec611b0f2" category="cell">ユーザーがリソースグループを削除する権限を持っていない場合、権限に関するメッセージが表示されます。</block>
+  <block id="d0797b6e14dfa7980b21f2392e2356c8" category="cell">VMDP-6939を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="47957ac25ad4c0107d64327b8b0ab515" category="cell">メンテナンスコンソールでは、VMware Toolsが見つからないという報告はされなくなりました。</block>
+  <block id="832101e6141ee84bf7cbb623bf72f8d0" category="cell">VMDP-6935を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="af16420268fa26529065d82d47ad3490" category="cell">バックアップを参照して個々のファイルを復元する際に、エラーが発生しなくなりました。</block>
+  <block id="616f6786eb6faab93d9b620f359160b5" category="cell">VMDP-6933を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="31b56ee5316a09ec641a4086ba471fc7" category="cell">新しいアプライアンスの導入が、初回セットアップ時に完了しない問題が解消されました。</block>
+  <block id="d50f3dfae3474354ad6a0a356d2dd751" category="cell">VMDP-6931を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="cd02895ddd7c0fa8421749e568bf6763" category="cell">セカンダリバックアップのクリーンアップ処理で、アクセスできない1つのボリュームを何時間も待つことがなくなりました。他のボリュームは引き続き処理されます。</block>
+  <block id="0eff747ab0e939a98b87dc30a3d4959d" category="cell">VMDP-6817を使用したチャンク アップロード署名要求がサポートされるようになりました。</block>
+  <block id="49443c787c9ae296da4caa1b641ab418" category="cell">ソースのONTAPボリュームの名前を変更しても、セカンダリバックアップが古い名前のままになったり、無効になったエントリが表示されたりすることがなくなりました。</block>
 </blocks>
